@@ -69,9 +69,21 @@ academictimes/
 │   ├── critical-minerals-geopolitics/    # 重要鉱物サプライチェーン同盟
 │   └── arctic-sea-route-unclos/          # 北極海航路と海洋法条約
 │
+├── junior/                      # 🌿【THE JUNIOR】高校基礎〜標準・英検準2級〜2級エディション
+│   ├── index.html               # THE JUNIOR トップ紙面（全5分野カタログ・学習ステップ）
+│   ├── styles/times-junior.css  # Junior専用スタイルシート
+│   ├── culture/headphones-in-public/
+│   ├── science/colorectal-cancer-under-50s/
+│   ├── society/psychology-casual-encounters/
+│   ├── law/air-defence-shield/
+│   └── world/critical-minerals-geopolitics/
+│
 └── pipeline/                    # 記事生成・TTS合成・管理スクリプト群
     ├── ARTICLE_REGISTRY.md      # 重複防止・一次ソース管理台帳（内部用）
     ├── articles_data.py         # 記事マスターデータセット
+    ├── junior_articles_data.py  # THE JUNIOR 記事マスターデータセット
+    ├── build_junior_site.py     # THE JUNIOR 記事 & 音声生成スクリプト
+    ├── build_junior_top.py      # THE JUNIOR トップ紙面生成スクリプト
     ├── generate_all_articles.py # 記事HTML & Edge-TTS生成スクリプト
     ├── generate_category_pages.py # カテゴリ別トップページ生成スクリプト
     └── generate_editions_pages.py # 日別トップページ生成スクリプト
