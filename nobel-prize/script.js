@@ -1179,7 +1179,7 @@ class YukkuriSlideDeckController {
         {
           speaker: 'sato',
           emotion: '💡',
-          text: '光を当てるだけで、狙った脳神経のスイッチを<strong>1000分の1秒でON/OFFする</strong>人類最大の革命だよ！'
+          text: '光を当てるだけで、狙った脳神経を<strong>1000分の1秒単位でON/OFFする</strong>革命だよ！ 「神経科学で因果関係を直接証明できるようになった」人類の金字塔だ！'
         }
       ],
       // SLIDE 1: 遺伝子ってなに？
@@ -1215,7 +1215,7 @@ class YukkuriSlideDeckController {
         {
           speaker: 'sato',
           emotion: '⚡',
-          text: '細胞膜の「門（チャネル）」が開くと、プラスのイオンが流れ込んで<strong>「パチッ！」と電気が走る（神経発火）</strong>んだ。'
+          text: '細胞膜の「門（チャネル）」が開くと、プラスのイオンが流れ込んで<strong>「パチッ！」と電気が走る（活動電位の発生）</strong>んだ。'
         },
         {
           speaker: 'aoi',
@@ -1225,7 +1225,7 @@ class YukkuriSlideDeckController {
         {
           speaker: 'sato',
           emotion: '😲',
-          text: '電極だと<strong>周りの何千個もの細胞まで全員感電しちゃう！</strong> 狙った1本だけを動かす道具が必要だったんだ。'
+          text: '脳は<strong>1mm³に1万個以上もの細胞</strong>がひしめき合っている！ 電極だと周囲の全員が一斉に感電しちゃって、どの細胞が原因なのか「因果」が分からなかったんだ。'
         }
       ],
       // SLIDE 3: 池の藻の奇跡
@@ -1243,7 +1243,12 @@ class YukkuriSlideDeckController {
         {
           speaker: 'sato',
           emotion: '✨',
-          text: '藻は光を求めて泳ぐ。そのために<strong>「青い光（470nm）を浴びると一瞬で開く門（チャネルロドプシン）」</strong>を持っていたんだ！'
+          text: '人間の目は光から電気信号まで10ミリ秒かかるが、藻の眼点は<strong>わずか0.5ミリ秒</strong>！ 「青い光（470nm）で瞬時に開く門（チャネルロドプシン）」を持っていたんだ！'
+        },
+        {
+          speaker: 'sato',
+          emotion: '🇯🇵',
+          text: 'しかも2000年頃、<strong>日本の研究チームが解読・公開した遺伝子データベース</strong>から、ヘーゲマンとナーゲルがこの光チャネル遺伝子を特定したんだよ！'
         }
       ],
       // SLIDE 4: ダイセロスの大革命！
@@ -1261,7 +1266,12 @@ class YukkuriSlideDeckController {
         {
           speaker: 'sato',
           emotion: '💡',
-          text: 'その通り！ 運び屋ウイルスで届けると、<strong>青い光を当てるだけで狙い撃ちで動く神経</strong>が完成したんだ！'
+          text: 'その通り！ 最初生きたマウスでは失敗続きだったが、ダイセロスは<strong>プラスミド（DNA）を世界中に無償配布</strong>したんだ。'
+        },
+        {
+          speaker: 'sato',
+          emotion: '🐭',
+          text: 'これを受け取った慶應義塾大学の田中謙二教授らが安定発現法を開発し、<strong>光を当てるとマウスのヒゲがピクピク動く</strong>歴史的実証を成し遂げたんだ！'
         }
       ],
       // SLIDE 5: 光で撃て！実験室
@@ -1279,7 +1289,7 @@ class YukkuriSlideDeckController {
         {
           speaker: 'sato',
           emotion: '💡',
-          text: '青でアクセル（興奮）、黄色でブレーキ（抑制）。1000分の1秒で自由自在に脳を操作できるんだ！'
+          text: '青（ChR2）でアクセル・脱分極、黄色（NpHR）でブレーキ・過分極。1000分の1秒で自由自在に脳を双方向制御できるんだ！'
         }
       ],
       // SLIDE 6: なぜノーベル賞なのか？
@@ -1292,17 +1302,17 @@ class YukkuriSlideDeckController {
         {
           speaker: 'sato',
           emotion: '🔬',
-          text: 'うつ病やパーキンソン病の回路解明、そして<strong>「失明した人の目に光を取り戻す」臨床応用</strong>まで進んでいるんだ。'
+          text: 'うつ病や恐怖記憶の回路解明、そして今<strong>「失明した人の網膜にキメラロドプシンを入れて光を取り戻す治験」</strong>が日本でも進んでいるんだ！'
         },
         {
           speaker: 'aoi',
           emotion: '✨',
-          text: '池の藻の発見が、人類の未来をこんなにも明るく救うんですね！ 科学ってすごい！'
+          text: '池の藻の発見が、失明を治す未来の光にまでつながるなんて…！ 基礎科学の探究って本当に素晴らしいです！'
         },
         {
           speaker: 'sato',
           emotion: '😊',
-          text: 'ダイセロス、ヘーゲマン、ナーゲルの3人に心から拍手だね！ アオイ、これで君も光遺伝学マスターだ！'
+          text: 'ダイセロス、ヘーゲマン、ナーゲルの3人に心から拍手だね！ 右上の<strong>「🧪 理系深掘りNOTE」</strong>もぜひ読んでごらん！'
         }
       ]
     ];
@@ -1395,6 +1405,77 @@ class YukkuriSlideDeckController {
         this.stepBackward();
       }
     });
+
+    // Science Drawer Interactions
+    this.initScienceDrawer();
+  }
+
+  initScienceDrawer() {
+    const drawer = document.getElementById('science-drawer');
+    const backdrop = document.getElementById('drawer-backdrop');
+    const btnOpen = document.getElementById('btn-science-drawer');
+    const btnClose = document.getElementById('btn-close-drawer');
+    const tabBtns = document.querySelectorAll('.s-tab-btn');
+    const quickTriggers = document.querySelectorAll('.quick-science-trigger');
+
+    if (!drawer) return;
+
+    const openDrawer = (tabIndex = null) => {
+      drawer.classList.add('open');
+      if (backdrop) backdrop.classList.add('active');
+      if (tabIndex !== null) {
+        this.switchScienceTab(tabIndex);
+      }
+      sound.playChime();
+    };
+
+    const closeDrawer = () => {
+      drawer.classList.remove('open');
+      if (backdrop) backdrop.classList.remove('active');
+    };
+
+    if (btnOpen) btnOpen.addEventListener('click', () => openDrawer(this.currentSlide));
+    if (btnClose) btnClose.addEventListener('click', closeDrawer);
+    if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = parseInt(btn.getAttribute('data-tab'), 10);
+        this.switchScienceTab(tab);
+        sound.playPop();
+      });
+    });
+
+    quickTriggers.forEach(trig => {
+      trig.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const tabStr = trig.getAttribute('data-science-tab');
+        const tab = parseInt(tabStr, 10);
+        openDrawer(isNaN(tab) ? 0 : tab);
+      });
+    });
+  }
+
+  switchScienceTab(tabIndex) {
+    const tabBtns = document.querySelectorAll('.s-tab-btn');
+    const tabPanes = document.querySelectorAll('.s-tab-pane');
+
+    tabBtns.forEach((btn, idx) => {
+      btn.classList.toggle('active', idx === tabIndex);
+    });
+    tabPanes.forEach((pane, idx) => {
+      pane.classList.toggle('active', idx === tabIndex);
+    });
+
+    const activeBtn = tabBtns[tabIndex];
+    if (activeBtn) {
+      activeBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+
+    const body = document.getElementById('science-tabs-body');
+    if (body) {
+      body.scrollTop = 0;
+    }
   }
 
   startAutoPlay() {
@@ -1450,6 +1531,12 @@ class YukkuriSlideDeckController {
     this.currentSubStep = 0;
     sound.playChime();
     this.render();
+
+    // ドロワーが開いていれば現在のスライドのタブへ自動同期
+    const drawer = document.getElementById('science-drawer');
+    if (drawer && drawer.classList.contains('open')) {
+      this.switchScienceTab(slideIndex);
+    }
   }
 
   render() {

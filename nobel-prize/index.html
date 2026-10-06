@@ -39,6 +39,9 @@
       <button id="btn-sound-toggle" class="control-pill sound-pill" title="音声切り替え">
         <span id="sound-icon">🔊</span>
       </button>
+      <button id="btn-science-drawer" class="control-pill science-pill" title="理系高校生・大学受験向け アドバンス探究NOTEを開く">
+        <span class="pill-dot purple"></span> 🧪 理系深掘りNOTE
+      </button>
     </div>
   </header>
 
@@ -58,6 +61,7 @@
           <canvas id="canvas-hero" class="lab-canvas"></canvas>
           <div class="stage-overlay-badge gold">
             <span class="icon">✨</span> STOCKHOLM 2026.10.05 速報
+            <button class="quick-science-trigger" data-science-tab="0">🧪 授賞理由と因果性</button>
           </div>
 
           <!-- Laureate Photo Cards in Slide 0 -->
@@ -105,6 +109,7 @@
           <canvas id="canvas-dna" class="lab-canvas"></canvas>
           <div class="stage-overlay-badge cyan">
             <span class="icon">🧬</span> 設計図（DNA） ➔ 道具マシン（タンパク質）
+            <button class="quick-science-trigger" data-science-tab="1">🧪 1mm³に1万個の壁</button>
           </div>
         </div>
       </div>
@@ -123,6 +128,7 @@
           </div>
           <div class="stage-overlay-badge pink">
             <span class="icon">⚡</span> 門が開くとNa⁺が流入してパチッと発火！
+            <button class="quick-science-trigger" data-science-tab="2">🧪 ネルンストの式と膜電位</button>
           </div>
         </div>
       </div>
@@ -137,6 +143,7 @@
           <canvas id="canvas-algae" class="lab-canvas"></canvas>
           <div class="stage-overlay-badge green">
             <span class="icon">🌱</span> 単細胞緑藻クラミドモナス：青色光（470nm）を感知
+            <button class="quick-science-trigger" data-science-tab="3">🧪 藻の0.5msと日本陣</button>
           </div>
 
           <!-- Discoverers Portrait Badge -->
@@ -170,6 +177,7 @@
           <canvas id="canvas-delivery" class="lab-canvas"></canvas>
           <div class="stage-overlay-badge cyan">
             <span class="icon">🔬</span> ウイルス運び屋 ➔ 脳神経が光スイッチを装備！
+            <button class="quick-science-trigger" data-science-tab="4">🧪 プラスミドとオープン科学</button>
           </div>
 
           <!-- Deisseroth Portrait Badge -->
@@ -218,6 +226,7 @@
           <div class="stage-scope-bar">
             <div class="scope-info">
               <span>OSCILLOSCOPE (活動電位リアルタイム波形)</span>
+              <button class="quick-science-trigger mini" data-science-tab="5">🧪 ChR2/NpHR双方向制御原理</button>
               <span id="scope-status">READY : -70mV</span>
             </div>
             <canvas id="canvas-scope" height="50"></canvas>
@@ -234,6 +243,11 @@
         <div class="stage-visual">
           <canvas id="canvas-triumph" class="lab-canvas"></canvas>
           
+          <div class="stage-overlay-badge gold" style="top: 16px; left: 16px;">
+            <span class="icon">✨</span> 人類を救う光の医学
+            <button class="quick-science-trigger" data-science-tab="6">🧪 網膜キメラロドプシン治験</button>
+          </div>
+
           <div class="triumph-cards-row">
             <div class="t-pill-card">
               <span class="t-ico">🧠</span>
@@ -272,6 +286,266 @@
     </section>
 
   </main>
+
+  <!-- ====================================================
+       SCIENCE ADVANCED EXPLORER DRAWER (理系高校生・大学受験向け)
+       ==================================================== -->
+  <aside id="science-drawer" class="science-drawer" aria-label="理系アドバンス探究ノート">
+    <div class="drawer-header">
+      <div class="drawer-title-group">
+        <span class="drawer-badge">🧪 理系高校生・大学受験生向け</span>
+        <h2 class="drawer-main-title">光遺伝学 アドバンス深掘り探究 NOTE</h2>
+        <small class="drawer-source">出典・参考：日経サイエンス Digital (2026.10.05) / Nobel Prize Outreach / Nature Neuroscience</small>
+      </div>
+      <button id="btn-close-drawer" class="drawer-close-btn" aria-label="閉じる">✕</button>
+    </div>
+
+    <!-- Science Tabs Navigation -->
+    <nav class="science-tabs-nav" id="science-tabs-nav">
+      <button class="s-tab-btn active" data-tab="0">0. 受賞全容と因果性</button>
+      <button class="s-tab-btn" data-tab="1">1. 脳の高密度と従来限界</button>
+      <button class="s-tab-btn" data-tab="2">2. 膜電位と物理化学</button>
+      <button class="s-tab-btn" data-tab="3">3. 藻の0.5msと日本陣</button>
+      <button class="s-tab-btn" data-tab="4">4. 生体実験とオープン科学</button>
+      <button class="s-tab-btn" data-tab="5">5. ChR2/NpHR双方向制御</button>
+      <button class="s-tab-btn" data-tab="6">6. 網膜キメラロドプシン治験</button>
+    </nav>
+
+    <!-- Tab Contents Container -->
+    <div class="science-tabs-body" id="science-tabs-body">
+
+      <!-- TAB 0 -->
+      <article class="s-tab-pane active" id="s-pane-0">
+        <h3 class="pane-title">【授賞全容】2026年ノーベル生理学・医学賞と神経科学のコペルニクス的転換</h3>
+        <div class="key-takeaways">
+          <strong>💡 最重要ポイント:</strong>
+          オプトジェネティクスの登場により、神経科学は「観察と相関」の学問から、特定の細胞群と行動の「因果関係を直接証明できる」実験科学へと完全に脱皮した。
+        </div>
+
+        <h4>3氏の協働とノーベル賞受賞理由</h4>
+        <p>
+          スウェーデン・カロリンスカ研究所による公式授賞理由は<strong>「光依存性イオンチャネルと光遺伝学（オプトジェネティクス）に関する発見」</strong>（<em>For the discovery of light-gated ion channels and the development of optogenetics</em>）です。
+        </p>
+        <ul class="science-list">
+          <li><strong>ペーター・ヘーゲマン（Peter Hegemann / 独フンボルト大）:</strong> 単細胞緑藻の光反応がわずか0.5msという驚異的な超高速性に着目。「光受容タンパク質とイオンチャネルが一体化した単一複合体がある」という大胆な仮説を提唱。</li>
+          <li><strong>ゲオルク・ナーゲル（Georg Nagel / 独ヴュルツブルク大）:</strong> 日本研究陣が解読・公開したクラミドモナスの遺伝子データから光受容イオンチャネル（ChR1, ChR2）を特定。アフリカツメガエル卵母細胞で光駆動チャネル開口を電気生理学的に実証。</li>
+          <li><strong>カール・ダイセロス（Karl Deisseroth / 米スタンフォード大）:</strong> チャネルロドプシンの遺伝子を哺乳類神経細胞・生体マウス脳へ導入し、ミリ秒パルス光で自在に活動電位を制御する「オプトジェネティクス」の体系を確立。</li>
+        </ul>
+
+        <h4>慶應義塾大学・田中謙二教授の証言</h4>
+        <blockquote class="science-quote">
+          「オプトジェネティクスが登場する前と後で、神経科学はがらりと変わった。神経科学で<strong>『因果を問うこと』</strong>が可能になったのだ。」<br>
+          <small>―― 慶應義塾大学教授 田中謙二（日経サイエンス Digital 2026年10月5日付インタビューより）</small>
+        </blockquote>
+      </article>
+
+      <!-- TAB 1 -->
+      <article class="s-tab-pane" id="s-pane-1">
+        <h3 class="pane-title">【神経科学の壁】1mm³に1万個の超高密度構造と、20世紀の実験的限界</h3>
+        
+        <h4>脳の微小構造と「電極刺激」の根本的破綻</h4>
+        <p>
+          脳組織の中では、わずか <strong>\(1\,\text{mm}^3\)</strong>（角砂糖の千分の一）の空間に <strong>1万個を超える神経細胞</strong> と数百万個のシナプスが複雑に絡み合っています。
+        </p>
+        <p>
+          20世紀に行われていた<strong>金属電極による電気刺激</strong>では、電極を刺した周辺の細胞が、興奮性細胞（グルタミン酸作動性）であろうと抑制性細胞（GABA作動性）であろうと、投射先が異なる回路であろうと、<strong>区別なく一斉に感電・興奮</strong>してしまいました。これでは「どの神経細胞が興奮したからその行動が起きたのか」という厳密な因果関係を解き明かすことは原理的に不可能だったのです。
+        </p>
+
+        <h4>薬物投与法の時間分解能の限界</h4>
+        <p>
+          特定の受容体に結合する薬物（アゴニストやアンタゴニスト）を注射する方法では、薬物が拡散して細胞膜に届くまで数分〜数十分以上かかります。脳のミリ秒（1/1000秒）単位の高速な電気通信には到底追いつけませんでした。
+        </p>
+
+        <div class="comparison-grid">
+          <div class="comp-col">
+            <h5>従来の電気刺激法</h5>
+            <ul>
+              <li>空間分解能：<strong>極めて低い</strong>（電極周囲が全滅で興奮）</li>
+              <li>時間分解能：高い（パルス通電）</li>
+              <li>因果関係の証明：<strong>不可能</strong></li>
+            </ul>
+          </div>
+          <div class="comp-col highlight">
+            <h5>オプトジェネティクス（光遺伝学）</h5>
+            <ul>
+              <li>空間分解能：<strong>極めて高い</strong>（特異的プロモーターで1種類の細胞のみ）</li>
+              <li>時間分解能：<strong>極めて高い</strong>（1ミリ秒の光パルスで1発発火）</li>
+              <li>因果関係の証明：<strong>完全実証可能！</strong></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- TAB 2 -->
+      <article class="s-tab-pane" id="s-pane-2">
+        <h3 class="pane-title">【膜電位の生物物理】ネルンストの式と活動電位の電気化学</h3>
+        
+        <h4>静止膜電位（-70mV）が成立する熱力学的原理</h4>
+        <p>
+          生体膜の内外には、\(\text{Na}^+/\text{K}^+\)-ATPase（ナトリウムポンプ）により急峻なイオン濃度勾配が維持されています。
+        </p>
+        <ul class="science-list">
+          <li><strong>\(\text{K}^+\)（カリウムイオン）:</strong> 細胞内（約 140 mM） ≫ 細胞外（約 5 mM）</li>
+          <li><strong>\(\text{Na}^+\)（ナトリウムイオン）:</strong> 細胞外（約 145 mM） ≫ 細胞内（約 12 mM）</li>
+        </ul>
+        <p>
+          特定のイオン \(i\) の化学的拡散力と静電力（クーロン力）がつりあう電位は<strong>ネルンストの式（Nernst Equation）</strong>で表されます：
+        </p>
+        <div class="math-box">
+          \[ E_i = \frac{RT}{zF} \ln \left( \frac{[C_i]_{out}}{[C_i]_{in}} \right) \]
+          <small>※ \(R\): 気体定数, \(T\): 絶対温度, \(z\): イオン価数, \(F\): ファラデー定数</small>
+        </div>
+        <p>
+          体温37℃（310K）において、各イオンの平衡電位は \(E_K \approx -90\,\text{mV}\)、\(E_{Na} \approx +62\,\text{mV}\) です。
+          静止状態の細胞膜は \(\text{K}^+\) リークチャネルによりカリウム透過性 \(P_K\) が圧倒的に高いため、膜電位は \(E_K\) に近い <strong>-70 mV</strong> に保たれます（ゴールドマン・ホジキン・カッツの式）。
+        </p>
+
+        <h4>活動電位（Action Potential）の生理学的サイクル</h4>
+        <ol class="science-ordered-list">
+          <li><strong>光刺激脱分極（-70mV ➔ 閾値 -55mV）:</strong> 青色光によりチャネルロドプシンが開き、急峻な電気化学ポテンシャル勾配に従って \(\text{Na}^+\) が流入。</li>
+          <li><strong>急速脱分極相（-55mV ➔ +35mV）:</strong> 閾値に達すると電位依存性 \(\text{Na}^+\) チャネルが開口し、正帰還（ポジティブフィードバック）で一気にオーバーシュート。</li>
+          <li><strong>急速再分極相（+35mV ➔ -70mV）:</strong> \(\text{Na}^+\) チャネルが急速に不活性化し、電位依存性 \(\text{K}^+\) チャネルが開いて \(\text{K}^+\) が流出。</li>
+          <li><strong>後過分極相（AHP: -70mV ➔ -82mV）:</strong> 遅延整流 \(\text{K}^+\) チャネルがゆっくり閉じるため、一時的に \(E_K\)（-90mV）付近まで深く落ち込む（アンダーシュート）。</li>
+          <li><strong>不応期と回復:</strong> \(\text{Na}^+/\text{K}^+\) ポンプにより元のイオン配置と静止電位 -70mV へ復帰。</li>
+        </ol>
+      </article>
+
+      <!-- TAB 3 -->
+      <article class="s-tab-pane" id="s-pane-3">
+        <h3 class="pane-title">【分子生物学】単細胞緑藻クラミドモナスと日本のゲノム解析の決定的貢献</h3>
+
+        <h4>なぜ池のプランクトンなのか？ 0.5ミリ秒の衝撃</h4>
+        <p>
+          1990年代初頭、マックス・プランク生化学研究所のペーター・ヘーゲマンは、淡水池に生息する単細胞緑藻<strong>クラミドモナス（<em>Chlamydomonas reinhardtii</em>）</strong>の走光性を研究していました。
+        </p>
+        <p>
+          クラミドモナスは表面にある光センサー「眼点（Eyespot）」に光が当たってから、なんと<strong>わずか0.5ミリ秒（1/2000秒）後</strong>に電気インパルスを生じることを突き止めたのです。
+          人間の視覚ロドプシンはGタンパク質共役型受容体（GPCR）カスケードを介すため、光から電気信号まで少なくとも <strong>10ミリ秒</strong> かかります。
+          ヘーゲマンは「光を受け取る受容体そのものが、そのままイオンを通すチャネルとして働く一体型タンパク質が存在するはずだ」と仮説を立てました。
+        </p>
+
+        <h4>日本の研究チームによるゲノム解析の貢献</h4>
+        <div class="japan-highlight-card">
+          <div class="jh-flag">🇯🇵</div>
+          <div>
+            <strong>日本のDNA解読データが扉を開いた！</strong>
+            <p>
+              2000年頃、<strong>日本の研究者グループがクラミドモナスのDNAを大規模解析し、数千個の遺伝子塩基配列（cDNA/EST）情報を全世界に無償公開</strong>しました。
+              ヘーゲマンとナーゲルはこの日本の公開データベースの中から、動物の光受容タンパク質と相同性をもつ2つの遺伝子を特定。これこそが後にノーベル賞をもたらす<strong>チャネルロドプシン1（ChR1）とチャネルロドプシン2（ChR2）</strong>だったのです。
+            </p>
+          </div>
+        </div>
+
+        <h4>アフリカツメガエル卵母細胞での実証（2002-2003年）</h4>
+        <p>
+          ナーゲルはクラミドモナスの遺伝子をアフリカツメガエルの卵母細胞に導入し、パッチクランプ法で記録。青い光（470nm）を当てた瞬間にチャネルが開き、陽イオンが流入することを直接証明しました（Nagel et al., <em>Science</em> 2002, <em>PNAS</em> 2003）。
+        </p>
+      </article>
+
+      <!-- TAB 4 -->
+      <article class="s-tab-pane" id="s-pane-4">
+        <h3 class="pane-title">【遺伝子導入工学】生体マウスの厚い壁とオープンサイエンスの精神</h3>
+
+        <h4>ダイセロスと日本人研究者・尾藤晴彦教授のエピソード</h4>
+        <p>
+          カール・ダイセロスは少年期は文学者を志し、「人間の心や感情を理解したい」という情熱から神経科学・精神医学へ進みました。
+          1993年からの4年間、スタンフォード大学のリチャード・チェン研究室で、当時ポスドクだった<strong>現・東京大学教授の尾藤晴彦氏</strong>と共に長期記憶の転写因子を徹底的に研究。
+          尾藤教授は「必要だと思った実験は1から10まで妥協せず徹底的にやり切る、日本人のような粘り強さをもった学生だった」と述懐しています。
+        </p>
+
+        <h4>生体マウスでの挫折と「レンチウイルスの限界」</h4>
+        <p>
+          2005年、ダイセロスらは培養ディッシュ上の神経細胞でChR2による光発火制御に成功（Boyden et al., <em>Nature Neuroscience</em> 2005）。
+          しかし、<strong>実際のマウス生体脳では全くうまく動きませんでした。</strong>
+          当時遺伝子導入に使われていた「レンチウイルス」では、生体脳内で安定して光反応を起こせるだけの十分な量のチャネルロドプシンを作らせることができなかったのです。
+        </p>
+
+        <h4>プラスミドの無償配布と慶應大・田中謙二教授らのブレイクスルー</h4>
+        <p>
+          ここでダイセロスは驚くべき行動をとります。自分たちの作った<strong>ChR2の環状DNA（プラスミド）を特許で囲い込まず、世界中の研究室に無償で積極的に配布</strong>したのです。
+        </p>
+        <p>
+          当時コロンビア大学に留学中だった<strong>慶應義塾大学の田中謙二教授</strong>はこのプラスミドを受け取り、生体マウスの脳内でチャネルロドプシンを大量かつ安定的に発現させる技術を開発。ダイセロスとの共著論文として2012年の <em>Cell Reports</em> 誌に発表しました。
+        </p>
+        <div class="whisker-proof-card">
+          <strong>🐭 マウスのヒゲが動いた歴史的瞬間:</strong>
+          生きたマウスの大脳皮質運動野にChR2を導入し、頭部に差し込んだ極細光ファイバーから青色光をパルス照射したところ、電気生理学的なスパイク発生とともに<strong>マウスのヒゲ（Whisker）が光の周波数に合わせてピクピクと動く</strong>因果関係が完璧に証明されました！
+        </div>
+      </article>
+
+      <!-- TAB 5 -->
+      <article class="s-tab-pane" id="s-pane-5">
+        <h3 class="pane-title">【光生理学ツール】ChR2（興奮）と NpHR（抑制）の双方向光操作</h3>
+
+        <h4>光で駆動するアクセルとブレーキのツールボックス</h4>
+        <div class="tool-deck-grid">
+          <div class="tool-card blue">
+            <span class="tool-tag">⚡ 興奮（ON / アクセル）</span>
+            <h5>チャネルロドプシン2 (ChR2)</h5>
+            <ul class="science-list">
+              <li><strong>由来:</strong> 単細胞緑藻（<em>Chlamydomonas reinhardtii</em>）</li>
+              <li><strong>励起波長:</strong> <strong>470 nm（青色光）</strong></li>
+              <li><strong>チャネル特性:</strong> 非選択的陽イオン透過チャネル</li>
+              <li><strong>イオン輸送:</strong> \(\text{Na}^+, \text{Ca}^{2+}, \text{H}^+\) が細胞内へ流入</li>
+              <li><strong>生理作用:</strong> 膜電位を脱分極させ、1ミリ秒で活動電位を1発トリガー</li>
+            </ul>
+          </div>
+
+          <div class="tool-card yellow">
+            <span class="tool-tag">🛑 抑制（OFF / ブレーキ）</span>
+            <h5>ハロロドプシン (NpHR)</h5>
+            <ul class="science-list">
+              <li><strong>由来:</strong> 高度好塩菌（<em>Natronomonas pharaonis</em>）</li>
+              <li><strong>励起波長:</strong> <strong>589 nm（黄色光）</strong></li>
+              <li><strong>チャネル特性:</strong> 光駆動型インバウンド塩化物イオンポンプ</li>
+              <li><strong>イオン輸送:</strong> \(\text{Cl}^-\) を能動的に細胞内へ汲み入れ</li>
+              <li><strong>生理作用:</strong> 膜電位を <strong>-88 mV</strong> まで過分極させ、自発発火を完全静止（Silence）</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4>波長多重化（Dual-wavelength control）の威力</h4>
+        <p>
+          青色光（470nm）と黄色光（589nm）は吸収スペクトルが重複しないため、<strong>同一の神経細胞や回路に対して「光の色を変えるだけで瞬時に活動電位を発生させたり、完全に発火を止めたりする」双方向の完全制御</strong>が可能です。
+        </p>
+      </article>
+
+      <!-- TAB 6 -->
+      <article class="s-tab-pane" id="s-pane-6">
+        <h3 class="pane-title">【臨床応用の最前線】失明克服への挑戦（網膜キメラロドプシン治験）</h3>
+
+        <h4>基礎科学から「ヒトの医療」へ</h4>
+        <p>
+          オプトジェネティクスは脳の基礎研究にとどまらず、現在最も熱い注目を集めているのが<strong>「ヒトへの臨床実装（Clinical translation）」</strong>です。
+        </p>
+
+        <h4>網膜色素変性症と視覚再生のメカニズム</h4>
+        <p>
+          遺伝性難病である「網膜色素変性症」などでは、光を受け取る視細胞（桿体・錐体）が変性・脱落して失明に至ります。しかし、視神経へと信号を送る「双極細胞」や「網膜神経節細胞（RGC）」は眼球内に生き残っています。
+        </p>
+        <p>
+          そこで、光を感じなくなった網膜の神経節細胞に、アデノ随伴ウイルス（AAV）ベクターを用いて<strong>光受容タンパク質「キメラロドプシン（Chimeric Rhodopsin）」</strong>の遺伝子を導入します。すると、本来光を感じない神経節細胞が人工の視細胞へと変身し、光を直接受容して脳の視覚野へインパルスを送れるようになるのです。
+        </p>
+
+        <div class="japan-highlight-card">
+          <div class="jh-flag">🏥</div>
+          <div>
+            <strong>日本発スタートアップ「レストアビジョン」のヒト臨床試験（治験）</strong>
+            <p>
+              慶應義塾大学や名古屋工業大学の研究成果をもとに設立された創薬バイオベンチャー<strong>「レストアビジョン（Restore Vision）」</strong>などにより、キメラロドプシンを用いた視覚再生遺伝子治療薬の<strong>ヒトを対象とした臨床試験（治験）</strong>がまさに現在進行しています。
+            </p>
+            <p>
+              池の緑の藻から始まった純粋な基礎研究が、20余年の歳月を経て、失明した患者の目に再び光を取り戻す革新的医療へと結実しつつあるのです。
+            </p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </aside>
+
+  <!-- Backdrop for Science Drawer -->
+  <div id="drawer-backdrop" class="drawer-backdrop"></div>
 
   <!-- ====================================================
        BOTTOM "YUKKURI" TALK BAR (BIG BOLD SUBTITLES)
