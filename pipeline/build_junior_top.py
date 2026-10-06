@@ -24,7 +24,7 @@ def generate_junior_index():
         <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
           <div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-              <span class="category-tag" style="background: #235937; color: #fff; padding: 0.15rem 0.45rem;">{art['category'].upper()}</span>
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">{art['category'].upper()}</span>
               <span style="font-size: 0.75rem; color: var(--times-muted); font-weight: 700;">英検準2級〜2級</span>
             </div>
             <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
@@ -74,7 +74,7 @@ def generate_junior_index():
   <div class="edition-switcher-bar-junior">
     <div>
       <span class="level-badge-pre2">THE JUNIOR</span>
-      <span style="font-weight: 600; color: #111;">高校1〜2年・英検準2級〜2級向けステップアップ紙面</span>
+      <span style="font-weight: 700; color: #143820;">高校1〜2年・英検準2級〜2級向けステップアップ紙面</span>
     </div>
     <div>
       <a href="../index.html" class="btn-switch-to-senior" title="難関国公立・早慶・英検準1〜1級レベルへ">
@@ -100,25 +100,25 @@ def generate_junior_index():
         <li class="nav-item"><a href="#articles-catalog">All Articles (全5分野)</a></li>
         <li class="nav-item"><a href="#how-to-study">学習の進め方</a></li>
         <li class="nav-item" style="margin-left: auto;">
-          <a href="../index.html" style="color: var(--times-red); font-weight: 700;">発展・難関大版へ戻る ↗</a>
+          <a href="../index.html" style="color: var(--times-black); font-weight: 700;">発展・難関大版へ戻る ↗</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- Level Concept Sub-Banner -->
-  <div style="background: #eaf3ed; border-bottom: 2px solid #235937; padding: 1.25rem 1rem;">
+  <div style="background: #eef5f0; border-bottom: 2px solid #235937; padding: 1.25rem 1rem;">
     <div class="page-wrapper" style="padding-top: 0; padding-bottom: 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
       <div>
-        <div style="font-family: var(--font-headline); font-size: 1.25rem; font-weight: 700; color: #1b4d2e;">
+        <div style="font-family: var(--font-headline); font-size: 1.25rem; font-weight: 700; color: #143820;">
           🌱 世界の本格ニュースを、無理なく読める高校生標準英語で。
         </div>
-        <div style="font-size: 0.85rem; color: #2e593d; margin-top: 0.35rem; line-height: 1.6;">
-          『THE JUNIOR』は、本家THE ACADEMIC TIMESと同じ本格的なテーマ（認知心理学、先端医療、安保、国際通商など）を、<strong>英検準2級〜2級（CEFR A2〜B1）</strong>の標準的な語彙と構文、ゆっくり聴き取りやすい朗読音声（約135 wpm）で楽しむための特別エディションです。
+        <div style="font-size: 0.85rem; color: #1e452a; margin-top: 0.35rem; line-height: 1.6;">
+          『THE JUNIOR』は、本家THE ACADEMIC TIMESと同じ本格的なテーマ（認知心理学、先端医療、安保、国際通商など）を、<strong style="color: #143820;">英検準2級〜2級（CEFR A2〜B1）</strong>の標準的な語彙と構文、ゆっくり聴き取りやすい朗読音声（約135 wpm）で楽しむための特別エディションです。
         </div>
       </div>
       <div>
-        <a href="#articles-catalog" class="btn-trial" style="background: #235937; border-color: #235937; text-decoration: none;">
+        <a href="#articles-catalog" class="btn-trial" style="background: #235937; border-color: #235937; color: #ffffff !important; text-decoration: none;">
           記事一覧を見る ↓
         </a>
       </div>
@@ -137,7 +137,7 @@ def generate_junior_index():
         </div>
 
         <article class="left-story">
-          <span class="badge-new" style="background: #235937;">LAW & SOCIETY</span>
+          <span class="badge-new green-fill">LAW & SOCIETY</span>
           <h2 class="left-story-title">
             <a href="{left1['category']}/{left1['slug']}/index.html">{left1['title']}</a>
           </h2>
@@ -148,7 +148,7 @@ def generate_junior_index():
         </article>
 
         <article class="left-story">
-          <span class="badge-new" style="background: #235937;">WORLD & FUTURE</span>
+          <span class="badge-new green-fill">WORLD & FUTURE</span>
           <h2 class="left-story-title">
             <a href="{left2['category']}/{left2['slug']}/index.html">{left2['title']}</a>
           </h2>
@@ -166,7 +166,7 @@ def generate_junior_index():
             <img src="{lead['image']}" alt="{lead['title']}" class="lead-image">
           </div>
 
-          <span class="category-tag" style="background: #235937; color: #fff; padding: 0.2rem 0.5rem;">
+          <span class="category-tag green-fill" style="padding: 0.2rem 0.5rem;">
             TODAY'S FEATURED LEAD • {lead['category'].upper()}
           </span>
           <h1 class="lead-story-title" style="font-size: 2.1rem; margin-top: 0.5rem;">
@@ -181,7 +181,7 @@ def generate_junior_index():
             {lead['lead_snippet']}
           </p>
           <div style="margin-top: 1rem; display: flex; gap: 1rem; align-items: center;">
-            <a href="{lead['category']}/{lead['slug']}/index.html" class="btn-trial" style="background: #235937; border-color: #235937; text-decoration: none; padding: 0.4rem 1rem;">
+            <a href="{lead['category']}/{lead['slug']}/index.html" class="btn-trial" style="background: #235937; border-color: #235937; color: #ffffff !important; text-decoration: none; padding: 0.4rem 1rem;">
               この記事をJunior版で読む（音声・クイズ付） →
             </a>
             <a href="{lead['original_article_url']}" style="font-size: 0.8rem; color: #555; text-decoration: underline;">
@@ -193,7 +193,7 @@ def generate_junior_index():
         <!-- Sub-leads Grid -->
         <div class="sub-lead-grid">
           <div class="sub-lead-item">
-            <span class="category-tag" style="background: #235937; color: #fff; padding: 0.15rem 0.4rem;">{sub1['category'].upper()}</span>
+            <span class="category-tag green-fill" style="padding: 0.15rem 0.4rem;">{sub1['category'].upper()}</span>
             <h3 class="sub-lead-title">
               <a href="{sub1['category']}/{sub1['slug']}/index.html">{sub1['title']}</a>
             </h3>
@@ -204,7 +204,7 @@ def generate_junior_index():
           </div>
 
           <div class="sub-lead-item">
-            <span class="category-tag" style="background: #235937; color: #fff; padding: 0.15rem 0.4rem;">{sub2['category'].upper()}</span>
+            <span class="category-tag green-fill" style="padding: 0.15rem 0.4rem;">{sub2['category'].upper()}</span>
             <h3 class="sub-lead-title">
               <a href="{sub2['category']}/{sub2['slug']}/index.html">{sub2['title']}</a>
             </h3>

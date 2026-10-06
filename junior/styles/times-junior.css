@@ -3,7 +3,9 @@
 
 :root {
   --junior-green: #235937;
-  --junior-light-green: #eaf3ed;
+  --junior-dark-green: #143820;
+  --junior-light-green: #eef5f0;
+  --junior-border-green: #c1decb;
   --junior-accent: #2e7d32;
   --junior-gold: #c59b27;
 }
@@ -45,11 +47,29 @@
   margin-top: 0.25rem;
 }
 
-/* Junior Level Badge */
+/* Top Switcher Bar */
+.edition-switcher-bar-junior {
+  background: var(--junior-light-green);
+  border-bottom: 1px solid var(--junior-border-green);
+  padding: 0.45rem 1rem;
+  font-size: 0.78rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--junior-dark-green);
+}
+
+.edition-switcher-bar-junior span {
+  color: var(--junior-dark-green) !important;
+}
+
+/* Level Badges & Tags */
 .level-badge-pre2 {
   display: inline-block;
   background: var(--junior-green);
-  color: #fff;
+  color: #ffffff !important;
   font-size: 0.72rem;
   font-weight: 700;
   padding: 0.2rem 0.55rem;
@@ -59,30 +79,113 @@
   vertical-align: middle;
 }
 
-.edition-switcher-bar-junior {
+/* Overriding Red/Black on Green in Junior */
+.badge-new {
+  color: var(--junior-green) !important;
+  background: transparent !important;
+  font-weight: 800;
+}
+
+.badge-new.green-fill {
+  background: var(--junior-green) !important;
+  color: #ffffff !important;
+  padding: 0.15rem 0.45rem;
+  border-radius: 2px;
+}
+
+.dialogue-badge {
+  background: var(--junior-green) !important;
+  color: #ffffff !important;
+  border-bottom: none !important;
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+}
+
+.category-tag {
+  color: var(--junior-green) !important;
+  font-weight: 800;
+}
+
+.category-tag.green-fill {
+  background: var(--junior-green) !important;
+  color: #ffffff !important;
+  padding: 0.15rem 0.45rem;
+  border-radius: 2px;
+}
+
+/* Switcher Buttons */
+.btn-switch-to-senior {
+  display: inline-flex;
+  align-items: center;
+  background: #111111;
+  color: #ffffff !important;
+  padding: 0.28rem 0.75rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+  border: 1px solid #111;
+}
+
+.btn-switch-to-senior:hover {
+  background: #333333;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Junior Level Banner on Articles */
+.junior-level-banner {
   background: var(--junior-light-green);
-  border-bottom: 1px solid #c8e0d1;
-  padding: 0.45rem 1rem;
-  font-size: 0.78rem;
+  border: 1px solid var(--junior-border-green);
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  color: var(--junior-dark-green);
 }
 
-.btn-switch-to-senior {
-  background: #111;
-  color: #fff;
-  padding: 0.25rem 0.65rem;
-  border-radius: 2px;
-  text-decoration: none;
-  font-weight: 700;
+.junior-level-banner span {
+  color: var(--junior-dark-green);
+}
+
+.junior-level-badge {
+  background: var(--junior-green);
+  color: #ffffff !important;
   font-size: 0.75rem;
-  transition: opacity 0.2s;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 2px;
+  letter-spacing: 0.05em;
 }
 
-.btn-switch-to-senior:hover {
-  opacity: 0.85;
-  color: #fff;
+/* Sentence Reading Highlight (Soft Green with High-Contrast Forest Green Text) */
+.article-sentence.sentence-playing,
+.article-sentence.playing {
+  background-color: #e2f0e6 !important;
+  color: var(--junior-dark-green) !important;
 }
+
+.article-sentence:hover {
+  background-color: #edf5ef !important;
+}
+
+/* Quiz Elements in Junior Edition */
+.quiz-num-badge {
+  color: var(--junior-green) !important;
+}
+
+.quiz-btn.correct {
+  border-color: var(--junior-green) !important;
+  color: var(--junior-green) !important;
+}
+
+.badge-updated {
+  color: var(--junior-green) !important;
+  background: transparent !important;
+  font-weight: 800;
+}
+

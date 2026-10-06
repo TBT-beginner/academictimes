@@ -20,6 +20,8 @@ PORTAL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 JUNIOR_DIR = os.path.join(PORTAL_DIR, "junior")
 
 async def synth_audio(text, voice, out_path, sem, rate="+0%"):
+    if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+        return
     async with sem:
         for attempt in range(3):
             try:
@@ -193,7 +195,7 @@ def build_junior_article_html(art):
   <div class="edition-switcher-bar-junior">
     <div>
       <span class="level-badge-pre2">THE JUNIOR</span>
-      <span style="font-weight: 600; color: #111;">英検準2級〜2級（高校1〜2年・基礎〜標準）</span>
+      <span style="font-weight: 700; color: #143820;">英検準2級〜2級（高校1〜2年・基礎〜標準）</span>
     </div>
     <div>
       <a href="{orig_url}" class="btn-switch-to-senior" title="同じテーマの発展・難関大版へジャンプ">
@@ -222,7 +224,7 @@ def build_junior_article_html(art):
         <li class="nav-item"><a href="#section-syntax">Syntax</a></li>
         <li class="nav-item"><a href="#section-quiz">Quiz (全3問)</a></li>
         <li class="nav-item" style="margin-left: auto;">
-          <a href="{orig_url}" style="color: var(--times-red); font-weight: 700;">発展版へ移動 ↗</a>
+          <a href="{orig_url}" style="color: var(--times-black); font-weight: 700;">発展版へ移動 ↗</a>
         </li>
       </ul>
     </div>
@@ -235,20 +237,20 @@ def build_junior_article_html(art):
       <div class="junior-level-banner">
         <div>
           <span class="junior-level-badge">LEVEL: 英検準2級〜2級</span>
-          <span style="font-size: 0.85rem; color: #235937; font-weight: 600; margin-left: 0.5rem;">
+          <span style="font-size: 0.85rem; color: #143820; font-weight: 600; margin-left: 0.5rem;">
             🌱 わかりやすい構文と落ち着いた朗読音声（聞き取りやすい標準スピード）
           </span>
         </div>
         <div>
-          <a href="{orig_url}" style="font-size: 0.82rem; color: #111; text-decoration: underline; font-weight: 700;">
-            難関大・英検準1級〜1級の表現で読む →
+          <a href="{orig_url}" class="btn-switch-to-senior">
+            🏛️ 難関大・英検準1級〜1級の表現で読む ↗
           </a>
         </div>
       </div>
 
       <!-- HERO HEADLINE -->
       <header class="hero-header" style="min-height: auto; padding: 1.5rem 0;">
-        <span class="category-tag" style="background: #235937; color: #fff; padding: 0.2rem 0.5rem;">
+        <span class="category-tag green-fill">
           {art['category_label']}
         </span>
         <h1 class="hero-title" style="font-size: 2.2rem; margin: 0.75rem 0;">{title}</h1>
@@ -324,7 +326,7 @@ def build_junior_article_html(art):
       <section class="dialogue-wrapper" id="section-discussion" style="margin-top: 3rem;">
         <div class="dialogue-head">
           <div class="dialogue-title-area">
-            <span class="dialogue-badge" style="background: #235937;">TALK & DISCUSS</span>
+            <span class="dialogue-badge">TALK & DISCUSS</span>
             <h2 class="dialogue-main-heading">Keita先生とNanamiさんのニュース深掘りトーク（Junior版）</h2>
           </div>
           <div>
