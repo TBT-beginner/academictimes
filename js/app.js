@@ -1,26 +1,31 @@
-// Interactive Audio Player, Dialogue Sequencer, Speed Controller, Sticky Title Bar, TOC & Quiz Controller
+// THE ACADEMIC TIMES & THE JUNIOR - Master Interactive Controller
+// Features: Dynamic Continuous Audio Sequencer, Dialogue Continuous Play, Speed Control,
+// Sticky Article Header, Table of Contents, Mobile Tooltips, Interactive Quiz with Score & Retry,
+// Japanese Translation Toggle, Keyboard Navigation
 
 document.addEventListener('DOMContentLoaded', () => {
   let currentAudio = null;
   let currentActiveBtn = null;
   let isSequencePlaying = false;
+  let activePlaylist = [];
   let sequenceIndex = 0;
   let currentPlaybackRate = 1.0;
+  let activeMasterBtn = null;
 
   // ==========================================================================
-  // 1. SPEED CONTROL
+  // 1. SPEED CONTROLLER (0.8x, 1.0x, 1.2x, 1.5x)
   // ==========================================================================
   window.setSpeed = function(rate, btnElement) {
     currentPlaybackRate = parseFloat(rate);
     if (currentAudio) {
-      currentAudio.playbackRate = currentPlaybackRate;
+      try {
+        currentAudio.playbackRate = currentPlaybackRate;
+      } catch (e) {}
     }
     document.querySelectorAll('.btn-speed-opt').forEach(btn => {
-      btn.classList.remove('active-speed');
+      const bSpeed = parseFloat(btn.getAttribute('data-speed'));
+      btn.classList.toggle('active-speed', bSpeed === currentPlaybackRate);
     });
-    if (btnElement) {
-      btnElement.classList.add('active-speed');
-    }
   };
 
   document.querySelectorAll('.btn-speed-opt').forEach(btn => {
@@ -31,11 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================================================
-  // 2. AUDIO PLAYBACK (Single & Continuous Playlist)
+  // 2. CORE AUDIO PLAYBACK
   // ==========================================================================
   window.stopAllAudio = function() {
     if (currentAudio) {
       currentAudio.pause();
+      currentAudio.currentTime = 0;
       currentAudio = null;
     }
     if (currentActiveBtn) {
@@ -45,6 +51,18 @@ document.addEventListener('DOMContentLoaded', () => {
       currentActiveBtn = null;
     }
     document.querySelectorAll('.dlg-turn').forEach(el => el.classList.remove('active-turn'));
+    document.querySelectorAll('.article-sentence').forEach(el => el.classList.remove('sentence-playing', 'playing'));
+    const headlineBlock = document.getElementById('article-headline-block');
+    if (headlineBlock) headlineBlock.classList.remove('active-turn');
+
+    if (activeMasterBtn) {
+      activeMasterBtn.classList.remove('playing');
+      const icon = activeMasterBtn.querySelector('.audio-state-icon');
+      if (icon) icon.textContent = '▶';
+      const label = activeMasterBtn.querySelector('.audio-btn-label');
+      if (label) label.textContent = '英語朗読 ＋ 日本語対話解説を続けて聴く';
+      activeMasterBtn = null;
+    }
     isSequencePlaying = false;
   };
 
@@ -68,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     audio.play().catch(e => {
       console.warn("Audio playback interrupted or failed:", e);
+      if (onEndedCallback) onEndedCallback();
     });
 
     audio.addEventListener('ended', () => {
@@ -82,38 +101,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  // Continuous Sequence: Title -> English Body -> Keita & Nanami Dialogue
-  const sequencePlaylist = [
-    { src: 'audio/headline.mp3', targetId: 'article-headline-block', label: '記事タイトル朗読' },
-    { src: 'audio/full_body.mp3', targetId: 'full-body-banner', label: '英文本文朗読' },
-    { src: 'audio/dlg_01.mp3', targetId: 'dlg-1', label: 'Nanamiの質問' },
-    { src: 'audio/dlg_02.mp3', targetId: 'dlg-2', label: 'Keita先生の解説' },
-    { src: 'audio/dlg_03.mp3', targetId: 'dlg-3', label: 'Nanamiの疑問' },
-    { src: 'audio/dlg_04.mp3', targetId: 'dlg-4', label: 'Keita先生（思考の余白）' },
-    { src: 'audio/dlg_05.mp3', targetId: 'dlg-5', label: 'Nanami（見知らぬ人との関わり）' },
-    { src: 'audio/dlg_06.mp3', targetId: 'dlg-6', label: 'Keita先生（日常の温もり）' },
-    { src: 'audio/dlg_07.mp3', targetId: 'dlg-7', label: 'Nanamiのまとめ' }
-  ];
+  // ==========================================================================
+  // 3. DYNAMIC CONTINUOUS PLAYLIST SEQUENCER
+  // ==========================================================================
+  function buildDynamicPlaylist(onlyDialogue = false) {
+    const list = [];
+    if (!onlyDialogue) {
+      const headlineBlock = document.getElementById('article-headline-block');
+      list.push({
+        src: 'audio/headline.mp3',
+        targetId: 'article-headline-block',
+        label: 'タイトル朗読'
+      });
+      list.push({
+        src: 'audio/full_body.mp3',
+        targetId: 'full-body-banner',
+        label: '英文本文朗読'
+      });
+    }
+
+    const dlgTurns = document.querySelectorAll('.dlg-turn');
+    dlgTurns.forEach((turn, idx) => {
+      const playBtn = turn.querySelector('[data-dlg-audio]');
+      if (!playBtn) return;
+      const audioSrc = playBtn.getAttribute('data-dlg-audio');
+      const nameEl = turn.querySelector('.dlg-name');
+      const speakerName = nameEl ? nameEl.textContent.trim() : `解説 ${idx + 1}`;
+      list.push({
+        src: audioSrc,
+        targetId: turn.id || `dlg-${idx + 1}`,
+        label: speakerName,
+        turnElement: turn
+      });
+    });
+    return list;
+  }
 
   function playSequenceStep(index, masterBtn) {
-    if (!isSequencePlaying || index >= sequencePlaylist.length) {
-      isSequencePlaying = false;
-      if (masterBtn) {
-        masterBtn.classList.remove('playing');
-        const icon = masterBtn.querySelector('.audio-state-icon');
-        if (icon) icon.textContent = '▶';
-        const label = masterBtn.querySelector('.audio-btn-label');
-        if (label) label.textContent = '英語朗読 ＋ 日本語対話解説を続けて聴く';
-      }
-      document.querySelectorAll('.dlg-turn').forEach(el => el.classList.remove('active-turn'));
-      const headlineBlock = document.getElementById('article-headline-block');
-      if (headlineBlock) headlineBlock.classList.remove('active-turn');
+    if (!isSequencePlaying || index >= activePlaylist.length) {
+      window.stopAllAudio();
       return;
     }
 
     sequenceIndex = index;
-    const item = sequencePlaylist[index];
+    const item = activePlaylist[index];
 
+    // Reset visual highlights
     document.querySelectorAll('.dlg-turn').forEach(el => el.classList.remove('active-turn'));
     const headlineBlock = document.getElementById('article-headline-block');
     if (headlineBlock) headlineBlock.classList.remove('active-turn');
@@ -121,12 +154,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const targetEl = document.getElementById(item.targetId);
     if (targetEl) {
       targetEl.classList.add('active-turn');
-      targetEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 
     if (masterBtn) {
       const label = masterBtn.querySelector('.audio-btn-label');
-      if (label) label.textContent = `再生中: ${item.label} (${index + 1}/${sequencePlaylist.length})`;
+      if (label) {
+        label.textContent = `再生中: ${item.label} (${index + 1}/${activePlaylist.length})`;
+      }
     }
 
     const audio = new Audio(item.src);
@@ -134,32 +169,35 @@ document.addEventListener('DOMContentLoaded', () => {
     currentAudio = audio;
 
     audio.play().catch(e => {
-      console.warn("Sequence audio error:", e);
-      playSequenceStep(index + 1, masterBtn);
+      console.warn("Sequence audio missing or interrupted, skipping to next:", item.src, e);
+      // Automatically advance to next track if missing (e.g. headline.mp3)
+      setTimeout(() => {
+        if (isSequencePlaying) playSequenceStep(index + 1, masterBtn);
+      }, 300);
     });
 
     audio.addEventListener('ended', () => {
       setTimeout(() => {
-        playSequenceStep(index + 1, masterBtn);
-      }, 500);
+        if (isSequencePlaying) {
+          playSequenceStep(index + 1, masterBtn);
+        }
+      }, 400);
     });
   }
 
   const continuousBtn = document.getElementById('btn-play-continuous');
   if (continuousBtn) {
     continuousBtn.addEventListener('click', () => {
-      if (isSequencePlaying) {
+      if (isSequencePlaying && activeMasterBtn === continuousBtn) {
         window.stopAllAudio();
-        continuousBtn.classList.remove('playing');
-        const icon = continuousBtn.querySelector('.audio-state-icon');
-        if (icon) icon.textContent = '▶';
-        const label = continuousBtn.querySelector('.audio-btn-label');
-        if (label) label.textContent = '英語朗読 ＋ 日本語対話解説を続けて聴く';
         return;
       }
 
       window.stopAllAudio();
       isSequencePlaying = true;
+      activeMasterBtn = continuousBtn;
+      activePlaylist = buildDynamicPlaylist(false);
+
       continuousBtn.classList.add('playing');
       const icon = continuousBtn.querySelector('.audio-state-icon');
       if (icon) icon.textContent = '⏸';
@@ -171,32 +209,37 @@ document.addEventListener('DOMContentLoaded', () => {
   const dialogueContinuousBtn = document.getElementById('btn-play-dialogue-all');
   if (dialogueContinuousBtn) {
     dialogueContinuousBtn.addEventListener('click', () => {
-      if (isSequencePlaying) {
+      if (isSequencePlaying && activeMasterBtn === dialogueContinuousBtn) {
         window.stopAllAudio();
-        dialogueContinuousBtn.classList.remove('playing');
-        const icon = dialogueContinuousBtn.querySelector('.audio-state-icon');
-        if (icon) icon.textContent = '▶';
         return;
       }
 
       window.stopAllAudio();
       isSequencePlaying = true;
+      activeMasterBtn = dialogueContinuousBtn;
+      activePlaylist = buildDynamicPlaylist(true);
+
       dialogueContinuousBtn.classList.add('playing');
       const icon = dialogueContinuousBtn.querySelector('.audio-state-icon');
       if (icon) icon.textContent = '⏸';
 
-      playSequenceStep(2, dialogueContinuousBtn);
+      playSequenceStep(0, dialogueContinuousBtn);
     });
   }
 
+  // Individual sentence click-to-play
   document.querySelectorAll('[data-sentence-audio]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       if (e.target.closest('.tooltip-bubble')) return;
       const src = btn.getAttribute('data-sentence-audio');
-      window.playAudio(src, btn);
+      window.playAudio(src, btn, () => {
+        btn.classList.remove('sentence-playing', 'playing');
+      });
+      btn.classList.add('sentence-playing');
     });
   });
 
+  // Individual dialogue click-to-play
   document.querySelectorAll('[data-dlg-audio]').forEach(btn => {
     btn.addEventListener('click', () => {
       const src = btn.getAttribute('data-dlg-audio');
@@ -220,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
-  // 3. JAPANESE TRANSLATION TOGGLE
+  // 4. JAPANESE TRANSLATION TOGGLE
   // ==========================================================================
   const toggleJaBtn = document.getElementById('btn-toggle-ja');
   let areTranslationsVisible = false;
@@ -255,26 +298,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================================================
-  // 4. STICKY ARTICLE TITLE BAR & READING PROGRESS
+  // 5. STICKY ARTICLE TITLE BAR & READING PROGRESS TRACKER
   // ==========================================================================
   const stickyBar = document.getElementById('sticky-article-bar');
   const progressBar = document.getElementById('reading-progress');
-  const mainHeader = document.querySelector('.article-header');
+  const mainHeader = document.querySelector('.article-header') || document.querySelector('.hero-header');
 
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY || window.pageYOffset;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     
-    // Progress calculation
     if (progressBar && docHeight > 0) {
       const progressPercent = Math.min(100, Math.max(0, (scrollY / docHeight) * 100));
       progressBar.style.width = `${progressPercent}%`;
     }
 
-    // Sticky bar visibility
-    if (stickyBar && mainHeader) {
-      const headerBottom = mainHeader.offsetTop + mainHeader.offsetHeight;
-      if (scrollY > headerBottom) {
+    if (stickyBar) {
+      const headerThreshold = mainHeader ? (mainHeader.offsetTop + mainHeader.offsetHeight) : 280;
+      if (scrollY > headerThreshold) {
         stickyBar.classList.add('visible');
       } else {
         stickyBar.classList.remove('visible');
@@ -283,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
   // ==========================================================================
-  // 5. FLOATING TABLE OF CONTENTS (TOC)
+  // 6. FLOATING TABLE OF CONTENTS (TOC)
   // ==========================================================================
   const tocBtn = document.getElementById('btn-floating-toc');
   const tocPanel = document.getElementById('floating-toc-panel');
@@ -308,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
-  // 6. VOCABULARY TOOLTIPS FOR MOBILE (Tap support)
+  // 7. VOCABULARY TOOLTIPS (Tap support for Touch / Mobile)
   // ==========================================================================
   document.querySelectorAll('.vocab-tip').forEach(tip => {
     tip.addEventListener('click', (e) => {
@@ -326,9 +367,61 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================================================
-  // 7. INTERACTIVE QUIZ
+  // 8. INTERACTIVE QUIZ ENGINE WITH SCORE TALLY & RETRY
   // ==========================================================================
-  document.querySelectorAll('.quiz-item').forEach(quizItem => {
+  const quizItems = document.querySelectorAll('.quiz-item, .quiz-card');
+  const quizSection = document.getElementById('section-quiz');
+
+  function updateQuizSummary() {
+    if (!quizSection || quizItems.length === 0) return;
+    const answeredCount = Array.from(quizItems).filter(item => item.dataset.answered === "true").length;
+    const correctCount = Array.from(quizItems).filter(item => item.dataset.correctAnswered === "true").length;
+
+    let banner = document.getElementById('quiz-completion-banner');
+    if (answeredCount === quizItems.length) {
+      if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'quiz-completion-banner';
+        banner.className = 'quiz-completion-banner';
+        quizSection.appendChild(banner);
+      }
+      const percent = Math.round((correctCount / quizItems.length) * 100);
+      banner.innerHTML = `
+        <div class="quiz-completion-title">
+          🎉 確認クイズ全${quizItems.length}問 完了！ スコア: ${correctCount} / ${quizItems.length} 正解 (${percent}%)
+        </div>
+        <p class="quiz-completion-desc">
+          ${correctCount === quizItems.length ? '完璧です！重要構文と文脈理解が完全に身についています。' : '間違えた設問の解説をもう一度読み直して復習してみましょう。'}
+        </p>
+        <button type="button" class="btn-retry-quiz" id="btn-retry-quiz">
+          🔄 もう一度挑戦する (Retry Quiz)
+        </button>
+      `;
+
+      const retryBtn = document.getElementById('btn-retry-quiz');
+      if (retryBtn) {
+        retryBtn.addEventListener('click', resetQuiz);
+      }
+    } else if (banner) {
+      banner.remove();
+    }
+  }
+
+  function resetQuiz() {
+    quizItems.forEach(quizItem => {
+      delete quizItem.dataset.answered;
+      delete quizItem.dataset.correctAnswered;
+      quizItem.querySelectorAll('.quiz-btn').forEach(btn => {
+        btn.classList.remove('correct', 'wrong');
+      });
+      const explanation = quizItem.querySelector('.quiz-explanation');
+      if (explanation) explanation.style.display = 'none';
+    });
+    const banner = document.getElementById('quiz-completion-banner');
+    if (banner) banner.remove();
+  }
+
+  quizItems.forEach(quizItem => {
     const buttons = quizItem.querySelectorAll('.quiz-btn');
     const explanation = quizItem.querySelector('.quiz-explanation');
 
@@ -338,6 +431,9 @@ document.addEventListener('DOMContentLoaded', () => {
         quizItem.dataset.answered = "true";
 
         const isCorrect = btn.getAttribute('data-correct') === "true";
+        if (isCorrect) {
+          quizItem.dataset.correctAnswered = "true";
+        }
 
         buttons.forEach(b => {
           if (b.getAttribute('data-correct') === "true") {
@@ -350,12 +446,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (explanation) {
           explanation.style.display = 'block';
         }
+
+        updateQuizSummary();
       });
     });
   });
 
   // ==========================================================================
-  // 8. HERO TITLE MOUSE SCROLL INTERACTION (マウススクロールで記事上部へ移動)
+  // 9. HERO TITLE MOUSE SCROLL & CUE INTERACTION
   // ==========================================================================
   const heroCue = document.getElementById('hero-scroll-cue');
   const articleSection = document.getElementById('section-article');
@@ -364,7 +462,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!articleSection) return;
     const navBar = document.querySelector('.nav-bar');
     const navHeight = navBar ? navBar.offsetHeight : 48;
-    // Calculate exact target position: top of articleSection minus navBar height and 24px breathing margin
     const targetY = articleSection.getBoundingClientRect().top + window.pageYOffset - navHeight - 24;
     window.scrollTo({
       top: Math.max(0, Math.round(targetY)),
@@ -381,8 +478,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let isGlidingDown = false;
   window.addEventListener('wheel', (e) => {
-    // When the user is looking at the initial hero title and scrolls downward
-    if (window.scrollY < 120 && e.deltaY > 10 && !isGlidingDown) {
+    if (window.scrollY < 120 && e.deltaY > 15 && !isGlidingDown) {
       if (articleSection) {
         isGlidingDown = true;
         scrollToArticleTop();
@@ -392,5 +488,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }, { passive: true });
-});
 
+  // ==========================================================================
+  // 10. KEYBOARD SHORTCUTS (Space = Play/Pause, Esc = Close Overlays)
+  // ==========================================================================
+  window.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+      return;
+    }
+    if (e.code === 'Escape') {
+      if (tocPanel && tocPanel.classList.contains('active')) {
+        tocPanel.classList.remove('active');
+      }
+      document.querySelectorAll('.vocab-tip.show-tip').forEach(t => t.classList.remove('show-tip'));
+    }
+  });
+});

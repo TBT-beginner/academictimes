@@ -189,3 +189,26 @@
   font-weight: 800;
 }
 
+/* Junior Quiz Completion Banner & Retry Button */
+.quiz-completion-banner {
+  background: var(--junior-light-green) !important;
+  border: 2px solid var(--junior-green) !important;
+}
+
+.quiz-completion-title {
+  color: var(--junior-dark-green) !important;
+}
+
+.quiz-completion-desc {
+  color: #1e452a !important;
+}
+
+.btn-retry-quiz {
+  background: var(--junior-green) !important;
+  border-color: var(--junior-green) !important;
+  color: #ffffff !important;
+}
+
+.btn-retry-quiz:hover {
+  background: var(--junior-dark-green) !important;
+}

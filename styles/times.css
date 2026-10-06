@@ -2328,5 +2328,43 @@ body {
   color: #555;
 }
 
+/* Quiz Completion Banner & Retry Button */
+.quiz-completion-banner {
+  background: #f7f9fb;
+  border: 2px solid var(--times-black);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 2px;
+  text-align: center;
+  animation: fadeIn 0.25s ease-in;
+}
 
+.quiz-completion-title {
+  font-family: var(--font-headline);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--times-black);
+  margin-bottom: 0.4rem;
+}
 
+.quiz-completion-desc {
+  font-size: 0.88rem;
+  color: var(--times-body);
+  margin-bottom: 1rem;
+}
+
+.btn-retry-quiz {
+  background: var(--times-black);
+  color: #ffffff !important;
+  border: 1px solid var(--times-black);
+  padding: 0.45rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s ease;
+}
+
+.btn-retry-quiz:hover {
+  background: #333333;
+}

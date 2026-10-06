@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About & Pipeline Architecture | THE ACADEMIC TIMES</title>
+  <meta name="description" content="THE ACADEMIC TIMES のシステム構造、Edge-TTS 音声自動化パイプライン、ファクトチェック手順、編集ポリシー、規約に関する解説ページ。">
+  <link rel="stylesheet" href="styles/times.css">
+</head>
+<body class="times-theme">
+
+  <!-- Top Date Bar -->
+  <div class="top-date-bar">
+    <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem; flex-wrap: wrap; gap: 0.5rem;">
+      <span>Tuesday October 6 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; Platform Specifications & Architecture</span>
+      <div>
+        <a href="index.html" style="color: #fff; font-weight: 700; text-decoration: underline;">Homeに戻る ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Times Masthead -->
+  <header class="masthead">
+    <a href="index.html" class="masthead-link">
+      <span class="masthead-title">THE ACADEMIC TIMES</span>
+    </a>
+    <div class="masthead-subtitle">Pipeline Architecture, Editorial Standards & Technical Specifications</div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="#pipeline">Daily Pipeline</a></li>
+        <li class="nav-item"><a href="#edge-tts">Edge-TTS Automation</a></li>
+        <li class="nav-item"><a href="#fact-check">Fact-Checking</a></li>
+        <li class="nav-item"><a href="#cms">CMS Workflow</a></li>
+        <li class="nav-item"><a href="#editorial">Editorial Team</a></li>
+        <li class="nav-item"><a href="#attribution">Source Policy</a></li>
+        <li class="nav-item"><a href="#privacy">Privacy & Terms</a></li>
+        <li class="nav-item" style="margin-left: auto;">
+          <a href="junior/index.html" style="color: #235937; font-weight: 700;">🌱 THE JUNIOR (英検準2〜2級版) ↗</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-wrapper" style="margin-top: 2rem;">
+
+    <article class="article-container" style="max-width: 900px; margin: 0 auto;">
+      <header style="border-bottom: 2px solid var(--times-black); padding-bottom: 1.5rem; margin-bottom: 2.5rem;">
+        <span class="category-tag">PLATFORM DOCUMENTATION</span>
+        <h1 style="font-family: var(--font-headline); font-size: 2.4rem; margin: 0.5rem 0;">
+          システム設計・音声生成パイプライン・編集指針
+        </h1>
+        <p style="font-size: 1.05rem; color: var(--times-muted); line-height: 1.7;">
+          『THE ACADEMIC TIMES』および姉妹紙『THE JUNIOR』が採用する技術基盤、日次自動音声生成アーキテクチャ、出典確認プロトコル、学術的教育方針の全容を公開しています。
+        </p>
+      </header>
+
+      <!-- Section 1: Pipeline -->
+      <section id="pipeline" style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-headline); font-size: 1.6rem; border-bottom: 1px solid var(--times-black); padding-bottom: 0.4rem; margin-bottom: 1rem;">
+          ⚙️ 1. 日次10本以上の学術ニュース配信パイプライン (Daily 10+ Article Pipeline)
+        </h2>
+        <p style="line-height: 1.8; margin-bottom: 1rem;">
+          世界の学術・時事報道（TIME, The Times, Reuters, BBC, Nature, The Guardian等）から、日本の大学入試英語長文（東大・京大・早慶等）および学術教養に直結する良質な記事を毎日選定・構造化しています。
+        </p>
+        <div style="background: #f8f9fa; border-left: 3px solid var(--times-black); padding: 1rem 1.25rem; margin-bottom: 1rem;">
+          <h4 style="margin: 0 0 0.5rem;">配信パイプラインの4ステップ：</h4>
+          <ol style="margin: 0; padding-left: 1.25rem; line-height: 1.8; font-size: 0.9rem;">
+            <li><strong>一次ソース収集：</strong> 英米主要紙および学術誌の速報から、入試頻出テーマ（認知心理学、先端医療、法哲学、国際通商、AI倫理）を抽出。</li>
+            <li><strong>難易度別テキストキュレーション：</strong> 発展・難関大版（CEFR B2〜C1）とTHE JUNIOR版（英検準2〜2級・CEFR A2〜B1）の2層に語彙・構文を最適化。</li>
+            <li><strong>対話解説生成：</strong> Keita先生（英語教育・構文指導）とNanamiさん（アシスタント）の多角的な質疑応答スクリプトを自動オーサリング。</li>
+            <li><strong>静的HTML・音声ビルド：</strong> データベース問い合わせ遅延ゼロの完全静的HTMLとEdge-TTS音声を並行生成してデプロイ。</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Section 2: Edge-TTS -->
+      <section id="edge-tts" style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-headline); font-size: 1.6rem; border-bottom: 1px solid var(--times-black); padding-bottom: 0.4rem; margin-bottom: 1rem;">
+          🎙️ 2. Edge-TTS 音声自動化システム (Voice Automation Architecture)
+        </h2>
+        <p style="line-height: 1.8; margin-bottom: 1rem;">
+          本プラットフォームの朗読および解説音声は、Microsoft Edge-TTS（高品位ニューラルネットワーク音声合成技術）を活用し、文単位および段落単位で完全同期生成されています。
+        </p>
+        <table class="vocab-table" style="margin-bottom: 1rem;">
+          <thead>
+            <tr>
+              <th>役割</th>
+              <th>使用ニューラルボイス</th>
+              <th>仕様・速度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>英文朗読（発展版）</strong></td>
+              <td><code>en-GB-RyanNeural</code></td>
+              <td>格調高い標準イギリス英語（RP風）。約150 wpm。</td>
+            </tr>
+            <tr>
+              <td><strong>英文朗読（THE JUNIOR）</strong></td>
+              <td><code>en-GB-RyanNeural</code></td>
+              <td>聞き取りやすい落ち着いた標準速度（-10%レート、約135 wpm）。</td>
+            </tr>
+            <tr>
+              <td><strong>Keita先生（解説）</strong></td>
+              <td><code>ja-JP-KeitaNeural</code></td>
+              <td>信頼感と明瞭さを備えた日本語指導音声。</td>
+            </tr>
+            <tr>
+              <td><strong>Nanamiさん（質問）</strong></td>
+              <td><code>ja-JP-NanamiNeural</code></td>
+              <td>親しみやすく活発な学習者目線の日本語音声。</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size: 0.88rem; color: var(--times-muted); line-height: 1.7;">
+          各記事には「全文通し再生」「文ごとクリック個別再生」「Keita＆Nanami解説のみ通し再生」の3系統の再生モードを実装しており、リスニングからシャドーイングまで用途に合わせて活用いただけます。
+        </p>
+      </section>
+
+      <!-- Section 3: Fact-Checking -->
+      <section id="fact-check" style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-headline); font-size: 1.6rem; border-bottom: 1px solid var(--times-black); padding-bottom: 0.4rem; margin-bottom: 1rem;">
+          🔍 3. ファクトチェック＆学術的厳密性プロトコル (Fact-Checking Protocol)
+        </h2>
+        <p style="line-height: 1.8; margin-bottom: 1rem;">
+          大学入試長文や学術小論文では、単なるフェイクニュースの排除にとどまらず、「研究の母集団（サンプルサイズ）」「統計的有意差」「対立仮説の存在」を客観的に見抜く学術リテラシーが求められます。
+        </p>
+        <ul style="line-height: 1.8; padding-left: 1.25rem;">
+          <li><strong>査読付き学術誌の確認：</strong> Nature, Science, Journal of Experimental Social Psychology などの原著論文と引用箇所を突合。</li>
+          <li><strong>学術的留保（Hedging）の重視：</strong> "suggests", "indicates", "warrants further inquiry" といった科学論文特有の留保表現を忠実に再現。</li>
+          <li><strong>多角的な視点の提示：</strong> 賛成派・反対派・中立派の主張を併記し、読者が自ら論理的結論を導き出せるよう構成。</li>
+        </ul>
+      </section>
+
+      <!-- Section 4: CMS Workflow -->
+      <section id="cms" style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-headline); font-size: 1.6rem; border-bottom: 1px solid var(--times-black); padding-bottom: 0.4rem; margin-bottom: 1rem;">
+          💻 4. 静的サイト生成ワークフロー (Semi-Automated CMS Workflow)
+        </h2>
+        <p style="line-height: 1.8; margin-bottom: 1rem;">
+          WordPress等の重厚な動的CMSに依存せず、Pythonスクリプトによる純粋な静的ファイル生成（Static Site Generation）を採用しています。これにより、サーバー負荷が極小化され、スマートフォンやタブレット環境でも秒速で描画されます。
+        </p>
+        <p style="line-height: 1.8;">
+          また、英『The Times』紙の伝統的なブロードシート（新聞大判）組版を忠実に再現したCSS設計により、長文読解においても眼精疲労が少なく、大学入試本番に近い文字組みで学習を進めることができます。
+        </p>
+      </section>
+
+      <!-- Section 5: Editorial Team -->
+      <section id="editorial" style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-headline); font-size: 1.6rem; border-bottom: 1px solid var(--times-black); padding-bottom: 0.4rem; margin-bottom: 1rem;">
+          👥 5. 編集チーム・教育方針 (Editorial Team & Mission)
+        </h2>
+        <p style="line-height: 1.8; margin-bottom: 1rem;">
+          THE ACADEMIC TIMES は、大学受験英語教育・応用言語学・法制度研究に携わる教育研究者有志によって運営されています。
+        </p>
+        <div style="background: #fdfdfd; border: 1px solid var(--times-light-border); padding: 1.25rem; margin-bottom: 1rem;">
+          <strong>ミッション：</strong><br>
+          「受験英語のための英語」と「世界で通用する本物の教養英語」の境界をなくすこと。難解な英単語を単に丸暗記するのではなく、世界でいま起きている知のフロンティアを英語で直読直解する喜びをすべての高校生・学習者に届けます。
+        </div>
+      </section>
+
+      <!-- Section 6: Attribution Policy -->
+      <section id="attribution" style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-headline); font-size: 1.6rem; border-bottom: 1px solid var(--times-black); padding-bottom: 0.4rem; margin-bottom: 1rem;">
+          📰 6. 出典明記ポリシー＆著作権方針 (Source Attribution Policy)
+        </h2>
+        <p style="line-height: 1.8; margin-bottom: 1rem;">
+          本サイトに掲載される英文要約および教育用解説は、著作権法第32条（引用）および公正な教育利用の範囲に基づき、原報道機関（TIME, The Times, BBC, Reuters, Nature 等）のクレジット、執筆記者名、公開日、および原記事への直リンクを全記事において明記しています。
+        </p>
+        <p style="font-size: 0.88rem; color: var(--times-muted); line-height: 1.7;">
+          学習者の皆様には、本サイトで概要と文法を理解した後、リンク先の一次報道紙を購読・閲覧してジャーナリズムを直接応援することを強く推奨しています。
+        </p>
+      </section>
+
+      <!-- Section 7: Privacy & Terms -->
+      <section id="privacy" style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-headline); font-size: 1.6rem; border-bottom: 1px solid var(--times-black); padding-bottom: 0.4rem; margin-bottom: 1rem;">
+          🔒 7. プライバシーポリシー＆利用規約 (Privacy & Terms)
+        </h2>
+        <p style="line-height: 1.8; margin-bottom: 0.75rem;">
+          <strong>個人情報の保護：</strong> 本サイトは会員登録不要・完全無料で利用でき、ユーザーの個人を特定できる情報（氏名、住所、メールアドレス等）の収集は一切行いません。
+        </p>
+        <p style="line-height: 1.8; margin-bottom: 0.75rem;">
+          <strong>ローカル利用の推奨：</strong> 音声再生速度や学習履歴はブラウザのセッション内でのみ一時保持され、外部サーバーへ無断送信されることはありません。
+        </p>
+        <p style="line-height: 1.8;" id="location">
+          <strong>運営拠点：</strong> 東京都港区・文京区（Tokyo, Japan）。
+        </p>
+      </section>
+
+      <div style="text-align: center; margin: 3rem 0; border-top: 2px solid var(--times-black); padding-top: 2rem;">
+        <a href="index.html" class="btn-trial" style="background: #111; color: #fff; text-decoration: none; padding: 0.6rem 1.75rem; font-size: 0.95rem;">
+          ← THE ACADEMIC TIMES トップページへ戻る
+        </a>
+      </div>
+
+    </article>
+
+  </main>
+
+  <!-- The Times UK Style Footer -->
+  <footer class="times-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo">THE ACADEMIC TIMES</a>
+        <div style="font-size: 0.8125rem; color: #888;">
+          The Independent Broadsheet for University Entrance Examination & Liberal Arts English
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 THE ACADEMIC TIMES. All Rights Reserved.</div>
+        <div><a href="index.html" style="color: #aaa;">Top of Page ↑</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

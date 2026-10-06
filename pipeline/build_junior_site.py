@@ -140,7 +140,7 @@ def build_junior_article_html(art):
         opts_html = "\n".join(opt_btns)
         
         q_card = f"""
-        <div class="quiz-card" style="margin-bottom: 2rem; border: 1px solid var(--times-light-border); padding: 1.25rem;">
+        <div class="quiz-card quiz-item" style="margin-bottom: 2rem; border: 1px solid var(--times-light-border); padding: 1.25rem;">
           <div class="quiz-card-header">
             <span class="quiz-num-badge">QUESTION {i+1}</span>
             <span style="font-size: 0.8rem; color: var(--times-muted);">英検準2級〜2級形式</span>
@@ -190,6 +190,18 @@ def build_junior_article_html(art):
   </style>
 </head>
 <body class="times-theme" id="article-top">
+
+  <!-- Sticky Article Title Bar -->
+  <div class="sticky-article-bar" id="sticky-article-bar">
+    <div class="sticky-bar-inner">
+      <div style="display: flex; align-items: baseline; min-width: 0; flex: 1;">
+        <span class="sticky-bar-category" style="color: #235937; font-weight: 800;">JUNIOR • {art['category'].upper()}</span>
+        <span class="sticky-title-text">{title}</span>
+      </div>
+      <a href="#article-top" style="font-size: 0.75rem; color: #235937; font-weight: 700; text-decoration: none; flex-shrink: 0; padding-left: 0.5rem;">Top ↑</a>
+    </div>
+    <div class="reading-progress-track" id="reading-progress" style="background: #235937;"></div>
+  </div>
 
   <!-- Top Switcher Bar -->
   <div class="edition-switcher-bar-junior">
@@ -271,6 +283,12 @@ def build_junior_article_html(art):
             </div>
           </div>
         </details>
+
+        <!-- Scroll to Article Cue -->
+        <div class="hero-scroll-cue" id="hero-scroll-cue" title="記事本文へスクロール" style="margin-top: 1rem; cursor: pointer; text-align: center;">
+          <span class="cue-label" style="font-size: 0.75rem; font-weight: 700; color: #235937; letter-spacing: 0.08em;">SCROLL TO ARTICLE</span>
+          <span class="cue-arrow" style="display: block; font-size: 1rem; color: #235937;">↓</span>
+        </div>
       </header>
 
       <!-- ARTICLE BODY -->
@@ -413,7 +431,26 @@ def build_junior_article_html(art):
     </div>
   </footer>
 
-  <script src="../../../../js/app.js"></script>
+  <!-- Floating Table of Contents -->
+  <div class="floating-toc-wrapper">
+    <div class="floating-toc-panel" id="floating-toc-panel">
+      <div class="toc-heading" style="color: #235937; border-bottom: 2px solid #235937;">TABLE OF CONTENTS</div>
+      <ul class="toc-list">
+        <li><a href="#article-top" class="toc-link">Top of Page</a></li>
+        <li><a href="#section-article" class="toc-link">Article & Audio (本文・朗読)</a></li>
+        <li><a href="#section-discussion" class="toc-link">Discussion (Keita & Nanami解説)</a></li>
+        <li><a href="#section-vocabulary" class="toc-link">Vocabulary Drill (重要単語)</a></li>
+        <li><a href="#section-syntax" class="toc-link">Syntax & Grammar (必須構文)</a></li>
+        <li><a href="#section-quiz" class="toc-link">Interactive Quiz (確認クイズ)</a></li>
+      </ul>
+    </div>
+    <button type="button" class="btn-floating-toc" id="btn-floating-toc" aria-label="Open Table of Contents" style="border-color: #235937; color: #235937;">
+      <span>☰</span>
+      <span>Contents</span>
+    </button>
+  </div>
+
+  <script src="../../../js/app.js"></script>
 </body>
 </html>
 """
@@ -433,6 +470,8 @@ async def generate_all():
         os.makedirs(audio_dir, exist_ok=True)
         
         # 1. Synthesize audio
+        # Headline audio
+        audio_tasks.append(synth_audio(art["title"], VOICE_BRITISH, os.path.join(audio_dir, "headline.mp3"), sem, rate="-10%"))
         # Full body (rate: -10% for comfortable listening pace)
         full_text = " ".join([s["en"] for s in art["sentences"]])
         audio_tasks.append(synth_audio(full_text, VOICE_BRITISH, os.path.join(audio_dir, "full_body.mp3"), sem, rate="-10%"))
