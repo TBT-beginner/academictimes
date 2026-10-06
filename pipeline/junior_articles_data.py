@@ -34,7 +34,7 @@ JUNIOR_ARTICLES = [
         "source_url": "https://time.com/7023812/case-against-wearing-headphones-in-public/",
         "source_attribution": "米週刊誌TIMEのエッセイを元に、英検準2級〜2級（高校1〜2年生）の標準的な語彙と文法で読みやすく再構成した教材です。",
         "source_student_guide": "英検2級や共通テストの長文読解では、『日常の何気ない習慣を科学的に見直すエッセイ』が頻出します。主張（イヤホンを外そう）→ 理由（脳の休息とひらめき）→ 新たな提案（街の人との関わり）という英語特有のパラグラフ構成を学びましょう。",
-        "original_article_url": "../../culture/headphones-in-public/index.html",
+        "original_article_url": "../../../culture/headphones-in-public/index.html",
         "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt96d6f358ea9d50b0/6abfba6215869b08e9e95a32/headphones.jpg?branch=production&width=1200&quality=80&auto=webp",
         "sentences": [
             {
@@ -205,7 +205,7 @@ JUNIOR_ARTICLES = [
         "source_url": "https://www.nature.com/articles/s41591-026-cancer-under50",
         "source_attribution": "国際医学誌Nature Medicineおよび英BBC Healthの報道を元に、高校基礎〜標準英語で分かりやすく書き起こした教材です。",
         "source_student_guide": "環境問題や現代の健康問題を扱った英文は、英検2級の長文問題の定番です。『驚くべき事実（Fact）→ 科学者が立てた仮説（Hypothesis）→ 私たちへの教訓』の流れを意識して読みましょう。",
-        "original_article_url": "../../science/colorectal-cancer-under-50s/index.html",
+        "original_article_url": "../../../science/colorectal-cancer-under-50s/index.html",
         "image": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {
@@ -376,7 +376,7 @@ JUNIOR_ARTICLES = [
         "source_url": "https://www.apa.org/pubs/journals/psp",
         "source_attribution": "シカゴ大学の著名な心理学実験を元に、高校生の日常に引き寄せて読みやすく編集した教材です。",
         "source_student_guide": "英検準2級・2級の面接（スピーキング）や自由英作文では、『人間関係やコミュニケーションの大切さ』が頻出トピックです。自分の日常生活と結びつけながら読んでみましょう。",
-        "original_article_url": "../../society/psychology-casual-encounters/index.html",
+        "original_article_url": "../../../society/psychology-casual-encounters/index.html",
         "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {
@@ -547,7 +547,7 @@ JUNIOR_ARTICLES = [
         "source_url": "https://www.ft.com/content/defence-procurement-uk-shield",
         "source_attribution": "イギリス議会の審議報道を元に、法制度と社会の仕組みを高校生向けにリライトした教材です。",
         "source_student_guide": "英検2級の社会問題や時事英語では、『政治や税金の使い道』に関する長文が出題されます。一見難しそうに見えますが、基本単語と文構造を押さえれば高校生でも十分に楽しめます。",
-        "original_article_url": "../../law/air-defence-shield/index.html",
+        "original_article_url": "../../../law/air-defence-shield/index.html",
         "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {
@@ -718,7 +718,7 @@ JUNIOR_ARTICLES = [
         "source_url": "https://www.ft.com/content/commodities-critical-minerals-2026",
         "source_attribution": "国際通商報道を元に、高校英語の標準レベルで環境・経済のつながりを学べるよう編集した教材です。",
         "source_student_guide": "『環境保全のための新技術』と『国際社会の協力・対立』は、英検2級から大学入試まで超頻出の現代的テーマです。環境用語と国際貿易の基本を押さえましょう。",
-        "original_article_url": "../../world/critical-minerals-geopolitics/index.html",
+        "original_article_url": "../../../world/critical-minerals-geopolitics/index.html",
         "image": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {

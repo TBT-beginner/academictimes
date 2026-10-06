@@ -43,7 +43,7 @@ def generate_junior_index():
             <a href="{art['category']}/{art['slug']}/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
               🌱 Junior版を読む（音声付） →
             </a>
-            <a href="{art['original_article_url'].replace('../../', '../')}" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+            <a href="../{art['category']}/{art['slug']}/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
               🏛️ 発展版（難関大） ↗
             </a>
           </div>
@@ -184,7 +184,7 @@ def generate_junior_index():
             <a href="{lead['category']}/{lead['slug']}/index.html" class="btn-trial" style="background: #235937; border-color: #235937; color: #ffffff !important; text-decoration: none; padding: 0.4rem 1rem;">
               この記事をJunior版で読む（音声・クイズ付） →
             </a>
-            <a href="{lead['original_article_url'].replace('../../', '../')}" style="font-size: 0.8rem; color: #555; text-decoration: underline;">
+            <a href="../{lead['category']}/{lead['slug']}/index.html" style="font-size: 0.8rem; color: #555; text-decoration: underline;">
               発展・難関大版で比較する ↗
             </a>
           </div>

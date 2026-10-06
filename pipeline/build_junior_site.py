@@ -426,7 +426,10 @@ def build_junior_article_html(art):
       </div>
       <div class="footer-bottom">
         <div>© 2026 THE JUNIOR ACADEMIC TIMES. All rights reserved.</div>
-        <div><a href="#article-top" style="color: #888; text-decoration: underline;">Back to Top ↑</a></div>
+        <div>
+          <a href="../../../index.html" style="color: #bbb; margin-right: 1rem; text-decoration: underline;">🏛️ THE ACADEMIC TIMES（発展版）へ ↗</a>
+          <a href="#article-top" style="color: #888; text-decoration: underline;">Back to Top ↑</a>
+        </div>
       </div>
     </div>
   </footer>
