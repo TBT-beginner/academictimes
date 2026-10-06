@@ -878,4 +878,10 @@ JUNIOR_ARTICLES = [
     }
 ]
 
-print("Loaded 5 Junior articles successfully.")
+from junior_articles_batch2 import JUNIOR_ARTICLES_BATCH2
+from junior_articles_batch3 import JUNIOR_ARTICLES_BATCH3
+
+JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH2)
+JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH3)
+
+print(f"Loaded {len(JUNIOR_ARTICLES)} Junior articles successfully.")
