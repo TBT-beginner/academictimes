@@ -101,12 +101,17 @@ def main():
         print("[FAIL] Junior articles build failed.")
         sys.exit(1)
         
-    # 3. Build Junior Top Page
+    # 3. Build THE JUNIOR Data JS
+    if not run_step("Build THE JUNIOR Data JS", ["build_junior_data_js.py"]):
+        print("[FAIL] Junior data JS build failed.")
+        sys.exit(1)
+
+    # 4. Build Junior Top Page
     if not run_step("Build THE JUNIOR Top Portal", ["build_junior_top.py"]):
         print("[FAIL] Junior top page build failed.")
         sys.exit(1)
         
-    # 4. Inject Reciprocal Links into Senior Articles
+    # 5. Inject Reciprocal Links into Senior Articles
     if not run_step("Link Senior Articles to THE JUNIOR", ["link_senior_to_junior.py"]):
         print("[FAIL] Reciprocal linking failed.")
         sys.exit(1)

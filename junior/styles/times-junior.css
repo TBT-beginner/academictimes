@@ -212,3 +212,33 @@
 .btn-retry-quiz:hover {
   background: var(--junior-dark-green) !important;
 }
+
+/* Junior Search & Interactive Filters */
+.filter-category-btn.active,
+.filter-category-btn:hover {
+  background: var(--junior-green) !important;
+  border-color: var(--junior-green) !important;
+  color: #ffffff !important;
+}
+
+.archive-search-input:focus {
+  border-color: var(--junior-green) !important;
+  outline: none;
+}
+
+.ranking-num {
+  color: #a3cdb2 !important;
+}
+
+.edition-notice-banner {
+  background: #eef5f0;
+  border: 1px solid var(--junior-border-green);
+  color: #143820;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
