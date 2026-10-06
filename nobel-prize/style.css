@@ -1,0 +1,990 @@
+:root {
+  --bg-deep: #050914;
+  --bg-panel: rgba(8, 14, 30, 0.88);
+  --cyan-main: #00f0ff;
+  --cyan-glow: rgba(0, 240, 255, 0.5);
+  --pink-aoi: #ff5599;
+  --pink-glow: rgba(255, 85, 153, 0.5);
+  --gold-nobel: #ffd700;
+  --gold-glow: rgba(255, 215, 0, 0.45);
+  --green-bio: #00ff88;
+  --yellow-brake: #ffb700;
+  --text-white: #ffffff;
+  --font-heading: 'Dela Gothic One', sans-serif;
+  --font-yukkuri: 'M PLUS Rounded 1c', 'Zen Kaku Gothic New', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --transition-fast: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-deep);
+  color: var(--text-white);
+  font-family: var(--font-yukkuri);
+  user-select: none;
+}
+
+/* Background Animated Canvas */
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+/* ====================================================
+   TOP MINIMAL NAV HEADER
+   ==================================================== */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  background: linear-gradient(180deg, rgba(5, 9, 20, 0.95) 0%, rgba(5, 9, 20, 0) 100%);
+  backdrop-filter: blur(8px);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nobel-medal {
+  font-size: 28px;
+  filter: drop-shadow(0 0 10px var(--gold-glow));
+  animation: pulseMedal 2.5s infinite ease-in-out;
+}
+
+@keyframes pulseMedal {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.nobel-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gold-nobel);
+  letter-spacing: 1px;
+}
+
+.main-heading {
+  font-family: var(--font-yukkuri);
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.slide-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-family: var(--font-mono);
+}
+
+.ind-label {
+  font-size: 10px;
+  color: var(--cyan-main);
+  margin-right: 4px;
+}
+
+.ind-num {
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.ind-slash, .ind-total {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.control-pill {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-family: var(--font-yukkuri);
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition-fast);
+}
+
+.control-pill:hover, .control-pill.active {
+  background: var(--cyan-main);
+  color: #050914;
+  border-color: var(--cyan-main);
+  box-shadow: 0 0 16px var(--cyan-glow);
+}
+
+.control-pill .pill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.sound-pill {
+  padding: 6px 10px;
+  font-size: 15px;
+}
+
+/* Side Navigation Arrows */
+.nav-arrow {
+  position: fixed;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(8, 16, 36, 0.7);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: var(--cyan-main);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.nav-arrow.left { left: 20px; }
+.nav-arrow.right { right: 20px; }
+
+.nav-arrow:hover {
+  background: var(--cyan-main);
+  color: #050914;
+  box-shadow: 0 0 20px var(--cyan-glow);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* ====================================================
+   MAIN SLIDE DECK & STAGE
+   ==================================================== */
+.slide-deck {
+  width: 100vw;
+  height: calc(100vh - 190px); /* Leave bottom 190px for Yukkuri theater */
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-page {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 70px 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.96) translateY(20px);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.5s;
+}
+
+.slide-page.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(0);
+}
+
+.slide-stage-wrap {
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+  max-height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-visual {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(16, 30, 64, 0.8), rgba(4, 8, 20, 0.95));
+  border: 2px solid rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.15), inset 0 0 30px rgba(0, 240, 255, 0.05);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+}
+
+.lab-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+/* Stage Overlay Badge */
+.stage-overlay-badge {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-family: var(--font-yukkuri);
+  font-size: 13px;
+  font-weight: 800;
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.stage-overlay-badge.gold {
+  background: rgba(255, 215, 0, 0.15);
+  border: 1px solid var(--gold-nobel);
+  color: var(--gold-nobel);
+}
+
+.stage-overlay-badge.cyan {
+  background: rgba(0, 240, 255, 0.15);
+  border: 1px solid var(--cyan-main);
+  color: var(--cyan-main);
+}
+
+.stage-overlay-badge.pink {
+  background: rgba(255, 85, 153, 0.15);
+  border: 1px solid var(--pink-aoi);
+  color: var(--pink-aoi);
+}
+
+.stage-overlay-badge.green {
+  background: rgba(0, 255, 136, 0.15);
+  border: 1px solid var(--green-bio);
+  color: var(--green-bio);
+}
+
+/* Membrane HUD Bar in Slide 2 */
+.membrane-hud-bar {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(4, 8, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+}
+
+.m-hud-title {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.m-hud-val {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cyan-main);
+}
+
+/* Interactive Floating Button in Slide 3 */
+.interactive-floating-action {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.stage-glow-btn {
+  background: linear-gradient(135deg, #0077ff, #00f0ff);
+  color: #050914;
+  border: none;
+  font-family: var(--font-yukkuri);
+  font-size: 16px;
+  font-weight: 900;
+  padding: 12px 24px;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.8);
+  transition: var(--transition-fast);
+}
+
+.stage-glow-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px var(--cyan-main);
+}
+
+/* Slide 5: Laser Controls & Scope */
+.laser-control-deck {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.laser-trigger {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition-fast);
+  backdrop-filter: blur(8px);
+}
+
+.laser-trigger.blue {
+  background: rgba(0, 240, 255, 0.15);
+  border-color: var(--cyan-main);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.laser-trigger.blue:hover, .laser-trigger.blue.active {
+  background: var(--cyan-main);
+  box-shadow: 0 0 30px var(--cyan-main);
+  transform: scale(1.04);
+}
+
+.laser-trigger.blue:hover .l-info strong, .laser-trigger.blue.active .l-info strong,
+.laser-trigger.blue:hover .l-info small, .laser-trigger.blue.active .l-info small {
+  color: #050914;
+}
+
+.laser-trigger.yellow {
+  background: rgba(255, 183, 0, 0.15);
+  border-color: var(--yellow-brake);
+  box-shadow: 0 0 20px rgba(255, 183, 0, 0.3);
+}
+
+.laser-trigger.yellow:hover, .laser-trigger.yellow.active {
+  background: var(--yellow-brake);
+  box-shadow: 0 0 30px var(--yellow-brake);
+  transform: scale(1.04);
+}
+
+.laser-trigger.yellow:hover .l-info strong, .laser-trigger.yellow.active .l-info strong,
+.laser-trigger.yellow:hover .l-info small, .laser-trigger.yellow.active .l-info small {
+  color: #050914;
+}
+
+.laser-icon {
+  font-size: 24px;
+}
+
+.l-info strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.l-info small {
+  display: block;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.stage-scope-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(4, 7, 18, 0.92);
+  border-top: 1px solid rgba(0, 240, 255, 0.2);
+  padding: 6px 16px 4px;
+}
+
+.scope-info {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--cyan-main);
+  margin-bottom: 2px;
+}
+
+#canvas-scope {
+  width: 100%;
+  height: 48px;
+  display: block;
+}
+
+/* Slide 6: Triumph cards row */
+.triumph-cards-row {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.t-pill-card {
+  background: rgba(8, 16, 36, 0.85);
+  border: 1px solid var(--gold-nobel);
+  border-radius: 12px;
+  padding: 12px 14px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: var(--transition-fast);
+}
+
+.t-pill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px var(--gold-glow);
+}
+
+.t-ico {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.t-pill-card strong {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.t-pill-card small {
+  display: block;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ====================================================
+   BOTTOM "YUKKURI" TALK BAR (BIG BOLD SUBTITLES)
+   ==================================================== */
+.yukkuri-theater-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 195px;
+  z-index: 1000;
+  background: linear-gradient(180deg, rgba(6, 11, 26, 0.94) 0%, rgba(2, 5, 14, 0.98) 100%);
+  border-top: 3px solid var(--cyan-main);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 240, 255, 0.25);
+  backdrop-filter: blur(16px);
+  display: grid;
+  grid-template-columns: 140px 1fr 140px;
+  align-items: center;
+  padding: 10px 24px 14px;
+  gap: 20px;
+}
+
+/* Character Avatar Standing Units */
+.yukkuri-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.45;
+  filter: grayscale(40%);
+  transform: scale(0.92);
+  transition: var(--transition-fast);
+}
+
+.yukkuri-avatar.active {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.08) translateY(-4px);
+}
+
+.avatar-circle {
+  position: relative;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.aoi .avatar-circle {
+  border-color: var(--pink-aoi);
+  background: radial-gradient(circle at 40% 30%, #ff80bf, #2b0b1a);
+}
+
+.aoi.active .avatar-circle {
+  box-shadow: 0 0 30px var(--pink-glow);
+}
+
+.sato .avatar-circle {
+  border-color: var(--cyan-main);
+  background: radial-gradient(circle at 40% 30%, #00f0ff, #0a1f3d);
+}
+
+.sato.active .avatar-circle {
+  box-shadow: 0 0 30px var(--cyan-glow);
+}
+
+.avatar-emoji {
+  font-size: 42px;
+}
+
+.emotion-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  font-size: 20px;
+  background: #050914;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.avatar-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-tag {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.avatar-label strong {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.aoi strong { color: #ff9ec4; }
+.sato strong { color: var(--cyan-main); }
+
+/* Speech Deck & Huge Text Subtitle */
+.yukkuri-speech-deck {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 8px;
+}
+
+.speech-bubble-box {
+  flex: 1;
+  background: rgba(10, 20, 46, 0.9);
+  border: 2px solid rgba(0, 240, 255, 0.35);
+  border-radius: 16px;
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.speech-bubble-box:hover {
+  border-color: var(--cyan-main);
+  background: rgba(14, 26, 60, 0.95);
+}
+
+.speech-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.speaker-pill {
+  font-family: var(--font-yukkuri);
+  font-size: 12px;
+  font-weight: 900;
+  padding: 2px 12px;
+  border-radius: 999px;
+  letter-spacing: 1px;
+}
+
+.speaker-pill.aoi {
+  background: var(--pink-aoi);
+  color: #fff;
+  box-shadow: 0 0 10px var(--pink-glow);
+}
+
+.speaker-pill.sato {
+  background: var(--cyan-main);
+  color: #050914;
+  box-shadow: 0 0 10px var(--cyan-glow);
+}
+
+.click-hint {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.speech-text-wrap {
+  display: flex;
+  align-items: center;
+}
+
+/* ★ ゆっくり解説風 特大フォント字幕 ★ */
+.yukkuri-big-text {
+  font-family: var(--font-yukkuri);
+  font-size: clamp(20px, 2.4vw, 29px);
+  font-weight: 900;
+  line-height: 1.45;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.yukkuri-big-text strong {
+  color: var(--gold-nobel);
+  text-shadow: 0 0 12px var(--gold-glow);
+}
+
+.yukkuri-big-text .highlight-cyan {
+  color: var(--cyan-main);
+  text-shadow: 0 0 12px var(--cyan-glow);
+}
+
+.yukkuri-big-text .highlight-pink {
+  color: var(--pink-aoi);
+  text-shadow: 0 0 12px var(--pink-glow);
+}
+
+/* Talk Stepper Navigation */
+.talk-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.step-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-family: var(--font-yukkuri);
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.step-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+}
+
+.step-btn.primary {
+  background: linear-gradient(135deg, var(--cyan-main), #0077ff);
+  color: #050914;
+  border: none;
+  font-weight: 900;
+  box-shadow: 0 0 15px var(--cyan-glow);
+}
+
+.step-btn.primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--cyan-main);
+}
+
+.step-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.s-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.s-dot:hover {
+  background: rgba(0, 240, 255, 0.6);
+}
+
+.s-dot.active {
+  background: var(--cyan-main);
+  box-shadow: 0 0 10px var(--cyan-glow);
+  transform: scale(1.3);
+}
+
+/* ====================================================
+   RESPONSIVE LAYOUT
+   ==================================================== */
+@media (max-width: 900px) {
+  .yukkuri-theater-bar {
+    grid-template-columns: 80px 1fr 80px;
+    height: 220px;
+    padding: 8px 12px;
+    gap: 10px;
+  }
+  .avatar-circle {
+    width: 60px;
+    height: 60px;
+  }
+  .avatar-emoji {
+    font-size: 32px;
+  }
+  .slide-deck {
+    height: calc(100vh - 220px);
+    padding: 10px 40px;
+  }
+  .nav-arrow {
+    display: none;
+  }
+}
+
+/* ====================================================
+   LAUREATE PHOTO CARDS & BADGES STYLES
+   ==================================================== */
+
+/* Slide 0: Laureate Cards */
+.hero-laureates-cards {
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+  right: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  z-index: 20;
+}
+
+.h-laureate-card {
+  background: rgba(8, 16, 36, 0.85);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  border-radius: 14px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  transition: var(--transition-fast);
+}
+
+.h-laureate-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-nobel);
+  box-shadow: 0 8px 30px var(--gold-glow);
+}
+
+.photo-ring {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--gold-nobel);
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 0 15px var(--gold-glow);
+  background: #1a2236;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.laureate-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+.l-card-meta {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.l-card-meta strong {
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.l-card-meta small {
+  font-size: 11px;
+  color: var(--gold-nobel);
+  font-family: var(--font-mono);
+}
+
+/* Slide 3 & 4: Floating Scientist Badge */
+.stage-scientist-badge {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: rgba(6, 12, 28, 0.88);
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  border-radius: 12px;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  z-index: 25;
+}
+
+.stage-scientist-badge.left-badge {
+  right: auto;
+  left: 20px;
+  top: 55px;
+}
+
+.badge-role {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  background: rgba(0, 240, 255, 0.15);
+  color: var(--cyan-main);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.scientist-thumb-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mini-thumb {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--gold-nobel);
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 0 10px var(--gold-glow);
+}
+
+.scientist-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.scientist-info strong {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.scientist-info small {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Slide 6: Laureates Banner */
+.triumph-laureates-banner {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.t-laureate-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(8, 16, 36, 0.85);
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  border-radius: 999px;
+  padding: 4px 12px 4px 4px;
+  backdrop-filter: blur(8px);
+}
+
+.t-photo {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold-nobel);
+  object-fit: cover;
+}
+
+.t-laureate-item span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-yukkuri);
+}
+
+@media (max-width: 900px) {
+  .hero-laureates-cards {
+    grid-template-columns: 1fr;
+    position: static;
+    margin-top: 10px;
+  }
+  .stage-scientist-badge, .triumph-laureates-banner {
+    position: static;
+    margin: 6px auto;
+  }
+}
+

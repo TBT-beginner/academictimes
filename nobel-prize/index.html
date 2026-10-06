@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>光遺伝学ってなぁに？ | 2026年ノーベル賞 ゆっくり対話解説＆実験室</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=M+PLUS+Rounded+1c:wght@700;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="yukkurilab-body">
+
+  <!-- Background Animated Network -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Top Minimal Header -->
+  <header class="top-nav">
+    <div class="nav-brand">
+      <a href="../index.html" style="color: #94a3b8; text-decoration: none; font-size: 0.75rem; font-weight: 700; padding: 4px 8px; border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; margin-right: 8px; transition: all 0.2s;" onmouseover="this.style.color='#fff';this.style.borderColor='#38bdf8'" onmouseout="this.style.color='#94a3b8';this.style.borderColor='rgba(255,255,255,0.15)'">◀ ポータルへ戻る</a>
+      <span class="nobel-medal">🏅</span>
+      <div class="brand-titles">
+        <span class="nobel-badge">2026年ノーベル生理学・医学賞</span>
+        <h1 class="main-heading">光遺伝学（オプトジェネティクス）解説ラボ</h1>
+      </div>
+    </div>
+
+    <!-- Slide Indicators & Controls -->
+    <div class="nav-controls">
+      <div class="slide-indicator">
+        <span class="ind-label">SLIDE</span>
+        <span id="current-slide-num" class="ind-num">01</span>
+        <span class="ind-slash">/</span>
+        <span class="ind-total">07</span>
+      </div>
+      <button id="btn-auto-play" class="control-pill" title="ゆっくり自動送り">
+        <span class="pill-dot"></span> 自動送り: OFF
+      </button>
+      <button id="btn-sound-toggle" class="control-pill sound-pill" title="音声切り替え">
+        <span id="sound-icon">🔊</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Arrows (Side) -->
+  <button id="btn-prev-slide" class="nav-arrow left" aria-label="前のスライド">❮</button>
+  <button id="btn-next-slide" class="nav-arrow right" aria-label="次のスライド">❯</button>
+
+  <!-- Main Slide Container (One slide visible at a time with smooth scroll/snap) -->
+  <main id="slide-deck" class="slide-deck">
+
+    <!-- ====================================================
+         SLIDE 0: 【速報】2026年ノーベル生理学・医学賞！
+         ==================================================== -->
+    <section class="slide-page active" data-slide="0" id="slide-0">
+      <div class="slide-stage-wrap">
+        <div class="stage-visual">
+          <canvas id="canvas-hero" class="lab-canvas"></canvas>
+          <div class="stage-overlay-badge gold">
+            <span class="icon">✨</span> STOCKHOLM 2026.10.05 速報
+          </div>
+
+          <!-- Laureate Photo Cards in Slide 0 -->
+          <div class="hero-laureates-cards">
+            <div class="h-laureate-card">
+              <div class="photo-ring">
+                <img src="images/deisseroth.jpg" alt="カール・ダイセロス教授" class="laureate-img">
+              </div>
+              <div class="l-card-meta">
+                <strong>カール・ダイセロス</strong>
+                <small>米スタンフォード大学 教授</small>
+              </div>
+            </div>
+
+            <div class="h-laureate-card">
+              <div class="photo-ring">
+                <img src="images/hegemann.jpg" alt="ペーター・ヘーゲマン教授" class="laureate-img">
+              </div>
+              <div class="l-card-meta">
+                <strong>ペーター・ヘーゲマン</strong>
+                <small>独フンボルト大学 教授</small>
+              </div>
+            </div>
+
+            <div class="h-laureate-card">
+              <div class="photo-ring">
+                <img src="images/nagel.png" alt="ゲオルク・ナーゲル教授" class="laureate-img">
+              </div>
+              <div class="l-card-meta">
+                <strong>ゲオルク・ナーゲル</strong>
+                <small>独ビュルツブルク大学 教授</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SLIDE 1: 【遺伝子ってなに？】超精密なレシピ本
+         ==================================================== -->
+    <section class="slide-page" data-slide="1" id="slide-1">
+      <div class="slide-stage-wrap">
+        <div class="stage-visual">
+          <canvas id="canvas-dna" class="lab-canvas"></canvas>
+          <div class="stage-overlay-badge cyan">
+            <span class="icon">🧬</span> 設計図（DNA） ➔ 道具マシン（タンパク質）
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SLIDE 2: 【脳はどう動く？】電気の門とこれまでの限界
+         ==================================================== -->
+    <section class="slide-page" data-slide="2" id="slide-2">
+      <div class="slide-stage-wrap">
+        <div class="stage-visual">
+          <canvas id="canvas-membrane" class="lab-canvas"></canvas>
+          <div class="membrane-hud-bar">
+            <span class="m-hud-title">膜電位 (MEMBRANE POTENTIAL)</span>
+            <span id="membrane-mv-text" class="m-hud-val">-70 mV (静止)</span>
+          </div>
+          <div class="stage-overlay-badge pink">
+            <span class="icon">⚡</span> 門が開くとNa⁺が流入してパチッと発火！
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SLIDE 3: 【池の藻の奇跡】光で開くスイッチ（チャネルロドプシン）
+         ==================================================== -->
+    <section class="slide-page" data-slide="3" id="slide-3">
+      <div class="slide-stage-wrap">
+        <div class="stage-visual">
+          <canvas id="canvas-algae" class="lab-canvas"></canvas>
+          <div class="stage-overlay-badge green">
+            <span class="icon">🌱</span> 単細胞緑藻クラミドモナス：青色光（470nm）を感知
+          </div>
+
+          <!-- Discoverers Portrait Badge -->
+          <div class="stage-scientist-badge">
+            <span class="badge-role">発見者</span>
+            <div class="scientist-thumb-group">
+              <img src="images/hegemann.jpg" alt="ヘーゲマン教授" class="mini-thumb">
+              <img src="images/nagel.png" alt="ナーゲル教授" class="mini-thumb">
+            </div>
+            <div class="scientist-info">
+              <strong>ヘーゲマン ＆ ナーゲル</strong>
+              <small>藻からチャネルロドプシンを発見</small>
+            </div>
+          </div>
+
+          <div class="interactive-floating-action">
+            <button id="btn-flash-algae" class="stage-glow-btn">
+              💡 青い光を当ててみる！
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SLIDE 4: 【ダイセロスの大革命】藻の設計図を脳神経へ！
+         ==================================================== -->
+    <section class="slide-page" data-slide="4" id="slide-4">
+      <div class="slide-stage-wrap">
+        <div class="stage-visual">
+          <canvas id="canvas-delivery" class="lab-canvas"></canvas>
+          <div class="stage-overlay-badge cyan">
+            <span class="icon">🔬</span> ウイルス運び屋 ➔ 脳神経が光スイッチを装備！
+          </div>
+
+          <!-- Deisseroth Portrait Badge -->
+          <div class="stage-scientist-badge left-badge">
+            <span class="badge-role">光遺伝学の開拓者</span>
+            <div class="scientist-thumb-group">
+              <img src="images/deisseroth.jpg" alt="ダイセロス教授" class="mini-thumb">
+            </div>
+            <div class="scientist-info">
+              <strong>カール・ダイセロス教授</strong>
+              <small>藻のセンサーを脳神経へ導入し光制御を実現</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SLIDE 5: 【光照射実験室】青でアクセル！黄色でブレーキ！
+         ==================================================== -->
+    <section class="slide-page" data-slide="5" id="slide-5">
+      <div class="slide-stage-wrap lab-mode">
+        <div class="stage-visual">
+          <canvas id="canvas-laser" class="lab-canvas"></canvas>
+          
+          <!-- Large Interactive Laser Controls -->
+          <div class="laser-control-deck">
+            <button id="btn-laser-blue" class="laser-trigger blue">
+              <span class="laser-icon">⚡</span>
+              <div class="l-info">
+                <strong>青色光 (470nm) を照射！</strong>
+                <small>興奮（ON）: チャネルロドプシン開口</small>
+              </div>
+            </button>
+
+            <button id="btn-laser-yellow" class="laser-trigger yellow">
+              <span class="laser-icon">🛑</span>
+              <div class="l-info">
+                <strong>黄色光 (589nm) を照射！</strong>
+                <small>抑制（OFF）: ハロロドプシンで停止</small>
+              </div>
+            </button>
+          </div>
+
+          <!-- Oscilloscope Bar -->
+          <div class="stage-scope-bar">
+            <div class="scope-info">
+              <span>OSCILLOSCOPE (活動電位リアルタイム波形)</span>
+              <span id="scope-status">READY : -70mV</span>
+            </div>
+            <canvas id="canvas-scope" height="50"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SLIDE 6: 【ノーベル賞の偉業】心と難病を救う未来の光
+         ==================================================== -->
+    <section class="slide-page" data-slide="6" id="slide-6">
+      <div class="slide-stage-wrap">
+        <div class="stage-visual">
+          <canvas id="canvas-triumph" class="lab-canvas"></canvas>
+          
+          <div class="triumph-cards-row">
+            <div class="t-pill-card">
+              <span class="t-ico">🧠</span>
+              <strong>心の回路の解明</strong>
+              <small>恐怖・うつ病・記憶の正体を特定</small>
+            </div>
+            <div class="t-pill-card">
+              <span class="t-ico">👁️</span>
+              <strong>失明網膜の視力回復</strong>
+              <small>光受容を失った眼に視覚を取り戻す</small>
+            </div>
+            <div class="t-pill-card">
+              <span class="t-ico">💊</span>
+              <strong>パーキンソン病の改善</strong>
+              <small>異常回路を光パルスでリセット</small>
+            </div>
+          </div>
+
+          <!-- Laureates Photo Banner in Slide 6 -->
+          <div class="triumph-laureates-banner">
+            <div class="t-laureate-item">
+              <img src="images/deisseroth.jpg" alt="カール・ダイセロス教授" class="t-photo">
+              <span>カール・ダイセロス</span>
+            </div>
+            <div class="t-laureate-item">
+              <img src="images/hegemann.jpg" alt="ペーター・ヘーゲマン教授" class="t-photo">
+              <span>ペーター・ヘーゲマン</span>
+            </div>
+            <div class="t-laureate-item">
+              <img src="images/nagel.png" alt="ゲオルク・ナーゲル教授" class="t-photo">
+              <span>ゲオルク・ナーゲル</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================
+       BOTTOM "YUKKURI" TALK BAR (BIG BOLD SUBTITLES)
+       ==================================================== -->
+  <footer id="yukkuri-bar" class="yukkuri-theater-bar">
+    <!-- Left: Student Aoi -->
+    <div id="speaker-aoi" class="yukkuri-avatar aoi active">
+      <div class="avatar-circle">
+        <span class="avatar-emoji">👧</span>
+        <span id="aoi-badge-emotion" class="emotion-badge">❓</span>
+      </div>
+      <div class="avatar-label">
+        <span class="name-tag">生徒</span>
+        <strong>アオイ</strong>
+      </div>
+    </div>
+
+    <!-- Center: Big Subtitle Dialogue Box (ゆっくり解説風大文字テロップ) -->
+    <div class="yukkuri-speech-deck">
+      <div class="speech-bubble-box" id="speech-bubble-box">
+        <div class="speech-header-row">
+          <span id="speech-speaker-name" class="speaker-pill aoi">アオイ</span>
+          <span class="click-hint">［クリックまたはスクロールで次へ］</span>
+        </div>
+        <div class="speech-text-wrap">
+          <p id="yukkuri-text" class="yukkuri-big-text">
+            先生！スマホの速報見ました！ノーベル賞の「光遺伝学」って何ですか！？ 漢字ばっかりで意味不明です！
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Step Buttons -->
+      <div class="talk-stepper">
+        <button id="btn-talk-prev" class="step-btn">◀ 戻る</button>
+        <div class="step-dots">
+          <span class="s-dot active" data-s="0"></span>
+          <span class="s-dot" data-s="1"></span>
+          <span class="s-dot" data-s="2"></span>
+          <span class="s-dot" data-s="3"></span>
+          <span class="s-dot" data-s="4"></span>
+          <span class="s-dot" data-s="5"></span>
+          <span class="s-dot" data-s="6"></span>
+        </div>
+        <button id="btn-talk-next" class="step-btn primary">次へ 進む ▶</button>
+      </div>
+    </div>
+
+    <!-- Right: Teacher Dr. Sato -->
+    <div id="speaker-sato" class="yukkuri-avatar sato">
+      <div class="avatar-circle">
+        <span class="avatar-emoji">👨‍🏫</span>
+        <span id="sato-badge-emotion" class="emotion-badge">💡</span>
+      </div>
+      <div class="avatar-label">
+        <span class="name-tag">先生</span>
+        <strong>Dr. サトウ</strong>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
