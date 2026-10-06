@@ -676,7 +676,7 @@ class SlideDeliveryVisual {
   }
 }
 
-// ==========================================
+/// ==========================================
 // 8. SLIDE 5: LASER EXPERIMENT & OSCILLOSCOPE
 // ==========================================
 class SlideLaserLabVisual {
@@ -687,9 +687,23 @@ class SlideLaserLabVisual {
     this.scopeCtx = this.scopeCanvas ? this.scopeCanvas.getContext('2d') : null;
 
     this.activeLaser = null; // 'blue' | 'yellow' | null
-    this.membranePotential = -70;
-    this.spikeHistory = new Array(120).fill(-70);
+    this.membranePotential = -70; // リアルタイム膜電位 (mV)
+
+    // スパイク（活動電位）ジェネレーター
+    this.inSpike = false;
+    this.spikeStep = 0;
+    this.spikeDuration = 18; // スパイク1発のフレーム長 (生理学スケール)
+    this.refractoryTimer = 0; // 不応期・インターバル
+
+    // オシロスコープ波形履歴バッファ
+    this.historyLength = 160;
+    this.spikeHistory = new Array(this.historyLength).fill(-70);
+
+    // 軸索を走る活動電位パルス
+    this.actionPulses = [];
+
     this.statusText = document.getElementById('scope-status');
+    this.time = 0;
 
     this.resize();
     this.initButtons();
@@ -709,7 +723,7 @@ class SlideLaserLabVisual {
 
     const sRect = this.scopeCanvas.getBoundingClientRect();
     this.scopeWidth = sRect.width || 600;
-    this.scopeHeight = 48;
+    this.scopeHeight = sRect.height || 68;
     this.scopeCanvas.width = this.scopeWidth * dpr;
     this.scopeCanvas.height = this.scopeHeight * dpr;
     this.scopeCtx.setTransform(1, 0, 0, 1, 0, 0);
@@ -735,32 +749,58 @@ class SlideLaserLabVisual {
     }
   }
 
+  // 生理学的活動電位（Action Potential）カーブ関数
+  // 静止電位(-70mV) -> 閾値(-55mV) -> 急速脱分極(+38mV) -> 急速再分極 -> 後過分極(-82mV) -> 回復(-70mV)
+  getSpikeVoltage(p) {
+    if (p < 0.12) {
+      // 刺激脱分極相 (Na+流入初期: -70mV -> -55mV)
+      const t = p / 0.12;
+      return -70 + 15 * Math.pow(t, 1.4);
+    } else if (p < 0.32) {
+      // 急速脱分極相 (電位依存性Na+チャネル爆発開口: -55mV -> +38mV)
+      const t = (p - 0.12) / 0.20;
+      return -55 + 93 * Math.sin(t * Math.PI * 0.5);
+    } else if (p < 0.52) {
+      // 急速再分極相 (Na+不活化 & 遅延整流K+流出: +38mV -> -82mV)
+      const t = (p - 0.32) / 0.20;
+      return 38 - 120 * Math.sin(t * Math.PI * 0.5);
+    } else if (p < 0.78) {
+      // 後過分極相 (Afterhyperpolarization / AHP: -82mV -> -75mV)
+      const t = (p - 0.52) / 0.26;
+      return -82 + 7 * Math.pow(t, 0.7);
+    } else {
+      // 静止電位回復相 (-75mV -> -70mV)
+      const t = (p - 0.78) / 0.22;
+      return -75 + 5 * t;
+    }
+  }
+
+  triggerSpike() {
+    this.inSpike = true;
+    this.spikeStep = 0;
+    sound.playSpike();
+    // 軸索へ流れる興奮パルスを追加
+    this.actionPulses.push({ y: 0, alpha: 1.0 });
+  }
+
   fireLaser(color) {
     this.activeLaser = color;
     sound.playLaser(color === 'blue');
 
     if (color === 'blue') {
-      sound.playSpike();
-      this.membranePotential = 35;
-      if (this.statusText) {
-        this.statusText.innerText = '⚡ ACTIVE SPIKE : +35mV (発火！)';
-        this.statusText.style.color = '#00f0ff';
+      // 即座に1発目のスパイクを点火
+      if (!this.inSpike) {
+        this.triggerSpike();
       }
     } else {
+      // 黄色光（ハロロドプシン）：スパイクを強制シャットダウンして即座に過分極
+      this.inSpike = false;
       this.membranePotential = -88;
-      if (this.statusText) {
-        this.statusText.innerText = '🛑 INHIBITED : -88mV (過分極・停止)';
-        this.statusText.style.color = '#ffb700';
-      }
     }
   }
 
   stopLaser() {
     this.activeLaser = null;
-    if (this.statusText) {
-      this.statusText.innerText = 'RESTING : -70mV (通常)';
-      this.statusText.style.color = '#8ea3bf';
-    }
   }
 
   draw() {
@@ -771,73 +811,182 @@ class SlideLaserLabVisual {
     ctx.clearRect(0, 0, w, h);
 
     const cx = w / 2;
-    const cy = h * 0.48;
+    const cy = h * 0.44;
+    this.time += 0.05;
 
-    // Decay voltage
-    if (this.activeLaser === 'yellow') {
-      this.membranePotential = Math.max(-88, this.membranePotential - 1);
+    // --- 膜電位・生理学ロジック更新 ---
+    const noise = (Math.random() - 0.5) * 1.4; // 生理的熱ゆらぎ (±0.7mV)
+
+    if (this.activeLaser === 'blue') {
+      // 青色光照射中：光駆動スパイク列（Spike Train）
+      if (this.inSpike) {
+        this.spikeStep++;
+        const p = this.spikeStep / this.spikeDuration;
+        if (p >= 1.0) {
+          this.inSpike = false;
+          this.refractoryTimer = 11; // 不応期（次の発火までのインターバル）
+          this.membranePotential = -70;
+        } else {
+          this.membranePotential = this.getSpikeVoltage(p);
+        }
+      } else {
+        // スパイク待機中：不応期カウントダウン
+        this.refractoryTimer--;
+        this.membranePotential = -70 + Math.sin(this.time * 2) * 1.5;
+        if (this.refractoryTimer <= 0) {
+          this.triggerSpike();
+        }
+      }
+
+      if (this.statusText) {
+        if (this.membranePotential > 0) {
+          this.statusText.innerText = `⚡ ACTION POTENTIAL : +${this.membranePotential.toFixed(1)}mV (発火・脱分極)`;
+          this.statusText.style.color = '#00f0ff';
+        } else if (this.membranePotential < -75) {
+          this.statusText.innerText = `🔄 REPOLARIZATION / AHP : ${this.membranePotential.toFixed(1)}mV (後過分極)`;
+          this.statusText.style.color = '#38bdf8';
+        } else {
+          this.statusText.innerText = `⚡ ChR2 ACTIVE : ${this.membranePotential.toFixed(1)}mV (光駆動スパイク列)`;
+          this.statusText.style.color = '#00f0ff';
+        }
+      }
+    } else if (this.activeLaser === 'yellow') {
+      // 黄色光照射中：ハロロドプシンによる持続的過分極 (-88mV)
+      this.inSpike = false;
+      // -88mVへ素早く漸近
+      this.membranePotential += (-88 - this.membranePotential) * 0.35;
+      if (this.statusText) {
+        this.statusText.innerText = `🛑 NpHR INHIBITED : ${this.membranePotential.toFixed(1)}mV (過分極・完全停止)`;
+        this.statusText.style.color = '#ffb700';
+      }
     } else {
-      if (this.membranePotential > -70) {
-        this.membranePotential -= 4.5;
-        if (this.membranePotential < -70) this.membranePotential = -70;
+      // 光なし：静止状態へ復帰
+      if (this.inSpike) {
+        // 発生中のスパイクは最後まで完走
+        this.spikeStep++;
+        const p = this.spikeStep / this.spikeDuration;
+        if (p >= 1.0) {
+          this.inSpike = false;
+          this.membranePotential = -70;
+        } else {
+          this.membranePotential = this.getSpikeVoltage(p);
+        }
+      } else {
+        // -70mVへ自然復帰
+        this.membranePotential += (-70 - this.membranePotential) * 0.2;
+      }
+
+      if (this.statusText) {
+        this.statusText.innerText = `RESTING : ${this.membranePotential.toFixed(1)}mV (静止電位)`;
+        this.statusText.style.color = '#8ea3bf';
       }
     }
 
-    // Oscilloscope update
+    // オシロスコープ履歴に記録
     this.spikeHistory.shift();
-    const noise = (Math.random() - 0.5) * 2;
     this.spikeHistory.push(this.membranePotential + noise);
 
-    // Laser Beam from top
+    // --- ビジュアル描画 ---
+    // 1. レーザー光線 (Top光ファイバーから細胞へ)
     if (this.activeLaser) {
       const beamGrad = ctx.createLinearGradient(cx, 10, cx, cy);
-      const c = this.activeLaser === 'blue' ? '0, 240, 255' : '255, 183, 0';
-      beamGrad.addColorStop(0, `rgba(${c}, 0.8)`);
-      beamGrad.addColorStop(1, `rgba(${c}, 0.1)`);
+      const isBlue = this.activeLaser === 'blue';
+      const c = isBlue ? '0, 240, 255' : '255, 183, 0';
+      beamGrad.addColorStop(0, `rgba(${c}, 0.85)`);
+      beamGrad.addColorStop(1, `rgba(${c}, 0.12)`);
       ctx.fillStyle = beamGrad;
       ctx.beginPath();
       ctx.moveTo(cx, 10);
-      ctx.lineTo(cx - 45, cy);
-      ctx.lineTo(cx + 45, cy);
+      ctx.lineTo(cx - 50, cy);
+      ctx.lineTo(cx + 50, cy);
       ctx.fill();
+
+      // 光の散乱パーティクル
+      ctx.fillStyle = isBlue ? '#00f0ff' : '#ffb700';
+      for (let i = 0; i < 4; i++) {
+        const px = cx + (Math.random() - 0.5) * 60;
+        const py = 10 + Math.random() * (cy - 10);
+        ctx.beginPath();
+        ctx.arc(px, py, 1.5, 0, Math.PI * 2);
+        ctx.fill();
+      }
     }
 
-    // Optical fiber cable
-    ctx.fillStyle = '#445566';
-    ctx.fillRect(cx - 5, 0, 10, 45);
+    // 2. 光ファイバープローブ
+    ctx.fillStyle = '#64748b';
+    ctx.fillRect(cx - 5, 0, 10, 40);
+    ctx.fillStyle = '#00f0ff';
+    ctx.shadowColor = '#00f0ff';
+    ctx.shadowBlur = this.activeLaser === 'blue' ? 15 : 0;
+    ctx.fillRect(cx - 3, 38, 6, 4);
+    ctx.shadowBlur = 0;
 
-    // Neuron
+    // 3. 神経細胞体 (Soma)
     const isExcited = this.membranePotential > -40;
-    ctx.fillStyle = isExcited ? 'rgba(0, 240, 255, 0.3)' : 'rgba(12, 22, 45, 0.9)';
-    ctx.strokeStyle = isExcited ? '#00f0ff' : 'rgba(0, 240, 255, 0.4)';
-    ctx.lineWidth = 3;
-    ctx.shadowColor = isExcited ? '#00f0ff' : 'transparent';
-    ctx.shadowBlur = isExcited ? 25 : 0;
+    const isHyper = this.membranePotential < -80;
+
+    ctx.fillStyle = isExcited
+      ? 'rgba(0, 240, 255, 0.45)'
+      : (isHyper ? 'rgba(255, 183, 0, 0.2)' : 'rgba(15, 23, 42, 0.95)');
+    ctx.strokeStyle = isExcited ? '#00f0ff' : (isHyper ? '#ffb700' : 'rgba(0, 240, 255, 0.4)');
+    ctx.lineWidth = isExcited ? 3.5 : 2;
+    ctx.shadowColor = isExcited ? '#00f0ff' : (isHyper ? '#ffb700' : 'transparent');
+    ctx.shadowBlur = isExcited ? 30 : (isHyper ? 15 : 0);
     ctx.beginPath();
-    ctx.arc(cx, cy, 60, 0, Math.PI * 2);
+    ctx.arc(cx, cy, 55, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
     ctx.shadowBlur = 0;
 
-    // Dendrites
-    ctx.strokeStyle = isExcited ? '#00f0ff' : 'rgba(0, 240, 255, 0.3)';
+    // 樹状突起 (Dendrites)
+    ctx.strokeStyle = isExcited ? '#00f0ff' : 'rgba(0, 240, 255, 0.35)';
     ctx.lineWidth = 2.5;
     ctx.beginPath();
-    ctx.moveTo(cx - 55, cy - 20);
-    ctx.lineTo(cx - 130, cy - 60);
+    ctx.moveTo(cx - 50, cy - 20);
+    ctx.lineTo(cx - 130, cy - 55);
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.moveTo(cx + 55, cy - 20);
-    ctx.lineTo(cx + 130, cy - 60);
+    ctx.moveTo(cx + 50, cy - 20);
+    ctx.lineTo(cx + 130, cy - 55);
     ctx.stroke();
 
+    // 軸索 (Axon: 下方向)
+    ctx.strokeStyle = isExcited ? '#00f0ff' : 'rgba(0, 240, 255, 0.5)';
+    ctx.lineWidth = 3;
     ctx.beginPath();
-    ctx.moveTo(cx, cy + 60);
-    ctx.lineTo(cx, cy + 120);
+    ctx.moveTo(cx, cy + 55);
+    ctx.lineTo(cx, cy + 110);
     ctx.stroke();
 
-    // Draw Oscilloscope
+    // 軸索を走る活動電位パルス
+    for (let i = this.actionPulses.length - 1; i >= 0; i--) {
+      const p = this.actionPulses[i];
+      p.y += 3.5;
+      p.alpha -= 0.04;
+      if (p.alpha <= 0 || p.y > 60) {
+        this.actionPulses.splice(i, 1);
+        continue;
+      }
+      ctx.fillStyle = `rgba(0, 240, 255, ${p.alpha})`;
+      ctx.shadowColor = '#00f0ff';
+      ctx.shadowBlur = 12;
+      ctx.beginPath();
+      ctx.arc(cx, cy + 55 + p.y, 6, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+
+    // チャネルロドプシン（細胞膜の光センサー門）アイコン表示
+    ctx.fillStyle = '#38bdf8';
+    ctx.font = '700 11px "M PLUS Rounded 1c", sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('ChR2 / NpHR', cx, cy - 4);
+    ctx.font = '900 13px "JetBrains Mono", monospace';
+    ctx.fillStyle = isExcited ? '#00f0ff' : (isHyper ? '#ffb700' : '#94a3b8');
+    ctx.fillText(`${this.membranePotential.toFixed(0)} mV`, cx, cy + 14);
+
+    // 4. オシロスコープ描画
     this.drawScope();
   }
 
@@ -848,32 +997,104 @@ class SlideLaserLabVisual {
     const sh = this.scopeHeight;
     sCtx.clearRect(0, 0, sw, sh);
 
-    sCtx.strokeStyle = 'rgba(0, 240, 255, 0.15)';
+    // 電圧範囲: -95mV (一番下) から +50mV (一番上)
+    const minV = -95;
+    const maxV = 50;
+    const vToY = (v) => sh - ((v - minV) / (maxV - minV)) * sh;
+
+    // --- オシロスコープ グリッド & 目盛り線 ---
     sCtx.lineWidth = 1;
+
+    // 縦グリッド（時間線: 40pxごと）
+    sCtx.strokeStyle = 'rgba(0, 240, 255, 0.08)';
     sCtx.beginPath();
-    for (let x = 0; x < sw; x += 35) {
+    for (let x = 0; x < sw; x += 40) {
       sCtx.moveTo(x, 0);
       sCtx.lineTo(x, sh);
     }
     sCtx.stroke();
 
-    sCtx.strokeStyle = '#00f0ff';
-    sCtx.lineWidth = 2.5;
-    sCtx.shadowColor = '#00f0ff';
-    sCtx.shadowBlur = 8;
+    // 0 mV 基準線 (点線・白)
+    const y0 = vToY(0);
+    sCtx.strokeStyle = 'rgba(255, 255, 255, 0.25)';
+    sCtx.setLineDash([3, 3]);
+    sCtx.beginPath();
+    sCtx.moveTo(0, y0);
+    sCtx.lineTo(sw, y0);
+    sCtx.stroke();
+
+    // -55 mV 閾値線 (点線・オレンジ)
+    const yThresh = vToY(-55);
+    sCtx.strokeStyle = 'rgba(251, 146, 60, 0.25)';
+    sCtx.beginPath();
+    sCtx.moveTo(0, yThresh);
+    sCtx.lineTo(sw, yThresh);
+    sCtx.stroke();
+
+    // -70 mV 静止電位線 (破線・シアン)
+    const yRest = vToY(-70);
+    sCtx.strokeStyle = 'rgba(0, 240, 255, 0.35)';
+    sCtx.setLineDash([4, 4]);
+    sCtx.beginPath();
+    sCtx.moveTo(0, yRest);
+    sCtx.lineTo(sw, yRest);
+    sCtx.stroke();
+    sCtx.setLineDash([]); // リセット
+
+    // 目盛りラベル (+40mV, 0mV, -55mV, -70mV, -90mV)
+    sCtx.font = '9px "JetBrains Mono", monospace';
+    sCtx.fillStyle = 'rgba(0, 240, 255, 0.5)';
+    sCtx.textAlign = 'left';
+    sCtx.fillText('+40', 4, vToY(40) + 3);
+    sCtx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+    sCtx.fillText('  0', 4, y0 + 3);
+    sCtx.fillStyle = 'rgba(251, 146, 60, 0.5)';
+    sCtx.fillText('-55 (閾値)', 4, yThresh + 3);
+    sCtx.fillStyle = 'rgba(0, 240, 255, 0.7)';
+    sCtx.fillText('-70 (静止)', 4, yRest + 3);
+
+    // --- 波形トレース描画 ---
+    let strokeColor = '#00f0ff';
+    if (this.activeLaser === 'yellow' || this.membranePotential < -78) {
+      strokeColor = '#ffb700';
+    } else if (this.activeLaser === 'blue' || this.membranePotential > -50) {
+      strokeColor = '#00f0ff';
+    } else {
+      strokeColor = '#38bdf8';
+    }
+
+    sCtx.strokeStyle = strokeColor;
+    sCtx.lineWidth = 2.2;
+    sCtx.shadowColor = strokeColor;
+    sCtx.shadowBlur = 9;
     sCtx.beginPath();
 
-    const minV = -90;
-    const maxV = 50;
-    for (let i = 0; i < this.spikeHistory.length; i++) {
-      const x = (i / (this.spikeHistory.length - 1)) * sw;
+    const len = this.spikeHistory.length;
+    let lastX = 0;
+    let lastY = 0;
+
+    for (let i = 0; i < len; i++) {
+      const x = (i / (len - 1)) * sw;
       const v = this.spikeHistory[i];
-      const normY = (v - minV) / (maxV - minV);
-      const y = sh - (normY * sh);
-      if (i === 0) sCtx.moveTo(x, y);
-      else sCtx.lineTo(x, y);
+      const y = vToY(v);
+
+      if (i === 0) {
+        sCtx.moveTo(x, y);
+      } else {
+        sCtx.lineTo(x, y);
+      }
+      lastX = x;
+      lastY = y;
     }
     sCtx.stroke();
+
+    // 走査先端のビーム発光スポット (Leading Beam Dot)
+    sCtx.fillStyle = '#ffffff';
+    sCtx.shadowColor = strokeColor;
+    sCtx.shadowBlur = 14;
+    sCtx.beginPath();
+    sCtx.arc(lastX, lastY, 3.5, 0, Math.PI * 2);
+    sCtx.fill();
     sCtx.shadowBlur = 0;
   }
 }
