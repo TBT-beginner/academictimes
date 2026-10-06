@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THE ACADEMIC TIMES | 大学入試・教養英語のための本格日刊ニュースポータル</title>
+  <meta name="description" content="英米一流紙（TIME, The Times, BBC, Reuters等）の最新報道を厳選し、大学入試長文・英検準1級以上の論述力に直結する解説と音声（Edge-TTS）を毎日10本以上配信する英語学習ニュースポータル。">
+  <link rel="canonical" href="https://academictimes.haradaeigo.com/">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/times.css">
+  
+  <style>
+    /* Custom SVG Crest & Image Placeholders for Times Aesthetic */
+    .crest-icon {
+      width: 48px;
+      height: 48px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    
+    .news-thumbnail {
+      width: 100%;
+      height: 100%;
+      background: #e2e4e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6c757d;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Date Bar (The Times Style with Interactive Edition Switcher) -->
+  <div class="top-date-bar">
+    <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem; flex-wrap: wrap; gap: 0.5rem;">
+      <span id="top-date-bar-text">Tuesday October 6 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; Daily University Exam Academic Digest</span>
+      <div class="edition-selector-wrap">
+        <span style="font-weight: 700; color: #111;">📅 紙面切替:</span>
+        <select id="select-edition-date" class="edition-select" aria-label="Select edition date">
+          <option value="2026-10-06" selected>2026年10月6日 (火) 号 【本日付・最新】</option>
+          <option value="2026-10-05">2026年10月5日 (月) 号 【防衛シールド・王室警護】</option>
+          <option value="2026-10-04">2026年10月4日 (日) 号 【若年大腸がん・海洋熱波】</option>
+          <option value="2026-10-03">2026年10月3日 (土) 号 【小児AI診断・古生物学】</option>
+          <option value="2026-10-02">2026年10月2日 (金) 号 【相続税改革・農村起業規制】</option>
+          <option value="2026-10-01">2026年10月1日 (木) 号 【創刊号・米軍再配置・アーチャー追悼】</option>
+        </select>
+        <button type="button" class="edition-btn" id="btn-edition-prev" title="前日の紙面へ">◀ 前日</button>
+        <button type="button" class="edition-btn" id="btn-edition-next" title="翌日の紙面へ" disabled>翌日 ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Times Style Masthead -->
+  <header class="masthead">
+    <a href="index.html" class="masthead-link">
+      <span class="masthead-title">THE ACADEMIC TIMES</span>
+    </a>
+    <div class="masthead-subtitle">The Daily Broadsheet for Scholarly English, Global News & Critical Analysis</div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <ul class="nav-list">
+        <li class="nav-item active"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="society/index.html">Society & Mind</a></li>
+        <li class="nav-item"><a href="science/index.html">Science & Tech</a></li>
+        <li class="nav-item"><a href="culture/index.html">Culture & Thought</a></li>
+        <li class="nav-item"><a href="law/index.html">Law & Justice</a></li>
+        <li class="nav-item"><a href="world/index.html">World & Security</a></li>
+        <li class="nav-item"><a href="#section-archive" style="color: var(--times-red); font-weight: 700;">🔍 過去記事検索</a></li>
+        <li class="nav-item"><a href="#section-media-literacy">高校生向けメディア解説</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Past Edition Notice Banner (Displayed when browsing older editions) -->
+  <div class="page-wrapper" style="padding-top: 0; padding-bottom: 0;">
+    <div id="edition-notice-banner" class="edition-notice-banner" style="display: none;"></div>
+  </div>
+
+  <!-- Sub Banner (The Times Digital Access Banner) -->
+  <div class="sub-banner">
+    <div class="sub-banner-content">
+      <div>
+        <div class="sub-banner-title">Empower Your Academic English with Authentic Daily Broadsheets.</div>
+        <div class="sub-banner-desc">入試出題頻出の科学・社会・法制度・国際情勢を、ファクトチェック済み英文と英国高品位音声（Edge-TTS）で毎日更新。</div>
+      </div>
+      <div class="sub-banner-actions">
+        <a href="#ranking" class="btn-trial">人気ランキングを見る</a>
+        <a href="culture/headphones-in-public/index.html" class="login-link">最新トップ記事を読む →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="page-wrapper">
+
+    <!-- ==========================================================================
+         HERO SECTION: 3-COLUMN THE TIMES LAYOUT
+         ========================================================================== -->
+    <div class="home-grid">
+      
+      <!-- LEFT COLUMN: Latest Breaking Academic Dispatches -->
+      <aside class="home-col-left">
+        
+        <article class="left-story">
+          <span class="badge-new">NEW • LAW & SECURITY</span>
+          <h2 class="left-story-title">
+            <a href="law/air-defence-shield/index.html">British parliament debates £10bn integrated air defence shield</a>
+          </h2>
+          <p class="left-story-snippet">
+            英国議会で100億ポンド規模の防衛網計画が審議入り。国家安全保障法と調達制度の透明性が問われる法的・財政的論点を法学英語で精読。
+          </p>
+          <div class="article-source-meta">
+            <span>According to The Times / Financial Times</span>
+          </div>
+        </article>
+
+        <article class="left-story">
+          <span class="badge-updated">UPDATED • SCIENCE & MEDICINE</span>
+          <h2 class="left-story-title">
+            <a href="science/colorectal-cancer-under-50s/index.html">Mystery rise in colorectal cancer rates among under-50s</a>
+          </h2>
+          <p class="left-story-snippet">
+            50歳未満における大腸がん増加の世界的謎。マイクロプラスチック、加工食品、腸内細菌叢（microbiome）の変容をめぐる最新の医学論文を解説。
+          </p>
+          <div class="article-source-meta">
+            <span>According to Nature / BBC Health</span>
+          </div>
+        </article>
+
+        <article class="left-story">
+          <span class="badge-new">NEW • WORLD & DIPLOMACY</span>
+          <h2 class="left-story-title">
+            <a href="world/raf-fairford-bomber-redeployment/index.html">US strategic bombers relocated from RAF Fairford amid regional drone alerts</a>
+          </h2>
+          <p class="left-story-snippet">
+            政治的党派色を排し、国際法・安保条約上の兵力再配置（redeployment）と抑止力（deterrence）の軍事・外交英語構文を客観的に検証。
+          </p>
+          <div class="article-source-meta">
+            <span>According to Reuters / AP Dispatch</span>
+          </div>
+        </article>
+
+      </aside>
+
+      <!-- CENTER COLUMN: Top Lead Story (Featured Article) -->
+      <section class="home-col-center">
+        
+        <article>
+          <div class="lead-image-wrap">
+            <img src="https://static.time.com/v3/assets/bltea6093859af6183b/blt96d6f358ea9d50b0/6abfba6215869b08e9e95a32/headphones.jpg?branch=production&amp;width=1200&amp;quality=80&amp;auto=webp" 
+                 alt="People with headphones in city" 
+                 class="lead-image"
+                 onerror="this.src='https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=1000&auto=format&fit=crop&q=80'">
+          </div>
+
+          <span class="category-tag">TOP LEAD STORY • COGNITIVE PSYCHOLOGY & CULTURE</span>
+          <h1 class="lead-story-title">
+            <a href="culture/headphones-in-public/index.html">
+              The Case Against Wearing Headphones in Public: Reclaiming the Power of Revery
+            </a>
+          </h1>
+          
+          <p class="lead-story-lead">
+            英国通信庁（Ofcom）の最新調査では成人の93%が毎週音声メディアに浸り、1日の中の「すべての静寂の合間」が埋め尽くされている。公共空間でイヤホンを外したジャーナリストの気づきから、認知心理学が解き明かす「意図せぬ白昼夢（revery）」と「見知らぬ他者との偶発的交流」がもたらす計り知れない効用を入試英語レベルで精読する。
+          </p>
+
+          <div class="article-source-meta" style="margin-top: 0.75rem;">
+            <strong>Source:</strong> <span>TIME Magazine (Oct 5, 2026 by Meehika Barua)</span>
+          </div>
+        </article>
+
+        <!-- Sub-leads inside Center Column -->
+        <div class="sub-lead-grid">
+          <div class="sub-lead-item">
+            <div style="height: 120px; background: #e9ecef; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #555;">
+              [Photo: Literary Archive]
+            </div>
+            <span class="category-tag">CULTURE & OBITUARY</span>
+            <h3 class="sub-lead-title">
+              <a href="culture/jeffrey-archer-obituary/index.html">Jeffrey Archer, bestselling novelist and political figure, dies aged 86</a>
+            </h3>
+            <p style="font-size: 0.8rem; color: var(--times-muted); margin-top: 0.25rem;">
+              3億部を売り上げた英国大衆文学の巨匠の軌跡。伝記・文学論述における時制と修辞を学ぶ。
+            </p>
+          </div>
+
+          <div class="sub-lead-item">
+            <div style="height: 120px; background: #e9ecef; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #555;">
+              [Photo: Judicial Bench]
+            </div>
+            <span class="category-tag">LAW & CONSTITUTION</span>
+            <h3 class="sub-lead-title">
+              <a href="law/royal-security-judicial-review/index.html">King will not fund legal challenge against security withdrawal</a>
+            </h3>
+            <p style="font-size: 0.8rem; color: var(--times-muted); margin-top: 0.25rem;">
+              王室経費と公的警護権をめぐる司法審査（judicial review）の基本概念と法学論述。
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- RIGHT COLUMN: Curated Digest with Thumbnails -->
+      <aside class="home-col-right">
+        
+        <article class="right-story">
+          <div class="right-story-body">
+            <span class="category-tag">SOCIETY & ECONOMICS</span>
+            <h3 class="right-story-title">
+              <a href="society/clarkson-business-red-tape/index.html">Jeremy Clarkson: Why would anyone open a new venture in Britain?</a>
+            </h3>
+            <p style="font-size: 0.8rem; color: var(--times-muted);">
+              規制緩和と地方経済の疲弊。反語表現（Rhetorical Question）の読解演習。
+            </p>
+          </div>
+          <div class="right-story-img" style="background: #e2e4e8; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #777;">
+            Photo
+          </div>
+        </article>
+
+        <article class="right-story">
+          <div class="right-story-body">
+            <span class="category-tag">POLITICAL ANALYSIS</span>
+            <h3 class="right-story-title">
+              <a href="society/inheritance-tax-reform-debate/index.html">Badenoch puts inheritance tax reform at the heart of policy speech</a>
+            </h3>
+            <p style="font-size: 0.8rem; color: var(--times-muted);">
+              相続税と世代間格差。税制倫理を論じる大学入試論述頻出のキーワード群。
+            </p>
+          </div>
+          <div class="right-story-img" style="background: #e2e4e8; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #777;">
+            Photo
+          </div>
+        </article>
+
+        <article class="right-story">
+          <div class="right-story-body">
+            <span class="category-tag">LAW & BIOETHICS</span>
+            <h3 class="right-story-title">
+              <a href="law/ai-pediatric-diagnosis-consent/index.html">High Court weighs parental consent in AI-driven pediatric diagnoses</a>
+            </h3>
+            <p style="font-size: 0.8rem; color: var(--times-muted);">
+              AI医療判断と親の同意権。インフォームド・コンセントの法的再定義。
+            </p>
+          </div>
+          <div class="right-story-img" style="background: #e2e4e8; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #777;">
+            Photo
+          </div>
+        </article>
+
+        <article class="right-story">
+          <div class="right-story-body">
+            <span class="category-tag">WORLD & ENVIRONMENT</span>
+            <h3 class="right-story-title">
+              <a href="science/mediterranean-marine-heatwaves/index.html">Mediterranean marine heatwaves threaten deep-water coral colonies</a>
+            </h3>
+            <p style="font-size: 0.8rem; color: var(--times-muted);">
+              地中海で観測された未知の海洋熱波。生物多様性と環境変動の因果関係構文。
+            </p>
+          </div>
+          <div class="right-story-img" style="background: #e2e4e8; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: #777;">
+            Photo
+          </div>
+        </article>
+
+      </aside>
+
+    </div>
+
+    <!-- ==========================================================================
+         SECTION 2: CATEGORY BLOCKS (University Entrance Exam Genres)
+         ========================================================================== -->
+    <section class="study-section" style="margin-top: 3rem;">
+      <div class="section-heading-bar">
+        <h2 class="section-heading">ACADEMIC CATEGORIES & EXAM GENRES</h2>
+        <span style="font-size: 0.8rem; color: var(--times-muted);">大学入試・学術英語 5大頻出分野</span>
+      </div>
+
+      <div class="category-grid">
+        
+        <!-- Category 1: Society & Mind -->
+        <div class="cat-card">
+          <div class="cat-card-genre">SOCIETY & MIND (社会・心理)</div>
+          <h3 class="cat-card-title">
+            <a href="society/psychology-casual-encounters/index.html">The Psychology of Casual Encounters in Megacities</a>
+          </h3>
+          <p class="cat-card-lead">
+            孤独と都市社会学。なぜ人は見知らぬ人への挨拶を避けながら、同時に強い所属感を求めているのか。
+          </p>
+        </div>
+
+        <!-- Category 2: Science & Tech -->
+        <div class="cat-card">
+          <div class="cat-card-genre">SCIENCE & TECH (科学・技術)</div>
+          <h3 class="cat-card-title">
+            <a href="science/generative-ai-paleontology/index.html">Generative Neural Networks in Paleontology</a>
+          </h3>
+          <p class="cat-card-lead">
+            化石の断片から生体運動を再現する最新ディープラーニング技術。仮説検証の英文法。
+          </p>
+        </div>
+
+        <!-- Category 3: Culture & Thought -->
+        <div class="cat-card">
+          <div class="cat-card-genre">CULTURE & THOUGHT (文化・思想)</div>
+          <h3 class="cat-card-title">
+            <a href="culture/headphones-in-public/index.html">The Lost Art of Daydreaming: Revery in Public Spaces</a>
+          </h3>
+          <p class="cat-card-lead">
+            音で日常を埋める現代社会への異議申し立て。心理学実験と語源から読み解くTIME誌の傑作論説。
+          </p>
+        </div>
+
+        <!-- Category 4: Law & Justice -->
+        <div class="cat-card">
+          <div class="cat-card-genre">LAW & JUSTICE (法・正義論)</div>
+          <h3 class="cat-card-title">
+            <a href="law/royal-security-judicial-review/index.html">King Will Not Fund Security Challenge: Judicial Review in Practice</a>
+          </h3>
+          <p class="cat-card-lead">
+            王室経費と公的警護権をめぐる司法審査（judicial review）の基本概念と法学論述。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: MOST READ RANKING (Top 5)
+         ========================================================================== -->
+    <section class="study-section" id="ranking" style="margin-top: 3.5rem;">
+      <div class="section-heading-bar">
+        <h2 class="section-heading">MOST READ RANKING (デイリー人気記事 TOP 5)</h2>
+        <span style="font-size: 0.8rem; color: var(--times-muted);">全国の受験生・英語学習者が最も閲覧した記事</span>
+      </div>
+
+      <div class="ranking-grid">
+        
+        <div class="ranking-card">
+          <div class="ranking-num">1</div>
+          <div class="ranking-body">
+            <span class="category-tag">CULTURE</span>
+            <div class="ranking-title">
+              <a href="culture/headphones-in-public/index.html">The Case Against Wearing Headphones in Public (TIME)</a>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--times-muted); margin-top: 0.2rem;">閲覧数: 14,820 views</div>
+          </div>
+        </div>
+
+        <div class="ranking-card">
+          <div class="ranking-num">2</div>
+          <div class="ranking-body">
+            <span class="category-tag">SCIENCE</span>
+            <div class="ranking-title">
+              <a href="science/colorectal-cancer-under-50s/index.html">Mystery rise in cancer rates among under-50s (Nature)</a>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--times-muted); margin-top: 0.2rem;">閲覧数: 11,250 views</div>
+          </div>
+        </div>
+
+        <div class="ranking-card">
+          <div class="ranking-num">3</div>
+          <div class="ranking-body">
+            <span class="category-tag">LAW</span>
+            <div class="ranking-title">
+              <a href="law/air-defence-shield/index.html">British parliament debates £10bn defence shield (The Times)</a>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--times-muted); margin-top: 0.2rem;">閲覧数: 9,840 views</div>
+          </div>
+        </div>
+
+        <div class="ranking-card">
+          <div class="ranking-num">4</div>
+          <div class="ranking-body">
+            <span class="category-tag">SOCIETY</span>
+            <div class="ranking-title">
+              <a href="society/clarkson-business-red-tape/index.html">Why would anyone open a new venture in Britain? (Sunday Times)</a>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--times-muted); margin-top: 0.2rem;">閲覧数: 8,320 views</div>
+          </div>
+        </div>
+
+        <div class="ranking-card">
+          <div class="ranking-num">5</div>
+          <div class="ranking-body">
+            <span class="category-tag">WORLD</span>
+            <div class="ranking-title">
+              <a href="world/raf-fairford-bomber-redeployment/index.html">US bombers relocated amid drone alerts (Reuters)</a>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--times-muted); margin-top: 0.2rem;">閲覧数: 7,190 views</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: BACK NUMBERS & INSTANT ARTICLE SEARCH (過去記事・バックナンバー一括検索)
+         ========================================================================== -->
+    <section class="study-section" id="section-archive" style="margin-top: 4rem;">
+      <div class="section-heading-bar">
+        <h2 class="section-heading">BACK NUMBERS & INSTANT SEARCH (バックナンバー一括検索)</h2>
+        <span style="font-size: 0.8rem; color: var(--times-muted);">全過去記事のキーワード・分野・出典別リアルタイム検索</span>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--times-muted); margin-bottom: 1.25rem; line-height: 1.6;">
+        過去に配信されたすべての学術ニュース記事を、英単語・日本語キーワード・出題分野・一次メディア別で瞬時に絞り込み検索できます。入試直前期のテーマ別総復習や自由英作文の論点リサーチにご活用ください。
+      </p>
+
+      <!-- Daily Editions Quick Navigator -->
+      <div style="background: #f8f9fa; border: 1px solid var(--times-light-border); padding: 1rem 1.25rem; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem;">
+        <div style="font-weight: 700; font-size: 0.85rem; color: var(--times-black);">
+          <span>📰 日別トップページ一覧（バックナンバー紙面）:</span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+          <a href="index.html#date-2026-10-06" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-black); background: #111; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-10-06'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/6 (火) 本日最新号</a>
+          <a href="index.html#date-2026-10-05" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-05'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/5 (月) 号</a>
+          <a href="edition-2026-10-04.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-04'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/4 (日) 号</a>
+          <a href="edition-2026-10-03.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-03'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/3 (土) 号</a>
+          <a href="edition-2026-10-02.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-02'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/2 (金) 号</a>
+          <a href="edition-2026-10-01.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-01'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/1 (木) 創刊号</a>
+        </div>
+      </div>
+
+      <div class="archive-search-box">
+        <div class="archive-search-input-wrap">
+          <span class="archive-search-icon">🔍</span>
+          <input type="text" id="archive-search-input" class="archive-search-input" placeholder="タイトル、英単語（cancer, AI, solitude等）、日本語キーワード、ニュース元で検索...">
+        </div>
+        
+        <div class="archive-filter-row">
+          <div class="filter-category-group">
+            <button type="button" class="filter-category-btn active" data-cat="all">全分野 (All)</button>
+            <button type="button" class="filter-category-btn" data-cat="culture">Culture (文化・思想)</button>
+            <button type="button" class="filter-category-btn" data-cat="law">Law (法律・制度)</button>
+            <button type="button" class="filter-category-btn" data-cat="science">Science (科学・医学)</button>
+            <button type="button" class="filter-category-btn" data-cat="society">Society (社会・経済)</button>
+            <button type="button" class="filter-category-btn" data-cat="world">World (世界・安保)</button>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <select id="archive-source-select" class="archive-source-select" aria-label="Filter by Source Media">
+              <option value="all">すべてのニュースソース (All Media)</option>
+              <option value="time">TIME Magazine</option>
+              <option value="the-times">The Times / Sunday Times</option>
+              <option value="the-guardian">The Guardian</option>
+              <option value="nature">Nature / Nature Medicine</option>
+              <option value="reuters">Reuters / AP News</option>
+              <option value="ft">Financial Times</option>
+              <option value="science-mag">Science / MIT Tech Review</option>
+              <option value="the-conversation">The Conversation / Atlantic</option>
+            </select>
+            <span id="archive-count-badge" class="archive-count-badge">該当件数: 12 件</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Search Results Grid -->
+      <div id="archive-results-grid" class="archive-results-grid"></div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: ESSENTIAL MEDIA LITERACY FOR HIGH SCHOOL STUDENTS (高校生向けニュースソース完全解説)
+         ========================================================================== -->
+    <section class="study-section" id="section-media-literacy" style="margin-top: 4rem;">
+      <div class="section-heading-bar">
+        <h2 class="section-heading">ESSENTIAL MEDIA LITERACY FOR STUDENTS (高校生が知っておくべき主要ニュースソース8選)</h2>
+        <span style="font-size: 0.8rem; color: var(--times-muted);">「ニュースに興味がない」高校生こそ知るべき入試直結メディアの視点</span>
+      </div>
+      <div style="background: #fafafa; border-left: 3px solid var(--times-black); padding: 1rem 1.25rem; margin-bottom: 1.5rem; font-size: 0.88rem; line-height: 1.7; color: var(--times-body);">
+        <strong>💡 なぜ高校生が英米の一流ニュースソースを知る必要があるのか？</strong><br>
+        東京大学、京都大学、早稲田大学、慶應義塾大学などの難関大学入試英語長文の約8割は、国内外の時事問題を取り扱う海外の一流紙・科学誌からそのまま引用・改変されて出題されます。普段日本のテレビニュースを見ない高校生でも、「それぞれのメディアがどのような思想的スタンスを持ち、なぜそのテーマを問題提起しているのか」という<strong>ニュースソースの背景（Media Literacy）</strong>を知っておくだけで、長文の結論を正確に予測でき、自由英作文や小論文で圧倒的な高得点を獲得できます。
+      </div>
+
+      <!-- Media Resources Grid -->
+      <div id="media-resources-grid" class="media-resources-grid"></div>
+    </section>
+
+  </main>
+
+  <!-- The Times UK Style Footer -->
+  <footer class="times-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo">THE ACADEMIC TIMES</a>
+        <div style="font-size: 0.8125rem; color: #888;">
+          The Independent Broadsheet for University Entrance Examination & Liberal Arts English
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>About The Academic Times</h4>
+          <p style="font-size: 0.8125rem; line-height: 1.7; color: #999;">
+            TIME、The Times、BBC、Reuters、The Guardian等の海外高級紙から、大学入試長文・難関大英作文・学術研究に資する記事を毎日厳選。ファクトチェックと音声（Edge-TTS）を備えた日本初のアカデミック英語ニュースサイトです。
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Sub-Directories</h4>
+          <ul class="footer-links">
+            <li><a href="society/index.html">/society/ — 社会・教育・心理</a></li>
+            <li><a href="science/index.html">/science/ — 科学・医学・環境</a></li>
+            <li><a href="culture/index.html">/culture/ — 文化・思想・エッセイ</a></li>
+            <li><a href="law/index.html">/law/ — 法律・制度・法哲学</a></li>
+            <li><a href="world/index.html">/world/ — 国際情勢・安全保障</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Pipeline & Architecture</h4>
+          <ul class="footer-links">
+            <li><a href="#">Daily 10+ Article Pipeline</a></li>
+            <li><a href="#">Edge-TTS Voice Automation</a></li>
+            <li><a href="#">Fact-Checking Protocol</a></li>
+            <li><a href="#">Semi-Automated CMS Workflow</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact & Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Editorial Team</a></li>
+            <li><a href="#">Source Attribution Policy</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+            <li><a href="#">Tokyo, Japan</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 THE ACADEMIC TIMES. All rights reserved. Powered by Edge-TTS & Semi-Automated AI Pipeline.</div>
+        <div>
+          <a href="index.html" style="color: #888; text-decoration: underline;">Top of Page ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/portal-data.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
