@@ -230,9 +230,30 @@ const JUNIOR_ARTICLES = [
 ];
 
 const JUNIOR_EDITIONS = {
+  "2026-10-09": {
+    "dateStr": "Friday October 9 2026",
+    "editionLabel": "2026年10月9日 (金) 号 【本日最新版】",
+    "tagline": "特集：スマホ時代の不安を和らげる哲学とイヤホンを外す小さな勇気",
+    "topLeadSlug": "stoic-philosophy-digital-age",
+    "subLeadSlugs": [
+      "headphones-in-public",
+      "psychology-casual-encounters"
+    ],
+    "leftDispatches": [
+      "critical-minerals-geopolitics",
+      "colorectal-cancer-under-50s",
+      "air-defence-shield"
+    ],
+    "rightDigestSlugs": [
+      "mediterranean-marine-heatwaves",
+      "ai-pediatric-diagnosis-consent",
+      "clarkson-business-red-tape",
+      "generative-ai-paleontology"
+    ]
+  },
   "2026-10-08": {
     "dateStr": "Thursday October 8 2026",
-    "editionLabel": "2026年10月8日 (木) 号 【本日最新版】",
+    "editionLabel": "2026年10月8日 (木) 号 【バックナンバー】",
     "tagline": "特集：クリーンエネルギーに必要な鉱物の争奪戦とスマホ時代の心の整理",
     "topLeadSlug": "critical-minerals-geopolitics",
     "subLeadSlugs": [
