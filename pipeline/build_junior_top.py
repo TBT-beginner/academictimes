@@ -22,19 +22,19 @@ def generate_junior_index():
     # Map articles by slug
     art_map = {a["slug"]: a for a in JUNIOR_ARTICLES}
     
-    # 10/6 Default Edition Stories
-    lead = art_map.get("headphones-in-public", JUNIOR_ARTICLES[0])
-    sub1 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[1])
-    sub2 = art_map.get("psychology-casual-encounters", JUNIOR_ARTICLES[2])
+    # 10/8 Default Edition Stories
+    lead = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[4])
+    sub1 = art_map.get("stoic-philosophy-digital-age", JUNIOR_ARTICLES[6])
+    sub2 = art_map.get("mediterranean-marine-heatwaves", JUNIOR_ARTICLES[8])
     
-    left1 = art_map.get("air-defence-shield", JUNIOR_ARTICLES[3])
-    left2 = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[4])
-    left3 = art_map.get("raf-fairford-bomber-redeployment", JUNIOR_ARTICLES[14])
+    left1 = art_map.get("psychology-casual-encounters", JUNIOR_ARTICLES[2])
+    left2 = art_map.get("air-defence-shield", JUNIOR_ARTICLES[3])
+    left3 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[1])
     
-    right1 = art_map.get("clarkson-business-red-tape", JUNIOR_ARTICLES[9])
-    right2 = art_map.get("inheritance-tax-reform-debate", JUNIOR_ARTICLES[10])
-    right3 = art_map.get("ai-pediatric-diagnosis-consent", JUNIOR_ARTICLES[11])
-    right4 = art_map.get("mediterranean-marine-heatwaves", JUNIOR_ARTICLES[8])
+    right1 = art_map.get("headphones-in-public", JUNIOR_ARTICLES[0])
+    right2 = art_map.get("clarkson-business-red-tape", JUNIOR_ARTICLES[9])
+    right3 = art_map.get("inheritance-tax-reform-debate", JUNIOR_ARTICLES[10])
+    right4 = art_map.get("ai-pediatric-diagnosis-consent", JUNIOR_ARTICLES[11])
 
     # Pre-render all 15 catalog cards for initial display & SEO
     cards_html = []
@@ -96,11 +96,13 @@ def generate_junior_index():
   <!-- Top Switcher Bar with Interactive Edition Switcher -->
   <div class="top-date-bar">
     <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem; flex-wrap: wrap; gap: 0.5rem;">
-      <span id="top-date-bar-text">Tuesday October 6 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
+      <span id="top-date-bar-text">Thursday October 8 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
       <div class="edition-selector-wrap">
         <span style="font-weight: 700; color: #111;">📅 紙面切替:</span>
         <select id="select-edition-date" class="edition-select" aria-label="Select edition date">
-          <option value="2026-10-06" selected>2026年10月6日 (火) 号 【本日付・最新】</option>
+          <option value="2026-10-08" selected>2026年10月8日 (木) 号 【本日付・最新】</option>
+          <option value="2026-10-07">2026年10月7日 (水) 号 【挨拶の魔法・北極海航路】</option>
+          <option value="2026-10-06">2026年10月6日 (火) 号 【イヤホン論争・静かな時間】</option>
           <option value="2026-10-05">2026年10月5日 (月) 号 【防空計画・王室警護】</option>
           <option value="2026-10-04">2026年10月4日 (日) 号 【若年健康・海洋温暖化】</option>
           <option value="2026-10-03">2026年10月3日 (土) 号 【AI診断・恐竜の歩行】</option>
@@ -133,6 +135,7 @@ def generate_junior_index():
         <li class="nav-item"><a href="#cat-society">Society & Mind</a></li>
         <li class="nav-item"><a href="#cat-law">Law & Justice</a></li>
         <li class="nav-item"><a href="#cat-world">World & Security</a></li>
+        <li class="nav-item"><a href="../nobel-prize/index.html" style="color: #b8860b; font-weight: 700;">🏆 2026ノーベル賞特設解説</a></li>
         <li class="nav-item"><a href="#section-archive" style="color: #235937; font-weight: 700;">🔍 記事一覧・検索</a></li>
         <li class="nav-item"><a href="#section-guide">高校生向け学習ガイド</a></li>
         <li class="nav-item" style="margin-left: auto;">
@@ -517,7 +520,9 @@ def generate_junior_index():
           <span>📰 日別トップページ一覧（バックナンバー紙面）:</span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
-          <a href="index.html#date-2026-10-06" style="padding: 0.35rem 0.75rem; border: 1px solid #235937; background: #235937; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-10-06'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/6 (火) 本日最新号</a>
+          <a href="index.html#date-2026-10-08" style="padding: 0.35rem 0.75rem; border: 1px solid #235937; background: #235937; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-10-08'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/8 (木) 本日最新号</a>
+          <a href="index.html#date-2026-10-07" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-07'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/7 (水) 号</a>
+          <a href="index.html#date-2026-10-06" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-06'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/6 (火) 号</a>
           <a href="index.html#date-2026-10-05" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-05'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/5 (月) 号</a>
           <a href="index.html#date-2026-10-04" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-04'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/4 (日) 号</a>
           <a href="index.html#date-2026-10-03" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-03'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/3 (土) 号</a>

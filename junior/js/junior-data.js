@@ -230,9 +230,51 @@ const JUNIOR_ARTICLES = [
 ];
 
 const JUNIOR_EDITIONS = {
+  "2026-10-08": {
+    "dateStr": "Thursday October 8 2026",
+    "editionLabel": "2026年10月8日 (木) 号 【本日最新版】",
+    "tagline": "特集：クリーンエネルギーに必要な鉱物の争奪戦とスマホ時代の心の整理",
+    "topLeadSlug": "critical-minerals-geopolitics",
+    "subLeadSlugs": [
+      "stoic-philosophy-digital-age",
+      "mediterranean-marine-heatwaves"
+    ],
+    "leftDispatches": [
+      "psychology-casual-encounters",
+      "air-defence-shield",
+      "colorectal-cancer-under-50s"
+    ],
+    "rightDigestSlugs": [
+      "headphones-in-public",
+      "clarkson-business-red-tape",
+      "inheritance-tax-reform-debate",
+      "ai-pediatric-diagnosis-consent"
+    ]
+  },
+  "2026-10-07": {
+    "dateStr": "Wednesday October 7 2026",
+    "editionLabel": "2026年10月7日 (水) 号 【バックナンバー】",
+    "tagline": "特集：ちょっとした挨拶の魔法と氷が解ける北極海航路のルール",
+    "topLeadSlug": "psychology-casual-encounters",
+    "subLeadSlugs": [
+      "arctic-sea-route-unclos",
+      "generative-ai-paleontology"
+    ],
+    "leftDispatches": [
+      "critical-minerals-geopolitics",
+      "royal-security-judicial-review",
+      "raf-fairford-bomber-redeployment"
+    ],
+    "rightDigestSlugs": [
+      "headphones-in-public",
+      "stoic-philosophy-digital-age",
+      "colorectal-cancer-under-50s",
+      "air-defence-shield"
+    ]
+  },
   "2026-10-06": {
     "dateStr": "Tuesday October 6 2026",
-    "editionLabel": "2026年10月6日 (火) 号 【本日最新版】",
+    "editionLabel": "2026年10月6日 (火) 号 【バックナンバー】",
     "tagline": "特集：静かな時間の力（イヤホン論争）と見知らぬ人への挨拶の魔法",
     "topLeadSlug": "headphones-in-public",
     "subLeadSlugs": [
