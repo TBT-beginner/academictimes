@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Injects reciprocal bidirectional links to THE JUNIOR into all 15 Senior Academic Times articles:
-1. Top date bar link
+Injects reciprocal bidirectional links to THE JUNIOR into all 30 Senior Academic Times articles:
+1. Top date bar link (with cleanly balanced <div> tags)
 2. Hero header switcher banner (prominent, accessible green)
-3. Navigation bar item
-4. Bottom study recommendation banner
+3. Bottom study recommendation banner
 """
 
 import os
@@ -29,11 +28,6 @@ def link_senior_articles():
             content = f.read()
             
         junior_url = f"../../junior/{cat}/{slug}/index.html"
-        
-        # 1. Check if already has junior banner
-        if "junior-edition-banner" in content:
-            print(f"[SKIP] Already linked: {cat}/{slug}")
-            continue
             
         # Banner HTML
         hero_banner = f"""
@@ -73,28 +67,39 @@ def link_senior_articles():
       </div>
 """
 
-        # Insert hero banner after article-meta-row
-        meta_pattern = r'(<div class="article-meta-row">[\s\S]*?</div>)'
-        if re.search(meta_pattern, content):
-            content = re.sub(meta_pattern, r'\1' + hero_banner, content, count=1)
-        else:
-            print(f"[WARN] article-meta-row not found in {senior_path}")
+        # 1. Insert hero banner after article-meta-row if not present
+        if "junior-edition-banner" not in content:
+            meta_pattern = r'(<div class="article-meta-row">[\s\S]*?</div>)'
+            if re.search(meta_pattern, content):
+                content = re.sub(meta_pattern, r'\1' + hero_banner, content, count=1)
+            else:
+                print(f"[WARN] article-meta-row not found in {senior_path}")
 
-        # Insert bottom banner before </article>
-        article_end_pattern = r'(\s*</article>)'
-        if re.search(article_end_pattern, content):
-            content = re.sub(article_end_pattern, bottom_banner + r'\1', content, count=1)
-        else:
-            print(f"[WARN] </article> not found in {senior_path}")
+        # 2. Insert bottom banner before </article> if not present
+        if "🌱 『THE JUNIOR』でもう一度基礎を固める" not in content:
+            article_end_pattern = r'(\s*</article>)'
+            if re.search(article_end_pattern, content):
+                content = re.sub(article_end_pattern, bottom_banner + r'\1', content, count=1)
+            else:
+                print(f"[WARN] </article> not found in {senior_path}")
 
-        # Add top-date-bar link if not present
-        if "THE JUNIOR" not in content[:content.find("<header class=")]:
-            content = re.sub(
-                r'(<div class="top-date-bar"[^>]*>)([\s\S]*?)(</div>)',
-                r'\1<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; max-width: 1200px; margin: 0 auto; padding: 0 1rem;"><span>\2</span><a href="' + junior_url + '" style="color: #235937; font-weight: 700; text-decoration: underline; font-size: 0.78rem;">🌱 THE JUNIOR (英検準2〜2級版) ↗</a></div>\3',
-                content,
-                count=1
-            )
+        # 3. Clean and balance top-date-bar
+        def replace_top_date_bar(m):
+            raw_text = m.group(1)
+            clean_text = re.sub(r'<[^>]+>', ' ', raw_text)
+            clean_text = ' '.join(clean_text.split())
+            if 'THE JUNIOR' in clean_text:
+                clean_text = clean_text[:clean_text.find('THE JUNIOR')].strip()
+            if not clean_text:
+                clean_text = "Friday October 9 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; Daily University Exam Academic Digest"
+            return f'''<div class="top-date-bar">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <span>{clean_text}</span>
+    <a href="{junior_url}" style="color: #235937; font-weight: 700; text-decoration: underline; font-size: 0.78rem;">🌱 THE JUNIOR (英検準2〜2級版) ↗</a>
+  </div>
+</div>'''
+
+        content = re.sub(r'<div class="top-date-bar"[^>]*>([\s\S]*?)</div>', replace_top_date_bar, content, count=1)
 
         with open(senior_path, "w", encoding="utf-8") as f:
             f.write(content)

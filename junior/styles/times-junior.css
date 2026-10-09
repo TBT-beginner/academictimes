@@ -316,4 +316,24 @@
   border-radius: 2px;
 }
 
+/* Ensure left alignment across all study content */
+.dlg-bubble,
+.dlg-bubble p,
+.dlg-turn,
+.dlg-content,
+.grammar-card,
+.grammar-card-head,
+.grammar-card-body,
+.syntax-card,
+.study-section,
+.dialogue-wrapper,
+.dialogue-lead,
+.quiz-card,
+.quiz-question-text,
+.quiz-explanation,
+.vocab-table td {
+  text-align: left !important;
+}
+
+
 

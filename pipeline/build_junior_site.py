@@ -10,7 +10,9 @@ import os
 import sys
 import asyncio
 import edge_tts
+import datetime
 from junior_articles_data import JUNIOR_ARTICLES
+from build_junior_data_js import DATE_MAP
 
 VOICE_BRITISH = "en-GB-RyanNeural"
 VOICE_KEITA = "ja-JP-KeitaNeural"
@@ -47,6 +49,13 @@ def build_junior_article_html(art):
     guide = art["source_student_guide"]
     orig_url = art["original_article_url"]
     image = art["image"]
+    
+    # Date formatting
+    date_iso = art.get("date") or DATE_MAP.get(slug, "2026-10-09")
+    dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d")
+    date_ja = f"{dt.year}年{dt.month}月{dt.day}日"
+    date_en_bar = dt.strftime("%A %B %d %Y").replace(" 0", " ")
+    date_en_full = dt.strftime("%B %d, %Y").replace(" 0", " ")
     
     # Sentences
     s1_en, s1_ja = art["sentences"][0]["en"], art["sentences"][0]["ja"]
@@ -271,13 +280,27 @@ def build_junior_article_html(art):
           {subhead}
         </p>
 
+        <!-- Article Meta Row: Date & Commentators -->
+        <div class="article-meta-row" style="margin: 0.75rem 0 1rem; display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; font-size: 0.85rem; color: #555;">
+          <span style="background: #235937; color: #fff; font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 2px;">NEWS DATE</span>
+          <time datetime="{date_iso}" style="font-weight: 700; color: #143820;">📅 ニュースソース発行日: {date_ja}（{date_en_full}）</time>
+          <span>•</span>
+          <span>解説：Keita先生 ＆ Nanamiさん</span>
+        </div>
+
         <!-- Source Accordion -->
         <details class="source-accordion" style="margin-top: 1rem;">
           <summary class="source-accordion-summary">
             📰 ニュースソースについて（出典: {source_name}）
           </summary>
           <div class="source-accordion-body">
+            <div style="margin-bottom: 0.6rem; padding-bottom: 0.5rem; border-bottom: 1px dashed #b2d4bd; font-size: 0.85rem; color: #143820;">
+              <strong>📅 ニュースソース発行日：</strong><time datetime="{date_iso}">{date_ja}（{date_en_full}）</time>
+            </div>
             {source_attr}<br>
+            <span style="font-size: 0.8rem; color: var(--times-muted); margin-top: 0.4rem; display: inline-block;">
+              元記事URL: <a href="{source_url}" target="_blank" rel="noopener noreferrer" style="color: #235937; text-decoration: underline;">{source_url} ↗</a>
+            </span>
             <div style="font-size: 0.82rem; line-height: 1.6; margin-top: 0.5rem; color: #444;">
               <strong>🎓 高校生向け学習のヒント：</strong> {guide}
             </div>

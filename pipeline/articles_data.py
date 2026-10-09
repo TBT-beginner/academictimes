@@ -1984,18 +1984,31 @@ try:
             "source_attribution": "米週刊誌TIMEのエッセイを元に構成した学術英語教材です。",
             "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt96d6f358ea9d50b0/6abfba6215869b08e9e95a32/headphones.jpg?branch=production&width=1200&quality=80&auto=webp",
             "sentences": [
-                {"no": 1, "en": "Today, many individuals wear headphones continuously in public.", "ja": "今日、多くの人々が公共空間で絶え間なくイヤホンを装着しています。"}
+                {"no": 1, "en": "In an essay for TIME, journalist Meehika Barua argues that our habitual use of headphones in public is quietly diminishing our engagement with the world.", "ja": "米週刊誌TIMEに寄せたエッセイの中で、ジャーナリストのミーヒカ・バルア氏は、私たちが公共の場でイヤホンを日常的に使い続けることが、周囲の世界と深く関わり合う機会を密かに奪っているのではないかと問題提起しています。"},
+                {"no": 2, "en": "During her daily commute in London, Barua decided to ditch her wireless earbuds and immediately noticed a profound shift in her awareness.", "ja": "ロンドンでの日々の通勤中、バルア氏は愛用していたワイヤレスイヤホンを外してみることにしました。すると即座に、自分を取り巻く世界に対する意識に深遠な変化が生じていることに気づいたのです。"},
+                {"no": 3, "en": "According to recent research by Ofcom, 93 percent of U.K. adults listen to some form of audio weekly, filling nearly every quiet lull of the day.", "ja": "英国の通信庁（Ofcom）の最新調査によると、英国内の成人の93パーセントが毎週何らかの音声メディアを聴取しており、1日のうちのわずかな静けさや空白時間（lull）さえも音で埋め尽くされています。"},
+                {"no": 4, "en": "Psychologists warn that constant auditory stimulation deprives the human mind of reverie, the unintentional daydreaming essential for creative thought.", "ja": "しかし心理学者らは、絶え間ない聴覚的刺激に晒され続けることで、人間の精神から創造的思考に不可欠な「物思い（reverie）」——すなわち、何の目的も持たずに思考を漂わせる白昼夢の時間——が奪われてしまうと警鐘を鳴らしています。"},
+                {"no": 5, "en": "Furthermore, studies indicate that people routinely underestimate the emotional benefits of spontaneous, everyday interactions with strangers.", "ja": "さらに複数の社会心理学研究は、公共の場で見知らぬ他者と交わす偶発的でささやかな触れ合いがもたらす心の充足感を、人々が過小評価しがちであることを浮き彫りにしています。"}
             ],
             "vocabulary": [
-                {"word": "reverie", "phonetic": "[ˈrev.ər.i]", "pos": "名詞", "meaning": "白昼夢、物思い", "def": "a state of being pleasantly lost in one's thoughts; a daydream", "ex": "Walking in silence allowed moments of creative reverie."}
+                {"word": "reverie", "phonetic": "[ˈrev.ər.i]", "pos": "名詞", "meaning": "白昼夢、物思い", "def": "a state of being pleasantly lost in one's thoughts; a daydream", "ex": "Walking in silence allowed moments of creative reverie."},
+                {"word": "diminish", "phonetic": "[dɪˈmɪn.ɪʃ]", "pos": "動詞", "meaning": "減少させる、衰えさせる", "def": "make or become less; reduce in size or importance", "ex": "Constant noise diminishes our focus on surroundings."},
+                {"word": "spontaneous", "phonetic": "[spɒnˈteɪ.ni.əs]", "pos": "形容詞", "meaning": "自発的な、偶発の", "def": "performed or occurring as a result of a sudden impulse without premeditation", "ex": "Spontaneous conversations often brighten one's day."}
             ],
-            "syntax": [],
+            "syntax": [
+                {"phrase": "deprives the human mind of reverie", "meaning": "人間の精神から物思いの時間を奪う（deprive A of B）", "explanation": "「deprive A of B」は大学入試で最頻出の『分離・剥奪のof』構文です。rob A of B, clear A of B などと同様に、AからBを奪い去るニュアンスを持ちます。"},
+                {"phrase": "filling nearly every quiet lull of the day", "meaning": "1日のほぼすべての静けさの合間を埋め尽くしながら（分詞構文）", "explanation": "現在分詞（filling）による付帯状況の分詞構文です。lull は「一時的な静けさ・活動の合間」を意味する重要学術語彙です。"}
+            ],
             "dialogue": [
-                {"speaker": "七", "name": "Nanami", "role": "アシスタント", "text": "イヤホンを外すことの良さについて学びました。"},
-                {"speaker": "慶", "name": "Keita先生", "role": "英語講師", "text": "静かな時間こそが創造性を生むんだね。"}
+                {"speaker": "七", "name": "Nanami", "role": "アシスタント・大学生", "text": "Keita先生、電車の中でも街中でも、みんなイヤホンをしてますよね。私も通学中は音楽を手放せません！"},
+                {"speaker": "慶", "name": "Keita先生", "role": "英語講師", "text": "便利だし自分の世界に入れるよね。でもTIME誌の筆者は、その習慣が創造性や偶発的な出会いを奪っていると警告しているんだ。"},
+                {"speaker": "七", "name": "Nanami", "role": "アシスタント・大学生", "text": "それが本文に出てくる『reverie（白昼夢・物思い）』なんですね。"},
+                {"speaker": "慶", "name": "Keita先生", "role": "英語講師", "text": "その通り！何も聴かない余白の時間こそが、脳のひらめきを育むんだよ。"}
             ],
             "quiz": [
-                {"question": "What is the primary benefit of quiet moments in public?", "options": ["Increased phone battery life.", "Creative reverie and micro-connections.", "Lower train ticket prices.", "Faster walking speed."], "correct_index": 1, "explanation": "静かな時間が創造性と偶発的交流を育みます。"}
+                {"question": "According to the passage, what does constant audio stimulation deprive people of?", "options": ["Physical energy and stamina", "Reverie, the daydreaming vital for creative thought", "The ability to speak multiple languages", "Digital music streaming discounts"], "correct_index": 1, "explanation": "心理学者は、絶え間ない聴覚刺激が創造性に必要な「物思い（reverie）」を奪うと警告しています。"},
+                {"question": "What did Meehika Barua notice after ditching her earbuds in London?", "options": ["She felt significantly more tired.", "A profound shift in her awareness of the world.", "Public transport was free of charge.", "Her smartphone battery drained faster."], "correct_index": 1, "explanation": "イヤホンを外した直後、自らを取り巻く世界に対する意識に深遠な変化が生じたと述べています。"},
+                {"question": "What do studies indicate that people routinely underestimate?", "options": ["The cost of monthly mobile data", "The emotional benefits of spontaneous interactions with strangers", "The distance between train stations", "The volume levels of British accents"], "correct_index": 1, "explanation": "見知らぬ他者との偶発的でささやかな触れ合いがもたらす情緒的利益を過小評価しがちであると述べられています。"}
             ]
         })
         _existing_slugs.add("headphones-in-public")

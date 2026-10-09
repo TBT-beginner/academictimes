@@ -10,6 +10,8 @@ import edge_tts
 import sys
 sys.path.append(os.path.dirname(__file__))
 from articles_data import ARTICLES
+from build_junior_data_js import DATE_MAP
+import datetime
 
 VOICE_BRITISH = "en-GB-RyanNeural"
 VOICE_KEITA = "ja-JP-KeitaNeural"
@@ -44,7 +46,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   <!-- Top Date Bar -->
   <div class="top-date-bar">
-    Tuesday October 6 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; Daily University Exam Academic Digest
+    {date_en_bar} &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; Daily University Exam Academic Digest
   </div>
 
   <!-- The Times Masthead -->
@@ -86,7 +88,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <div class="article-meta-row">
             <span class="article-author">解説：Keita先生 ＆ Nanamiさん（THE ACADEMIC TIMES）</span>
             <span>•</span>
-            <time datetime="2026-10-06">2026年10月6日</time>
+            <time datetime="{date_iso}">📅 ニュースソース発行日: {date_ja}（{date_en_full}）</time>
             <span>•</span>
             <span class="badge-new">NEW EDITION</span>
           </div>
@@ -98,6 +100,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <span class="source-toggle-icon">▾</span>
             </summary>
             <div class="source-accordion-body">
+              <div style="margin-bottom: 0.6rem; padding-bottom: 0.5rem; border-bottom: 1px dashed #ccc; font-size: 0.85rem; color: var(--times-dark);">
+                <strong>📅 ニュースソース発行日：</strong><time datetime="{date_iso}">{date_ja}（{date_en_full}）</time>
+              </div>
               {source_attribution}<br>
               <span style="font-size: 0.8rem; color: var(--times-muted); margin-top: 0.4rem; display: inline-block;">
                 元記事URL: <a href="{source_url}" target="_blank" rel="noopener noreferrer" style="color: var(--times-dark); text-decoration: underline;">{source_url} ↗</a>
@@ -449,8 +454,9 @@ def build_article_html(art):
     dialogue_turns_html = "\n".join(dlg_blocks)
     
     # Vocab rows
+    vocab_list = art.get("vocab") or art.get("vocabulary") or []
     vocab_rows = []
-    for v in art["vocab"]:
+    for v in vocab_list:
         row = f"""
         <tr>
           <td>
@@ -488,8 +494,16 @@ def build_article_html(art):
     syntax_cards_html = "\n".join(syntax_cards)
     
     # Pronunciation cards
+    pron_list = art.get("pronunciation")
+    if not pron_list and vocab_list:
+        v0 = vocab_list[0]
+        v1 = vocab_list[1] if len(vocab_list) > 1 else v0
+        pron_list = [
+            {"phrase": v0["word"] + " の発音・アクセント", "meaning": f"標準発音記号: {v0.get('phonetic', '')}"},
+            {"phrase": v1["word"] + " の発音・アクセント", "meaning": f"標準発音記号: {v1.get('phonetic', '')}"}
+        ]
     pron_cards = []
-    for p in art["pronunciation"]:
+    for p in (pron_list or []):
         p_html = f"""
         <div class="grammar-card">
           <div class="grammar-card-head">
@@ -534,7 +548,7 @@ def build_article_html(art):
     
     # FAQ
     faq_items = []
-    for f in art["faq"]:
+    for f in art.get("faq", []):
         f_html = f"""
         <details class="faq-item">
           <summary class="faq-summary">Q. {f['q']}</summary>
@@ -548,7 +562,7 @@ def build_article_html(art):
     
     # Factcheck
     fc_blocks = []
-    for fc in art["factcheck"]:
+    for fc in art.get("factcheck", []):
         fc_html = f"""
         <div class="grammar-card">
           <div class="grammar-card-head">
@@ -621,6 +635,13 @@ def build_article_html(art):
     }
     guide_text = student_guides.get(art["slug"], "海外一流紙の論理的な英文から、大学入試に直結する背景知識とクリティカル・シンキングを養います。")
     
+    slug = art["slug"]
+    date_iso = art.get("date") or DATE_MAP.get(slug, "2026-10-09")
+    dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d")
+    date_ja = f"{dt.year}年{dt.month}月{dt.day}日"
+    date_en_bar = dt.strftime("%A %B %d %Y").replace(" 0", " ")
+    date_en_full = dt.strftime("%B %d, %Y").replace(" 0", " ")
+    
     s = art["sentences"]
     return HTML_TEMPLATE.format(
         title=art["title"],
@@ -637,6 +658,10 @@ def build_article_html(art):
         culture_active=cul_act,
         law_active=law_act,
         world_active=wor_act,
+        date_iso=date_iso,
+        date_ja=date_ja,
+        date_en_bar=date_en_bar,
+        date_en_full=date_en_full,
         s1_en=s[0]["en"], s1_ja=s[0]["ja"],
         s2_en=s[1]["en"], s2_ja=s[1]["ja"],
         s3_en=s[2]["en"], s3_ja=s[2]["ja"],
