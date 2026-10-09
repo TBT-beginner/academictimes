@@ -30,7 +30,7 @@ def generate_junior_index():
     
     left1 = art_map.get("japan-semiconductor-revival-rapidus", JUNIOR_ARTICLES[1])
     left2 = art_map.get("digital-school-backpack-reform", JUNIOR_ARTICLES[2])
-    left3 = art_map.get("nihon-hidankyo-nobel-peace-prize", JUNIOR_ARTICLES[6])
+    left3 = art_map.get("global-plastics-treaty-negotiations", JUNIOR_ARTICLES[6])
     
     right1 = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[4])
     right2 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[1])

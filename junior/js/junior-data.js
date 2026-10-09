@@ -273,21 +273,6 @@ const JUNIOR_ARTICLES = [
     "senior_path": "../society/digital-school-backpack-reform/index.html"
   },
   {
-    "slug": "nihon-hidankyo-nobel-peace-prize",
-    "category": "world",
-    "category_label": "WORLD & PEACE • 英検準2級〜2級",
-    "date": "2026-10-09",
-    "title": "Japanese Atomic Bomb Survivors Win the Nobel Peace Prize for a World Without Nuclear Weapons",
-    "headline_ja": "日本被団協がノーベル平和賞を受賞：核兵器のない世界を目指す被爆者たちの長年の願い",
-    "subhead": "広島と長崎の被爆者たちが伝えてきた平和のメッセージ。世界中から賞賛された歴史的なニュースをやさしい英語で学びます。",
-    "lead_snippet": "広島と長崎の被爆者による団体「日本被団協」が、2024年のノーベル平和賞を受賞しました。二度と核兵器を使ってはならないと、世界中で自らの体験を語り続けてきた70年近い努力が国際社会に認められました。",
-    "source_name": "Jiji Press & Reuters (Adapted for Eiken Grade Pre-2 - 2)",
-    "source_media_key": "jiji",
-    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000&auto=format&fit=crop&q=80",
-    "path": "world/nihon-hidankyo-nobel-peace-prize/index.html",
-    "senior_path": "../world/nihon-hidankyo-nobel-peace-prize/index.html"
-  },
-  {
     "slug": "regulatory-t-cells-nobel-breakthrough",
     "category": "science",
     "category_label": "SCIENCE & HEALTH • 英検準2級〜2級",
@@ -467,7 +452,7 @@ const JUNIOR_EDITIONS = {
     "leftDispatches": [
       "japan-semiconductor-revival-rapidus",
       "digital-school-backpack-reform",
-      "nihon-hidankyo-nobel-peace-prize"
+      "global-plastics-treaty-negotiations"
     ],
     "rightDigestSlugs": [
       "critical-minerals-geopolitics",

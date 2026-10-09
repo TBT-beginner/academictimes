@@ -397,21 +397,6 @@ const ALL_ARTICLES = [
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1000&auto=format&fit=crop&q=80"
   },
   {
-    slug: "nihon-hidankyo-nobel-peace-prize",
-    category: "world",
-    category_label: "WORLD & PEACE • 国際平和・ノーベル賞",
-    date: "2026-10-09",
-    title: "The Moral Imperative of the Nuclear Taboo: Nihon Hidankyo Wins the 2024 Nobel Peace Prize",
-    headline_ja: "日本被団協にノーベル平和賞：「核兵器不使用の規範（タブー）」を守り続けた被爆者の生きた証言",
-    subhead: "広島・長崎の被爆者組織が歩んだ不屈の半世紀。ウクライナや中東情勢で核威嚇が高まる中、国際社会が再確認した人道主義を学術英語で精読。",
-    lead_snippet: "ノルウェー・ノーベル委員会は、広島・長崎の被爆者による草の根団体「日本被団協」に2024年ノーベル平和賞を授与することを決定した。悲痛な個人の記憶をたゆまぬ世界規模の運動へと昇華させ、核兵器不使用の国際規範（核のタブー）を定着させてきた被爆者の証言が持つ道義的権威を検証する。",
-    source_name: "Jiji Press & Reuters (時事通信・オスロ共同特派 / Nobel Committee Announcement)",
-    source_media_key: "jiji",
-    source_url: "https://www.jiji.com/jc/article?k=nihon-hidankyo-nobel-peace-prize",
-    path: "world/nihon-hidankyo-nobel-peace-prize/index.html",
-    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000&auto=format&fit=crop&q=80"
-  },
-  {
     slug: "regulatory-t-cells-nobel-breakthrough",
     category: "science",
     category_label: "SCIENCE & MEDICINE • 免疫学・ノーベル賞級研究",
@@ -585,7 +570,7 @@ const EDITIONS = {
     tagline: "特集：東京理科大・硤合憲三名誉教授に2026年ノーベル化学賞・坂口志文教授の制御性T細胞・AIスマートグラス倫理",
     topLeadSlug: "soai-reaction-nobel-chemistry",
     subLeadSlugs: ["regulatory-t-cells-nobel-breakthrough", "smart-glasses-ai-privacy"],
-    leftDispatches: ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "nihon-hidankyo-nobel-peace-prize"],
+    leftDispatches: ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "global-plastics-treaty-negotiations"],
     rightDigestSlugs: ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "headphones-in-public", "air-defence-shield"]
   },
   "2026-10-08": {

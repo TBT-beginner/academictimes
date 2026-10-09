@@ -15,7 +15,6 @@ os.makedirs(JUNIOR_JS_DIR, exist_ok=True)
 
 DATE_MAP = {
     "soai-reaction-nobel-chemistry": "2026-10-09",
-    "nihon-hidankyo-nobel-peace-prize": "2026-10-09",
     "regulatory-t-cells-nobel-breakthrough": "2026-10-09",
     "smart-glasses-ai-privacy": "2026-10-09",
     "japan-semiconductor-revival-rapidus": "2026-10-09",
@@ -48,7 +47,6 @@ DATE_MAP = {
 
 MEDIA_KEY_MAP = {
     "soai-reaction-nobel-chemistry": "jiji",
-    "nihon-hidankyo-nobel-peace-prize": "jiji",
     "regulatory-t-cells-nobel-breakthrough": "jiji",
     "smart-glasses-ai-privacy": "getnews",
     "japan-semiconductor-revival-rapidus": "jiji",
@@ -86,7 +84,7 @@ EDITIONS_DATA = {
         "tagline": "特集：東京理科大・硤合先生ノーベル化学賞受賞・坂口教授のブレーキ細胞・スマートグラスとAI",
         "topLeadSlug": "soai-reaction-nobel-chemistry",
         "subLeadSlugs": ["regulatory-t-cells-nobel-breakthrough", "smart-glasses-ai-privacy"],
-        "leftDispatches": ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "nihon-hidankyo-nobel-peace-prize"],
+        "leftDispatches": ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "global-plastics-treaty-negotiations"],
         "rightDigestSlugs": ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield", "generative-ai-paleontology"]
     },
     "2026-10-08": {
