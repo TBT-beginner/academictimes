@@ -335,5 +335,34 @@
   text-align: left !important;
 }
 
+/* Elegant Hero Header & Centered Scroll Cue */
+.hero-header {
+  padding: 2.25rem 0 2rem !important;
+  border-bottom: 1px solid #d8e6dc !important;
+  margin-bottom: 2rem !important;
+}
+
+.hero-title {
+  margin: 1.75rem 0 1.25rem !important;
+  line-height: 1.25 !important;
+}
+
+.hero-scroll-cue {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 2.25rem auto 0.5rem !important;
+  text-align: center !important;
+  color: var(--junior-green) !important;
+}
+
+.hero-scroll-cue .cue-label,
+.hero-scroll-cue .cue-arrow {
+  text-align: center !important;
+  color: var(--junior-green) !important;
+}
+
+
 
 

@@ -79,9 +79,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <!-- Hero Header (Full Screen Viewport with generous vertical space) -->
       <header class="article-header hero-header" id="hero-header">
         <div class="hero-content-inner">
-          <div class="article-kicker">{category_label}</div>
-          <h1 class="article-h1">{title}</h1>
-          <p class="article-subhead">
+          <div class="article-kicker" style="margin-bottom: 1.25rem;">{category_label}</div>
+          <h1 class="article-h1" style="margin: 1.5rem 0 1.25rem;">{title}</h1>
+          <p class="article-subhead" style="margin: 0 auto 1.75rem;">
             {headline_ja}<br>
             {subhead}
           </p>
@@ -119,9 +119,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           </details>
 
           <!-- Scroll to Article Cue -->
-          <div class="hero-scroll-cue" id="hero-scroll-cue" title="記事本文へスクロール">
-            <span class="cue-label">SCROLL TO ARTICLE</span>
-            <span class="cue-arrow">↓</span>
+          <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 2.25rem;">
+            <div class="hero-scroll-cue" id="hero-scroll-cue" title="記事本文へスクロール" style="margin: 0 auto; text-align: center;">
+              <span class="cue-label">SCROLL TO ARTICLE</span>
+              <span class="cue-arrow">↓</span>
+            </div>
           </div>
         </div>
       </header>
