@@ -862,6 +862,176 @@ INGESTED_SENIOR_ARTICLES = [
                 "a": "lymphocyte（リンパ球）、pathogen（病原体）、equilibrium（均衡）、autoimmune（自己免疫の）、tolerance（寛容）などの学術語彙は、難関大の自然科学・医学部英語で極めて高い出題率を誇ります。"
             }
         ]
+    },
+    {
+        "slug": "soai-reaction-nobel-chemistry",
+        "category": "science",
+        "category_label": "SCIENCE & CHEMISTRY • 2026年ノーベル化学賞",
+        "title": "Unlocking the Mystery of Homochirality: Kenso Soai Awarded the 2026 Nobel Prize in Chemistry",
+        "headline_ja": "生命の鏡像異性体（ホモキラリティー）の起源を解明：硤合憲三・東京理科大名誉教授に2026年ノーベル化学賞",
+        "subhead": "ごくわずかな分子の偏りが自らを爆発的に増幅する「硤合反応（不斉自己触媒反応）」の世界初発見。医薬品化学と宇宙生命科学を塗り替えた世界的金字塔を最高峰の学術英語で徹底解剖。",
+        "source_name": "Jiji Press & Nature Chemistry (時事通信・ストックホルム特報 / Nobel Prize Committee Announcement)",
+        "source_url": "https://www.jiji.com/jc/article?k=soai-reaction-nobel-chemistry-2026",
+        "source_attribution": "スウェーデン王立科学アカデミーの公式発表および時事通信社の科学特報を基に、東大・京大・難関大医学部レベルの学術英語として構成した教材です。",
+        "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1000&auto=format&fit=crop&q=80",
+        "sentences": [
+            {
+                "no": 1,
+                "en": "The Royal Swedish Academy of Sciences has awarded the 2026 Nobel Prize in Chemistry to Professor Kenso Soai of the Tokyo University of Science alongside Henri Kagan for their groundbreaking discoveries in asymmetric autocatalysis.",
+                "ja": "スウェーデン王立科学アカデミーは、不斉自己触媒作用における画期的な発見を称え、東京理科大学名誉教授の硤合憲三博士とアンリ・カガン教授に2026年のノーベル化学賞を授与することを決定しました。"
+            },
+            {
+                "no": 2,
+                "en": "Prior to Soai's pioneering 1995 breakthrough, scientists could not explain why terrestrial biomolecules exhibit uniform homochirality, exclusively utilizing left-handed amino acids and right-handed sugars.",
+                "ja": "1995年の硤合博士による先駆的な大発見以前は、地球上の生体分子がなぜ左手型アミノ酸と右手型の糖のみを用いるという画一的な「ホモキラリティー」を示すのか、科学者たちは説明できませんでした。"
+            },
+            {
+                "no": 3,
+                "en": "Through the celebrated Soai reaction, an infinitesimal initial imbalance between mirror-image enantiomers triggers an explosive self-amplification, culminating in enantiomeric purity of nearly one hundred percent.",
+                "ja": "名高い「硤合反応」を通じて、鏡像異性体間のごくわずかな初期の偏りが爆発的な自己増幅の引き金となり、最終的にほぼ100パーセントの光学純度へと結実します。"
+            },
+            {
+                "no": 4,
+                "en": "This remarkable discovery not only revolutionized pharmaceutical stereochemistry, but also provided the first compelling physical mechanism for how pre-biotic life selected its molecular handedness.",
+                "ja": "この驚くべき発見は、医薬品の立体化学に革命をもたらしただけでなく、原始地球の生命がいかにして分子の「利き手」を選択したかという謎に対し、初めて説得力ある物理的メカニズムを提示しました。"
+            },
+            {
+                "no": 5,
+                "en": "Were humanity to probe alien biochemistry across the cosmos, Soai's profound insights into chemical symmetry breaking would remain the foundational compass for identifying signatures of extraterrestrial life.",
+                "ja": "もし人類が全宇宙にわたって地球外生命の生化学を探究することがあるならば、化学的対称性の破れに対する硤合博士の深遠な洞察は、地球外生命の痕跡を特定するための根本的な羅針盤であり続けるでしょう。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "autocatalysis",
+                "phonetic": "[ˌɔː.təʊ.kəˈtæl.ə.sɪs]",
+                "pos": "名詞",
+                "meaning": "自己触媒作用",
+                "def": "catalysis of a reaction by one of the products of that reaction",
+                "ex": "The reaction accelerates dramatically due to asymmetric autocatalysis."
+            },
+            {
+                "word": "homochirality",
+                "phonetic": "[ˌhɒm.əʊ.kaɪˈræl.ə.ti]",
+                "pos": "名詞",
+                "meaning": "ホモキラリティー（生体分子の鏡像異性体の一方への偏り）",
+                "def": "a uniformity of chiral units in a macromolecule or biological system",
+                "ex": "Homochirality is universally regarded as a hallmark of living organisms."
+            },
+            {
+                "word": "enantiomer",
+                "phonetic": "[ɪˈnæn.ti.ə.mər]",
+                "pos": "名詞",
+                "meaning": "鏡像異性体（右手と左手のように重なり合わない異性体）",
+                "def": "each of a pair of molecules that are mirror images of each other",
+                "ex": "One enantiomer cures the disease, while the other may produce harmful side effects."
+            },
+            {
+                "word": "infinitesimal",
+                "phonetic": "[ˌɪn.fɪ.nɪˈtes.ɪ.məl]",
+                "pos": "形容詞",
+                "meaning": "極微の、無限小の",
+                "def": "extremely small; too small to be measured or calculated",
+                "ex": "An infinitesimal fluctuation in temperature altered the entire chemical reaction."
+            },
+            {
+                "word": "stereochemistry",
+                "phonetic": "[ˌster.i.əʊˈkem.ɪ.stri]",
+                "pos": "名詞",
+                "meaning": "立体化学（分子の立体的構造を扱う化学）",
+                "def": "the branch of chemistry concerned with the three-dimensional arrangement of atoms in molecules",
+                "ex": "Modern pharmacology depends heavily on precise stereochemistry."
+            }
+        ],
+        "syntax": [
+            {
+                "phrase": "not only A, but also B",
+                "meaning": "単にAだけでなく、Bもまた",
+                "explanation": "文4の `not only revolutionized pharmaceutical stereochemistry, but also provided...` は、実学的な創薬化学への貢献（A）と、生命起源論という純粋科学の謎の解明（B）の双面を強調する最重要レトリックです。"
+            },
+            {
+                "phrase": "Were humanity to probe ..., S would remain ...",
+                "meaning": "万一人類が〜を探究することがあるならば、…であり続けるだろう",
+                "explanation": "条件節 If humanity were to probe... から if が脱落し、be動詞 were が文頭に倒置された仮定法未来の構文です。東大・京大・早慶の英語長文で頻出します。"
+            }
+        ],
+        "factcheck": [
+            {
+                "title": "1. 硤合憲三博士と「硤合反応（Soai Reaction）」の世界的重要度",
+                "body": "東京理科大学の硤合憲三名誉教授が1995年に報告した「ピリミジン-5-カルボキシアルデヒドとジイソプロピル亜鉛のアルキル化反応」は、生成物自身が不斉触媒として働き、微小な偏りをほぼ100%のエナンチオマー過剰率（ee）まで自己増幅させる世界唯一の反応系です。"
+            },
+            {
+                "title": "2. 生命の起源と「右手と左手」の謎",
+                "body": "地球上のすべての生物のタンパク質を構成するアミノ酸は「L型（左手型）」、DNA・RNAの糖は「D型（右手型）」に統一されています。通常の化学合成では半々に生じるはずの鏡像異性体がなぜ一方だけに偏ったのかという謎に、硤合反応は数学的・物理的証拠を与えました。"
+            }
+        ],
+        "dialogue": [
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "アシスタント・大学生",
+                "text": "Keita先生！東京理科大学の硤合憲三先生がノーベル化学賞を受賞されたニュース、大興奮しました！『右手と左手の分子』ってどういうことなんですか？"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語講師",
+                "text": "素晴らしいニュースだね！右手と左手の手袋のように、鏡に映した形（enantiomer）はぴったり重なり合わない。私たちの体のアミノ酸はすべて『左手型』なんだけど、なんで片方だけなのか何百年も謎だったんだ。"
+            },
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "アシスタント・大学生",
+                "text": "それを硤合先生が『自分自身を猛烈に増やす反応（autocatalysis）』で証明されたんですね！"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語講師",
+                "text": "その通り！生命の起源の謎（homochirality）に答えた世界的な業績だよ。文5の『Were humanity to probe...』のような倒置構文も難関大入試で必須だから、時事ニュースと一緒にマスターしよう！"
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What is the defining characteristic of the Soai reaction discovered by Dr. Kenso Soai?",
+                "options": [
+                    "It consumes large quantities of coal to generate electricity.",
+                    "An infinitesimal initial enantiomeric imbalance triggers explosive self-amplification to near-complete purity.",
+                    "It permanently freezes chemical solutions below absolute zero.",
+                    "It converts plastic waste directly into edible vitamins."
+                ],
+                "correct_index": 1,
+                "explanation": "【正解：B】<br>第3文「an infinitesimal initial imbalance between mirror-image enantiomers triggers an explosive self-amplification, culminating in enantiomeric purity of nearly one hundred percent」より、微小な偏りの爆発的自己増幅が正解です。"
+            },
+            {
+                "question": "What fundamental biological mystery did Dr. Soai's discovery help elucidate?",
+                "options": [
+                    "Why human beings need eight hours of sleep each night.",
+                    "The origin of uniform homochirality in terrestrial biomolecules.",
+                    "Why desert plants survive without direct sunlight.",
+                    "How birds navigate during seasonal oceanic migrations."
+                ],
+                "correct_index": 1,
+                "explanation": "【正解：B】<br>第2・4文より、地球上の生体分子が一方の鏡像異性体のみで構成される「ホモキラリティー（生命の利き手）」の起源の謎を解明しました。"
+            },
+            {
+                "question": "What grammatical inversion is present in the final sentence ('Were humanity to probe...')?",
+                "options": [
+                    "A mandatory subjunctive inversion equivalent to 'If humanity were to probe'.",
+                    "A locative inversion moving prepositional phrases to the front.",
+                    "A negative inversion triggered by 'never' or 'hardly'.",
+                    "A comparative inversion used in statistical analysis."
+                ],
+                "correct_index": 0,
+                "explanation": "【正解：A】<br>If humanity were to probe... から if が省略され were が文頭に倒置された仮定法未来の構文です。"
+            }
+        ],
+        "faq": [
+            {
+                "q": "ノーベル化学賞や分子科学に関する入試頻出英単語は？",
+                "a": "catalysis（触媒作用）、chirality（キラリティー・鏡像異性）、imbalance（不均衡）、symmetry（対称性）、pre-biotic（生命誕生前の・原始地球の）などが、東大・京大・早慶理工・医学部の英語で頻出します。"
+            }
+        ]
     }
 ]
 
@@ -1604,6 +1774,153 @@ INGESTED_JUNIOR_ARTICLES = [
                 "options": ["innovative", "harmful", "tiring", "ancient"],
                 "correct_index": 0,
                 "explanation": "【正解：A】<br>新しい手法やアイデアを取り入れた状態を表す形容詞は innovative（革新的な）です。"
+            }
+        ]
+    },
+    {
+        "slug": "soai-reaction-nobel-chemistry",
+        "category": "science",
+        "category_label": "SCIENCE & DISCOVERY • 英検準2級〜2級",
+        "title": "The Mystery of Right and Left Molecules: Japanese Professor Wins the 2026 Nobel Prize in Chemistry",
+        "headline_ja": "右手と左手の分子のふしぎ：東京理科大の硤合先生が2026年ノーベル化学賞を受賞！",
+        "subhead": "私たちの体を形づくるアミノ酸はなぜ「左手型」ばかりなのか？世界中の科学者を驚かせた「硤合反応」をやさしい英語で学びます。",
+        "lead_snippet": "スウェーデン王立科学アカデミーは、2026年のノーベル化学賞を東京理科大学名誉教授の硤合憲三（そあい・けんぞう）先生らに授与すると発表しました。生命の分子がなぜ一方向の「利き手」を選んだのかという最大の謎を解いた大発見です。",
+        "source_name": "Jiji Press & Nobel Prize (Adapted for Eiken Grade Pre-2 - 2)",
+        "source_url": "https://www.jiji.com/jc/article?k=soai-reaction-nobel-chemistry-2026",
+        "source_attribution": "時事通信のノーベル賞特報およびノーベル財団公式発表を基に、高校生が理解しやすい標準的な英語で書き下ろした教材です。",
+        "source_student_guide": "高校化学や生物で習う『アミノ酸』や『DNA』の構造と直結した最新科学ニュースです。英検や大学入試の長文読解でも、『生命の起源』に関するテーマは頻出です。",
+        "original_article_url": "../../../science/soai-reaction-nobel-chemistry/index.html",
+        "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1000&auto=format&fit=crop&q=80",
+        "sentences": [
+            {
+                "en": "Professor Kenso Soai of the Tokyo University of Science has won the 2026 Nobel Prize in Chemistry.",
+                "ja": "東京理科大学名誉教授の硤合憲三先生が、2026年のノーベル化学賞を受賞しました。"
+            },
+            {
+                "en": "Many molecules in nature have two shapes that look like a right hand and a left hand.",
+                "ja": "自然界にある多くの分子には、右手と左手のように鏡に映した2つの形が存在します。"
+            },
+            {
+                "en": "Curiously, all living things on Earth use only left-handed amino acids to build their bodies.",
+                "ja": "不思議なことに、地球上のすべての生物は体をつくるために「左手型」のアミノ酸しか使っていません。"
+            },
+            {
+                "en": "Professor Soai discovered an amazing chemical reaction where a tiny difference rapidly multiplies itself.",
+                "ja": "硤合先生は、ごくわずかな違いが自分自身を猛烈なスピードで増やしていく驚くべき化学反応を発見しました。"
+            },
+            {
+                "en": "His famous discovery helps scientists solve one of the greatest mysteries about the origin of life.",
+                "ja": "彼の名高い大発見は、生命の起源をめぐる最大の謎の1つを解き明かす大きな助けとなっています。"
+            }
+        ],
+        "dialogue": [
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "高校生",
+                "text": "Keita先生！東京理科大学の硤合先生が2026年のノーベル化学賞を受賞されたニュース、見ました！『分子の右手と左手』ってどういうことですか？"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語の先生",
+                "text": "素晴らしいニュースだね！右手用の手袋と左手用の手袋を重ねられないように、分子にも鏡に映したペア（mirror images）があるんだ。人間の体のアミノ酸はなぜか全部『左手型』なんだよ。"
+            },
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "高校生",
+                "text": "文4の『rapidly multiplies itself（猛烈に自分を増やす）』という反応を、硤合先生が世界で初めて見つけたんですね！"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語の先生",
+                "text": "その通り！『硤合反応（Soai Reaction）』として世界中の教科書に載っているんだ。生命の起源（origin of life）に迫る日本の誇らしいニュースを、英語でしっかり学ぼう！"
+            }
+        ],
+        "vocab": [
+            {
+                "word": "molecule",
+                "phonetic": "/ˈmɒl.ɪ.kjuːl/",
+                "pos": "名詞",
+                "meaning": "分子（物質の最小単位の一つ）",
+                "def": "the simplest unit of a chemical substance, composed of atoms.",
+                "ex": "Water is made of one oxygen atom and two hydrogen molecules."
+            },
+            {
+                "word": "curiously",
+                "phonetic": "/ˈkjʊə.ri.əs.li/",
+                "pos": "副詞",
+                "meaning": "奇妙なことに、不思議なことに",
+                "def": "in a strange, unusual, or surprising way.",
+                "ex": "Curiously, none of the students noticed the open window."
+            },
+            {
+                "word": "difference",
+                "phonetic": "/ˈdɪf.ər.əns/",
+                "pos": "名詞",
+                "meaning": "違い、差、わずかな不均衡",
+                "def": "the way in which two or more things which you are comparing are not the same.",
+                "ex": "Can you spot the difference between the two chemical samples?"
+            },
+            {
+                "word": "rapidly",
+                "phonetic": "/ˈræp.ɪd.li/",
+                "pos": "副詞",
+                "meaning": "急速に、非常に速く",
+                "def": "in a fast or sudden way.",
+                "ex": "The new technology spread rapidly across the globe."
+            },
+            {
+                "word": "origin",
+                "phonetic": "/ˈɒr.ɪ.dʒɪn/",
+                "pos": "名詞",
+                "meaning": "起源、始まり、生まれ",
+                "def": "the beginning or cause of something.",
+                "ex": "Scientists continue to explore the origin of the universe."
+            }
+        ],
+        "syntax": [
+            {
+                "phrase": "look like + 名詞（〜のように見える）",
+                "meaning": "身近な外見や形状を説明する基本表現",
+                "explanation": "文2の `shapes that look like a right hand and a left hand` は、「右手と左手のように見える形」という意味です。look + 形容詞（〜に見える）との違いに注意しましょう。"
+            },
+            {
+                "phrase": "help + O + 動詞の原形（Oが〜するのを助ける）",
+                "meaning": "高校英語・英検長文の超頻出使役構文",
+                "explanation": "文5の `helps scientists solve one of the greatest mysteries` は、`help + 科学者たち(scientists) + 解決する(solve)` という形です。to不定詞ではなく動詞の原形（原形不定詞）が続く点が入試頻出です。"
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What award did Professor Kenso Soai win in 2026?",
+                "options": [
+                    "The Nobel Prize in Literature",
+                    "The Nobel Prize in Chemistry",
+                    "The World Architecture Award",
+                    "An Olympic Gold Medal"
+                ],
+                "correct_index": 1,
+                "explanation": "【正解：B】<br>第1文「Professor Kenso Soai of the Tokyo University of Science has won the 2026 Nobel Prize in Chemistry」より、2026年ノーベル化学賞が正解です。"
+            },
+            {
+                "question": "What is curious about living things on Earth according to the text?",
+                "options": [
+                    "They can live underwater without any oxygen.",
+                    "They use only left-handed amino acids to build their bodies.",
+                    "They only sleep two hours per week.",
+                    "They change their colors when it rains."
+                ],
+                "correct_index": 1,
+                "explanation": "【正解：B】<br>第3文「Curiously, all living things on Earth use only left-handed amino acids to build their bodies」より、生命が左手型アミノ酸のみを使う点です。"
+            },
+            {
+                "question": "Which of the following words means 'in a very fast or sudden way'?",
+                "options": ["rapidly", "curiously", "traditional", "fragile"],
+                "correct_index": 0,
+                "explanation": "【正解：A】<br>「急速に、非常に速く」という意味を表す副詞は rapidly です。"
             }
         ]
     }

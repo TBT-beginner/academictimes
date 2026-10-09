@@ -425,6 +425,21 @@ const ALL_ARTICLES = [
     source_url: "https://www.jiji.com/jc/article?k=regulatory-t-cells-sakaguchi",
     path: "science/regulatory-t-cells-nobel-breakthrough/index.html",
     image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    slug: "soai-reaction-nobel-chemistry",
+    category: "science",
+    category_label: "SCIENCE & CHEMISTRY • 2026年ノーベル化学賞",
+    date: "2026-10-09",
+    title: "Unlocking the Mystery of Homochirality: Kenso Soai Awarded the 2026 Nobel Prize in Chemistry",
+    headline_ja: "生命の鏡像異性体（ホモキラリティー）の起源を解明：硤合憲三・東京理科大名誉教授に2026年ノーベル化学賞",
+    subhead: "ごくわずかな分子の偏りが自らを爆発的に増幅する「硤合反応（不斉自己触媒反応）」の世界初発見。医薬品化学と宇宙生命科学を塗り替えた世界的金字塔を最高峰の学術英語で徹底解剖。",
+    lead_snippet: "スウェーデン王立科学アカデミーは、2026年のノーベル化学賞を東京理科大学名誉教授の硤合憲三博士らに授与することを決定した。生命の分子がなぜ一方の鏡像異性体のみを選んだのかという「ホモキラリティーの起源」に世界で初めて化学的実証を与えた世界的業績を最高峰の英語で精読する。",
+    source_name: "Jiji Press & Nature Chemistry (時事通信・ストックホルム特報 / Nobel Prize Committee Announcement)",
+    source_media_key: "jiji",
+    source_url: "https://www.jiji.com/jc/article?k=soai-reaction-nobel-chemistry-2026",
+    path: "science/soai-reaction-nobel-chemistry/index.html",
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
@@ -432,10 +447,10 @@ const EDITIONS = {
   "2026-10-09": {
     dateStr: "Friday October 9 2026",
     editionLabel: "2026年10月9日 (金) 号 【本日最新版】",
-    tagline: "特集：日本被団協ノーベル平和賞受賞・坂口志文教授の制御性T細胞・AIスマートグラス倫理",
-    topLeadSlug: "nihon-hidankyo-nobel-peace-prize",
+    tagline: "特集：東京理科大・硤合憲三名誉教授に2026年ノーベル化学賞・坂口志文教授の制御性T細胞・AIスマートグラス倫理",
+    topLeadSlug: "soai-reaction-nobel-chemistry",
     subLeadSlugs: ["regulatory-t-cells-nobel-breakthrough", "smart-glasses-ai-privacy"],
-    leftDispatches: ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "stoic-philosophy-digital-age"],
+    leftDispatches: ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "nihon-hidankyo-nobel-peace-prize"],
     rightDigestSlugs: ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "headphones-in-public", "air-defence-shield"]
   },
   "2026-10-08": {

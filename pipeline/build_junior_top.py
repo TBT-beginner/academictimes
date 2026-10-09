@@ -24,13 +24,13 @@ def generate_junior_index():
     art_map = {a["slug"]: a for a in JUNIOR_ARTICLES}
     
     # 10/9 Default Edition Stories
-    lead = art_map.get("nihon-hidankyo-nobel-peace-prize", JUNIOR_ARTICLES[0])
+    lead = art_map.get("soai-reaction-nobel-chemistry", JUNIOR_ARTICLES[0])
     sub1 = art_map.get("regulatory-t-cells-nobel-breakthrough", JUNIOR_ARTICLES[1])
     sub2 = art_map.get("smart-glasses-ai-privacy", JUNIOR_ARTICLES[2])
     
     left1 = art_map.get("japan-semiconductor-revival-rapidus", JUNIOR_ARTICLES[1])
     left2 = art_map.get("digital-school-backpack-reform", JUNIOR_ARTICLES[2])
-    left3 = art_map.get("stoic-philosophy-digital-age", JUNIOR_ARTICLES[6])
+    left3 = art_map.get("nihon-hidankyo-nobel-peace-prize", JUNIOR_ARTICLES[6])
     
     right1 = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[4])
     right2 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[1])

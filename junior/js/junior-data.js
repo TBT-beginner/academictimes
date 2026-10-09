@@ -301,6 +301,21 @@ const JUNIOR_ARTICLES = [
     "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1000&auto=format&fit=crop&q=80",
     "path": "science/regulatory-t-cells-nobel-breakthrough/index.html",
     "senior_path": "../science/regulatory-t-cells-nobel-breakthrough/index.html"
+  },
+  {
+    "slug": "soai-reaction-nobel-chemistry",
+    "category": "science",
+    "category_label": "SCIENCE & DISCOVERY • 英検準2級〜2級",
+    "date": "2026-10-09",
+    "title": "The Mystery of Right and Left Molecules: Japanese Professor Wins the 2026 Nobel Prize in Chemistry",
+    "headline_ja": "右手と左手の分子のふしぎ：東京理科大の硤合先生が2026年ノーベル化学賞を受賞！",
+    "subhead": "私たちの体を形づくるアミノ酸はなぜ「左手型」ばかりなのか？世界中の科学者を驚かせた「硤合反応」をやさしい英語で学びます。",
+    "lead_snippet": "スウェーデン王立科学アカデミーは、2026年のノーベル化学賞を東京理科大学名誉教授の硤合憲三（そあい・けんぞう）先生らに授与すると発表しました。生命の分子がなぜ一方向の「利き手」を選んだのかという最大の謎を解いた大発見です。",
+    "source_name": "Jiji Press & Nobel Prize (Adapted for Eiken Grade Pre-2 - 2)",
+    "source_media_key": "jiji",
+    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1000&auto=format&fit=crop&q=80",
+    "path": "science/soai-reaction-nobel-chemistry/index.html",
+    "senior_path": "../science/soai-reaction-nobel-chemistry/index.html"
   }
 ];
 
@@ -308,8 +323,8 @@ const JUNIOR_EDITIONS = {
   "2026-10-09": {
     "dateStr": "Friday October 9 2026",
     "editionLabel": "2026年10月9日 (金) 号 【本日最新版】",
-    "tagline": "特集：日本被団協ノーベル平和賞受賞・坂口志文教授の制御性T細胞・AIスマートグラス倫理",
-    "topLeadSlug": "nihon-hidankyo-nobel-peace-prize",
+    "tagline": "特集：東京理科大・硤合先生ノーベル化学賞受賞・坂口教授のブレーキ細胞・スマートグラスとAI",
+    "topLeadSlug": "soai-reaction-nobel-chemistry",
     "subLeadSlugs": [
       "regulatory-t-cells-nobel-breakthrough",
       "smart-glasses-ai-privacy"
@@ -317,7 +332,7 @@ const JUNIOR_EDITIONS = {
     "leftDispatches": [
       "japan-semiconductor-revival-rapidus",
       "digital-school-backpack-reform",
-      "stoic-philosophy-digital-age"
+      "nihon-hidankyo-nobel-peace-prize"
     ],
     "rightDigestSlugs": [
       "critical-minerals-geopolitics",
