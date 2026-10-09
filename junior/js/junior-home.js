@@ -320,17 +320,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('media-resources-grid');
     if (!container || typeof JUNIOR_STUDY_RESOURCES === 'undefined') return;
 
-    container.innerHTML = JUNIOR_STUDY_RESOURCES.map(media => `
-      <div class="media-card" style="border-top: 3px solid #235937; padding: 1.25rem; background: #fff; border: 1px solid var(--times-light-border); border-top: 3px solid #235937;">
-        <div class="media-card-head" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-          <div class="media-card-title" style="font-weight: 700; font-family: var(--font-headline); font-size: 1.05rem; color: #143820;">${media.name}</div>
-          <span class="media-badge" style="background: #eef5f0; color: #235937; border: 1px solid #c1decb; padding: 0.15rem 0.45rem; font-size: 0.72rem; font-weight: 700;">${media.badge}</span>
+    container.innerHTML = JUNIOR_STUDY_RESOURCES.map(media => {
+      const titleEn = media.title_en || (media.name.includes(' (') ? media.name.split(' (')[0] : media.name);
+      const titleJa = media.title_ja || (media.name.includes(' (') ? media.name.split(' (')[1].replace(')', '') : '');
+      const tipHtml = media.tip ? `
+        <div class="junior-media-footer">
+          <span>💡 <strong>学習のコツ：</strong>${media.tip}</span>
         </div>
-        <div style="font-size: 0.82rem; line-height: 1.65; color: #333; margin-top: 0.5rem;">
-          ${media.point}
+      ` : '';
+
+      return `
+        <div class="junior-media-card">
+          <div class="junior-media-badge-wrap">
+            <span class="junior-media-badge">${media.badge}</span>
+          </div>
+          <div class="junior-media-header">
+            <h3 class="junior-media-title-en">${titleEn}</h3>
+            ${titleJa ? `<div class="junior-media-title-ja">${titleJa}</div>` : ''}
+          </div>
+          <div class="junior-media-body">
+            ${media.point}
+          </div>
+          ${tipHtml}
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   }
 
   // Initial Check for Hash Edition or data-default-edition

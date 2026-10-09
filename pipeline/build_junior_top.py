@@ -14,6 +14,7 @@ Fully matching The Academic Times layout:
 
 import os
 from junior_articles_data import JUNIOR_ARTICLES
+from build_junior_data_js import JUNIOR_STUDY_RESOURCES
 
 PORTAL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 JUNIOR_INDEX_PATH = os.path.join(PORTAL_DIR, "junior", "index.html")
@@ -70,6 +71,35 @@ def generate_junior_index():
         """
         cards_html.append(card)
     cards_str = "\n".join(cards_html)
+
+    media_cards_html = []
+    for media in JUNIOR_STUDY_RESOURCES:
+        title_en = media.get("title_en", media["name"])
+        title_ja = media.get("title_ja", "")
+        tip_text = media.get("tip", "")
+        tip_html = f"""
+        <div class="junior-media-footer">
+          <span>💡 <strong>学習のコツ：</strong>{tip_text}</span>
+        </div>
+        """ if tip_text else ""
+        
+        m_card = f"""
+        <div class="junior-media-card">
+          <div class="junior-media-badge-wrap">
+            <span class="junior-media-badge">{media['badge']}</span>
+          </div>
+          <div class="junior-media-header">
+            <h3 class="junior-media-title-en">{title_en}</h3>
+            {f'<div class="junior-media-title-ja">{title_ja}</div>' if title_ja else ''}
+          </div>
+          <div class="junior-media-body">
+            {media['point']}
+          </div>
+          {tip_html}
+        </div>
+        """
+        media_cards_html.append(m_card)
+    media_cards_str = "\n".join(media_cards_html)
 
     html = f"""<!DOCTYPE html>
 <html lang="ja">
@@ -589,6 +619,7 @@ def generate_junior_index():
 
       <!-- Media Resources Grid -->
       <div id="media-resources-grid" class="media-resources-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
+        {media_cards_str}
       </div>
     </section>
 
