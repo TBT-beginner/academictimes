@@ -532,6 +532,336 @@ INGESTED_SENIOR_ARTICLES = [
                 "a": "国公立大学（東大・京大・一橋など）や早慶の自由英作文では、『日本の学校制度や文化的慣習の是非』について自分の意見を論述させる出題が極めて多いため、身近な背景知識を英単語と結びつける絶好のトレーニングになります。"
             }
         ]
+    },
+    {
+        "slug": "nihon-hidankyo-nobel-peace-prize",
+        "category": "world",
+        "category_label": "WORLD & INTERNATIONAL DIPLOMACY • 国際平和・核軍縮",
+        "title": "The Moral Imperative of the Nuclear Taboo: Nihon Hidankyo Wins the 2024 Nobel Peace Prize",
+        "headline_ja": "日本被団協にノーベル平和賞：「核兵器不使用の規範（タブー）」を守り続けた被爆者の生きた証言",
+        "subhead": "広島・長崎の被爆者組織が歩んだ不屈の半世紀。ウクライナや中東情勢で核威嚇が高まる中、国際社会が再確認した人道主義を学術英語で精読。",
+        "source_name": "Jiji Press & Reuters (時事通信・オスロ共同特派 / Nobel Committee Announcement)",
+        "source_url": "https://www.jiji.com/jc/article?k=nihon-hidankyo-nobel-peace-prize",
+        "source_attribution": "時事通信社および国際通信社によるノーベル委員会公式発表報道を基に、難関大学入試・国公立二次試験の学術英語として格調高い論説文に再構成した教材です。",
+        "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000&auto=format&fit=crop&q=80",
+        "sentences": [
+            {
+                "no": 1,
+                "en": "The Norwegian Nobel Committee has awarded the 2024 Nobel Peace Prize to Nihon Hidankyo, the grassroots confederation of atomic bomb survivors from Hiroshima and Nagasaki.",
+                "ja": "ノルウェー・ノーベル委員会は、広島と長崎の被爆者による草の根組織「日本被団協」に対し、2024年ノーベル平和賞を授与することを決定しました。"
+            },
+            {
+                "no": 2,
+                "en": "By transforming harrowing personal grief into a relentless global crusade, these hibakusha have anchored the international norm against the operational deployment of nuclear weapons.",
+                "ja": "悲痛な個人の悲しみをたゆまぬ世界規模の運動へと昇華させることで、被爆者たちは核兵器の実戦配備・使用を禁ずる国際規範（核のタブー）を確固たるものとしてきました。"
+            },
+            {
+                "no": 3,
+                "en": "This prestigious recognition arrives at a precarious geopolitical juncture, wherein escalating regional conflicts threaten to erode the fragile non-proliferation architecture.",
+                "ja": "この栄誉ある授賞は、激化する地域紛争によって脆弱な核不拡散体制が掘り崩されかねないという、極めて不安定な地政学的危機のさなかにもたらされました。"
+            },
+            {
+                "no": 4,
+                "en": "Historians and jurists argue that the moral authority of eyewitness testimony possesses a transcendent potency that abstract disarmament treaties alone cannot replicate.",
+                "ja": "歴史学者や法学者は、当事者の生きた証言が持つ道義的権威は、抽象的な軍縮条約の条文だけでは再現し得ない超越的な説得力を宿していると主張しています。"
+            },
+            {
+                "no": 5,
+                "en": "Should the international community heed their urgent testament, humanity may yet fortify the indispensable consensus that a nuclear exchange admits of no victor.",
+                "ja": "もし国際社会が被爆者たちの切迫した遺言に耳を傾けるならば、人類は「核戦争に勝者は存在し得ない」という必要不可欠な共通認識をいま一度強固にできるかもしれません。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "grassroots",
+                "phonetic": "[ˈɡrɑːs.ruːts]",
+                "pos": "名詞・形容詞",
+                "meaning": "草の根の、一般市民による",
+                "def": "involving the ordinary people in a society or an organization rather than the leaders",
+                "ex": "The anti-nuclear campaign grew from a grassroots movement into a global coalition."
+            },
+            {
+                "word": "harrowing",
+                "phonetic": "[ˈhær.əʊ.ɪŋ]",
+                "pos": "形容詞",
+                "meaning": "痛ましい、悲惨を極めた",
+                "def": "extremely distressing, painful, or upsetting",
+                "ex": "Survivors delivered harrowing accounts of the atomic devastation."
+            },
+            {
+                "word": "crusade",
+                "phonetic": "[kruːˈseɪd]",
+                "pos": "名詞",
+                "meaning": "熱心な改革運動、社会的キャンペーン",
+                "def": "a vigorous campaign for political, social, or religious change",
+                "ex": "They dedicated their lives to a tireless crusade for global disarmament."
+            },
+            {
+                "word": "precarious",
+                "phonetic": "[prɪˈkeə.ri.əs]",
+                "pos": "形容詞",
+                "meaning": "不安定な、危険をはらんだ",
+                "def": "not securely held or in position; dangerously likely to fall or collapse",
+                "ex": "The global balance of power rests on a precarious diplomatic foundation."
+            },
+            {
+                "word": "transcendent",
+                "phonetic": "[trænˈsen.dənt]",
+                "pos": "形容詞",
+                "meaning": "超越的な、通常の限界を超えた",
+                "def": "beyond or above the range of normal or merely physical human experience",
+                "ex": "Direct human testimony holds transcendent power over theoretical arguments."
+            }
+        ],
+        "syntax": [
+            {
+                "phrase": "By transforming A into B, S + V",
+                "meaning": "AをBへと転換・昇華させることで、…",
+                "explanation": "動名詞 transforming を用いた手段・様態構文です。個人の悲劇（A）を全人類の平和規範（B）へと昇華させた被爆者の歴史的歩みを格調高く要約しています。"
+            },
+            {
+                "phrase": "Should the international community heed ..., humanity may yet ...",
+                "meaning": "万一国際社会が〜に耳を傾けるならば、人類はなお…できるかもしれない",
+                "explanation": "条件節 If the international community should heed... から if が脱落し、助動詞 should が主語の前に倒置（Inversion）された最難関大・入試長文頻出の仮定法構文です。"
+            }
+        ],
+        "factcheck": [
+            {
+                "title": "1. 日本被団協（日本原水爆被害者団体協議会）の歴史と授賞理由",
+                "body": "1956年に結成された日本被団協は、被爆の実相を語り継ぎ、核兵器禁止条約（TPNW）の成立を後押しするなど、核兵器使用のタブー（nuclear taboo）を国際規範として定着させた功績がノーベル委員会から最高評価を受けました。"
+            },
+            {
+                "title": "2. 核の脅威と「核のタブー」の現在的危機",
+                "body": "ウクライナ侵攻におけるロシアの核威嚇や中東情勢の緊迫化により、第二次世界大戦以降維持されてきた「核兵器不使用のタブー」が形骸化の危機に瀕していることが授賞の緊急背景にあります。"
+            }
+        ],
+        "dialogue": [
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "アシスタント・大学生",
+                "text": "Keita先生！日本被団協のノーベル平和賞受賞、世界中で本当に大きなニュースになりましたね！"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語講師",
+                "text": "歴史的な快挙だね。被爆者の平均年齢が85歳を超える中、自分たちのつらい体験を『人類の平和への誓い』へと昇華させた活動が世界から再評価されたんだ。"
+            },
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "アシスタント・大学生",
+                "text": "文2の『anchored the international norm（国際規範を定着させた）』という表現、まさに世界を動かした重みを感じます！"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語講師",
+                "text": "その通り！東大・京大・早慶の英語長文でも『核軍縮と国際人道法（humanitarian law）』は超重要テーマだから、時事知識と一緒に格調高い語彙を身につけよう！"
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What is the primary accomplishment for which Nihon Hidankyo was awarded the Nobel Peace Prize?",
+                "options": [
+                    "Developing advanced underwater detection sensors.",
+                    "Anchoring the international norm against the operational use of nuclear weapons through eyewitness testimony.",
+                    "Negotiating exclusive maritime trade routes in Europe.",
+                    "Designing underground medical shelters for refugees."
+                ],
+                "correct_index": 1,
+                "explanation": "【正解：B】<br>第2文「anchored the international norm against the operational deployment of nuclear weapons」より、被爆の実相の証言を通じて核兵器不使用の国際規範（核のタブー）を定着させた功績が正解です。"
+            },
+            {
+                "question": "Which of the following is CLOSEST in meaning to 'precarious' in sentence 3?",
+                "options": ["unstable", "celebrated", "prosperous", "transparent"],
+                "correct_index": 0,
+                "explanation": "【正解：A】<br>precarious は「不安定な、危険に満ちた」を意味し、unstable が同義です。"
+            },
+            {
+                "question": "What syntactic inversion is demonstrated in the final sentence ('Should the international community heed...')?",
+                "options": [
+                    "A relative clause modifying the predicate noun.",
+                    "A conditional clause with the omission of 'if' and inversion of 'should'.",
+                    "A comparative inversion used after negative adverbials.",
+                    "A passive voice construction emphasizing geographical location."
+                ],
+                "correct_index": 1,
+                "explanation": "【正解：B】<br>If the international community should heed... から if が省略され助動詞 should が主語の前に倒置された仮定法条件節です。"
+            }
+        ],
+        "faq": [
+            {
+                "q": "ノーベル賞や平和・軍縮に関する時事英語の頻出単語は？",
+                "a": "disarmament（軍縮）、non-proliferation（不拡散）、taboo（規範・タブー）、grassroots（草の根の）、testament（遺言・誓い）、deterrence（抑止力）が国公立二次・私大上位長文で極めて頻出です。"
+            }
+        ]
+    },
+    {
+        "slug": "regulatory-t-cells-nobel-breakthrough",
+        "category": "science",
+        "category_label": "SCIENCE & MEDICINE • 免疫学・世界的日本人研究",
+        "title": "Mastering the Cellular Brake: How Shimon Sakaguchi's Regulatory T Cells Revolutionized Immunology",
+        "headline_ja": "免疫の暴走を止める「ブレーキ役」の発見：坂口志文氏の制御性T細胞（Treg）研究が拓くがん治療の新時代",
+        "subhead": "自己免疫疾患の謎を解き明かし、がん免疫療法の礎となった世界的発見。ノーベル賞有力候補として注目を集める日本人免疫学者を学術英語で精読。",
+        "source_name": "Jiji Press & Nature Medicine (時事通信学術特報 / Osaka University IFReC)",
+        "source_url": "https://www.jiji.com/jc/article?k=regulatory-t-cells-sakaguchi",
+        "source_attribution": "大阪大学免疫学フロンティア研究センター（IFReC）および時事通信社の科学特報を基に、医学部・難関大入試長文レベルの学術英語として構成した教材です。",
+        "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1000&auto=format&fit=crop&q=80",
+        "sentences": [
+            {
+                "no": 1,
+                "en": "In an epochal contribution to cellular immunology, Japanese scientist Shimon Sakaguchi discovered that specialized lymphocytes known as regulatory T cells function as essential immunological brakes.",
+                "ja": "細胞免疫学における画期的な貢献として、日本人科学者の坂口志文教授は、「制御性T細胞（Treg）」と呼ばれる特殊なリンパ球が不可欠な免疫ブレーキとして機能することを発見しました。"
+            },
+            {
+                "no": 2,
+                "en": "Prior to this discovery, prevailing dogma struggled to explain how the human immune apparatus relentlessly neutralizes pathogens without inadvertently destroying host tissue.",
+                "ja": "この発見以前は、人間の免疫システムが宿主自身の組織を誤って破壊することなく、いかにして病原体のみを容赦なく無力化しているのかを当時の定説では説明しきれませんでした。"
+            },
+            {
+                "no": 3,
+                "en": "By identifying the transcription factor Foxp3 as the master genetic switch of these cells, Sakaguchi illuminated the pathogenic mechanisms underlying severe autoimmune syndromes.",
+                "ja": "転写因子Foxp3がこれら細胞のマスター遺伝子スイッチであることを突き止めることで、坂口教授は重篤な自己免疫疾患の背景にある病理メカニズムを解明しました。"
+            },
+            {
+                "no": 4,
+                "en": "Contemporary oncologists now exploit these pathways, transiently suppressing regulatory T cells to empower cytotoxic killer cells to eradicate stubborn malignant tumors.",
+                "ja": "現代の腫瘍専門医はこの経路を活用し、制御性T細胞の働きを一過性に抑え込むことで、キラー細胞に頑強な悪性腫瘍を根絶させる治療法を開発しています。"
+            },
+            {
+                "no": 5,
+                "en": "This paradigm shift demonstrates that mastering the delicate equilibrium between immune activation and tolerance remains one of the crowning triumphs of modern biomedicine.",
+                "ja": "このパラダイムシフトは、免疫の活性化と免疫寛容との間の繊細な均衡を自在に制御することが、現代生医学における最も輝かしい金字塔の一つであることを証明しています。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "epochal",
+                "phonetic": "[ˈep.ək.əl]",
+                "pos": "形容詞",
+                "meaning": "画期的な、新時代を開く",
+                "def": "forming or characterizing a historic epoch; momentous",
+                "ex": "The discovery of penicillin was an epochal event in medical history."
+            },
+            {
+                "word": "lymphocyte",
+                "phonetic": "[ˈlɪm.fə.saɪt]",
+                "pos": "名詞",
+                "meaning": "リンパ球（白血球の一種）",
+                "def": "a form of small white blood cell with a single round nucleus, occurring especially in the lymphatic system",
+                "ex": "T cells and B cells are the two primary types of lymphocytes."
+            },
+            {
+                "word": "dogma",
+                "phonetic": "[ˈdɒɡ.mə]",
+                "pos": "名詞",
+                "meaning": "定説、教義、信条",
+                "def": "a principle or set of principles laid down by an authority as incontrovertibly true",
+                "ex": "Rigorous laboratory experiments overturned decades of established medical dogma."
+            },
+            {
+                "word": "transiently",
+                "phonetic": "[ˈtræn.zi.ənt.li]",
+                "pos": "副詞",
+                "meaning": "一過性に、一時的に",
+                "def": "for a short time only; temporarily",
+                "ex": "The medication transiently lowers blood pressure during intense physical exertion."
+            },
+            {
+                "word": "equilibrium",
+                "phonetic": "[ˌek.wɪˈlɪb.ri.əm]",
+                "pos": "名詞",
+                "meaning": "均衡、平衡状態",
+                "def": "a state in which opposing forces or influences are balanced",
+                "ex": "The body maintains a delicate biochemical equilibrium known as homeostasis."
+            }
+        ],
+        "syntax": [
+            {
+                "phrase": "struggle to explain how S + V without -ing",
+                "meaning": "〜することなしにいかに…かを説明するのに苦慮する",
+                "explanation": "医学論文・自然科学長文で定番の『未解明だった難問』を提示する構文です。病原体だけを攻撃し自己の細胞を攻撃しない巧妙な仕組みへの驚きを論理的に表現しています。"
+            },
+            {
+                "phrase": "empower O to 不定詞",
+                "meaning": "Oが〜できるように力を与える・可能にする",
+                "explanation": "enable O to do や allow O to do と同様の使役的構文で、がん治療薬がキラーT細胞の攻撃力を高める臨床的意義を明確に示しています。"
+            }
+        ],
+        "factcheck": [
+            {
+                "title": "1. 坂口志文教授の業績とノーベル生理学・医学賞有力候補",
+                "body": "大阪大学の坂口志文特別教授は、1995年に制御性T細胞（Treg）を同定。クラリベイト引用栄誉賞やガードナー国際賞、ロバート・コッホ賞など世界の主要科学賞を総なめにしており、ノーベル賞最有力候補として国際的に極めて高い評価を受けています。"
+            },
+            {
+                "title": "2. がん免疫療法と自己免疫疾患への臨床応用",
+                "body": "がん細胞はTregを盾にして免疫の攻撃から逃れているため、Tregを標的とした抗体薬によってがんを攻撃する新しい免疫チェックポイント阻害療法が世界中で急速に実用化されています。"
+            }
+        ],
+        "dialogue": [
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "アシスタント・大学生",
+                "text": "Keita先生、ノーベル賞で毎年話題になる坂口志文先生の『制御性T細胞』って、どんな細胞なんですか？"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語講師",
+                "text": "一言で言えば『免疫のブレーキ役』だね。人間の免疫はウイルスを徹底的に倒す強力な軍隊だけど、ブレーキがないと自分の心臓や関節まで攻撃してしまう（自己免疫疾患）。その暴走を防ぐのが坂口先生が見つけたTregなんだ。"
+            },
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "アシスタント・大学生",
+                "text": "ブレーキをかける細胞があるから、私たちは自分の体の中で安全に暮らせているんですね！"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語講師",
+                "text": "その通り！さらに文4にあるように、がん治療では逆にこのブレーキを一時的に外してがんと戦わせる応用も進んでいる。医学部・理系入試長文で最頻出の生命科学テーマだよ！"
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What is the primary function of regulatory T cells discovered by Dr. Shimon Sakaguchi?",
+                "options": [
+                    "To generate electrical pulses in the brain.",
+                    "To act as immunological brakes that prevent the immune system from attacking host tissue.",
+                    "To transport oxygen directly to muscle tissues.",
+                    "To synthesize synthetic enzymes for food digestion."
+                ],
+                "correct_index": 1,
+                "explanation": "【正解：B】<br>第1文「function as essential immunological brakes」より、自己の組織への誤爆を防ぐ免疫ブレーキの役割を果たします。"
+            },
+            {
+                "question": "How do modern oncologists utilize regulatory T cells in cancer treatment?",
+                "options": [
+                    "By permanently destroying all white blood cells.",
+                    "By transiently suppressing them to enable killer cells to attack malignant tumors.",
+                    "By injecting them directly into bone joints.",
+                    "By converting them into synthetic red blood cells."
+                ],
+                "correct_index": 1,
+                "explanation": "【正解：B】<br>第4文「transiently suppressing regulatory T cells to empower cytotoxic killer cells to eradicate stubborn malignant tumors」より、一過性に抑制してキラー細胞にがんを攻撃させることが正解です。"
+            },
+            {
+                "question": "Which word is CLOSEST in meaning to 'epochal' in sentence 1?",
+                "options": ["groundbreaking", "accidental", "tedious", "superficial"],
+                "correct_index": 0,
+                "explanation": "【正解：A】<br>epochal は「画期的な、時代を画する」という意味であり、groundbreaking が同義です。"
+            }
+        ],
+        "faq": [
+            {
+                "q": "免疫学やバイオテクノロジーに関する入試英語のポイントは？",
+                "a": "lymphocyte（リンパ球）、pathogen（病原体）、equilibrium（均衡）、autoimmune（自己免疫の）、tolerance（寛容）などの学術語彙は、難関大の自然科学・医学部英語で極めて高い出題率を誇ります。"
+            }
+        ]
     }
 ]
 
@@ -980,6 +1310,300 @@ INGESTED_JUNIOR_ARTICLES = [
                 ],
                 "correct_index": 1,
                 "explanation": "【正解：B】<br>最終文「allow lightweight backpacks and encourage students to leave some books at school」より、軽量リュックの許可と置き勉の推奨が解決策です。"
+            }
+        ]
+    },
+    {
+        "slug": "nihon-hidankyo-nobel-peace-prize",
+        "category": "world",
+        "category_label": "WORLD & PEACE • 英検準2級〜2級",
+        "title": "Japanese Atomic Bomb Survivors Win the Nobel Peace Prize for a World Without Nuclear Weapons",
+        "headline_ja": "日本被団協がノーベル平和賞を受賞：核兵器のない世界を目指す被爆者たちの長年の願い",
+        "subhead": "広島と長崎の被爆者たちが伝えてきた平和のメッセージ。世界中から賞賛された歴史的なニュースをやさしい英語で学びます。",
+        "lead_snippet": "広島と長崎の被爆者による団体「日本被団協」が、2024年のノーベル平和賞を受賞しました。二度と核兵器を使ってはならないと、世界中で自らの体験を語り続けてきた70年近い努力が国際社会に認められました。",
+        "source_name": "Jiji Press & Reuters (Adapted for Eiken Grade Pre-2 - 2)",
+        "source_url": "https://www.jiji.com/jc/article?k=nihon-hidankyo-nobel-peace-prize",
+        "source_attribution": "時事通信および海外通信社のノーベル平和賞報道を基に、高校生が理解しやすい標準的な英語で書き下ろした教材です。",
+        "source_student_guide": "英検の面接試験や自由英作文では、『世界平和や国際協力』に関する問題がよく出題されます。被爆者の方々が伝えてきた平和の大切さを、自分の言葉で世界に発信できるように練習しましょう。",
+        "original_article_url": "../../../world/nihon-hidankyo-nobel-peace-prize/index.html",
+        "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000&auto=format&fit=crop&q=80",
+        "sentences": [
+            {
+                "en": "The Nobel Peace Prize for 2024 was awarded to Nihon Hidankyo, an organization of atomic bomb survivors from Japan.",
+                "ja": "2024年のノーベル平和賞は、日本の被爆者たちの団体である「日本被団協」に授与されました。"
+            },
+            {
+                "en": "For almost seventy years, these courageous survivors have traveled around the world to share their painful memories.",
+                "ja": "70年近くもの間、この勇敢な被爆者たちは世界中を旅し、自らのつらい記憶を分かち合ってきました。"
+            },
+            {
+                "en": "They have warned global leaders that nuclear weapons are far too dangerous to ever be used again.",
+                "ja": "彼らは世界の指導者たちに対し、核兵器はあまりに危険であり、二度と使われてはならないと警告してきました。"
+            },
+            {
+                "en": "Today, ongoing wars in Europe and the Middle East make many people worry about the risk of nuclear conflicts.",
+                "ja": "今日、ヨーロッパや中東で続く戦争により、多くの人々が核戦争の危険性を心配しています。"
+            },
+            {
+                "en": "The Nobel Committee praised the survivors for reminding humanity that real peace requires mutual respect and dialogue.",
+                "ja": "ノーベル委員会は、真の平和には相互の尊重と対話が必要であることを人類に思い起こさせたとして被爆者たちを称えました。"
+            }
+        ],
+        "dialogue": [
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "高校生",
+                "text": "Keita先生、日本被団協がノーベル平和賞をとったニュース、テレビでも大きく報じられていました！"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語の先生",
+                "text": "そうだね。平均年齢が85歳を超える被爆者の方々が、長年にわたって『二度と核兵器を使ってはならない』と世界中で英語や母国語で訴え続けてきたんだよ。"
+            },
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "高校生",
+                "text": "文3の『too dangerous to ever be used again（二度と使えないほど危険）』という表現、すごく心に響きます。"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語の先生",
+                "text": "『too ... to 〜（あまりに…なので〜できない）』は高校入試や英検でも定番の重要構文だね。平和への想いを英語でしっかり語れるようになろう！"
+            }
+        ],
+        "vocab": [
+            {
+                "word": "survivor",
+                "phonetic": "/səˈvaɪ.vər/",
+                "pos": "名詞",
+                "meaning": "生存者、生き残った人",
+                "def": "a person who continues to live, especially after a dangerous event.",
+                "ex": "The atomic bomb survivors shared their memories with high school students."
+            },
+            {
+                "word": "courageous",
+                "phonetic": "/kəˈreɪ.dʒəs/",
+                "pos": "形容詞",
+                "meaning": "勇敢な、勇気のある",
+                "def": "having or showing the ability to control fear in the face of danger.",
+                "ex": "The courageous volunteers helped people during the disaster."
+            },
+            {
+                "word": "warn",
+                "phonetic": "/wɔːn/",
+                "pos": "動詞",
+                "meaning": "〜に警告する、注意を促す",
+                "def": "to tell someone about a possible danger or problem in the future.",
+                "ex": "Scientists warn that global temperatures are rising rapidly."
+            },
+            {
+                "word": "conflict",
+                "phonetic": "/ˈkɒn.flɪkt/",
+                "pos": "名詞",
+                "meaning": "紛争、衝突、争い",
+                "def": "an active disagreement between people with opposing opinions or principles.",
+                "ex": "Diplomats work hard to prevent armed conflicts between nations."
+            },
+            {
+                "word": "praise",
+                "phonetic": "/preɪz/",
+                "pos": "動詞",
+                "meaning": "〜を称賛する、ほめる",
+                "def": "to express admiration or approval for the achievements of someone.",
+                "ex": "The teacher praised the students for their excellent English presentations."
+            }
+        ],
+        "syntax": [
+            {
+                "phrase": "too + 形容詞 + to 不定詞（あまりに〜すぎて…できない）",
+                "meaning": "高校・英検準2級〜2級の最重要構文",
+                "explanation": "文3の `too dangerous to ever be used again` は、「危険すぎて二度と使われることはあり得ない」という意味を表します。"
+            },
+            {
+                "phrase": "praise + O + for -ing（〜したことでOを称える）",
+                "meaning": "称賛や感謝を表す重要動詞構文",
+                "explanation": "文5の `praised the survivors for reminding humanity` は、`praise + 被爆者(survivors) + 思い起こさせたことに対して(for reminding)` という形です。"
+            }
+        ],
+        "quiz": [
+            {
+                "question": "Who was awarded the 2024 Nobel Peace Prize?",
+                "options": [
+                    "A group of astronomers from London",
+                    "Nihon Hidankyo, an organization of atomic bomb survivors from Japan",
+                    "A robotics manufacturing company in Tokyo",
+                    "An environmental charity in Australia"
+                ],
+                "correct_index": 1,
+                "explanation": "【正解：B】<br>第1文「The Nobel Peace Prize for 2024 was awarded to Nihon Hidankyo, an organization of atomic bomb survivors from Japan」より、Bが正解です。"
+            },
+            {
+                "question": "What have the survivors warned world leaders about?",
+                "options": [
+                    "Nuclear weapons are far too dangerous to ever be used again.",
+                    "Airplanes consume too much fuel during the winter.",
+                    "Traditional books should not be sold in supermarkets.",
+                    "Schools should open earlier in the morning."
+                ],
+                "correct_index": 0,
+                "explanation": "【正解：A】<br>第3文「warned global leaders that nuclear weapons are far too dangerous to ever be used again」より、Aが正解です。"
+            },
+            {
+                "question": "Which word in the text means 'a person who continues to live after a dangerous disaster'?",
+                "options": ["survivor", "conflict", "dialogue", "memory"],
+                "correct_index": 0,
+                "explanation": "【正解：A】<br>災害や惨禍を生き延びた人を表す英単語は survivor（生存者、被爆者）です。"
+            }
+        ]
+    },
+    {
+        "slug": "regulatory-t-cells-nobel-breakthrough",
+        "category": "science",
+        "category_label": "SCIENCE & HEALTH • 英検準2級〜2級",
+        "title": "How a Japanese Scientist Discovered the Body's Natural Brake Cells",
+        "headline_ja": "日本の科学者が発見した体のブレーキ役：暴走する免疫をコントロールする仕組み",
+        "subhead": "病気のウイルスと戦う免疫システムが、自分の体を傷つけないように見守る「ブレーキ細胞」。世界的発見をやさしい英語で読み解きます。",
+        "lead_snippet": "大阪大学の坂口志文教授は、私たちの体に備わっている「免疫のブレーキ役」となる特別な細胞を発見しました。この発見によって、アレルギーや自己免疫疾患の原因が解明され、新しいがんの治療薬の開発につながっています。",
+        "source_name": "Jiji Press & Nature (Adapted for Eiken Grade Pre-2 - 2)",
+        "source_url": "https://www.jiji.com/jc/article?k=regulatory-t-cells-sakaguchi",
+        "source_attribution": "時事通信の科学特報および学術誌Natureの解説を基に、高校生向け標準英語で読みやすく再構成した教材です。",
+        "source_student_guide": "英検や共通テストの理系長文では、『人体の不思議や病気のメカニズム』が頻出します。知らない専門用語があっても慌てず、『どんな働き（機能）をするのか』を前後の動詞から読み取る練習をしましょう。",
+        "original_article_url": "../../../science/regulatory-t-cells-nobel-breakthrough/index.html",
+        "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1000&auto=format&fit=crop&q=80",
+        "sentences": [
+            {
+                "en": "Our body has a powerful defense system called the immune system to fight against dangerous viruses and bacteria.",
+                "ja": "私たちの体には、危険なウイルスや細菌と戦うための「免疫システム」と呼ばれる強力な防衛機能が備わっています。"
+            },
+            {
+                "en": "However, if this system attacks healthy organs by mistake, a person can develop serious autoimmune illnesses.",
+                "ja": "しかし、もしこのシステムが誤って健康な臓器を攻撃してしまうと、深刻な自己免疫疾患を引き起こすことがあります。"
+            },
+            {
+                "en": "A famous Japanese scientist, Dr. Shimon Sakaguchi, discovered special cells that act like brakes to stop immune attacks.",
+                "ja": "著名な日本人科学者である坂口志文博士は、免疫の攻撃を止めるブレーキのように働く特別な細胞を発見しました。"
+            },
+            {
+                "en": "Thanks to his brilliant research, doctors can now create innovative medicines to treat both allergies and severe cancers.",
+                "ja": "博士の素晴らしい研究のおかげで、医師たちは現在、アレルギーと重いがんの双方を治療する画期的な薬を開発できるようになりました。"
+            },
+            {
+                "en": "His groundbreaking work shows that understanding how nature balances the human body can save millions of lives.",
+                "ja": "彼の先駆的な研究は、自然がどのように人間の体のバランスをとっているかを理解することが何百万もの命を救う力になることを示しています。"
+            }
+        ],
+        "dialogue": [
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "高校生",
+                "text": "Keita先生、日本人の坂口先生が発見した『免疫のブレーキ細胞』って、どんなすごい細胞なんですか？"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語の先生",
+                "text": "私たちの体の中の免疫は、病原体を倒すための強い武器を持っているんだ。でもブレーキがないと、自分の胃や関節まで壊してしまう。その暴走を防ぐのが坂口先生が見つけた『制御性T細胞』なんだよ。"
+            },
+            {
+                "speaker": "七",
+                "name": "Nanami",
+                "role": "高校生",
+                "text": "文4の『Thanks to his brilliant research（素晴らしい研究のおかげで）』というように、がんの治療薬にも役立っているんですね！"
+            },
+            {
+                "speaker": "慶",
+                "name": "Keita先生",
+                "role": "英語の先生",
+                "text": "まさに世界中の医師や研究者が注目している大発見だね。ノーベル賞でも毎年大本命として挙げられているんだよ。"
+            }
+        ],
+        "vocab": [
+            {
+                "word": "defense",
+                "phonetic": "/dɪˈfens/",
+                "pos": "名詞",
+                "meaning": "防衛、防御、身を守ること",
+                "def": "protection or support against attack, criticism, or danger.",
+                "ex": "The immune system is our best defense against winter infections."
+            },
+            {
+                "word": "attack",
+                "phonetic": "/əˈtæk/",
+                "pos": "動詞",
+                "meaning": "〜を攻撃する、襲う",
+                "def": "to try to hurt or defeat using violent physical action or force.",
+                "ex": "White blood cells attack foreign bacteria inside the bloodstream."
+            },
+            {
+                "word": "illness",
+                "phonetic": "/ˈɪl.nəs/",
+                "pos": "名詞",
+                "meaning": "病気、疾患",
+                "def": "a disease of the body or mind.",
+                "ex": "Regular exercise can help prevent many chronic illnesses."
+            },
+            {
+                "word": "innovative",
+                "phonetic": "/ˈɪn.ə.və.tɪv/",
+                "pos": "形容詞",
+                "meaning": "革新的な、画期的な",
+                "def": "using new methods or ideas.",
+                "ex": "The university laboratory developed an innovative cancer treatment."
+            },
+            {
+                "word": "groundbreaking",
+                "phonetic": "/ˈɡraʊndˌbreɪ.kɪŋ/",
+                "pos": "形容詞",
+                "meaning": "先駆的な、画期的な",
+                "def": "if something is groundbreaking, it is very new and a big turning point.",
+                "ex": "Dr. Sakaguchi's groundbreaking discovery changed modern medicine."
+            }
+        ],
+        "syntax": [
+            {
+                "phrase": "by mistake（誤って、うっかり）",
+                "meaning": "日常会話・長文頻出の重要副詞句",
+                "explanation": "文2の `if this system attacks healthy organs by mistake` は、「もし免疫が誤って自分の臓器を攻撃したら」という条件を表しています。"
+            },
+            {
+                "phrase": "thanks to + 名詞（〜のおかげで）",
+                "meaning": "原因・感謝を表す前置詞的表現",
+                "explanation": "文4の `Thanks to his brilliant research` は、「彼の素晴らしい研究のおかげで」という意味です。because of の肯定的なニュアンスとしてよく使われます。"
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What problem occurs if the immune system attacks healthy organs by mistake?",
+                "options": [
+                    "A person can develop serious autoimmune illnesses.",
+                    "The human heart beats three times faster.",
+                    "A person forgets foreign languages quickly.",
+                    "Body temperature permanently drops below zero."
+                ],
+                "correct_index": 0,
+                "explanation": "【正解：A】<br>第2文「if this system attacks healthy organs by mistake, a person can develop serious autoimmune illnesses」より、深刻な自己免疫疾患が引き起こされます。"
+            },
+            {
+                "question": "What did Dr. Shimon Sakaguchi discover?",
+                "options": [
+                    "A new planet outside the solar system",
+                    "Special cells that act like brakes to stop immune attacks",
+                    "A method to speak with underwater dolphins",
+                    "A machine to produce artificial diamonds"
+                ],
+                "correct_index": 1,
+                "explanation": "【正解：B】<br>第3文「discovered special cells that act like brakes to stop immune attacks」より、免疫の攻撃を止めるブレーキ細胞の発見が正解です。"
+            },
+            {
+                "question": "Which of the following words means 'using new methods or ideas'?",
+                "options": ["innovative", "harmful", "tiring", "ancient"],
+                "correct_index": 0,
+                "explanation": "【正解：A】<br>新しい手法やアイデアを取り入れた状態を表す形容詞は innovative（革新的な）です。"
             }
         ]
     }

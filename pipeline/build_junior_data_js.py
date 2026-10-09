@@ -14,6 +14,8 @@ JUNIOR_JS_DIR = os.path.join(PORTAL_DIR, "junior", "js")
 os.makedirs(JUNIOR_JS_DIR, exist_ok=True)
 
 DATE_MAP = {
+    "nihon-hidankyo-nobel-peace-prize": "2026-10-09",
+    "regulatory-t-cells-nobel-breakthrough": "2026-10-09",
     "smart-glasses-ai-privacy": "2026-10-09",
     "japan-semiconductor-revival-rapidus": "2026-10-09",
     "digital-school-backpack-reform": "2026-10-09",
@@ -35,6 +37,8 @@ DATE_MAP = {
 }
 
 MEDIA_KEY_MAP = {
+    "nihon-hidankyo-nobel-peace-prize": "jiji",
+    "regulatory-t-cells-nobel-breakthrough": "jiji",
     "smart-glasses-ai-privacy": "getnews",
     "japan-semiconductor-revival-rapidus": "jiji",
     "digital-school-backpack-reform": "yahoo",
@@ -59,10 +63,10 @@ EDITIONS_DATA = {
     "2026-10-09": {
         "dateStr": "Friday October 9 2026",
         "editionLabel": "2026年10月9日 (金) 号 【本日最新版】",
-        "tagline": "特集：最新スマートグラスのプライバシー・北海道半導体再興戦略・教育現場のランドセル改革",
-        "topLeadSlug": "smart-glasses-ai-privacy",
-        "subLeadSlugs": ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform"],
-        "leftDispatches": ["stoic-philosophy-digital-age", "headphones-in-public", "psychology-casual-encounters"],
+        "tagline": "特集：日本被団協ノーベル平和賞受賞・坂口志文教授の制御性T細胞・AIスマートグラス倫理",
+        "topLeadSlug": "nihon-hidankyo-nobel-peace-prize",
+        "subLeadSlugs": ["regulatory-t-cells-nobel-breakthrough", "smart-glasses-ai-privacy"],
+        "leftDispatches": ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "stoic-philosophy-digital-age"],
         "rightDigestSlugs": ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield", "generative-ai-paleontology"]
     },
     "2026-10-08": {

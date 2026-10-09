@@ -271,6 +271,36 @@ const JUNIOR_ARTICLES = [
     "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1000&auto=format&fit=crop&q=80",
     "path": "society/digital-school-backpack-reform/index.html",
     "senior_path": "../society/digital-school-backpack-reform/index.html"
+  },
+  {
+    "slug": "nihon-hidankyo-nobel-peace-prize",
+    "category": "world",
+    "category_label": "WORLD & PEACE • 英検準2級〜2級",
+    "date": "2026-10-09",
+    "title": "Japanese Atomic Bomb Survivors Win the Nobel Peace Prize for a World Without Nuclear Weapons",
+    "headline_ja": "日本被団協がノーベル平和賞を受賞：核兵器のない世界を目指す被爆者たちの長年の願い",
+    "subhead": "広島と長崎の被爆者たちが伝えてきた平和のメッセージ。世界中から賞賛された歴史的なニュースをやさしい英語で学びます。",
+    "lead_snippet": "広島と長崎の被爆者による団体「日本被団協」が、2024年のノーベル平和賞を受賞しました。二度と核兵器を使ってはならないと、世界中で自らの体験を語り続けてきた70年近い努力が国際社会に認められました。",
+    "source_name": "Jiji Press & Reuters (Adapted for Eiken Grade Pre-2 - 2)",
+    "source_media_key": "jiji",
+    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000&auto=format&fit=crop&q=80",
+    "path": "world/nihon-hidankyo-nobel-peace-prize/index.html",
+    "senior_path": "../world/nihon-hidankyo-nobel-peace-prize/index.html"
+  },
+  {
+    "slug": "regulatory-t-cells-nobel-breakthrough",
+    "category": "science",
+    "category_label": "SCIENCE & HEALTH • 英検準2級〜2級",
+    "date": "2026-10-09",
+    "title": "How a Japanese Scientist Discovered the Body's Natural Brake Cells",
+    "headline_ja": "日本の科学者が発見した体のブレーキ役：暴走する免疫をコントロールする仕組み",
+    "subhead": "病気のウイルスと戦う免疫システムが、自分の体を傷つけないように見守る「ブレーキ細胞」。世界的発見をやさしい英語で読み解きます。",
+    "lead_snippet": "大阪大学の坂口志文教授は、私たちの体に備わっている「免疫のブレーキ役」となる特別な細胞を発見しました。この発見によって、アレルギーや自己免疫疾患の原因が解明され、新しいがんの治療薬の開発につながっています。",
+    "source_name": "Jiji Press & Nature (Adapted for Eiken Grade Pre-2 - 2)",
+    "source_media_key": "jiji",
+    "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1000&auto=format&fit=crop&q=80",
+    "path": "science/regulatory-t-cells-nobel-breakthrough/index.html",
+    "senior_path": "../science/regulatory-t-cells-nobel-breakthrough/index.html"
   }
 ];
 
@@ -278,16 +308,16 @@ const JUNIOR_EDITIONS = {
   "2026-10-09": {
     "dateStr": "Friday October 9 2026",
     "editionLabel": "2026年10月9日 (金) 号 【本日最新版】",
-    "tagline": "特集：最新スマートグラスのプライバシー・北海道半導体再興戦略・教育現場のランドセル改革",
-    "topLeadSlug": "smart-glasses-ai-privacy",
+    "tagline": "特集：日本被団協ノーベル平和賞受賞・坂口志文教授の制御性T細胞・AIスマートグラス倫理",
+    "topLeadSlug": "nihon-hidankyo-nobel-peace-prize",
     "subLeadSlugs": [
-      "japan-semiconductor-revival-rapidus",
-      "digital-school-backpack-reform"
+      "regulatory-t-cells-nobel-breakthrough",
+      "smart-glasses-ai-privacy"
     ],
     "leftDispatches": [
-      "stoic-philosophy-digital-age",
-      "headphones-in-public",
-      "psychology-casual-encounters"
+      "japan-semiconductor-revival-rapidus",
+      "digital-school-backpack-reform",
+      "stoic-philosophy-digital-age"
     ],
     "rightDigestSlugs": [
       "critical-minerals-geopolitics",

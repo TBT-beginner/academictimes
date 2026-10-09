@@ -395,6 +395,36 @@ const ALL_ARTICLES = [
     source_url: "https://news.yahoo.co.jp/articles/digital-school-backpack-reform",
     path: "society/digital-school-backpack-reform/index.html",
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    slug: "nihon-hidankyo-nobel-peace-prize",
+    category: "world",
+    category_label: "WORLD & PEACE • 国際平和・ノーベル賞",
+    date: "2026-10-09",
+    title: "The Moral Imperative of the Nuclear Taboo: Nihon Hidankyo Wins the 2024 Nobel Peace Prize",
+    headline_ja: "日本被団協にノーベル平和賞：「核兵器不使用の規範（タブー）」を守り続けた被爆者の生きた証言",
+    subhead: "広島・長崎の被爆者組織が歩んだ不屈の半世紀。ウクライナや中東情勢で核威嚇が高まる中、国際社会が再確認した人道主義を学術英語で精読。",
+    lead_snippet: "ノルウェー・ノーベル委員会は、広島・長崎の被爆者による草の根団体「日本被団協」に2024年ノーベル平和賞を授与することを決定した。悲痛な個人の記憶をたゆまぬ世界規模の運動へと昇華させ、核兵器不使用の国際規範（核のタブー）を定着させてきた被爆者の証言が持つ道義的権威を検証する。",
+    source_name: "Jiji Press & Reuters (時事通信・オスロ共同特派 / Nobel Committee Announcement)",
+    source_media_key: "jiji",
+    source_url: "https://www.jiji.com/jc/article?k=nihon-hidankyo-nobel-peace-prize",
+    path: "world/nihon-hidankyo-nobel-peace-prize/index.html",
+    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    slug: "regulatory-t-cells-nobel-breakthrough",
+    category: "science",
+    category_label: "SCIENCE & MEDICINE • 免疫学・ノーベル賞級研究",
+    date: "2026-10-09",
+    title: "Mastering the Cellular Brake: How Shimon Sakaguchi's Regulatory T Cells Revolutionized Immunology",
+    headline_ja: "免疫の暴走を止める「ブレーキ役」の発見：坂口志文氏の制御性T細胞（Treg）研究が拓くがん治療の新時代",
+    subhead: "自己免疫疾患の謎を解き明かし、がん免疫療法の礎となった世界的発見。ノーベル賞有力候補として注目を集める日本人免疫学者を学術英語で精読。",
+    lead_snippet: "細胞免疫学における画期的な貢献として、日本人科学者の坂口志文教授は「制御性T細胞（Treg）」が不可欠な免疫ブレーキとして機能することを発見した。病原体のみを無力化し自己組織を攻撃しない生命の精緻なバランスと、がん治療への応用を精読する。",
+    source_name: "Jiji Press & Nature Medicine (時事通信学術特報 / Osaka University IFReC)",
+    source_media_key: "jiji",
+    source_url: "https://www.jiji.com/jc/article?k=regulatory-t-cells-sakaguchi",
+    path: "science/regulatory-t-cells-nobel-breakthrough/index.html",
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
@@ -402,11 +432,11 @@ const EDITIONS = {
   "2026-10-09": {
     dateStr: "Friday October 9 2026",
     editionLabel: "2026年10月9日 (金) 号 【本日最新版】",
-    tagline: "特集：AIスマートグラスのプライバシー・北海道ラピダス半導体再興戦略・教育現場のランドセル改革",
-    topLeadSlug: "smart-glasses-ai-privacy",
-    subLeadSlugs: ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform"],
-    leftDispatches: ["stoic-philosophy-digital-age", "critical-minerals-geopolitics", "colorectal-cancer-under-50s"],
-    rightDigestSlugs: ["headphones-in-public", "psychology-casual-encounters", "air-defence-shield", "generative-ai-paleontology"]
+    tagline: "特集：日本被団協ノーベル平和賞受賞・坂口志文教授の制御性T細胞・AIスマートグラス倫理",
+    topLeadSlug: "nihon-hidankyo-nobel-peace-prize",
+    subLeadSlugs: ["regulatory-t-cells-nobel-breakthrough", "smart-glasses-ai-privacy"],
+    leftDispatches: ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "stoic-philosophy-digital-age"],
+    rightDigestSlugs: ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "headphones-in-public", "air-defence-shield"]
   },
   "2026-10-08": {
     dateStr: "Thursday October 8 2026",
