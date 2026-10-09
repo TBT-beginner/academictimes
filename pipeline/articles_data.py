@@ -1971,6 +1971,34 @@ MAX_ARTICLES = 30
 try:
     from senior_articles_batch_ingest import SENIOR_ARTICLES_INGESTED
     _existing_slugs = {a.get("slug") for a in ARTICLES}
+    if "headphones-in-public" not in _existing_slugs:
+        ARTICLES.insert(0, {
+            "slug": "headphones-in-public",
+            "category": "culture",
+            "category_label": "COGNITIVE PSYCHOLOGY & CULTURE • 認知心理学",
+            "title": "The Case Against Wearing Headphones in Public: Reclaiming the Power of Reverie",
+            "headline_ja": "公共空間でイヤホンを外す効用：失われた「物思い（白昼夢）」を取り戻す",
+            "subhead": "米週刊誌TIME掲載のエッセイ。常時接続と孤独、創造性を育む退屈の価値を認知心理学で徹底解説。",
+            "source_name": "TIME Magazine (Oct 6, 2026 / Meehika Barua)",
+            "source_url": "https://time.com/7023812/case-against-wearing-headphones-in-public/",
+            "source_attribution": "米週刊誌TIMEのエッセイを元に構成した学術英語教材です。",
+            "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt96d6f358ea9d50b0/6abfba6215869b08e9e95a32/headphones.jpg?branch=production&width=1200&quality=80&auto=webp",
+            "sentences": [
+                {"no": 1, "en": "Today, many individuals wear headphones continuously in public.", "ja": "今日、多くの人々が公共空間で絶え間なくイヤホンを装着しています。"}
+            ],
+            "vocabulary": [
+                {"word": "reverie", "phonetic": "[ˈrev.ər.i]", "pos": "名詞", "meaning": "白昼夢、物思い", "def": "a state of being pleasantly lost in one's thoughts; a daydream", "ex": "Walking in silence allowed moments of creative reverie."}
+            ],
+            "syntax": [],
+            "dialogue": [
+                {"speaker": "七", "name": "Nanami", "role": "アシスタント", "text": "イヤホンを外すことの良さについて学びました。"},
+                {"speaker": "慶", "name": "Keita先生", "role": "英語講師", "text": "静かな時間こそが創造性を生むんだね。"}
+            ],
+            "quiz": [
+                {"question": "What is the primary benefit of quiet moments in public?", "options": ["Increased phone battery life.", "Creative reverie and micro-connections.", "Lower train ticket prices.", "Faster walking speed."], "correct_index": 1, "explanation": "静かな時間が創造性と偶発的交流を育みます。"}
+            ]
+        })
+        _existing_slugs.add("headphones-in-public")
     for _art in SENIOR_ARTICLES_INGESTED:
         if _art.get("slug") not in _existing_slugs:
             ARTICLES.append(_art)

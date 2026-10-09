@@ -1926,6 +1926,10 @@ INGESTED_JUNIOR_ARTICLES = [
     }
 ]
 
+from batch5_nine_articles import BATCH5_SENIOR_ARTICLES, BATCH5_JUNIOR_ARTICLES
+INGESTED_SENIOR_ARTICLES.extend(BATCH5_SENIOR_ARTICLES)
+INGESTED_JUNIOR_ARTICLES.extend(BATCH5_JUNIOR_ARTICLES)
+
 def synthesize_audio_for_article(slug, category, sentences, dialogue, is_junior=False):
     """Synthesizes text and dialogue audio files using Edge-TTS"""
     if is_junior:
