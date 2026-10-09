@@ -14,6 +14,9 @@ JUNIOR_JS_DIR = os.path.join(PORTAL_DIR, "junior", "js")
 os.makedirs(JUNIOR_JS_DIR, exist_ok=True)
 
 DATE_MAP = {
+    "smart-glasses-ai-privacy": "2026-10-09",
+    "japan-semiconductor-revival-rapidus": "2026-10-09",
+    "digital-school-backpack-reform": "2026-10-09",
     "headphones-in-public": "2026-10-06",
     "psychology-casual-encounters": "2026-10-06",
     "critical-minerals-geopolitics": "2026-10-06",
@@ -32,6 +35,9 @@ DATE_MAP = {
 }
 
 MEDIA_KEY_MAP = {
+    "smart-glasses-ai-privacy": "getnews",
+    "japan-semiconductor-revival-rapidus": "jiji",
+    "digital-school-backpack-reform": "yahoo",
     "headphones-in-public": "time",
     "colorectal-cancer-under-50s": "nature",
     "psychology-casual-encounters": "the-conversation",
@@ -53,11 +59,11 @@ EDITIONS_DATA = {
     "2026-10-09": {
         "dateStr": "Friday October 9 2026",
         "editionLabel": "2026年10月9日 (金) 号 【本日最新版】",
-        "tagline": "特集：スマホ時代の不安を和らげる哲学とイヤホンを外す小さな勇気",
-        "topLeadSlug": "stoic-philosophy-digital-age",
-        "subLeadSlugs": ["headphones-in-public", "psychology-casual-encounters"],
-        "leftDispatches": ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield"],
-        "rightDigestSlugs": ["mediterranean-marine-heatwaves", "ai-pediatric-diagnosis-consent", "clarkson-business-red-tape", "generative-ai-paleontology"]
+        "tagline": "特集：最新スマートグラスのプライバシー・北海道半導体再興戦略・教育現場のランドセル改革",
+        "topLeadSlug": "smart-glasses-ai-privacy",
+        "subLeadSlugs": ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform"],
+        "leftDispatches": ["stoic-philosophy-digital-age", "headphones-in-public", "psychology-casual-encounters"],
+        "rightDigestSlugs": ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield", "generative-ai-paleontology"]
     },
     "2026-10-08": {
         "dateStr": "Thursday October 8 2026",
@@ -169,6 +175,33 @@ JUNIOR_STUDY_RESOURCES = [
         "badge": "🔬 理科・生物・環境の入試頻出",
         "point": "「なぜ病気が増えているのか」「海で何が起きているのか」という謎解きの面白さを学べます。図表問題や共通テストの科学パッセージで求められる論理的思考力が身につきます。",
         "tip": "『仮説→実験手法→結果→考察』という理系論文の王道展開パターンを英語で掴むことができます。"
+    },
+    {
+        "key": "jiji",
+        "title_en": "Jiji Press",
+        "title_ja": "時事通信（国内総合通信社）",
+        "name": "Jiji Press (時事通信社)",
+        "badge": "🇯🇵 日本の重要ニュース・国際経済・政策",
+        "point": "日本の国策や半導体産業（ラピダス）、安全保障の最前線を客観的に伝える通信社です。日本語の重要ニュースを高校生レベルの標準英語に翻訳した記事を読むことで、日本の課題を世界に発信する表現力が身につきます。",
+        "tip": "ニュースでよく聞くカタカナ語や政策用語（サプライチェーン、半導体など）が英語でどう表現されるかに注目しましょう。"
+    },
+    {
+        "key": "yahoo",
+        "title_en": "Yahoo! News Japan",
+        "title_ja": "Yahoo!ニュース（教育・社会特集）",
+        "name": "Yahoo! News Japan (Yahoo!ニュース)",
+        "badge": "🎒 教育・健康・身近な生活課題",
+        "point": "ランドセルの重さやタブレット端末の活用など、中高生自身の生活に密着したホットな話題を扱います。身近な問題だからこそ英語でも共感しやすく、英検の意見論述で自分の考えを述べる材料になります。",
+        "tip": "『賛成の理由・反対の理由』を整理しながら読むと、自由英作文のライティング力が劇的にアップします。"
+    },
+    {
+        "key": "getnews",
+        "title_en": "GetNews Japan",
+        "title_ja": "ガジェット通信（エンタメ・新技術）",
+        "name": "GetNews Japan (ガジェット通信)",
+        "badge": "🕶️ 最新ガジェット・AI・エンタメ",
+        "point": "スマートグラスや最新AIツール、ポップカルチャーのワクワクする進化をいち早くレポートします。『テクノロジーの便利さ』と『使う側のマナー・ルール』の両面を楽しく学べます。",
+        "tip": "新しいデジタル機器の説明に出てくる最新のIT英語やカタカナ言葉を、高校基本英語と結びつけて覚えられます。"
     }
 ]
 

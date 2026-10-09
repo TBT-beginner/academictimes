@@ -81,6 +81,20 @@ CATEGORY_METADATA = {
             ("subclinical inflammation", "潜在性（慢性）炎症（自覚症状がないまま細胞を侵食する微小な炎症反応）"),
             ("predictive extrapolation", "予測的外挿（既知の骨格データから未知の生体機能をAIで導き出す計算科学）")
         ]
+    },
+    "entertainment": {
+        "title_en": "ENTERTAINMENT & GADGETS",
+        "title_ja": "エンタメ・ガジェット・デジタルカルチャー",
+        "subtitle": "AI Wearables, Smart Tech, Gaming Ethics & Digital Pop Culture",
+        "description": "最新AIスマートグラス、ウェアラブルデバイスの進化、ゲーム・ネットカルチャーと人間の心理、著作権・プライバシーの境界を読み解く先端カルチャー英語。ガジェット通信（GetNews）などの先端トピックを大学入試・教養英語へと接続します。",
+        "exam_strategy": "ガジェットやエンタメ系の長文では、最新のテクノロジー用語（augmented reality, ubiquitous, telemetry等）と、それに対する社会的・倫理的懸念（surveillance capitalism, screen fatigue, data sovereignty等）が対比されます。技術の利便性と課題の両面を論述する構成力を養いましょう。",
+        "key_phrases": [
+            ("augmented reality overlay", "拡張現実オーバーレイ（現実の視界にデジタル情報を重ねて表示する技術）"),
+            ("ambient computing", "アンビエント・コンピューティング（機器を意識させず環境に溶け込む情報処理）"),
+            ("digital sovereignty", "デジタル主権（個人のプライバシーや国家のデータ管理権）"),
+            ("ubiquitous surveillance", "遍在する監視（日常空間のあらゆる場所にカメラやセンサーが存在する状態）"),
+            ("creator economy", "クリエイターエコノミー（個人がネット上で独自のコンテンツや経済圏を築く仕組み）")
+        ]
     }
 }
 
@@ -120,6 +134,7 @@ def generate_category_pages():
         cul_act = "active" if cat_key == "culture" else ""
         law_act = "active" if cat_key == "law" else ""
         wor_act = "active" if cat_key == "world" else ""
+        ent_act = "active" if cat_key == "entertainment" else ""
         
         # Lead article HTML
         lead_html = ""
@@ -243,6 +258,7 @@ def generate_category_pages():
         <li class="nav-item {cul_act}"><a href="../culture/index.html">Culture & Thought</a></li>
         <li class="nav-item {law_act}"><a href="../law/index.html">Law & Justice</a></li>
         <li class="nav-item {wor_act}"><a href="../world/index.html">World & Security</a></li>
+        <li class="nav-item {ent_act}"><a href="../entertainment/index.html">Entertainment & Gadgets</a></li>
         <li class="nav-item"><a href="../nobel-prize/index.html" style="color: #b8860b; font-weight: 700;">🏆 2026ノーベル賞特設解説</a></li>
         <li class="nav-item"><a href="../junior/index.html" style="color: #235937; font-weight: 700;">🌱 THE JUNIOR ↗</a></li>
         <li class="nav-item"><a href="../index.html#section-archive" style="color: var(--times-red); font-weight: 700;">🔍 過去記事検索</a></li>
@@ -312,6 +328,7 @@ def generate_category_pages():
         <a href="../culture/index.html" style="padding: 0.4rem 0.85rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.82rem; font-weight: 600;">Culture & Thought (文化・思想)</a>
         <a href="../law/index.html" style="padding: 0.4rem 0.85rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.82rem; font-weight: 600;">Law & Justice (法律・制度)</a>
         <a href="../world/index.html" style="padding: 0.4rem 0.85rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.82rem; font-weight: 600;">World & Security (世界・安保)</a>
+        <a href="../entertainment/index.html" style="padding: 0.4rem 0.85rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.82rem; font-weight: 600;">Entertainment & Gadgets (エンタメ・ガジェット)</a>
       </div>
     </section>
 
@@ -341,6 +358,7 @@ def generate_category_pages():
             <li><a href="../culture/index.html">Culture & Thought</a></li>
             <li><a href="../law/index.html">Law & Justice</a></li>
             <li><a href="../world/index.html">World & Security</a></li>
+            <li><a href="../entertainment/index.html">Entertainment & Gadgets</a></li>
           </ul>
         </div>
         <div class="footer-col">

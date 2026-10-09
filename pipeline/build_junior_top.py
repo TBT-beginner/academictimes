@@ -24,17 +24,17 @@ def generate_junior_index():
     art_map = {a["slug"]: a for a in JUNIOR_ARTICLES}
     
     # 10/9 Default Edition Stories
-    lead = art_map.get("stoic-philosophy-digital-age", JUNIOR_ARTICLES[6])
-    sub1 = art_map.get("headphones-in-public", JUNIOR_ARTICLES[0])
-    sub2 = art_map.get("psychology-casual-encounters", JUNIOR_ARTICLES[2])
+    lead = art_map.get("smart-glasses-ai-privacy", JUNIOR_ARTICLES[0])
+    sub1 = art_map.get("japan-semiconductor-revival-rapidus", JUNIOR_ARTICLES[1])
+    sub2 = art_map.get("digital-school-backpack-reform", JUNIOR_ARTICLES[2])
     
-    left1 = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[4])
-    left2 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[1])
-    left3 = art_map.get("air-defence-shield", JUNIOR_ARTICLES[3])
+    left1 = art_map.get("stoic-philosophy-digital-age", JUNIOR_ARTICLES[6])
+    left2 = art_map.get("headphones-in-public", JUNIOR_ARTICLES[0])
+    left3 = art_map.get("psychology-casual-encounters", JUNIOR_ARTICLES[2])
     
-    right1 = art_map.get("mediterranean-marine-heatwaves", JUNIOR_ARTICLES[8])
-    right2 = art_map.get("ai-pediatric-diagnosis-consent", JUNIOR_ARTICLES[11])
-    right3 = art_map.get("clarkson-business-red-tape", JUNIOR_ARTICLES[9])
+    right1 = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[4])
+    right2 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[1])
+    right3 = art_map.get("air-defence-shield", JUNIOR_ARTICLES[3])
     right4 = art_map.get("generative-ai-paleontology", JUNIOR_ARTICLES[7])
 
     # Pre-render all 15 catalog cards for initial display & SEO
@@ -166,6 +166,7 @@ def generate_junior_index():
         <li class="nav-item"><a href="#cat-society">Society & Mind</a></li>
         <li class="nav-item"><a href="#cat-law">Law & Justice</a></li>
         <li class="nav-item"><a href="#cat-world">World & Security</a></li>
+        <li class="nav-item"><a href="#cat-entertainment">Entertainment & Gadgets</a></li>
         <li class="nav-item"><a href="../nobel-prize/index.html" style="color: #b8860b; font-weight: 700;">🏆 2026ノーベル賞特設解説</a></li>
         <li class="nav-item"><a href="#section-archive" style="color: #235937; font-weight: 700;">🔍 記事一覧・検索</a></li>
         <li class="nav-item"><a href="#section-guide">高校生向け学習ガイド</a></li>
@@ -461,6 +462,17 @@ def generate_junior_index():
           </p>
         </div>
 
+        <!-- Category 6: Entertainment & Gadgets -->
+        <div class="cat-card" id="cat-entertainment" style="border-top: 3px solid #235937;">
+          <div class="cat-card-genre junior-genre">ENTERTAINMENT & GADGETS (エンタメ・ガジェット)</div>
+          <h3 class="cat-card-title">
+            <a href="entertainment/smart-glasses-ai-privacy/index.html">Smart Glasses and AI: The Exciting Future and Privacy Rules</a>
+          </h3>
+          <p class="cat-card-lead">
+            スマートグラスとAIの未来。日常を楽しくする最新ガジェットと、周囲へのマナー・プライバシーのルールを学びます。
+          </p>
+        </div>
+
       </div>
     </section>
 
@@ -577,6 +589,7 @@ def generate_junior_index():
             <button type="button" class="filter-category-btn" data-cat="science">Science (科学・医学)</button>
             <button type="button" class="filter-category-btn" data-cat="society">Society (社会・経済)</button>
             <button type="button" class="filter-category-btn" data-cat="world">World (世界・安保)</button>
+            <button type="button" class="filter-category-btn" data-cat="entertainment">Entertainment (エンタメ・ガジェット)</button>
           </div>
 
           <div style="display: flex; align-items: center; gap: 0.75rem;">
@@ -590,6 +603,9 @@ def generate_junior_index():
               <option value="ft">Financial Times</option>
               <option value="science-mag">Science / MIT Tech Review</option>
               <option value="the-conversation">The Conversation / Atlantic</option>
+              <option value="jiji">Jiji Press (時事通信)</option>
+              <option value="yahoo">Yahoo! News Japan (Yahoo!ニュース)</option>
+              <option value="getnews">GetNews Japan (ガジェット通信)</option>
             </select>
             <span id="archive-count-badge" class="archive-count-badge" style="color: #235937;">該当件数: {len(JUNIOR_ARTICLES)} 件</span>
           </div>

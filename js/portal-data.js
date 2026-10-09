@@ -89,6 +89,39 @@ const MEDIA_RESOURCES = [
     whyHighSchoolersMustKnow: "専門用語が巧みに日常語に言い換えられているため、難関大入試のパラフレーズ（同義語言い換え）問題や内容一致問題の対策に最適です。",
     sampleTopics: "都市における微小な対人交流の幸福感、行動経済学のナッジ理論、教育格差",
     badge: "頻出度: 注目度急上昇ランク"
+  },
+  {
+    key: "jiji",
+    name: "Jiji Press (時事通信 / Japan's Independent News Agency)",
+    country: "Japan",
+    founded: "1945年",
+    stance: "独立・公正・客観的報道",
+    examSignificance: "日本を代表する総合通信社。政治・経済・政策報道に強みを持ち、国内外の重要ニュースを事実に基づいて正確かつ迅速に配信。論説・政策決定の分析に最適。",
+    whyHighSchoolersMustKnow: "半導体国家戦略や国際地政学、経済安全保障など、大学入試・小論文で問われる日本の政策課題の背景知識を学べます。日本語の確かな情報を学術英語に転換する訓練に最適です。",
+    sampleTopics: "半導体国産化戦略（ラピダス）、経済安全保障、サプライチェーン再編、国際通商政策",
+    badge: "新規追加: 国内最高峰通信社（政策・経済）"
+  },
+  {
+    key: "yahoo",
+    name: "Yahoo! News Japan (Yahoo!ニュース / Specialized Features)",
+    country: "Japan",
+    founded: "1996年",
+    stance: "多様な論点・国民的課題・教育福祉",
+    examSignificance: "日本最大級のニュースプラットフォーム。多角的な視点や有識者解説（オーサー記事）が充実し、身近な社会問題や教育現場の実態に鋭く切り込む。",
+    whyHighSchoolersMustKnow: "デジタル端末の普及に伴う学校現場の課題（置き勉・ランドセルの重さ）など、高校生自身が当事者である教育・社会問題を英語で表現・議論する絶好の題材が揃っています。",
+    sampleTopics: "学校教育のデジタル化と身体負荷、GIGAスクール構想、少子高齢化と地域コミュニティ",
+    badge: "新規追加: 国民的メディア（教育・社会課題）"
+  },
+  {
+    key: "getnews",
+    name: "GetNews Japan (ガジェット通信 / Tech & Entertainment)",
+    country: "Japan",
+    founded: "2008年",
+    stance: "ガジェット・ポップカルチャー・デジタルライフ",
+    examSignificance: "最新デジタル機器、スマートグラス、AIサービス、エンターテインメント文化をいち早く発信。テクノロジーが日常生活や若者文化に与える影響を先取りするメディア。",
+    whyHighSchoolersMustKnow: "ARグラスや生成AIの普及とプライバシー倫理など、高校生にとってワクワクする最新ガジェットを通じて、未来社会のルール作りを英語で考える力を養えます。",
+    sampleTopics: "AIスマートグラスとプライバシー保護、次世代ウェアラブル端末、デジタルエンタメ倫理",
+    badge: "新規追加: エンタメ・ガジェット（新ジャンル）"
   }
 ];
 
@@ -317,6 +350,51 @@ const ALL_ARTICLES = [
     source_url: "https://time.com/stoicism-algorithmic-anxiety-modern-life",
     path: "culture/stoic-philosophy-digital-age/index.html",
     image: "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    slug: "smart-glasses-ai-privacy",
+    category: "entertainment",
+    category_label: "ENTERTAINMENT & GADGETS • ガジェット・情報倫理",
+    date: "2026-10-09",
+    title: "Augmented Reality, Ambient Surveillance: The Socio-Legal Dilemma of Generative AI Smart Glasses",
+    headline_ja: "拡張現実と日常的監視の狭間：生成AIスマートグラスが突きつける法とプライバシーの現代的相克",
+    subhead: "米MetaやRay-Banの最新AIグラス普及が引き起こす盗撮・顔認識不安。公共空間の匿名性と情報倫理を学術英語で徹底解剖。",
+    lead_snippet: "日常の風景に溶け込む最新スマートグラスの急速な普及は、ハンズフリーの利便性をもたらす一方で、同意なき録画やリアルタイム顔認識によるプライバシー侵害の懸念をかつてない次元に押し上げている。技術の利便性と市民の匿名性保護を巡る法制度・エチケットの最前線を精読する。",
+    source_name: "GetNews Japan (ガジェット通信 / Tech & Entertainment Special Analysis)",
+    source_media_key: "getnews",
+    source_url: "https://getnews.jp/archives/smart-glasses-ai-privacy",
+    path: "entertainment/smart-glasses-ai-privacy/index.html",
+    image: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    slug: "japan-semiconductor-revival-rapidus",
+    category: "science",
+    category_label: "SCIENCE & TECH • 産業技術・国際地政学",
+    date: "2026-10-09",
+    title: "Japan's Strategic Semiconductor Gamble: Rapidus and the Geopolitics of 2-Nanometer Chips",
+    headline_ja: "日本の国家半導体再興戦略：ラピダス北海道工場と2ナノメートル極微細加工を巡る世界的技術覇権",
+    subhead: "官民一体の巨額投資と日米欧の技術同盟。シリコン列島復活に向けたサプライチェーン再構築を経済安全保障英語で精読。",
+    lead_snippet: "日本政府は2ナノメートル未満の最先端半導体を国内製造すべく数兆円規模の国家戦略に踏み切った。国策ベンチャー・ラピダスは地政学的サプライチェーン寸断への対抗軸となり得るのか。巨額の資本注入と極端紫外線（EUV）露光技術者の育成という高い障壁を検証する。",
+    source_name: "Jiji Press (時事通信 / Japan's Independent News Agency)",
+    source_media_key: "jiji",
+    source_url: "https://www.jiji.com/jc/article?k=japan-semiconductor-rapidus",
+    path: "science/japan-semiconductor-revival-rapidus/index.html",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    slug: "digital-school-backpack-reform",
+    category: "society",
+    category_label: "SOCIETY & EDUCATION • 現代教育・身体健康",
+    date: "2026-10-09",
+    title: "The Heavy Burden of Pedagogy: Japanese Classrooms Address Digital Tablets and Backpack Strain",
+    headline_ja: "教育現場の重すぎる負担：児童生徒のデジタル端末導入と伝統的ランドセルを巡る身体的・教育的相克",
+    subhead: "1人1台端末の普及が生んだ「ランドセル症候群」。紙の教科書とクラウド学習の最適なバランスを社会科学英語で探究。",
+    lead_snippet: "全国の学校で進むGIGAスクール構想の下、タブレット端末の配備が加速したものの、依然として紙の教科書を全量持ち運ぶ慣習により小学生の通学鞄が過重化する皮肉な現象が生じている。小児整形外科学の警告と、置き勉・人間工学リュック導入を模索する自治体の挑戦を追う。",
+    source_name: "Yahoo! News Japan (Yahoo!ニュース / Education & Society Special Feature)",
+    source_media_key: "yahoo",
+    source_url: "https://news.yahoo.co.jp/articles/digital-school-backpack-reform",
+    path: "society/digital-school-backpack-reform/index.html",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
@@ -324,11 +402,11 @@ const EDITIONS = {
   "2026-10-09": {
     dateStr: "Friday October 9 2026",
     editionLabel: "2026年10月9日 (金) 号 【本日最新版】",
-    tagline: "特集：アルゴリズム時代の不安を解くストア派哲学と公共空間のイヤホン・微小対話の心理学",
-    topLeadSlug: "stoic-philosophy-digital-age",
-    subLeadSlugs: ["headphones-in-public", "psychology-casual-encounters"],
-    leftDispatches: ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield"],
-    rightDigestSlugs: ["mediterranean-marine-heatwaves", "ai-pediatric-diagnosis-consent", "clarkson-business-red-tape", "generative-ai-paleontology"]
+    tagline: "特集：AIスマートグラスのプライバシー・北海道ラピダス半導体再興戦略・教育現場のランドセル改革",
+    topLeadSlug: "smart-glasses-ai-privacy",
+    subLeadSlugs: ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform"],
+    leftDispatches: ["stoic-philosophy-digital-age", "critical-minerals-geopolitics", "colorectal-cancer-under-50s"],
+    rightDigestSlugs: ["headphones-in-public", "psychology-casual-encounters", "air-defence-shield", "generative-ai-paleontology"]
   },
   "2026-10-08": {
     dateStr: "Thursday October 8 2026",

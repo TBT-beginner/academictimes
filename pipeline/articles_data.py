@@ -1965,3 +1965,17 @@ ARTICLES = [ { 'category': 'law',
                  'phonetic': '[ˌek.wəˈnɪm.ə.ti]',
                  'pos': '名詞',
                  'word': 'equanimity'}]}]
+
+MAX_ARTICLES = 30
+
+try:
+    from senior_articles_batch_ingest import SENIOR_ARTICLES_INGESTED
+    _existing_slugs = {a.get("slug") for a in ARTICLES}
+    for _art in SENIOR_ARTICLES_INGESTED:
+        if _art.get("slug") not in _existing_slugs:
+            ARTICLES.append(_art)
+            _existing_slugs.add(_art.get("slug"))
+    if len(ARTICLES) > MAX_ARTICLES:
+        ARTICLES = ARTICLES[-MAX_ARTICLES:]
+except ImportError:
+    pass

@@ -880,8 +880,15 @@ JUNIOR_ARTICLES = [
 
 from junior_articles_batch2 import JUNIOR_ARTICLES_BATCH2
 from junior_articles_batch3 import JUNIOR_ARTICLES_BATCH3
+from junior_articles_batch4 import JUNIOR_ARTICLES_BATCH4
 
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH2)
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH3)
+JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH4)
 
-print(f"Loaded {len(JUNIOR_ARTICLES)} Junior articles successfully.")
+MAX_ARTICLES = 30
+if len(JUNIOR_ARTICLES) > MAX_ARTICLES:
+    JUNIOR_ARTICLES = JUNIOR_ARTICLES[-MAX_ARTICLES:]
+
+print(f"Loaded {len(JUNIOR_ARTICLES)} Junior articles successfully (Max capacity: {MAX_ARTICLES}).")
+

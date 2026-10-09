@@ -226,6 +226,51 @@ const JUNIOR_ARTICLES = [
     "image": "https://images.unsplash.com/photo-1519074069444-1ba4ea16e6f1?w=1000&auto=format&fit=crop&q=80",
     "path": "world/raf-fairford-bomber-redeployment/index.html",
     "senior_path": "../world/raf-fairford-bomber-redeployment/index.html"
+  },
+  {
+    "slug": "smart-glasses-ai-privacy",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT & GADGETS • 英検準2級〜2級",
+    "date": "2026-10-09",
+    "title": "Smart Glasses and AI: The Exciting Future and Privacy Rules We Need",
+    "headline_ja": "スマートグラスとAI：未来のワクワクする技術とみんなで考えるプライバシーのルール",
+    "subhead": "メガネをかけるだけでAIが道を案内してくれる時代へ！便利さと周囲への思いやりについて考えよう。",
+    "lead_snippet": "最新のスマートグラスは、見た目は普通のメガネなのに、小さなカメラと人工知能（AI）が入っています。看板の外国語を自動で翻訳してくれるなど便利な反面、まわりの人のプライバシーを守るルール作りが求められています。",
+    "source_name": "GetNews Japan (Adapted for Eiken Grade Pre-2 - 2)",
+    "source_media_key": "getnews",
+    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=1000&auto=format&fit=crop&q=80",
+    "path": "entertainment/smart-glasses-ai-privacy/index.html",
+    "senior_path": "../entertainment/smart-glasses-ai-privacy/index.html"
+  },
+  {
+    "slug": "japan-semiconductor-revival-rapidus",
+    "category": "science",
+    "category_label": "SCIENCE & TECH • 英検準2級〜2級",
+    "date": "2026-10-09",
+    "title": "Japan's Big Plan to Make Super-Fast Computer Chips",
+    "headline_ja": "日本の大きな挑戦：世界で一番速い超小型コンピューターチップをつくる！",
+    "subhead": "スマホやAIの頭脳となる「半導体」。北海道で進む新しい工場づくりのニュースをやさしい英語で学びます。",
+    "lead_snippet": "コンピューターやスマートフォン、電気自動車の頭脳である「半導体チップ」。日本は世界で最も進んだ2ナノメートルの極小チップを国内で作るため、北海道に巨大な工場を建設する国家プロジェクトを進めています。",
+    "source_name": "Jiji Press (Adapted for Eiken Grade Pre-2 - 2)",
+    "source_media_key": "jiji",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&auto=format&fit=crop&q=80",
+    "path": "science/japan-semiconductor-revival-rapidus/index.html",
+    "senior_path": "../science/japan-semiconductor-revival-rapidus/index.html"
+  },
+  {
+    "slug": "digital-school-backpack-reform",
+    "category": "society",
+    "category_label": "SOCIETY & EDUCATION • 英検準2級〜2級",
+    "date": "2026-10-09",
+    "title": "Heavy School Bags and Digital Tablets: How Classrooms in Japan Are Changing",
+    "headline_ja": "重いランドセルとタブレット端末：日本の学校はどう変わっていくのか？",
+    "subhead": "教科書とタブレットでカバンが重すぎる！生徒たちの体を守りながら楽しく勉強するためのアイデアを読みます。",
+    "lead_snippet": "全国の小中学校でタブレット端末が配られましたが、紙の教科書も一緒に持ち運ぶためカバンが重すぎる問題が発生しています。生徒の健康を守るため、軽量リュックサックを認める学校が増えています。",
+    "source_name": "Yahoo! News Japan (Adapted for Eiken Grade Pre-2 - 2)",
+    "source_media_key": "yahoo",
+    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1000&auto=format&fit=crop&q=80",
+    "path": "society/digital-school-backpack-reform/index.html",
+    "senior_path": "../society/digital-school-backpack-reform/index.html"
   }
 ];
 
@@ -233,21 +278,21 @@ const JUNIOR_EDITIONS = {
   "2026-10-09": {
     "dateStr": "Friday October 9 2026",
     "editionLabel": "2026年10月9日 (金) 号 【本日最新版】",
-    "tagline": "特集：スマホ時代の不安を和らげる哲学とイヤホンを外す小さな勇気",
-    "topLeadSlug": "stoic-philosophy-digital-age",
+    "tagline": "特集：最新スマートグラスのプライバシー・北海道半導体再興戦略・教育現場のランドセル改革",
+    "topLeadSlug": "smart-glasses-ai-privacy",
     "subLeadSlugs": [
+      "japan-semiconductor-revival-rapidus",
+      "digital-school-backpack-reform"
+    ],
+    "leftDispatches": [
+      "stoic-philosophy-digital-age",
       "headphones-in-public",
       "psychology-casual-encounters"
     ],
-    "leftDispatches": [
+    "rightDigestSlugs": [
       "critical-minerals-geopolitics",
       "colorectal-cancer-under-50s",
-      "air-defence-shield"
-    ],
-    "rightDigestSlugs": [
-      "mediterranean-marine-heatwaves",
-      "ai-pediatric-diagnosis-consent",
-      "clarkson-business-red-tape",
+      "air-defence-shield",
       "generative-ai-paleontology"
     ]
   },
@@ -457,5 +502,32 @@ const JUNIOR_STUDY_RESOURCES = [
     "badge": "🔬 理科・生物・環境の入試頻出",
     "point": "「なぜ病気が増えているのか」「海で何が起きているのか」という謎解きの面白さを学べます。図表問題や共通テストの科学パッセージで求められる論理的思考力が身につきます。",
     "tip": "『仮説→実験手法→結果→考察』という理系論文の王道展開パターンを英語で掴むことができます。"
+  },
+  {
+    "key": "jiji",
+    "title_en": "Jiji Press",
+    "title_ja": "時事通信（国内総合通信社）",
+    "name": "Jiji Press (時事通信社)",
+    "badge": "🇯🇵 日本の重要ニュース・国際経済・政策",
+    "point": "日本の国策や半導体産業（ラピダス）、安全保障の最前線を客観的に伝える通信社です。日本語の重要ニュースを高校生レベルの標準英語に翻訳した記事を読むことで、日本の課題を世界に発信する表現力が身につきます。",
+    "tip": "ニュースでよく聞くカタカナ語や政策用語（サプライチェーン、半導体など）が英語でどう表現されるかに注目しましょう。"
+  },
+  {
+    "key": "yahoo",
+    "title_en": "Yahoo! News Japan",
+    "title_ja": "Yahoo!ニュース（教育・社会特集）",
+    "name": "Yahoo! News Japan (Yahoo!ニュース)",
+    "badge": "🎒 教育・健康・身近な生活課題",
+    "point": "ランドセルの重さやタブレット端末の活用など、中高生自身の生活に密着したホットな話題を扱います。身近な問題だからこそ英語でも共感しやすく、英検の意見論述で自分の考えを述べる材料になります。",
+    "tip": "『賛成の理由・反対の理由』を整理しながら読むと、自由英作文のライティング力が劇的にアップします。"
+  },
+  {
+    "key": "getnews",
+    "title_en": "GetNews Japan",
+    "title_ja": "ガジェット通信（エンタメ・新技術）",
+    "name": "GetNews Japan (ガジェット通信)",
+    "badge": "🕶️ 最新ガジェット・AI・エンタメ",
+    "point": "スマートグラスや最新AIツール、ポップカルチャーのワクワクする進化をいち早くレポートします。『テクノロジーの便利さ』と『使う側のマナー・ルール』の両面を楽しく学べます。",
+    "tip": "新しいデジタル機器の説明に出てくる最新のIT英語やカタカナ言葉を、高校基本英語と結びつけて覚えられます。"
   }
 ];
