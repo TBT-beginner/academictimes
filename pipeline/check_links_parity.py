@@ -7,7 +7,7 @@ PORTAL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 p_path = os.path.join(PORTAL_DIR, "js", "portal-data.js")
 with open(p_path, "r", encoding="utf-8") as f:
     p_text = f.read()
-portal_slugs = re.findall(r'slug:\s*"([^"]+)"', p_text)
+portal_slugs = re.findall(r'["\']?slug["\']?:\s*"([^"]+)"', p_text)
 print(f"portal-data.js: {len(portal_slugs)} articles ({len(set(portal_slugs))} unique)")
 
 # 2. Check junior-data.js

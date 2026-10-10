@@ -80,12 +80,12 @@ MEDIA_KEY_MAP = {
 EDITIONS_DATA = {
     "2026-10-10": {
         "dateStr": "Saturday October 10 2026",
-        "editionLabel": "2026年10月10日 (土) 号 【本日最新版】",
-        "tagline": "特集：東京理科大・硤合名誉教授ノーベル化学賞・坂口特任教授の制御性T細胞・スマートグラス倫理",
+        "editionLabel": "2026年10月10日 (土) 号 【本日最新版・全30記事】",
+        "tagline": "特集：ノーベル化学賞硤合教授・坂口特任教授免疫革新・AIデータセンター・食料品消費税減税",
         "topLeadSlug": "soai-reaction-nobel-chemistry",
-        "subLeadSlugs": ["regulatory-t-cells-nobel-breakthrough", "smart-glasses-ai-privacy"],
-        "leftDispatches": ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "global-plastics-treaty-negotiations"],
-        "rightDigestSlugs": ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield", "generative-ai-paleontology"]
+        "subLeadSlugs": ["regulatory-t-cells-nobel-breakthrough", "food-sales-tax-cut-income-benefits", "ukraine-drone-strike-yandex-ai-datacenter"],
+        "leftDispatches": ["supreme-court-sheet-music-piracy-ruling", "japan-icc-sanctions-rule-of-law", "pnas-ai-biodiversity-monitoring"],
+        "rightDigestSlugs": ["wwf-living-planet-biodiversity-collapse", "commercial-fusion-reactor-engineering", "kyocera-ceramic-coating-vacuum-tumblers", "dementia-smart-home-minder-system"]
     },
     "2026-10-09": {
         "dateStr": "Friday October 9 2026",
@@ -241,17 +241,38 @@ def build_data_js():
     for art in JUNIOR_ARTICLES:
         slug = art["slug"]
         cat = art["category"]
+        src_url = art.get("source_url", "").lower()
+        media_key = MEDIA_KEY_MAP.get(slug)
+        if not media_key:
+            if "jiji" in src_url:
+                media_key = "jiji"
+            elif "yahoo" in src_url:
+                media_key = "yahoo"
+            elif "getnews" in src_url:
+                media_key = "getnews"
+            elif "nature" in src_url or "science" in src_url:
+                media_key = "nature"
+            elif "guardian" in src_url:
+                media_key = "the-guardian"
+            elif "ft.com" in src_url:
+                media_key = "ft"
+            elif "reuters" in src_url:
+                media_key = "reuters"
+            elif "time" in src_url:
+                media_key = "time"
+            else:
+                media_key = "all"
         articles_list.append({
             "slug": slug,
             "category": cat,
             "category_label": art.get("category_label", cat.upper()),
-            "date": DATE_MAP.get(slug, "2026-10-06"),
+            "date": art.get("date") or DATE_MAP.get(slug, "2026-10-10"),
             "title": art["title"],
             "headline_ja": art["headline_ja"],
             "subhead": art["subhead"],
             "lead_snippet": art["lead_snippet"],
             "source_name": art["source_name"],
-            "source_media_key": MEDIA_KEY_MAP.get(slug, "all"),
+            "source_media_key": media_key,
             "image": art["image"],
             "path": f"{cat}/{slug}/index.html",
             "senior_path": f"../{cat}/{slug}/index.html"

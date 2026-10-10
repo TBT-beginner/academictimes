@@ -881,10 +881,12 @@ JUNIOR_ARTICLES = [
 from junior_articles_batch2 import JUNIOR_ARTICLES_BATCH2
 from junior_articles_batch3 import JUNIOR_ARTICLES_BATCH3
 from junior_articles_batch4 import JUNIOR_ARTICLES_BATCH4
+from batch6_articles_data import BATCH6_JUNIOR
 
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH2)
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH3)
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH4)
+JUNIOR_ARTICLES.extend(BATCH6_JUNIOR)
 
 _DATE_MAP = {
     "soai-reaction-nobel-chemistry": "2026-10-10",

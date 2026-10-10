@@ -67,6 +67,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         <li class="nav-item {culture_active}"><a href="../../culture/index.html">Culture & Thought</a></li>
         <li class="nav-item {law_active}"><a href="../../law/index.html">Law & Justice</a></li>
         <li class="nav-item {world_active}"><a href="../../world/index.html">World & Security</a></li>
+        <li class="nav-item {entertainment_active}"><a href="../../entertainment/index.html">Entertainment & Gadgets</a></li>
         <li class="nav-item"><a href="../../index.html#ranking">Most Read</a></li>
       </ul>
     </div>
@@ -409,6 +410,7 @@ def build_article_html(art):
     cul_act = "active" if cat == "culture" else ""
     law_act = "active" if cat == "law" else ""
     wor_act = "active" if cat == "world" else ""
+    ent_act = "active" if cat == "entertainment" else ""
     
     # Related links HTML
     related_blocks = []
@@ -663,6 +665,7 @@ def build_article_html(art):
         culture_active=cul_act,
         law_active=law_act,
         world_active=wor_act,
+        entertainment_active=ent_act,
         date_iso=date_iso,
         date_ja=date_ja,
         date_en_bar=date_en_bar,
@@ -684,10 +687,11 @@ def build_article_html(art):
 
 async def main():
     sem = asyncio.Semaphore(6)
+    portal_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     for art in ARTICLES:
         slug = art["slug"]
         cat = art["category"]
-        art_dir = os.path.join("news_portal", cat, slug)
+        art_dir = os.path.join(portal_dir, cat, slug)
         os.makedirs(art_dir, exist_ok=True)
         
         # 1. Write HTML

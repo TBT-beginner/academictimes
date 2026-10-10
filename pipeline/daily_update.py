@@ -161,6 +161,11 @@ def main():
     if not run_step("Build Senior Category Portals", ["generate_category_pages.py"]):
         print("[FAIL] Category portal build failed.")
         sys.exit(1)
+
+    # 2b. Build Senior Portal Data JS
+    if not run_step("Build Senior Portal Data JS", ["build_portal_data_js.py"]):
+        print("[FAIL] Senior portal data JS build failed.")
+        sys.exit(1)
         
     # 2. Build Junior Articles & Audio
     if not run_step("Build THE JUNIOR Articles & Audio", ["build_junior_site.py"]):

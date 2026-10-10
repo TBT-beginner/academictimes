@@ -2016,6 +2016,11 @@ try:
         if _art.get("slug") not in _existing_slugs:
             ARTICLES.append(_art)
             _existing_slugs.add(_art.get("slug"))
+    from batch6_articles_data import BATCH6_SENIOR
+    for _art in BATCH6_SENIOR:
+        if _art.get("slug") not in _existing_slugs:
+            ARTICLES.append(_art)
+            _existing_slugs.add(_art.get("slug"))
 except ImportError:
     pass
 

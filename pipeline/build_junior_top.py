@@ -26,16 +26,16 @@ def generate_junior_index():
     # 10/10 Default Edition Stories
     lead = art_map.get("soai-reaction-nobel-chemistry", JUNIOR_ARTICLES[0])
     sub1 = art_map.get("regulatory-t-cells-nobel-breakthrough", JUNIOR_ARTICLES[1])
-    sub2 = art_map.get("smart-glasses-ai-privacy", JUNIOR_ARTICLES[2])
+    sub2 = art_map.get("food-sales-tax-cut-income-benefits", JUNIOR_ARTICLES[2])
     
-    left1 = art_map.get("japan-semiconductor-revival-rapidus", JUNIOR_ARTICLES[1])
-    left2 = art_map.get("digital-school-backpack-reform", JUNIOR_ARTICLES[2])
-    left3 = art_map.get("global-plastics-treaty-negotiations", JUNIOR_ARTICLES[3])
+    left1 = art_map.get("ukraine-drone-strike-yandex-ai-datacenter", JUNIOR_ARTICLES[3])
+    left2 = art_map.get("supreme-court-sheet-music-piracy-ruling", JUNIOR_ARTICLES[4])
+    left3 = art_map.get("japan-icc-sanctions-rule-of-law", JUNIOR_ARTICLES[5])
     
-    right1 = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[4])
-    right2 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[5])
-    right3 = art_map.get("air-defence-shield", JUNIOR_ARTICLES[6])
-    right4 = art_map.get("generative-ai-paleontology", JUNIOR_ARTICLES[7])
+    right1 = art_map.get("pnas-ai-biodiversity-monitoring", JUNIOR_ARTICLES[6])
+    right2 = art_map.get("commercial-fusion-reactor-engineering", JUNIOR_ARTICLES[7])
+    right3 = art_map.get("dementia-smart-home-minder-system", JUNIOR_ARTICLES[8])
+    right4 = art_map.get("kyocera-ceramic-coating-vacuum-tumblers", JUNIOR_ARTICLES[9])
 
     # Pre-render all 15 catalog cards for initial display & SEO
     cards_html = []
