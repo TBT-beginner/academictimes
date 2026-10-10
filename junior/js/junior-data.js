@@ -276,7 +276,7 @@ const JUNIOR_ARTICLES = [
     "slug": "regulatory-t-cells-nobel-breakthrough",
     "category": "science",
     "category_label": "SCIENCE & HEALTH • 英検準2級〜2級",
-    "date": "2026-10-09",
+    "date": "2026-10-10",
     "title": "How a Japanese Scientist Discovered the Body's Natural Brake Cells",
     "headline_ja": "日本の科学者が発見した体のブレーキ役：暴走する免疫をコントロールする仕組み",
     "subhead": "病気のウイルスと戦う免疫システムが、自分の体を傷つけないように見守る「ブレーキ細胞」。世界的発見をやさしい英語で読み解きます。",
@@ -291,7 +291,7 @@ const JUNIOR_ARTICLES = [
     "slug": "soai-reaction-nobel-chemistry",
     "category": "science",
     "category_label": "SCIENCE & DISCOVERY • 英検準2級〜2級",
-    "date": "2026-10-09",
+    "date": "2026-10-10",
     "title": "The Mystery of Right and Left Molecules: Japanese Professor Wins the 2026 Nobel Prize in Chemistry",
     "headline_ja": "右手と左手の分子のふしぎ：東京理科大の硤合先生が2026年ノーベル化学賞を受賞！",
     "subhead": "私たちの体を形づくるアミノ酸はなぜ「左手型」ばかりなのか？世界中の科学者を驚かせた「硤合反応」をやさしい英語で学びます。",
@@ -301,21 +301,6 @@ const JUNIOR_ARTICLES = [
     "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1000&auto=format&fit=crop&q=80",
     "path": "science/soai-reaction-nobel-chemistry/index.html",
     "senior_path": "../science/soai-reaction-nobel-chemistry/index.html"
-  },
-  {
-    "slug": "evtol-flying-taxis-tokyo-bay",
-    "category": "entertainment",
-    "category_label": "ENTERTAINMENT & GADGETS • 英検準2級〜2級",
-    "date": "2026-10-10",
-    "title": "Electric Flying Cars in Tokyo: How Next-Generation Taxis Will Change Our Cities",
-    "headline_ja": "東京の空を飛ぶクルマ：次世代の空飛ぶタクシーが変える未来の街と生活",
-    "subhead": "羽田空港と東京湾をわずか数分で結ぶ『空飛ぶクルマ』の実験がスタート！静かでクリーンな未来の乗り物を、英検準2級〜2級のやさしい英語で学びます。",
-    "lead_snippet": "東京湾で、電気で飛ぶ新しい乗り物『eVTOL（空飛ぶクルマ）』のテストが始まりました。渋滞を飛び越えて目的地へ早く行けるため、未来の新しい交通手段として世界中から注目されています。",
-    "source_name": "GetNews Japan & Jiji Press (Adapted for Eiken Grade Pre-2 - 2)",
-    "source_media_key": "getnews",
-    "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=1000&auto=format&fit=crop&q=80",
-    "path": "entertainment/evtol-flying-taxis-tokyo-bay/index.html",
-    "senior_path": "../entertainment/evtol-flying-taxis-tokyo-bay/index.html"
   },
   {
     "slug": "esports-highschool-education",
@@ -458,28 +443,7 @@ const JUNIOR_EDITIONS = {
   "2026-10-10": {
     "dateStr": "Saturday October 10 2026",
     "editionLabel": "2026年10月10日 (土) 号 【本日最新版】",
-    "tagline": "特集：東京湾岸で次世代「空飛ぶクルマ」試験運航開始・東京理科大ノーベル化学賞・光量子クラウド",
-    "topLeadSlug": "evtol-flying-taxis-tokyo-bay",
-    "subLeadSlugs": [
-      "soai-reaction-nobel-chemistry",
-      "smart-glasses-ai-privacy"
-    ],
-    "leftDispatches": [
-      "regulatory-t-cells-nobel-breakthrough",
-      "japan-semiconductor-revival-rapidus",
-      "digital-school-backpack-reform"
-    ],
-    "rightDigestSlugs": [
-      "global-plastics-treaty-negotiations",
-      "critical-minerals-geopolitics",
-      "colorectal-cancer-under-50s",
-      "air-defence-shield"
-    ]
-  },
-  "2026-10-09": {
-    "dateStr": "Friday October 9 2026",
-    "editionLabel": "2026年10月9日 (金) 号 【バックナンバー】",
-    "tagline": "特集：東京理科大・硤合先生ノーベル化学賞受賞・坂口教授のブレーキ細胞・スマートグラスとAI",
+    "tagline": "特集：東京理科大・硤合名誉教授ノーベル化学賞・坂口特任教授の制御性T細胞・スマートグラス倫理",
     "topLeadSlug": "soai-reaction-nobel-chemistry",
     "subLeadSlugs": [
       "regulatory-t-cells-nobel-breakthrough",
@@ -489,6 +453,27 @@ const JUNIOR_EDITIONS = {
       "japan-semiconductor-revival-rapidus",
       "digital-school-backpack-reform",
       "global-plastics-treaty-negotiations"
+    ],
+    "rightDigestSlugs": [
+      "critical-minerals-geopolitics",
+      "colorectal-cancer-under-50s",
+      "air-defence-shield",
+      "generative-ai-paleontology"
+    ]
+  },
+  "2026-10-09": {
+    "dateStr": "Friday October 9 2026",
+    "editionLabel": "2026年10月9日 (金) 号 【バックナンバー】",
+    "tagline": "特集：ノーベル賞日本人受賞ラッシュと次世代半導体・脱炭素の最前線",
+    "topLeadSlug": "regulatory-t-cells-nobel-breakthrough",
+    "subLeadSlugs": [
+      "japan-semiconductor-revival-rapidus",
+      "digital-school-backpack-reform"
+    ],
+    "leftDispatches": [
+      "soai-reaction-nobel-chemistry",
+      "smart-glasses-ai-privacy",
+      "perovskite-solar-cells-commercialization"
     ],
     "rightDigestSlugs": [
       "critical-minerals-geopolitics",

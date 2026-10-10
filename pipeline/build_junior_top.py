@@ -24,18 +24,18 @@ def generate_junior_index():
     art_map = {a["slug"]: a for a in JUNIOR_ARTICLES}
     
     # 10/10 Default Edition Stories
-    lead = art_map.get("evtol-flying-taxis-tokyo-bay", JUNIOR_ARTICLES[0])
-    sub1 = art_map.get("soai-reaction-nobel-chemistry", JUNIOR_ARTICLES[1])
+    lead = art_map.get("soai-reaction-nobel-chemistry", JUNIOR_ARTICLES[0])
+    sub1 = art_map.get("regulatory-t-cells-nobel-breakthrough", JUNIOR_ARTICLES[1])
     sub2 = art_map.get("smart-glasses-ai-privacy", JUNIOR_ARTICLES[2])
     
-    left1 = art_map.get("regulatory-t-cells-nobel-breakthrough", JUNIOR_ARTICLES[1])
-    left2 = art_map.get("japan-semiconductor-revival-rapidus", JUNIOR_ARTICLES[2])
-    left3 = art_map.get("digital-school-backpack-reform", JUNIOR_ARTICLES[3])
+    left1 = art_map.get("japan-semiconductor-revival-rapidus", JUNIOR_ARTICLES[1])
+    left2 = art_map.get("digital-school-backpack-reform", JUNIOR_ARTICLES[2])
+    left3 = art_map.get("global-plastics-treaty-negotiations", JUNIOR_ARTICLES[3])
     
-    right1 = art_map.get("global-plastics-treaty-negotiations", JUNIOR_ARTICLES[4])
-    right2 = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[5])
-    right3 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[6])
-    right4 = art_map.get("air-defence-shield", JUNIOR_ARTICLES[7])
+    right1 = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[4])
+    right2 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[5])
+    right3 = art_map.get("air-defence-shield", JUNIOR_ARTICLES[6])
+    right4 = art_map.get("generative-ai-paleontology", JUNIOR_ARTICLES[7])
 
     # Pre-render all 15 catalog cards for initial display & SEO
     cards_html = []

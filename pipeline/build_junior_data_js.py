@@ -14,9 +14,8 @@ JUNIOR_JS_DIR = os.path.join(PORTAL_DIR, "junior", "js")
 os.makedirs(JUNIOR_JS_DIR, exist_ok=True)
 
 DATE_MAP = {
-    "evtol-flying-taxis-tokyo-bay": "2026-10-10",
-    "soai-reaction-nobel-chemistry": "2026-10-09",
-    "regulatory-t-cells-nobel-breakthrough": "2026-10-09",
+    "soai-reaction-nobel-chemistry": "2026-10-10",
+    "regulatory-t-cells-nobel-breakthrough": "2026-10-10",
     "smart-glasses-ai-privacy": "2026-10-09",
     "japan-semiconductor-revival-rapidus": "2026-10-09",
     "digital-school-backpack-reform": "2026-10-09",
@@ -47,7 +46,6 @@ DATE_MAP = {
 }
 
 MEDIA_KEY_MAP = {
-    "evtol-flying-taxis-tokyo-bay": "getnews",
     "soai-reaction-nobel-chemistry": "jiji",
     "regulatory-t-cells-nobel-breakthrough": "jiji",
     "smart-glasses-ai-privacy": "getnews",
@@ -83,19 +81,19 @@ EDITIONS_DATA = {
     "2026-10-10": {
         "dateStr": "Saturday October 10 2026",
         "editionLabel": "2026年10月10日 (土) 号 【本日最新版】",
-        "tagline": "特集：東京湾岸で次世代「空飛ぶクルマ」試験運航開始・東京理科大ノーベル化学賞・光量子クラウド",
-        "topLeadSlug": "evtol-flying-taxis-tokyo-bay",
-        "subLeadSlugs": ["soai-reaction-nobel-chemistry", "smart-glasses-ai-privacy"],
-        "leftDispatches": ["regulatory-t-cells-nobel-breakthrough", "japan-semiconductor-revival-rapidus", "digital-school-backpack-reform"],
-        "rightDigestSlugs": ["global-plastics-treaty-negotiations", "critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield"]
+        "tagline": "特集：東京理科大・硤合名誉教授ノーベル化学賞・坂口特任教授の制御性T細胞・スマートグラス倫理",
+        "topLeadSlug": "soai-reaction-nobel-chemistry",
+        "subLeadSlugs": ["regulatory-t-cells-nobel-breakthrough", "smart-glasses-ai-privacy"],
+        "leftDispatches": ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "global-plastics-treaty-negotiations"],
+        "rightDigestSlugs": ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield", "generative-ai-paleontology"]
     },
     "2026-10-09": {
         "dateStr": "Friday October 9 2026",
         "editionLabel": "2026年10月9日 (金) 号 【バックナンバー】",
-        "tagline": "特集：東京理科大・硤合先生ノーベル化学賞受賞・坂口教授のブレーキ細胞・スマートグラスとAI",
-        "topLeadSlug": "soai-reaction-nobel-chemistry",
-        "subLeadSlugs": ["regulatory-t-cells-nobel-breakthrough", "smart-glasses-ai-privacy"],
-        "leftDispatches": ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform", "global-plastics-treaty-negotiations"],
+        "tagline": "特集：ノーベル賞日本人受賞ラッシュと次世代半導体・脱炭素の最前線",
+        "topLeadSlug": "regulatory-t-cells-nobel-breakthrough",
+        "subLeadSlugs": ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform"],
+        "leftDispatches": ["soai-reaction-nobel-chemistry", "smart-glasses-ai-privacy", "perovskite-solar-cells-commercialization"],
         "rightDigestSlugs": ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield", "generative-ai-paleontology"]
     },
     "2026-10-08": {

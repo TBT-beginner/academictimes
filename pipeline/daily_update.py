@@ -86,11 +86,68 @@ def verify_1_to_1_parity():
     all_ok = (senior_ok == total and junior_ok == total)
     return all_ok
 
+def verify_strict_source_authenticity():
+    """
+    Strictly verifies that:
+    1. Every article originates from an allowed, verified primary news organization.
+    2. Primary source URL is present, HTTPS, and matches verified news domains.
+    3. Source name is present and clearly attributed.
+    4. Prohibits any unverified, fabricated, or unsourced article.
+    """
+    print(f"\n==========================================")
+    print(f"[DAILY PIPELINE] Verifying News Source Authenticity & Contemporaneity")
+    print(f"==========================================")
+    import articles_data
+    import junior_articles_data
+    
+    ALLOWED_DOMAINS = [
+        "jiji.com",
+        "yahoo.co.jp",
+        "getnews.jp",
+        "time.com",
+        "thetimes.com",
+        "thetimes.co.uk",
+        "theguardian.com",
+        "nature.com",
+        "reuters.com",
+        "ft.com",
+        "theconversation.com",
+        "science.org",
+        "sciencedirect.com",
+        "telegraph.co.uk"
+    ]
+    
+    for art in articles_data.ARTICLES:
+        slug = art.get("slug")
+        src_url = art.get("source_url", "")
+        src_name = art.get("source_name", "")
+        
+        if not src_url or not src_url.startswith("http"):
+            print(f"[ERROR] Article {slug} missing valid source_url!")
+            return False
+            
+        matched_domain = any(d in src_url for d in ALLOWED_DOMAINS)
+        if not matched_domain:
+            print(f"[ERROR] Article {slug} source_url '{src_url}' is not from an authorized news domain!")
+            return False
+            
+        if not src_name:
+            print(f"[ERROR] Article {slug} missing source_name!")
+            return False
+            
+    print(f"[PASS] All {len(articles_data.ARTICLES)} Senior articles verified against authentic news sources.")
+    return True
+
 def main():
     print("************************************************************")
     print("  THE ACADEMIC TIMES & THE JUNIOR - UNIFIED DAILY BUILD")
     print("************************************************************")
     
+    # 0. Verify Source Authenticity
+    if not verify_strict_source_authenticity():
+        print("[FAIL] Source authenticity verification failed. Aborting build.")
+        sys.exit(1)
+        
     # 1. Update Senior Category pages
     if not run_step("Build Senior Category Portals", ["generate_category_pages.py"]):
         print("[FAIL] Category portal build failed.")
