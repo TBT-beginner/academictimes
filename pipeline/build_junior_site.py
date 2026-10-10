@@ -96,19 +96,20 @@ def build_junior_article_html(art):
     # Vocab Rows HTML
     vocab_rows = []
     for v in art.get("vocab", art.get("vocabulary", [])):
+        phonetic_html = f'<div class="vocab-phonetic">{v["phonetic"]}</div>' if v.get("phonetic") else ""
         row = f"""
         <tr>
           <td>
-            <div class="vocab-word">{v['word']}</div>
-            <div class="vocab-phonetic">{v['phonetic']}</div>
+            <div class="vocab-word">{v.get('word', '')}</div>
+            {phonetic_html}
           </td>
           <td>
-            <span class="vocab-pos">{v['pos']}</span>
-            <div class="vocab-meaning">{v['meaning']}</div>
+            <span class="vocab-pos">{v.get('pos', '')}</span>
+            <div class="vocab-meaning">{v.get('meaning', '')}</div>
           </td>
           <td>
-            <div class="vocab-def-en">{v['def']}</div>
-            <div class="vocab-example">{v['ex']}</div>
+            <div class="vocab-def-en">{v.get('def', '')}</div>
+            <div class="vocab-example">{v.get('ex', '')}</div>
           </td>
         </tr>
         """
@@ -491,7 +492,7 @@ def build_junior_article_html(art):
     return html
 
 async def generate_all():
-    sem = asyncio.Semaphore(5)
+    sem = asyncio.Semaphore(8)
     audio_tasks = []
 
     print("Building THE JUNIOR website...")

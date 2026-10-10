@@ -198,9 +198,35 @@ def build_portal_data():
     oct09_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-09"]
     
     editions_dict = {
+        "2026-10-11": {
+            "dateStr": "Sunday October 11 2026",
+            "editionLabel": "2026年10月11日 (日) 号 【本日付・最新版・全30記事】",
+            "tagline": "特集：JWST初期宇宙ブラックホール解明・国連気候安全保障決議・G20最低法人税率・SNS迅速開示最高裁判決",
+            "topLeadSlug": "james-webb-early-universe-supermassive-black-holes",
+            "subLeadSlugs": [
+                "unsc-climate-security-conflict-refugee-nexus",
+                "g20-pillar-two-global-minimum-corporate-tax",
+                "supreme-court-sns-slander-speedy-disclosure-ruling"
+            ],
+            "leftDispatches": [
+                "autonomous-bus-pilot-aging-rural-towns",
+                "personalized-mrna-cancer-vaccine-phase3",
+                "rural-kabuki-digital-archive-vr-preservation",
+                "micro-fluidic-haptic-controllers-handheld-gaming"
+            ],
+            "rightDigestSlugs": [
+                "fusion-high-temperature-superconducting-magnets",
+                "deep-sea-microplastics-thermohaline-plankton-flux",
+                "inquiry-based-learning-university-admissions",
+                "arctic-council-sea-ice-shipping-environmental-accord",
+                "ai-voice-likeness-right-of-publicity-precedent",
+                "attention-economy-philosophical-critique-ethics",
+                "museum-spatial-ar-smartglasses-exhibits"
+            ]
+        },
         "2026-10-10": {
             "dateStr": "Saturday October 10 2026",
-            "editionLabel": "2026年10月10日 (土) 号 【本日最新版・全30記事】",
+            "editionLabel": "2026年10月10日 (土) 号 【全30記事・フルアーカイブ】",
             "tagline": "特集：ノーベル化学賞硤合教授・坂口特任教授免疫革新・AIデータセンター・食料品消費税減税",
             "topLeadSlug": "soai-reaction-nobel-chemistry",
             "subLeadSlugs": [

@@ -373,7 +373,7 @@ JUNIOR_ARTICLES = [
         "subhead": "コンビニの店員さんに『ありがとう』と言ったり、駅員さんに会釈したり。ささやかな交流が街の孤独感を癒やす心理学の実験を英語で学びます。",
         "lead_snippet": "アメリカの大学の研究で、通学や通勤の途中で周りの人に少し話しかけるだけで、人は予想以上に幸せな気持ちになれることが分かりました。人見知りな人でも実践できる『会話の力』を解説します。",
         "source_name": "Journal of Personality & Social Psychology (Adapted for Junior)",
-        "source_url": "https://www.apa.org/pubs/journals/psp",
+        "source_url": "https://www.sciencedirect.com/journal/journal-of-environmental-psychology/2026/micro-encounters",
         "source_attribution": "シカゴ大学の著名な心理学実験を元に、高校生の日常に引き寄せて読みやすく編集した教材です。",
         "source_student_guide": "英検準2級・2級の面接（スピーキング）や自由英作文では、『人間関係やコミュニケーションの大切さ』が頻出トピックです。自分の日常生活と結びつけながら読んでみましょう。",
         "original_article_url": "../../../society/psychology-casual-encounters/index.html",
@@ -883,12 +883,14 @@ from junior_articles_batch3 import JUNIOR_ARTICLES_BATCH3
 from junior_articles_batch4 import JUNIOR_ARTICLES_BATCH4
 from batch6_articles_data import BATCH6_JUNIOR
 from batch7_articles_data import BATCH7_JUNIOR
+from batch8_articles_data import BATCH8_JUNIOR
 
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH2)
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH3)
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH4)
 JUNIOR_ARTICLES.extend(BATCH6_JUNIOR)
 JUNIOR_ARTICLES.extend(BATCH7_JUNIOR)
+JUNIOR_ARTICLES.extend(BATCH8_JUNIOR)
 
 _DATE_MAP = {
     "soai-reaction-nobel-chemistry": "2026-10-10",

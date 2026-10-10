@@ -78,9 +78,18 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-11": {
+        "dateStr": "Sunday October 11 2026",
+        "editionLabel": "2026年10月11日 (日) 号 【本日付・最新版・全30記事】",
+        "tagline": "特集：宇宙のブラックホールの謎・気候変動と難民問題・自動運転バス・SNSトラブルの解決ルール",
+        "topLeadSlug": "james-webb-early-universe-supermassive-black-holes",
+        "subLeadSlugs": ["unsc-climate-security-conflict-refugee-nexus", "g20-pillar-two-global-minimum-corporate-tax", "supreme-court-sns-slander-speedy-disclosure-ruling"],
+        "leftDispatches": ["autonomous-bus-pilot-aging-rural-towns", "personalized-mrna-cancer-vaccine-phase3", "rural-kabuki-digital-archive-vr-preservation"],
+        "rightDigestSlugs": ["fusion-high-temperature-superconducting-magnets", "deep-sea-microplastics-thermohaline-plankton-flux", "inquiry-based-learning-university-admissions", "micro-fluidic-haptic-controllers-handheld-gaming"]
+    },
     "2026-10-10": {
         "dateStr": "Saturday October 10 2026",
-        "editionLabel": "2026年10月10日 (土) 号 【本日最新版・全30記事】",
+        "editionLabel": "2026年10月10日 (土) 号 【全30記事・フルアーカイブ】",
         "tagline": "特集：ノーベル化学賞硤合教授・坂口特任教授免疫革新・AIデータセンター・食料品消費税減税",
         "topLeadSlug": "soai-reaction-nobel-chemistry",
         "subLeadSlugs": ["regulatory-t-cells-nobel-breakthrough", "food-sales-tax-cut-income-benefits", "ukraine-drone-strike-yandex-ai-datacenter"],

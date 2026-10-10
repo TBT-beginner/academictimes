@@ -2026,6 +2026,11 @@ try:
         if _art.get("slug") not in _existing_slugs:
             ARTICLES.append(_art)
             _existing_slugs.add(_art.get("slug"))
+    from batch8_articles_data import BATCH8_SENIOR
+    for _art in BATCH8_SENIOR:
+        if _art.get("slug") not in _existing_slugs:
+            ARTICLES.append(_art)
+            _existing_slugs.add(_art.get("slug"))
 except ImportError:
     pass
 
