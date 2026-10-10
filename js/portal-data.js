@@ -560,13 +560,37 @@ const ALL_ARTICLES = [
     source_url: "https://www.jiji.com/jc/article?k=ai-nuclear-data-centers",
     path: "world/ai-energy-nuclear-data-centers/index.html",
     image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    slug: "evtol-flying-taxis-tokyo-bay",
+    category: "entertainment",
+    category_label: "ENTERTAINMENT & GADGETS",
+    date: "2026-10-10",
+    title: "Electric Flying Taxis Take Flight Over Tokyo Bay: Japan Launches Pilot Operations for Next-Generation Urban Air Mobility",
+    headline_ja: "東京湾岸で次世代「空飛ぶクルマ（eVTOL）」の試験商用運航が開始：都市型航空交通（UAM）が切り拓く移動の未来と安全基準",
+    subhead: "羽田とベイエリアを結ぶ電動垂直離着陸機（eVTOL）。渋滞解消と脱炭素の切り札として期待される一方、騒音対策と厳格な耐空性証明の壁を英語で検証。",
+    lead_snippet: "東京湾上空において電動垂直離着陸機（eVTOL）の試験商用運航が開始。大都市の慢性的な渋滞を飛び越えるゼロエミッション航空モビリティの実用化に向け、耐空性証明と騒音規制の国際標準化を検証する。",
+    source_name: "GetNews Japan & Jiji Press",
+    source_media_key: "getnews",
+    source_url: "https://getnews.jp/archives/evtol-flying-taxis-tokyo-bay",
+    path: "entertainment/evtol-flying-taxis-tokyo-bay/index.html",
+    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const EDITIONS = {
+  "2026-10-10": {
+    dateStr: "Saturday October 10 2026",
+    editionLabel: "2026年10月10日 (土) 号 【本日最新版】",
+    tagline: "特集：東京湾岸で次世代「空飛ぶクルマ」試験運航開始・東京理科大ノーベル化学賞・光量子クラウド",
+    topLeadSlug: "evtol-flying-taxis-tokyo-bay",
+    subLeadSlugs: ["soai-reaction-nobel-chemistry", "smart-glasses-ai-privacy"],
+    leftDispatches: ["regulatory-t-cells-nobel-breakthrough", "japan-semiconductor-revival-rapidus", "digital-school-backpack-reform"],
+    rightDigestSlugs: ["global-plastics-treaty-negotiations", "critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield"]
+  },
   "2026-10-09": {
     dateStr: "Friday October 9 2026",
-    editionLabel: "2026年10月9日 (金) 号 【本日最新版】",
+    editionLabel: "2026年10月9日 (金) 号 【バックナンバー】",
     tagline: "特集：東京理科大・硤合憲三名誉教授に2026年ノーベル化学賞・坂口志文教授の制御性T細胞・AIスマートグラス倫理",
     topLeadSlug: "soai-reaction-nobel-chemistry",
     subLeadSlugs: ["regulatory-t-cells-nobel-breakthrough", "smart-glasses-ai-privacy"],

@@ -14,6 +14,7 @@ JUNIOR_JS_DIR = os.path.join(PORTAL_DIR, "junior", "js")
 os.makedirs(JUNIOR_JS_DIR, exist_ok=True)
 
 DATE_MAP = {
+    "evtol-flying-taxis-tokyo-bay": "2026-10-10",
     "soai-reaction-nobel-chemistry": "2026-10-09",
     "regulatory-t-cells-nobel-breakthrough": "2026-10-09",
     "smart-glasses-ai-privacy": "2026-10-09",
@@ -46,6 +47,7 @@ DATE_MAP = {
 }
 
 MEDIA_KEY_MAP = {
+    "evtol-flying-taxis-tokyo-bay": "getnews",
     "soai-reaction-nobel-chemistry": "jiji",
     "regulatory-t-cells-nobel-breakthrough": "jiji",
     "smart-glasses-ai-privacy": "getnews",
@@ -78,9 +80,18 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-10": {
+        "dateStr": "Saturday October 10 2026",
+        "editionLabel": "2026年10月10日 (土) 号 【本日最新版】",
+        "tagline": "特集：東京湾岸で次世代「空飛ぶクルマ」試験運航開始・東京理科大ノーベル化学賞・光量子クラウド",
+        "topLeadSlug": "evtol-flying-taxis-tokyo-bay",
+        "subLeadSlugs": ["soai-reaction-nobel-chemistry", "smart-glasses-ai-privacy"],
+        "leftDispatches": ["regulatory-t-cells-nobel-breakthrough", "japan-semiconductor-revival-rapidus", "digital-school-backpack-reform"],
+        "rightDigestSlugs": ["global-plastics-treaty-negotiations", "critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield"]
+    },
     "2026-10-09": {
         "dateStr": "Friday October 9 2026",
-        "editionLabel": "2026年10月9日 (金) 号 【本日最新版】",
+        "editionLabel": "2026年10月9日 (金) 号 【バックナンバー】",
         "tagline": "特集：東京理科大・硤合先生ノーベル化学賞受賞・坂口教授のブレーキ細胞・スマートグラスとAI",
         "topLeadSlug": "soai-reaction-nobel-chemistry",
         "subLeadSlugs": ["regulatory-t-cells-nobel-breakthrough", "smart-glasses-ai-privacy"],

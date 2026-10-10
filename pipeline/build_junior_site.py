@@ -95,7 +95,7 @@ def build_junior_article_html(art):
 
     # Vocab Rows HTML
     vocab_rows = []
-    for v in art["vocab"]:
+    for v in art.get("vocab", art.get("vocabulary", [])):
         row = f"""
         <tr>
           <td>
@@ -117,7 +117,7 @@ def build_junior_article_html(art):
 
     # Syntax Cards HTML
     syntax_cards = []
-    for s in art["syntax"]:
+    for s in art.get("syntax", []):
         card = f"""
         <div class="grammar-card">
           <div class="grammar-card-head">

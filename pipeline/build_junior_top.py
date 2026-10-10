@@ -23,19 +23,19 @@ def generate_junior_index():
     # Map articles by slug
     art_map = {a["slug"]: a for a in JUNIOR_ARTICLES}
     
-    # 10/9 Default Edition Stories
-    lead = art_map.get("soai-reaction-nobel-chemistry", JUNIOR_ARTICLES[0])
-    sub1 = art_map.get("regulatory-t-cells-nobel-breakthrough", JUNIOR_ARTICLES[1])
+    # 10/10 Default Edition Stories
+    lead = art_map.get("evtol-flying-taxis-tokyo-bay", JUNIOR_ARTICLES[0])
+    sub1 = art_map.get("soai-reaction-nobel-chemistry", JUNIOR_ARTICLES[1])
     sub2 = art_map.get("smart-glasses-ai-privacy", JUNIOR_ARTICLES[2])
     
-    left1 = art_map.get("japan-semiconductor-revival-rapidus", JUNIOR_ARTICLES[1])
-    left2 = art_map.get("digital-school-backpack-reform", JUNIOR_ARTICLES[2])
-    left3 = art_map.get("global-plastics-treaty-negotiations", JUNIOR_ARTICLES[6])
+    left1 = art_map.get("regulatory-t-cells-nobel-breakthrough", JUNIOR_ARTICLES[1])
+    left2 = art_map.get("japan-semiconductor-revival-rapidus", JUNIOR_ARTICLES[2])
+    left3 = art_map.get("digital-school-backpack-reform", JUNIOR_ARTICLES[3])
     
-    right1 = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[4])
-    right2 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[1])
-    right3 = art_map.get("air-defence-shield", JUNIOR_ARTICLES[3])
-    right4 = art_map.get("generative-ai-paleontology", JUNIOR_ARTICLES[7])
+    right1 = art_map.get("global-plastics-treaty-negotiations", JUNIOR_ARTICLES[4])
+    right2 = art_map.get("critical-minerals-geopolitics", JUNIOR_ARTICLES[5])
+    right3 = art_map.get("colorectal-cancer-under-50s", JUNIOR_ARTICLES[6])
+    right4 = art_map.get("air-defence-shield", JUNIOR_ARTICLES[7])
 
     # Pre-render all 15 catalog cards for initial display & SEO
     cards_html = []
@@ -126,11 +126,12 @@ def generate_junior_index():
   <!-- Top Switcher Bar with Interactive Edition Switcher -->
   <div class="top-date-bar">
     <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem; flex-wrap: wrap; gap: 0.5rem;">
-      <span id="top-date-bar-text">Friday October 9 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
+      <span id="top-date-bar-text">Saturday October 10 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
       <div class="edition-selector-wrap">
         <span style="font-weight: 700; color: #111;">📅 紙面切替:</span>
         <select id="select-edition-date" class="edition-select" aria-label="Select edition date">
-          <option value="2026-10-09" selected>2026年10月9日 (金) 号 【本日付・最新】</option>
+          <option value="2026-10-10" selected>2026年10月10日 (土) 号 【本日付・最新】</option>
+          <option value="2026-10-09">2026年10月9日 (金) 号 【ノーベル化学賞・スマートグラス】</option>
           <option value="2026-10-08">2026年10月8日 (木) 号 【重要鉱物の争奪戦・ストア哲学】</option>
           <option value="2026-10-07">2026年10月7日 (水) 号 【挨拶の魔法・北極海航路】</option>
           <option value="2026-10-06">2026年10月6日 (火) 号 【イヤホン論争・静かな時間】</option>

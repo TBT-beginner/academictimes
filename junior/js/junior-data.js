@@ -303,6 +303,21 @@ const JUNIOR_ARTICLES = [
     "senior_path": "../science/soai-reaction-nobel-chemistry/index.html"
   },
   {
+    "slug": "evtol-flying-taxis-tokyo-bay",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT & GADGETS • 英検準2級〜2級",
+    "date": "2026-10-10",
+    "title": "Electric Flying Cars in Tokyo: How Next-Generation Taxis Will Change Our Cities",
+    "headline_ja": "東京の空を飛ぶクルマ：次世代の空飛ぶタクシーが変える未来の街と生活",
+    "subhead": "羽田空港と東京湾をわずか数分で結ぶ『空飛ぶクルマ』の実験がスタート！静かでクリーンな未来の乗り物を、英検準2級〜2級のやさしい英語で学びます。",
+    "lead_snippet": "東京湾で、電気で飛ぶ新しい乗り物『eVTOL（空飛ぶクルマ）』のテストが始まりました。渋滞を飛び越えて目的地へ早く行けるため、未来の新しい交通手段として世界中から注目されています。",
+    "source_name": "GetNews Japan & Jiji Press (Adapted for Eiken Grade Pre-2 - 2)",
+    "source_media_key": "getnews",
+    "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=1000&auto=format&fit=crop&q=80",
+    "path": "entertainment/evtol-flying-taxis-tokyo-bay/index.html",
+    "senior_path": "../entertainment/evtol-flying-taxis-tokyo-bay/index.html"
+  },
+  {
     "slug": "esports-highschool-education",
     "category": "entertainment",
     "category_label": "ENTERTAINMENT & SCHOOL • 英検準2級〜2級",
@@ -440,9 +455,30 @@ const JUNIOR_ARTICLES = [
 ];
 
 const JUNIOR_EDITIONS = {
+  "2026-10-10": {
+    "dateStr": "Saturday October 10 2026",
+    "editionLabel": "2026年10月10日 (土) 号 【本日最新版】",
+    "tagline": "特集：東京湾岸で次世代「空飛ぶクルマ」試験運航開始・東京理科大ノーベル化学賞・光量子クラウド",
+    "topLeadSlug": "evtol-flying-taxis-tokyo-bay",
+    "subLeadSlugs": [
+      "soai-reaction-nobel-chemistry",
+      "smart-glasses-ai-privacy"
+    ],
+    "leftDispatches": [
+      "regulatory-t-cells-nobel-breakthrough",
+      "japan-semiconductor-revival-rapidus",
+      "digital-school-backpack-reform"
+    ],
+    "rightDigestSlugs": [
+      "global-plastics-treaty-negotiations",
+      "critical-minerals-geopolitics",
+      "colorectal-cancer-under-50s",
+      "air-defence-shield"
+    ]
+  },
   "2026-10-09": {
     "dateStr": "Friday October 9 2026",
-    "editionLabel": "2026年10月9日 (金) 号 【本日最新版】",
+    "editionLabel": "2026年10月9日 (金) 号 【バックナンバー】",
     "tagline": "特集：東京理科大・硤合先生ノーベル化学賞受賞・坂口教授のブレーキ細胞・スマートグラスとAI",
     "topLeadSlug": "soai-reaction-nobel-chemistry",
     "subLeadSlugs": [

@@ -17,15 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
   let activeCategory = 'all';
   let activeSource = 'all';
   let activeQuery = '';
-  let currentEditionDate = '2026-10-09';
+  let currentEditionDate = '2026-10-10';
 
-  const dateKeys = Object.keys(JUNIOR_EDITIONS).sort().reverse(); // ["2026-10-09", "2026-10-08", ...]
+  const dateKeys = Object.keys(JUNIOR_EDITIONS).sort().reverse(); // ["2026-10-10", "2026-10-09", ...]
 
   // ==========================================================================
   // 1. DATE / EDITION SWITCHER
   // ==========================================================================
   function switchEdition(dateKey) {
-    if (!JUNIOR_EDITIONS[dateKey]) dateKey = "2026-10-09";
+    if (!JUNIOR_EDITIONS[dateKey]) dateKey = "2026-10-10";
     currentEditionDate = dateKey;
     const ed = JUNIOR_EDITIONS[dateKey];
 
@@ -44,11 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Notice banner for past edition
     if (editionNotice) {
-      if (dateKey !== "2026-10-09") {
+      if (dateKey !== "2026-10-10") {
         editionNotice.style.display = "block";
         editionNotice.innerHTML = `
           <span>📅 表示中：<strong>${ed.editionLabel}</strong> — ${ed.tagline}</span>
-          <button type="button" class="btn-return-today" onclick="window.switchEdition('2026-10-09')" style="background: var(--junior-green); color: #fff; border: none; padding: 0.25rem 0.65rem; border-radius: 3px; font-weight: 700; cursor: pointer; margin-left: 0.5rem;">本日最新号に戻る ↺</button>
+          <button type="button" class="btn-return-today" onclick="window.switchEdition('2026-10-10')" style="background: var(--junior-green); color: #fff; border: none; padding: 0.25rem 0.65rem; border-radius: 3px; font-weight: 700; cursor: pointer; margin-left: 0.5rem;">本日最新号に戻る ↺</button>
         `;
       } else {
         editionNotice.style.display = "none";
