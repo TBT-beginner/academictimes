@@ -485,15 +485,18 @@ def build_article_html(art):
     
     # Syntax cards
     syntax_cards = []
-    for syn in art["syntax"]:
+    for syn in art.get("syntax", []):
+        phrase = syn.get("phrase") or syn.get("title") or syn.get("formula") or ""
+        meaning = syn.get("meaning") or syn.get("formula") or ""
+        meaning_html = f'<span class="grammar-meaning">「{meaning}」</span>' if meaning else ""
         card = f"""
         <div class="grammar-card">
           <div class="grammar-card-head">
-            <span class="grammar-target-phrase">{syn['phrase']}</span>
-            <span class="grammar-meaning">「{syn['meaning']}」</span>
+            <span class="grammar-target-phrase">{phrase}</span>
+            {meaning_html}
           </div>
           <div class="grammar-card-body">
-            <p>{syn['explanation']}</p>
+            <p>{syn.get('explanation', '')}</p>
           </div>
         </div>
         """
@@ -524,11 +527,13 @@ def build_article_html(art):
     
     # Quiz items
     quiz_items = []
-    for q_idx, q in enumerate(art["quiz"]):
+    for q_idx, q in enumerate(art.get("quiz", [])):
         btns = []
         letters = ["A", "B", "C", "D"]
-        for opt_idx, opt in enumerate(q["options"]):
-            is_cor = "true" if opt_idx == q["correct_index"] else "false"
+        options = q.get("options") or q.get("choices") or []
+        correct_index = q.get("correct_index") if "correct_index" in q else q.get("answer", 0)
+        for opt_idx, opt in enumerate(options):
+            is_cor = "true" if opt_idx == correct_index else "false"
             btns.append(f"""
             <button type="button" class="quiz-btn" data-correct="{is_cor}">
               <span class="quiz-opt-letter">{letters[opt_idx]}</span>
@@ -539,14 +544,14 @@ def build_article_html(art):
         <div class="quiz-item" data-answered="false">
           <div class="quiz-question-text">
             <span class="quiz-q-num">Q{q_idx+1}.</span>
-            {q['question']}
+            {q.get('question', '')}
           </div>
           <div class="quiz-choices">
             {''.join(btns)}
           </div>
           <div class="quiz-explanation">
             <strong>【正解解説】</strong><br>
-            {q['explanation']}
+            {q.get('explanation', '')}
           </div>
         </div>
         """
@@ -686,8 +691,9 @@ def build_article_html(art):
     )
 
 async def main():
-    sem = asyncio.Semaphore(6)
+    sem = asyncio.Semaphore(8)
     portal_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    audio_tasks = []
     for art in ARTICLES:
         slug = art["slug"]
         cat = art["category"]
@@ -701,8 +707,12 @@ async def main():
             f.write(html_content)
         print(f"Generated HTML for {cat}/{slug}/index.html")
         
-        # 2. Synthesize Audio
-        await generate_article_audio_files(art, art_dir, sem)
+        # 2. Collect Audio Task
+        audio_tasks.append(generate_article_audio_files(art, art_dir, sem))
+
+    print(f"Verifying/Synthesizing audio for {len(audio_tasks)} articles...")
+    await asyncio.gather(*audio_tasks)
+    print("All Senior audio tasks complete!")
 
 if __name__ == "__main__":
     asyncio.run(main())

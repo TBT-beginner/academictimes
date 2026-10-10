@@ -61,6 +61,24 @@
 | **55** | ENTERTAINMENT | 2026-10-10 | [Acoustic Radiation Pressure and Mid-Air Tactility: The Next Ergonomic Leap in Spatial Computing and XR](../entertainment/ultrasonic-midair-haptics-xr-gaming/index.html) |  | ✅ 認可一次ソース確認済 |
 | **56** | ENTERTAINMENT | 2026-10-10 | [Voice Synthesizer Licensing and the Preservation of Craft: Japanese Voice Actor Guilds Formulate Generative AI Standards](../entertainment/anime-voice-actors-generative-ai-compact/index.html) |  | ✅ 認可一次ソース確認済 |
 | **57** | ENTERTAINMENT | 2026-10-10 | [Head-Related Transfer Functions and Acoustic Telepresence: The Engineering of Live Symphonic Binaural Streaming](../entertainment/binaural-spatial-acoustics-concert-streaming/index.html) |  | ✅ 認可一次ソース確認済 |
+| **58** | SCIENCE | 2026-10-09 | [Statistical Physics Meets Artificial Intelligence: The Nobel Laureates Who Built Modern Neural Computing](../science/nobel-physics-hopfield-hinton-machine-learning/index.html) |  | ✅ 認可一次ソース確認済 |
+| **59** | SCIENCE | 2026-10-09 | [Solid-State Battery Pilot Lines: Overcoming Interfacial Resistance in Next-Generation Energy Storage](../science/solid-state-battery-ev-commercial-trial/index.html) |  | ✅ 認可一次ソース確認済 |
+| **60** | SCIENCE | 2026-10-09 | [Ocean Alkalinity Enhancement: Geochemical Carbon Dioxide Removal and Pelagic Eco-Safety](../science/ocean-co2-carbon-capture-alkalinity-enhancement/index.html) |  | ✅ 認可一次ソース確認済 |
+| **61** | SOCIETY | 2026-10-09 | [Revoking Property Tax Concessions on Abandoned Dwellings: Fiscal Levers Against Rural Blight in Japan](../society/regional-depopulation-empty-houses-akiya-tax/index.html) |  | ✅ 認可一次ソース確認済 |
+| **62** | SOCIETY | 2026-10-09 | [Closing the Fatherhood Deficit: Full Take-Home Wage Replacement in Japanese Parental Leave Policies](../society/dual-earner-childcare-leave-wage-replacement/index.html) |  | ✅ 認可一次ソース確認済 |
+| **63** | WORLD | 2026-10-09 | [Diplomatic Deadlocks in Vientiane: ASEAN Leaders Confront Maritime Coercion and Code of Conduct Negotiations](../world/asean-summit-vientiane-south-china-sea-code/index.html) |  | ✅ 認可一次ソース確認済 |
+| **64** | WORLD | 2026-10-09 | [Decarbonizing Trade or Protectionist Tariff? Developing Economies Contest the EU Carbon Border Adjustment Mechanism](../world/eu-carbon-border-adjustment-mechanism-cbam/index.html) |  | ✅ 認可一次ソース確認済 |
+| **65** | WORLD | 2026-10-09 | [Debt-for-Climate Swaps and Fiscal Solvency: Multilateral Lenders Confront the Sovereign Debt Crisis in the Global South](../world/imf-world-bank-annual-meetings-debt-restructuring/index.html) |  | ✅ 認可一次ソース確認済 |
+| **66** | LAW | 2026-10-09 | [Machine Learning and the Boundaries of Fair Use: Judicial Interpretation of Copyright Exploitation Without Enjoyment](../law/generative-ai-fair-use-copyright-lawsuit/index.html) |  | ✅ 認可一次ソース確認済 |
+| **67** | LAW | 2026-10-09 | [Article 14 and the Right to Marry: The Supreme Court Weighs Equal Protection in Same-Sex Marriage Litigations](../law/supreme-court-same-sex-marriage-constitution/index.html) |  | ✅ 認可一次ソース確認済 |
+| **68** | LAW | 2026-10-09 | [Algorithmic Tacit Collusion: Antitrust Regulators Probe Automated Pricing Software in Real Estate and Hospitality](../law/algorithmic-pricing-antitrust-collusion/index.html) |  | ✅ 認可一次ソース確認済 |
+| **69** | LAW | 2026-10-09 | [Synthetic Deception at the Ballot Box: Regulating Generative Deepfakes in Democratic Elections](../law/deepfake-election-interference-digital-bill/index.html) |  | ✅ 認可一次ソース確認済 |
+| **70** | CULTURE | 2026-10-09 | [Microbial Artistry and Living Heritage: UNESCO Endorses Traditional Japanese Sake Brewing for Inscription](../culture/traditional-sake-unesco-intangible-cultural-heritage/index.html) |  | ✅ 認可一次ソース確認済 |
+| **71** | CULTURE | 2026-10-09 | [The Architecture of Inwardness: Distinguishing Voluntary Solitude from Pathological Loneliness in an Always-On Society](../culture/solitude-vs-loneliness-philosophy-existentialism/index.html) |  | ✅ 認可一次ソース確認済 |
+| **72** | CULTURE | 2026-10-09 | [Unplugging the Adolescent Brain: Wilderness Digital Detox and Neuroplastic Recovery of Attention Spans](../culture/digital-detox-camps-youth-neuroplasticity/index.html) |  | ✅ 認可一次ソース確認済 |
+| **73** | CULTURE | 2026-10-09 | [Lasers Piercing the Jungle Canopy: LiDAR Remote Sensing Rewrites the Urban Demographics of Ancient Mesoamerica](../culture/archaeological-lidar-maya-civilization-discovery/index.html) |  | ✅ 認可一次ソース確認済 |
+| **74** | ENTERTAINMENT | 2026-10-09 | [Sub-Twenty Millisecond Orbit: Low-Earth Mega-Constellations Unlock Cloud Gaming for Remote Archipelagoes](../entertainment/cloud-gaming-latency-low-earth-orbit-satellite/index.html) |  | ✅ 認可一次ソース確認済 |
+| **75** | ENTERTAINMENT | 2026-10-09 | [Beyond Green Screens: In-Camera Visual Effects and Unreal Engine Reshape the Economics of Digital Cinema](../entertainment/virtual-production-led-volume-filmmaking/index.html) |  | ✅ 認可一次ソース確認済 |
 
 ---
 

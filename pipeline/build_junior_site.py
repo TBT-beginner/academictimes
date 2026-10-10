@@ -47,7 +47,7 @@ def build_junior_article_html(art):
     source_url = art["source_url"]
     source_attr = art["source_attribution"]
     guide = art["source_student_guide"]
-    orig_url = art["original_article_url"]
+    orig_url = f"../../../{cat}/{slug}/index.html"
     image = art["image"]
     
     # Date formatting
@@ -118,14 +118,16 @@ def build_junior_article_html(art):
     # Syntax Cards HTML
     syntax_cards = []
     for s in art.get("syntax", []):
+        phrase = s.get("phrase") or s.get("title") or s.get("formula") or ""
+        meaning = s.get("meaning") or s.get("formula") or ""
         card = f"""
         <div class="grammar-card">
           <div class="grammar-card-head">
-            <span class="grammar-target-phrase">{s['phrase']}</span>
-            <span class="grammar-meaning">【{s['meaning']}】</span>
+            <span class="grammar-target-phrase">{phrase}</span>
+            <span class="grammar-meaning">【{meaning}】</span>
           </div>
           <div class="grammar-card-body">
-            <p>{s['explanation']}</p>
+            <p>{s.get('explanation', '')}</p>
           </div>
         </div>
         """
@@ -134,11 +136,13 @@ def build_junior_article_html(art):
 
     # Quiz Cards HTML
     quiz_cards = []
-    for i, q in enumerate(art["quiz"]):
+    for i, q in enumerate(art.get("quiz", [])):
         opt_letters = ["A", "B", "C", "D"]
         opt_btns = []
-        for j, opt in enumerate(q["options"]):
-            is_correct = "true" if j == q["correct_index"] else "false"
+        options = q.get("options") or q.get("choices") or []
+        correct_index = q.get("correct_index") if "correct_index" in q else q.get("answer", 0)
+        for j, opt in enumerate(options):
+            is_correct = "true" if j == correct_index else "false"
             btn = f"""
             <button type="button" class="quiz-btn" data-correct="{is_correct}">
               <span class="quiz-opt-letter">{opt_letters[j]}</span>
@@ -155,13 +159,13 @@ def build_junior_article_html(art):
             <span style="font-size: 0.8rem; color: var(--times-muted);">英検準2級〜2級形式</span>
           </div>
           <p class="quiz-question-text" style="font-weight: 700; margin: 0.75rem 0 1rem; font-size: 1rem;">
-            {q['question']}
+            {q.get('question', '')}
           </p>
           <div class="quiz-choices">
             {opts_html}
           </div>
           <div class="quiz-explanation" style="margin-top: 1rem; padding: 0.75rem 1rem; background: #f8f9fa; border-left: 3px solid var(--junior-green); display: none;">
-            {q['explanation']}
+            {q.get('explanation', '')}
           </div>
         </div>
         """

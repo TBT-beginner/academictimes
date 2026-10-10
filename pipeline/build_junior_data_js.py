@@ -89,12 +89,12 @@ EDITIONS_DATA = {
     },
     "2026-10-09": {
         "dateStr": "Friday October 9 2026",
-        "editionLabel": "2026年10月9日 (金) 号 【バックナンバー】",
-        "tagline": "特集：ノーベル賞日本人受賞ラッシュと次世代半導体・脱炭素の最前線",
-        "topLeadSlug": "regulatory-t-cells-nobel-breakthrough",
-        "subLeadSlugs": ["japan-semiconductor-revival-rapidus", "digital-school-backpack-reform"],
-        "leftDispatches": ["soai-reaction-nobel-chemistry", "smart-glasses-ai-privacy", "perovskite-solar-cells-commercialization"],
-        "rightDigestSlugs": ["critical-minerals-geopolitics", "colorectal-cancer-under-50s", "air-defence-shield", "generative-ai-paleontology"]
+        "editionLabel": "2026年10月9日 (金) 号 【全30記事・フルアーカイブ】",
+        "tagline": "特集：ノーベル物理学賞AI基盤・ラピダス半導体・全固体電池・同性婚最高裁審理",
+        "topLeadSlug": "nobel-physics-hopfield-hinton-machine-learning",
+        "subLeadSlugs": ["japan-semiconductor-revival-rapidus", "solid-state-battery-ev-commercial-trial"],
+        "leftDispatches": ["asean-summit-vientiane-south-china-sea-code", "traditional-sake-unesco-intangible-cultural-heritage", "cloud-gaming-latency-low-earth-orbit-satellite"],
+        "rightDigestSlugs": ["supreme-court-same-sex-marriage-constitution", "dual-earner-childcare-leave-wage-replacement", "generative-ai-fair-use-copyright-lawsuit", "digital-detox-camps-youth-neuroplasticity"]
     },
     "2026-10-08": {
         "dateStr": "Thursday October 8 2026",
