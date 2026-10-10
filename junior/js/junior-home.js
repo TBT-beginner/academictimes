@@ -347,6 +347,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }).join('');
   }
 
+  // Update Live Reader Counters from localStorage
+  function updateLiveReaderCounters() {
+    try {
+      const store = JSON.parse(localStorage.getItem('academic_times_real_views') || '{}');
+      document.querySelectorAll('.live-reader-count').forEach(el => {
+        const slug = el.getAttribute('data-slug');
+        if (slug) {
+          const views = store[slug] || 1;
+          el.textContent = views.toLocaleString();
+        }
+      });
+    } catch(e) {}
+  }
+
   // Initial Check for Hash Edition or data-default-edition
   const hash = window.location.hash;
   const defaultFromAttr = document.body ? document.body.getAttribute('data-default-edition') : null;
@@ -355,14 +369,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (JUNIOR_EDITIONS[targetDate]) {
       switchEdition(targetDate);
     } else {
-      switchEdition(defaultFromAttr || '2026-10-09');
+      switchEdition(defaultFromAttr || '2026-10-10');
     }
   } else if (defaultFromAttr && JUNIOR_EDITIONS[defaultFromAttr]) {
     switchEdition(defaultFromAttr);
   } else {
-    switchEdition('2026-10-09');
+    switchEdition('2026-10-10');
   }
 
   filterAndRenderArchive();
   renderStudyResources();
+  updateLiveReaderCounters();
 });

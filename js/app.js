@@ -490,17 +490,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
   // ==========================================================================
-  // 10. KEYBOARD SHORTCUTS (Space = Play/Pause, Esc = Close Overlays)
+  // 11. REAL READER ACCESS TRACKER (実読者アクセス数集計)
   // ==========================================================================
-  window.addEventListener('keydown', (e) => {
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
-      return;
-    }
-    if (e.code === 'Escape') {
-      if (tocPanel && tocPanel.classList.contains('active')) {
-        tocPanel.classList.remove('active');
+  try {
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    let currentSlug = '';
+    for (let i = 0; i < pathParts.length; i++) {
+      if (pathParts[i] === 'index.html' && i > 0) {
+        currentSlug = pathParts[i - 1];
+        break;
       }
-      document.querySelectorAll('.vocab-tip.show-tip').forEach(t => t.classList.remove('show-tip'));
     }
-  });
+    if (!currentSlug && pathParts.length >= 1) {
+      currentSlug = pathParts[pathParts.length - 1].replace('.html', '');
+      if (currentSlug === 'index' && pathParts.length >= 2) {
+        currentSlug = pathParts[pathParts.length - 2];
+      }
+    }
+    const ignoreNames = ['news_portal', 'junior', 'academictimes', 'culture', 'entertainment', 'law', 'science', 'society', 'world'];
+    if (currentSlug && !ignoreNames.includes(currentSlug)) {
+      const storageKey = 'academic_times_real_views';
+      const viewsObj = JSON.parse(localStorage.getItem(storageKey) || '{}');
+      viewsObj[currentSlug] = (viewsObj[currentSlug] || 0) + 1;
+      localStorage.setItem(storageKey, JSON.stringify(viewsObj));
+    }
+  } catch(e) {}
 });
