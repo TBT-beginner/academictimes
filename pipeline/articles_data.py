@@ -1966,7 +1966,7 @@ ARTICLES = [ { 'category': 'law',
                  'pos': '名詞',
                  'word': 'equanimity'}]}]
 
-MAX_ARTICLES = 30
+DAILY_MAX_UPDATE = 30  # 1日あたりの最大追加・更新記事数（アーカイブ総ページ数に上限はありません）
 
 try:
     from senior_articles_batch_ingest import SENIOR_ARTICLES_INGESTED
@@ -2016,7 +2016,5 @@ try:
         if _art.get("slug") not in _existing_slugs:
             ARTICLES.append(_art)
             _existing_slugs.add(_art.get("slug"))
-    if len(ARTICLES) > MAX_ARTICLES:
-        ARTICLES = ARTICLES[-MAX_ARTICLES:]
 except ImportError:
     pass

@@ -25,7 +25,7 @@ import edge_tts
 PIPELINE_DIR = os.path.dirname(os.path.abspath(__file__))
 PORTAL_DIR = os.path.abspath(os.path.join(PIPELINE_DIR, ".."))
 
-MAX_ARTICLES = 30
+DAILY_MAX_INGEST = 30  # 1日あたり最大追加記事数（アーカイブ総ページ数に上限はありません）
 
 VOICE_BRITISH = "en-GB-RyanNeural"
 VOICE_KEITA = "ja-JP-KeitaNeural"
@@ -1965,7 +1965,7 @@ def synthesize_audio_for_article(slug, category, sentences, dialogue, is_junior=
 
 def main():
     print("============================================================")
-    print(f"  AUTO-INGESTION PIPELINE: Expanding Catalog (Max {MAX_ARTICLES})")
+    print(f"  AUTO-INGESTION PIPELINE: Daily Intake (Up to {DAILY_MAX_INGEST}/day, No Global Cap)")
     print("============================================================")
     print(f"Sources configured:")
     print("  - https://www.jiji.com/ (時事通信 / Jiji Press)")
@@ -1976,10 +1976,10 @@ def main():
     import articles_data
     import junior_articles_data
 
-    # Check capacity limit
+    # Check article counts
     current_senior_count = len(articles_data.ARTICLES)
-    print(f"Current Senior Articles: {current_senior_count} / {MAX_ARTICLES}")
-    print(f"Current Junior Articles: {len(junior_articles_data.JUNIOR_ARTICLES)} / {MAX_ARTICLES}")
+    print(f"Total Cumulative Senior Articles: {current_senior_count} (Archive has no upper limit)")
+    print(f"Total Cumulative Junior Articles: {len(junior_articles_data.JUNIOR_ARTICLES)} (Archive has no upper limit)")
 
     # Process and build audio for new articles
     for art in INGESTED_SENIOR_ARTICLES:

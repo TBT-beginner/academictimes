@@ -885,10 +885,6 @@ from junior_articles_batch4 import JUNIOR_ARTICLES_BATCH4
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH2)
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH3)
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH4)
-
-MAX_ARTICLES = 30
-if len(JUNIOR_ARTICLES) > MAX_ARTICLES:
-    JUNIOR_ARTICLES = JUNIOR_ARTICLES[-MAX_ARTICLES:]
-
-print(f"Loaded {len(JUNIOR_ARTICLES)} Junior articles successfully (Max capacity: {MAX_ARTICLES}).")
+DAILY_MAX_UPDATE = 30  # 1日あたりの最大追加・更新記事数（アーカイブ総ページ数に上限はありません）
+print(f"Loaded {len(JUNIOR_ARTICLES)} Junior articles successfully (Daily update capacity: {DAILY_MAX_UPDATE}/day).")
 
