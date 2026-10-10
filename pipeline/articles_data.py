@@ -1979,8 +1979,8 @@ try:
             "title": "The Case Against Wearing Headphones in Public: Reclaiming the Power of Reverie",
             "headline_ja": "公共空間でイヤホンを外す効用：失われた「物思い（白昼夢）」を取り戻す",
             "subhead": "米週刊誌TIME掲載のエッセイ。常時接続と孤独、創造性を育む退屈の価値を認知心理学で徹底解説。",
-            "source_name": "TIME Magazine (Oct 6, 2026 / Meehika Barua)",
-            "source_url": "https://time.com/7023812/case-against-wearing-headphones-in-public/",
+            "source_name": "TIME Magazine (Oct 5, 2026 / Meehika Barua)",
+            "source_url": "https://time.com/article/2026/10/05/the-case-against-wearing-headphones-in-public/",
             "source_attribution": "米週刊誌TIMEのエッセイを元に構成した学術英語教材です。",
             "image": "https://static.time.com/v3/assets/bltea6093859af6183b/blt96d6f358ea9d50b0/6abfba6215869b08e9e95a32/headphones.jpg?branch=production&width=1200&quality=80&auto=webp",
             "sentences": [
