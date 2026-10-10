@@ -885,6 +885,44 @@ from junior_articles_batch4 import JUNIOR_ARTICLES_BATCH4
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH2)
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH3)
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH4)
+
+_DATE_MAP = {
+    "soai-reaction-nobel-chemistry": "2026-10-10",
+    "regulatory-t-cells-nobel-breakthrough": "2026-10-10",
+    "smart-glasses-ai-privacy": "2026-10-09",
+    "japan-semiconductor-revival-rapidus": "2026-10-09",
+    "digital-school-backpack-reform": "2026-10-09",
+    "esports-highschool-education": "2026-10-09",
+    "global-plastics-treaty-negotiations": "2026-10-09",
+    "cashless-society-local-bus-crisis": "2026-10-09",
+    "perovskite-solar-cells-commercialization": "2026-10-09",
+    "space-debris-corporate-liability": "2026-10-09",
+    "handwriting-cognitive-benefits": "2026-10-09",
+    "remote-work-suburban-revitalization": "2026-10-09",
+    "ai-music-copyright-royalties": "2026-10-09",
+    "ai-energy-nuclear-data-centers": "2026-10-09",
+    "headphones-in-public": "2026-10-06",
+    "psychology-casual-encounters": "2026-10-06",
+    "critical-minerals-geopolitics": "2026-10-06",
+    "air-defence-shield": "2026-10-05",
+    "royal-security-judicial-review": "2026-10-05",
+    "clarkson-business-red-tape": "2026-10-05",
+    "colorectal-cancer-under-50s": "2026-10-04",
+    "mediterranean-marine-heatwaves": "2026-10-04",
+    "ai-pediatric-diagnosis-consent": "2026-10-03",
+    "generative-ai-paleontology": "2026-10-03",
+    "arctic-sea-route-unclos": "2026-10-03",
+    "inheritance-tax-reform-debate": "2026-10-02",
+    "stoic-philosophy-digital-age": "2026-10-02",
+    "jeffrey-archer-obituary": "2026-10-01",
+    "raf-fairford-bomber-redeployment": "2026-10-01"
+}
+for _a in JUNIOR_ARTICLES:
+    _slug = _a.get("slug")
+    if _slug in _DATE_MAP:
+        _a["date"] = _DATE_MAP[_slug]
+        _a["pub_date"] = _DATE_MAP[_slug]
+
 DAILY_MAX_UPDATE = 30  # 1日あたりの最大追加・更新記事数（アーカイブ総ページ数に上限はありません）
 print(f"Loaded {len(JUNIOR_ARTICLES)} Junior articles successfully (Daily update capacity: {DAILY_MAX_UPDATE}/day).")
 

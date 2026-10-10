@@ -96,10 +96,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <!-- NEWS SOURCE ATTRIBUTION (初期画面内に地味に表示・装飾なし) -->
           <details class="source-accordion">
             <summary>
-              <span>ニュースソースを表示する</span>
+              <span>ニュースソース（出典: {source_name}）</span>
               <span class="source-toggle-icon">▾</span>
             </summary>
             <div class="source-accordion-body">
+              <div style="margin-bottom: 0.4rem; font-size: 0.85rem; color: var(--times-dark);">
+                <strong>📰 ニュースソース：</strong><span>{source_name}</span>
+              </div>
               <div style="margin-bottom: 0.6rem; padding-bottom: 0.5rem; border-bottom: 1px dashed #ccc; font-size: 0.85rem; color: var(--times-dark);">
                 <strong>📅 ニュースソース発行日：</strong><time datetime="{date_iso}">{date_ja}（{date_en_full}）</time>
               </div>

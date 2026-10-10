@@ -138,17 +138,26 @@ def verify_strict_source_authenticity():
     print(f"[PASS] All {len(articles_data.ARTICLES)} Senior articles verified against authentic news sources.")
     return True
 
+from source_verifier import pre_update_source_verification, post_update_source_crosscheck
+import articles_data
+import junior_articles_data
+
 def main():
     print("************************************************************")
     print("  THE ACADEMIC TIMES & THE JUNIOR - UNIFIED DAILY BUILD")
     print("************************************************************")
     
-    # 0. Verify Source Authenticity
-    if not verify_strict_source_authenticity():
-        print("[FAIL] Source authenticity verification failed. Aborting build.")
+    # 0. Pre-generation Direct News Source & Date Verification
+    if not pre_update_source_verification(articles_data.ARTICLES):
+        print("[FAIL] Pre-generation source verification failed. Aborting build.")
+        sys.exit(1)
+
+    # 1. Ensure Senior Audio (Edge-TTS)
+    if not run_step("Ensure Senior Edge-TTS Audio", ["synthesize_missing_senior_audio.py"]):
+        print("[FAIL] Senior audio synthesis failed.")
         sys.exit(1)
         
-    # 1. Update Senior Category pages
+    # 2. Update Senior Category pages
     if not run_step("Build Senior Category Portals", ["generate_category_pages.py"]):
         print("[FAIL] Category portal build failed.")
         sys.exit(1)
@@ -173,10 +182,21 @@ def main():
         print("[FAIL] Reciprocal linking failed.")
         sys.exit(1)
         
-    # 5. Verify Parity
+    # 6. Post-generation Cross-Check against Primary Sources (漏れのない再照合)
+    if not post_update_source_crosscheck(articles_data.ARTICLES, junior_articles_data.JUNIOR_ARTICLES):
+        print("[FAIL] Post-generation source cross-check failed! Detected omissions or mismatches.")
+        sys.exit(1)
+
+    # 7. Final 1:1 Parity Verification
     success = verify_1_to_1_parity()
     if success:
-        print("\n[SUCCESS] Both portals updated with 100% 1:1 parity and audio coverage!")
+        print("\n============================================================")
+        print("[SUCCESS] All portals fully updated, fact-checked & synchronized!")
+        print("  - Direct news sources verified")
+        print("  - Publication dates match edition")
+        print("  - Post-build zero omissions verified")
+        print("  - 100% 1:1 Senior <-> Junior parity and Edge-TTS audio ready")
+        print("============================================================")
     else:
         print("\n[WARNING] Completed with warnings. Please inspect the log above.")
 
