@@ -467,16 +467,16 @@ def build_article_html(art):
         row = f"""
         <tr>
           <td>
-            <div class="vocab-word-en">{v['word']}</div>
-            <div style="font-size: 0.78rem; color: var(--times-muted);">{v['phonetic']}</div>
+            <div class="vocab-word-en">{v.get('word', '')}</div>
+            <div style="font-size: 0.78rem; color: var(--times-muted);">{v.get('phonetic', '')}</div>
           </td>
           <td>
-            <strong>{v['meaning']}</strong>
-            <div style="font-size: 0.75rem; color: #888;">{v['pos']}</div>
+            <strong>{v.get('meaning', '')}</strong>
+            <div style="font-size: 0.75rem; color: #888;">{v.get('pos', '')}</div>
           </td>
           <td>
-            <div class="vocab-def-en">{v['def']}</div>
-            <div class="vocab-example">{v['ex']}</div>
+            <div class="vocab-def-en">{v.get('def', '')}</div>
+            <div class="vocab-example">{v.get('ex', '')}</div>
           </td>
         </tr>
         """

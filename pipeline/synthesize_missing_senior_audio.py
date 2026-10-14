@@ -28,12 +28,17 @@ async def ensure_senior_audio():
         async with sem:
             if os.path.exists(path) and os.path.getsize(path) > 500:
                 return
-            try:
-                comm = edge_tts.Communicate(text, voice)
-                await comm.save(path)
-                print(f"[SYNTH] {os.path.basename(path)} for {os.path.basename(os.path.dirname(os.path.dirname(path)))}")
-            except Exception as e:
-                print(f"[ERR] Failed {path}: {e}")
+            for attempt in range(4):
+                try:
+                    comm = edge_tts.Communicate(text, voice)
+                    await comm.save(path)
+                    print(f"[SYNTH] {os.path.basename(path)} for {os.path.basename(os.path.dirname(os.path.dirname(path)))}")
+                    return
+                except Exception as e:
+                    if attempt == 3:
+                        print(f"[ERR] Failed {path}: {e}")
+                    else:
+                        await asyncio.sleep(2 * (attempt + 1))
 
     for art in ARTICLES:
         cat = art["category"]

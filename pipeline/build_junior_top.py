@@ -23,19 +23,19 @@ def generate_junior_index():
     # Map articles by slug
     art_map = {a["slug"]: a for a in JUNIOR_ARTICLES}
     
-    # 10/11 Default Edition Stories
-    lead = art_map.get("james-webb-early-universe-supermassive-black-holes", JUNIOR_ARTICLES[0])
-    sub1 = art_map.get("unsc-climate-security-conflict-refugee-nexus", JUNIOR_ARTICLES[1])
-    sub2 = art_map.get("g20-pillar-two-global-minimum-corporate-tax", JUNIOR_ARTICLES[2])
+    # 10/14 Default Edition Stories
+    lead = art_map.get("solid-state-sodium-ion-battery-breakthrough", JUNIOR_ARTICLES[0])
+    sub1 = art_map.get("wto-electronic-commerce-moratorium-negotiations", JUNIOR_ARTICLES[1])
+    sub2 = art_map.get("supreme-court-probate-digital-asset-passwords", JUNIOR_ARTICLES[2])
     
-    left1 = art_map.get("autonomous-bus-pilot-aging-rural-towns", JUNIOR_ARTICLES[3])
-    left2 = art_map.get("personalized-mrna-cancer-vaccine-phase3", JUNIOR_ARTICLES[4])
-    left3 = art_map.get("supreme-court-sns-slander-speedy-disclosure-ruling", JUNIOR_ARTICLES[5])
+    left1 = art_map.get("crispr-epigenetic-silencing-chronic-pain", JUNIOR_ARTICLES[3])
+    left2 = art_map.get("school-attendance-counseling-vr-classrooms", JUNIOR_ARTICLES[4])
+    left3 = art_map.get("iaea-small-modular-reactor-safety-standards", JUNIOR_ARTICLES[5])
     
-    right1 = art_map.get("fusion-high-temperature-superconducting-magnets", JUNIOR_ARTICLES[6])
-    right2 = art_map.get("deep-sea-microplastics-thermohaline-plankton-flux", JUNIOR_ARTICLES[7])
-    right3 = art_map.get("inquiry-based-learning-university-admissions", JUNIOR_ARTICLES[8])
-    right4 = art_map.get("rural-kabuki-digital-archive-vr-preservation", JUNIOR_ARTICLES[9])
+    right1 = art_map.get("local-train-revitalization-community-tourism-passes", JUNIOR_ARTICLES[6])
+    right2 = art_map.get("digital-nostalgia-analog-media-generation-z", JUNIOR_ARTICLES[7])
+    right3 = art_map.get("exoplanet-atmospheric-carbon-biosignature-jwst", JUNIOR_ARTICLES[8])
+    right4 = art_map.get("ocean-acidification-deepwater-coral-calcification", JUNIOR_ARTICLES[9])
 
     # Pre-render all 15 catalog cards for initial display & SEO
     cards_html = []
@@ -126,11 +126,13 @@ def generate_junior_index():
   <!-- Top Switcher Bar with Interactive Edition Switcher -->
   <div class="top-date-bar">
     <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem; flex-wrap: wrap; gap: 0.5rem;">
-      <span id="top-date-bar-text">Sunday October 11 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
+      <span id="top-date-bar-text">Wednesday October 14 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
       <div class="edition-selector-wrap">
         <span style="font-weight: 700; color: #111;">📅 紙面切替:</span>
         <select id="select-edition-date" class="edition-select" aria-label="Select edition date">
-          <option value="2026-10-11" selected>2026年10月11日 (日) 号 【本日付・最新・全30記事】</option>
+          <option value="2026-10-14" selected>2026年10月14日 (水) 号 【本日付・最新・全30記事】</option>
+          <option value="2026-10-13">2026年10月13日 (火) 号 【全30記事・アーカイブ】</option>
+          <option value="2026-10-11">2026年10月11日 (日) 号 【全30記事・アーカイブ】</option>
           <option value="2026-10-10">2026年10月10日 (土) 号 【ノーベル賞・AIデータセンター】</option>
           <option value="2026-10-09">2026年10月9日 (金) 号 【ノーベル化学賞・スマートグラス】</option>
           <option value="2026-10-08">2026年10月8日 (木) 号 【重要鉱物の争奪戦・ストア哲学】</option>

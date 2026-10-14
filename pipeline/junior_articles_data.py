@@ -20,6 +20,9 @@ VOICE_NANAMI = "ja-JP-NanamiNeural"
 
 PORTAL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 JUNIOR_DIR = os.path.join(PORTAL_DIR, "junior")
+_curr_dir = os.path.dirname(os.path.abspath(__file__))
+if _curr_dir not in sys.path:
+    sys.path.insert(0, _curr_dir)
 
 JUNIOR_ARTICLES = [
     {
@@ -884,6 +887,8 @@ from junior_articles_batch4 import JUNIOR_ARTICLES_BATCH4
 from batch6_articles_data import BATCH6_JUNIOR
 from batch7_articles_data import BATCH7_JUNIOR
 from batch8_articles_data import BATCH8_JUNIOR
+from batch9_articles_data import BATCH9_JUNIOR
+from batch10_articles_data import BATCH10_JUNIOR
 
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH2)
 JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH3)
@@ -891,6 +896,8 @@ JUNIOR_ARTICLES.extend(JUNIOR_ARTICLES_BATCH4)
 JUNIOR_ARTICLES.extend(BATCH6_JUNIOR)
 JUNIOR_ARTICLES.extend(BATCH7_JUNIOR)
 JUNIOR_ARTICLES.extend(BATCH8_JUNIOR)
+JUNIOR_ARTICLES.extend(BATCH9_JUNIOR)
+JUNIOR_ARTICLES.extend(BATCH10_JUNIOR)
 
 _DATE_MAP = {
     "soai-reaction-nobel-chemistry": "2026-10-10",
@@ -923,12 +930,30 @@ _DATE_MAP = {
     "jeffrey-archer-obituary": "2026-10-01",
     "raf-fairford-bomber-redeployment": "2026-10-01"
 }
+_DEFAULT_CAT_IMAGES = {
+    "science": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=1000&auto=format&fit=crop&q=80",
+    "society": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&auto=format&fit=crop&q=80",
+    "world": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80",
+    "law": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80",
+    "culture": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1000&auto=format&fit=crop&q=80",
+    "entertainment": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1000&auto=format&fit=crop&q=80"
+}
+
 for _a in JUNIOR_ARTICLES:
     _slug = _a.get("slug")
     if _slug in _DATE_MAP:
         _a["date"] = _DATE_MAP[_slug]
         _a["pub_date"] = _DATE_MAP[_slug]
+    elif not _a.get("pub_date") and _a.get("date"):
+        _a["pub_date"] = _a.get("date")
+    if not _a.get("subhead"):
+        _a["subhead"] = _a.get("lead_ja") or _a.get("lead_snippet", "")
+    if not _a.get("lead_snippet"):
+        _a["lead_snippet"] = _a.get("lead_ja") or _a.get("subhead", "")
+    if not _a.get("image"):
+        _a["image"] = _DEFAULT_CAT_IMAGES.get(_a.get("category"), "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1000&auto=format&fit=crop&q=80")
 
 DAILY_MAX_UPDATE = 30  # 1日あたりの最大追加・更新記事数（アーカイブ総ページ数に上限はありません）
 print(f"Loaded {len(JUNIOR_ARTICLES)} Junior articles successfully (Daily update capacity: {DAILY_MAX_UPDATE}/day).")
+
 

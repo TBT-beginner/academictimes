@@ -22,19 +22,19 @@ PORTAL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 JUNIOR_DIR = os.path.join(PORTAL_DIR, "junior")
 
 async def synth_audio(text, voice, out_path, sem, rate="+0%"):
-    if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+    if os.path.exists(out_path) and os.path.getsize(out_path) > 500:
         return
     async with sem:
-        for attempt in range(3):
+        for attempt in range(4):
             try:
                 comm = edge_tts.Communicate(text, voice, rate=rate)
                 await comm.save(out_path)
                 return
             except Exception as e:
-                if attempt == 2:
+                if attempt == 3:
                     print(f"[ERR] Failed {out_path}: {e}")
                 else:
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(2 * (attempt + 1))
 
 def build_junior_article_html(art):
     cat = art["category"]
@@ -45,10 +45,10 @@ def build_junior_article_html(art):
     lead = art["lead_snippet"]
     source_name = art["source_name"]
     source_url = art["source_url"]
-    source_attr = art["source_attribution"]
-    guide = art["source_student_guide"]
+    source_attr = art.get("source_attribution") or f"{source_name}の報道を元に、高校生向け（英検準2級〜2級）の標準的な語彙と文法で読みやすく再構成した教材です。"
+    guide = art.get("source_student_guide") or "英検準2級〜2級や共通テストの長文読解頻出テーマです。英文のパラグラフ構成と重要論点を意識して読み解きましょう。"
     orig_url = f"../../../{cat}/{slug}/index.html"
-    image = art["image"]
+    image = art.get("image") or "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1000&auto=format&fit=crop&q=80"
     
     # Date formatting
     date_iso = art.get("date") or DATE_MAP.get(slug, "2026-10-09")

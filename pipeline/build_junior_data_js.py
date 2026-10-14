@@ -78,9 +78,27 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-14": {
+        "dateStr": "Wednesday October 14 2026",
+        "editionLabel": "2026年10月14日 (水) 号 【本日付・最新・全30記事】",
+        "tagline": "特集：全固体ナトリウムイオン電池・ネット貿易の世界的ルール・デジタル遺産の行方・観光と地域交通",
+        "topLeadSlug": "solid-state-sodium-ion-battery-breakthrough",
+        "subLeadSlugs": ["wto-electronic-commerce-moratorium-negotiations", "supreme-court-probate-digital-asset-passwords", "local-train-revitalization-community-tourism-passes"],
+        "leftDispatches": ["crispr-epigenetic-silencing-chronic-pain", "school-attendance-counseling-vr-classrooms", "iaea-small-modular-reactor-safety-standards"],
+        "rightDigestSlugs": ["digital-nostalgia-analog-media-generation-z", "exoplanet-atmospheric-carbon-biosignature-jwst", "ocean-acidification-deepwater-coral-calcification", "neuromorphic-spiking-chips-edge-ai-robotics"]
+    },
+    "2026-10-13": {
+        "dateStr": "Tuesday October 13 2026",
+        "editionLabel": "2026年10月13日 (火) 号 【全30記事・アーカイブ】",
+        "tagline": "特集：二酸化炭素を食べる細菌・世界の自然を守る約束・テレワークと働くルール・高齢者にやさしい街づくり",
+        "topLeadSlug": "synthetic-biology-co2-eating-bacteria-enzymes",
+        "subLeadSlugs": ["un-cop16-biodiversity-fund-cali-framework", "supreme-court-worker-classification-remote-telecommuters", "elderly-pedestrian-traffic-safety-urban-redesign"],
+        "leftDispatches": ["alzheimers-blood-biomarker-early-detection", "youth-mental-health-smartphone-ban-boarding-schools", "eu-ai-act-high-risk-algorithm-enforcement"],
+        "rightDigestSlugs": ["philosophical-ethics-deepfake-historical-figures", "perovskite-silicon-tandem-solar-efficiency-record", "antarctic-ice-shelf-subglacial-meltwater-dynamics", "quantum-dot-infrared-imaging-cancer-margins"]
+    },
     "2026-10-11": {
         "dateStr": "Sunday October 11 2026",
-        "editionLabel": "2026年10月11日 (日) 号 【本日付・最新版・全30記事】",
+        "editionLabel": "2026年10月11日 (日) 号 【全30記事・アーカイブ】",
         "tagline": "特集：宇宙のブラックホールの謎・気候変動と難民問題・自動運転バス・SNSトラブルの解決ルール",
         "topLeadSlug": "james-webb-early-universe-supermassive-black-holes",
         "subLeadSlugs": ["unsc-climate-security-conflict-refugee-nexus", "g20-pillar-two-global-minimum-corporate-tax", "supreme-court-sns-slander-speedy-disclosure-ruling"],
@@ -278,11 +296,11 @@ def build_data_js():
             "date": art.get("date") or DATE_MAP.get(slug, "2026-10-10"),
             "title": art["title"],
             "headline_ja": art["headline_ja"],
-            "subhead": art["subhead"],
-            "lead_snippet": art["lead_snippet"],
+            "subhead": art.get("subhead") or art.get("lead_ja", ""),
+            "lead_snippet": art.get("lead_snippet") or art.get("lead_ja", "") or art.get("subhead", ""),
             "source_name": art["source_name"],
             "source_media_key": media_key,
-            "image": art["image"],
+            "image": art.get("image") or "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1000&auto=format&fit=crop&q=80",
             "path": f"{cat}/{slug}/index.html",
             "senior_path": f"../{cat}/{slug}/index.html"
         })

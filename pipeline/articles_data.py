@@ -1968,6 +1968,12 @@ ARTICLES = [ { 'category': 'law',
 
 DAILY_MAX_UPDATE = 30  # 1日あたりの最大追加・更新記事数（アーカイブ総ページ数に上限はありません）
 
+import os
+import sys
+_curr_dir = os.path.dirname(os.path.abspath(__file__))
+if _curr_dir not in sys.path:
+    sys.path.insert(0, _curr_dir)
+
 try:
     from senior_articles_batch_ingest import SENIOR_ARTICLES_INGESTED
     _existing_slugs = {a.get("slug") for a in ARTICLES}
@@ -2031,6 +2037,16 @@ try:
         if _art.get("slug") not in _existing_slugs:
             ARTICLES.append(_art)
             _existing_slugs.add(_art.get("slug"))
+    from batch9_articles_data import BATCH9_SENIOR
+    for _art in BATCH9_SENIOR:
+        if _art.get("slug") not in _existing_slugs:
+            ARTICLES.append(_art)
+            _existing_slugs.add(_art.get("slug"))
+    from batch10_articles_data import BATCH10_SENIOR
+    for _art in BATCH10_SENIOR:
+        if _art.get("slug") not in _existing_slugs:
+            ARTICLES.append(_art)
+            _existing_slugs.add(_art.get("slug"))
 except ImportError:
     pass
 
@@ -2070,3 +2086,6 @@ for _a in ARTICLES:
     if _slug in _DATE_MAP:
         _a["date"] = _DATE_MAP[_slug]
         _a["pub_date"] = _DATE_MAP[_slug]
+    elif not _a.get("pub_date") and _a.get("date"):
+        _a["pub_date"] = _a.get("date")
+

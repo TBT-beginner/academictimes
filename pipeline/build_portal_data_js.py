@@ -198,9 +198,61 @@ def build_portal_data():
     oct09_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-09"]
     
     editions_dict = {
+        "2026-10-14": {
+            "dateStr": "Wednesday October 14 2026",
+            "editionLabel": "2026年10月14日 (水) 号 【本日付・最新・全30記事】",
+            "tagline": "特集：全固体ナトリウムイオン電池革新・WTO電子商取引恒久化・デジタル遺産パスワード開示最高裁・地方交通地域通貨連携",
+            "topLeadSlug": "solid-state-sodium-ion-battery-breakthrough",
+            "subLeadSlugs": [
+                "wto-electronic-commerce-moratorium-negotiations",
+                "supreme-court-probate-digital-asset-passwords",
+                "local-train-revitalization-community-tourism-passes"
+            ],
+            "leftDispatches": [
+                "crispr-epigenetic-silencing-chronic-pain",
+                "school-attendance-counseling-vr-classrooms",
+                "iaea-small-modular-reactor-safety-standards",
+                "digital-nostalgia-analog-media-generation-z"
+            ],
+            "rightDigestSlugs": [
+                "exoplanet-atmospheric-carbon-biosignature-jwst",
+                "ocean-acidification-deepwater-coral-calcification",
+                "neuromorphic-spiking-chips-edge-ai-robotics",
+                "elderly-volunteer-childcare-intergenerational-community",
+                "un-global-water-security-transboundary-aquifers",
+                "personal-information-protection-generative-model-training",
+                "flexible-graphene-audio-transducers-smart-jackets"
+            ]
+        },
+        "2026-10-13": {
+            "dateStr": "Tuesday October 13 2026",
+            "editionLabel": "2026年10月13日 (火) 号 【全30記事・アーカイブ】",
+            "tagline": "特集：CO2固定化人工合成細菌・国連生物多様性枠組・テレワーク労働者性最高裁審理・超高齢社会歩行者空間設計",
+            "topLeadSlug": "synthetic-biology-co2-eating-bacteria-enzymes",
+            "subLeadSlugs": [
+                "un-cop16-biodiversity-fund-cali-framework",
+                "supreme-court-worker-classification-remote-telecommuters",
+                "elderly-pedestrian-traffic-safety-urban-redesign"
+            ],
+            "leftDispatches": [
+                "alzheimers-blood-biomarker-early-detection",
+                "youth-mental-health-smartphone-ban-boarding-schools",
+                "eu-ai-act-high-risk-algorithm-enforcement",
+                "philosophical-ethics-deepfake-historical-figures"
+            ],
+            "rightDigestSlugs": [
+                "perovskite-silicon-tandem-solar-efficiency-record",
+                "antarctic-ice-shelf-subglacial-meltwater-dynamics",
+                "quantum-dot-infrared-imaging-cancer-margins",
+                "regional-revitalization-telework-subsidies-families",
+                "indo-pacific-subsea-telecom-cable-redundancy",
+                "consumer-protection-digital-will-asset-inheritance",
+                "neural-interface-earbuds-brainwave-music-curation"
+            ]
+        },
         "2026-10-11": {
             "dateStr": "Sunday October 11 2026",
-            "editionLabel": "2026年10月11日 (日) 号 【本日付・最新版・全30記事】",
+            "editionLabel": "2026年10月11日 (日) 号 【全30記事・アーカイブ】",
             "tagline": "特集：JWST初期宇宙ブラックホール解明・国連気候安全保障決議・G20最低法人税率・SNS迅速開示最高裁判決",
             "topLeadSlug": "james-webb-early-universe-supermassive-black-holes",
             "subLeadSlugs": [
