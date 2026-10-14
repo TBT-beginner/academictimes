@@ -328,6 +328,24 @@ def build_portal_data():
                 "archaeological-lidar-maya-civilization-discovery"
             ]
         },
+        "2026-10-08": {
+            "dateStr": "Thursday October 8 2026",
+            "editionLabel": "2026年10月8日 (木) 号 【全30記事・アーカイブ】",
+            "tagline": "特集：重要鉱物地政学と脱炭素サプライチェーン・デジタル時代のストア派哲学",
+            "topLeadSlug": "critical-minerals-geopolitics",
+            "subLeadSlugs": ["stoic-philosophy-digital-age", "mediterranean-marine-heatwaves"],
+            "leftDispatches": ["psychology-casual-encounters", "air-defence-shield", "colorectal-cancer-under-50s"],
+            "rightDigestSlugs": ["headphones-in-public", "clarkson-business-red-tape", "inheritance-tax-reform-debate", "ai-pediatric-diagnosis-consent"]
+        },
+        "2026-10-07": {
+            "dateStr": "Wednesday October 7 2026",
+            "editionLabel": "2026年10月7日 (水) 号 【全30記事・アーカイブ】",
+            "tagline": "特集：偶発的日常交流の心理学と社会的幸福・北極海航路と国連海洋法条約",
+            "topLeadSlug": "psychology-casual-encounters",
+            "subLeadSlugs": ["arctic-sea-route-unclos", "generative-ai-paleontology"],
+            "leftDispatches": ["critical-minerals-geopolitics", "royal-security-judicial-review", "raf-fairford-bomber-redeployment"],
+            "rightDigestSlugs": ["headphones-in-public", "stoic-philosophy-digital-age", "colorectal-cancer-under-50s", "air-defence-shield"]
+        },
         "2026-10-06": {
             "dateStr": "Tuesday October 6 2026",
             "editionLabel": "2026年10月6日 (火) 号 【バックナンバー】",
@@ -390,6 +408,8 @@ def build_portal_data():
 const MEDIA_RESOURCES = {json.dumps(MEDIA_RESOURCES, ensure_ascii=False, indent=2)};
 
 const ARTICLES = {json.dumps(articles_list, ensure_ascii=False, indent=2)};
+
+const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {json.dumps(editions_dict, ensure_ascii=False, indent=2)};
 """

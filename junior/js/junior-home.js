@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let activeCategory = 'all';
   let activeSource = 'all';
   let activeQuery = '';
-  const dateKeys = Object.keys(JUNIOR_EDITIONS).sort().reverse(); // ["2026-10-11", "2026-10-10", ...]
-  const latestDate = dateKeys[0] || '2026-10-11';
+  const dateKeys = Object.keys(JUNIOR_EDITIONS).sort().reverse(); // ["2026-10-14", "2026-10-13", ...]
+  const latestDate = dateKeys[0] || '2026-10-14';
   let currentEditionDate = latestDate;
 
   // ==========================================================================
@@ -369,12 +369,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (JUNIOR_EDITIONS[targetDate]) {
       switchEdition(targetDate);
     } else {
-      switchEdition(defaultFromAttr || '2026-10-10');
+      switchEdition(defaultFromAttr || latestDate);
     }
   } else if (defaultFromAttr && JUNIOR_EDITIONS[defaultFromAttr]) {
     switchEdition(defaultFromAttr);
   } else {
-    switchEdition('2026-10-10');
+    switchEdition(latestDate);
   }
 
   filterAndRenderArchive();
