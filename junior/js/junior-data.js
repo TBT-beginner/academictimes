@@ -1595,7 +1595,7 @@ const JUNIOR_ARTICLES = [
   {
     "slug": "alzheimers-blood-biomarker-early-detection",
     "category": "science",
-    "category_label": "SCIENCE & MEDICINE • 英検準2級〜2級",
+    "category_label": "【過去の基礎論文解説】 SCIENCE & MEDICINE • 英検準2級〜2級",
     "date": "2026-10-13",
     "title": "A Simple Blood Test Can Spot Alzheimer's Disease Years Before Memory Loss",
     "headline_ja": "物忘れが始まる前に発見：アルツハイマー病を90%の正確さで見つける血液検査",
@@ -2030,7 +2030,7 @@ const JUNIOR_ARTICLES = [
   {
     "slug": "solid-state-sodium-ion-battery-breakthrough",
     "category": "science",
-    "category_label": "SCIENCE & BATTERIES • 科学と未来の電池",
+    "category_label": "【過去の基礎論文解説】 SCIENCE & BATTERIES • 科学と未来の電池",
     "date": "2026-10-14",
     "title": "Scientists Create Super-Safe Salt Batteries That Never Catch Fire",
     "headline_ja": "科学：絶対に燃えない安全な「海水塩の全固体バッテリー」が完成！",

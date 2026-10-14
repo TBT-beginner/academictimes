@@ -8,7 +8,7 @@ BATCH10_SENIOR_SCIENCE = [
     {
         "slug": "solid-state-sodium-ion-battery-breakthrough",
         "category": "science",
-        "category_label": "MATERIALS SCIENCE & ENERGY • 全固体ナトリウムイオン電池の革新",
+        "category_label": "【過去の基礎論文解説】 MATERIALS SCIENCE & ENERGY • 全固体ナトリウムイオン電池の革新",
         "date": "2026-10-14",
         "title": "Solid-State Sodium-Ion Battery Breakthrough Eliminates Flammable Liquid Electrolytes",
         "headline_ja": "材料科学：発火リスクを根絶する「全固体ナトリウムイオン二次電池」の室温高速作動に成功",
@@ -471,7 +471,7 @@ BATCH10_JUNIOR_SCIENCE = [
     {
         "slug": "solid-state-sodium-ion-battery-breakthrough",
         "category": "science",
-        "category_label": "SCIENCE & BATTERIES • 科学と未来の電池",
+        "category_label": "【過去の基礎論文解説】 SCIENCE & BATTERIES • 科学と未来の電池",
         "date": "2026-10-14",
         "title": "Scientists Create Super-Safe Salt Batteries That Never Catch Fire",
         "headline_ja": "科学：絶対に燃えない安全な「海水塩の全固体バッテリー」が完成！",

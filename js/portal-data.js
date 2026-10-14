@@ -2143,7 +2143,7 @@ const ARTICLES = [
   {
     "slug": "solid-state-sodium-ion-battery-breakthrough",
     "category": "science",
-    "category_label": "MATERIALS SCIENCE & ENERGY • 全固体ナトリウムイオン電池の革新",
+    "category_label": "【過去の基礎論文解説】 MATERIALS SCIENCE & ENERGY • 全固体ナトリウムイオン電池の革新",
     "date": "2026-10-14",
     "title": "Solid-State Sodium-Ion Battery Breakthrough Eliminates Flammable Liquid Electrolytes",
     "headline_ja": "材料科学：発火リスクを根絶する「全固体ナトリウムイオン二次電池」の室温高速作動に成功",
