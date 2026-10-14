@@ -454,32 +454,46 @@
         過去に配信されたすべての学術ニュース記事を、英単語・日本語キーワード・出題分野・一次メディア別で瞬時に絞り込み検索できます。入試直前期のテーマ別総復習や自由英作文の論点リサーチにご活用ください。
       </p>
 
-      <!-- Daily Editions Quick Navigator -->
-      <div style="background: #f8f9fa; border: 1px solid var(--times-light-border); padding: 1rem 1.25rem; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem;">
-        <div style="font-weight: 700; font-size: 0.85rem; color: var(--times-black);">
-          <span>📰 日別トップページ一覧（バックナンバー紙面）:</span>
+      <!-- Daily Editions Quick Navigator (Collapsible for Clean UX) -->
+      <div class="edition-nav-wrap">
+        <div class="edition-nav-header">
+          <div class="edition-nav-title">
+            <span>📰 日別トップページ一覧（バックナンバー紙面）:</span>
+          </div>
+          <button type="button" class="edition-nav-toggle-btn" id="btn-toggle-editions" aria-expanded="false">
+            <span>📂 過去の全号を展開（10/8〜10/1 創刊号）</span> <span id="toggle-editions-icon">▾</span>
+          </button>
         </div>
-        <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+        
+        <!-- Recent Editions (Prominently displayed) -->
+        <div class="edition-quick-pills">
           <a href="index.html#date-2026-10-14" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-black); background: #111; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-10-14'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/14 (水) 本日最新号</a>
           <a href="index.html#date-2026-10-13" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-13'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/13 (火) 号</a>
           <a href="index.html#date-2026-10-11" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-11'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/11 (日) 号</a>
           <a href="index.html#date-2026-10-10" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-10'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/10 (土) 号</a>
           <a href="index.html#date-2026-10-09" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-09'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/9 (金) 号</a>
-          <a href="index.html#date-2026-10-08" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-08'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/8 (木) 号</a>
-          <a href="index.html#date-2026-10-07" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-07'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/7 (水) 号</a>
-          <a href="index.html#date-2026-10-06" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-06'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/6 (火) 号</a>
-          <a href="index.html#date-2026-10-05" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-05'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/5 (月) 号</a>
-          <a href="edition-2026-10-04.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-04'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/4 (日) 号</a>
-          <a href="edition-2026-10-03.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-03'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/3 (土) 号</a>
-          <a href="edition-2026-10-02.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-02'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/2 (金) 号</a>
-          <a href="edition-2026-10-01.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-01'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/1 (木) 創刊号</a>
+        </div>
+
+        <!-- Collapsible Older Editions (Preserves all past paper editions cleanly) -->
+        <div class="edition-collapsible-content" id="edition-collapsible-content">
+          <div class="edition-period-heading">📅 10月上旬・創刊週の紙面アーカイブ</div>
+          <div class="edition-quick-pills" style="margin-top: 0.4rem;">
+            <a href="index.html#date-2026-10-08" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-08'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/8 (木) 号</a>
+            <a href="index.html#date-2026-10-07" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-07'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/7 (水) 号</a>
+            <a href="index.html#date-2026-10-06" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-06'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/6 (火) 号</a>
+            <a href="index.html#date-2026-10-05" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-05'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/5 (月) 号</a>
+            <a href="edition-2026-10-04.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-04'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/4 (日) 号</a>
+            <a href="edition-2026-10-03.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-03'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/3 (土) 号</a>
+            <a href="edition-2026-10-02.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-02'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/2 (金) 号</a>
+            <a href="edition-2026-10-01.html" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-01'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/1 (木) 創刊号</a>
+          </div>
         </div>
       </div>
 
       <div class="archive-search-box">
         <div class="archive-search-input-wrap">
           <span class="archive-search-icon">🔍</span>
-          <input type="text" id="archive-search-input" class="archive-search-input" placeholder="タイトル、英単語（cancer, AI, solitude等）、日本語キーワード、ニュース元で検索...">
+          <input type="text" id="archive-search-input" class="archive-search-input" placeholder="タイトル、英単語（cancer, AI, battery等）、日本語キーワード、ニュース元で検索...">
         </div>
         
         <div class="archive-filter-row">
@@ -490,7 +504,7 @@
             <button type="button" class="filter-category-btn" data-cat="science">Science (科学・医学)</button>
             <button type="button" class="filter-category-btn" data-cat="society">Society (社会・経済)</button>
             <button type="button" class="filter-category-btn" data-cat="world">World (世界・安保)</button>
-            <button type="button" class="filter-category-btn" data-cat="entertainment">Entertainment (エンタメ・ガジェット)</button>
+            <button type="button" class="filter-category-btn" data-cat="entertainment">Entertainment (エンタメ)</button>
           </div>
 
           <div style="display: flex; align-items: center; gap: 0.75rem;">
@@ -508,13 +522,50 @@
               <option value="yahoo">Yahoo! News Japan (Yahoo!ニュース)</option>
               <option value="getnews">GetNews Japan (ガジェット通信)</option>
             </select>
-            <span id="archive-count-badge" class="archive-count-badge">該当件数: 20 件</span>
+            <span id="archive-count-badge" class="archive-count-badge">該当件数: 165 件</span>
+          </div>
+        </div>
+
+        <!-- Period Filter Pills & View/Sort Sub-bar -->
+        <div class="archive-controls-bar">
+          <div class="archive-period-pills">
+            <button type="button" class="period-pill-btn active" data-period="all">全期間 (All)</button>
+            <button type="button" class="period-pill-btn" data-period="recent">直近1週間 (10/8〜10/14)</button>
+            <button type="button" class="period-pill-btn" data-period="early">10月上旬 (10/1〜10/7)</button>
+            <button type="button" class="period-pill-btn" data-period="foundational">【過去の基礎論文】</button>
+          </div>
+
+          <div class="archive-view-toggles">
+            <button type="button" class="view-mode-btn active" id="btn-view-card" title="カード形式で表示">🔲 カード</button>
+            <button type="button" class="view-mode-btn" id="btn-view-list" title="一覧リスト形式で表示">📋 リスト</button>
+            <select id="archive-sort-select" class="archive-sort-select" aria-label="Sort past articles">
+              <option value="newest">▼ 新着順</option>
+              <option value="oldest">▲ 日付順</option>
+              <option value="alpha">A-Z順</option>
+            </select>
+            <select id="archive-pagesize-select" class="archive-sort-select" aria-label="Items per page">
+              <option value="12" selected>12件ずつ表示</option>
+              <option value="24">24件ずつ表示</option>
+              <option value="all">全件を一括表示</option>
+            </select>
           </div>
         </div>
       </div>
 
-      <!-- Live Search Results Grid -->
+      <!-- Status Bar -->
+      <div class="archive-status-bar">
+        <span id="archive-status-text">全 <strong class="archive-status-highlight">165</strong> 件中 <strong>1〜12</strong> 件を表示中</span>
+        <span style="font-size: 0.75rem; color: #777;">※カード・リスト切替やキーワード検索で自在に絞り込めます</span>
+      </div>
+
+      <!-- Live Search Results Container (Card Grid or Compact List View) -->
       <div id="archive-results-grid" class="archive-results-grid"></div>
+
+      <!-- Load More Button Wrap -->
+      <div id="archive-load-more-wrap" class="archive-load-more-wrap"></div>
+
+      <!-- Numbered Pagination -->
+      <div id="archive-pagination-wrap" class="archive-pagination"></div>
     </section>
 
     <!-- ==========================================================================

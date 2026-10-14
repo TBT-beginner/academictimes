@@ -363,6 +363,48 @@
   color: var(--junior-green) !important;
 }
 
+/* Junior Archive & Back Number Enhancements */
+.period-pill-btn.active, .period-pill-btn:hover {
+  background: var(--junior-green) !important;
+  border-color: var(--junior-green) !important;
+  color: #fff !important;
+}
+
+.view-mode-btn.active {
+  background: var(--junior-green) !important;
+  border-color: var(--junior-green) !important;
+  color: #fff !important;
+}
+
+.btn-load-more {
+  background: var(--junior-green) !important;
+  border-color: var(--junior-green) !important;
+}
+
+.btn-load-more:hover {
+  background: var(--junior-dark-green) !important;
+}
+
+.pagination-btn.active {
+  background: var(--junior-green) !important;
+  border-color: var(--junior-green) !important;
+}
+
+.edition-nav-toggle-btn:hover {
+  background: var(--junior-green) !important;
+  color: #fff !important;
+  border-color: var(--junior-green) !important;
+}
+
+.archive-status-bar {
+  border-bottom: 2px solid var(--junior-green) !important;
+}
+
+.archive-list-title a:hover {
+  color: var(--junior-green) !important;
+}
+
+
 
 
 
