@@ -195,12 +195,33 @@ def build_portal_data():
 
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
-    oct09_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-09"]
-    
     editions_dict = {
+        "2026-10-15": {
+            "dateStr": "Thursday October 15 2026",
+            "editionLabel": "2026年10月15日 (木) 号 【本日付・最新・全12記事】",
+            "tagline": "特集：【過去の基礎論文解説】AlphaFold 3生体分子予測・音声重視の言語習得法・英学校スマホ禁止・欧州再エネ発電逆転",
+            "topLeadSlug": "alphafold-3-biomolecular-structure-prediction",
+            "subLeadSlugs": [
+                "phonetic-focus-foreign-language-acquisition",
+                "england-school-chain-phone-free-policy",
+                "renewables-overtake-fossil-fuels-eu-electricity"
+            ],
+            "leftDispatches": [
+                "four-day-workweek-uk-trial-permanent",
+                "eu-ai-act-consumer-rights-enforcement",
+                "mont-blanc-glacier-melt-elevation-loss",
+                "smart-glasses-parliament-privacy-controversy"
+            ],
+            "rightDigestSlugs": [
+                "us-newspapers-openai-copyright-lawsuit",
+                "orbital-samantha-harvey-booker-prize",
+                "gen-z-physical-books-library-renaissance",
+                "england-organic-farming-expansion-target"
+            ]
+        },
         "2026-10-14": {
             "dateStr": "Wednesday October 14 2026",
-            "editionLabel": "2026年10月14日 (水) 号 【本日付・最新・全30記事】",
+            "editionLabel": "2026年10月14日 (水) 号 【全30記事・アーカイブ】",
             "tagline": "特集：全固体ナトリウムイオン電池革新・WTO電子商取引恒久化・デジタル遺産パスワード開示最高裁・地方交通地域通貨連携",
             "topLeadSlug": "solid-state-sodium-ion-battery-breakthrough",
             "subLeadSlugs": [

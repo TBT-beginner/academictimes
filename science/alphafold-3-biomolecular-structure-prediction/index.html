@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AlphaFold 3 Predicts Structure and Interactions of All Life's Molecules | THE ACADEMIC TIMES</title>
+  <meta name="description" content="2024年ノーベル化学賞の基盤技術。創薬と生命科学のパラダイムを塗り替える深層学習モデル。">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../styles/times.css">
+</head>
+<body id="article-top">
+
+  <!-- ==========================================================================
+       1. STICKY ARTICLE TITLE BAR (スクロール追従・最大1行・小さめ表示)
+       ========================================================================== -->
+  <div class="sticky-article-bar" id="sticky-article-bar">
+    <div class="sticky-bar-inner">
+      <div style="display: flex; align-items: baseline; min-width: 0; flex: 1;">
+        <span class="sticky-bar-category">SCIENCE</span>
+        <span class="sticky-title-text">AlphaFold 3 Predicts Structure and Interactions of All Life's Molecules</span>
+      </div>
+      <a href="#article-top" style="font-size: 0.75rem; color: var(--times-blue); font-weight: 700; text-decoration: none; flex-shrink: 0; padding-left: 0.5rem;">Top ↑</a>
+    </div>
+    <div class="reading-progress-track" id="reading-progress"></div>
+  </div>
+
+  <!-- Top Date Bar -->
+  <div class="top-date-bar">
+    Thursday October 15 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; Daily University Exam Academic Digest
+  </div>
+
+  <!-- The Times Masthead -->
+  <header class="masthead">
+    <a href="../../index.html" class="masthead-link">
+      <span class="masthead-title">THE ACADEMIC TIMES</span>
+    </a>
+    <div class="masthead-subtitle">The Daily Broadsheet for Scholarly English, Global News & Critical Analysis</div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="../../index.html">Home</a></li>
+        <li class="nav-item "><a href="../../society/index.html">Society & Mind</a></li>
+        <li class="nav-item active"><a href="../../science/index.html">Science & Tech</a></li>
+        <li class="nav-item "><a href="../../culture/index.html">Culture & Thought</a></li>
+        <li class="nav-item "><a href="../../law/index.html">Law & Justice</a></li>
+        <li class="nav-item "><a href="../../world/index.html">World & Security</a></li>
+        <li class="nav-item "><a href="../../entertainment/index.html">Entertainment & Gadgets</a></li>
+        <li class="nav-item"><a href="../../index.html#ranking">Most Read</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Article Content -->
+  <main class="page-wrapper">
+    <article class="article-container">
+      
+      <!-- Hero Header (Full Screen Viewport with generous vertical space) -->
+      <header class="article-header hero-header" id="hero-header">
+        <div class="hero-content-inner">
+          <div class="article-kicker" style="margin-bottom: 1.25rem;">【過去の基礎論文解説】 BIOLOGY & COMPUTATIONAL SCIENCE • アルファフォールド3の生体分子構造予測</div>
+          <h1 class="article-h1" style="margin: 1.5rem 0 1.25rem;">AlphaFold 3 Predicts Structure and Interactions of All Life's Molecules</h1>
+          <p class="article-subhead" style="margin: 0 auto 1.75rem;">
+            計算生物学：タンパク質・DNA・リガンドの全相互作用を原子精度で予測する「AlphaFold 3」の衝撃<br>
+            2024年ノーベル化学賞の基盤技術。創薬と生命科学のパラダイムを塗り替える深層学習モデル。
+          </p>
+          <div class="article-meta-row">
+            <span class="article-author">解説：Keita先生 ＆ Nanamiさん（THE ACADEMIC TIMES）</span>
+            <span>•</span>
+            <time datetime="2026-10-15">📅 ニュースソース発行日: 2026年10月15日（October 15, 2026）</time>
+            <span>•</span>
+            <span class="badge-new">NEW EDITION</span>
+          </div>
+
+          <!-- NEWS SOURCE ATTRIBUTION (初期画面内に地味に表示・装飾なし) -->
+          <details class="source-accordion">
+            <summary>
+              <span>ニュースソース（出典: Nature）</span>
+              <span class="source-toggle-icon">▾</span>
+            </summary>
+            <div class="source-accordion-body">
+              <div style="margin-bottom: 0.4rem; font-size: 0.85rem; color: var(--times-dark);">
+                <strong>📰 ニュースソース：</strong><span>Nature</span>
+              </div>
+              <div style="margin-bottom: 0.6rem; padding-bottom: 0.5rem; border-bottom: 1px dashed #ccc; font-size: 0.85rem; color: var(--times-dark);">
+                <strong>📅 ニュースソース発行日：</strong><time datetime="2026-10-15">2026年10月15日（October 15, 2026）</time>
+              </div>
+              Source: Nature (Vol. 630, 2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3.<br>
+              <span style="font-size: 0.8rem; color: var(--times-muted); margin-top: 0.4rem; display: inline-block;">
+                元記事URL: <a href="https://www.nature.com/articles/s41586-024-07487-w" target="_blank" rel="noopener noreferrer" style="color: var(--times-dark); text-decoration: underline;">https://www.nature.com/articles/s41586-024-07487-w ↗</a>
+              </span>
+              <div class="student-source-guide" style="margin-top: 0.85rem; padding-top: 0.85rem; border-top: 1px dashed #bbb;">
+                <div style="font-weight: 700; font-size: 0.82rem; color: var(--times-black); margin-bottom: 0.35rem;">
+                  🎓 高校生が知っておくべきメディアの視点 & 入試での価値
+                </div>
+                <div style="font-size: 0.82rem; line-height: 1.65; color: var(--times-body);">
+                  海外一流紙の論理的な英文から、大学入試に直結する背景知識とクリティカル・シンキングを養います。
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- Scroll to Article Cue -->
+          <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 2.25rem;">
+            <div class="hero-scroll-cue" id="hero-scroll-cue" title="記事本文へスクロール" style="margin: 0 auto; text-align: center;">
+              <span class="cue-label">SCROLL TO ARTICLE</span>
+              <span class="cue-arrow">↓</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ==========================================================================
+           ARTICLE BODY & INLINE AUDIO
+           ========================================================================== -->
+      <section id="section-article">
+        <div class="article-headline-block" id="article-headline-block" style="margin: 0.5rem 0 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--times-light-border);">
+          <span class="category-tag">ORIGINAL ESSAY HEADLINE</span>
+          <div style="font-family: var(--font-headline); font-size: 1.55rem; font-weight: 700; color: var(--times-black); margin-top: 0.35rem; line-height: 1.3;">
+            AlphaFold 3 Predicts Structure and Interactions of All Life's Molecules
+          </div>
+
+          <!-- 音声メニュー：SPEED + 再生ボタン(アイコンのみ) + 日本語訳(国旗アイコンのみ) -->
+          <div class="audio-inline-bar" id="full-body-banner">
+            <!-- Speed Controller -->
+            <div class="speed-control-group" title="再生速度の調節">
+              <span class="speed-control-label">SPEED</span>
+              <button type="button" class="btn-speed-opt" data-speed="0.8">0.8x</button>
+              <button type="button" class="btn-speed-opt active-speed" data-speed="1.0">1.0x</button>
+              <button type="button" class="btn-speed-opt" data-speed="1.2">1.2x</button>
+              <button type="button" class="btn-speed-opt" data-speed="1.5">1.5x</button>
+            </div>
+
+            <!-- Single Play Button: 英語朗読＋解説（ラベルなし・アイコンのみ） -->
+            <button type="button" class="btn-audio-circle" id="btn-play-continuous" title="英語朗読＋解説を再生 / 一時停止" aria-label="Play continuous audio and dialogue">
+              <span class="audio-state-icon">▶</span>
+            </button>
+
+            <!-- Single Flag Toggle: 日本語全訳トグル（国旗アイコンのみ） -->
+            <button type="button" class="btn-flag-toggle" id="btn-toggle-ja" title="日本語全訳の表示 / 非表示" aria-label="Toggle Japanese translation">
+              <span>🇯🇵</span>
+            </button>
+
+            <span class="inline-reading-hint">※文クリックで音声再生</span>
+          </div>
+        </div>
+
+        
+        <div class="foundational-notice-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: #fffbeb; border: 2px solid #d97706; border-radius: 8px; box-shadow: 0 2px 4px rgba(217,119,6,0.08);">
+          <div style="font-weight: 800; color: #92400e; font-size: 1.05rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 1.3rem;">🏛️</span>
+            <span>【過去の基礎論文解説】なぜ今、高校生がこの2024年論文（Nature）を読むべきなのか？</span>
+          </div>
+          
+        <p style="font-size: 0.88rem; line-height: 1.75; color: #78350f; margin: 0 0 0.75rem;">
+          <strong>① 2024年ノーベル化学賞受賞と大学入試出題の最重要テーマ：</strong><br>
+          デミス・ハサビス氏とジョン・ジャンパー氏が2024年ノーベル化学賞を受賞した直接の根拠となった歴史的論文です。難関国公立大学（東大・京大・東工大）や医学部の英語長文では、ノーベル賞関連の学術解説が数年にわたり頻出するため、AlphaFoldが生命科学・創薬（drug discovery）にもたらした革命的変化は必修の知識です。
+        </p>
+        <p style="font-size: 0.88rem; line-height: 1.75; color: #78350f; margin: 0;">
+          <strong>② 生物基礎・化学・情報が融合する新課程入試の模範例：</strong><br>
+          タンパク質の立体配座（conformation）と水素結合、深層学習（拡散モデル）による空間座標予測の融合は、理系・文系を問わず学際的教養（Liberal Arts）として問われる現代科学の最高峰です。
+        </p>
+        
+        </div>
+        
+
+        <!-- Authentic Broadsheet Body -->
+        <div class="article-real-body">
+          <p class="real-para lead-para">
+            <span class="article-sentence" data-sentence-audio="audio/s1.mp3">Structural biologists have unveiled AlphaFold 3, an artificial intelligence model capable of predicting the three-dimensional structures and joint interactions of proteins, nucleic acids, and small-molecule therapeutic ligands with atomic resolution.</span>
+            <span class="article-sentence" data-sentence-audio="audio/s2.mp3">Whereas earlier iterations focused predominantly on isolated polypeptide folding, the upgraded architecture integrates a diffusion network that directly refines raw atomic coordinates across heterotypic biomolecular complexes.</span>
+          </p>
+
+          <p class="real-para">
+            <span class="article-sentence" data-sentence-audio="audio/s3.mp3">In rigorous benchmark evaluations, the neural network demonstrated unprecedented predictive accuracy in cross-species antibody-antigen interfaces, surpassing conventional physics-based molecular docking algorithms by substantial margins.</span>
+            <span class="article-sentence" data-sentence-audio="audio/s4.mp3">Biomedical researchers anticipate that this computational paradigm will compress preclinical drug discovery timelines from years to months by elucidating hitherto intractable intracellular signaling cascades.</span>
+            <span class="article-sentence" data-sentence-audio="audio/s5.mp3">Nevertheless, ethicists emphasize that open-access dissemination of powerful macromolecular prediction tools necessitates international biosecurity frameworks to preempt the algorithmic generation of synthetic pathogens.</span>
+          </p>
+        </div>
+
+        <!-- Hidden Japanese Translation (Toggled by Flag Button) -->
+        <div class="ja-translation article-real-translation" id="ja-article-translation">
+          <div style="font-size: 0.75rem; font-weight: 700; color: var(--times-muted); text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">【日本語全訳】</div>
+          <p class="real-para">
+            構造生物学者らは、タンパク質、核酸、および低分子治療薬リガンドの3次元立体構造とそれらの結合相互作用を原子レベルの分解能で予測可能な人工知能モデル「AlphaFold 3」を発表した。 初期のモデルが主に単一のポリペプチドの折りたたみに焦点を当てていたのに対し、刷新されたアーキテクチャは異種生体分子複合体全体の生の原子座標を直接微修正する拡散ネットワークを統合している。
+          </p>
+          <p class="real-para">
+            厳格なベンチマーク評価において、このニューラルネットワークは異種生物間の抗体・抗原境界面において前例のない予測精度を示し、従来の物理法則ベースの分子ドッキングアルゴリズムを大幅に凌駕した。 生物医学の研究者らは、この計算パラダイムがこれまで解明困難であった細胞内シグナル伝達経路を明らかにすることで、前臨床段階の創薬タイムラインを数年から数ヶ月へと短縮することを期待している。 それにもかかわらず、強力な高分子予測ツールのオープンアクセスな普及は、合成病原体のアルゴリズム的生成を未然に防ぐための国際的なバイオセキュリティ枠組みを必要とすると生命倫理学者らは強調している。
+          </p>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           RELATED & ANTECEDENT COVERAGE (関連報道・先行研究・続報)
+           ========================================================================== -->
+      <section class="study-section" id="section-related" style="margin-top: 2rem; border-top: 1px solid var(--times-black); padding-top: 2rem;">
+        <h2 class="study-section-title">
+          <span class="marker">■</span> 関連ニュース・先行報道（Related & Antecedent Coverage）
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--times-muted); margin-bottom: 1.25rem;">
+          本記事の理解を深める関連報道・先行研究および制度的背景を合わせて精読できます。
+        </p>
+        <div style="display: grid; gap: 1rem;">
+          
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           DISCUSSION: Keita先生 & Nanamiさん (中高生向け対話解説)
+           ========================================================================== -->
+      <section class="dialogue-wrapper" id="section-discussion">
+        <div class="dialogue-head">
+          <div class="dialogue-title-area">
+            <span class="dialogue-badge">TALK & DISCUSS</span>
+            <h2 class="dialogue-main-heading">5分でわかる！Keita先生とNanamiさんのニュース深掘りトーク</h2>
+          </div>
+          <div>
+            <button type="button" class="btn-audio-play" id="btn-play-dialogue-all" style="font-size: 0.75rem; padding: 0.35rem 0.8rem; background: transparent; border: 1px solid #111; color: #111;">
+              <span class="audio-state-icon">▶</span>
+              <span>解説トークを通しで聴く (約2分)</span>
+            </button>
+          </div>
+        </div>
+        
+        <p class="dialogue-lead">
+          「英文は読んだけれど、背景知識や入試での問われ方が知りたい！」という受験生のために、予備校講師のKeita先生と現役大学生アシスタントのNanamiさんが、今回のニュースの狙われどころを分かりやすくナビゲートします！
+        </p>
+
+        
+        <div class="dlg-turn turn-assistant" id="dlg-1">
+          <div class="dlg-avatar avatar-assistant">七</div>
+          <div class="dlg-content">
+            <div class="dlg-meta">
+              <span class="dlg-name">Nanami</span>
+              <span class="dlg-role">生徒</span>
+            </div>
+            <div class="dlg-bubble">
+              <p>2024年のノーベル化学賞で世界中を沸かせたAlphaFoldの最新版論文ですね！タンパク質だけでなくDNAや薬との結合まで予測できるなんて驚異的です。</p>
+              <button type="button" class="dlg-play-btn" data-dlg-audio="audio/dlg_01.mp3" aria-label="Play dialogue turn 1">
+                <span class="audio-state-icon">▶</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="dlg-turn turn-teacher" id="dlg-2">
+          <div class="dlg-avatar avatar-teacher">慶</div>
+          <div class="dlg-content">
+            <div class="dlg-meta">
+              <span class="dlg-name">Keita</span>
+              <span class="dlg-role">英語講師</span>
+            </div>
+            <div class="dlg-bubble">
+              <p>第1文の 'with atomic resolution'（原子レベルの分解能で）が鍵だね。医学部入試の英語長文では、まさにこの 'molecular interactions'（分子間相互作用）が最頻出テーマなんだ。</p>
+              <button type="button" class="dlg-play-btn" data-dlg-audio="audio/dlg_02.mp3" aria-label="Play dialogue turn 2">
+                <span class="audio-state-icon">▶</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="dlg-turn turn-assistant" id="dlg-3">
+          <div class="dlg-avatar avatar-assistant">七</div>
+          <div class="dlg-content">
+            <div class="dlg-meta">
+              <span class="dlg-name">Nanami</span>
+              <span class="dlg-role">生徒</span>
+            </div>
+            <div class="dlg-bubble">
+              <p>第2文の 'diffusion network'（拡散ネットワーク）って、画像生成AIで使われている技術ですよね？生体分子の立体配置の計算にも応用されているんですね。</p>
+              <button type="button" class="dlg-play-btn" data-dlg-audio="audio/dlg_03.mp3" aria-label="Play dialogue turn 3">
+                <span class="audio-state-icon">▶</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="dlg-turn turn-teacher" id="dlg-4">
+          <div class="dlg-avatar avatar-teacher">慶</div>
+          <div class="dlg-content">
+            <div class="dlg-meta">
+              <span class="dlg-name">Keita</span>
+              <span class="dlg-role">英語講師</span>
+            </div>
+            <div class="dlg-bubble">
+              <p>その通り！第4文にあるように、薬の開発期間が『数年から数ヶ月に短縮（compress drug discovery timelines from years to months）』されると期待されている。ただし第5文のバイオセキュリティ（biosecurity）の議論も自由英作文で狙われやすい論点だよ。</p>
+              <button type="button" class="dlg-play-btn" data-dlg-audio="audio/dlg_04.mp3" aria-label="Play dialogue turn 4">
+                <span class="audio-state-icon">▶</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- ==========================================================================
+           VOCABULARY DRILL (厳選重要語彙演習)
+           ========================================================================== -->
+      <section class="study-section" id="section-vocabulary">
+        <h2 class="study-section-title">
+          <span class="marker">■</span> 厳選重要語彙（Vocabulary Drill）
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--times-muted); margin-bottom: 1rem;">
+          大学入試長文・英検準1級〜1級で問われる「多義語」「学術的語彙」「文脈語」を厳選。英英定義でコアイメージを掴みます。
+        </p>
+
+        <table class="vocab-table">
+          <thead>
+            <tr>
+              <th style="width: 25%;">語句・発音</th>
+              <th style="width: 30%;">意味・品詞</th>
+              <th style="width: 45%;">英英定義 & 入試頻出例文</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td>
+            <div class="vocab-word-en">resolution</div>
+            <div style="font-size: 0.78rem; color: var(--times-muted);">/ˌrez.əˈluː.ʃən/</div>
+          </td>
+          <td>
+            <strong>分解能、解像度、決議</strong>
+            <div style="font-size: 0.75rem; color: #888;">noun</div>
+          </td>
+          <td>
+            <div class="vocab-def-en">The ability of a microscope or imaging system to distinguish fine detail.</div>
+            <div class="vocab-example">Cryo-electron microscopy provides structural data at near-atomic resolution.</div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td>
+            <div class="vocab-word-en">heterotypic</div>
+            <div style="font-size: 0.78rem; color: var(--times-muted);">/ˌhet.ər.oʊˈtɪp.ɪk/</div>
+          </td>
+          <td>
+            <strong>異種の、異なる型からなる</strong>
+            <div style="font-size: 0.75rem; color: #888;">adjective</div>
+          </td>
+          <td>
+            <div class="vocab-def-en">Relating to or formed of different types of components.</div>
+            <div class="vocab-example">Heterotypic molecular complexes involve interactions between proteins and nucleic acids.</div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td>
+            <div class="vocab-word-en">benchmark</div>
+            <div style="font-size: 0.78rem; color: var(--times-muted);">/ˈbentʃ.mɑːrk/</div>
+          </td>
+          <td>
+            <strong>基準、比較検証評価</strong>
+            <div style="font-size: 0.75rem; color: #888;">noun</div>
+          </td>
+          <td>
+            <div class="vocab-def-en">A standard or point of reference against which things may be compared.</div>
+            <div class="vocab-example">The algorithm achieved record scores on international blind benchmark tests.</div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td>
+            <div class="vocab-word-en">cascade</div>
+            <div style="font-size: 0.78rem; color: var(--times-muted);">/kæsˈkeɪd/</div>
+          </td>
+          <td>
+            <strong>連鎖反応、段階的シグナル伝達</strong>
+            <div style="font-size: 0.75rem; color: #888;">noun</div>
+          </td>
+          <td>
+            <div class="vocab-def-en">A process whereby something, typically information or energy, is successively passed on.</div>
+            <div class="vocab-example">Phosphorylation cascades regulate cellular responses to external stimuli.</div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td>
+            <div class="vocab-word-en">preempt</div>
+            <div style="font-size: 0.78rem; color: var(--times-muted);">/priˈempt/</div>
+          </td>
+          <td>
+            <strong>未然に防ぐ、先手を打って制する</strong>
+            <div style="font-size: 0.75rem; color: #888;">verb</div>
+          </td>
+          <td>
+            <div class="vocab-def-en">To take action in order to prevent an anticipated event from happening.</div>
+            <div class="vocab-example">Strict protocols are enacted to preempt accidental viral leakage.</div>
+          </td>
+        </tr>
+        
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ==========================================================================
+           SYNTAX & RHETORIC (構文・文法徹底解説)
+           ========================================================================== -->
+      <section class="study-section" id="section-syntax">
+        <h2 class="study-section-title">
+          <span class="marker">■</span> 構文・文法徹底解説（Syntax & Rhetoric）
+        </h2>
+        
+        <div class="grammar-card">
+          <div class="grammar-card-head">
+            <span class="grammar-target-phrase">対比を示す接続詞 Whereas の複文構造</span>
+            <span class="grammar-meaning">「Whereas [earlier iterations focused on X], [the upgraded architecture integrates Y].」</span>
+          </div>
+          <div class="grammar-card-body">
+            <p>接続詞 Whereas が従属節を導き、過去のAlphaFoldバージョンと最新のAlphaFold 3の技術的進化の差異を明瞭に対比させています。</p>
+          </div>
+        </div>
+        
+
+        <div class="grammar-card">
+          <div class="grammar-card-head">
+            <span class="grammar-target-phrase">動詞 compress + 目的語 + from A to B</span>
+            <span class="grammar-meaning">「paradigm will compress [drug discovery timelines] [from years to months].」</span>
+          </div>
+          <div class="grammar-card-body">
+            <p>compress A from B to C の形で、「A（創薬期間）をB（数年）からC（数ヶ月）へと短縮・圧縮する」という劇的な時間効率の向上を論述しています。</p>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- ==========================================================================
+           PRONUNCIATION & LINKING GUIDE (発音・リズムの急所)
+           ========================================================================== -->
+      <section class="study-section" id="section-pronunciation">
+        <h2 class="study-section-title">
+          <span class="marker">🗣</span> 発音・リズムの急所（日本人が戸惑いやすいポイント）
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--times-muted); margin-bottom: 1.25rem;">
+          単語単体の発音では聞き取れない「音の脱落（リダクション）」「音の連結（リンキング）」「アクセントの罠」を確認しましょう。
+        </p>
+        
+        <div class="grammar-card">
+          <div class="grammar-card-head">
+            <span class="grammar-target-phrase">resolution の発音・アクセント</span>
+            <span class="grammar-meaning">標準発音記号: /ˌrez.əˈluː.ʃən/</span>
+          </div>
+        </div>
+        
+
+        <div class="grammar-card">
+          <div class="grammar-card-head">
+            <span class="grammar-target-phrase">heterotypic の発音・アクセント</span>
+            <span class="grammar-meaning">標準発音記号: /ˌhet.ər.oʊˈtɪp.ɪk/</span>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- ==========================================================================
+           INTERACTIVE QUIZ (入試実戦 確認クイズ)
+           ========================================================================== -->
+      <section class="study-section" id="section-quiz">
+        <h2 class="study-section-title">
+          <span class="marker">■</span> 入試実戦 確認クイズ（Interactive Quiz）
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--times-muted); margin-bottom: 1.25rem;">
+          本文で学んだ構文・語彙・文脈理解を4択問題でテストします。
+        </p>
+        
+        <div class="quiz-item" data-answered="false">
+          <div class="quiz-question-text">
+            <span class="quiz-q-num">Q1.</span>
+            According to the article, what is the primary advancement of AlphaFold 3 compared to earlier iterations?
+          </div>
+          <div class="quiz-choices">
+            
+            <button type="button" class="quiz-btn" data-correct="true">
+              <span class="quiz-opt-letter">A</span>
+              <span>It predicts structures of diverse biomolecular complexes including DNA and ligands rather than isolated proteins alone.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">B</span>
+              <span>It relies exclusively on traditional physical docking algorithms to eliminate artificial intelligence errors.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">C</span>
+              <span>It completely replaces laboratory clinical trials in human patients for all new therapeutics.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">D</span>
+              <span>It generates synthetic biological organisms without human supervision.</span>
+            </button>
+            
+          </div>
+          <div class="quiz-explanation">
+            <strong>【正解解説】</strong><br>
+            第2文で、初期モデルが単一ポリペプチドの折りたたみに特化していたのに対し、AlphaFold 3は核酸やリガンドを含む異種生体分子複合体の原子座標を予測できるようになったと明記されています。
+          </div>
+        </div>
+        
+
+        <div class="quiz-item" data-answered="false">
+          <div class="quiz-question-text">
+            <span class="quiz-q-num">Q2.</span>
+            What is the anticipated biomedical impact of AlphaFold 3 on drug discovery?
+          </div>
+          <div class="quiz-choices">
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">A</span>
+              <span>It will cause pharmaceutical companies to abandon all biological research.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="true">
+              <span class="quiz-opt-letter">B</span>
+              <span>It is expected to reduce preclinical discovery timelines from years to months.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">C</span>
+              <span>It will eliminate the need for regulatory approval of vaccines.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">D</span>
+              <span>It will restrict antibody manufacturing to computer simulations.</span>
+            </button>
+            
+          </div>
+          <div class="quiz-explanation">
+            <strong>【正解解説】</strong><br>
+            第4文にある 'compress preclinical drug discovery timelines from years to months'（前臨床段階の創薬タイムラインを数年から数ヶ月に短縮する）が正解です。
+          </div>
+        </div>
+        
+
+        <div class="quiz-item" data-answered="false">
+          <div class="quiz-question-text">
+            <span class="quiz-q-num">Q3.</span>
+            The word 'preempt' in the final sentence is closest in meaning to:
+          </div>
+          <div class="quiz-choices">
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">A</span>
+              <span>accelerate</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="true">
+              <span class="quiz-opt-letter">B</span>
+              <span>prevent beforehand</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">C</span>
+              <span>celebrate publicly</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">D</span>
+              <span>disregard entirely</span>
+            </button>
+            
+          </div>
+          <div class="quiz-explanation">
+            <strong>【正解解説】</strong><br>
+            preempt は「未然に防ぐ」「先手を打って阻止する」という意味であり、prevent beforehand が同義です。
+          </div>
+        </div>
+        
+
+        <div class="quiz-item" data-answered="false">
+          <div class="quiz-question-text">
+            <span class="quiz-q-num">Q4.</span>
+            Why do ethicists call for international biosecurity frameworks?
+          </div>
+          <div class="quiz-choices">
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">A</span>
+              <span>To monopolize artificial intelligence patents within commercial corporations.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="true">
+              <span class="quiz-opt-letter">B</span>
+              <span>To prevent the potential algorithmic creation of synthetic pathogens.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">C</span>
+              <span>To outlaw the study of molecular biology in universities.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">D</span>
+              <span>To mandate that all scientific papers be published in secret.</span>
+            </button>
+            
+          </div>
+          <div class="quiz-explanation">
+            <strong>【正解解説】</strong><br>
+            最終文で 'preempt the algorithmic generation of synthetic pathogens'（合成病原体のアルゴリズム的生成を未然に防ぐため）と述べられています。
+          </div>
+        </div>
+        
+
+        <div class="quiz-item" data-answered="false">
+          <div class="quiz-question-text">
+            <span class="quiz-q-num">Q5.</span>
+            Which of the following is true regarding AlphaFold 3's benchmark performance?
+          </div>
+          <div class="quiz-choices">
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">A</span>
+              <span>It failed to predict any antibody-antigen bindings.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">B</span>
+              <span>It was proven inferior to traditional physics-based docking methods.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="true">
+              <span class="quiz-opt-letter">C</span>
+              <span>It surpassed conventional molecular docking algorithms by significant margins.</span>
+            </button>
+            
+            <button type="button" class="quiz-btn" data-correct="false">
+              <span class="quiz-opt-letter">D</span>
+              <span>It has not yet undergone any rigorous empirical evaluation.</span>
+            </button>
+            
+          </div>
+          <div class="quiz-explanation">
+            <strong>【正解解説】</strong><br>
+            第3文で 'surpassing conventional physics-based molecular docking algorithms by substantial margins'（従来の物理計算アルゴリズムを大幅に凌駕した）と記されています。
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- ==========================================================================
+           FAQ & STUDY ADVICE (読者からのFAQ・学習相談)
+           ========================================================================== -->
+      <section class="study-section" id="section-faq">
+        <h2 class="study-section-title">
+          <span class="marker">■</span> 読者からのFAQ・学習相談（Frequently Asked Questions）
+        </h2>
+        <div class="faq-box">
+          
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           FACT-CHECK & CRITICAL CONTEXT (最深層ファクトチェック & 学術的背景知識)
+           ========================================================================== -->
+      <section class="study-section" id="section-factcheck">
+        <h2 class="study-section-title">
+          <span class="marker">■</span> ファクトチェック & 背景知識（Fact-Check & Critical Context）
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--times-muted); margin-bottom: 1.25rem;">
+          海外メディアの元記事で提示された統計データ、社会心理学実験、および科学的背景を学術的に検証します。
+        </p>
+        
+      </section>
+
+    </article>
+  </main>
+
+  <!-- FLOATING TABLE OF CONTENTS -->
+  <div class="floating-toc-wrapper">
+    <div class="floating-toc-panel" id="floating-toc-panel">
+      <div class="toc-heading">TABLE OF CONTENTS</div>
+      <ul class="toc-list">
+        <li><a href="#article-top" class="toc-link">Top of Page</a></li>
+        <li><a href="#section-article" class="toc-link">Article & Audio</a></li>
+        <li><a href="#section-related" class="toc-link">Related Coverage</a></li>
+        <li><a href="#section-discussion" class="toc-link">Discussion (Keita & Nanami)</a></li>
+        <li><a href="#section-vocabulary" class="toc-link">Vocabulary Drill</a></li>
+        <li><a href="#section-syntax" class="toc-link">Syntax & Grammar</a></li>
+        <li><a href="#section-pronunciation" class="toc-link">Pronunciation Guide</a></li>
+        <li><a href="#section-quiz" class="toc-link">Interactive Quiz</a></li>
+        <li><a href="#section-faq" class="toc-link">FAQ & Advice</a></li>
+        <li><a href="#section-factcheck" class="toc-link">Fact-Check Context</a></li>
+      </ul>
+    </div>
+    <button type="button" class="btn-floating-toc" id="btn-floating-toc" aria-label="Open Table of Contents">
+      <span>☰</span>
+      <span>Contents</span>
+    </button>
+  </div>
+
+  <!-- Times UK Style Footer -->
+  <footer class="times-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="../../index.html" class="footer-logo">THE ACADEMIC TIMES</a>
+        <div style="font-size: 0.8125rem; color: #888;">
+          Authentic English Journalism for University Entrance & Lifelong Learning
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 THE ACADEMIC TIMES. All rights reserved. Fact-checked against original sources.</div>
+        <div><a href="#article-top" style="color: #888; text-decoration: underline;">Back to Top ↑</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../../js/app.js"></script>
+</body>
+</html>

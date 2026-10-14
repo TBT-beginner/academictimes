@@ -78,9 +78,18 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-15": {
+        "dateStr": "Thursday October 15 2026",
+        "editionLabel": "2026年10月15日 (木) 号 【本日付・最新・全12記事】",
+        "tagline": "特集：【過去の基礎論文解説】ノーベル賞AI「AlphaFold 3」・英語の音を聞く力・学校のスマホ禁止・ヨーロッパの自然エネルギー",
+        "topLeadSlug": "alphafold-3-biomolecular-structure-prediction",
+        "subLeadSlugs": ["phonetic-focus-foreign-language-acquisition", "england-school-chain-phone-free-policy", "renewables-overtake-fossil-fuels-eu-electricity"],
+        "leftDispatches": ["four-day-workweek-uk-trial-permanent", "eu-ai-act-consumer-rights-enforcement", "mont-blanc-glacier-melt-elevation-loss", "smart-glasses-parliament-privacy-controversy"],
+        "rightDigestSlugs": ["us-newspapers-openai-copyright-lawsuit", "orbital-samantha-harvey-booker-prize", "gen-z-physical-books-library-renaissance", "england-organic-farming-expansion-target"]
+    },
     "2026-10-14": {
         "dateStr": "Wednesday October 14 2026",
-        "editionLabel": "2026年10月14日 (水) 号 【本日付・最新・全30記事】",
+        "editionLabel": "2026年10月14日 (水) 号 【全30記事・アーカイブ】",
         "tagline": "特集：全固体ナトリウムイオン電池・ネット貿易の世界的ルール・デジタル遺産の行方・観光と地域交通",
         "topLeadSlug": "solid-state-sodium-ion-battery-breakthrough",
         "subLeadSlugs": ["wto-electronic-commerce-moratorium-negotiations", "supreme-court-probate-digital-asset-passwords", "local-train-revitalization-community-tourism-passes"],

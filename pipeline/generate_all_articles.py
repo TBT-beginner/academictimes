@@ -167,6 +167,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           </div>
         </div>
 
+        {foundational_notice_html}
+
         <!-- Authentic Broadsheet Body -->
         <div class="article-real-body">
           <p class="real-para lead-para">
@@ -655,6 +657,20 @@ def build_article_html(art):
     date_en_full = dt.strftime("%B %d, %Y").replace(" 0", " ")
     
     s = art["sentences"]
+    foundational_box = ""
+    if art.get("is_foundational"):
+        f_title = art.get("foundational_reason_title", "【過去の基礎論文解説】なぜ今、高校生がこの論文を読むべきなのか？")
+        f_html = art.get("foundational_reason_html", "")
+        foundational_box = f"""
+        <div class="foundational-notice-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: #fffbeb; border: 2px solid #d97706; border-radius: 8px; box-shadow: 0 2px 4px rgba(217,119,6,0.08);">
+          <div style="font-weight: 800; color: #92400e; font-size: 1.05rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 1.3rem;">🏛️</span>
+            <span>{f_title}</span>
+          </div>
+          {f_html}
+        </div>
+        """
+
     return HTML_TEMPLATE.format(
         title=art["title"],
         category_short=art["category"].upper(),
@@ -665,6 +681,7 @@ def build_article_html(art):
         source_url=art["source_url"],
         source_attribution=art["source_attribution"],
         source_student_guide=guide_text,
+        foundational_notice_html=foundational_box,
         society_active=soc_act,
         science_active=sci_act,
         culture_active=cul_act,

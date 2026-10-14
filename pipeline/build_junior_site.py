@@ -38,6 +38,10 @@ async def synth_audio(text, voice, out_path, sem, rate="+0%"):
 
 def build_junior_article_html(art):
     cat = art["category"]
+    category_label = art.get("category_label")
+    if not category_label:
+        found_tag = "【過去の基礎論文解説】 " if art.get("is_foundational") else ""
+        category_label = f"{found_tag}{cat.upper()} • 英検準2級〜2級"
     slug = art["slug"]
     title = art["title"]
     headline_ja = art["headline_ja"]
@@ -173,6 +177,21 @@ def build_junior_article_html(art):
         quiz_cards.append(q_card)
     quiz_html = "\n".join(quiz_cards)
 
+    # Foundational notice box
+    foundational_box = ""
+    if art.get("is_foundational"):
+        f_title = art.get("foundational_reason_title", "【過去の基礎論文解説】なぜ今、高校生がこの論文を読むべきなのか？")
+        f_html = art.get("foundational_reason_html", "")
+        foundational_box = f"""
+        <div class="foundational-notice-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: #fffbeb; border: 2px solid #d97706; border-radius: 8px; box-shadow: 0 2px 4px rgba(217,119,6,0.08);">
+          <div style="font-weight: 800; color: #92400e; font-size: 1.05rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 1.3rem;">🏛️</span>
+            <span>{f_title}</span>
+          </div>
+          {f_html}
+        </div>
+        """
+
     html = f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -278,7 +297,7 @@ def build_junior_article_html(art):
       <header class="hero-header" style="min-height: auto; padding: 2.25rem 0 2rem; border-bottom: 1px solid #d8e6dc; margin-bottom: 2rem;">
         <div>
           <span class="category-tag green-fill" style="display: inline-block; padding: 0.3rem 0.75rem; font-size: 0.8rem; letter-spacing: 0.06em; border-radius: 2px;">
-            {art['category_label']}
+            {category_label}
           </span>
         </div>
         <h1 class="hero-title" style="font-family: var(--font-headline); font-size: clamp(2.1rem, 3.8vw, 2.75rem); font-weight: 800; line-height: 1.25; color: #111; margin: 1.75rem 0 1.25rem; letter-spacing: -0.015em;">{title}</h1>
@@ -313,6 +332,8 @@ def build_junior_article_html(art):
             </div>
           </div>
         </details>
+
+        {foundational_box}
 
         <!-- Scroll to Article Cue (Centered) -->
         <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 2.25rem 0 0.5rem;">

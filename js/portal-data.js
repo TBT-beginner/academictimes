@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 165 articles, daily editions, and high-school media literacy references.
+// Contains all 177 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -1708,7 +1708,7 @@ const ARTICLES = [
   {
     "slug": "alzheimers-blood-biomarker-early-detection",
     "category": "science",
-    "category_label": "SCIENCE & MEDICINE • 神経内科学とバイオマーカー診断",
+    "category_label": "【過去の基礎論文解説】 SCIENCE & MEDICINE • 神経内科学とバイオマーカー診断",
     "date": "2026-10-13",
     "title": "High-Precision Blood Biomarker Assay Detects Preclinical Alzheimer's Pathology Years Before Symptom Onset",
     "headline_ja": "神経科学：発症数年前の無症候期アルツハイマー病を高精度検出する血液生体指標検査",
@@ -2589,15 +2589,218 @@ const ARTICLES = [
     "source_url": "https://getnews.jp/archives/2026101405",
     "path": "entertainment/drone-racing-first-person-view-low-latency-wifi7/index.html",
     "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "alphafold-3-biomolecular-structure-prediction",
+    "category": "science",
+    "category_label": "【過去の基礎論文解説】 BIOLOGY & COMPUTATIONAL SCIENCE • アルファフォールド3の生体分子構造予測",
+    "date": "2026-10-15",
+    "title": "AlphaFold 3 Predicts Structure and Interactions of All Life's Molecules",
+    "headline_ja": "計算生物学：タンパク質・DNA・リガンドの全相互作用を原子精度で予測する「AlphaFold 3」の衝撃",
+    "subhead": "2024年ノーベル化学賞の基盤技術。創薬と生命科学のパラダイムを塗り替える深層学習モデル。",
+    "lead_snippet": "グーグル・ディープマインドが開発した「AlphaFold 3」は、タンパク質単体にとどまらず、DNAやRNA、低分子リガンド、抗体との複雑な複合体構造を前例のない精度で予測することに成功した。生命の根源的な生体分子間ネットワークを解き明かすマイルストーンを精読する。",
+    "source_name": "Nature",
+    "source_media_key": "nature",
+    "source_url": "https://www.nature.com/articles/s41586-024-07487-w",
+    "path": "science/alphafold-3-biomolecular-structure-prediction/index.html",
+    "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "phonetic-focus-foreign-language-acquisition",
+    "category": "science",
+    "category_label": "COGNITIVE SCIENCE & LINGUISTICS • 音声知覚と言語習得の脳科学",
+    "date": "2026-10-15",
+    "title": "Focusing on Sounds Rather Than Meaning Accelerates Foreign Language Acquisition",
+    "headline_ja": "認知言語学：意味よりも「音の知覚」に集中することが外国語習得を劇的に加速させる脳科学的実証",
+    "subhead": "言語脳科学の研究：単語の意味解釈を一時的に停止し、音響パターンの受容に特化することで文法処理が向上。",
+    "lead_snippet": "外国語を学ぶ際、辞書的な意味の暗記に急ぐのではなく、まず純粋な音響的差異やイントネーションの知覚に脳のリソースを集中させることで、その後の語彙定着と統語規則の自動化が有意に高まることが最新の実験で示された。英語学習者の勉強法を根本から変える科学的知見を紐解く。",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/14/focus-on-sounds-to-help-learn-a-language-study-suggests",
+    "path": "science/phonetic-focus-foreign-language-acquisition/index.html",
+    "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "england-school-chain-phone-free-policy",
+    "category": "society",
+    "category_label": "EDUCATION POLICY & ADOLESCENCE • 英国全校スマホ禁止令の拡大",
+    "date": "2026-10-15",
+    "title": "Major English Academy Chain Implements Total Smartphone Ban for 35,000 Pupils",
+    "headline_ja": "教育社会学：生徒3万5千人を擁する英国学校連合が「完全スマホ持ち込み禁止」に踏み切った理由",
+    "subhead": "休憩時間を含む終日遮断。集中力向上、ネットいじめ抑止、対面交流の回復を目指す大規模教育実験。",
+    "lead_snippet": "イングランド有数の大規模アカデミートラストが、所属する全生徒3万5千人を対象に、校内でのスマートフォン使用を全面的に禁じる方針を決定した。登校時に専用ポーチ等で封印し、休み時間も含めてスクリーンから解放することで、青少年のメンタルヘルス回復と学習到達度の劇的改善を図る。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/education/2024/sep/13/academy-chain-with-35000-pupils-to-be-first-in-england-to-go-phone-free",
+    "path": "society/england-school-chain-phone-free-policy/index.html",
+    "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "four-day-workweek-uk-trial-permanent",
+    "category": "society",
+    "category_label": "LABOUR ECONOMICS & WELLBEING • 週休3日制の恒久化と労働生産性",
+    "date": "2026-10-15",
+    "title": "Four-Day Workweek Made Permanent by Majority of Firms in World's Largest Trial",
+    "headline_ja": "労働経済学：世界最大規模の実証実験で参加企業の過半数が「週休3日制」を恒久導入",
+    "subhead": "給与100%維持で労働時間を20%削減。バーンアウトの激減と離職率半減、生産性向上が追跡調査で確定。",
+    "lead_snippet": "イギリスで実施された世界最大の「週休3日制（給与維持型）」パイロット実験から1年が経過した追跡調査において、参加企業の89%が制度を継続し、51%が恒久的な社内規定として正式採用したことが判明した。労働生産性を落とさずに過労を解消する新たな働き方の実効性を読み解く。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/money/2024/feb/21/four-day-week-made-permanent-for-most-uk-firms-in-worlds-biggest-trial",
+    "path": "society/four-day-workweek-uk-trial-permanent/index.html",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "mont-blanc-glacier-melt-elevation-loss",
+    "category": "world",
+    "category_label": "CLIMATE GEOGRAPHY & GLACIOLOGY • モンブラン標高低下と地球温暖化",
+    "date": "2026-10-15",
+    "title": "Mont Blanc Loses Over One Metre of Height as Alpine Glaciers Rapidly Shrink",
+    "headline_ja": "環境地理学：「欧州の屋根」モンブランの標高が1メートル以上低下、氷河融解の加速を実測",
+    "subhead": "山頂冠氷の融解により標高4,805.59メートルへ。アルプス氷河の後退が下流水源と生態系に与える深刻な影響。",
+    "lead_snippet": "フランス・イタリア国境にそびえる西ヨーロッパ最高峰モンブランの最新測量調査により、山頂を覆う氷雪層の急激な融解に伴い、過去数年で標高が1メートル以上低下したことが確認された。地球温暖化がもたらす高山生態系の急変と、欧州主要河川の水源枯渇危機を検証する。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/14/mont-blanc-loses-metre-height",
+    "path": "world/mont-blanc-glacier-melt-elevation-loss/index.html",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "renewables-overtake-fossil-fuels-eu-electricity",
+    "category": "world",
+    "category_label": "GLOBAL ENERGY & CLIMATE POLICY • 欧州再エネ発電シェアの歴史的逆転",
+    "date": "2026-10-15",
+    "title": "Wind and Solar Overtake Fossil Fuels to Generate 30 Percent of EU Electricity",
+    "headline_ja": "国際エネルギー：風力・太陽光発電が化石燃料を逆転、EU電力の30％を供給する歴史的転換点",
+    "subhead": "石炭・天然ガス火力発電が激減。地政学的エネルギー自立と脱炭素目標の同時達成へ前進。",
+    "lead_snippet": "欧州連合（EU）加盟国全体において、風力と太陽光による発電比率が初めて化石燃料（石炭・石油・ガス）の合計シェアを上回る30%に到達した。ウクライナ危機を契機とした再エネ投資の加速が実を結び、化石燃料依存からの脱却が不可逆的なペースで進む国際情勢を分析する。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/article/2024/jul/30/renewables-overtake-fossil-fuels-to-provide-30-of-eu-electricity",
+    "path": "world/renewables-overtake-fossil-fuels-eu-electricity/index.html",
+    "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "eu-ai-act-consumer-rights-enforcement",
+    "category": "law",
+    "category_label": "DIGITAL JURISPRUDENCE & AI GOVERNANCE • 欧州AI法と消費者権利保護",
+    "date": "2026-10-15",
+    "title": "What the EU Artificial Intelligence Act Means for Consumer Safety and Digital Rights",
+    "headline_ja": "情報法学：世界初の包括的「欧州AI法」が消費者の安全とプライバシーに与える法的影響",
+    "subhead": "リスクに応じた4段階規制。生体認証や感情認識の禁止、生成AIの透明性義務化がもたらす世界的標準。",
+    "lead_snippet": "欧州連合で成立した包括的AI規制法（EU AI Act）は、消費者の基本的権利を侵害する高リスクAIの利用を厳格に制限し、違反企業に巨額の制裁金を科す。GDPRに続き「ブリュッセル効果」を通じて世界のAI開発基準を規定しつつある最前線の法制度を解き明かす。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2024/mar/14/what-will-eu-proposed-regulation-ai-mean-consumers",
+    "path": "law/eu-ai-act-consumer-rights-enforcement/index.html",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "us-newspapers-openai-copyright-lawsuit",
+    "category": "law",
+    "category_label": "INTELLECTUAL PROPERTY & FAIR USE • AIモデル学習と新聞著作権侵害訴訟",
+    "date": "2026-10-15",
+    "title": "US Newspapers Sue OpenAI and Microsoft Over Unauthorized Use of Millions of Articles",
+    "headline_ja": "知的財産法：米有力新聞グループがOpenAIとマイクロソフトを提訴、無断記事学習の違法性を主張",
+    "subhead": "報道機関の著作権とフェアユースの境界。独自取材記事を対価なく商業AIに転用することの司法判断へ。",
+    "lead_snippet": "ニューヨーク・デイリーニューズやシカゴ・トリビューンなど米国の主要8紙が、自社の何百万本もの調査報道記事を無許可・無対価でChatGPT等の学習データに利用されたとして、連邦地方裁判所に著作権侵害訴訟を提起した。ジャーナリズムの生存権とAI産業の未来を左右する法廷闘争を精読する。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2024/apr/30/us-newspaper-openai-lawsuit",
+    "path": "law/us-newspapers-openai-copyright-lawsuit/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "orbital-samantha-harvey-booker-prize",
+    "category": "culture",
+    "category_label": "CONTEMPORARY LITERATURE • ブッカー賞受賞作『Orbital』と宇宙の視点",
+    "date": "2026-10-15",
+    "title": "Samantha Harvey's Space Station Novel Orbital Wins Booker Prize 2024",
+    "headline_ja": "現代文学論：宇宙ステーションから地球を見つめる小説『Orbital』が2024年ブッカー賞を受賞",
+    "subhead": "136ページの濃密な瞑想的散文。1日に16回の日出と日没を体験する宇宙飛行士たちの心理と地球の儚さ。",
+    "lead_snippet": "英国人作家サマンサ・ハーヴェイの小説『Orbital』が、歴代2番目の短さとなる136ページで英語圏最高峰のブッカー賞を満場一致で受賞した。国際宇宙ステーション（ISS）から人類の営みを俯瞰し、気候危機や国境の無意味さを詩的な英語で描き出した文学的傑作を論考する。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/books/2024/nov/12/orbital-by-samantha-harvey-wins-booker-prize-2024",
+    "path": "culture/orbital-samantha-harvey-booker-prize/index.html",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "gen-z-physical-books-library-renaissance",
+    "category": "culture",
+    "category_label": "MEDIA ECOLOGY & READING CULTURE • 紙の本への回帰とZ世代の図書館ルネサンス",
+    "date": "2026-10-15",
+    "title": "Gen Z Readers Spark Resurgence in Physical Book Sales and Public Library Visits",
+    "headline_ja": "文化社会学：デジタル画面の疲労から「紙の本と図書館」へ回帰するZ世代の読書文化",
+    "subhead": "デジタルネイティブが求める触覚的体験と静謐な空間。SNS「BookTok」を通じた読書コミュニティの再興。",
+    "lead_snippet": "スマートフォンに囲まれて育ったZ世代の間で、電子書籍ではなく紙の書籍を購入し、公共図書館に足を運ぶムーブメントが欧米を中心に急速に拡大している。常時接続のプレッシャーやスクリーンの認知的疲労から脱し、紙の匂いや手触りを通じた深い思索を求める若者の心理を読み解く。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/books/2024/feb/09/reading-is-so-sexy-gen-z-turns-to-physical-books-and-libraries",
+    "path": "culture/gen-z-physical-books-library-renaissance/index.html",
+    "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "smart-glasses-parliament-privacy-controversy",
+    "category": "entertainment",
+    "category_label": "SURVEILLANCE ETHICS & WEARABLE TECH • 議場でのスマートグラス使用をめぐる倫理論争",
+    "date": "2026-10-15",
+    "title": "Wearable Smart Glasses with Hidden Cameras Prompt Parliamentary Ban Calls in UK",
+    "headline_ja": "情報倫理学：小型カメラ搭載スマートグラスの議場持ち込みをめぐり英議会で禁止論争が勃発",
+    "subhead": "議員が着用したスマートグラスに批判殺到。秘密録画・生体認識技術と公的審議のセキュリティ懸念。",
+    "lead_snippet": "ウェールズ議会において、小型カメラとAIマイクを内蔵したスマートグラスを着用して議場に入った政治家に対し、他議員のプライバシー侵害や機密情報漏洩の懸念から即時禁止を求める声が高まっている。日常生活に浸透しつつあるウェアラブル端末と公共空間のプライバシー倫理を論じる。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/14/smart-glasses-ai-technology-reform-senedd-westminster-ban",
+    "path": "entertainment/smart-glasses-parliament-privacy-controversy/index.html",
+    "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "england-organic-farming-expansion-target",
+    "category": "entertainment",
+    "category_label": "AGROECOLOGY & SUSTAINABLE FOOD • 有機農業面積10%拡大目標の策定",
+    "date": "2026-10-15",
+    "title": "England Unveils Landmark Plan to Triple Organic Farmland by 2036 for Climate and Soil",
+    "headline_ja": "環境農政学：土壌生態系再生と気候変動対策に向け、有機農地比率を10%へ拡大する国家計画を発表",
+    "subhead": "化学農薬・化学肥料への依存削減。生物多様性の保全と持続可能な食料安全保障の両立を目指す新アプローチ。",
+    "lead_snippet": "英国政府は、2036年までにイングランド国内の農地における有機農業（オーガニック農法）の割合を現在の3倍以上となる10%へ引き上げる総合行動計画を公表した。土壌微生物の多様性回復と温室効果ガス排出抑制、持続可能な農業経済モデルをめぐる世界的潮流を精読する。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/14/land-farmed-organically-england-share-10-pc-2036-plan-food-climate",
+    "path": "entertainment/england-organic-farming-expansion-target/index.html",
+    "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-15": {
+    "dateStr": "Thursday October 15 2026",
+    "editionLabel": "2026年10月15日 (木) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：【過去の基礎論文解説】AlphaFold 3生体分子予測・音声重視の言語習得法・英学校スマホ禁止・欧州再エネ発電逆転",
+    "topLeadSlug": "alphafold-3-biomolecular-structure-prediction",
+    "subLeadSlugs": [
+      "phonetic-focus-foreign-language-acquisition",
+      "england-school-chain-phone-free-policy",
+      "renewables-overtake-fossil-fuels-eu-electricity"
+    ],
+    "leftDispatches": [
+      "four-day-workweek-uk-trial-permanent",
+      "eu-ai-act-consumer-rights-enforcement",
+      "mont-blanc-glacier-melt-elevation-loss",
+      "smart-glasses-parliament-privacy-controversy"
+    ],
+    "rightDigestSlugs": [
+      "us-newspapers-openai-copyright-lawsuit",
+      "orbital-samantha-harvey-booker-prize",
+      "gen-z-physical-books-library-renaissance",
+      "england-organic-farming-expansion-target"
+    ]
+  },
   "2026-10-14": {
     "dateStr": "Wednesday October 14 2026",
-    "editionLabel": "2026年10月14日 (水) 号 【本日付・最新・全30記事】",
+    "editionLabel": "2026年10月14日 (水) 号 【全30記事・アーカイブ】",
     "tagline": "特集：全固体ナトリウムイオン電池革新・WTO電子商取引恒久化・デジタル遺産パスワード開示最高裁・地方交通地域通貨連携",
     "topLeadSlug": "solid-state-sodium-ion-battery-breakthrough",
     "subLeadSlugs": [
