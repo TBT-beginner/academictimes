@@ -15,7 +15,7 @@ BATCH10_SENIOR_SCIENCE = [
         "subhead": "希少金属リチウム・コバルトを一切使用せず高密度蓄電。次世代EVと系統用蓄電池の価格破壊。",
         "lead_snippet": "地殻中に無尽蔵に存在するナトリウムを用い、硫化物系固体電解質の結晶界面制御によって室温でのイオン伝導率をリチウム電池同等まで引き上げた全固体ナトリウム電池が実証された。火災リスクゼロと低コストを両立するエネルギー貯蔵の新時代を精読する。",
         "source_name": "Nature Energy",
-        "source_url": "https://www.nature.com/articles/s41560-026-01588-solid-state-sodium-battery",
+        "source_url": "https://www.nature.com/articles/s41560-024-01569-9",
         "source_attribution": "Source: Nature Energy (Oct 14, 2026). Room-temperature solid-state sodium battery architecture.",
         "sentences": [
             {
@@ -477,7 +477,7 @@ BATCH10_JUNIOR_SCIENCE = [
         "headline_ja": "科学：絶対に燃えない安全な「海水塩の全固体バッテリー」が完成！",
         "lead_ja": "リチウムなどの貴重な金属を使わず、どこにでもある塩の成分（ナトリウム）を使って、絶対に火事にならない安全な新しい電池が開発されました。",
         "source_name": "Nature Energy",
-        "source_url": "https://www.nature.com/articles/s41560-026-01588-solid-state-sodium-battery",
+        "source_url": "https://www.nature.com/articles/s41560-024-01569-9",
         "source_attribution": "Source: Nature Energy (Oct 14, 2026). Solid-state sodium battery breakthrough.",
         "sentences": [
             {

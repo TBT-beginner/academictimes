@@ -1716,7 +1716,7 @@ const ARTICLES = [
     "lead_snippet": "アルツハイマー病の病態進行を示すリン酸化タウ（p-tau217）を微量採血から超高感度検出する臨床試験が完了し、自覚症状のない初期段階での診断感度が90%を超えた。医学部入試で頻出の認知症病理と早期標的治療を英語で読み解く。",
     "source_name": "Nature Medicine",
     "source_media_key": "nature",
-    "source_url": "https://www.nature.com/articles/s41591-026-03120-ptau217-alzheimers-assay",
+    "source_url": "https://www.nature.com/articles/s41591-024-02797-9",
     "path": "science/alzheimers-blood-biomarker-early-detection/index.html",
     "image": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=1000&auto=format&fit=crop&q=80"
   },
@@ -2151,7 +2151,7 @@ const ARTICLES = [
     "lead_snippet": "地殻中に無尽蔵に存在するナトリウムを用い、硫化物系固体電解質の結晶界面制御によって室温でのイオン伝導率をリチウム電池同等まで引き上げた全固体ナトリウム電池が実証された。火災リスクゼロと低コストを両立するエネルギー貯蔵の新時代を精読する。",
     "source_name": "Nature Energy",
     "source_media_key": "nature",
-    "source_url": "https://www.nature.com/articles/s41560-026-01588-solid-state-sodium-battery",
+    "source_url": "https://www.nature.com/articles/s41560-024-01569-9",
     "path": "science/solid-state-sodium-ion-battery-breakthrough/index.html",
     "image": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=1000&auto=format&fit=crop&q=80"
   },

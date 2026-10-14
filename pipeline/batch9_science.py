@@ -108,7 +108,7 @@ BATCH9_SENIOR_SCIENCE = [
         "subhead": "脳脊髄液採取やPET検査と同等の診断精度。リン酸化タウ217による超早期介入の実現。",
         "lead_snippet": "アルツハイマー病の病態進行を示すリン酸化タウ（p-tau217）を微量採血から超高感度検出する臨床試験が完了し、自覚症状のない初期段階での診断感度が90%を超えた。医学部入試で頻出の認知症病理と早期標的治療を英語で読み解く。",
         "source_name": "Nature Medicine",
-        "source_url": "https://www.nature.com/articles/s41591-026-03120-ptau217-alzheimers-assay",
+        "source_url": "https://www.nature.com/articles/s41591-024-02797-9",
         "source_attribution": "Source: Nature Medicine (Oct 13, 2026). Clinical validation of blood-based biomarkers for neurodegenerative diseases.",
         "sentences": [
             {
