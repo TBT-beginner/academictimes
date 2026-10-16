@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 177 articles, daily editions, and high-school media literacy references.
+// Contains all 189 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -2769,15 +2769,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/environment/2026/oct/14/land-farmed-organically-england-share-10-pc-2036-plan-food-climate",
     "path": "entertainment/england-organic-farming-expansion-target/index.html",
     "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "leap-second-abolition-leap-hour",
+    "category": "science",
+    "category_label": "METROLOGY & ASTRONOMY • 世界計量会議のうるう秒廃止決議",
+    "date": "2026-10-16",
+    "title": "International Timekeepers Vote to Abolish Leap Second in Favour of Leap Hour",
+    "headline_ja": "世界計量会議、ネット障害頻発の「うるう秒」廃止を決議：数百年後の「うるう時」導入へ",
+    "subhead": "地球自転の揺らぎと原子時計のズレを調整してきた1秒刻みの修正を停止。デジタル金融・クラウド障害を防ぐ歴史的転換。",
+    "lead_snippet": "国際度量衡総会（BIPM）の代表団は、1972年以来実施されてきた「うるう秒（leap second）」の挿入を2035年までに廃止し、最大1時間の累積ズレを許容する「うるう時（leap hour）」方式への移行を決定した。世界的な通信網や金融決済システムを混乱させてきたミリ秒単位の時刻同期リスクを解消する科学的合意を精読する。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/15/times-up-for-the-leap-second-as-scientists-swap-it-for-the-leap-hour",
+    "path": "science/leap-second-abolition-leap-hour/index.html",
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "neanderthal-shanidar-spear-trauma",
+    "category": "science",
+    "category_label": "ANTHROPOLOGY & ARCHAEOLOGY • シャニダール洞窟のネアンデルタール人受傷痕跡",
+    "date": "2026-10-16",
+    "title": "Shanidar Cave Neanderthal Skeleton Reveals Earliest Evidence of Human Spear Trauma",
+    "headline_ja": "クルディスタン・シャニダール洞窟：ネアンデルタール人骨から最古の槍による刺突痕を発見",
+    "subhead": "肋骨の傷痕と骨治癒の分析から判明した旧人類同士の紛争と手厚い共同体看護の実態。",
+    "lead_snippet": "イラク・クルディスタン地域のシャニダール洞窟で出土したネアンデルタール人成人男性の骨格化石から、投擲槍によって受傷した確実な痕跡が確認された。致命傷を負いながらも数週間にわたり生存・治癒した形跡は、旧人類社会における武力衝突の存在とともに、負傷者を献身的に介護する高度な社会的結束があったことを示唆している。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
+    "path": "science/neanderthal-shanidar-spear-trauma/index.html",
+    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "england-six-regions-severe-drought-water-crisis",
+    "category": "society",
+    "category_label": "ENVIRONMENT & PUBLIC INFRASTRUCTURE • 英6地域で深刻な干ばつ宣言",
+    "date": "2026-10-16",
+    "title": "Severe Drought Declared Across Six Regions in England Threatening Water Supplies",
+    "headline_ja": "英環境庁、イングランド6地域に「深刻な干ばつ」を宣言：水道インフラと農業用水に危機",
+    "subhead": "過去数十年間で最も乾燥した夏季を受け、河川流量低下と地下水枯渇が水道網を直撃。",
+    "lead_snippet": "英国環境庁は、イングランド全土の6地域を深刻な干ばつ（severe drought）地域に指定し、市民生活と生態系を守るための緊急取水制限措置を発令した。気候変動による降雨パターンの極端化と老朽化した送水パイプラインの漏水問題が重なり、公共インフラの強靭化（resilience）をめぐる議論が再燃している。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/15/severe-drought-declared-six-areas-england-public-water-supplies-threat",
+    "path": "society/england-six-regions-severe-drought-water-crisis/index.html",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "brazil-statutory-workweek-reduction-forty-hours",
+    "category": "society",
+    "category_label": "LABOUR ECONOMICS & POLICY • ブラジル法定労働時間40時間への短縮法案",
+    "date": "2026-10-16",
+    "title": "Brazil Moves to Cut Statutory Working Week to Forty Hours Amid Labour Reform Push",
+    "headline_ja": "ブラジル政府、週法定労働時間を44時間から40時間に短縮する包括的労働改革を推進",
+    "subhead": "賃金を減らさず労働時間を短縮。産業界の生産性向上要請と労働者の健康回復の調和を模索。",
+    "lead_snippet": "ブラジル議会において、憲法で定められた週44時間の法定労働上限を週40時間へと恒久的に引き下げる歴史的な労働基準法改正案が提出された。過重労働の是正と雇用創出効果を掲げる労働組合側と、中小企業の労務コスト増を懸念する産業連盟との間で激しい政策論争が展開されている。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/15/brazil-cuts-work-week-to-40-hours-lula-bolsonaro-election-runoff",
+    "path": "society/brazil-statutory-workweek-reduction-forty-hours/index.html",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "indonesia-wildfire-haze-dry-ice-cloud-seeding",
+    "category": "world",
+    "category_label": "GEOENGINEERING & SOUTHEAST ASIA • インドネシア森林火災へのドライアイス投下",
+    "date": "2026-10-16",
+    "title": "Indonesia Deploys Dry Ice Cloud Seeding to Quell Wildfires and Toxic Transboundary Haze",
+    "headline_ja": "インドネシア政府、森林泥炭火災と有毒煙害（ヘイズ）鎮静化へドライアイス散布作戦を展開",
+    "subhead": "周辺国（シンガポール・マレーシア）へ越境拡散する大気汚染を阻止する緊急気象制御技術。`",
+    "lead_snippet": "スマトラ島およびカリマンタン島で猛威を振るう泥炭地森林火災に対し、インドネシア軍と国家防災庁は上空からドライアイスを散布して人工降雨を誘発する緊急オペレーションを開始した。エルニーニョ現象が引き起こす長期干ばつと焼き畑農業に起因する煙害は、周辺国の公衆衛生と外交関係にも重大な摩擦を生じさせている。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/15/indonesia-fires-dry-ice-dropped-toxic-haze-spreads",
+    "path": "world/indonesia-wildfire-haze-dry-ice-cloud-seeding/index.html",
+    "image": "https://images.unsplash.com/photo-1516214104703-d870798883c5?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "made-in-europe-green-subsidies-uk-accord",
+    "category": "world",
+    "category_label": "INTERNATIONAL TRADE & INDUSTRIAL POLICY • 欧州グリーン産業支援と英欧協調",
+    "date": "2026-10-16",
+    "title": "France Drops Opposition to UK Inclusion in Landmark Made in Europe Green Legislation",
+    "headline_ja": "仏政府、EU域内調達優遇法「メイド・イン・ヨーロッパ」への英国参画反対を撤回",
+    "subhead": "米中の巨額環境補助金に対抗。脱炭素サプライチェーン強化のため英仏がブレグジット後の協調へ。",
+    "lead_snippet": "フランス政府は、EUのクリーンテクノロジー支援枠組み「メイド・イン・ヨーロッパ」法案において、英国企業をサプライチェーンの適用対象から除外する従来の方針を転換した。風力発電用タービンや電気自動車用バッテリーの部材確保において、孤立化を避けて欧州全体の産業競争力を高める現実的な通商合意として歓迎されている。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/15/france-drops-opposition-to-uk-being-included-in-made-in-europe-legislation",
+    "path": "world/made-in-europe-green-subsidies-uk-accord/index.html",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "zero-click-spyware-digital-advertising-exploitation",
+    "category": "law",
+    "category_label": "CYBER LAW & PRIVACY RIGHTS • ネット広告を経由したゼロクリック監視スパイウェア",
+    "date": "2026-10-16",
+    "title": "Cybersecurity Researchers Expose Zero-Click Spyware Infiltrating Mobile Devices via Digital Ads",
+    "headline_ja": "サイバー法学：デジタル広告網を悪用して端末に侵入する「ゼロクリック型スパイウェア」の脅威",
+    "subhead": "ユーザーがリンクをクリックしなくても感染。オンライン広告入札システム（RTB）の構造的脆弱性。",
+    "lead_snippet": "国際的なサイバーセキュリティ研究機関は、商業用スパイウェア企業がプログラマティック広告の配信ネットワークを悪用し、標的のスマートフォンへ一切の操作なし（ゼロクリック）で侵入する高度な監視手法を告発した。個人の閲覧履歴に基づくリアルタイム入札（RTB）技術が国家規模の監視活動に転用される中、プライバシー法と広告規制の再設計が急務となっている。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/15/israeli-firm-digital-ads-enabling-installation-of-zero-click-spyware-researchers-say",
+    "path": "law/zero-click-spyware-digital-advertising-exploitation/index.html",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-chancellor-bank-windfall-tax-fiscal-consolidation",
+    "category": "law",
+    "category_label": "TAX LAW & PUBLIC FINANCE • 英政府、銀行超過利潤税の引き上げを検討",
+    "date": "2026-10-16",
+    "title": "UK Chancellor Considers Higher Taxes on Banking Sector to Address Fiscal Deficit",
+    "headline_ja": "英国財務相、財政再建と防衛予算確保へ大手銀行への課税強化を検討",
+    "subhead": "高金利下で過去最高益を記録した金融セクターに対する特別超過利潤課税（surcharge）の是非。",
+    "lead_snippet": "英国のレイチェル・リーブス財務大臣は、次期予算案において大手銀行が享受した金利高に伴う巨額利益に対し、追加の銀行サーチャージ（超過利潤課税）を課す検討に入った。公的サービスの維持と防衛費増額の財源確保を目指す政府に対し、ロンドン金融街（シティ）は国際競争力の低下と資本流出を警告して激しく反発している。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/uk-news/2026/oct/15/john-healey-raise-taxes-banks-budget",
+    "path": "law/uk-chancellor-bank-windfall-tax-fiscal-consolidation/index.html",
+    "image": "https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "the-floating-world-art-market-capitalism-ethics",
+    "category": "culture",
+    "category_label": "AESTHETICS & PHILOSOPHY • 現代アート市場と資本主義の精神的葛藤",
+    "date": "2026-10-16",
+    "title": "The Floating World: Ben Eastham's Critique of Art's Relationship to Capital and Power",
+    "headline_ja": "書評『浮世（The Floating World）』：美の探求と巨大マネーに呑まれる現代美術界の肖像",
+    "subhead": "美的な純粋性は投機マネーの前で維持できるのか。芸術評論家ベン・イーストハムが問う文化の価値。",
+    "lead_snippet": "美術批評家ベン・イーストハムの新著『The Floating World』は、富裕層の投機対象と化した現代アート市場の内幕を鋭く解剖し、美の創造が金融資本の支配とどのように共犯関係を結んでいるかを問うている。真の文化的価値と価格の乖離、美術館の公的役割の空洞化というテーマは、人文学と経済倫理の交差点として知識人の間で大きな反響を呼んでいる。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/books/2026/oct/15/the-floating-world-by-ben-eastham-review-a-compelling-debut-of-arts-relation-to-money-and-power",
+    "path": "culture/the-floating-world-art-market-capitalism-ethics/index.html",
+    "image": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "national-digital-sovereignty-cloud-infrastructure",
+    "category": "culture",
+    "category_label": "INFORMATION SOCIETY & ETHICS • 国家主権と巨大テック企業クラウド依存の限界",
+    "date": "2026-10-16",
+    "title": "The Case for National Digital Sovereignty: Reclaiming Critical Infrastructure from Big Tech",
+    "headline_ja": "デジタル主権論の最前線：米巨大ITクラウドへの過度な依存から公的インフラをどう取り戻すか",
+    "subhead": "医療・教育・行政データが外国籍データセンターに集約される危うさと、国家の情報自立。",
+    "lead_snippet": "公共部門におけるデジタル変革が進む中、国家基幹システムが米国の少数のハイパースケーラー（AWS、Azure、GCP）に事実上独占されている現状に対し、欧州や英国で「デジタル主権（Digital Sovereignty）」の確立を求める論考が相次いでいる。データローカリゼーションとオープン標準クラウドの構築は、21世紀の国家の自律性を決する哲学的・制度的課題である。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/15/the-uk-must-have-digital-sovereignty",
+    "path": "culture/national-digital-sovereignty-cloud-infrastructure/index.html",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "sand-tiger-shark-conservation-public-aquariums",
+    "category": "entertainment",
+    "category_label": "WILDLIFE & PUBLIC AQUARIUMS • シロワニ（絶滅危惧サメ）の保護と水族館の役割",
+    "date": "2026-10-16",
+    "title": "Aquariums Join Conservation Drive to Protect Endangered Sand Tiger Sharks in Delaware Bay",
+    "headline_ja": "海洋生物学：絶滅危惧種シロワニを救え！公立水族館と海洋保護区が結ぶ繁殖・放流ネットワーク",
+    "subhead": "恐ろしい見た目と裏腹におとなしい大型サメ。音響タグによる追跡と繁殖プログラムの進展。",
+    "lead_snippet": "米国デラウェア湾のサメ保護区において、公立水族館の海洋生物学者チームが絶滅危惧種シロワニ（Sand Tiger Shark）の生息域保護と繁殖支援プロジェクトを拡大している。最新の超音波音響タグを用いた回遊ルートの解明と、水族館の展示を通じた来館者の環境意識改革（エンターテインメントと保全教育の融合）が成果を上げている。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/15/conservation-aquariums-endangered-sharks-protected-waters-delaware-bay-us-sand-tiger-sharks",
+    "path": "entertainment/sand-tiger-shark-conservation-public-aquariums/index.html",
+    "image": "https://images.unsplash.com/photo-1560275619-4662e36fa65c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "satellite-constellation-dual-use-defence-dispute",
+    "category": "entertainment",
+    "category_label": "AEROSPACE & SATELLITE TECH • スターリンクと軍事利用（スターシールド）の境界線",
+    "date": "2026-10-16",
+    "title": "SpaceX Faces International Scrutiny Over Military Starshield and Starlink Disruption",
+    "headline_ja": "宇宙通信テック：民間通信衛星スターリンクと防衛専用「スターシールド」の境界線をめぐる議論",
+    "subhead": "民間通信インフラが戦場で担う役割と、巨大プラットフォーマーの地政学的影響力。",
+    "lead_snippet": "低軌道衛星コンステレーションによる高速通信を提供するスペースX社に対し、防衛専用ネットワーク「スターシールド」への移行に伴う利用制限をめぐり各国の安全保障関係者から議論が巻き起こっている。民間テクノロジー企業が一国の防衛インフラやドローン通信を実質的に左右する「民間企業の地政学的プレイヤー化」が新たな論点となっている。",
+    "source_name": "The Guardian (Oct 15, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/15/starshield-starlink-ukraine-restriction-explained",
+    "path": "entertainment/satellite-constellation-dual-use-defence-dispute/index.html",
+    "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-16": {
+    "dateStr": "Friday October 16 2026",
+    "editionLabel": "2026年10月16日 (金) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：世界計量会議「うるう秒」廃止とうるう時導入・シャニダール洞窟旧人類投槍・イングランド6地域深刻干ばつ宣言",
+    "topLeadSlug": "leap-second-abolition-leap-hour",
+    "subLeadSlugs": [
+      "neanderthal-shanidar-spear-trauma",
+      "england-six-regions-severe-drought-water-crisis",
+      "indonesia-wildfire-haze-dry-ice-cloud-seeding"
+    ],
+    "leftDispatches": [
+      "made-in-europe-green-subsidies-uk-accord",
+      "brazil-statutory-workweek-reduction-forty-hours",
+      "zero-click-spyware-digital-advertising-exploitation",
+      "sand-tiger-shark-conservation-public-aquariums"
+    ],
+    "rightDigestSlugs": [
+      "uk-chancellor-bank-windfall-tax-fiscal-consolidation",
+      "the-floating-world-art-market-capitalism-ethics",
+      "national-digital-sovereignty-cloud-infrastructure",
+      "satellite-constellation-dual-use-defence-dispute"
+    ]
+  },
   "2026-10-15": {
     "dateStr": "Thursday October 15 2026",
-    "editionLabel": "2026年10月15日 (木) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月15日 (木) 号 【全12記事・アーカイブ】",
     "tagline": "特集：【過去の基礎論文解説】AlphaFold 3生体分子予測・音声重視の言語習得法・英学校スマホ禁止・欧州再エネ発電逆転",
     "topLeadSlug": "alphafold-3-biomolecular-structure-prediction",
     "subLeadSlugs": [

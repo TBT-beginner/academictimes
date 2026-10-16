@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-10-16": {
+            "dateStr": "Friday October 16 2026",
+            "editionLabel": "2026年10月16日 (金) 号 【本日付・最新・全12記事】",
+            "tagline": "特集：世界計量会議「うるう秒」廃止とうるう時導入・シャニダール洞窟旧人類投槍・イングランド6地域深刻干ばつ宣言",
+            "topLeadSlug": "leap-second-abolition-leap-hour",
+            "subLeadSlugs": [
+                "neanderthal-shanidar-spear-trauma",
+                "england-six-regions-severe-drought-water-crisis",
+                "indonesia-wildfire-haze-dry-ice-cloud-seeding"
+            ],
+            "leftDispatches": [
+                "made-in-europe-green-subsidies-uk-accord",
+                "brazil-statutory-workweek-reduction-forty-hours",
+                "zero-click-spyware-digital-advertising-exploitation",
+                "sand-tiger-shark-conservation-public-aquariums"
+            ],
+            "rightDigestSlugs": [
+                "uk-chancellor-bank-windfall-tax-fiscal-consolidation",
+                "the-floating-world-art-market-capitalism-ethics",
+                "national-digital-sovereignty-cloud-infrastructure",
+                "satellite-constellation-dual-use-defence-dispute"
+            ]
+        },
         "2026-10-15": {
             "dateStr": "Thursday October 15 2026",
-            "editionLabel": "2026年10月15日 (木) 号 【本日付・最新・全12記事】",
+            "editionLabel": "2026年10月15日 (木) 号 【全12記事・アーカイブ】",
             "tagline": "特集：【過去の基礎論文解説】AlphaFold 3生体分子予測・音声重視の言語習得法・英学校スマホ禁止・欧州再エネ発電逆転",
             "topLeadSlug": "alphafold-3-biomolecular-structure-prediction",
             "subLeadSlugs": [
