@@ -291,7 +291,7 @@ def build_portal_data():
         "2026-10-15": {
             "dateStr": "Thursday October 15 2026",
             "editionLabel": "2026年10月15日 (木) 号 【全12記事・アーカイブ】",
-            "tagline": "特集：【過去の基礎論文解説】AlphaFold 3生体分子予測・音声重視の言語習得法・英学校スマホ禁止・欧州再エネ発電逆転",
+            "tagline": "特集：【過去の基礎論文解説】AlphaFold 3生体分子予測・【過去のニュース深掘り】英学校スマホ禁止＆欧州再エネ逆転・音声重視の言語習得法",
             "topLeadSlug": "alphafold-3-biomolecular-structure-prediction",
             "subLeadSlugs": [
                 "phonetic-focus-foreign-language-acquisition",

@@ -973,7 +973,7 @@ const ARTICLES = [
   {
     "slug": "nobel-physics-hopfield-hinton-machine-learning",
     "category": "science",
-    "category_label": "SCIENCE & COMPUTATIONAL PHYSICS",
+    "category_label": "【過去の基礎論文解説】 SCIENCE & COMPUTATIONAL PHYSICS • 統計力学と人工知能の原点",
     "date": "2026-10-09",
     "title": "Statistical Physics Meets Artificial Intelligence: The Nobel Laureates Who Built Modern Neural Computing",
     "headline_ja": "統計物理学と人工知能の邂逅：現代の深層学習を築いたノーベル物理学賞の原点",
@@ -2623,7 +2623,7 @@ const ARTICLES = [
   {
     "slug": "england-school-chain-phone-free-policy",
     "category": "society",
-    "category_label": "EDUCATION POLICY & ADOLESCENCE • 英国全校スマホ禁止令の拡大",
+    "category_label": "【過去のニュース深掘り】 EDUCATION POLICY & ADOLESCENCE • 英国全校スマホ禁止令の拡大",
     "date": "2026-10-15",
     "title": "Major English Academy Chain Implements Total Smartphone Ban for 35,000 Pupils",
     "headline_ja": "教育社会学：生徒3万5千人を擁する英国学校連合が「完全スマホ持ち込み禁止」に踏み切った理由",
@@ -2638,7 +2638,7 @@ const ARTICLES = [
   {
     "slug": "four-day-workweek-uk-trial-permanent",
     "category": "society",
-    "category_label": "LABOUR ECONOMICS & WELLBEING • 週休3日制の恒久化と労働生産性",
+    "category_label": "【過去のニュース深掘り】 LABOUR ECONOMICS & WELLBEING • 週休3日制の恒久化と労働生産性",
     "date": "2026-10-15",
     "title": "Four-Day Workweek Made Permanent by Majority of Firms in World's Largest Trial",
     "headline_ja": "労働経済学：世界最大規模の実証実験で参加企業の過半数が「週休3日制」を恒久導入",
@@ -2668,7 +2668,7 @@ const ARTICLES = [
   {
     "slug": "renewables-overtake-fossil-fuels-eu-electricity",
     "category": "world",
-    "category_label": "GLOBAL ENERGY & CLIMATE POLICY • 欧州再エネ発電シェアの歴史的逆転",
+    "category_label": "【過去のニュース深掘り】 GLOBAL ENERGY & CLIMATE POLICY • 欧州再エネ発電シェアの歴史的逆転",
     "date": "2026-10-15",
     "title": "Wind and Solar Overtake Fossil Fuels to Generate 30 Percent of EU Electricity",
     "headline_ja": "国際エネルギー：風力・太陽光発電が化石燃料を逆転、EU電力の30％を供給する歴史的転換点",
@@ -2683,7 +2683,7 @@ const ARTICLES = [
   {
     "slug": "eu-ai-act-consumer-rights-enforcement",
     "category": "law",
-    "category_label": "DIGITAL JURISPRUDENCE & AI GOVERNANCE • 欧州AI法と消費者権利保護",
+    "category_label": "【過去のニュース深掘り】 DIGITAL JURISPRUDENCE & AI GOVERNANCE • 欧州AI法と消費者権利保護",
     "date": "2026-10-15",
     "title": "What the EU Artificial Intelligence Act Means for Consumer Safety and Digital Rights",
     "headline_ja": "情報法学：世界初の包括的「欧州AI法」が消費者の安全とプライバシーに与える法的影響",
@@ -2698,7 +2698,7 @@ const ARTICLES = [
   {
     "slug": "us-newspapers-openai-copyright-lawsuit",
     "category": "law",
-    "category_label": "INTELLECTUAL PROPERTY & FAIR USE • AIモデル学習と新聞著作権侵害訴訟",
+    "category_label": "【過去のニュース深掘り】 INTELLECTUAL PROPERTY & FAIR USE • AIモデル学習と新聞著作権侵害訴訟",
     "date": "2026-10-15",
     "title": "US Newspapers Sue OpenAI and Microsoft Over Unauthorized Use of Millions of Articles",
     "headline_ja": "知的財産法：米有力新聞グループがOpenAIとマイクロソフトを提訴、無断記事学習の違法性を主張",
@@ -2713,7 +2713,7 @@ const ARTICLES = [
   {
     "slug": "orbital-samantha-harvey-booker-prize",
     "category": "culture",
-    "category_label": "CONTEMPORARY LITERATURE • ブッカー賞受賞作『Orbital』と宇宙の視点",
+    "category_label": "【過去のニュース深掘り】 CONTEMPORARY LITERATURE • ブッカー賞受賞作『Orbital』と宇宙の視点",
     "date": "2026-10-15",
     "title": "Samantha Harvey's Space Station Novel Orbital Wins Booker Prize 2024",
     "headline_ja": "現代文学論：宇宙ステーションから地球を見つめる小説『Orbital』が2024年ブッカー賞を受賞",
@@ -2728,7 +2728,7 @@ const ARTICLES = [
   {
     "slug": "gen-z-physical-books-library-renaissance",
     "category": "culture",
-    "category_label": "MEDIA ECOLOGY & READING CULTURE • 紙の本への回帰とZ世代の図書館ルネサンス",
+    "category_label": "【過去のニュース深掘り】 MEDIA ECOLOGY & READING CULTURE • 紙の本への回帰とZ世代の図書館ルネサンス",
     "date": "2026-10-15",
     "title": "Gen Z Readers Spark Resurgence in Physical Book Sales and Public Library Visits",
     "headline_ja": "文化社会学：デジタル画面の疲労から「紙の本と図書館」へ回帰するZ世代の読書文化",
@@ -3590,7 +3590,7 @@ const EDITIONS = {
   "2026-10-15": {
     "dateStr": "Thursday October 15 2026",
     "editionLabel": "2026年10月15日 (木) 号 【全12記事・アーカイブ】",
-    "tagline": "特集：【過去の基礎論文解説】AlphaFold 3生体分子予測・音声重視の言語習得法・英学校スマホ禁止・欧州再エネ発電逆転",
+    "tagline": "特集：【過去の基礎論文解説】AlphaFold 3生体分子予測・【過去のニュース深掘り】英学校スマホ禁止＆欧州再エネ逆転・音声重視の言語習得法",
     "topLeadSlug": "alphafold-3-biomolecular-structure-prediction",
     "subLeadSlugs": [
       "phonetic-focus-foreign-language-acquisition",

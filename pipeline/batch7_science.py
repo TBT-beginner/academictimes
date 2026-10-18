@@ -8,7 +8,19 @@ BATCH7_SCIENCE_SENIOR = [
     {
         "slug": "nobel-physics-hopfield-hinton-machine-learning",
         "category": "science",
-        "category_label": "SCIENCE & COMPUTATIONAL PHYSICS",
+        "category_label": "【過去の基礎論文解説】 SCIENCE & COMPUTATIONAL PHYSICS • 統計力学と人工知能の原点",
+        "is_foundational": True,
+        "foundational_reason_title": "【過去の基礎論文解説】なぜ今、高校生がこのノーベル賞受賞研究（2024）を学ぶべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #78350f; margin: 0 0 0.75rem;\">
+          <strong>① 2024年ノーベル物理学賞受賞とAIの数理的起源：</strong><br>
+          ジョン・ホップフィールド氏とジェフリー・ヒントン氏へのノーベル物理学賞授与の背景を解説したNatureの学術論説です。物理学のスピングラス模型（磁性原子の相互作用）やボルツマン分布という熱力学概念が、現代のディープラーニングの骨格を創り出した学問の越境（Interdisciplinary Research）の極致です。
+        </p>
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #78350f; margin: 0;\">
+          <strong>② 情報科学・物理系・文理融合学部の推薦・2次対策に必須：</strong><br>
+          単にAIツールを使う側から、その根底にある数学的・物理的原理を理解する側へステップアップするための決定的な教養テキストです。
+        </p>
+        """,
         "date": "2026-10-09",
         "title": "Statistical Physics Meets Artificial Intelligence: The Nobel Laureates Who Built Modern Neural Computing",
         "headline_ja": "統計物理学と人工知能の邂逅：現代の深層学習を築いたノーベル物理学賞の原点",

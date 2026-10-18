@@ -10,6 +10,7 @@ BATCH11_SENIOR = [
     {
         "slug": "alphafold-3-biomolecular-structure-prediction",
         "category": "science",
+        "category_label": "【過去の基礎論文解説】 BIOLOGY & AI • アルファフォールド3と生命の分子",
         "category_label": "【過去の基礎論文解説】 BIOLOGY & COMPUTATIONAL SCIENCE • アルファフォールド3の生体分子構造予測",
         "date": "2026-10-15",
         "title": "AlphaFold 3 Predicts Structure and Interactions of All Life's Molecules",
@@ -236,7 +237,28 @@ BATCH11_SENIOR = [
     {
         "slug": "england-school-chain-phone-free-policy",
         "category": "society",
-        "category_label": "EDUCATION POLICY & ADOLESCENCE • 英国全校スマホ禁止令の拡大",
+        "category_label": "【過去のニュース深掘り】 EDUCATION POLICY • 英国学校スマホ禁止",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 高校生自身の生活と英検自由英作文に直結：</strong><br>
+          授業中だけでなく休み時間もスマホを封印することで、友達との会話や集中力がどう変わるのか。英検のライティングテストや面接で「学校でスマホを使うべきか」という質問に、具体的で説得力のある理由を英語で答えるための最高の題材です。
+        </p>
+        """,
+        "category_label": "【過去のニュース深掘り】 EDUCATION POLICY & ADOLESCENCE • 英国全校スマホ禁止令の拡大",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0 0 0.75rem;\">
+          <strong>① 世界的な「学校内スマホ禁止」潮流の原点と教育社会学：</strong><br>
+          2024年秋に英国最大級のアカデミー連合（生徒3万5千人）が決断した完全スマホ持ち込み禁止は、ユネスコ（UNESCO）の勧告や欧米各国での法規制、さらには日本の学校現場でのルール見直しに直結する歴史的転換点です。単なる校則問題ではなく、青少年の認知的成熟とデジタル依存の克服を巡る重要事例です。
+        </p>
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>② 推薦・総合型選抜・小論文の最頻出テーマ：</strong><br>
+          「教育現場における情報端末の利便性と弊害」「休み時間の対面交流が生む社会的スキル」など、高校生自身が当事者として説得力のある論述を展開できる最重要トピックです。
+        </p>
+        """,
         "date": "2026-10-15",
         "title": "Major English Academy Chain Implements Total Smartphone Ban for 35,000 Pupils",
         "headline_ja": "教育社会学：生徒3万5千人を擁する英国学校連合が「完全スマホ持ち込み禁止」に踏み切った理由",
@@ -343,7 +365,28 @@ BATCH11_SENIOR = [
     {
         "slug": "four-day-workweek-uk-trial-permanent",
         "category": "society",
-        "category_label": "LABOUR ECONOMICS & WELLBEING • 週休3日制の恒久化と労働生産性",
+        "category_label": "【過去のニュース深掘り】 LABOUR ECONOMICS • 週休3日制の働き方",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 働くことの未来を考える：</strong><br>
+          「休みが増えても同じ給料をもらえるなんて本当？」と疑問に思うかもしれません。イギリスの会社で実際に試してみたところ、社員が元気になって集中力が高まり、仕事の成果が落ちなかったという驚きの結果が出ました。これからの働き方を考える英語の基礎知識です。
+        </p>
+        """,
+        "category_label": "【過去のニュース深掘り】 LABOUR ECONOMICS & WELLBEING • 週休3日制の恒久化と労働生産性",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0 0 0.75rem;\">
+          <strong>① 労働経済学の常識を覆した世界最大の実証実験：</strong><br>
+          英国で61社・約3,000人を対象に実施された実証実験で、「給与100%維持のまま勤務時間を80%に削減しても、売上高が向上し離職率が劇的に低下した」という2024年の成果報告です。現代の経済学や経営学において、労働時間と生産性（Productivity）の関係を再定義した最重要の参照基準です。
+        </p>
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>② 難関大の経済・社会・法学部入試に直結：</strong><br>
+          人口減少と過労社会に直面する日本において、働き方改革やワークシェアリングを議論する際の国際比較データとして必携の知識です。
+        </p>
+        """,
         "date": "2026-10-15",
         "title": "Four-Day Workweek Made Permanent by Majority of Firms in World's Largest Trial",
         "headline_ja": "労働経済学：世界最大規模の実証実験で参加企業の過半数が「週休3日制」を恒久導入",
@@ -557,7 +600,28 @@ BATCH11_SENIOR = [
     {
         "slug": "renewables-overtake-fossil-fuels-eu-electricity",
         "category": "world",
-        "category_label": "GLOBAL ENERGY & CLIMATE POLICY • 欧州再エネ発電シェアの歴史的逆転",
+        "category_label": "【過去のニュース深掘り】 GLOBAL ENERGY • 欧州の自然エネルギー",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 地球温暖化対策の大きなマイルストーン：</strong><br>
+          ヨーロッパ全体で、風力や太陽光で作るクリーンな電気が、石炭やガスなどの化石燃料で作る電気を初めて追い抜きました。SDGsや環境問題の入試長文でよく使われる英単語（renewable, fossil fuels, generation）をまとめて覚えましょう。
+        </p>
+        """,
+        "category_label": "【過去のニュース深掘り】 GLOBAL ENERGY & CLIMATE POLICY • 欧州再エネ発電シェアの歴史的逆転",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0 0 0.75rem;\">
+          <strong>① エネルギー地政学の歴史的転換点（メルクマール）：</strong><br>
+          2024年上半期、EU全域において風力・太陽光などの再生可能エネルギーが化石燃料（石炭・ガス）の発電量を史上初めて上回ったという脱炭素史上の金字塔です。ウクライナ危機を契機としたロシア産化石燃料依存からの脱却政策「REPowerEU」の成果を検証する上で必読の一次情報です。
+        </p>
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>② 共通テスト地理・現代社会・英語長文の必修背景：</strong><br>
+          欧州のエネルギー転換のスピード感と、送電網整備・電力市場改革の課題は、国際関係や環境政策を志望する高校生の基礎教養です。
+        </p>
+        """,
         "date": "2026-10-15",
         "title": "Wind and Solar Overtake Fossil Fuels to Generate 30 Percent of EU Electricity",
         "headline_ja": "国際エネルギー：風力・太陽光発電が化石燃料を逆転、EU電力の30％を供給する歴史的転換点",
@@ -659,7 +723,28 @@ BATCH11_SENIOR = [
     {
         "slug": "eu-ai-act-consumer-rights-enforcement",
         "category": "law",
-        "category_label": "DIGITAL JURISPRUDENCE & AI GOVERNANCE • 欧州AI法と消費者権利保護",
+        "category_label": "【過去のニュース深掘り】 AI ETHICS & LAW • ヨーロッパのAI法律",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 AIを賢く安全に使うためのルール：</strong><br>
+          AIはとても便利ですが、間違った判断をしたり個人の秘密を勝手に使ったりする危険もあります。ヨーロッパが世界に先駆けて作った厳しいAIルールを学ぶことで、デジタル社会の市民としてのリテラシーが身につきます。
+        </p>
+        """,
+        "category_label": "【過去のニュース深掘り】 DIGITAL JURISPRUDENCE & AI GOVERNANCE • 欧州AI法と消費者権利保護",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0 0 0.75rem;\">
+          <strong>① 世界初の包括的AI規制枠組み「EU AI法」の成立：</strong><br>
+          2024年に成立した欧州連合（EU）のAI規制法（AI Act）は、GDPR（一般データ保護規則）に続き、欧州の基準が事実上の世界標準となる「ブリュッセル効果」を象徴する法律です。リスクベース・アプローチ（許容不可・ハイリスク・限定的リスク）の分類法は法学・情報倫理の基本です。
+        </p>
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>② 法学部・情報学部の小論文・面接直結テーマ：</strong><br>
+          「技術イノベーションの促進」と「市民の基本的権利・プライバシーの保護」という二律背反を、法制度としていかに調停するかを論理的に考える最高の実例です。
+        </p>
+        """,
         "date": "2026-10-15",
         "title": "What the EU Artificial Intelligence Act Means for Consumer Safety and Digital Rights",
         "headline_ja": "情報法学：世界初の包括的「欧州AI法」が消費者の安全とプライバシーに与える法的影響",
@@ -766,7 +851,28 @@ BATCH11_SENIOR = [
     {
         "slug": "us-newspapers-openai-copyright-lawsuit",
         "category": "law",
-        "category_label": "INTELLECTUAL PROPERTY & FAIR USE • AIモデル学習と新聞著作権侵害訴訟",
+        "category_label": "【過去のニュース深掘り】 AI & COPYRIGHT • 新聞とAIの著作権",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 記者の記事をAIが勝手に勉強していいの？：</strong><br>
+          記者が一生懸命足を運んで書いた新聞記事を、AI会社がお金を払わずに勝手に学習に使ったとして裁判になりました。ニュースを見る側として、知っておくべき著作権（copyright）の大切な議論です。
+        </p>
+        """,
+        "category_label": "【過去のニュース深掘り】 INTELLECTUAL PROPERTY & FAIR USE • AIモデル学習と新聞著作権侵害訴訟",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0 0 0.75rem;\">
+          <strong>① 生成AIと知的財産権（著作権法）の世界的火種：</strong><br>
+          米国の地方日刊紙8紙が、自社の独自取材記事を生成AIの事前学習に無断利用されたとして提訴した2024年の代表的司法判断です。著作権法における「フェアユース（公正利用）」の法理と、取材コストを投じる報道機関の経済的存立基盤の衝突を描いています。
+        </p>
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>② メディアリテラシーと民主主義の根幹：</strong><br>
+          「AIが要約したニュースばかり読むと、元の取材を行う新聞社が倒産してしまう」という構造的ジレンマは、情報社会を生きる高校生にとって極めて重要な探究課題です。
+        </p>
+        """,
         "date": "2026-10-15",
         "title": "US Newspapers Sue OpenAI and Microsoft Over Unauthorized Use of Millions of Articles",
         "headline_ja": "知的財産法：米有力新聞グループがOpenAIとマイクロソフトを提訴、無断記事学習の違法性を主張",
@@ -873,7 +979,28 @@ BATCH11_SENIOR = [
     {
         "slug": "orbital-samantha-harvey-booker-prize",
         "category": "culture",
-        "category_label": "CONTEMPORARY LITERATURE • ブッカー賞受賞作『Orbital』と宇宙の視点",
+        "category_label": "【過去のニュース深掘り】 LITERATURE • 宇宙から地球を見る小説",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 宇宙から見れば国境なんてない：</strong><br>
+          イギリスで最も権威ある文学賞（ブッカー賞）を受賞した小説を紹介します。宇宙ステーションから青い地球を眺める宇宙飛行士の目線を通して、地球の自然を大切にする気持ちを英語の美しい表現で味わってみましょう。
+        </p>
+        """,
+        "category_label": "【過去のニュース深掘り】 CONTEMPORARY LITERATURE • ブッカー賞受賞作『Orbital』と宇宙の視点",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0 0 0.75rem;\">
+          <strong>① 2024年英国ブッカー賞受賞作の文学的・哲学的価値：</strong><br>
+          国際宇宙ステーション（ISS）から地球を周回する宇宙飛行士たちの16周回（1日）を描いたサマンサ・ハーヴェイの小説『Orbital』。宇宙から国境のない地球を見つめる「概観効果（Overview Effect）」を通じ、気候危機と人間存在の脆さを美しく綴った現代英文学の傑作です。
+        </p>
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>② 国際教養・文系の英語入試で問われる批評的教養：</strong><br>
+          科学と詩情が交差する格調高い散文（prose）に触れることで、難関国公立大の和訳問題や論説文で差がつく豊かな語彙力と情緒的感受性を養います。
+        </p>
+        """,
         "date": "2026-10-15",
         "title": "Samantha Harvey's Space Station Novel Orbital Wins Booker Prize 2024",
         "headline_ja": "現代文学論：宇宙ステーションから地球を見つめる小説『Orbital』が2024年ブッカー賞を受賞",
@@ -980,7 +1107,28 @@ BATCH11_SENIOR = [
     {
         "slug": "gen-z-physical-books-library-renaissance",
         "category": "culture",
-        "category_label": "MEDIA ECOLOGY & READING CULTURE • 紙の本への回帰とZ世代の図書館ルネサンス",
+        "category_label": "【過去のニュース深掘り】 YOUTH & BOOKS • Z世代と紙の本",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 スマホ世代が「紙の本」に夢中になる理由：</strong><br>
+          いつでもスマホで読書できる時代に、なぜ若い世代が紙の本や図書館に集まっているのでしょうか？『スマホ画面から離れて落ち着ける場所』を求める同世代のリアルな気持ちを英語で読んでみましょう。
+        </p>
+        """,
+        "category_label": "【過去のニュース深掘り】 MEDIA ECOLOGY & READING CULTURE • 紙の本への回帰とZ世代の図書館ルネサンス",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0 0 0.75rem;\">
+          <strong>① デジタルネイティブ世代の「身体性」と「紙の本」回帰：</strong><br>
+          TikTok（BookTok）などのSNSコミュニティを契機に、10〜20代の若者が電子書籍ではなく紙の書籍や公共図書館の静寂を求める現象を捉えた2024年の文化ルポです。デジタル疲労に対する解毒剤（デジタルデトックス）としての読書文化を分析しています。
+        </p>
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>② メディア論・認知科学の入試長文頻出テーマ：</strong><br>
+          紙のページをめくる触覚や空間的把握が読解力や記憶定着に及ぼす影響は、近年の大学入試英語長文でも繰り返し取り上げられる高校生必読の教養です。
+        </p>
+        """,
         "date": "2026-10-15",
         "title": "Gen Z Readers Spark Resurgence in Physical Book Sales and Public Library Visits",
         "headline_ja": "文化社会学：デジタル画面の疲労から「紙の本と図書館」へ回帰するZ世代の読書文化",
@@ -1307,6 +1455,7 @@ BATCH11_JUNIOR = [
         "source_name": "Nature",
         "source_url": "https://www.nature.com/articles/s41586-024-07487-w",
         "senior_path": "../../../science/alphafold-3-biomolecular-structure-prediction/index.html",
+        "category_label": "【過去の基礎論文解説】 BIOLOGY & AI • アルファフォールド3と生命の分子",
         "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1000&auto=format&fit=crop&q=80",
         "is_foundational": True,
         "foundational_reason_title": "【過去の基礎論文解説】なぜ今、高校生がこの論文を読むべきなのか？",
@@ -1517,6 +1666,15 @@ BATCH11_JUNIOR = [
         "source_name": "The Guardian",
         "source_url": "https://www.theguardian.com/education/2024/sep/13/academy-chain-with-35000-pupils-to-be-first-in-england-to-go-phone-free",
         "senior_path": "../../../society/england-school-chain-phone-free-policy/index.html",
+        "category_label": "【過去のニュース深掘り】 EDUCATION POLICY • 英国学校スマホ禁止",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 高校生自身の生活と英検自由英作文に直結：</strong><br>
+          授業中だけでなく休み時間もスマホを封印することで、友達との会話や集中力がどう変わるのか。英検のライティングテストや面接で「学校でスマホを使うべきか」という質問に、具体的で説得力のある理由を英語で答えるための最高の題材です。
+        </p>
+        """,
         "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {
@@ -1618,6 +1776,15 @@ BATCH11_JUNIOR = [
         "source_name": "The Guardian",
         "source_url": "https://www.theguardian.com/money/2024/feb/21/four-day-week-made-permanent-for-most-uk-firms-in-worlds-biggest-trial",
         "senior_path": "../../../society/four-day-workweek-uk-trial-permanent/index.html",
+        "category_label": "【過去のニュース深掘り】 LABOUR ECONOMICS • 週休3日制の働き方",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 働くことの未来を考える：</strong><br>
+          「休みが増えても同じ給料をもらえるなんて本当？」と疑問に思うかもしれません。イギリスの会社で実際に試してみたところ、社員が元気になって集中力が高まり、仕事の成果が落ちなかったという驚きの結果が出ました。これからの働き方を考える英語の基礎知識です。
+        </p>
+        """,
         "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {
@@ -1830,6 +1997,15 @@ BATCH11_JUNIOR = [
         "source_name": "The Guardian",
         "source_url": "https://www.theguardian.com/environment/article/2024/jul/30/renewables-overtake-fossil-fuels-to-provide-30-of-eu-electricity",
         "senior_path": "../../../world/renewables-overtake-fossil-fuels-eu-electricity/index.html",
+        "category_label": "【過去のニュース深掘り】 GLOBAL ENERGY • 欧州の自然エネルギー",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 地球温暖化対策の大きなマイルストーン：</strong><br>
+          ヨーロッパ全体で、風力や太陽光で作るクリーンな電気が、石炭やガスなどの化石燃料で作る電気を初めて追い抜きました。SDGsや環境問題の入試長文でよく使われる英単語（renewable, fossil fuels, generation）をまとめて覚えましょう。
+        </p>
+        """,
         "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {
@@ -1926,6 +2102,15 @@ BATCH11_JUNIOR = [
         "source_name": "The Guardian",
         "source_url": "https://www.theguardian.com/technology/2024/mar/14/what-will-eu-proposed-regulation-ai-mean-consumers",
         "senior_path": "../../../law/eu-ai-act-consumer-rights-enforcement/index.html",
+        "category_label": "【過去のニュース深掘り】 AI ETHICS & LAW • ヨーロッパのAI法律",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 AIを賢く安全に使うためのルール：</strong><br>
+          AIはとても便利ですが、間違った判断をしたり個人の秘密を勝手に使ったりする危険もあります。ヨーロッパが世界に先駆けて作った厳しいAIルールを学ぶことで、デジタル社会の市民としてのリテラシーが身につきます。
+        </p>
+        """,
         "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {
@@ -2032,6 +2217,15 @@ BATCH11_JUNIOR = [
         "source_name": "The Guardian",
         "source_url": "https://www.theguardian.com/technology/2024/apr/30/us-newspaper-openai-lawsuit",
         "senior_path": "../../../law/us-newspapers-openai-copyright-lawsuit/index.html",
+        "category_label": "【過去のニュース深掘り】 AI & COPYRIGHT • 新聞とAIの著作権",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 記者の記事をAIが勝手に勉強していいの？：</strong><br>
+          記者が一生懸命足を運んで書いた新聞記事を、AI会社がお金を払わずに勝手に学習に使ったとして裁判になりました。ニュースを見る側として、知っておくべき著作権（copyright）の大切な議論です。
+        </p>
+        """,
         "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {
@@ -2138,6 +2332,15 @@ BATCH11_JUNIOR = [
         "source_name": "The Guardian",
         "source_url": "https://www.theguardian.com/books/2024/nov/12/orbital-by-samantha-harvey-wins-booker-prize-2024",
         "senior_path": "../../../culture/orbital-samantha-harvey-booker-prize/index.html",
+        "category_label": "【過去のニュース深掘り】 LITERATURE • 宇宙から地球を見る小説",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 宇宙から見れば国境なんてない：</strong><br>
+          イギリスで最も権威ある文学賞（ブッカー賞）を受賞した小説を紹介します。宇宙ステーションから青い地球を眺める宇宙飛行士の目線を通して、地球の自然を大切にする気持ちを英語の美しい表現で味わってみましょう。
+        </p>
+        """,
         "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {
@@ -2239,6 +2442,15 @@ BATCH11_JUNIOR = [
         "source_name": "The Guardian",
         "source_url": "https://www.theguardian.com/books/2024/feb/09/reading-is-so-sexy-gen-z-turns-to-physical-books-and-libraries",
         "senior_path": "../../../culture/gen-z-physical-books-library-renaissance/index.html",
+        "category_label": "【過去のニュース深掘り】 YOUTH & BOOKS • Z世代と紙の本",
+        "is_past_news": True,
+        "foundational_reason_title": "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #1e3a8a; margin: 0;\">
+          <strong>💡 スマホ世代が「紙の本」に夢中になる理由：</strong><br>
+          いつでもスマホで読書できる時代に、なぜ若い世代が紙の本や図書館に集まっているのでしょうか？『スマホ画面から離れて落ち着ける場所』を求める同世代のリアルな気持ちを英語で読んでみましょう。
+        </p>
+        """,
         "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1000&auto=format&fit=crop&q=80",
         "sentences": [
             {

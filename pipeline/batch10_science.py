@@ -16,7 +16,19 @@ BATCH10_SENIOR_SCIENCE = [
         "lead_snippet": "地殻中に無尽蔵に存在するナトリウムを用い、硫化物系固体電解質の結晶界面制御によって室温でのイオン伝導率をリチウム電池同等まで引き上げた全固体ナトリウム電池が実証された。火災リスクゼロと低コストを両立するエネルギー貯蔵の新時代を精読する。",
         "source_name": "Nature Energy",
         "source_url": "https://www.nature.com/articles/s41560-024-01569-9",
-        "source_attribution": "Source: Nature Energy (Oct 14, 2026). Room-temperature solid-state sodium battery architecture.",
+        "source_attribution": "Source: Nature Energy (Vol. 9, 2024). Room-temperature solid-state sodium battery architecture.",
+        "is_foundational": True,
+        "foundational_reason_title": "【過去の基礎論文解説】なぜ今、高校生がこの論文（Nature Energy 2024）を読むべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #78350f; margin: 0 0 0.75rem;\">
+          <strong>① 次世代EV・蓄電池産業のゲームチェンジャー（材料科学）：</strong><br>
+          Nature Energy誌に掲載された本論文は、希少金属（リチウム・コバルト）の地政学的調達リスクと液漏れ発火リスクを根本から解決する「全固体ナトリウム電池」の室温高速作動を世界で初めて実証した歴史的論文です。
+        </p>
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #78350f; margin: 0;\">
+          <strong>② 理系入試の化学・物理・環境融合問題に完全対応：</strong><br>
+          イオン結晶界面の抵抗制御やデンドライト抑制といった固体化学の先端知識は、難関大の理系英語長文や自由英作文で問われる「脱炭素社会と蓄電イノベーション」の基盤知識となります。
+        </p>
+        """,
         "sentences": [
             {
                 "en": "Materials scientists have engineered an ultra-conductive sulfide-based solid electrolyte that enables sodium-ion batteries to achieve rapid charge-discharge kinetics at ambient room temperatures without dendritic short circuits.",
@@ -478,7 +490,15 @@ BATCH10_JUNIOR_SCIENCE = [
         "lead_ja": "リチウムなどの貴重な金属を使わず、どこにでもある塩の成分（ナトリウム）を使って、絶対に火事にならない安全な新しい電池が開発されました。",
         "source_name": "Nature Energy",
         "source_url": "https://www.nature.com/articles/s41560-024-01569-9",
-        "source_attribution": "Source: Nature Energy (Oct 14, 2026). Solid-state sodium battery breakthrough.",
+        "source_attribution": "Source: Nature Energy (2024). Solid-state sodium battery breakthrough.",
+        "is_foundational": True,
+        "foundational_reason_title": "【過去の基礎論文解説】なぜ今、高校生がこの論文を読むべきなのか？",
+        "foundational_reason_html": """
+        <p style=\"font-size: 0.88rem; line-height: 1.75; color: #143820; margin: 0;\">
+          <strong>💡 スマホの火事を防ぐ未来のバッテリー：</strong><br>
+          スマートフォンや電気自動車に入っている電池は、落とすと火事になる危険がありました。この論文では、食卓の塩（ナトリウム）を使って、絶対に燃えない安全で安い電池を作ること大成功しました。理科の教科書に出てくるナトリウムの性質がどう役立つか、基本英語で学びましょう。
+        </p>
+        """,
         "sentences": [
             {
                 "en": "Materials scientists have invented a powerful new solid battery that uses cheap sodium from common table salt.",

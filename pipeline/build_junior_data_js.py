@@ -117,7 +117,7 @@ EDITIONS_DATA = {
     "2026-10-15": {
         "dateStr": "Thursday October 15 2026",
         "editionLabel": "2026年10月15日 (木) 号 【全12記事・アーカイブ】",
-        "tagline": "特集：【過去の基礎論文解説】ノーベル賞AI「AlphaFold 3」・英語の音を聞く力・学校のスマホ禁止・ヨーロッパの自然エネルギー",
+        "tagline": "特集：【過去の基礎論文解説】ノーベル賞AI「AlphaFold 3」・【過去のニュース深掘り】学校のスマホ禁止・英語の音を聞く力・ヨーロッパの自然エネルギー",
         "topLeadSlug": "alphafold-3-biomolecular-structure-prediction",
         "subLeadSlugs": ["phonetic-focus-foreign-language-acquisition", "england-school-chain-phone-free-policy", "renewables-overtake-fossil-fuels-eu-electricity"],
         "leftDispatches": ["four-day-workweek-uk-trial-permanent", "eu-ai-act-consumer-rights-enforcement", "mont-blanc-glacier-melt-elevation-loss", "smart-glasses-parliament-privacy-controversy"],

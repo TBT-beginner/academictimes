@@ -2480,7 +2480,7 @@ const JUNIOR_ARTICLES = [
   {
     "slug": "alphafold-3-biomolecular-structure-prediction",
     "category": "science",
-    "category_label": "SCIENCE",
+    "category_label": "【過去の基礎論文解説】 BIOLOGY & AI • アルファフォールド3と生命の分子",
     "date": "2026-10-15",
     "title": "AlphaFold 3: How AI Predicts the Shapes of Life's Tiny Molecules",
     "headline_ja": "AIが生命の分子の形を予測する：ノーベル賞に輝いたAlphaFold 3のすごい力",
@@ -2510,7 +2510,7 @@ const JUNIOR_ARTICLES = [
   {
     "slug": "england-school-chain-phone-free-policy",
     "category": "society",
-    "category_label": "SOCIETY",
+    "category_label": "【過去のニュース深掘り】 EDUCATION POLICY • 英国学校スマホ禁止",
     "date": "2026-10-15",
     "title": "Putting Phones Away: 35,000 British Students Go Phone-Free at School",
     "headline_ja": "学校ではスマホをお休み：イギリスで3万5千人の生徒が完全スマホ禁止に",
@@ -2525,7 +2525,7 @@ const JUNIOR_ARTICLES = [
   {
     "slug": "four-day-workweek-uk-trial-permanent",
     "category": "society",
-    "category_label": "SOCIETY",
+    "category_label": "【過去のニュース深掘り】 LABOUR ECONOMICS • 週休3日制の働き方",
     "date": "2026-10-15",
     "title": "A Three-Day Weekend Forever: The Success of the Four-Day Workweek",
     "headline_ja": "ずっと週休3日制に：イギリス企業の大規模テストで大成功した働き方",
@@ -2555,7 +2555,7 @@ const JUNIOR_ARTICLES = [
   {
     "slug": "renewables-overtake-fossil-fuels-eu-electricity",
     "category": "world",
-    "category_label": "WORLD",
+    "category_label": "【過去のニュース深掘り】 GLOBAL ENERGY • 欧州の自然エネルギー",
     "date": "2026-10-15",
     "title": "Clean Energy Triumph: Wind and Solar Beat Fossil Fuels Across Europe",
     "headline_ja": "クリーンエネルギーの勝利：ヨーロッパで風力と太陽光が化石燃料を逆転",
@@ -2570,7 +2570,7 @@ const JUNIOR_ARTICLES = [
   {
     "slug": "eu-ai-act-consumer-rights-enforcement",
     "category": "law",
-    "category_label": "LAW",
+    "category_label": "【過去のニュース深掘り】 AI ETHICS & LAW • ヨーロッパのAI法律",
     "date": "2026-10-15",
     "title": "Rules for Robots: How the New EU AI Law Protects Everyday People",
     "headline_ja": "AIのための世界初ルール：欧州AI法が私たちの安全とプライバシーを守る方法",
@@ -2585,7 +2585,7 @@ const JUNIOR_ARTICLES = [
   {
     "slug": "us-newspapers-openai-copyright-lawsuit",
     "category": "law",
-    "category_label": "LAW",
+    "category_label": "【過去のニュース深掘り】 AI & COPYRIGHT • 新聞とAIの著作権",
     "date": "2026-10-15",
     "title": "Writers vs. AI: American Newspapers Take Tech Companies to Court",
     "headline_ja": "記者とAIの戦い：アメリカの新聞社が大手テック企業を裁判所に訴えた理由",
@@ -2600,7 +2600,7 @@ const JUNIOR_ARTICLES = [
   {
     "slug": "orbital-samantha-harvey-booker-prize",
     "category": "culture",
-    "category_label": "CULTURE",
+    "category_label": "【過去のニュース深掘り】 LITERATURE • 宇宙から地球を見る小説",
     "date": "2026-10-15",
     "title": "A Day in Space: The Short Novel That Won the Famous Booker Prize",
     "headline_ja": "宇宙での1日：名誉あるブッカー賞に輝いた136ページの短い小説『Orbital』",
@@ -2615,7 +2615,7 @@ const JUNIOR_ARTICLES = [
   {
     "slug": "gen-z-physical-books-library-renaissance",
     "category": "culture",
-    "category_label": "CULTURE",
+    "category_label": "【過去のニュース深掘り】 YOUTH & BOOKS • Z世代と紙の本",
     "date": "2026-10-15",
     "title": "Turning Real Pages: Why Young Readers Are Falling in Love with Paper Books",
     "headline_ja": "本物のページをめくろう：Z世代の若者が紙の本や図書館に夢中な理由",
@@ -3475,7 +3475,7 @@ const JUNIOR_EDITIONS = {
   "2026-10-15": {
     "dateStr": "Thursday October 15 2026",
     "editionLabel": "2026年10月15日 (木) 号 【全12記事・アーカイブ】",
-    "tagline": "特集：【過去の基礎論文解説】ノーベル賞AI「AlphaFold 3」・英語の音を聞く力・学校のスマホ禁止・ヨーロッパの自然エネルギー",
+    "tagline": "特集：【過去の基礎論文解説】ノーベル賞AI「AlphaFold 3」・【過去のニュース深掘り】学校のスマホ禁止・英語の音を聞く力・ヨーロッパの自然エネルギー",
     "topLeadSlug": "alphafold-3-biomolecular-structure-prediction",
     "subLeadSlugs": [
       "phonetic-focus-foreign-language-acquisition",

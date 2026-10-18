@@ -658,13 +658,29 @@ def build_article_html(art):
     
     s = art["sentences"]
     foundational_box = ""
-    if art.get("is_foundational"):
-        f_title = art.get("foundational_reason_title", "【過去の基礎論文解説】なぜ今、高校生がこの論文を読むべきなのか？")
+    is_past_news = art.get("is_past_news") or ("過去のニュース深掘り" in art.get("category_label", ""))
+    is_foundational = art.get("is_foundational") or ("過去の基礎論文解説" in art.get("category_label", ""))
+    if is_past_news or is_foundational:
+        if is_past_news:
+            icon = "📰"
+            border_col = "#2563eb"
+            bg_col = "#eff6ff"
+            text_col = "#1e40af"
+            shadow_col = "rgba(37,99,235,0.08)"
+            default_title = "【過去のニュース深掘り】なぜ今、高校生がこのニュースを振り返るべきなのか？"
+        else:
+            icon = "🏛️"
+            border_col = "#d97706"
+            bg_col = "#fffbeb"
+            text_col = "#92400e"
+            shadow_col = "rgba(217,119,6,0.08)"
+            default_title = "【過去の基礎論文解説】なぜ今、高校生がこの論文を読むべきなのか？"
+        f_title = art.get("foundational_reason_title", default_title)
         f_html = art.get("foundational_reason_html", "")
         foundational_box = f"""
-        <div class="foundational-notice-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: #fffbeb; border: 2px solid #d97706; border-radius: 8px; box-shadow: 0 2px 4px rgba(217,119,6,0.08);">
-          <div style="font-weight: 800; color: #92400e; font-size: 1.05rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-            <span style="font-size: 1.3rem;">🏛️</span>
+        <div class="foundational-notice-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: {bg_col}; border: 2px solid {border_col}; border-radius: 8px; box-shadow: 0 2px 4px {shadow_col};">
+          <div style="font-weight: 800; color: {text_col}; font-size: 1.05rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 1.3rem;">{icon}</span>
             <span>{f_title}</span>
           </div>
           {f_html}
