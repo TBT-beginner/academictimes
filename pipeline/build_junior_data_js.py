@@ -78,9 +78,36 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-19": {
+        "dateStr": "Monday October 19 2026",
+        "editionLabel": "2026年10月19日 (月) 号 【本日付・最新・全12記事】",
+        "tagline": "特集：森の秘薬イボガを守れ・住宅断熱と光熱費・やり直すチャンスを支える刑務所教育・リスボンとミラノの住宅デモ",
+        "topLeadSlug": "gabon-iboga-sacred-plant-addiction-treatment-biopiracy",
+        "subLeadSlugs": ["heat-pumps-building-insulation-energy-transition-study", "penal-reform-prison-overcrowding-rehabilitation-barriers", "european-housing-crisis-short-term-rentals-unrest"],
+        "leftDispatches": ["public-transit-acoustic-etiquette-civic-campaign", "world-bank-ai-governance-developing-economies", "industrial-energy-tariffs-green-steelmaking-subsidies", "iot-botnet-cyber-threats-financial-clearing-houses"],
+        "rightDigestSlugs": ["climate-communication-fatalism-constructive-agency", "sarah-forbes-bonetta-biography-victorian-empire", "afrobeats-performance-culture-lagos-hype-phenomenon", "australian-literature-tim-winton-national-canon"]
+    },
+    "2026-10-18": {
+        "dateStr": "Sunday October 18 2026",
+        "editionLabel": "2026年10月18日 (日) 号 【全12記事・アーカイブ】",
+        "tagline": "特集：火星の月フォボス探査MMX・8年前の血液検査で腸の難病発見・職場の熱中症対策・サルデーニャ島の長寿の秘密",
+        "topLeadSlug": "japan-jaxa-mmx-phobos-sample-return-mission",
+        "subLeadSlugs": ["inflammatory-bowel-disease-blood-biomarkers-early-prediction", "occupational-heat-stress-statutory-workplace-protections", "sardinian-blue-zone-female-centenarians-longevity"],
+        "leftDispatches": ["youth-unemployment-neet-welfare-reform-review", "epa-pfas-forever-chemicals-regulatory-backtrack", "non-consensual-deepfakes-criminalization-european-parliament", "uk-eu-cross-border-law-enforcement-pact"],
+        "rightDigestSlugs": ["shakespeare-authorship-edward-iii-computational-stylistics", "medieval-romance-origins-modern-fantasy-literature", "wikipedia-human-curation-ai-content-pollution", "autonomous-ai-worms-cybersecurity-vulnerabilities"]
+    },
+    "2026-10-17": {
+        "dateStr": "Saturday October 17 2026",
+        "editionLabel": "2026年10月17日 (土) 号 【全12記事・アーカイブ】",
+        "tagline": "特集：パフィン鳥の生き抜く力・ミツバチと野生ハナバチ・若者応援の職業訓練・ハリケーンから身を守る防災",
+        "topLeadSlug": "puffin-seabird-climate-resilience-hope",
+        "subLeadSlugs": ["honeybees-competition-wild-pollinators-biodiversity", "workforce-retraining-youth-apprenticeships-levy", "hurricane-trudy-pacific-coastal-resilience"],
+        "leftDispatches": ["nhs-medical-records-privacy-breach-dismissals", "us-corporate-lobbying-eu-deforestation-regulation", "nhs-hospital-trusts-reject-palantir-data-platform", "oecd-warns-populist-economic-policies-cost-of-living"],
+        "rightDigestSlugs": ["isabel-allende-premio-planeta-pseudonym", "as-byatt-literary-archive-british-library", "bespoke-coachbuilding-luxury-automotive-craftsmanship", "uk-ai-safety-institute-counter-extremism-testing"]
+    },
     "2026-10-16": {
         "dateStr": "Friday October 16 2026",
-        "editionLabel": "2026年10月16日 (金) 号 【本日付・最新・全12記事】",
+        "editionLabel": "2026年10月16日 (金) 号 【全12記事・アーカイブ】",
         "tagline": "特集：世界計量会議「うるう秒」廃止とうるう時導入・シャニダール洞窟旧人類投槍・イングランド6地域深刻干ばつ宣言",
         "topLeadSlug": "leap-second-abolition-leap-hour",
         "subLeadSlugs": ["neanderthal-shanidar-spear-trauma", "england-six-regions-severe-drought-water-crisis", "indonesia-wildfire-haze-dry-ice-cloud-seeding"],

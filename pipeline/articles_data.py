@@ -2057,6 +2057,21 @@ try:
         if _art.get("slug") not in _existing_slugs:
             ARTICLES.append(_art)
             _existing_slugs.add(_art.get("slug"))
+    from batch13_articles_data import BATCH13_SENIOR
+    for _art in BATCH13_SENIOR:
+        if _art.get("slug") not in _existing_slugs:
+            ARTICLES.append(_art)
+            _existing_slugs.add(_art.get("slug"))
+    from batch14_articles_data import BATCH14_SENIOR
+    for _art in BATCH14_SENIOR:
+        if _art.get("slug") not in _existing_slugs:
+            ARTICLES.append(_art)
+            _existing_slugs.add(_art.get("slug"))
+    from batch15_articles_data import BATCH15_SENIOR
+    for _art in BATCH15_SENIOR:
+        if _art.get("slug") not in _existing_slugs:
+            ARTICLES.append(_art)
+            _existing_slugs.add(_art.get("slug"))
 except ImportError:
     pass
 
