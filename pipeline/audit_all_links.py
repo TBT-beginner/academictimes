@@ -41,5 +41,9 @@ def audit_links():
     for src, t, resolved in broken_links:
         print(f"  IN {src}: href/src='{t}' -> NOT FOUND ({resolved})")
 
+    return len(broken_links) == 0
+
 if __name__ == "__main__":
-    audit_links()
+    import sys
+    success = audit_links()
+    sys.exit(0 if success else 1)

@@ -75,10 +75,21 @@ def pre_update_source_verification(articles, target_edition_date=None):
             errors.append(f"[{slug}] Missing source_name attribution")
             continue
 
-        # 2. Date Contemporaneity (その日の最新ニュースであることの検証)
+        # 2. Date Contemporaneity & Categorization Rules
+        url_is_past = any(f"/{y}/" in src_url or f"-{y}-" in src_url or f"-0{y[-2:]}-" in src_url for y in ["2020", "2021", "2022", "2023", "2024", "2025"])
+        is_past_news = art.get("is_past_news") or ("過去のニュース深掘り" in art.get("category_label", ""))
+        is_foundational = art.get("is_foundational") or ("過去の基礎論文解説" in art.get("category_label", ""))
+
+        if url_is_past:
+            if not (is_past_news or is_foundational):
+                errors.append(f"[{slug}] Pre-2026 source URL detected without required tag (Must specify is_past_news: True with 【過去のニュース深掘り】 or is_foundational: True with 【過去の基礎論文解説】 and educational rationale box)")
+                continue
+            if not art.get("foundational_reason_html"):
+                errors.append(f"[{slug}] Past article missing educational rationale box (foundational_reason_html)")
+                continue
+
         if target_edition_date and art_date:
-            if art_date != target_edition_date:
-                # If an article is intended for today's update, it must not be from an earlier day
+            if art_date != target_edition_date and not (is_past_news or is_foundational):
                 errors.append(f"[{slug}] Stale news rejected: Article date {art_date} != Target edition date {target_edition_date}")
                 continue
 
@@ -99,10 +110,10 @@ def pre_update_source_verification(articles, target_edition_date=None):
             errors.append(f"[{slug}] Dialogue too short or missing ({len(dialogue)} turns)")
             continue
 
-        # Quiz completeness
+        # Quiz completeness (at least 3 questions required)
         quiz = art.get("quiz", [])
-        if len(quiz) != 3:
-            errors.append(f"[{slug}] Quiz count mismatch: expected 3, got {len(quiz)}")
+        if len(quiz) < 3:
+            errors.append(f"[{slug}] Quiz count mismatch: expected at least 3, got {len(quiz)}")
             continue
 
         passed_count += 1

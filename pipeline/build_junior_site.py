@@ -535,11 +535,11 @@ def build_junior_article_html(art):
 """
     return html
 
-async def generate_all():
+async def generate_all(skip_audio=False):
     sem = asyncio.Semaphore(8)
     audio_tasks = []
 
-    print("Building THE JUNIOR website...")
+    print(f"Building THE JUNIOR website... (skip_audio={skip_audio})")
     
     for art in JUNIOR_ARTICLES:
         cat = art["category"]
@@ -549,18 +549,19 @@ async def generate_all():
         os.makedirs(audio_dir, exist_ok=True)
         
         # 1. Synthesize audio
-        # Headline audio
-        audio_tasks.append(synth_audio(art["title"], VOICE_BRITISH, os.path.join(audio_dir, "headline.mp3"), sem, rate="-10%"))
-        # Full body (rate: -10% for comfortable listening pace)
-        full_text = " ".join([s["en"] for s in art["sentences"]])
-        audio_tasks.append(synth_audio(full_text, VOICE_BRITISH, os.path.join(audio_dir, "full_body.mp3"), sem, rate="-10%"))
-        
-        for i, s in enumerate(art["sentences"]):
-            audio_tasks.append(synth_audio(s["en"], VOICE_BRITISH, os.path.join(audio_dir, f"s{i+1}.mp3"), sem, rate="-10%"))
+        if not skip_audio:
+            # Headline audio
+            audio_tasks.append(synth_audio(art["title"], VOICE_BRITISH, os.path.join(audio_dir, "headline.mp3"), sem, rate="-10%"))
+            # Full body (rate: -10% for comfortable listening pace)
+            full_text = " ".join([s["en"] for s in art["sentences"]])
+            audio_tasks.append(synth_audio(full_text, VOICE_BRITISH, os.path.join(audio_dir, "full_body.mp3"), sem, rate="-10%"))
             
-        for i, d in enumerate(art["dialogue"]):
-            voice = VOICE_KEITA if (d["speaker"] == "慶" or "Keita" in d["name"]) else VOICE_NANAMI
-            audio_tasks.append(synth_audio(d["text"], voice, os.path.join(audio_dir, f"dlg_{i+1:02d}.mp3"), sem))
+            for i, s in enumerate(art["sentences"]):
+                audio_tasks.append(synth_audio(s["en"], VOICE_BRITISH, os.path.join(audio_dir, f"s{i+1}.mp3"), sem, rate="-10%"))
+                
+            for i, d in enumerate(art["dialogue"]):
+                voice = VOICE_KEITA if (d["speaker"] == "慶" or "Keita" in d["name"]) else VOICE_NANAMI
+                audio_tasks.append(synth_audio(d["text"], voice, os.path.join(audio_dir, f"dlg_{i+1:02d}.mp3"), sem))
             
         # 2. Write Article HTML
         html_content = build_junior_article_html(art)
@@ -569,9 +570,13 @@ async def generate_all():
             f.write(html_content)
         print(f"[OK] Generated junior/{cat}/{slug}/index.html")
 
-    print(f"Synthesizing {len(audio_tasks)} audio files for THE JUNIOR...")
-    await asyncio.gather(*audio_tasks)
-    print("All Junior audio files generated successfully!")
+    if not skip_audio and audio_tasks:
+        print(f"Synthesizing {len(audio_tasks)} audio files for THE JUNIOR...")
+        await asyncio.gather(*audio_tasks)
+        print("All Junior audio files generated successfully!")
+    else:
+        print("Skipped Junior audio synthesis.")
 
 if __name__ == "__main__":
-    asyncio.run(generate_all())
+    skip_audio_flag = "--skip-audio" in sys.argv
+    asyncio.run(generate_all(skip_audio=skip_audio_flag))
