@@ -2,7 +2,7 @@
 import urllib.request
 import re
 
-dates = ['16', '17', '18', '19']
+dates = ['19', '20']
 headers = {'User-Agent': 'Mozilla/5.0'}
 
 for d in dates:

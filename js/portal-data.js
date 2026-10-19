@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 225 articles, daily editions, and high-school media literacy references.
+// Contains all 237 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -3489,15 +3489,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/books/2026/oct/18/tim-winton-cloudstreet-abc-poll-top-100-australian-books",
     "path": "entertainment/australian-literature-tim-winton-national-canon/index.html",
     "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "social-media-influencer-photography-bans-hospitality-tourism",
+    "category": "culture",
+    "category_label": "DIGITAL CULTURE & ETIQUETTE • 観光公害とSNSマナー",
+    "date": "2026-10-20",
+    "title": "Global Hospitality and Scenic Havens Enforce Strict Bans on Disruptive Influencer Photoshoots",
+    "headline_ja": "「映え」至上主義にNO：世界のホテルや景勝地で広がる迷惑インフルエンサー撮影規制",
+    "subhead": "三脚や照明を持ち込む長時間の撮影が一般客の静穏やプライバシーを侵害。欧米の有名レストランや観光地がカメラ持ち込み禁止措置に踏み切る。",
+    "lead_snippet": "世界各地の高級ホテルや人気レストラン、歴史的景勝地において、ソーシャルメディアのインフルエンサーによる過度な写真・動画撮影を制限または全面禁止する動きが急拡大している。長時間の席占有や強力な照明機器の使用が一般の利用客に著しい迷惑を及ぼしているためであり、「現実の体験」の尊厳を取り戻す文化的な転換点として注目を集めている。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/media/2026/oct/19/no-influencers-hotels-restaurants-beauty-spots-restricting-photoshoots",
+    "path": "culture/social-media-influencer-photography-bans-hospitality-tourism/index.html",
+    "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "black-bear-wanders-california-public-library",
+    "category": "society",
+    "category_label": "URBAN ECOLOGY & WILDLIFE • 都市近郊の野生生物共生",
+    "date": "2026-10-20",
+    "title": "Curious Black Bear Wanders into California Public Library Before Peaceful Wildlife Evacuation",
+    "headline_ja": "カリフォルニアの公立図書館に黒クマが侵入：都市近郊の野生動物共生と安全確保",
+    "subhead": "静かな読書室の自動ドアをくぐった野生のクマが書架の間を徘徊。怪我人を出さずに森林へ帰還させた迅速な避難劇。",
+    "lead_snippet": "米カリフォルニア州の公立図書館に成熟したアメリカクロクマが迷い込み、利用客や司書らを驚愕させる騒動が発生した。クマは書架の間を静かに探索したのち、駆けつけた野生動物保護当局の専門官によって巧みに誘導され、負傷者を一切出すことなく無事に自然生息地へと送還された。気候変動や市街地拡大に伴う野生動物と人間社会の接触事例として教訓を残している。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/oct/19/black-bear-california-library",
+    "path": "society/black-bear-wanders-california-public-library/index.html",
+    "image": "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "orionid-meteor-shower-peaks-halley-comet-debris",
+    "category": "science",
+    "category_label": "ASTRONOMY & CELESTIAL MECHANICS • 天文学と彗星軌道",
+    "date": "2026-10-20",
+    "title": "Orionid Meteor Shower Peaks as Earth Crosses Debris Stream of Halley's Comet",
+    "headline_ja": "ハレー彗星の軌道ダストを通過：オリオン座流星群が極大期を迎え夜空を彩る",
+    "subhead": "時速24万キロで地球大気圏に突入する宇宙の微粒子。月明かりに邪魔されない絶好の観測条件と彗星起源の天文学的探究。",
+    "lead_snippet": "毎年10月中旬から下旬にかけて夜空を彩る「オリオン座流星群」が極大期（ピーク）を迎えている。この流星群の正体は、著名なハレー彗星が過去数千年にわたって放出した氷や塵の粒子であり、秒速66キロメートル（時速約24万キロ）という猛スピードで地球大気と衝突して発光する。天文学者らは、新月に近い好条件下での観測が太陽系初期の物質組成を解明する手がかりになると期待を寄せている。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/19/orionid-meteor-shower-halley-comet-starwatch",
+    "path": "science/orionid-meteor-shower-peaks-halley-comet-debris/index.html",
+    "image": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "seabird-population-recovery-solent-avian-flu",
+    "category": "science",
+    "category_label": "MARINE ECOLOGY & RESILIENCE • 海洋生態系と感染症克服",
+    "date": "2026-10-20",
+    "title": "Solent Seabird Colonies Demonstrate Remarkable Ecological Resilience Following Avian Flu Crisis",
+    "headline_ja": "鳥インフルエンザの激震を越えて：英国ソレント海峡の海鳥群集が示す驚異的な回復力",
+    "subhead": "絶滅が危惧されたアジサシやカモメの繁殖数が劇的にV字回復。抗体獲得と沿岸湿地保護が生んだ生態学的奇跡。",
+    "lead_snippet": "英国南部のソレント海峡沿岸において、高病原性鳥インフルエンザ（HPAI）の壊滅的流行で激減していた希少な海鳥コロニーの個体数が、過去最多水準へと劇的な回復を遂げたことが王立鳥類保護協会（RSPB）の最新調査で判明した。自然免疫の獲得と生息地保全の相乗効果が生態系の自己回復力を実証した事例として、国際的な保全生物学者らを勇気づけている。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/19/seabird-numbers-bounce-back-solent-region-avian-flu-rspb",
+    "path": "science/seabird-population-recovery-solent-avian-flu/index.html",
+    "image": "https://images.unsplash.com/photo-1555169062-013468b47731?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "urban-air-pollution-health-inequality-inquiry",
+    "category": "society",
+    "category_label": "ENVIRONMENTAL JUSTICE & PUBLIC HEALTH • 環境格差と公衆衛生",
+    "date": "2026-10-20",
+    "title": "Civic Leaders Demand Statutory National Inquiry into Severe Health Inequities of Urban Air Pollution",
+    "headline_ja": "大気汚染と健康格差：英国都市部で広がる呼吸器疾患リスクに対する国家調査要求",
+    "subhead": "幹線道路や産業地帯に隣接する低所得層居住区で小児喘息と心肺疾患死が集中。都市首長らが環境正義の確立を訴える。",
+    "lead_snippet": "マンチェスターなど英国主要都市の首長や公衆衛生専門家らが、都市部の大気汚染が貧困地域に偏って深刻な健康被害をもたらしている実態を受け、政府に法定の独立調査委員会の設置を強く要求した。大気中の微小粒子状物質（PM2.5）や二酸化窒素への曝露格差が寿命格差に直結している構造は、単なる公害問題を超えた「環境的正義（Environmental Justice）」の危機として政治的焦点となっている。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/19/andy-burnham-government-inquiry-unequal-health-impacts-air-pollution",
+    "path": "society/urban-air-pollution-health-inequality-inquiry/index.html",
+    "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "britain-eu-security-pact-geopolitical-realignment",
+    "category": "world",
+    "category_label": "INTERNATIONAL RELATIONS & GEOPOLITICS • 欧州安保と日英欧連携",
+    "date": "2026-10-20",
+    "title": "Escalating Geopolitical Upheaval Drives Britain Toward Comprehensive Security and Energy Accords with EU",
+    "headline_ja": "複合地政学危機下の欧州再編：英国がEUとの防衛・エネルギー包括協定締結へ接近",
+    "subhead": "東欧情勢の緊迫と中東紛争の波及を受けブレグジットの対立を氷解。共同兵器調達と海底電力網の統合推進。",
+    "lead_snippet": "東欧における軍事的脅威の長期化や中東情勢の緊迫化に伴うエネルギー危機を受け、英国政府が欧州連合（EU）との間で包括的な防衛安全保障協定およびエネルギー相互融通協定の締結に向けた歴史的な交渉へと舵を切った。離脱（ブレグジット）後の外交的溝を埋め、共同防衛調達や北海洋上風力送電網の統合を通じて欧州大陸全体の地政学的強靭性を高める戦略的転換が本格化している。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/19/britain-geopolitical-crises-rejoin-eu-thinktank",
+    "path": "world/britain-eu-security-pact-geopolitical-realignment/index.html",
+    "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "french-civil-unrest-policing-tactics-scrutiny",
+    "category": "world",
+    "category_label": "CIVIL LIBERTIES & POLICING • 治安維持と市民の自由",
+    "date": "2026-10-20",
+    "title": "French Interior Ministry Concedes Law Enforcement Lost Control During Recent Urban Riots",
+    "headline_ja": "フランス内相、都市暴動での警察統制喪失を認める：法執行と治安維持の深刻なジレンマ",
+    "subhead": "郊外都市で激化する若年層の抗議行動と公的財産破壊。過度な軍事化戦術への批判と包括的な警察制度改革の行方。",
+    "lead_snippet": "フランス内務省のトップが議会公聴会において、先週主要都市の郊外で発生した大規模な暴動の際、治安維持部隊が一時的に現場の統制を完全に喪失していた事実を率直に認めた。過密化する移民系コミュニティの不満爆発に対し、装甲車両や催涙弾に過度に依存する対症療法的な警備戦術の限界が露呈した形であり、共和国の根幹を揺るがす治安政策の抜本的見直しが求められている。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/19/french-police-lost-control-during-riots-concedes-interior-minister",
+    "path": "world/french-civil-unrest-policing-tactics-scrutiny/index.html",
+    "image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "aviation-accessibility-statutory-safeguards-disabled-passengers",
+    "category": "law",
+    "category_label": "AVIATION LAW & DISABILITY RIGHTS • 航空法と障害者権利保護",
+    "date": "2026-10-20",
+    "title": "UK Government Pledges Legally Binding Aviation Mandates to Protect Disabled Air Passengers",
+    "headline_ja": "航空業界のアクセシビリティ革命：英政府、障害者乗客を保護する法的義務付けを表明",
+    "subhead": "車いす破損への無制限補償と機内移乗支援の義務化。航空会社に対する巨額過料制度を新設しバリアフリーを徹底。",
+    "lead_snippet": "英国運輸省は、航空機を利用する障害者や移動制約のある乗客に対する不当な扱いを根絶するため、航空会社に対して車いす等の移動補助器具の破損に対する補償上限の撤廃や、介助スタッフの搭乗義務付けを含む法的拘束力のある新基準法案を策定すると発表した。長年放置されてきた航空バリアフリーの不備に対し、民事賠償責任の厳格化と高額な行政罰則を科す画期的な法改正となる。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/19/uk-government-promises-disabled-air-passengers-better-safeguards",
+    "path": "law/aviation-accessibility-statutory-safeguards-disabled-passengers/index.html",
+    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "corporate-profit-warnings-energy-shocks-supply-chains",
+    "category": "law",
+    "category_label": "CORPORATE GOVERNANCE & MACROECONOMICS • 企業統治と地政学リスク",
+    "date": "2026-10-20",
+    "title": "Profit Warnings Among UK Listed Firms Reach Two-Year High Amid Geopolitical Energy Volatility",
+    "headline_ja": "地政学リスクとエネルギー価格高騰：英国上場企業の業績下方修正が過去2年で最多水準に",
+    "subhead": "中東紛争に伴う原油・海上運賃の上昇と消費者マインドの冷え込みが直撃。法定適時開示と役員説明責任の厳格化。",
+    "lead_snippet": "ロンドン証券取引所に上場する英国企業の業績下方修正（プロフィット・ワーニング）の発表件数が、過去2年間で四半期ベース最多水準に急増したことが大手監査法人EYの最新調査で明らかになった。中東情勢の悪化に起因する燃料費の高騰や紅海迂回によるサプライチェーンの遅延が製造業や小売業の利益率を圧迫しており、証券取引法上の適時開示義務と取締役会の経営予測責任に対する市場の監視が一段と強まっている。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/19/profit-warnings-from-uk-listed-firms-at-highest-level-in-two-years-as-iran-war-drives-up-costs",
+    "path": "law/corporate-profit-warnings-energy-shocks-supply-chains/index.html",
+    "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "rural-maternity-units-staffing-crisis-nhs",
+    "category": "society",
+    "category_label": "HEALTHCARE INFRASTRUCTURE • 地域医療と産科危機",
+    "date": "2026-10-20",
+    "title": "Acute Midwifery Shortages Threaten Closure of Up to Twenty Rural Maternity Units Across England",
+    "headline_ja": "英NHSの助産師不足危機：全国20カ所の地方産科病棟が閉鎖の危機に直面",
+    "subhead": "深刻な人手不足と医療従事者の過労離職。遠隔地での周産期医療アクセス喪失と国家保健サービスの構造的課題。",
+    "lead_snippet": "英国の国民保健サービス（NHS）において、助産師や産科医の深刻な人手不足により、地方都市や農村部を中心に最大20カ所の公立産科病棟が閉鎖の危機に瀕していることが病院トラスト幹部の証言で明らかになった。過酷な勤務環境による離職の連鎖が安全基準の維持を不可能にしており、妊産婦が救急搬送に何時間も要する「周産期医療過疎」の拡大が深刻な社会問題となっている。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/oct/19/up-to-20-maternity-units-england-shut-nhs-warning-matthew-hopkins",
+    "path": "society/rural-maternity-units-staffing-crisis-nhs/index.html",
+    "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "austrian-heirloom-apple-orchards-biodiversity-revival",
+    "category": "culture",
+    "category_label": "AGROBIODIVERSITY & CULTURAL HERITAGE • 農業遺産と生物多様性",
+    "date": "2026-10-20",
+    "title": "Core Values: Austrian Conservationists Resurrect Hundreds of Forgotten Heirloom Apple Varieties",
+    "headline_ja": "失われたリンゴの遺伝遺産を蘇らせる：オーストリアで進む在来品種の保全プロジェクト",
+    "subhead": "画一的なスーパー向け大量生産で消滅寸前だった古来種。気候変動や病害虫に耐える豊かな遺伝子バンクとしての再評価。",
+    "lead_snippet": "オーストリアの果樹農家や植物学者たちが、近代の工業的農業によって市場から姿を消していた数百種類もの在来種リンゴ（Heirloom apples）を発掘・復活させる国家規模の保全プロジェクトを成功させた。均一な見た目と甘さばかりを追求した商業的単一栽培（モノカルチャー）の脆弱性が気候危機で浮き彫りになる中、病気や乾燥に強い伝統的品種の遺伝的多様性が未来の食料安全保障の防波堤として脚光を浴びている。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/food/2026/oct/19/core-values-the-austrian-scheme-bringing-forgotten-apple-varieties-back-to-life",
+    "path": "culture/austrian-heirloom-apple-orchards-biodiversity-revival/index.html",
+    "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "documentary-cinema-modern-corporate-fraud-spectacle",
+    "category": "entertainment",
+    "category_label": "DOCUMENTARY CINEMA & MEDIA ETHICS • 映像表現と欺瞞の解体",
+    "date": "2026-10-20",
+    "title": "Provocative Documentary 'You Can See Everything' Deconstructs Modern Corporate Hubris and Media Spectacle",
+    "headline_ja": "虚飾のテック起業家とメディアの共犯関係：衝撃のドキュメンタリーが暴く現代の欺瞞",
+    "subhead": "シリコンバレーの虚構劇を風刺と綿密な調査報道で解剖。観客を欺瞞の共犯者へと仕立て上げる革新的な映像手法。",
+    "lead_snippet": "著名な風刺作家や新進気鋭の映画作家がタッグを組んだ話題の新作ドキュメンタリー『You Can See Everything』が、世界的な映画祭で絶賛を浴びている。架空の医療検査技術で世界を欺いたシリコンバレーの著名な詐欺事件を題材に、なぜ投資家やメディアが虚飾のカリスマ起業家に盲従したのかを容赦なく風刺。現代の「見世物社会」における観客自身の盲目を突く批評性の高い快作を読み解く。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/film/2026/oct/19/you-can-see-everything-elizabeth-holmes-nathan-fielder-lance-oppenheim",
+    "path": "entertainment/documentary-cinema-modern-corporate-fraud-spectacle/index.html",
+    "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-20": {
+    "dateStr": "Tuesday October 20 2026",
+    "editionLabel": "2026年10月20日 (火) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：迷惑インフルエンサー撮影規制・図書館に黒クマ迷入・オリオン座流星群極大・海鳥V字回復の奇跡",
+    "topLeadSlug": "social-media-influencer-photography-bans-hospitality-tourism",
+    "subLeadSlugs": [
+      "black-bear-wanders-california-public-library",
+      "orionid-meteor-shower-peaks-halley-comet-debris",
+      "seabird-population-recovery-solent-avian-flu"
+    ],
+    "leftDispatches": [
+      "urban-air-pollution-health-inequality-inquiry",
+      "britain-eu-security-pact-geopolitical-realignment",
+      "french-civil-unrest-policing-tactics-scrutiny",
+      "aviation-accessibility-statutory-safeguards-disabled-passengers"
+    ],
+    "rightDigestSlugs": [
+      "corporate-profit-warnings-energy-shocks-supply-chains",
+      "rural-maternity-units-staffing-crisis-nhs",
+      "austrian-heirloom-apple-orchards-biodiversity-revival",
+      "documentary-cinema-modern-corporate-fraud-spectacle"
+    ]
+  },
   "2026-10-19": {
     "dateStr": "Monday October 19 2026",
-    "editionLabel": "2026年10月19日 (月) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月19日 (月) 号 【全12記事・アーカイブ】",
     "tagline": "特集：ガボン聖なる植物イボガと先住権・住宅断熱とヒートポンプ光熱費削減・刑務所過密と更生危機・欧州主要都市住宅デモ",
     "topLeadSlug": "gabon-iboga-sacred-plant-addiction-treatment-biopiracy",
     "subLeadSlugs": [

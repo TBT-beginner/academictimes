@@ -724,6 +724,7 @@ def build_article_html(art):
     )
 
 async def main():
+    skip_audio = "--skip-audio" in sys.argv
     sem = asyncio.Semaphore(8)
     portal_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     audio_tasks = []
@@ -741,11 +742,15 @@ async def main():
         print(f"Generated HTML for {cat}/{slug}/index.html")
         
         # 2. Collect Audio Task
-        audio_tasks.append(generate_article_audio_files(art, art_dir, sem))
+        if not skip_audio:
+            audio_tasks.append(generate_article_audio_files(art, art_dir, sem))
 
-    print(f"Verifying/Synthesizing audio for {len(audio_tasks)} articles...")
-    await asyncio.gather(*audio_tasks)
-    print("All Senior audio tasks complete!")
+    if not skip_audio and audio_tasks:
+        print(f"Verifying/Synthesizing audio for {len(audio_tasks)} articles...")
+        await asyncio.gather(*audio_tasks)
+        print("All Senior audio tasks complete!")
+    else:
+        print("Skipped Senior audio synthesis.")
 
 if __name__ == "__main__":
     asyncio.run(main())

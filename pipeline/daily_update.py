@@ -151,13 +151,18 @@ def main():
         print("[FAIL] Pre-generation source verification failed. Aborting build.")
         sys.exit(1)
 
-    # Step 1: Ensure Senior Edge-TTS Audio
+    # Step 1: Build Senior Articles & Audio
+    senior_args = ["generate_all_articles.py"]
+    if args.skip_audio:
+        senior_args.append("--skip-audio")
+    if not run_step("Build Senior Articles & Audio", senior_args):
+        print("[FAIL] Senior article generation failed.")
+        sys.exit(1)
+
     if not args.skip_audio:
         if not run_step("Ensure Senior Edge-TTS Audio", ["synthesize_missing_senior_audio.py"]):
-            print("[FAIL] Senior audio synthesis failed.")
+            print("[FAIL] Senior audio synthesis check failed.")
             sys.exit(1)
-    else:
-        print("\n[DAILY PIPELINE] Step 1: Skipped Senior Audio Synthesis (--skip-audio)")
 
     # Step 2: Update Senior Category pages
     if not run_step("Build Senior Category Portals", ["generate_category_pages.py"]):

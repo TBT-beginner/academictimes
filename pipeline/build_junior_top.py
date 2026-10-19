@@ -23,19 +23,19 @@ def generate_junior_index():
     # Map articles by slug
     art_map = {a["slug"]: a for a in JUNIOR_ARTICLES}
     
-    # 10/14 Default Edition Stories
-    lead = art_map.get("solid-state-sodium-ion-battery-breakthrough", JUNIOR_ARTICLES[0])
-    sub1 = art_map.get("wto-electronic-commerce-moratorium-negotiations", JUNIOR_ARTICLES[1])
-    sub2 = art_map.get("supreme-court-probate-digital-asset-passwords", JUNIOR_ARTICLES[2])
+    # 10/20 Default Edition Stories
+    lead = art_map.get("social-media-influencer-photography-bans-hospitality-tourism", JUNIOR_ARTICLES[0])
+    sub1 = art_map.get("black-bear-wanders-california-public-library", JUNIOR_ARTICLES[1])
+    sub2 = art_map.get("orionid-meteor-shower-peaks-halley-comet-debris", JUNIOR_ARTICLES[2])
     
-    left1 = art_map.get("crispr-epigenetic-silencing-chronic-pain", JUNIOR_ARTICLES[3])
-    left2 = art_map.get("school-attendance-counseling-vr-classrooms", JUNIOR_ARTICLES[4])
-    left3 = art_map.get("iaea-small-modular-reactor-safety-standards", JUNIOR_ARTICLES[5])
+    left1 = art_map.get("seabird-population-recovery-solent-avian-flu", JUNIOR_ARTICLES[3])
+    left2 = art_map.get("urban-air-pollution-health-inequality-inquiry", JUNIOR_ARTICLES[4])
+    left3 = art_map.get("britain-eu-security-pact-geopolitical-realignment", JUNIOR_ARTICLES[5])
     
-    right1 = art_map.get("local-train-revitalization-community-tourism-passes", JUNIOR_ARTICLES[6])
-    right2 = art_map.get("digital-nostalgia-analog-media-generation-z", JUNIOR_ARTICLES[7])
-    right3 = art_map.get("exoplanet-atmospheric-carbon-biosignature-jwst", JUNIOR_ARTICLES[8])
-    right4 = art_map.get("ocean-acidification-deepwater-coral-calcification", JUNIOR_ARTICLES[9])
+    right1 = art_map.get("french-civil-unrest-policing-tactics-scrutiny", JUNIOR_ARTICLES[6])
+    right2 = art_map.get("aviation-accessibility-statutory-safeguards-disabled-passengers", JUNIOR_ARTICLES[7])
+    right3 = art_map.get("corporate-profit-warnings-energy-shocks-supply-chains", JUNIOR_ARTICLES[8])
+    right4 = art_map.get("rural-maternity-units-staffing-crisis-nhs", JUNIOR_ARTICLES[9])
 
     # Pre-render all 15 catalog cards for initial display & SEO
     cards_html = []

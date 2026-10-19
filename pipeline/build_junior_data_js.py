@@ -78,9 +78,18 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-20": {
+        "dateStr": "Tuesday October 20 2026",
+        "editionLabel": "2026年10月20日 (火) 号 【本日付・最新・全12記事】",
+        "tagline": "特集：迷惑インフルエンサー撮影禁止・図書館に迷い込んだ黒クマ・オリオン座流星群・海鳥のV字回復",
+        "topLeadSlug": "social-media-influencer-photography-bans-hospitality-tourism",
+        "subLeadSlugs": ["black-bear-wanders-california-public-library", "orionid-meteor-shower-peaks-halley-comet-debris", "seabird-population-recovery-solent-avian-flu"],
+        "leftDispatches": ["urban-air-pollution-health-inequality-inquiry", "britain-eu-security-pact-geopolitical-realignment", "french-civil-unrest-policing-tactics-scrutiny", "aviation-accessibility-statutory-safeguards-disabled-passengers"],
+        "rightDigestSlugs": ["corporate-profit-warnings-energy-shocks-supply-chains", "rural-maternity-units-staffing-crisis-nhs", "austrian-heirloom-apple-orchards-biodiversity-revival", "documentary-cinema-modern-corporate-fraud-spectacle"]
+    },
     "2026-10-19": {
         "dateStr": "Monday October 19 2026",
-        "editionLabel": "2026年10月19日 (月) 号 【本日付・最新・全12記事】",
+        "editionLabel": "2026年10月19日 (月) 号 【全12記事・アーカイブ】",
         "tagline": "特集：森の秘薬イボガを守れ・住宅断熱と光熱費・やり直すチャンスを支える刑務所教育・リスボンとミラノの住宅デモ",
         "topLeadSlug": "gabon-iboga-sacred-plant-addiction-treatment-biopiracy",
         "subLeadSlugs": ["heat-pumps-building-insulation-energy-transition-study", "penal-reform-prison-overcrowding-rehabilitation-barriers", "european-housing-crisis-short-term-rentals-unrest"],

@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-10-20": {
+            "dateStr": "Tuesday October 20 2026",
+            "editionLabel": "2026年10月20日 (火) 号 【本日付・最新・全12記事】",
+            "tagline": "特集：迷惑インフルエンサー撮影規制・図書館に黒クマ迷入・オリオン座流星群極大・海鳥V字回復の奇跡",
+            "topLeadSlug": "social-media-influencer-photography-bans-hospitality-tourism",
+            "subLeadSlugs": [
+                "black-bear-wanders-california-public-library",
+                "orionid-meteor-shower-peaks-halley-comet-debris",
+                "seabird-population-recovery-solent-avian-flu"
+            ],
+            "leftDispatches": [
+                "urban-air-pollution-health-inequality-inquiry",
+                "britain-eu-security-pact-geopolitical-realignment",
+                "french-civil-unrest-policing-tactics-scrutiny",
+                "aviation-accessibility-statutory-safeguards-disabled-passengers"
+            ],
+            "rightDigestSlugs": [
+                "corporate-profit-warnings-energy-shocks-supply-chains",
+                "rural-maternity-units-staffing-crisis-nhs",
+                "austrian-heirloom-apple-orchards-biodiversity-revival",
+                "documentary-cinema-modern-corporate-fraud-spectacle"
+            ]
+        },
         "2026-10-19": {
             "dateStr": "Monday October 19 2026",
-            "editionLabel": "2026年10月19日 (月) 号 【本日付・最新・全12記事】",
+            "editionLabel": "2026年10月19日 (月) 号 【全12記事・アーカイブ】",
             "tagline": "特集：ガボン聖なる植物イボガと先住権・住宅断熱とヒートポンプ光熱費削減・刑務所過密と更生危機・欧州主要都市住宅デモ",
             "topLeadSlug": "gabon-iboga-sacred-plant-addiction-treatment-biopiracy",
             "subLeadSlugs": [
