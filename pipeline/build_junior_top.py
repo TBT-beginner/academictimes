@@ -13,8 +13,9 @@ Fully matching The Academic Times layout:
 """
 
 import os
+import re
 from junior_articles_data import JUNIOR_ARTICLES
-from build_junior_data_js import JUNIOR_STUDY_RESOURCES
+from build_junior_data_js import JUNIOR_STUDY_RESOURCES, EDITIONS_DATA
 
 PORTAL_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 JUNIOR_INDEX_PATH = os.path.join(PORTAL_DIR, "junior", "index.html")
@@ -101,6 +102,57 @@ def generate_junior_index():
         media_cards_html.append(m_card)
     media_cards_str = "\n".join(media_cards_html)
 
+    # Dynamic Edition Data for Select & Navigator
+    ed_keys = sorted(EDITIONS_DATA.keys(), reverse=True)
+    latest_ed_key = ed_keys[0] if ed_keys else "2026-10-20"
+    latest_ed = EDITIONS_DATA.get(latest_ed_key, {})
+    latest_date_str = latest_ed.get("dateStr", "Tuesday October 20 2026")
+
+    select_options_html = []
+    for d_key in ed_keys:
+        ed = EDITIONS_DATA[d_key]
+        sel = ' selected' if d_key == latest_ed_key else ''
+        select_options_html.append(f'          <option value="{d_key}"{sel}>{ed["editionLabel"]}</option>')
+    select_options_str = "\n".join(select_options_html)
+
+    recent_keys = ed_keys[:5]
+    older_keys = ed_keys[5:]
+
+    recent_pills_html = []
+    for i, d_key in enumerate(recent_keys):
+        ed = EDITIONS_DATA[d_key]
+        short_date = d_key[5:].replace("-", "/")
+        m = re.search(r'(\d+/\d+|\d+月\d+日)\s*\(([^\)]+)\)', ed.get("editionLabel", ""))
+        dow = m.group(2) if m else ""
+        pill_text = f"{short_date} ({dow}) 本日最新号" if i == 0 else f"{short_date} ({dow}) 号" if dow else f"{short_date} 号"
+        if i == 0:
+            recent_pills_html.append(f'<a href="index.html#date-{d_key}" style="padding: 0.35rem 0.75rem; border: 1px solid #235937; background: #235937; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition(\'{d_key}\'); window.scrollTo({{top:0, behavior:\'smooth\'}}); return false;">{pill_text}</a>')
+        else:
+            recent_pills_html.append(f'<a href="index.html#date-{d_key}" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition(\'{d_key}\'); window.scrollTo({{top:0, behavior:\'smooth\'}}); return false;">{pill_text}</a>')
+    recent_pills_str = "\n            ".join(recent_pills_html)
+
+    older_pills_html = []
+    for d_key in older_keys:
+        ed = EDITIONS_DATA[d_key]
+        short_date = d_key[5:].replace("-", "/")
+        m = re.search(r'(\d+/\d+|\d+月\d+日)\s*\(([^\)]+)\)', ed.get("editionLabel", ""))
+        dow = m.group(2) if m else ""
+        label_part = f"{short_date} ({dow}) 号" if dow else f"{short_date} 号"
+        if "創刊号" in ed.get("editionLabel", ""):
+            label_part += " 創刊号"
+        older_pills_html.append(f'<a href="index.html#date-{d_key}" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition(\'{d_key}\'); window.scrollTo({{top:0, behavior:\'smooth\'}}); return false;">{label_part}</a>')
+    older_pills_str = "\n              ".join(older_pills_html)
+
+    older_pills_block = f"""
+        <details style="margin-top: 0.5rem; width: 100%;">
+          <summary style="font-size: 0.8rem; font-weight: 700; color: #235937; cursor: pointer; padding: 0.3rem 0;">
+            📂 過去の全号を展開（{len(older_keys)}日分アーカイブ） ▾
+          </summary>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; padding: 0.5rem; background: #fff; border: 1px dashed var(--times-light-border);">
+            {older_pills_str}
+          </div>
+        </details>""" if older_keys else ""
+
     html = f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -126,23 +178,11 @@ def generate_junior_index():
   <!-- Top Switcher Bar with Interactive Edition Switcher -->
   <div class="top-date-bar">
     <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem; flex-wrap: wrap; gap: 0.5rem;">
-      <span id="top-date-bar-text">Wednesday October 14 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
+      <span id="top-date-bar-text">{latest_date_str} &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
       <div class="edition-selector-wrap">
         <span style="font-weight: 700; color: #111;">📅 紙面切替:</span>
         <select id="select-edition-date" class="edition-select" aria-label="Select edition date">
-          <option value="2026-10-14" selected>2026年10月14日 (水) 号 【本日付・最新・全30記事】</option>
-          <option value="2026-10-13">2026年10月13日 (火) 号 【全30記事・アーカイブ】</option>
-          <option value="2026-10-11">2026年10月11日 (日) 号 【全30記事・アーカイブ】</option>
-          <option value="2026-10-10">2026年10月10日 (土) 号 【ノーベル賞・AIデータセンター】</option>
-          <option value="2026-10-09">2026年10月9日 (金) 号 【ノーベル化学賞・スマートグラス】</option>
-          <option value="2026-10-08">2026年10月8日 (木) 号 【重要鉱物の争奪戦・ストア哲学】</option>
-          <option value="2026-10-07">2026年10月7日 (水) 号 【挨拶の魔法・北極海航路】</option>
-          <option value="2026-10-06">2026年10月6日 (火) 号 【イヤホン論争・静かな時間】</option>
-          <option value="2026-10-05">2026年10月5日 (月) 号 【防空計画・王室警護】</option>
-          <option value="2026-10-04">2026年10月4日 (日) 号 【若年健康・海洋温暖化】</option>
-          <option value="2026-10-03">2026年10月3日 (土) 号 【AI診断・恐竜の歩行】</option>
-          <option value="2026-10-02">2026年10月2日 (金) 号 【相続税議論・ストア哲学】</option>
-          <option value="2026-10-01">2026年10月1日 (木) 号 【創刊号・航空機分散・アーチャー追悼】</option>
+{select_options_str}
         </select>
         <button type="button" class="edition-btn" id="btn-edition-prev" title="前日の紙面へ">◀ 前日</button>
         <button type="button" class="edition-btn" id="btn-edition-next" title="翌日の紙面へ" disabled>翌日 ▶</button>
@@ -587,21 +627,16 @@ def generate_junior_index():
       </p>
 
       <!-- Daily Editions Quick Navigator -->
-      <div style="background: #f8f9fa; border: 1px solid var(--times-light-border); padding: 1rem 1.25rem; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem;">
-        <div style="font-weight: 700; font-size: 0.85rem; color: var(--times-black);">
-          <span>📰 日別トップページ一覧（バックナンバー紙面）:</span>
+      <div style="background: #f8f9fa; border: 1px solid var(--times-light-border); padding: 1rem 1.25rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem;">
+          <div style="font-weight: 700; font-size: 0.85rem; color: var(--times-black);">
+            <span>📰 日別トップページ一覧（バックナンバー紙面）:</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            {recent_pills_str}
+          </div>
         </div>
-        <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
-          <a href="index.html#date-2026-10-09" style="padding: 0.35rem 0.75rem; border: 1px solid #235937; background: #235937; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-10-09'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/9 (金) 本日最新号</a>
-          <a href="index.html#date-2026-10-08" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-08'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/8 (木) 号</a>
-          <a href="index.html#date-2026-10-07" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-07'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/7 (水) 号</a>
-          <a href="index.html#date-2026-10-06" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-06'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/6 (火) 号</a>
-          <a href="index.html#date-2026-10-05" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-05'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/5 (月) 号</a>
-          <a href="index.html#date-2026-10-04" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-04'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/4 (日) 号</a>
-          <a href="index.html#date-2026-10-03" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-03'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/3 (土) 号</a>
-          <a href="index.html#date-2026-10-02" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-02'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/2 (金) 号</a>
-          <a href="index.html#date-2026-10-01" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-01'); window.scrollTo({{top:0, behavior:'smooth'}}); return false;">10/1 (木) 創刊号</a>
-        </div>
+        {older_pills_block}
       </div>
 
       <div class="archive-search-box">

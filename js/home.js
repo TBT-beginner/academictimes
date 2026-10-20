@@ -19,9 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
   let activeCategory = 'all';
   let activeSource = 'all';
   let activeQuery = '';
-  const dateKeys = Object.keys(EDITIONS).sort().reverse(); // ["2026-10-14", "2026-10-13", ...]
-  const latestDate = dateKeys[0] || '2026-10-14';
+  const dateKeys = Object.keys(EDITIONS).sort().reverse(); // ["2026-10-20", "2026-10-19", ...]
+  const latestDate = dateKeys[0] || '2026-10-20';
   let currentEditionDate = latestDate;
+
+  // Dynamically populate select dropdown so options are always complete
+  function populateEditionSelect() {
+    if (!dateSelect || typeof EDITIONS === 'undefined') return;
+    dateSelect.innerHTML = dateKeys.map(dKey => {
+      const ed = EDITIONS[dKey];
+      return `<option value="${dKey}">${ed.editionLabel || (dKey + ' 号')}</option>`;
+    }).join('');
+  }
+  populateEditionSelect();
 
   // ==========================================================================
   // 1. DATE / EDITION SWITCHER
