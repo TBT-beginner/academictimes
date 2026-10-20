@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 237 articles, daily editions, and high-school media literacy references.
+// Contains all 249 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -3669,15 +3669,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/film/2026/oct/19/you-can-see-everything-elizabeth-holmes-nathan-fielder-lance-oppenheim",
     "path": "entertainment/documentary-cinema-modern-corporate-fraud-spectacle/index.html",
     "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ipcc-seventh-assessment-report-delay-climate-diplomacy",
+    "category": "science",
+    "category_label": "CLIMATE GOVERNANCE • 気候変動と国際交渉",
+    "date": "2026-10-21",
+    "title": "Vital Global Climate Assessment Stalled as Developing Nations Contest 2028 Publication Timeline",
+    "headline_ja": "国連IPCC第7次気候変動報告書の策定難航：発展途上国がスケジュール延期を要求",
+    "subhead": "エチオピアでのIPCC会合が会期決定を見送って閉幕。気候科学の先進国偏重是正を求める途上国と、迅速な科学的知見を求める国々の対立が激化。",
+    "lead_snippet": "エチオピアの首都アディスアベバで開催された気候変動に関する政府間パネル（IPCC）の会合は、第7次評価報告書（AR7）の発表時期を確定できないまま閉幕した。サウジアラビアやロシア、中国などの国々が、気候科学が先進国に偏向していると主張し、2028年発表のスケジュールに反対したためである。地球沸騰化への迅速な国際協調が求められる中、科学的検証の主導権をめぐる地政学的対立が影を落としている。",
+    "source_name": "The Guardian (Oct 20, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/20/countries-pushing-vital-global-climate-report-delayed",
+    "path": "science/ipcc-seventh-assessment-report-delay-climate-diplomacy/index.html",
+    "image": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "arctic-permafrost-thaw-toxic-metals-drinking-water",
+    "category": "science",
+    "category_label": "ARCTIC ECOLOGY & HYDROLOGY • 極地水資源クライシス",
+    "date": "2026-10-21",
+    "title": "Arctic Permafrost Thawing Unleashes Hazardous Concentrations of Heavy Metals into Svalbard Tap Water",
+    "headline_ja": "北極の永久凍土融解が水道水を汚染：スヴァールバル諸島で鉄やマンガンなどの重金属が溶出",
+    "subhead": "急速な温暖化によって溶け出した地下地層から重金属が流出。極北の町ロングイェールビーンで水道水が飲用不能となり、北極圏全体の水安全保障に警鐘。",
+    "lead_snippet": "ノルウェー領スヴァールバル諸島の中心集落ロングイェールビーンで、急速な地球温暖化に伴う永久凍土の融解により地中の鉄やマンガンなどの有害重金属が水源に溶け出し、水道水が飲用不能となる事態が発生した。極北地域のインフラと水安全保障に対する直接的な脅威として、世界中の気候研究者に衝撃を与えている。",
+    "source_name": "The Guardian (Oct 19, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/19/tap-water-no-longer-drinkable-norwegian-town-climate-related-thawing-heavy-metals-arctic-longyearbyen-svalbard",
+    "path": "science/arctic-permafrost-thaw-toxic-metals-drinking-water/index.html",
+    "image": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "jackdaw-north-sea-gas-field-approval-climate-litigation",
+    "category": "law",
+    "category_label": "ENERGY LAW & LITIGATION • エネルギー法と気候訴訟",
+    "date": "2026-10-21",
+    "title": "UK Ministers Set to Reapprove Jackdaw North Sea Gas Field Following High Court Litigation Battles",
+    "headline_ja": "英政府、北海ジャックドー天然ガス田の開発を再承認へ：気候訴訟とエネルギー安全保障の対立",
+    "subhead": "環境アセスメントの不備を突く司法判断で一時凍結された重要ガス田。政府が新たな環境影響評価を経て承認を強行し、環境団体との法廷闘争が再燃。",
+    "lead_snippet": "英国政府は、最高裁判決や高等法院での激しい気候訴訟を経て一時中断していた北海ジャックドー（Jackdaw）ガス田の開発計画を正式に再承認する方針を固めた。国内のエネルギー供給安定と経済成長を優先する政府判断に対し、実質排出ゼロ目標に反するとして環境保護団体は再度の法廷闘争を予告している。",
+    "source_name": "The Guardian (Oct 20, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/20/jackdaw-north-sea-gas-field-to-get-go-ahead-in-blow-to-climate-campaigners",
+    "path": "law/jackdaw-north-sea-gas-field-approval-climate-litigation/index.html",
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "nato-black-sea-maritime-surveillance-grain-corridor",
+    "category": "world",
+    "category_label": "MARITIME SECURITY • 海洋安全保障と穀物回廊",
+    "date": "2026-10-21",
+    "title": "NATO Deploys Maritime Surveillance Drones to Black Sea to Protect Global Grain Transit Corridors",
+    "headline_ja": "NATO、黒海に無人海洋監視ドローンを展開：民間穀物輸送船の防護と航行の自由を強化",
+    "subhead": "民間船舶へのミサイル・機雷攻撃の頻発を受け、NATOが監視態勢を急強化。世界的な食料サプライチェーンの防衛と海洋法秩序の維持を目指す。",
+    "lead_snippet": "北大西洋条約機構（NATO）は、民間貨物船や国際穀物輸送船に対するミサイル・ドローン攻撃が相次いでいる黒海海域において、最新鋭の海洋監視ドローンと哨戒航空機を増派すると発表した。国際食料安全保障を支える重要航路の安全を担保し、公海上での航行の自由（freedom of navigation）を維持する構えである。",
+    "source_name": "The Guardian (Oct 20, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/20/nato-black-sea-deployment-escalating-russian-attacks-ships",
+    "path": "world/nato-black-sea-maritime-surveillance-grain-corridor/index.html",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ai-workplace-limitations-human-judgment-ethics",
+    "category": "culture",
+    "category_label": "DIGITAL HUMANISM • 労働と人間性の哲学",
+    "date": "2026-10-21",
+    "title": "Technological Limits of Automation: Why Workplace Artificial Intelligence Cannot Replace Human Judgment",
+    "headline_ja": "職場の自動化の限界：なぜAIは人間にしか下せない『良識と文脈判断』を代替できないのか",
+    "subhead": "高度な生成AIが業務に浸透する中、米テック界幹部が提言。計算能力の向上では決して代替できない『他者への配慮と責任ある倫理的判断』の不可欠性。",
+    "lead_snippet": "最新の生成AIは複雑なコーディングや膨大なデータ解析において驚異的な成果を上げているが、他者への共感や倫理的責任、日常的な暗黙知（tacit knowledge）に基づく判断においては根本的な弱点を露呈している。現代の職場において、AIは人間の意思決定を補佐する道具であって、倫理的主体としての人間そのものを置き換えることはできない。",
+    "source_name": "The Guardian (Oct 20, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/20/ai-human-judgment",
+    "path": "culture/ai-workplace-limitations-human-judgment-ethics/index.html",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ai-synthetic-bioweapons-threat-global-security",
+    "category": "science",
+    "category_label": "BIOSECURITY & AI • 先端技術と生命倫理",
+    "date": "2026-10-21",
+    "title": "Intelligence Officials Warn Artificial Intelligence Lowers Technical Barriers to Synthetic Bioweapons",
+    "headline_ja": "情報機関トップが警鐘：生成AIが合成生物兵器の製造障壁を劇的に引き下げる現実のリスク",
+    "subhead": "英MI5長官らが年次脅威演説で表明。生体分子シミュレーションAIが悪用された場合、高度なラボ設備なしで危険病原体が設計される脅威に国際規制を要請。",
+    "lead_snippet": "英国の国内情報機関MI5のトップらは、高度な大規模言語モデルや生体分子設計AIが悪意ある組織に利用された場合、従来は高度な専門知識が必要だった危険病原体の合成手順が容易に解明される恐れがあると警告した。バイオセキュリティとAI規制の融合が国際的な最優先課題となっている。",
+    "source_name": "The Guardian (Oct 20, 2026)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/audio/2026/oct/20/these-risks-are-real-the-threat-of-ai-bioweapons-podcast",
+    "path": "science/ai-synthetic-bioweapons-threat-global-security/index.html",
+    "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "australia-eu-free-trade-agreement-agricultural-tariffs",
+    "category": "world",
+    "category_label": "INTERNATIONAL TRADE & DIPLOMACY • 国際通商と保護貿易",
+    "date": "2026-10-21",
+    "title": "Australia-EU Ten-Billion-Dollar Trade Negotiations Stall Over Agricultural Tariffs and Geographical Names",
+    "headline_ja": "豪州・EU間の100億ドル規模FTA交渉が再暗礁：農産品関税と地理的表示（GI）保護をめぐる対立",
+    "subhead": "牛肉や羊肉の輸出枠拡大を迫るオーストラリアと、伝統的産品名を保護したい欧州。重要鉱物連携の必要性にもかかわらず、国内利害の対立が通商協定を阻む。",
+    "lead_snippet": "オーストラリアと欧州連合（EU）の間で進められてきた総額100億豪ドル規模の自由貿易協定（FTA）交渉が、牛肉・羊肉の輸入枠拡大や欧州特有の地理的表示（ProseccoやFetaなど）の保護規定をめぐり合意に至らず再び停滞した。戦略的資源連携を急ぐ政治指導者と、自国農業保護を譲らない議会・産業界の対立が浮き彫りとなっている。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/global-development/2026/oct/21/australias-10bn-eu-trade-deal-has-stalled-again-what-is-it-and-whats-gone-wrong",
+    "path": "world/australia-eu-free-trade-agreement-agricultural-tariffs/index.html",
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "guinea-bissau-vaccine-trial-raid-global-health-ethics",
+    "category": "society",
+    "category_label": "GLOBAL HEALTH & BIOETHICS • 国際保健と生命倫理",
+    "date": "2026-10-21",
+    "title": "Judicial Authorities in Guinea-Bissau Raid Foreign-Backed Clinical Trial Offices in Medical Ethics Dispute",
+    "headline_ja": "ギニアビサウ司法警察が海外支援ワクチン臨床試験施設を捜索：途上国における医療倫理の波紋",
+    "subhead": "新生児向けB型肝炎ワクチンの臨床試験に対し地元当局が家宅捜索。治験用バイアルを押収し、同意取得プロセスと研究透明性をめぐる国際的議論が激化。",
+    "lead_snippet": "西アフリカのギニアビサウにおいて、司法警察が新生児を対象としたB型肝炎ワクチン臨床試験の事務所を捜索し、治験用バイアルを押収した。地元政府の許認可プロセスの不備やインフォームド・コンセント（十分な説明に基づく同意）をめぐり、途上国における先進国主導の臨床試験の透明性と生命倫理に関する国際的な論争が再燃している。",
+    "source_name": "The Guardian (Oct 20, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/20/rfk-jr-vaccine-researchers-offices-raided-guinea-bissau",
+    "path": "society/guinea-bissau-vaccine-trial-raid-global-health-ethics/index.html",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "theranos-corporate-fraud-streaming-viewership-surge",
+    "category": "entertainment",
+    "category_label": "POPULAR CULTURE & ETHICS • 企業不正と現代メディア",
+    "date": "2026-10-21",
+    "title": "Public Fascination with High-Stakes Silicon Valley Fraud Sparks Dramatic Streaming Surge for Theranos Dramas",
+    "headline_ja": "シリコンバレーの巨額不正への関心が再燃：セラノス事件を描く名著やドラマの視聴数が急伸",
+    "subhead": "新作告発ドキュメンタリーの公開を受け、『The Dropout』や調査報道本『Bad Blood』がランキング再浮上。ハイテク企業の誇大広告と人間の盲信への警鐘。",
+    "lead_snippet": "血液検査ベンチャー「セラノス」の巨額詐欺事件を描いた新作ドキュメンタリーの公開を契機に、調査報道本『Bad Blood』や配信ドラマシリーズの視聴数が再び急増している。先端技術への過剰な盲信と「大ボラ（fake it till you make it）」を許容したシリコンバレーの投資家文化を問い直す教訓として、若い世代の間で受容が広がっている。",
+    "source_name": "The Guardian (Oct 20, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/film/2026/oct/20/you-can-see-everything-dropout-viewership",
+    "path": "entertainment/theranos-corporate-fraud-streaming-viewership-surge/index.html",
+    "image": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "myanmar-aung-san-suu-kyi-diplomatic-royal-gift",
+    "category": "world",
+    "category_label": "DIPLOMACY & HUMAN RIGHTS • 権威主義と人権外交",
+    "date": "2026-10-21",
+    "title": "Myanmar Military Junta Releases Rare Photographs of Imprisoned Aung San Suu Kyi After Royal British Gift",
+    "headline_ja": "英国王からの外交的贈り物受領を受け、ミャンマー国軍が拘束中のスーチー氏の近影を異例公開",
+    "subhead": "チャールズ国王からの園芸本を受け取る民主化指導者の写真が初公開。政権の正統性と国際的孤立の緩和を狙う軍事政権のプロパガンダ戦術との見方。",
+    "lead_snippet": "ミャンマー国軍は、2021年のクーデター以降刑務所に拘束されている民主化指導者アウンサンスーチー氏が、英国のチャールズ国王から送られた園芸関連書籍などの私的ギフトを受け取る様子を捉えた写真を異例の形で公開した。国際社会の孤立を緩和しようとする軍事政権の思惑が指摘されている。",
+    "source_name": "The Guardian (Oct 20, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/20/myanmar-aung-san-suu-kyi-rare-photos-gift-king-charles",
+    "path": "world/myanmar-aung-san-suu-kyi-diplomatic-royal-gift/index.html",
+    "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "us-midterm-elections-voter-sentiment-economic-anxiety",
+    "category": "society",
+    "category_label": "POLITICAL SOCIOLOGY • 現代政治と世論分析",
+    "date": "2026-10-21",
+    "title": "Persistent Cost-of-Living Strains and Global Instability Eclipse Social Issues Ahead of US Midterm Elections",
+    "headline_ja": "米中間選挙を控える有権者の本音：生活費高騰と国際情勢の緊迫が最大の投票争点に浮上",
+    "subhead": "住宅ローン金利や日用品インフレに対する庶民の切実な不満。激戦州の世論調査でイデオロギー論争を圧倒し、日々の生活防衛が議席の行方を握る展開へ。",
+    "lead_snippet": "2026年秋の米中間選挙を控え、激戦州の有権者世論調査では住宅ローン金利や食料品インフレ、雇用の先行きといった「家計の経済的安定」が最大の関心事として圧倒的なトップを占めている。イデオロギー的な対立以上に、日々の生活防衛が両党の議席を左右する決定的な要因となっている。",
+    "source_name": "The Guardian (Oct 20, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/20/voter-issues-midterms-elections",
+    "path": "society/us-midterm-elections-voter-sentiment-economic-anxiety/index.html",
+    "image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "southern-europe-youth-protests-housing-affordability",
+    "category": "society",
+    "category_label": "URBAN SOCIOLOGY & INEQUALITY • 都市格差と若者デモ",
+    "date": "2026-10-21",
+    "title": "Mass Mobilization Across Southern Europe: Young Citizens Take to Streets Demanding Fair Housing and Living Wages",
+    "headline_ja": "南欧各地で広がる若者の大規模デモ：高騰する家賃と観光公害、教育インフラの改善を要求",
+    "subhead": "マドリード、リスボン、マルセイユで若者や学生が連帯デモ。観光客向け短期民泊の急増による住宅難と低賃金に怒りの声。",
+    "lead_snippet": "フランス、スペイン、ポルトガルなどの主要都市で、数万人規模の若者や学生が街頭デモ行進を行い、観光客向け民泊による家賃高騰の規制と初任給の引き上げを求めた。世代間格差と都市の居住可能性（livability）をめぐる切実な叫びは、欧州各国の都市政策や観光産業のあり方に根本的な見直しを迫っている。",
+    "source_name": "The Guardian (Oct 18, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/18/europe-protests-france-spain-portugal-2026-explainer",
+    "path": "society/southern-europe-youth-protests-housing-affordability/index.html",
+    "image": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-21": {
+    "dateStr": "Wednesday October 21 2026",
+    "editionLabel": "2026年10月21日 (水) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：国連IPCC第7次報告書延期・北極永久凍土融解と水道水重金属・北海ガス田再承認・NATO黒海監視ドローン",
+    "topLeadSlug": "ipcc-seventh-assessment-report-delay-climate-diplomacy",
+    "subLeadSlugs": [
+      "arctic-permafrost-thaw-toxic-metals-drinking-water",
+      "jackdaw-north-sea-gas-field-approval-climate-litigation",
+      "nato-black-sea-maritime-surveillance-grain-corridor"
+    ],
+    "leftDispatches": [
+      "ai-workplace-limitations-human-judgment-ethics",
+      "ai-synthetic-bioweapons-threat-global-security",
+      "australia-eu-free-trade-agreement-agricultural-tariffs",
+      "guinea-bissau-vaccine-trial-raid-global-health-ethics"
+    ],
+    "rightDigestSlugs": [
+      "theranos-corporate-fraud-streaming-viewership-surge",
+      "myanmar-aung-san-suu-kyi-diplomatic-royal-gift",
+      "us-midterm-elections-voter-sentiment-economic-anxiety",
+      "southern-europe-youth-protests-housing-affordability"
+    ]
+  },
   "2026-10-20": {
     "dateStr": "Tuesday October 20 2026",
-    "editionLabel": "2026年10月20日 (火) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月20日 (火) 号 【全12記事・アーカイブ】",
     "tagline": "特集：迷惑インフルエンサー撮影規制・図書館に黒クマ迷入・オリオン座流星群極大・海鳥V字回復の奇跡",
     "topLeadSlug": "social-media-influencer-photography-bans-hospitality-tourism",
     "subLeadSlugs": [

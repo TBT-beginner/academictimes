@@ -78,9 +78,18 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-21": {
+        "dateStr": "Wednesday October 21 2026",
+        "editionLabel": "2026年10月21日 (水) 号 【本日付・最新・全12記事】",
+        "tagline": "特集：国連IPCC第7次報告書延期・北極永久凍土融解と水道水・北海ガス田再承認・NATO黒海監視ドローン",
+        "topLeadSlug": "ipcc-seventh-assessment-report-delay-climate-diplomacy",
+        "subLeadSlugs": ["arctic-permafrost-thaw-toxic-metals-drinking-water", "jackdaw-north-sea-gas-field-approval-climate-litigation", "nato-black-sea-maritime-surveillance-grain-corridor"],
+        "leftDispatches": ["ai-workplace-limitations-human-judgment-ethics", "ai-synthetic-bioweapons-threat-global-security", "australia-eu-free-trade-agreement-agricultural-tariffs", "guinea-bissau-vaccine-trial-raid-global-health-ethics"],
+        "rightDigestSlugs": ["theranos-corporate-fraud-streaming-viewership-surge", "myanmar-aung-san-suu-kyi-diplomatic-royal-gift", "us-midterm-elections-voter-sentiment-economic-anxiety", "southern-europe-youth-protests-housing-affordability"]
+    },
     "2026-10-20": {
         "dateStr": "Tuesday October 20 2026",
-        "editionLabel": "2026年10月20日 (火) 号 【本日付・最新・全12記事】",
+        "editionLabel": "2026年10月20日 (火) 号 【全12記事・アーカイブ】",
         "tagline": "特集：迷惑インフルエンサー撮影禁止・図書館に迷い込んだ黒クマ・オリオン座流星群・海鳥のV字回復",
         "topLeadSlug": "social-media-influencer-photography-bans-hospitality-tourism",
         "subLeadSlugs": ["black-bear-wanders-california-public-library", "orionid-meteor-shower-peaks-halley-comet-debris", "seabird-population-recovery-solent-avian-flu"],
