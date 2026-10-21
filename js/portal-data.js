@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 249 articles, daily editions, and high-school media literacy references.
+// Contains all 261 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -3849,15 +3849,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/world/2026/oct/18/europe-protests-france-spain-portugal-2026-explainer",
     "path": "society/southern-europe-youth-protests-housing-affordability/index.html",
     "image": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "orangutans-prefer-food-laughter-sounds-study",
+    "category": "science",
+    "category_label": "COGNITIVE ETHOLOGY • 霊長類行動学",
+    "date": "2026-10-22",
+    "title": "Orangutans Prefer Food Associated with Laughter Sounds, Research Suggests",
+    "headline_ja": "オランウータンは「仲間の笑い声」がする餌を選ぶ：ポジティブな情動共有を示す最新研究",
+    "subhead": "録音された笑い声を聞かせた実験で、類人猿が肯定的な音声シグナルに強く引き寄せられることが判明。社会的結びつきの進化学的起源に迫る知見。",
+    "lead_snippet": "最新の比較認知科学研究により、オランウータンが仲間の笑い声に似た肯定的な発声シグナルに関連付けられた餌箱を好んで選択することが明らかになった。研究者らは、音響刺激による実験を通じて、類人猿が他者のポジティブな情動状態を認知し、それを行動決定の手がかりとして利用していると結論づけた。この発見は、人類のユーモアや社会的共感の発達が、共通祖先の情動コミュニケーションにまで遡る可能性を強く示唆している。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/21/orangutans-prefer-food-laughter-sounds-study",
+    "path": "science/orangutans-prefer-food-laughter-sounds-study/index.html",
+    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "creativity-aging-cognitive-flexibility-knowledge-synthesis",
+    "category": "science",
+    "category_label": "COGNITIVE NEUROSCIENCE • 創造性と加齢の科学",
+    "date": "2026-10-22",
+    "title": "Do People Become Less Creative with Age? Groundbreaking Study Reveals Wisdom Synthesis",
+    "headline_ja": "年齢とともに創造性は衰えるのか？中高年以降の「知識統合型イノベーション」を解明した最新認知研究",
+    "subhead": "「若さ＝独創性」という神話を覆す実証研究。蓄積された知識体系の統合と文脈理解により、円熟期の創造性が持つ独自の強みが証明される。",
+    "lead_snippet": "長年信じられてきた「人間の創造性は20代から30代でピークを迎える」という通説に対し、最新の認知神経科学研究が驚くべき発見をもたらした。大規模な被験者群を対象とした長期追跡調査により、若年層が単一のひらめきに優れる一方、中高年層は多様な領域の知識を統合し、複雑な現実問題に深い洞察をもたらす「文脈統合型創造性」において圧倒的に高い成果を上げることが判明した。加齢は脳機能の衰退ではなく、多角的統合への最適化である可能性が示されている。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/21/do-people-become-less-creative-as-they-get-older-research",
+    "path": "science/creativity-aging-cognitive-flexibility-knowledge-synthesis/index.html",
+    "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "bad-apple-effect-social-contagion-rule-breaking-study",
+    "category": "society",
+    "category_label": "BEHAVIORAL PSYCHOLOGY • 社会心理学と規律の伝播",
+    "date": "2026-10-22",
+    "title": "The 'Bad Apple' Effect: How Subtle Rule-Breaking Influences Group Norms",
+    "headline_ja": "「1つの腐ったリンゴ」が組織を崩す：他者の小さな違反が規範を浸食するメカニズムを解明した社会心理学実験",
+    "subhead": "公共空間や職場で誰か1人がルールを破ると、周囲の不正行為が連鎖的に増加。社会的シグナルが人々の規範意識に与える影響を検証。",
+    "lead_snippet": "他者の小さなルール違反が周囲の遵法意識を劇的に低下させる「腐ったリンゴ効果（Bad Apple Effect）」について、画期的な社会実験の結果が発表された。研究チームは、1人のサクラが些細な規則を無視しただけで、周囲の一般市民や同僚が追従して規律を破る確率が倍増することを実証した。この研究は、組織の腐敗や公共秩序の崩壊が、大規模な悪意ではなく「小さな不作為と見逃し」の蓄積から始まることを浮き彫りにしている。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/21/bad-apples-rule-breaking-study",
+    "path": "society/bad-apple-effect-social-contagion-rule-breaking-study/index.html",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "critical-php-vulnerability-triggers-global-website-shutdowns",
+    "category": "tech",
+    "category_label": "CYBERSECURITY & WEB ARCHITECTURE • 世界的脆弱性緊急対策",
+    "date": "2026-10-22",
+    "title": "Critical Vulnerability in Core PHP Language Triggers Precautionary Global Website Shutdowns",
+    "headline_ja": "ウェブの7割を支える言語「PHP」に深刻な脆弱性：世界中でサイト一時停止と緊急パッチ適用が拡大",
+    "subhead": "インターネットインフラの基幹を揺るがすセキュリティ脅威。米英サイバー防衛機関が即時対応を警告し、デジタル依存の脆弱性が露呈。",
+    "lead_snippet": "世界のウェブサイトの70%以上で使用されているプログラミング言語「PHP」の中核部分に重大な脆弱性が発見され、世界中の企業や政府機関が予防的なサービス停止と緊急パッチの適用に追われている。悪用された場合、遠隔の攻撃者がサーバーの完全な制御権を掌握できる危険性があり、米CISAや英NCSCなどのサイバー機関が最高レベルの警告を発令した。半世紀にわたり構築されてきたオープンソースエコシステムの維持管理体制が改めて問われている。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/21/flaw-in-php-computer-language-leads-to-shutdown-of-websites-around-world",
+    "path": "tech/critical-php-vulnerability-triggers-global-website-shutdowns/index.html",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "literary-prize-books-co-written-with-ai-launched",
+    "category": "culture",
+    "category_label": "LITERARY AESTHETICS • 人工知能と文学の境界",
+    "date": "2026-10-22",
+    "title": "Pioneering Literary Prize Inaugurated for Novels Co-Authored with Generative AI",
+    "headline_ja": "生成AIと共作した小説を対象とする文学賞が新設：創作の定義と作家性をめぐる世界的議論が勃発",
+    "subhead": "フランスで創設された前代未聞のコンテスト。AIを単なる道具ではなく「文学的共作者」として評価する試みに対し、伝統派と先鋭派が激論。",
+    "lead_snippet": "フランスにおいて、大規模言語モデルなどの生成AIを「協調的共作者」として執筆された文学作品を顕彰する新たな国際文学賞が創設された。主催者は、アルゴリズムの提案と人間の感性が融合した未知の文体やナラティブ構造を評価対象にすると宣言している。しかし、文壇の伝統主義者からは「文章の魂や著作者の人格権を冒涜するものだ」との強い批判が相次ぎ、テクノロジー時代の創造性とオーサーシップ（著作者性）の本質をめぐる哲学的な論争が白熱している。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/books/2026/oct/21/new-prize-launches-books-co-written-with-ai-france",
+    "path": "culture/literary-prize-books-co-written-with-ai-launched/index.html",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "music-fans-reject-synthetic-ai-tracks-human-authenticity",
+    "category": "culture",
+    "category_label": "MUSIC & CULTURE • 音楽における人間性と生成AI",
+    "date": "2026-10-22",
+    "title": "Audience Pushback Against Synthetic Music Leads Industry Pioneers to Re-evaluate AI",
+    "headline_ja": "リスナーがAI生成音楽に「ノー」：空虚な合成トラックへの反発が促す人間的本真性の再評価",
+    "subhead": "初期のブームから一転、音楽ファンが「完璧すぎる機械の歌」を拒絶。有名プロデューサーらもAI主導の量産方針を見直し、生身の演奏へ回帰。",
+    "lead_snippet": "音楽ストリーミング市場を席巻すると予測された生成AIによる楽曲制作に対し、世界中のリスナーから強い反発が巻き起こっている。完璧に調律され、アルゴリズムによって最適化された合成音楽に対し、ファンは「生身の感情や不完全さが欠如している」と評価し、急速に関心を失った。かつてAI導入を声高に推奨したトップアーティストやプロデューサーたちも、人間固有の脆弱性やライヴ空間での熱量こそが音楽の本質であると再認識し、方針転換を余儀なくされている。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/music/2026/oct/21/artificial-intelligence-music-grimes-asap-rocky",
+    "path": "culture/music-fans-reject-synthetic-ai-tracks-human-authenticity/index.html",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "un-warns-emissions-must-fall-eighteen-percent-in-four-years",
+    "category": "environment",
+    "category_label": "GLOBAL CLIMATE ACTION • 国連緊急気候警告",
+    "date": "2026-10-22",
+    "title": "Global Carbon Emissions Must Plunge 18% in Four Years to Avert Catastrophic Warming, UN Warns",
+    "headline_ja": "地球温暖化の破滅的暴走を防ぐため「4年で温室効果ガス18%削減」が不可欠：国連環境計画が緊急報告書を公表",
+    "subhead": "パリ協定の1.5度目標維持に向け残された猶予は極めて僅か。主要産油国や大排出国の消極姿勢を厳しく批判し、非常事態レベルの行動を要求。",
+    "lead_snippet": "国連環境計画（UNEP）は最新の排出ギャップ報告書を発表し、壊滅的な地球温暖化を回避するためには、今後4年間（2030年まで）に世界の温室効果ガス排出量を最低18%削減しなければならないと緊急警告を発した。報告書は、現状の各国の排出削減誓約が危険なほど不十分であり、主要な化石燃料産出国や経済大国が排出削減を先送りし続ければ、地球の気温上昇幅が今世紀中に取り返しのつかない水準に達すると強く警鐘を鳴らしている。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/21/world-cut-emissions-un-climate-crisis",
+    "path": "environment/un-warns-emissions-must-fall-eighteen-percent-in-four-years/index.html",
+    "image": "https://images.unsplash.com/photo-1509391365360-2e959784a276?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "svalbard-village-confronts-rapid-arctic-heating-permafrost",
+    "category": "environment",
+    "category_label": "ARCTIC GEOGRAPHY • 北極圏気候危機と適応",
+    "date": "2026-10-22",
+    "title": "Arctic Outpost Longyearbyen Confronts Accelerating Thaw as One of Earth's Fastest Warming Towns",
+    "headline_ja": "地球上で最も温暖化が進む北極圏の街「ロングイェールビーン」：永久凍土融解と氷河後退に直面する極北集落の闘い",
+    "subhead": "ノルウェー・スヴァールバル諸島の最前線。地盤の崩落、土砂崩れ、生態系激変に直面しながら、住民たちは持続可能な都市の再定義に挑む。",
+    "lead_snippet": "地球平均の約4倍から6倍の猛烈なスピードで温暖化が進む北極圏のスヴァールバル諸島・ロングイェールビーン。かつて強固な永久凍土の上に築かれたこの世界最北の恒久集落では、地盤の融解によって住宅が傾き、豪雨による地滑りや雪崩の脅威が急激に高まっている。石炭鉱山から科学観測と観光の町へと変貌を遂げてきた住民たちは今、地球温暖化の最前線において、都市インフラの根本的な移設と気候適応策のモデル構築を模索している。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/21/norway-svalbard-environment-longyearbyen-climate-heating-glacier-permafrost",
+    "path": "environment/svalbard-village-confronts-rapid-arctic-heating-permafrost/index.html",
+    "image": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "taiwan-indicts-cross-border-plot-targeting-political-satirist",
+    "category": "world",
+    "category_label": "CROSS-BORDER SECURITY • 政治風刺と表現の自由",
+    "date": "2026-10-22",
+    "title": "Taiwan Indicts Five Operatives Over Cross-Border Plot Targeting Comedian Critical of Beijing",
+    "headline_ja": "台湾検察、習近平氏を風刺したコメディアン襲撃未遂事件で5人を起訴：越境弾圧と民主的表現の自由防衛",
+    "subhead": "人気スタンドアップ芸人を車で轢き重傷を負わせようとした親中派ネットワークを摘発。台湾社会に広がる「越境的抑圧」の脅威に司法が鉄槌。",
+    "lead_snippet": "台湾の新北地方検察署は、中国指導部や習近平国家主席を辛辣に風刺するネタで知られる台湾の人気コメディアン、黄逸豪（ホアン・イーハオ）氏を標的とし、車両で轢き殺そうと計画したとして男5人を起訴した。起訴状によると、容疑者らは中国側の指示役から報酬を受け取り、氏の公演スケジュールや移動ルートを組織的に尾行していた。言論の自由を誇る台湾の民主主義社会に対し、暴力的な威嚇を通じて沈黙を強要しようとする越境的弾圧（Transnational Repression）の手口が明るみに出ている。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/21/taiwan-five-men-plot-run-over-comedian-huang-yi-hao-xi-jinping-jokes",
+    "path": "world/taiwan-indicts-cross-border-plot-targeting-political-satirist/index.html",
+    "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "trapped-shark-in-busan-canal-freed-after-citizen-vigil",
+    "category": "world",
+    "category_label": "URBAN ECOLOGY • 海洋生物保護と市民共創",
+    "date": "2026-10-22",
+    "title": "Shark Trapped for a Month in South Korean Urban Canal Rescued Following Massive Citizen Watch",
+    "headline_ja": "韓国・釜山の都市運河に1か月閉じ込められたサメを無事救出：数千人の市民によるYouTube見守りと海洋専門家の奮闘",
+    "subhead": "水門の閉鎖で迷い込んだドチザメ「ブガンイ」。SNSを通じて国民的関心を集め、地元ダイバーと水族館チームが外海への無傷の生還に成功。",
+    "lead_snippet": "韓国第2の都市・釜山の都市運河に迷い込み、満潮時の水門閉鎖によって約1か月にわたり閉じ込められていた体長約1メートルのサメが、海洋生物学者と民間ダイバーの連携により無事救出され、外海へと放流された。運河を彷徨うサメの様子は市民によってYouTubeで24時間ライブ配信され、「ブガンイ」の愛称で全国的な応援と関心を集めていた。都市インフラと野生動物の共存、そして市民の温かい見守りが結実した心温まる海洋環境ニュースとして話題を呼んでいる。",
+    "source_name": "The Guardian (Oct 21, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/21/youtube-watch-over-shark-stuck-south-korea-canal-busan-bukang-i",
+    "path": "world/trapped-shark-in-busan-canal-freed-after-citizen-vigil/index.html",
+    "image": "https://images.unsplash.com/photo-1560275619-4662e36fa65c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "penicillin-allergy-misdiagnosis-strains-antibiotic-stewardship",
+    "category": "society",
+    "category_label": "PUBLIC HEALTH • 薬剤耐性と診断見直し",
+    "date": "2026-10-22",
+    "title": "Overwhelming Majority of Self-Reported Penicillin Allergies Disproven by Rigorous Clinical Testing",
+    "headline_ja": "ペニシリンアレルギー申告者の「大多数が実はアレルギーではない」：薬剤耐性菌を招く過剰回避に医師らが警鐘",
+    "subhead": "オーストラリアの大規模臨床研究。幼少期の軽い発疹や勘違いによる誤認が9割に達し、高価で耐性リスクの高い代替抗菌薬の乱用につながる実態を解明。",
+    "lead_snippet": "自身を「ペニシリン・アレルギー」と自認している患者の9割以上が、厳格な皮膚試験や経口負荷試験を実施した結果、実際にはアレルギーを有していないことがオーストラリアの大規模な臨床疫学研究で明らかになった。小児期のウイルス感染による発疹を薬疹と誤認したまま成人するケースが多く、ペニシリンを不必要に回避した結果、より強力で広範な代替抗菌薬が処方され、医療費の増大や薬剤耐性菌（AMR）の発生を助長している。医療現場では積極的な診断見直しが提唱されている。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/australia-news/2026/oct/22/penicillin-allergy-australia-doctors-antibiotic-guidelines",
+    "path": "society/penicillin-allergy-misdiagnosis-strains-antibiotic-stewardship/index.html",
+    "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "nsw-legalizes-human-composting-green-burial-bioethics",
+    "category": "society",
+    "category_label": "BIOETHICS & LAW • 循環型埋葬と生命倫理",
+    "date": "2026-10-22",
+    "title": "New South Wales Enacts Landmark Human Composting Legislation to Provide Ecological Burial Alternatives",
+    "headline_ja": "遺体を土に還す「堆肥葬（ヒューマン・コンポスティング）」を豪州NSW州が法制化：循環型社会における新たな終末期生命倫理",
+    "subhead": "火葬による二酸化炭素排出や墓地不足を解決する持続可能な埋葬選択肢。複数の議員が自らの利用を表明し、死生観の歴史的転換点に。",
+    "lead_snippet": "オーストラリアのニューサウスウェールズ（NSW）州議会は、遺体を微生物の力で自然分解させ有機土壌へと還す「堆肥葬（Natural Organic Reduction / Human Composting）」を合法化する画期的な法案を可決した。従来の火葬が膨大な化石燃料を消費し温室効果ガスを排出する一方、堆肥葬は環境負荷を大幅に削減し、生成された肥沃な土は森林再生活動や記念樹の植樹に活用される。議員自身が将来の利用を宣言するなど、環境配慮と個人の尊厳を両立させる新たな死生観が定着しつつある。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/australia-news/2026/oct/22/nsw-passes-human-compost-laws-with-several-mps-saying-they-will-utilise-practice-after-they-die",
+    "path": "society/nsw-legalizes-human-composting-green-burial-bioethics/index.html",
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-22": {
+    "dateStr": "Thursday October 22 2026",
+    "editionLabel": "2026年10月22日 (木) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：オランウータンの笑い声選好・加齢と知識統合型創造性・PHP基盤脆弱性・国連4年18%排出削減警告",
+    "topLeadSlug": "orangutans-prefer-food-laughter-sounds-study",
+    "subLeadSlugs": [
+      "creativity-aging-cognitive-flexibility-knowledge-synthesis",
+      "critical-php-vulnerability-triggers-global-website-shutdowns",
+      "un-warns-emissions-must-fall-eighteen-percent-in-four-years"
+    ],
+    "leftDispatches": [
+      "bad-apple-effect-social-contagion-rule-breaking-study",
+      "svalbard-village-confronts-rapid-arctic-heating-permafrost",
+      "taiwan-indicts-cross-border-plot-targeting-political-satirist",
+      "trapped-shark-in-busan-canal-freed-after-citizen-vigil"
+    ],
+    "rightDigestSlugs": [
+      "literary-prize-books-co-written-with-ai-launched",
+      "music-fans-reject-synthetic-ai-tracks-human-authenticity",
+      "penicillin-allergy-misdiagnosis-strains-antibiotic-stewardship",
+      "nsw-legalizes-human-composting-green-burial-bioethics"
+    ]
+  },
   "2026-10-21": {
     "dateStr": "Wednesday October 21 2026",
-    "editionLabel": "2026年10月21日 (水) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月21日 (水) 号 【全12記事・アーカイブ】",
     "tagline": "特集：国連IPCC第7次報告書延期・北極永久凍土融解と水道水重金属・北海ガス田再承認・NATO黒海監視ドローン",
     "topLeadSlug": "ipcc-seventh-assessment-report-delay-climate-diplomacy",
     "subLeadSlugs": [

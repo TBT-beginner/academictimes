@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-10-22": {
+            "dateStr": "Thursday October 22 2026",
+            "editionLabel": "2026年10月22日 (木) 号 【本日付・最新・全12記事】",
+            "tagline": "特集：オランウータンの笑い声選好・加齢と知識統合型創造性・PHP基盤脆弱性・国連4年18%排出削減警告",
+            "topLeadSlug": "orangutans-prefer-food-laughter-sounds-study",
+            "subLeadSlugs": [
+                "creativity-aging-cognitive-flexibility-knowledge-synthesis",
+                "critical-php-vulnerability-triggers-global-website-shutdowns",
+                "un-warns-emissions-must-fall-eighteen-percent-in-four-years"
+            ],
+            "leftDispatches": [
+                "bad-apple-effect-social-contagion-rule-breaking-study",
+                "svalbard-village-confronts-rapid-arctic-heating-permafrost",
+                "taiwan-indicts-cross-border-plot-targeting-political-satirist",
+                "trapped-shark-in-busan-canal-freed-after-citizen-vigil"
+            ],
+            "rightDigestSlugs": [
+                "literary-prize-books-co-written-with-ai-launched",
+                "music-fans-reject-synthetic-ai-tracks-human-authenticity",
+                "penicillin-allergy-misdiagnosis-strains-antibiotic-stewardship",
+                "nsw-legalizes-human-composting-green-burial-bioethics"
+            ]
+        },
         "2026-10-21": {
             "dateStr": "Wednesday October 21 2026",
-            "editionLabel": "2026年10月21日 (水) 号 【本日付・最新・全12記事】",
+            "editionLabel": "2026年10月21日 (水) 号 【全12記事・アーカイブ】",
             "tagline": "特集：国連IPCC第7次報告書延期・北極永久凍土融解と水道水重金属・北海ガス田再承認・NATO黒海監視ドローン",
             "topLeadSlug": "ipcc-seventh-assessment-report-delay-climate-diplomacy",
             "subLeadSlugs": [

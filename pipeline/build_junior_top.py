@@ -24,19 +24,19 @@ def generate_junior_index():
     # Map articles by slug
     art_map = {a["slug"]: a for a in JUNIOR_ARTICLES}
     
-    # 10/21 Default Edition Stories
-    lead = art_map.get("ipcc-seventh-assessment-report-delay-climate-diplomacy", JUNIOR_ARTICLES[0])
-    sub1 = art_map.get("arctic-permafrost-thaw-toxic-metals-drinking-water", JUNIOR_ARTICLES[1])
-    sub2 = art_map.get("jackdaw-north-sea-gas-field-approval-climate-litigation", JUNIOR_ARTICLES[2])
+    # 10/22 Default Edition Stories
+    lead = art_map.get("orangutans-prefer-food-laughter-sounds-study", JUNIOR_ARTICLES[0])
+    sub1 = art_map.get("creativity-aging-cognitive-flexibility-knowledge-synthesis", JUNIOR_ARTICLES[1])
+    sub2 = art_map.get("critical-php-vulnerability-triggers-global-website-shutdowns", JUNIOR_ARTICLES[2])
     
-    left1 = art_map.get("nato-black-sea-maritime-surveillance-grain-corridor", JUNIOR_ARTICLES[3])
-    left2 = art_map.get("ai-workplace-limitations-human-judgment-ethics", JUNIOR_ARTICLES[4])
-    left3 = art_map.get("ai-synthetic-bioweapons-threat-global-security", JUNIOR_ARTICLES[5])
+    left1 = art_map.get("un-warns-emissions-must-fall-eighteen-percent-in-four-years", JUNIOR_ARTICLES[3])
+    left2 = art_map.get("bad-apple-effect-social-contagion-rule-breaking-study", JUNIOR_ARTICLES[4])
+    left3 = art_map.get("svalbard-village-confronts-rapid-arctic-heating-permafrost", JUNIOR_ARTICLES[5])
     
-    right1 = art_map.get("australia-eu-free-trade-agreement-agricultural-tariffs", JUNIOR_ARTICLES[6])
-    right2 = art_map.get("guinea-bissau-vaccine-trial-raid-global-health-ethics", JUNIOR_ARTICLES[7])
-    right3 = art_map.get("theranos-corporate-fraud-streaming-viewership-surge", JUNIOR_ARTICLES[8])
-    right4 = art_map.get("myanmar-aung-san-suu-kyi-diplomatic-royal-gift", JUNIOR_ARTICLES[9])
+    right1 = art_map.get("taiwan-indicts-cross-border-plot-targeting-political-satirist", JUNIOR_ARTICLES[6])
+    right2 = art_map.get("trapped-shark-in-busan-canal-freed-after-citizen-vigil", JUNIOR_ARTICLES[7])
+    right3 = art_map.get("literary-prize-books-co-written-with-ai-launched", JUNIOR_ARTICLES[8])
+    right4 = art_map.get("music-fans-reject-synthetic-ai-tracks-human-authenticity", JUNIOR_ARTICLES[9])
 
     # Pre-render all 15 catalog cards for initial display & SEO
     cards_html = []

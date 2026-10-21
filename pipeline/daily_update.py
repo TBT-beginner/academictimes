@@ -36,11 +36,10 @@ def run_step(step_name, command_args):
     print(f"\n==========================================")
     print(f"[DAILY PIPELINE] Step: {step_name}")
     print(f"==========================================")
-    res = subprocess.run([sys.executable] + command_args, cwd=PIPELINE_DIR, capture_output=True, text=True, encoding="utf-8")
-    if res.stdout:
-        print(res.stdout.strip())
+    sys.stdout.flush()
+    res = subprocess.run([sys.executable] + command_args, cwd=PIPELINE_DIR)
     if res.returncode != 0:
-        print(f"[ERROR in {step_name}]: {res.stderr}")
+        print(f"[ERROR in {step_name}]: Process exited with code {res.returncode}")
         return False
     return True
 

@@ -165,8 +165,11 @@
 /* Sentence Reading Highlight (Soft Green with High-Contrast Forest Green Text) */
 .article-sentence.sentence-playing,
 .article-sentence.playing {
-  background-color: #e2f0e6 !important;
+  background-color: rgba(226, 240, 230, 0.7) !important;
   color: var(--junior-dark-green) !important;
+  border-radius: 3px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .article-sentence:hover {
