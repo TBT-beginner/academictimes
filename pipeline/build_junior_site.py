@@ -28,9 +28,15 @@ async def synth_audio(text, voice, out_path, sem, rate="+0%"):
         for attempt in range(4):
             try:
                 comm = edge_tts.Communicate(text, voice, rate=rate)
-                await comm.save(out_path)
-                return
+                await asyncio.wait_for(comm.save(out_path), timeout=25)
+                if os.path.exists(out_path) and os.path.getsize(out_path) > 500:
+                    return
             except Exception as e:
+                if os.path.exists(out_path) and os.path.getsize(out_path) <= 500:
+                    try:
+                        os.remove(out_path)
+                    except OSError:
+                        pass
                 if attempt == 3:
                     print(f"[ERR] Failed {out_path}: {e}")
                 else:

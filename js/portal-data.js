@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 261 articles, daily editions, and high-school media literacy references.
+// Contains all 273 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -4029,15 +4029,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/australia-news/2026/oct/22/nsw-passes-human-compost-laws-with-several-mps-saying-they-will-utilise-practice-after-they-die",
     "path": "society/nsw-legalizes-human-composting-green-burial-bioethics/index.html",
     "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "scientists-race-save-bananas-panama-disease-extinction",
+    "category": "science",
+    "category_label": "AGRONOMY & GENETICS • 植物病理学と品種保全",
+    "date": "2026-10-23",
+    "title": "Geneticists Pioneer Disease-Resistant Hybrids to Avert Global Banana Extinction Crisis",
+    "headline_ja": "バナナ絶滅の危機を救う遺伝学的ブレイクスルー：新パナマ病（TR4）に打ち勝つ耐性株の開発に成功",
+    "subhead": "世界中の輸出用バナナの99%を占める「キャベンディッシュ種」が直面する真菌の脅威。ゲノム編集と野生種交配がもたらす希望。",
+    "lead_snippet": "世界中で愛消費されているバナナのほぼ全量を占めるキャベンディッシュ種が、土壌性真菌「新パナマ病（Tropical Race 4）」の世界的蔓延により深刻な壊滅危機に瀕している。キャベンディッシュ種は種子を持たず栄養生殖（クローン）で増殖するため、遺伝的多様性を欠き、単一の病原体に対して極めて脆弱である。国際農業研究チームは、東南アジアの自生野生種から耐性遺伝子を特定し、CRISPRゲノム編集と精密交配を組み合わせることで、商業栽培可能な耐病性バナナの作出に成功したと発表した。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/global-development/2026/oct/22/have-scientists-finally-found-a-way-to-save-the-banana-from-disaster",
+    "path": "science/scientists-race-save-bananas-panama-disease-extinction/index.html",
+    "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "shamonda-virus-detected-human-first-time-france-zoonosis",
+    "category": "science",
+    "category_label": "VIROLOGY & EPIDEMIOLOGY • 人獣共通感染症の最前線",
+    "date": "2026-10-23",
+    "title": "Shamonda Virus Detected in Human for First Time in France, Prompting Vector Surveillance",
+    "headline_ja": "家畜ウイルス「シャモンダ・ウイルス」がフランスでヒトから初検出：昆虫媒介型人獣共通感染症の監視強化へ",
+    "subhead": "従来ウシやヒツジの感染症とされたオルソブニヤウイルス科の病原体がヒト感染例を記録。気候変動による媒介昆虫の北上と警戒網の再構築。",
+    "lead_snippet": "フランスの公衆衛生当局およびパスツール研究所は、これまで反芻家畜の間でのみ確認されていた「シャモンダ・ウイルス（Shamonda virus）」が、国内の患者からヒトとして世界で初めて検出されたと発表した。オルソブニヤウイルス科に属するこの病原体は、ヌカカなどの微小昆虫によって媒介される。地球温暖化に伴う吸血昆虫の生息域北上と生態系の変化により、従来は熱帯・亜熱帯の家畜に限定されていた病原体が人類へのスピルオーバー（異種間伝播）を起こすリスクが現実化している。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/22/shamonda-virus-detected-in-human-first-time-france",
+    "path": "science/shamonda-virus-detected-human-first-time-france-zoonosis/index.html",
+    "image": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "bogong-moth-population-recovery-alpine-ecosystem",
+    "category": "science",
+    "category_label": "ENTOMOLOGY & ECOLOGY • 昆虫生態学と自然再生",
+    "date": "2026-10-23",
+    "title": "Dramatic Resurgence of Bogong Moths Offers Vital Lifeline to Australian Alpine Ecosystem",
+    "headline_ja": "数十億匹が消失した「ボゴン蛾」が奇跡のV字回復：豪州アルプスの生態系ピラミッドを支える夜行性昆虫の復活",
+    "subhead": "干ばつと森林火災で99%以上が激減し絶滅危惧種となった渡り蛾。降雨の回復と市民による「消灯キャンペーン」が結実。",
+    "lead_snippet": "オーストラリア南東部の高山帯において、生態系全体の要石（キーストーン種）である「ボゴン蛾（Bogong moth）」の個体数が奇跡的な回復を見せている。過去の破滅的な干ばつとメガ火災により、かつて数十億匹いた生息数は99.5%以上減少し、絶滅危惧種に指定されていた。この蛾を主食とする絶滅危惧種マウンテン・ピグミー・ポッサムへの壊滅的打撃が懸念されていたが、繁殖地の気候好転と都市部での光害防止（ライトオフ）運動が功を奏し、数十億の蛾が山岳洞窟へと再飛来した。",
+    "source_name": "The Guardian (Oct 23, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/news/2026/oct/23/the-great-moth-revival-how-bogongs-have-bounced-back",
+    "path": "science/bogong-moth-population-recovery-alpine-ecosystem/index.html",
+    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "cop17-conservation-fund-pharmaceutical-free-riding-nature",
+    "category": "environment",
+    "category_label": "ENVIRONMENTAL GOVERNANCE • 生物多様性と企業責任",
+    "date": "2026-10-23",
+    "title": "Global Biodiversity Fund Raises Merely $7,000 as Big Pharma Accused of 'Free-Riding on Nature'",
+    "headline_ja": "製薬大手に「自然へのタダ乗り」批判：国際生物多様性基金の集出額がわずか7,000ドルに留まり途上国が猛反発",
+    "subhead": "先住民族の伝統的植物知見や遺伝資源から数千億ドルの医薬品利益を得ながら、自然保護への拠出を拒むグローバル企業の実態。",
+    "lead_snippet": "コロンビア・カリで開催された国連生物多様性条約（COP16/COP17）で合意された、企業による遺伝資源利用の利益還元メカニズム「カリ基金（Cali Fund）」が、設立から数ヶ月でわずか7,000ドル（約100万円）しか集まっていないことが判明した。数兆円規模の利益を上げる多国籍製薬企業や化粧品大手が拠出を回避しており、先住民族団体や途上国政府は「莫大な富を自然から吸い上げながら還元を拒む略奪的フリーライダー（タダ乗り）だ」として、義務的課税の導入を要求している。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/22/cop17-cali-conservation-fund-pharmaceutical-freeriding-nature-aoe",
+    "path": "environment/cop17-conservation-fund-pharmaceutical-free-riding-nature/index.html",
+    "image": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "finland-google-fells-trees-ai-datacentre-environmental-backlash",
+    "category": "environment",
+    "category_label": "TECHNOLOGY & FORESTRY • AIインフラと森林破壊",
+    "date": "2026-10-23",
+    "title": "Public Outcry in Finland After Tech Giant Fells 250,000 Forest Trees for Mega AI Datacentre",
+    "headline_ja": "フィンランドで米IT巨頭に猛反発：巨大AIデータセンター建設のため25万本の森林を伐採した疑惑に市民が怒り",
+    "subhead": "「クリーンで環境に優しい」と喧伝されたハイテク施設が、貴重な原生林を大規模伐採。生成AIの爆発的電力・土地需要が引き起こす環境矛盾。",
+    "lead_snippet": "フィンランド南部ハミナにおいて、米大手IT企業が巨大なAIデータセンターの拡張工事を進める過程で、約25万本もの樹木を伐採したことが発覚し、地元住民や環境保護団体から「傲慢極まりない環境破壊だ」と激しい批判が巻き起こっている。同社は再生可能エネルギーの利用を強調し「ネットゼロ」をアピールしてきたが、膨大な熱を冷却し数万台のGPUサーバーを収容するための用地造成が、生物多様性と炭素吸収源である北欧の原生林を直撃した。AIブームの裏に潜む環境コストが改めて浮き彫りとなっている。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/ng-interactive/2026/oct/22/finland-google-felling-trees-datacentre",
+    "path": "environment/finland-google-fells-trees-ai-datacentre-environmental-backlash/index.html",
+    "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "thousands-butterflies-flourish-restored-sussex-farmland-rewilding",
+    "category": "environment",
+    "category_label": "REWILDING & CONSERVATION • 再野生化と生物多様性",
+    "date": "2026-10-23",
+    "title": "Ecological Restoration in West Sussex Triggers Unprecedented Surge in Rare Butterfly Populations",
+    "headline_ja": "英国サセックスの農地再生でチョウが奇跡の大量発生：「これは見せかけではない」専門家も驚く再野生化（リワイルディング）の成果",
+    "subhead": "集約的農業から自然再生へと転換した農地で、希少種を含む数千匹のチョウが乱舞。生態系回復のスピードを証明。",
+    "lead_snippet": "英国ウェスト・サセックス州の旧集約型農地において、農薬と化学肥料の散布を停止し、在来の野生植物を自生させる再野生化（Rewilding）プロジェクトを実施したところ、数千匹に及ぶ希少なチョウ類が爆発的に繁殖し、生態学者らを驚嘆させている。農地転換からわずか数年で、絶滅危惧種のオオムラサキ（Purple Emperor）やコムラサキが戻り、失われていた食物連鎖が驚異的な速度で復元された。農地再生が単なる宣伝（グリーンウォッシング）ではなく、現実の生物多様性回復をもたらす決定的な証拠として注目されている。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/22/thousands-of-butterflies-surprise-experts-on-restored-west-sussex-farmland",
+    "path": "environment/thousands-butterflies-flourish-restored-sussex-farmland-rewilding/index.html",
+    "image": "https://images.unsplash.com/photo-1535083783855-76ae62b2914e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "canadian-publisher-ends-ties-author-alleged-ai-novel-use",
+    "category": "tech",
+    "category_label": "DIGITAL ETHICS & LITERATURE • 出版界とAI著作権倫理",
+    "date": "2026-10-23",
+    "title": "Canadian Publisher Terminates Author Relationship Over Undisclosed Use of Generative AI",
+    "headline_ja": "カナダの出版社、小説への「無告知AI使用」を理由に作家との契約を解除：文壇を揺るがすオーサーシップの境界線",
+    "subhead": "ケベック州の有力出版社が下した断固たる判断。読者と編集者を欺くアルゴリズム執筆に対し、出版界が倫理的レッドラインを引く。",
+    "lead_snippet": "カナダ・ケベック州の著名な文芸出版社エディション・ボレアル（Éditions Boréal）は、所属する著名小説家テリソン・オレリアン（Thélyson Orélien）氏との契約を即時解除し、既刊書籍の流通を停止したと発表した。同氏の新作小説の文体や構文パターンに、大規模言語モデル（生成AI）の出力特有の統計的痕跡が多数検出されたためである。事前の開示なしにAI生成テキストを人間自身の執筆として発表する行為に対し、世界の出版界が厳罰姿勢で臨む象徴的な先例となった。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/culture/2026/oct/22/canadian-publisher-boreal-ends-relationship-author-thelyson-orelien-over-ai",
+    "path": "tech/canadian-publisher-ends-ties-author-alleged-ai-novel-use/index.html",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "millions-exploit-attempts-target-php-flaw-global-cyber-defense",
+    "category": "tech",
+    "category_label": "CYBER DEFENSE • 世界的サイバー攻撃と防衛",
+    "date": "2026-10-23",
+    "title": "Millions of Automated Exploitation Probes Bombard Global Websites Following Core PHP Flaw Disclosure",
+    "headline_ja": "PHPの脆弱性を突くサイバー攻撃が世界で数百万件規模に爆増：ボットネットによる自動スキャンと緊急防衛戦",
+    "subhead": "脆弱性公開からわずか24時間で攻撃トラフィックが急増。世界中の未パッチサーバーを狙う標的型探索に防衛機関が総力戦。",
+    "lead_snippet": "ウェブ基幹言語「PHP」のリモートコード実行の脆弱性が公表された直後から、世界中のサーバーに対して当該バグを悪用しようとする自動化プローブ（探索攻撃）が数百万件規模で殺到していることがセキュリティ機関の分析で明らかになった。国家主導のハッカー集団やランサムウェア犯罪組織が、パッチ適用が遅れている中小企業や医療機関、行政のウェブサーバーを標的にボットネットを総動員している。サイバーセキュリティ専門家は、単なるパッチ適用にとどまらず、WAF（ウェブアプリケーションファイアウォール）の強化と侵入痕跡の緊急監査を呼びかけている。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/22/websites-across-world-hit-by-millions-of-attempts-to-exploit-php-code-flaw",
+    "path": "tech/millions-exploit-attempts-target-php-flaw-global-cyber-defense/index.html",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "australia-nominates-astronaut-katherine-bennell-pegg-space-station",
+    "category": "world",
+    "category_label": "AEROSPACE DIPLOMACY • 宇宙探査と国際協調",
+    "date": "2026-10-23",
+    "title": "Australia Formally Offers Astronaut Katherine Bennell-Pegg for Landmark Space Station Mission",
+    "headline_ja": "オーストラリア初の女性宇宙飛行士が国際宇宙ステーション（ISS）へ：キャサリン・ベネルペグ氏の搭乗任務を豪政府が正式提案",
+    "subhead": "欧州宇宙機関（ESA）で訓練を修了したオーストラリア宇宙庁所属の宇宙飛行士。宇宙外交と科学研究における歴史的飛翔。",
+    "lead_snippet": "オーストラリア連邦政府は、オーストラリア人女性として初めて欧州宇宙機関（ESA）の正規宇宙飛行士訓練プログラムを修了したキャサリン・ベネルペグ（Katherine Bennell-Pegg）氏について、2028年の国際宇宙ステーション（ISS）長期滞在ミッションへの搭乗要員として正式に推薦した。自前の有人宇宙船を持たないオーストラリアが、国際協調を通じて軌道上科学実験や先進ロボティクス研究への参入を果たす歴史的なマイルストーンとなる。若い女性や科学者を志す学生たちにとっての大きなロールモデルとしても期待されている。",
+    "source_name": "The Guardian (Oct 23, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/australia-news/2026/oct/23/australian-astronaut-katherine-bennell-pegg-2028-space-mission",
+    "path": "world/australia-nominates-astronaut-katherine-bennell-pegg-space-station/index.html",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "canada-alberta-migrant-workers-rights-restrictions-controversy",
+    "category": "world",
+    "category_label": "IMMIGRATION & LABOR LAW • 移民労働者と権利保障",
+    "date": "2026-10-23",
+    "title": "Canada’s Alberta Province Sparks Fierce Debate Over Proposed Restrictions on Migrant Worker Protections",
+    "headline_ja": "カナダ・アルバータ州が外国人労働者の権利制限を推進し波紋：人手不足と排外主義の狭間で揺れる移民政策",
+    "subhead": "農業や飲食業を支える外国人労働者を歓迎してきた保守州が一転。労働ビザ規制と社会保障へのアクセス制限に人権団体が猛抗議。",
+    "lead_snippet": "カナダ西部のアルバータ州政府が、一時外国人労働者プログラム（TFWP）の受け入れ条件を厳格化し、医療アクセスや永住権申請への道筋を大幅に制限する新政策法案を提出したことで、カナダ国内外で激しい議論が巻き起こっている。同州は近年、深刻な人手不足を補うため数万人規模の移民労働者を呼び込んできたが、住宅価格の高騰や公共インフラの逼迫を理由に方針を一変させた。労働組合や人権団体は「都合よく使い捨てにする搾取的労働政策だ」と厳しく糾弾している。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/22/canada-alberta-migrant-workers",
+    "path": "world/canada-alberta-migrant-workers-rights-restrictions-controversy/index.html",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "child-health-england-nhs-waiting-times-surge-pediatric-crisis",
+    "category": "society",
+    "category_label": "PUBLIC HEALTH & WELFARE • 医療アクセスと小児保健",
+    "date": "2026-10-23",
+    "title": "Severe Pediatric Healthcare Delays Threaten Long-Term Child Development Across England, Report Warns",
+    "headline_ja": "英国で子どもの医療待機時間が過去最悪に激増：発達障害や小児疾患の治療遅延がもたらす生涯の代償",
+    "subhead": "NHSの小児科待機リストが百万人規模に膨張。早期療育や手術の遅れが生涯にわたる教育・健康格差を固定化する危機。",
+    "lead_snippet": "英国王立小児科学会（RCPCH）および保健監視団体は、国民保健サービス（NHS）における子どもの専門診療や手術の待機期間が記録的な水準に達し、十数万人もの子どもたちが不可逆的な健康被害に晒されていると警告する緊急報告書を公表した。言語療法や神経発達評価、小児耳鼻科手術などの待機が1年以上に及ぶケースが常態化しており、幼少期の重要な発達段階での治療遅れが、生涯にわたる学習困難や格差を生み出している。国家予算編成を前に、小児医療の再建が最重要課題となっている。",
+    "source_name": "The Guardian (Oct 23, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/oct/23/child-health-england-at-risk-sharp-rise-nhs-waiting-times",
+    "path": "society/child-health-england-nhs-waiting-times-surge-pediatric-crisis/index.html",
+    "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "airbnb-bans-excessive-guest-chores-global-hospitality-standards",
+    "category": "society",
+    "category_label": "CONSUMER LAW & TOURISM • シェアリングエコノミーの適正化",
+    "date": "2026-10-23",
+    "title": "Airbnb Bans Demands for 'Significant Effort' Chores as Platform Enforces Standardized Hospitality Norms",
+    "headline_ja": "Airbnbが宿泊客への「過度なお手伝い要求」を全面禁止：シーツ剥がし・草むしり・ゴミ出しをめぐる民泊トラブルに終止符",
+    "subhead": "高額な清掃料金を請求しながら客に重労働を強いるホストが世界で物議。プラットフォームが明確な禁止ラインを設定。",
+    "lead_snippet": "民泊仲介最大手のAirbnbは、世界中の宿泊施設ホストに対し、チェックアウト時のゲストに「多大な労力を要する家事（Significant Effort Chores）」を要求することを全面禁止する新たな利用規約を導入した。これまで、宿泊客が数百ドルの清掃料金を支払っているにもかかわらず、ホストから「シーツやタオルの洗濯、庭の草むしり、指定場所へのゴミ運び」など過度な作業チェックリストを課される事例が相次ぎ、SNS上で大きな不満が噴出していた。民泊のホテル化と消費者の権利保護に向け、プラットフォームが規律強化に乗り出した形だ。",
+    "source_name": "The Guardian (Oct 22, 2026)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/australia-news/2026/oct/22/airbnb-guests-freed-from-chores-involving-significant-effort-under-new-global-rules",
+    "path": "society/airbnb-bans-excessive-guest-chores-global-hospitality-standards/index.html",
+    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-23": {
+    "dateStr": "Friday October 23 2026",
+    "editionLabel": "2026年10月23日 (金) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：バナナ絶滅危機への遺伝子工学・シャモンダウイルス初ヒト感染・ボゴン蛾の奇跡的復活・COP17自然保護基金と製薬業界",
+    "topLeadSlug": "scientists-race-save-bananas-panama-disease-extinction",
+    "subLeadSlugs": [
+      "shamonda-virus-detected-human-first-time-france-zoonosis",
+      "bogong-moth-population-recovery-alpine-ecosystem",
+      "cop17-conservation-fund-pharmaceutical-free-riding-nature"
+    ],
+    "leftDispatches": [
+      "finland-google-fells-trees-ai-datacentre-environmental-backlash",
+      "thousands-butterflies-flourish-restored-sussex-farmland-rewilding",
+      "canadian-publisher-ends-ties-author-alleged-ai-novel-use",
+      "millions-exploit-attempts-target-php-flaw-global-cyber-defense"
+    ],
+    "rightDigestSlugs": [
+      "australia-nominates-astronaut-katherine-bennell-pegg-space-station",
+      "canada-alberta-migrant-workers-rights-restrictions-controversy",
+      "child-health-england-nhs-waiting-times-surge-pediatric-crisis",
+      "airbnb-bans-excessive-guest-chores-global-hospitality-standards"
+    ]
+  },
   "2026-10-22": {
     "dateStr": "Thursday October 22 2026",
-    "editionLabel": "2026年10月22日 (木) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月22日 (木) 号 【全12記事・アーカイブ】",
     "tagline": "特集：オランウータンの笑い声選好・加齢と知識統合型創造性・PHP基盤脆弱性・国連4年18%排出削減警告",
     "topLeadSlug": "orangutans-prefer-food-laughter-sounds-study",
     "subLeadSlugs": [

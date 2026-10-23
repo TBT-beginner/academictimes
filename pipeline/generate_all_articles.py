@@ -374,8 +374,13 @@ async def synth_audio(text, voice, outpath, sem):
             return
         try:
             comm = edge_tts.Communicate(text, voice)
-            await comm.save(outpath)
+            await asyncio.wait_for(comm.save(outpath), timeout=25)
         except Exception as e:
+            if os.path.exists(outpath) and os.path.getsize(outpath) <= 1000:
+                try:
+                    os.remove(outpath)
+                except OSError:
+                    pass
             print(f"Error generating {outpath}: {e}")
 
 async def generate_article_audio_files(art, art_dir, sem):

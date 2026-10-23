@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-10-23": {
+            "dateStr": "Friday October 23 2026",
+            "editionLabel": "2026年10月23日 (金) 号 【本日付・最新・全12記事】",
+            "tagline": "特集：バナナ絶滅危機への遺伝子工学・シャモンダウイルス初ヒト感染・ボゴン蛾の奇跡的復活・COP17自然保護基金と製薬業界",
+            "topLeadSlug": "scientists-race-save-bananas-panama-disease-extinction",
+            "subLeadSlugs": [
+                "shamonda-virus-detected-human-first-time-france-zoonosis",
+                "bogong-moth-population-recovery-alpine-ecosystem",
+                "cop17-conservation-fund-pharmaceutical-free-riding-nature"
+            ],
+            "leftDispatches": [
+                "finland-google-fells-trees-ai-datacentre-environmental-backlash",
+                "thousands-butterflies-flourish-restored-sussex-farmland-rewilding",
+                "canadian-publisher-ends-ties-author-alleged-ai-novel-use",
+                "millions-exploit-attempts-target-php-flaw-global-cyber-defense"
+            ],
+            "rightDigestSlugs": [
+                "australia-nominates-astronaut-katherine-bennell-pegg-space-station",
+                "canada-alberta-migrant-workers-rights-restrictions-controversy",
+                "child-health-england-nhs-waiting-times-surge-pediatric-crisis",
+                "airbnb-bans-excessive-guest-chores-global-hospitality-standards"
+            ]
+        },
         "2026-10-22": {
             "dateStr": "Thursday October 22 2026",
-            "editionLabel": "2026年10月22日 (木) 号 【本日付・最新・全12記事】",
+            "editionLabel": "2026年10月22日 (木) 号 【全12記事・アーカイブ】",
             "tagline": "特集：オランウータンの笑い声選好・加齢と知識統合型創造性・PHP基盤脆弱性・国連4年18%排出削減警告",
             "topLeadSlug": "orangutans-prefer-food-laughter-sounds-study",
             "subLeadSlugs": [

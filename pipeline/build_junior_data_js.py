@@ -78,9 +78,18 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-23": {
+        "dateStr": "Friday October 23 2026",
+        "editionLabel": "2026年10月23日 (金) 号 【本日付・最新・全12記事】",
+        "tagline": "特集：バナナの危機を救う科学・ボゴン蛾の復活と宇宙飛行士の挑戦",
+        "topLeadSlug": "scientists-race-save-bananas-panama-disease-extinction",
+        "subLeadSlugs": ["shamonda-virus-detected-human-first-time-france-zoonosis", "bogong-moth-population-recovery-alpine-ecosystem", "cop17-conservation-fund-pharmaceutical-free-riding-nature"],
+        "leftDispatches": ["finland-google-fells-trees-ai-datacentre-environmental-backlash", "thousands-butterflies-flourish-restored-sussex-farmland-rewilding", "canadian-publisher-ends-ties-author-alleged-ai-novel-use", "millions-exploit-attempts-target-php-flaw-global-cyber-defense"],
+        "rightDigestSlugs": ["australia-nominates-astronaut-katherine-bennell-pegg-space-station", "canada-alberta-migrant-workers-rights-restrictions-controversy", "child-health-england-nhs-waiting-times-surge-pediatric-crisis", "airbnb-bans-excessive-guest-chores-global-hospitality-standards"]
+    },
     "2026-10-22": {
         "dateStr": "Thursday October 22 2026",
-        "editionLabel": "2026年10月22日 (木) 号 【本日付・最新・全12記事】",
+        "editionLabel": "2026年10月22日 (木) 号 【全12記事・アーカイブ】",
         "tagline": "特集：オランウータンの笑い声と大人のひらめき・ネットの安全とサメの救出",
         "topLeadSlug": "orangutans-prefer-food-laughter-sounds-study",
         "subLeadSlugs": ["creativity-aging-cognitive-flexibility-knowledge-synthesis", "critical-php-vulnerability-triggers-global-website-shutdowns", "un-warns-emissions-must-fall-eighteen-percent-in-four-years"],
