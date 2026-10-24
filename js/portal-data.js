@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 273 articles, daily editions, and high-school media literacy references.
+// Contains all 285 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -4209,15 +4209,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/australia-news/2026/oct/22/airbnb-guests-freed-from-chores-involving-significant-effort-under-new-global-rules",
     "path": "society/airbnb-bans-excessive-guest-chores-global-hospitality-standards/index.html",
     "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "finnish-24-hour-puppy-livestream-tv-hit",
+    "category": "culture",
+    "category_label": "CULTURE & MEDIA • 現代社会とスローメディア",
+    "date": "2026-10-24",
+    "title": "Finnish 24-Hour Newborn Puppy Livestream Becomes Sensation Amid Screen Fatigue",
+    "headline_ja": "フィンランドの24時間子犬生中継が生んだ癒やし現象：情報過多社会におけるスローTVの復権",
+    "subhead": "過激なショート動画に疲弊した現代人に寄り添う北欧の公共放送。心拍数低下とデジタルデトックスの効用を論考。",
+    "lead_snippet": "A continuous round-the-clock television broadcast of seven newborn puppies in northern Finland has captured millions of global viewers, offering psychological respite from digital exhaustion.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/23/finnish-24-hour-puppy-dog-newborn-livestream-tv-smash-hit",
+    "path": "culture/finnish-24-hour-puppy-livestream-tv-hit/index.html",
+    "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "weight-loss-drugs-beer-sales-heineken-pubs",
+    "category": "society",
+    "category_label": "SOCIETY & ECONOMICS • 医薬品革命と産業変容",
+    "date": "2026-10-24",
+    "title": "Rise of Weight-Loss Drugs Curbs Beer Consumption, Forcing Brewery Strategy Shifts",
+    "headline_ja": "抗肥満薬の普及がビール消費を抑制：世界的な生活習慣変容と酒造大手の転換",
+    "subhead": "GLP-1受容体作動薬のアルコール欲求低減作用がパブ業界に波及。ノンアルコール市場拡大と外食産業の適応を分析。",
+    "lead_snippet": "Surging adoption of GLP-1 weight-loss medications is suppressing consumer alcohol cravings, prompting major breweries like Heineken to diversify rapidly into non-alcoholic alternatives.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/23/weight-loss-drugs-beer-sales-heineken-british-pubs-wegovy",
+    "path": "society/weight-loss-drugs-beer-sales-heineken-pubs/index.html",
+    "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "citizen-science-tracking-global-coastal-erosion",
+    "category": "science",
+    "category_label": "SCIENCE & ENVIRONMENT • 市民科学と気候レジリエンス",
+    "date": "2026-10-24",
+    "title": "CoastSnap Network: How Smartphone Crowdsourcing Revolutionizes Coastal Erosion Science",
+    "headline_ja": "海岸浸食を追う市民科学「CoastSnap」：スマホ写真が拓く沿岸保全の新たな地平",
+    "subhead": "ビーチを訪れる一般市民の撮影データが高精度3D地形モデルを生成。衛星画像と市民参画の融合を科学的に検証。",
+    "lead_snippet": "Fixed stainless steel smartphone cradles installed across global beaches are turning everyday beachgoers into scientific monitors, tracking dynamic shoreline retreat with photogrammetric precision.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/news/2026/oct/23/how-citizen-science-is-tracking-changes-in-shorelines-around-the-world",
+    "path": "science/citizen-science-tracking-global-coastal-erosion/index.html",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "uk-children-social-media-harm-ofcom-online-safety-act",
+    "category": "society",
+    "category_label": "SOCIETY & LAW • デジタル保護と法規制の限界",
+    "date": "2026-10-24",
+    "title": "UK Children Face Persistent Online Harms Despite Online Safety Act Crackdown",
+    "headline_ja": "英オンライン安全法の施行後も子どもの被害は依然高水準：Ofcom年次調査の警告",
+    "subhead": "通信庁（Ofcom）の包括的監査。プラットフォーム企業の年齢確認の不備とアルゴリズムの危険性を法学英語で精読。",
+    "lead_snippet": "A landmark inquiry by Britain's communications regulator reveals that children remain heavily exposed to hazardous online content despite stringent statutory obligations imposed on tech giants.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/oct/23/uk-children-just-as-likely-to-have-suffered-harm-on-social-media-despite-crackdown-ofcom-online-safety-act",
+    "path": "society/uk-children-social-media-harm-ofcom-online-safety-act/index.html",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "telegraph-job-cuts-ai-powered-newsroom-transformation",
+    "category": "tech",
+    "category_label": "TECHNOLOGY & MEDIA • 生成AIとジャーナリズムの未来",
+    "date": "2026-10-24",
+    "title": "The Daily Telegraph Cuts Journalists in Aggressive Pivot to AI-Powered Publishing",
+    "headline_ja": "英テレグラフ紙が大規模人員削減と「AI主導ニュースルーム」への大転換を発表",
+    "subhead": "ドイツ出版大手による買収後の再編。記者の解雇と自動要約・翻訳AIツールの導入が問う報道倫理と記名の価値。",
+    "lead_snippet": "Britain's venerable broadsheet The Daily Telegraph is eliminating dozens of editorial roles, signaling an uncompromising transition toward an automated, AI-driven global news factory.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/media/2026/oct/23/telegraph-job-cuts-axel-springer-owner-promises-turn-paper-ai-powered-global-business",
+    "path": "tech/telegraph-job-cuts-ai-powered-newsroom-transformation/index.html",
+    "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "historic-england-oldest-surviving-inns-archaeology",
+    "category": "culture",
+    "category_label": "CULTURE & HISTORY • 建築考古学と中世の遺産",
+    "date": "2026-10-24",
+    "title": "Historic England Archaeologists Identify Nation's Truly Oldest Medieval Coaching Inns",
+    "headline_ja": "英歴史遺産機関、科学的年代測定でイングランド最古の中世宿屋・パブを特定",
+    "subhead": "年輪年代学（デンドロクロノロジー）による木骨造建築の真実。伝承や観光宣伝を正す文献史学と科学の融合。",
+    "lead_snippet": "Applying advanced dendrochronology to centuries-old timber frames, Historic England experts are debunking romantic folklore to authenticate the country's genuine medieval coaching inns.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/culture/2026/oct/23/oldest-pubs-inns-historic-england-archaeologist",
+    "path": "culture/historic-england-oldest-surviving-inns-archaeology/index.html",
+    "image": "https://images.unsplash.com/photo-1549880384-694ed5385247?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "james-bond-casting-emotional-audition-rigor",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT & FILM • イギリス映画と男性像の変容",
+    "date": "2026-10-24",
+    "title": "'I Expect You to Cry': The Brutal Psychological Demands of Modern James Bond Auditions",
+    "headline_ja": "「君が涙を流すのを見たい」：現代のジェームズ・ボンド最終オーディションが求める心理的深淵",
+    "subhead": "肉体美やアクションから繊細な感情表現へ。映画史を代表するスパイ像の脱構築とオーディション秘話を精読。",
+    "lead_snippet": "Behind closed doors at Pinewood Studios, prospective James Bond contenders face grueling screen tests requiring emotional vulnerability alongside traditional suave spy charisma.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/film/2026/oct/23/i-expect-you-to-cry-what-the-james-bond-actors-may-face-at-the-final-audition",
+    "path": "entertainment/james-bond-casting-emotional-audition-rigor/index.html",
+    "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "glacier-retreat-western-mountains-hydrological-crisis",
+    "category": "environment",
+    "category_label": "ENVIRONMENT & CLIMATE • 氷河後退と水資源の危機",
+    "date": "2026-10-24",
+    "title": "Unprecedented Mountain Glacier Loss Accelerates Hydrological Crisis in Western Americas",
+    "headline_ja": "アメリカ大陸西部の山岳氷河が過去最速で縮小：迫る夏期の水資源崩壊",
+    "subhead": "衛星観測と現地掘削データの総合分析。農業用水・水力発電・サケの遡上に及ぼす気候変動の連鎖的影響を考察。",
+    "lead_snippet": "Glaciologists measuring ice sheets across western mountain ranges report accelerated volumetric shrinkage, warning that crucial summer meltwater buffers are vanishing decades ahead of projections.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/ng-interactive/2026/oct/23/glacier-loss-climate-crisis-west",
+    "path": "environment/glacier-retreat-western-mountains-hydrological-crisis/index.html",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "ukraine-starlink-satellite-network-battlefield-vulnerabilities",
+    "category": "world",
+    "category_label": "WORLD & SECURITY • 衛星通信と現代電子戦の力学",
+    "date": "2026-10-24",
+    "title": "Frontline Disruptions in Ukraine Expose Military Dependence on Starlink Constellation",
+    "headline_ja": "ウクライナ前線でスターリンク通信障害が続発：民間メガコンステレーション依存の脆弱性",
+    "subhead": "激化するロシア軍の電子戦妨害と民間衛星インフラ。主権防衛における通信自立と宇宙安全保障の課題を分析。",
+    "lead_snippet": "Persistent operational outages along eastern frontlines highlight the precarious military reliance on commercial low-Earth-orbit satellites amid sophisticated electronic warfare counter-measures.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
+    "path": "world/ukraine-starlink-satellite-network-battlefield-vulnerabilities/index.html",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "deepfake-election-video-spain-digital-disinformation",
+    "category": "law",
+    "category_label": "LAW & DEMOCRACY • ディープフェイクと選挙公正確保",
+    "date": "2026-10-24",
+    "title": "Spanish Prosecutors Launch Criminal Probe Into AI Deepfake Targeting Opposition Leader",
+    "headline_ja": "スペイン検察、野党党首を標的にした選挙ディープフェイク動画で本格捜査を開始",
+    "subhead": "EUデジタルサービス法（DSA）と刑法の名誉毀損罪。民主主義選挙を揺るがす生成AI偽動画の法的制裁を検証。",
+    "lead_snippet": "Spanish judicial authorities have initiated formal criminal proceedings over a hyper-realistic synthetic video designed to subvert democratic deliberation ahead of critical regional ballots.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/23/opposition-deepfake-video-spain-election",
+    "path": "law/deepfake-election-video-spain-digital-disinformation/index.html",
+    "image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "winter-energy-price-disparity-britain-household-strain",
+    "category": "society",
+    "category_label": "SOCIETY & ECONOMY • エネルギー安全保障と家計負担",
+    "date": "2026-10-24",
+    "title": "British Households Face Steepest Winter Energy Bills in Western Europe",
+    "headline_ja": "英国の今冬の光熱費負担、西欧最高水準へ：構造的ガス依存と断熱不備の代償",
+    "subhead": "欧州各国との料金格差が浮き彫りにする電力卸売市場の課題。燃料貧困（Fuel Poverty）対策と政策的支援を分析。",
+    "lead_snippet": "Comparative European consumer analysis shows British families paying significantly higher winter gas and power rates, constrained by outdated housing insulation and acute gas grid dependency.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/23/europe-highest-energy-costs-great-britain-this-winter",
+    "path": "society/winter-energy-price-disparity-britain-household-strain/index.html",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "storm-austen-south-west-england-power-grid-disruption",
+    "category": "world",
+    "category_label": "WORLD & ENVIRONMENT • 極端気象と重要インフラの強靭化",
+    "date": "2026-10-24",
+    "title": "Storm Austen Batters South-West England, Knocking Out Power to Thousands",
+    "headline_ja": "大型暴風雨「オースティン」が英南西部を直撃：数万世帯で停電とインフラ被害",
+    "subhead": "時速80マイルの突風と高潮が沿岸送電網を寸断。極端気象頻発時代における送電地下化と分散型マイクログリッドの急務。",
+    "lead_snippet": "Severe gale-force winds and coastal storm surges generated by Storm Austen have caused widespread blackouts across Cornwall and Devon, paralyzing transport arteries.",
+    "source_name": "The Guardian (2026年10月23日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/uk-news/2026/oct/23/storm-austen-weather-updates-thousands-without-power-south-west-england",
+    "path": "world/storm-austen-south-west-england-power-grid-disruption/index.html",
+    "image": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1200&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-24": {
+    "dateStr": "Saturday October 24 2026",
+    "editionLabel": "2026年10月24日 (土) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：フィンランド子犬24時間生中継・抗肥満薬とパブビール消費減少・海岸浸食と市民科学・英オンライン安全法と子どもの保護",
+    "topLeadSlug": "finnish-24-hour-puppy-livestream-tv-hit",
+    "subLeadSlugs": [
+      "weight-loss-drugs-beer-sales-heineken-pubs",
+      "citizen-science-tracking-global-coastal-erosion",
+      "uk-children-social-media-harm-ofcom-online-safety-act"
+    ],
+    "leftDispatches": [
+      "telegraph-job-cuts-ai-powered-newsroom-transformation",
+      "historic-england-oldest-surviving-inns-archaeology",
+      "james-bond-casting-emotional-audition-rigor",
+      "glacier-retreat-western-mountains-hydrological-crisis"
+    ],
+    "rightDigestSlugs": [
+      "ukraine-starlink-satellite-network-battlefield-vulnerabilities",
+      "deepfake-election-video-spain-digital-disinformation",
+      "winter-energy-price-disparity-britain-household-strain",
+      "storm-austen-south-west-england-power-grid-disruption"
+    ]
+  },
   "2026-10-23": {
     "dateStr": "Friday October 23 2026",
-    "editionLabel": "2026年10月23日 (金) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月23日 (金) 号 【全12記事・アーカイブ】",
     "tagline": "特集：バナナ絶滅危機への遺伝子工学・シャモンダウイルス初ヒト感染・ボゴン蛾の奇跡的復活・COP17自然保護基金と製薬業界",
     "topLeadSlug": "scientists-race-save-bananas-panama-disease-extinction",
     "subLeadSlugs": [

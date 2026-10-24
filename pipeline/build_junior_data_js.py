@@ -78,9 +78,18 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-24": {
+        "dateStr": "Saturday October 24 2026",
+        "editionLabel": "2026年10月24日 (土) 号 【本日付・最新・全12記事】",
+        "tagline": "特集：子犬の生中継と健康な暮らし・スマホ写真で守る美しい砂浜",
+        "topLeadSlug": "finnish-24-hour-puppy-livestream-tv-hit",
+        "subLeadSlugs": ["weight-loss-drugs-beer-sales-heineken-pubs", "citizen-science-tracking-global-coastal-erosion", "uk-children-social-media-harm-ofcom-online-safety-act"],
+        "leftDispatches": ["telegraph-job-cuts-ai-powered-newsroom-transformation", "historic-england-oldest-surviving-inns-archaeology", "james-bond-casting-emotional-audition-rigor", "glacier-retreat-western-mountains-hydrological-crisis"],
+        "rightDigestSlugs": ["ukraine-starlink-satellite-network-battlefield-vulnerabilities", "deepfake-election-video-spain-digital-disinformation", "winter-energy-price-disparity-britain-household-strain", "storm-austen-south-west-england-power-grid-disruption"]
+    },
     "2026-10-23": {
         "dateStr": "Friday October 23 2026",
-        "editionLabel": "2026年10月23日 (金) 号 【本日付・最新・全12記事】",
+        "editionLabel": "2026年10月23日 (金) 号 【全12記事・アーカイブ】",
         "tagline": "特集：バナナの危機を救う科学・ボゴン蛾の復活と宇宙飛行士の挑戦",
         "topLeadSlug": "scientists-race-save-bananas-panama-disease-extinction",
         "subLeadSlugs": ["shamonda-virus-detected-human-first-time-france-zoonosis", "bogong-moth-population-recovery-alpine-ecosystem", "cop17-conservation-fund-pharmaceutical-free-riding-nature"],

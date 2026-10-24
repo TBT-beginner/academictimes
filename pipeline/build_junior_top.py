@@ -24,19 +24,19 @@ def generate_junior_index():
     # Map articles by slug
     art_map = {a["slug"]: a for a in JUNIOR_ARTICLES}
     
-    # 10/23 Default Edition Stories
-    lead = art_map.get("scientists-race-save-bananas-panama-disease-extinction", JUNIOR_ARTICLES[0])
-    sub1 = art_map.get("shamonda-virus-detected-human-first-time-france-zoonosis", JUNIOR_ARTICLES[1])
-    sub2 = art_map.get("bogong-moth-population-recovery-alpine-ecosystem", JUNIOR_ARTICLES[2])
+    # 10/24 Default Edition Stories
+    lead = art_map.get("finnish-24-hour-puppy-livestream-tv-hit", JUNIOR_ARTICLES[0])
+    sub1 = art_map.get("weight-loss-drugs-beer-sales-heineken-pubs", JUNIOR_ARTICLES[1])
+    sub2 = art_map.get("citizen-science-tracking-global-coastal-erosion", JUNIOR_ARTICLES[2])
     
-    left1 = art_map.get("cop17-conservation-fund-pharmaceutical-free-riding-nature", JUNIOR_ARTICLES[3])
-    left2 = art_map.get("finland-google-fells-trees-ai-datacentre-environmental-backlash", JUNIOR_ARTICLES[4])
-    left3 = art_map.get("thousands-butterflies-flourish-restored-sussex-farmland-rewilding", JUNIOR_ARTICLES[5])
+    left1 = art_map.get("uk-children-social-media-harm-ofcom-online-safety-act", JUNIOR_ARTICLES[3])
+    left2 = art_map.get("telegraph-job-cuts-ai-powered-newsroom-transformation", JUNIOR_ARTICLES[4])
+    left3 = art_map.get("historic-england-oldest-surviving-inns-archaeology", JUNIOR_ARTICLES[5])
     
-    right1 = art_map.get("canadian-publisher-ends-ties-author-alleged-ai-novel-use", JUNIOR_ARTICLES[6])
-    right2 = art_map.get("millions-exploit-attempts-target-php-flaw-global-cyber-defense", JUNIOR_ARTICLES[7])
-    right3 = art_map.get("australia-nominates-astronaut-katherine-bennell-pegg-space-station", JUNIOR_ARTICLES[8])
-    right4 = art_map.get("canada-alberta-migrant-workers-rights-restrictions-controversy", JUNIOR_ARTICLES[9])
+    right1 = art_map.get("james-bond-casting-emotional-audition-rigor", JUNIOR_ARTICLES[6])
+    right2 = art_map.get("glacier-retreat-western-mountains-hydrological-crisis", JUNIOR_ARTICLES[7])
+    right3 = art_map.get("ukraine-starlink-satellite-network-battlefield-vulnerabilities", JUNIOR_ARTICLES[8])
+    right4 = art_map.get("deepfake-election-video-spain-digital-disinformation", JUNIOR_ARTICLES[9])
 
     # Pre-render all 15 catalog cards for initial display & SEO
     cards_html = []
