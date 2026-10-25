@@ -78,9 +78,18 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-26": {
+        "dateStr": "Monday October 26 2026",
+        "editionLabel": "2026年10月26日 (月) 号 【本日付・最新・全12記事】",
+        "tagline": "特集：セルビアの歴史的選挙と学生の力・ブラジル大統領選・古代ローマの変色ガラス・中世ごっこの大流行",
+        "topLeadSlug": "serbian-election-vucic-concedes-defeat-student-movement",
+        "subLeadSlugs": ["brazil-presidential-runoff-lula-flavio-bolsonaro-polarization", "ancient-roman-colour-changing-glass-nanotechnology-rediscovered", "ai-copyright-training-data-smart-fund-creators-compensation"],
+        "leftDispatches": ["un-secretary-general-race-emirati-diplomat-lana-nusseibeh", "venezuela-opposition-leader-machado-returns-democratic-transition", "uk-datacentre-power-water-strain-public-protest-risk", "australian-climate-data-scrutiny-bom-temperature-records"],
+        "rightDigestSlugs": ["ten-days-shake-democratic-norms-four-continents-elections", "uk-government-be-ready-emergency-stockpile-campaign", "medievalcore-youth-culture-lime-bike-jousts-subversion", "kimi-antonelli-f1-us-grand-prix-mercedes-youngest-champion"]
+    },
     "2026-10-24": {
         "dateStr": "Saturday October 24 2026",
-        "editionLabel": "2026年10月24日 (土) 号 【本日付・最新・全12記事】",
+        "editionLabel": "2026年10月24日 (土) 号 【全12記事・アーカイブ】",
         "tagline": "特集：子犬の生中継と健康な暮らし・スマホ写真で守る美しい砂浜",
         "topLeadSlug": "finnish-24-hour-puppy-livestream-tv-hit",
         "subLeadSlugs": ["weight-loss-drugs-beer-sales-heineken-pubs", "citizen-science-tracking-global-coastal-erosion", "uk-children-social-media-harm-ofcom-online-safety-act"],

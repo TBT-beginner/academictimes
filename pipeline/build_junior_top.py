@@ -24,19 +24,19 @@ def generate_junior_index():
     # Map articles by slug
     art_map = {a["slug"]: a for a in JUNIOR_ARTICLES}
     
-    # 10/24 Default Edition Stories
-    lead = art_map.get("finnish-24-hour-puppy-livestream-tv-hit", JUNIOR_ARTICLES[0])
-    sub1 = art_map.get("weight-loss-drugs-beer-sales-heineken-pubs", JUNIOR_ARTICLES[1])
-    sub2 = art_map.get("citizen-science-tracking-global-coastal-erosion", JUNIOR_ARTICLES[2])
+    # 10/26 Default Edition Stories
+    lead = art_map.get("serbian-election-vucic-concedes-defeat-student-movement", JUNIOR_ARTICLES[0])
+    sub1 = art_map.get("brazil-presidential-runoff-lula-flavio-bolsonaro-polarization", JUNIOR_ARTICLES[1])
+    sub2 = art_map.get("ancient-roman-colour-changing-glass-nanotechnology-rediscovered", JUNIOR_ARTICLES[2])
     
-    left1 = art_map.get("uk-children-social-media-harm-ofcom-online-safety-act", JUNIOR_ARTICLES[3])
-    left2 = art_map.get("telegraph-job-cuts-ai-powered-newsroom-transformation", JUNIOR_ARTICLES[4])
-    left3 = art_map.get("historic-england-oldest-surviving-inns-archaeology", JUNIOR_ARTICLES[5])
+    left1 = art_map.get("ai-copyright-training-data-smart-fund-creators-compensation", JUNIOR_ARTICLES[3])
+    left2 = art_map.get("un-secretary-general-race-emirati-diplomat-lana-nusseibeh", JUNIOR_ARTICLES[4])
+    left3 = art_map.get("venezuela-opposition-leader-machado-returns-democratic-transition", JUNIOR_ARTICLES[5])
     
-    right1 = art_map.get("james-bond-casting-emotional-audition-rigor", JUNIOR_ARTICLES[6])
-    right2 = art_map.get("glacier-retreat-western-mountains-hydrological-crisis", JUNIOR_ARTICLES[7])
-    right3 = art_map.get("ukraine-starlink-satellite-network-battlefield-vulnerabilities", JUNIOR_ARTICLES[8])
-    right4 = art_map.get("deepfake-election-video-spain-digital-disinformation", JUNIOR_ARTICLES[9])
+    right1 = art_map.get("uk-datacentre-power-water-strain-public-protest-risk", JUNIOR_ARTICLES[6])
+    right2 = art_map.get("australian-climate-data-scrutiny-bom-temperature-records", JUNIOR_ARTICLES[7])
+    right3 = art_map.get("ten-days-shake-democratic-norms-four-continents-elections", JUNIOR_ARTICLES[8])
+    right4 = art_map.get("uk-government-be-ready-emergency-stockpile-campaign", JUNIOR_ARTICLES[9])
 
     # Pre-render all 15 catalog cards for initial display & SEO
     cards_html = []

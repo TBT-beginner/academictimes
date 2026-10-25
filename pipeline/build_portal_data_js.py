@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-10-26": {
+            "dateStr": "Monday October 26 2026",
+            "editionLabel": "2026年10月26日 (月) 号 【本日付・最新・全12記事】",
+            "tagline": "特集：セルビア総選挙で学生主導派大勝・ブラジル大統領選決選投票・古代ローマ変色ガラスナノ技術・AI学習と創作者補償制度",
+            "topLeadSlug": "serbian-election-vucic-concedes-defeat-student-movement",
+            "subLeadSlugs": [
+                "brazil-presidential-runoff-lula-flavio-bolsonaro-polarization",
+                "ancient-roman-colour-changing-glass-nanotechnology-rediscovered",
+                "ai-copyright-training-data-smart-fund-creators-compensation"
+            ],
+            "leftDispatches": [
+                "un-secretary-general-race-emirati-diplomat-lana-nusseibeh",
+                "venezuela-opposition-leader-machado-returns-democratic-transition",
+                "uk-datacentre-power-water-strain-public-protest-risk",
+                "australian-climate-data-scrutiny-bom-temperature-records"
+            ],
+            "rightDigestSlugs": [
+                "ten-days-shake-democratic-norms-four-continents-elections",
+                "uk-government-be-ready-emergency-stockpile-campaign",
+                "medievalcore-youth-culture-lime-bike-jousts-subversion",
+                "kimi-antonelli-f1-us-grand-prix-mercedes-youngest-champion"
+            ]
+        },
         "2026-10-24": {
             "dateStr": "Saturday October 24 2026",
-            "editionLabel": "2026年10月24日 (土) 号 【本日付・最新・全12記事】",
+            "editionLabel": "2026年10月24日 (土) 号 【全12記事・アーカイブ】",
             "tagline": "特集：フィンランド子犬24時間生中継・抗肥満薬とパブビール消費減少・海岸浸食と市民科学・英オンライン安全法と子どもの保護",
             "topLeadSlug": "finnish-24-hour-puppy-livestream-tv-hit",
             "subLeadSlugs": [

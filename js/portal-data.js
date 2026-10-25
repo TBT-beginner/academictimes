@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 285 articles, daily editions, and high-school media literacy references.
+// Contains all 297 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -4389,15 +4389,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/uk-news/2026/oct/23/storm-austen-weather-updates-thousands-without-power-south-west-england",
     "path": "world/storm-austen-south-west-england-power-grid-disruption/index.html",
     "image": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "serbian-election-vucic-concedes-defeat-student-movement",
+    "category": "world",
+    "category_label": "WORLD & DEMOCRACY • 東欧政治と市民民主主義運動",
+    "date": "2026-10-26",
+    "title": "Serbian President Aleksandar Vučić Concedes Defeat After Historic Student-Led Electoral Landslide",
+    "headline_ja": "セルビア総選挙で与党大敗：12年間のヴチッチ政権に終止符、学生主導の市民運動が起こした歴史的政変",
+    "subhead": "記録的な投票率の中で野党「学生連盟」が単独過半数を獲得。権威主義的統治に対する草の根の勝利を分析。",
+    "lead_snippet": "Serbian President Aleksandar Vučić has conceded defeat in a watershed parliamentary election, ending more than a decade of entrenched rule following massive student-led mobilizations.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/25/serbian-leader-aleksandar-vucic-concedes-defeat-in-fiercely-contested-parliamentary-election",
+    "path": "world/serbian-election-vucic-concedes-defeat-student-movement/index.html",
+    "image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "brazil-presidential-runoff-lula-flavio-bolsonaro-polarization",
+    "category": "world",
+    "category_label": "WORLD & POLITICS • 南米政治と民主主義の分断",
+    "date": "2026-10-26",
+    "title": "Brazilians Vote in Knife-Edge Presidential Runoff Testing Democratic Resilience",
+    "headline_ja": "ブラジル大統領選の決選投票：現職ルーラ対極右ボルソナロ陣営、激しい二極化の中で問われる民主主義の行方",
+    "subhead": "アマゾン森林保護と多国間協調を掲げる左派現職と、保守ポピュリズムを掲げる対立候補の歴史的激突。",
+    "lead_snippet": "Brazilians have cast ballots in an exceptionally tight presidential runoff between incumbent Luiz Inácio Lula da Silva and right-wing challenger Flávio Bolsonaro, reflecting profound ideological fractures.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/25/brazilians-vote-in-presidential-election-runoff-pitting-leftist-lula-against-far-right-bolsonaro",
+    "path": "world/brazil-presidential-runoff-lula-flavio-bolsonaro-polarization/index.html",
+    "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "un-secretary-general-race-emirati-diplomat-lana-nusseibeh",
+    "category": "world",
+    "category_label": "WORLD & DIPLOMACY • 国際機関の指導力と多国間外交",
+    "date": "2026-10-26",
+    "title": "Emirati Diplomat Lana Nusseibeh Enters Race for Next UN Secretary-General",
+    "headline_ja": "国連次期事務総長選にUAEのヌセイベ外交官が名乗り：女性・アラブ発のリーダー誕生と多国間調停の行方",
+    "subhead": "ガザ支援調整などで実績を持つ女性外交官の立候補。創設80年で初となる女性事務総長選出への期待と課題。",
+    "lead_snippet": "Senior Emirati diplomat Lana Nusseibeh has formally launched her candidacy for United Nations Secretary-General, positioning herself as a pragmatic bridge-builder in a fractured geopolitical era.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/25/emirati-diplomat-who-helped-deliver-aid-to-gaza-enters-un-secretary-general-race",
+    "path": "world/un-secretary-general-race-emirati-diplomat-lana-nusseibeh/index.html",
+    "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "venezuela-opposition-leader-machado-returns-democratic-transition",
+    "category": "world",
+    "category_label": "WORLD & HUMAN RIGHTS • 権威主義体制と民主化闘争",
+    "date": "2026-10-26",
+    "title": "Exiled Venezuelan Opposition Leader María Corina Machado Returns Amid Political Transition",
+    "headline_ja": "ベネズエラ野党指導者マチャド氏が電撃帰国：ノーベル平和賞受賞を経て、政権移行と民主化の決断",
+    "subhead": "亡命先からカラカスへの帰還。逮捕の脅威を冒して市民社会の先頭に立ち、平和的政権移行を呼びかけ。",
+    "lead_snippet": "Venezuelan opposition icon María Corina Machado has returned to her homeland following international recognition, challenging the ruling regime to respect democratic election mandates.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/25/exiled-venezuelan-opposition-leader-maria-corina-machado-announces-her-return",
+    "path": "world/venezuela-opposition-leader-machado-returns-democratic-transition/index.html",
+    "image": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "ancient-roman-colour-changing-glass-nanotechnology-rediscovered",
+    "category": "science",
+    "category_label": "SCIENCE & ARCHAEOMETRY • 古代技術と現代ナノサイエンス",
+    "date": "2026-10-26",
+    "title": "Scientists Rediscover Nanotechnology Behind Ancient Roman Color-Changing Glass",
+    "headline_ja": "1600年前のローマ人が使ったナノテクノロジー：光で色が変わる「リュクルゴスの杯」の製造技術を解明",
+    "subhead": "前面からの光で緑色、背面からの光で赤色に変化する古代ガラス。金銀ナノ粒子の均一分散手法を最新工学で再現。",
+    "lead_snippet": "Materials scientists have successfully replicated the sophisticated nanotechnology behind the 1,600-year-old Lycurgus Cup, solving an enduring riddle of ancient Roman metallurgical craftsmanship.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/25/scientists-rediscover-ancient-roman-colour-changing-glass",
+    "path": "science/ancient-roman-colour-changing-glass-nanotechnology-rediscovered/index.html",
+    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "ai-copyright-training-data-smart-fund-creators-compensation",
+    "category": "tech",
+    "category_label": "TECH & INTELLECTUAL PROPERTY • 生成AIと著作権保護の法理",
+    "date": "2026-10-26",
+    "title": "Creative Organizations Demand Tech Firms Compensate Authors for AI Training Data",
+    "headline_ja": "「巨大IT企業は作家に正当な対価を払え」：英著作者団体、生成AI学習に対する「スマートファンド」創設を要求",
+    "subhead": "人間の知覚的創作物を無断スクレイピングして巨利を得るAI産業。著作権補償金制度の導入を求める提言を論考。",
+    "lead_snippet": "Author societies and artist unions have demanded that technology giants pay into a national 'Smart Fund' to compensate creators whose intellectual output is scraped to train generative AI models.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/25/tech-firms-should-pay-the-creators-whose-work-they-use",
+    "path": "tech/ai-copyright-training-data-smart-fund-creators-compensation/index.html",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "uk-datacentre-power-water-strain-public-protest-risk",
+    "category": "environment",
+    "category_label": "ENVIRONMENT & ENERGY • AIインフラと地域環境資源の対立",
+    "date": "2026-10-26",
+    "title": "AI Infrastructure Surge Puts Heavy Strain on UK Water and Power Grids Amid Public Pushback",
+    "headline_ja": "AIデータセンター急増が英国の電力・水資源を圧迫：地域社会の反発回避へ「残された時間は1年」",
+    "subhead": "冷却水消費と電力需要の激増に直面する地方自治体。ハイパースケール施設と脱炭素目標の両立を巡る危機。",
+    "lead_snippet": "Technology infrastructure giants have warned ministers that Britain has only a 12-month window to resolve resource conflicts before public backlash halts crucial data center expansion.",
+    "source_name": "The Guardian (2026年10月22日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/uk-news/2026/oct/22/ai-firms-say-uk-has-a-year-to-head-off-datacentre-protests-before-construction-is-threatened",
+    "path": "environment/uk-datacentre-power-water-strain-public-protest-risk/index.html",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "australian-climate-data-scrutiny-bom-temperature-records",
+    "category": "environment",
+    "category_label": "ENVIRONMENT & CLIMATE SCIENCE • 気候データ分析と科学的検証",
+    "date": "2026-10-26",
+    "title": "Australian Meteorological Bureau Rebuts Claims of Widespread Climate Dataset Errors",
+    "headline_ja": "豪気象局の長期気温データに「誤り」との報道：科学的エビデンスの検証と気候変動懐疑論への反論",
+    "subhead": "保守系メディアによるデータ改ざん批判に対し、科学的ホモジナイゼーション（均質化）の正当性を解説。",
+    "lead_snippet": "Australia's Bureau of Meteorology has mounted a robust defense of its long-term temperature records following sensationalist media accusations of pervasive methodological corruption.",
+    "source_name": "The Guardian (2026年10月24日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/24/the-australian-reports-widespread-errors-in-bom-temperature-data-where-is-the-evidence-for-those-big-claims",
+    "path": "environment/australian-climate-data-scrutiny-bom-temperature-records/index.html",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "ten-days-shake-democratic-norms-four-continents-elections",
+    "category": "society",
+    "category_label": "SOCIETY & GLOBAL GOVERNANCE • 世界の選挙と民主主義の試練",
+    "date": "2026-10-26",
+    "title": "Four Elections Across Four Continents in Ten Days Put Global Democratic Norms to the Test",
+    "headline_ja": "10日間で4大陸4カ国の重要選挙：極右・権威主義の台頭か、市民民主主義の反撃かを問う世界潮流",
+    "subhead": "ブラジル、セルビア、イスラエル、米国。激動の10日間に凝縮された21世紀の政治体制の分岐点を総括。",
+    "lead_snippet": "A historic convergence of major elections across four continents within a ten-day span is determining whether global democratic resilience can withstand the surge of populist authoritarianism.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/ng-interactive/2026/oct/25/ten-days-shake-world-democratic-norms-pivotal-elections-brazil-israel-serbia-us",
+    "path": "society/ten-days-shake-democratic-norms-four-continents-elections/index.html",
+    "image": "https://images.unsplash.com/photo-1494172961521-33799ddd43a5?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "uk-government-be-ready-emergency-stockpile-campaign",
+    "category": "society",
+    "category_label": "SOCIETY & CIVIL RESILIENCE • 危機管理と市民社会のレジリエンス",
+    "date": "2026-10-26",
+    "title": "UK Government Urges Households to Stockpile 72-Hour Emergency Supplies in 'Be Ready' Drive",
+    "headline_ja": "英政府、全世帯に「72時間の水・食料備蓄」を勧告：複合的インフラ途絶と異常気象に備える市民防衛",
+    "subhead": "1人あたり9リットルの水、保存食、電池式ラジオ。サイバー攻撃や異常気象リスクの高まりを受けた国家方針。",
+    "lead_snippet": "The British government has unveiled a comprehensive national preparedness initiative urging citizens to maintain a three-day supply of emergency food, water, and power essentials.",
+    "source_name": "The Guardian (2026年10月22日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/22/every-briton-should-stockpile-water-and-food-supplies-government-advises",
+    "path": "society/uk-government-be-ready-emergency-stockpile-campaign/index.html",
+    "image": "https://images.unsplash.com/photo-1584483766114-2cea6facdf57?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "medievalcore-youth-culture-lime-bike-jousts-subversion",
+    "category": "culture",
+    "category_label": "CULTURE & SUBPOP • 若者文化の深層と中世リバイバル",
+    "date": "2026-10-26",
+    "title": "From Lime Bike Jousts to Runway Chainmail: Why Youth Culture Is Embracing the Medieval Era",
+    "headline_ja": "シェア自転車で馬上槍試合？ Z世代が「中世（騎士・鎖帷子）」に熱狂する文化的理由",
+    "subhead": "ロンドンの街頭パフォーマンスからハイファッションのランウェイまで。過度に洗練された現代社会への反逆。",
+    "lead_snippet": "Viral e-bike jousting contests and runway armor reflect a burgeoning youth counterculture embracing medieval grit as a satirical rejection of algorithmic digital perfection.",
+    "source_name": "The Guardian (2026年10月24日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/culture/2026/oct/24/lime-bike-jousts-why-youth-culture-is-embracing-the-medieval-era",
+    "path": "culture/medievalcore-youth-culture-lime-bike-jousts-subversion/index.html",
+    "image": "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "kimi-antonelli-f1-us-grand-prix-mercedes-youngest-champion",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT & SPORTS • モータースポーツと次世代アスリート",
+    "date": "2026-10-26",
+    "title": "Kimi Antonelli Dominates US Grand Prix as Championship Decider Moves to Mexico City",
+    "headline_ja": "キミ・アントネッリがF1アメリカGPで圧勝：史上最年少世界王者へ王手、次戦メキシコで決戦へ",
+    "subhead": "ポール・トゥ・ウィンで今季9勝目を挙げたメルセデスの神童。緊迫のタイトル争いと次世代ドライバーの台頭。",
+    "lead_snippet": "Mercedes teenage prodigy Kimi Antonelli delivered a flawless victory at the United States Grand Prix, putting himself on the brink of becoming Formula One's youngest world champion.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/sport/2026/oct/25/kimi-antonelli-storms-to-us-f1-gp-victory-but-is-made-to-wait-for-title-glory",
+    "path": "entertainment/kimi-antonelli-f1-us-grand-prix-mercedes-youngest-champion/index.html",
+    "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-26": {
+    "dateStr": "Monday October 26 2026",
+    "editionLabel": "2026年10月26日 (月) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：セルビア総選挙で学生主導派大勝・ブラジル大統領選決選投票・古代ローマ変色ガラスナノ技術・AI学習と創作者補償制度",
+    "topLeadSlug": "serbian-election-vucic-concedes-defeat-student-movement",
+    "subLeadSlugs": [
+      "brazil-presidential-runoff-lula-flavio-bolsonaro-polarization",
+      "ancient-roman-colour-changing-glass-nanotechnology-rediscovered",
+      "ai-copyright-training-data-smart-fund-creators-compensation"
+    ],
+    "leftDispatches": [
+      "un-secretary-general-race-emirati-diplomat-lana-nusseibeh",
+      "venezuela-opposition-leader-machado-returns-democratic-transition",
+      "uk-datacentre-power-water-strain-public-protest-risk",
+      "australian-climate-data-scrutiny-bom-temperature-records"
+    ],
+    "rightDigestSlugs": [
+      "ten-days-shake-democratic-norms-four-continents-elections",
+      "uk-government-be-ready-emergency-stockpile-campaign",
+      "medievalcore-youth-culture-lime-bike-jousts-subversion",
+      "kimi-antonelli-f1-us-grand-prix-mercedes-youngest-champion"
+    ]
+  },
   "2026-10-24": {
     "dateStr": "Saturday October 24 2026",
-    "editionLabel": "2026年10月24日 (土) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月24日 (土) 号 【全12記事・アーカイブ】",
     "tagline": "特集：フィンランド子犬24時間生中継・抗肥満薬とパブビール消費減少・海岸浸食と市民科学・英オンライン安全法と子どもの保護",
     "topLeadSlug": "finnish-24-hour-puppy-livestream-tv-hit",
     "subLeadSlugs": [
