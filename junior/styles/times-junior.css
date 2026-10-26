@@ -408,6 +408,44 @@
 }
 
 
-
-
+/* ==========================================================================
+   THE JUNIOR - MOBILE RESPONSIVE TWEAKS
+   ========================================================================== */
+@media (max-width: 768px) {
+  .sub-banner-content {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    text-align: center;
+  }
+  
+  .junior-level-banner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+    padding: 0.65rem 0.85rem !important;
+  }
+  
+  .btn-switch-to-senior {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-header {
+    padding: 1.5rem 0.5rem 1rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+  
+  .hero-title {
+    margin: 1rem 0 0.75rem !important;
+  }
+  
+  .junior-media-card {
+    padding: 1rem 0.85rem !important;
+  }
+  
+  .junior-media-title-en {
+    font-size: 1.1rem !important;
+  }
+}
 

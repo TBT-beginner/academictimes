@@ -2731,3 +2731,381 @@ body {
   }
 }
 
+/* ==========================================================================
+   ENHANCED MOBILE RESPONSIVE OPTIMIZATIONS
+   The Academic Times & The Junior
+   ========================================================================== */
+
+/* 1. Header & Masthead Mobile Refinements */
+@media (max-width: 768px) {
+  .top-date-bar {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .top-date-bar > div {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.6rem !important;
+  }
+  
+  #top-date-bar-text {
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  .edition-selector-wrap {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 0.35rem !important;
+  }
+  
+  .edition-select {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.5rem;
+  }
+  
+  .edition-selector-wrap .edition-btn {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  /* Masthead Mobile */
+  .masthead {
+    padding: 0.75rem 0.5rem 1rem;
+  }
+  
+  .masthead-link {
+    gap: 0.5rem;
+  }
+  
+  .masthead-crest, .crest-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  
+  .masthead-title {
+    font-size: 1.75rem !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1.1;
+  }
+  
+  .masthead-subtitle {
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    line-height: 1.35;
+    padding: 0 0.5rem;
+  }
+
+  /* Junior Masthead Mobile */
+  .masthead-junior {
+    padding: 1rem 0.5rem 0.75rem !important;
+  }
+  
+  .masthead-junior-title {
+    font-size: 1.85rem !important;
+    letter-spacing: 0.02em !important;
+  }
+  
+  .masthead-junior-tagline {
+    font-size: 0.75rem !important;
+    letter-spacing: 0.05em !important;
+  }
+  
+  .masthead-junior-sub {
+    font-size: 0.75rem !important;
+    padding: 0 0.5rem;
+  }
+}
+
+/* 2. Navigation Horizontal Scroll & Touch Friendly */
+.nav-bar {
+  overflow: hidden;
+}
+
+.nav-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  justify-content: flex-start;
+  padding: 0 0.75rem;
+}
+
+.nav-container::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding: 0 0.25rem;
+}
+
+.nav-item a {
+  white-space: nowrap;
+  font-size: 0.8rem;
+  padding: 0.65rem 0.35rem;
+}
+
+/* 3. Sub-Banner & Actions Mobile */
+@media (max-width: 768px) {
+  .sub-banner {
+    padding: 0.75rem 1rem;
+  }
+  
+  .sub-banner-content {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    text-align: center;
+    gap: 0.6rem !important;
+  }
+  
+  .sub-banner-title {
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+  
+  .sub-banner-desc {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+  
+  .sub-banner-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.4rem;
+  }
+  
+  .btn-trial, .login-link {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* 4. Layout Grids (Sub-leads, Right Column, Categories) */
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding: 1rem 0.75rem 3rem !important;
+  }
+
+  .home-grid {
+    gap: 1.75rem;
+  }
+
+  .sub-lead-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem;
+  }
+
+  .home-col-left {
+    border-right: none !important;
+    border-top: 1px solid var(--times-light-border);
+    padding-right: 0 !important;
+    padding-top: 1.5rem !important;
+  }
+
+  .home-col-right {
+    border-top: 1px solid var(--times-light-border);
+    padding-top: 1.5rem !important;
+  }
+  
+  .right-story {
+    gap: 0.75rem;
+  }
+
+  /* Category portal cards */
+  .category-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem;
+  }
+}
+
+/* 5. Article Details, Hero Header & Typography */
+@media (max-width: 768px) {
+  .article-header.hero-header {
+    min-height: auto !important;
+    padding: 2.5rem 0.5rem 1.75rem !important;
+  }
+
+  .article-header.hero-header .article-h1,
+  .article-h1 {
+    font-size: 1.65rem !important;
+    line-height: 1.3 !important;
+    margin: 1rem 0 0.85rem !important;
+    word-break: break-word;
+  }
+
+  .article-subhead {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .article-meta-row {
+    font-size: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  /* Audio player panel */
+  .audio-player-panel {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem !important;
+  }
+
+  .btn-audio-play {
+    width: 100%;
+    justify-content: center;
+    padding: 0.6rem 1rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Sentence Blocks & TTS */
+  .en-sentence-block {
+    padding: 0.85rem 0.75rem !important;
+    margin: 1.25rem 0 !important;
+  }
+
+  .en-text {
+    font-size: 1.05rem !important;
+    line-height: 1.65 !important;
+    word-break: break-word;
+  }
+
+  .ja-text {
+    font-size: 0.88rem !important;
+    line-height: 1.75 !important;
+  }
+
+  /* Vocabulary Table Mobile Scrolling & Layout */
+  .vocab-table-wrap,
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .vocab-table th, .vocab-table td {
+    padding: 0.6rem 0.5rem !important;
+    font-size: 0.82rem !important;
+  }
+
+  .vocab-word-en {
+    font-size: 0.95rem !important;
+  }
+
+  /* Dialogue Section */
+  .dialogue-wrapper {
+    padding: 1.75rem 0 1rem !important;
+    margin: 2rem 0 !important;
+  }
+
+  .dlg-turn {
+    gap: 0.5rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .dlg-avatar {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.75rem !important;
+    margin-top: 0.5rem !important;
+  }
+
+  .dlg-bubble {
+    padding: 0.65rem 0.75rem !important;
+    font-size: 0.85rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .dlg-bubble::before {
+    top: 10px !important;
+  }
+
+  /* Quiz Section */
+  .quiz-card {
+    padding: 1rem 0.75rem !important;
+  }
+
+  .quiz-btn {
+    padding: 0.6rem 0.75rem !important;
+    font-size: 0.85rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .quiz-explanation {
+    padding: 0.5rem 0.6rem !important;
+    font-size: 0.82rem !important;
+  }
+
+  /* Archive Controls & Quick Pills */
+  .archive-controls-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.75rem !important;
+  }
+
+  .archive-period-pills {
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.25rem;
+  }
+
+  .archive-search-box {
+    padding: 1rem 0.75rem !important;
+  }
+
+  .archive-search-input {
+    font-size: 0.95rem !important;
+    padding: 0.65rem 0.75rem 0.65rem 2.25rem !important;
+  }
+
+  .edition-nav-header {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 0.5rem;
+  }
+
+  .edition-nav-toggle-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* 6. Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .masthead-title {
+    font-size: 1.45rem !important;
+  }
+
+  .article-h1 {
+    font-size: 1.45rem !important;
+  }
+
+  .btn-audio-circle, .btn-flag-toggle {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .hero-scroll-cue {
+    margin: 1.25rem auto 0 !important;
+  }
+}
+
