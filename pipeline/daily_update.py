@@ -113,9 +113,13 @@ def git_commit_and_push(commit_msg):
     print(f"[GIT] Committing with message: '{commit_msg}'...")
     com_res = subprocess.run(["git", "commit", "-m", commit_msg], cwd=PORTAL_DIR, capture_output=True, text=True, encoding="utf-8")
     if com_res.returncode != 0:
-        print(f"[ERROR in git commit]: {com_res.stderr}")
-        return False
-    print(com_res.stdout.strip())
+        chk = subprocess.run(["git", "status", "--porcelain"], cwd=PORTAL_DIR, capture_output=True, text=True, encoding="utf-8")
+        if not chk.stdout.strip():
+            print("[GIT] Working tree is clean. Nothing to commit.")
+        else:
+            print(f"[ERROR in git commit]: {com_res.stderr}")
+            return False
+    print(com_res.stdout.strip() if com_res.stdout else "")
 
     print(f"[GIT] Pushing to origin main...")
     push_res = subprocess.run(["git", "push", "origin", "main"], cwd=PORTAL_DIR, capture_output=True, text=True, encoding="utf-8")
