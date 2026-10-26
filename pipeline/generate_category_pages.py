@@ -95,6 +95,34 @@ CATEGORY_METADATA = {
             ("ubiquitous surveillance", "遍在する監視（日常空間のあらゆる場所にカメラやセンサーが存在する状態）"),
             ("creator economy", "クリエイターエコノミー（個人がネット上で独自のコンテンツや経済圏を築く仕組み）")
         ]
+    },
+    "environment": {
+        "title_en": "ENVIRONMENT & ECOLOGY",
+        "title_ja": "環境・気候変動・生物多様性",
+        "subtitle": "Climate Crisis, Biodiversity, Renewable Transition & Conservation",
+        "description": "地球温暖化、脱炭素エネルギー転換、海洋生態系の保護、光害と渡り鳥の保全など、現代地球規模課題（Global Issues）の最前線を英語で深く読み解きます。",
+        "exam_strategy": "環境科学・気候問題は国公立二次・私大入試の定番トピックです。温暖化のメカニズムや生態系への影響を示す因果構文、政策目標と現実の経済活動のジレンマを指摘する論理展開を正確に把握する読解力を養成します。",
+        "key_phrases": [
+            ("ecological equilibrium", "生態系平衡（多様な生物が相互にバランスを保つ自然の調和）"),
+            ("fossil fuel phase-out", "化石燃料の段階的廃止（脱炭素社会に向けたエネルギー転換目標）"),
+            ("light pollution mitigation", "光害の軽減（夜間人工照明による生態系撹乱を防ぐ施策）"),
+            ("biodiversity conservation", "生物多様性保全（絶滅危惧種や自然生息地の保護活動）"),
+            ("net-zero transition", "ネットゼロへの移行（温室効果ガス排出実質ゼロを目指す産業変革）")
+        ]
+    },
+    "tech": {
+        "title_en": "TECH & INNOVATION",
+        "title_ja": "先端テクノロジー・AI・情報社会",
+        "subtitle": "Generative AI, Digital Twins, Robotics & Data Governance",
+        "description": "生成AI・デジタルツイン、バイオテクノロジー、半導体開発、情報倫理など、急速に変容する社会を動かす先端テクノロジーの論点と英語表現を探究します。",
+        "exam_strategy": "テクノロジー論述では、新技術の革新性（potential, paradigm shift）と倫理的・法的リスク（algorithmic bias, intellectual property, consent）がセットで論じられます。多角的な視点から筆者の主張を整理する力を養いましょう。",
+        "key_phrases": [
+            ("synthetic twin", "デジタル（合成）ツイン（実在の人物や物体をAI等でデジタル上に再現したモデル）"),
+            ("algorithmic transparency", "アルゴリズムの透明性（AIの意思決定プロセスの説明責任）"),
+            ("intellectual property rights", "知的財産権（AI学習や生成物、肖像権等をめぐる権利関係）"),
+            ("data sovereignty", "データ主権（自国や個人が保有するデータの管理・保護権）"),
+            ("disruptive innovation", "破壊的イノベーション（既存の市場構造や慣行を根底から覆す技術革新）")
+        ]
     }
 }
 

@@ -219,6 +219,29 @@ def build_portal_data():
                 "kimi-antonelli-f1-us-grand-prix-mercedes-youngest-champion"
             ]
         },
+        "2026-10-25": {
+            "dateStr": "Sunday October 25 2026",
+            "editionLabel": "2026年10月25日 (日) 号 【全12記事・アーカイブ】",
+            "tagline": "特集：全島消灯で渡り鳥を救う島・プロ選手のAI分身ライセンス・新鴨緑江大橋と中朝関係・英生活費危機と新予算案",
+            "topLeadSlug": "corvo-island-blackout-rescue-fledgling-seabirds-light-pollution",
+            "subLeadSlugs": [
+                "synthetic-twins-athletes-licensing-ai-clones-commercial-rights",
+                "kim-jong-un-crosses-new-yalu-bridge-china-diplomacy",
+                "traintok-trend-transit-workers-viral-rail-enthusiasm"
+            ],
+            "leftDispatches": [
+                "france-nationwide-protests-education-budget-police-tensions",
+                "california-justice-department-noncitizen-voting-dispute",
+                "icc-prosecutors-defy-us-sanctions-international-justice",
+                "childrens-laureates-donate-royalties-sally-rooney-solidarity"
+            ],
+            "rightDigestSlugs": [
+                "stephen-fry-sherlock-holmes-literature-cultural-influence",
+                "uk-cabinet-rift-rosebank-oilfield-fossil-fuel-licensing",
+                "who-global-pandemic-agreement-pathogen-sharing-delay",
+                "uk-budget-cost-of-living-crisis-fiscal-headroom"
+            ]
+        },
         "2026-10-24": {
             "dateStr": "Saturday October 24 2026",
             "editionLabel": "2026年10月24日 (土) 号 【全12記事・アーカイブ】",
