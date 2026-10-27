@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-10-28": {
+            "dateStr": "Wednesday October 28 2026",
+            "editionLabel": "2026年10月28日 (水) 号 【本日付・最新・全12記事】",
+            "tagline": "特集：スロベニア最高峰トリグラウ氷河完全消滅・マスク氏AI映画Grok酷評・イスラエル総選挙出口調査拮抗・ボルソナロ長男国外脱出情報",
+            "topLeadSlug": "slovenia-triglav-glacier-extinction-alpine-climate-crisis",
+            "subLeadSlugs": [
+                "ai-grok-odyssey-film-reviewers-slate-homer-screensaver",
+                "israel-election-exit-polls-netanyahu-coalition-deadlock",
+                "brazil-flavio-bolsonaro-flees-country-us-flight-reports"
+            ],
+            "leftDispatches": [
+                "uk-high-court-public-figure-injunction-publication-allegations",
+                "ai-copyright-anthropic-elvis-presley-music-lawsuit",
+                "volkswagen-audi-us-suv-factory-georgia-tariffs-hedging",
+                "uk-labour-cabinet-eu-free-movement-debate-burnham"
+            ],
+            "rightDigestSlugs": [
+                "uk-economy-cutting-red-tape-counterproductive-trope",
+                "bank-of-england-interest-rates-monetary-policy-city-forecasts",
+                "retail-sector-paternity-leave-expansion-gender-equality",
+                "music-sam-fender-stadium-tour-ticket-prices-reformed"
+            ]
+        },
         "2026-10-27": {
             "dateStr": "Tuesday October 27 2026",
-            "editionLabel": "2026年10月27日 (火) 号 【本日付・最新・全12記事】",
+            "editionLabel": "2026年10月27日 (火) 号 【全12記事・アーカイブ】",
             "tagline": "特集：iPhone Duo折りたたみ画面亀裂・ボルソナロ旅券没収・ネタニヤフ先制圧力・中世タペストリー熱狂・南アブドウ園歴史復権",
             "topLeadSlug": "iphone-duo-foldable-handset-display-cracks-hardware",
             "subLeadSlugs": [

@@ -78,9 +78,32 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-28": {
+        "dateStr": "Wednesday October 28 2026",
+        "editionLabel": "2026年10月28日 (水) 号 【本日付・最新・全12記事】",
+        "tagline": "特集：アルプス最高峰トリグラウ氷河の消滅・AI映画Grokへの酷評・イスラエル選挙の大接戦・エルヴィス楽曲AI訴訟",
+        "topLeadSlug": "slovenia-triglav-glacier-extinction-alpine-climate-crisis",
+        "subLeadSlugs": [
+            "ai-grok-odyssey-film-reviewers-slate-homer-screensaver",
+            "israel-election-exit-polls-netanyahu-coalition-deadlock",
+            "brazil-flavio-bolsonaro-flees-country-us-flight-reports"
+        ],
+        "leftDispatches": [
+            "uk-high-court-public-figure-injunction-publication-allegations",
+            "ai-copyright-anthropic-elvis-presley-music-lawsuit",
+            "volkswagen-audi-us-suv-factory-georgia-tariffs-hedging",
+            "uk-labour-cabinet-eu-free-movement-debate-burnham"
+        ],
+        "rightDigestSlugs": [
+            "uk-economy-cutting-red-tape-counterproductive-trope",
+            "bank-of-england-interest-rates-monetary-policy-city-forecasts",
+            "retail-sector-paternity-leave-expansion-gender-equality",
+            "music-sam-fender-stadium-tour-ticket-prices-reformed"
+        ]
+    },
     "2026-10-27": {
         "dateStr": "Tuesday October 27 2026",
-        "editionLabel": "2026年10月27日 (火) 号 【本日付・最新・全12記事】",
+        "editionLabel": "2026年10月27日 (火) 号 【全12記事・アーカイブ】",
         "tagline": "特集：iPhone折りたたみ画面ヒビ割れ・ボルソナロ旅券没収・ネタニヤフ先制圧力・中世タペストリー人気・南アブドウ園の歴史",
         "topLeadSlug": "iphone-duo-foldable-handset-display-cracks-hardware",
         "subLeadSlugs": [

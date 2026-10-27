@@ -37,11 +37,12 @@
   <!-- Top Date Bar (The Times Style with Interactive Edition Switcher) -->
   <div class="top-date-bar">
     <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem; flex-wrap: wrap; gap: 0.5rem;">
-      <span id="top-date-bar-text">Tuesday October 27 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; Daily University Exam Academic Digest</span>
+      <span id="top-date-bar-text">Wednesday October 28 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; Daily University Exam Academic Digest</span>
       <div class="edition-selector-wrap">
         <span style="font-weight: 700; color: #111;">📅 紙面切替:</span>
         <select id="select-edition-date" class="edition-select" aria-label="Select edition date">
-          <option value="2026-10-27" selected>2026年10月27日 (火) 号 【本日付・最新・全12記事】</option>
+          <option value="2026-10-28" selected>2026年10月28日 (水) 号 【本日付・最新・全12記事】</option>
+          <option value="2026-10-27">2026年10月27日 (火) 号 【全12記事・アーカイブ】</option>
           <option value="2026-10-26">2026年10月26日 (月) 号 【全12記事・アーカイブ】</option>
           <option value="2026-10-25">2026年10月25日 (日) 号 【全12記事・アーカイブ】</option>
           <option value="2026-10-24">2026年10月24日 (土) 号 【全12記事・アーカイブ】</option>
@@ -506,18 +507,19 @@
         
         <!-- Recent Editions (Prominently displayed) -->
         <div class="edition-quick-pills">
-          <a href="index.html#date-2026-10-27" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-black); background: #111; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-10-27'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/27 (火) 本日最新号</a>
+          <a href="index.html#date-2026-10-28" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-black); background: #111; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-10-28'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/28 (水) 本日最新号</a>
+          <a href="index.html#date-2026-10-27" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-27'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/27 (火) 号</a>
           <a href="index.html#date-2026-10-26" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-26'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/26 (月) 号</a>
           <a href="index.html#date-2026-10-25" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-25'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/25 (日) 号</a>
           <a href="index.html#date-2026-10-24" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-24'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/24 (土) 号</a>
           <a href="index.html#date-2026-10-23" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-23'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/23 (金) 号</a>
-          <a href="index.html#date-2026-10-22" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-22'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/22 (木) 号</a>
         </div>
 
         <!-- Collapsible Older Editions (Preserves all past paper editions cleanly) -->
         <div class="edition-collapsible-content" id="edition-collapsible-content">
-          <div class="edition-period-heading">📅 10月上旬〜中旬の紙面アーカイブ（10/21〜10/1 創刊号）</div>
+          <div class="edition-period-heading">📅 10月上旬〜中旬の紙面アーカイブ（10/22〜10/1 創刊号）</div>
           <div class="edition-quick-pills" style="margin-top: 0.4rem;">
+            <a href="index.html#date-2026-10-22" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-22'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/22 (木) 号</a>
             <a href="index.html#date-2026-10-21" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-21'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/21 (水) 号</a>
             <a href="index.html#date-2026-10-20" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-20'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/20 (火) 号</a>
             <a href="index.html#date-2026-10-19" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-19'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/19 (月) 号</a>

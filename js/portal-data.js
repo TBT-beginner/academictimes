@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 321 articles, daily editions, and high-school media literacy references.
+// Contains all 333 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -4929,15 +4929,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/world/2026/oct/25/macrons-vandals-pay-bill-puts-right-to-protest-at-risk",
     "path": "law/france-macron-vandals-pay-law-protest-rights-democracy/index.html",
     "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "slovenia-triglav-glacier-extinction-alpine-climate-crisis",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • ALPINE GLACIOLOGY & CLIMATE CRISIS",
+    "date": "2026-10-28",
+    "title": "Slovenia Mourns Permanent Extinction of Mount Triglav Glacier After Scorching Alpine Summer",
+    "headline_ja": "スロベニア、猛暑の夏を経て国の象徴トリグラウ山の氷河完全消滅を追悼",
+    "subhead": "Centuries-old national symbol of sovereign identity reduces to fragmented ice patches, confronting Central Europe with irreversible cryospheric collapse.",
+    "lead_snippet": "Glaciologists in Slovenia have formally declared the catastrophic demise of the Mount Triglav glacier, marking a tragic milestone as the historic alpine ice sheet vanishes amidst record-breaking European heatwaves.",
+    "source_name": "The Guardian (2026年10月27日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/27/slovenia-mourns-loss-glacier-highest-peak-scorching-summer",
+    "path": "environment/slovenia-triglav-glacier-extinction-alpine-climate-crisis/index.html",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "ai-grok-odyssey-film-reviewers-slate-homer-screensaver",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT & GADGETS • GENERATIVE AI & CINEMA",
+    "date": "2026-10-28",
+    "title": "'Meaningless as a Screensaver': Critics Dismiss Elon Musk's Grok-Generated Homeric Odyssey Film",
+    "headline_ja": "「スクリーセーバー並みに空虚」：マスク氏のGrok生成AIによる映画『オデュッセイア』に批評家酷評",
+    "subhead": "Synthetically animated epic sparks ferocious debate over cinematic soul, narrative pacing, and the boundaries of generative computer graphics.",
+    "lead_snippet": "Film critics have overwhelmingly panned Elon Musk's full-length artificial intelligence adaptation of Homer's Odyssey, describing the fully synthetic production as visually glitzy yet devoid of genuine dramatic emotion.",
+    "source_name": "The Guardian (2026年10月27日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/27/reviewers-slate-musk-ai-grok-odyssey-film-nolan",
+    "path": "entertainment/ai-grok-odyssey-film-reviewers-slate-homer-screensaver/index.html",
+    "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "uk-high-court-public-figure-injunction-publication-allegations",
+    "category": "law",
+    "category_label": "LAW & JUSTICE • MEDIA FREEDOM & PRIVACY INJUNCTIONS",
+    "date": "2026-10-28",
+    "title": "High Court Hears High-Profile Public Figure's Injunction Bid to Block Investigative Allegations",
+    "headline_ja": "英高等法院、著名人による性的不正疑惑の報道差止請求を審理、報道の自由巡り対立",
+    "subhead": "Landmark judicial hearing balances investigative press freedom against mental health claims and the right to private reputation.",
+    "lead_snippet": "A prominent British public figure has approached the High Court seeking a permanent injunction against national broadcasters and newspapers, claiming journalistic exposure would trigger catastrophic psychological harm.",
+    "source_name": "The Guardian (2026年10月27日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/law/2026/oct/27/ppt-high-court-publication-sexual-offence-allegations",
+    "path": "law/uk-high-court-public-figure-injunction-publication-allegations/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "brazil-flavio-bolsonaro-flees-country-us-flight-reports",
+    "category": "world",
+    "category_label": "WORLD • INTERNATIONAL EXTRADITION & ELECTION DISPUTES",
+    "date": "2026-10-28",
+    "title": "Reports Indicate Defeated Senator Flávio Bolsonaro Flees Brazil for US Ahead of Court Deadlines",
+    "headline_ja": "大統領選敗北のフラヴィオ・ボルソナロ議員、旅券返納期限前に米フロリダへ出国か",
+    "subhead": "Far-right political dynasty faces acute diplomatic crisis as senator evades Supreme Federal Court travel prohibition following electoral loss.",
+    "lead_snippet": "In a dramatic geopolitical development, Brazilian media outlets report that defeated presidential candidate Flávio Bolsonaro has departed the country for the United States, defying supreme court orders to surrender his diplomatic travel documents.",
+    "source_name": "The Guardian (2026年10月27日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/27/flavio-bolsonaro-brazil-argentina-fled",
+    "path": "world/brazil-flavio-bolsonaro-flees-country-us-flight-reports/index.html",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "israel-election-exit-polls-netanyahu-coalition-deadlock",
+    "category": "world",
+    "category_label": "WORLD • ELECTORAL POLITICS & COALITION GOVERNANCE",
+    "date": "2026-10-28",
+    "title": "Israeli Election Exit Polls Reveal Deadlocked Parliament as Netanyahu's Far-Right Bloc Shrinks",
+    "headline_ja": "イスラエル総選挙の出口調査、ネタニヤフ氏の極右連立与党が議席を減らし議会は再度の膠着へ",
+    "subhead": "Fragmented electorate leaves both major political coalitions short of a decisive Knesset majority, portending protracted negotiations.",
+    "lead_snippet": "Television exit polls in Israel indicate Prime Minister Benjamin Netanyahu's right-wing coalition has suffered modest losses, leaving the nation facing yet another acute parliamentary stalemate without a clear governing majority.",
+    "source_name": "The Guardian (2026年10月27日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/27/israel-election-too-close-to-call-as-exit-polls-give-netanyahu-bloc-slightly-fewer-seats",
+    "path": "world/israel-election-exit-polls-netanyahu-coalition-deadlock/index.html",
+    "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "ai-copyright-anthropic-elvis-presley-music-lawsuit",
+    "category": "law",
+    "category_label": "LAW & JUSTICE • INTELLECTUAL PROPERTY & GENERATIVE AI",
+    "date": "2026-10-28",
+    "title": "Anthropic Sued Over Alleged Unauthorized Use of 274 Elvis Presley Songs in AI Training Models",
+    "headline_ja": "生成AI大手Anthropic、エルヴィス・プレスリーの楽曲274曲の無断学習で著作権侵害提訴",
+    "subhead": "Estate rights holders demand statutory damages as music publishers claim large language models memorize and reproduce iconic lyricism.",
+    "lead_snippet": "Artificial intelligence pioneer Anthropic faces a high-stakes federal copyright infringement lawsuit from the custodians of Elvis Presley's musical catalog, alleging unlicensed scraping of hundreds of historic compositions.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/oct/25/elvis-presley-anthropic-lawsuit-ai-models-music",
+    "path": "law/ai-copyright-anthropic-elvis-presley-music-lawsuit/index.html",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "uk-economy-cutting-red-tape-counterproductive-trope",
+    "category": "society",
+    "category_label": "SOCIETY • ECONOMIC POLICY & REGULATORY REFORM",
+    "date": "2026-10-28",
+    "title": "Debunking the 'Red Tape' Fallacy: Why Slashing Business Regulation Risks Economic Sclerosis",
+    "headline_ja": "「規制緩和の神話」を解体する：規制撤廃の叫びがなぜ経済の硬直化と生産性低下を招くのか",
+    "subhead": "Economic analysis challenges neoliberal dogmas, arguing modern industrial productivity requires high-standard market guardrails rather than deregulation.",
+    "lead_snippet": "Prominent economic commentators argue that reflexively blaming statutory regulations for Britain's stagnant productivity is an outdated rhetorical distraction that blinds policymakers to real structural deficits.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/25/cutting-red-tape-is-nothing-but-a-red-herring-and-arguably-counterproductive",
+    "path": "society/uk-economy-cutting-red-tape-counterproductive-trope/index.html",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "bank-of-england-interest-rates-monetary-policy-city-forecasts",
+    "category": "society",
+    "category_label": "SOCIETY • MACROECONOMICS & MONETARY POLICY",
+    "date": "2026-10-28",
+    "title": "City Economists Push Back Against Hawkish Forecasts, Projecting Bank of England Rate Cuts",
+    "headline_ja": "ロンドン金融街エコノミストら、利上げ観測を否定、英中銀は2027年にかけて利下げへ転換と予測",
+    "subhead": "Cooling inflation indices and stagnant household consumption indicate borrowing costs have reached their terminal cycle plateau.",
+    "lead_snippet": "Leading financial economists in the City of London have rejected aggressive rate hike predictions, arguing the Bank of England is more likely to implement progressive rate cuts as consumer demand softens.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/25/interest-rates-bank-of-england-rises-summer-2027",
+    "path": "society/bank-of-england-interest-rates-monetary-policy-city-forecasts/index.html",
+    "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "retail-sector-paternity-leave-expansion-gender-equality",
+    "category": "society",
+    "category_label": "SOCIETY • GENDER EQUITY & CORPORATE LABOUR STANDARDS",
+    "date": "2026-10-28",
+    "title": "UK Retail Giants Outpace State Minimums on Paternity Leave, Prompting Calls for Legislative Reform",
+    "headline_ja": "英小売大手、法定基準を大幅に上回る最大6週間の男性育休を提供、法改正求める声高まる",
+    "subhead": "Generous corporate parenting packages expose stark disparities across manual industries, highlighting the gender pay gap.",
+    "lead_snippet": "Major supermarket chains in the United Kingdom have dramatically expanded fully paid paternity benefits, widening the policy gulf with traditional industries and piling pressure on ministers to overhaul statutory allowances.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/25/retail-leads-way-paternity-leave-government-urged-improve-offer",
+    "path": "society/retail-sector-paternity-leave-expansion-gender-equality/index.html",
+    "image": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "volkswagen-audi-us-suv-factory-georgia-tariffs-hedging",
+    "category": "world",
+    "category_label": "WORLD • INDUSTRIAL GEOPOLITICS & GLOBAL AUTOMOTIVE TRADE",
+    "date": "2026-10-28",
+    "title": "Volkswagen Commits $4bn for US Audi SUV Plant Amid Domestic Job Cuts and Trade Barriers",
+    "headline_ja": "独フォルクスワーゲン、国内工場縮小の一方で米ジョージア州に40億ドルSUV新工場建設へ",
+    "subhead": "German automotive titan hedges against international tariff threats and Chinese EV competition through bold transatlantic manufacturing shift.",
+    "lead_snippet": "Volkswagen has confirmed a massive $4 billion manufacturing investment in the American state of Georgia, seeking to insulate its luxury Audi portfolio from escalating transatlantic trade tariffs despite painful restructuring at its domestic German bases.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/25/volkswagen-to-build-4bn-audi-suv-factory-in-us-despite-job-cuts-at-home",
+    "path": "world/volkswagen-audi-us-suv-factory-georgia-tariffs-hedging/index.html",
+    "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "uk-labour-cabinet-eu-free-movement-debate-burnham",
+    "category": "world",
+    "category_label": "WORLD • POST-BREXIT DIPLOMACY & EUROPEAN INTEGRATION",
+    "date": "2026-10-28",
+    "title": "Senior Cabinet Figures Back Debate on Reopening Free Movement with EU Following Post-Brexit Stagnation",
+    "headline_ja": "英閣僚、ブレグジット後の停滞を受けEUとの「移動の自由」再開論争を支持、労働党内に激論",
+    "subhead": "Metropolitan mayors and progressive frontbenchers challenge Downing Street's red lines as labor shortages afflict hospitality and healthcare.",
+    "lead_snippet": "Senior British cabinet members have broken with official government orthodoxy to support open debate on renegotiating reciprocal free movement agreements with the European Union, exposing simmering ideological divides within the ruling party.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/politics/2026/oct/25/burnham-rayner-labour-eu-free-movement-brexit",
+    "path": "world/uk-labour-cabinet-eu-free-movement-debate-burnham/index.html",
+    "image": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "music-sam-fender-stadium-tour-ticket-prices-reformed",
+    "category": "culture",
+    "category_label": "CULTURE • PERFORMING ARTS & MUSIC INDUSTRY ECONOMICS",
+    "date": "2026-10-28",
+    "title": "Sam Fender Pledges Ticket Price Overhaul for UK Stadium Tour After Fan Backlash Against Dynamic Pricing",
+    "headline_ja": "サム・フェンダー、ダイナミック・プライシングによるスタジアム公演のチケット高騰を批判、是正を公約",
+    "subhead": "Rock icon challenges corporate ticketing platforms, insisting live cultural performances must remain accessible to working-class audiences.",
+    "lead_snippet": "Award-winning British rock musician Sam Fender has forcefully intervened against inflated stadium concert prices, publicly promising his forthcoming nationwide tour tickets will be restructured to protect authentic fans from exploitative surge ticketing.",
+    "source_name": "The Guardian (2026年10月24日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/music/2026/oct/24/sam-fender-fans-high-ticket-prices-proper-massive-tour-getting-changed",
+    "path": "culture/music-sam-fender-stadium-tour-ticket-prices-reformed/index.html",
+    "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-28": {
+    "dateStr": "Wednesday October 28 2026",
+    "editionLabel": "2026年10月28日 (水) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：スロベニア最高峰トリグラウ氷河完全消滅・マスク氏AI映画Grok酷評・イスラエル総選挙出口調査拮抗・ボルソナロ長男国外脱出情報",
+    "topLeadSlug": "slovenia-triglav-glacier-extinction-alpine-climate-crisis",
+    "subLeadSlugs": [
+      "ai-grok-odyssey-film-reviewers-slate-homer-screensaver",
+      "israel-election-exit-polls-netanyahu-coalition-deadlock",
+      "brazil-flavio-bolsonaro-flees-country-us-flight-reports"
+    ],
+    "leftDispatches": [
+      "uk-high-court-public-figure-injunction-publication-allegations",
+      "ai-copyright-anthropic-elvis-presley-music-lawsuit",
+      "volkswagen-audi-us-suv-factory-georgia-tariffs-hedging",
+      "uk-labour-cabinet-eu-free-movement-debate-burnham"
+    ],
+    "rightDigestSlugs": [
+      "uk-economy-cutting-red-tape-counterproductive-trope",
+      "bank-of-england-interest-rates-monetary-policy-city-forecasts",
+      "retail-sector-paternity-leave-expansion-gender-equality",
+      "music-sam-fender-stadium-tour-ticket-prices-reformed"
+    ]
+  },
   "2026-10-27": {
     "dateStr": "Tuesday October 27 2026",
-    "editionLabel": "2026年10月27日 (火) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月27日 (火) 号 【全12記事・アーカイブ】",
     "tagline": "特集：iPhone Duo折りたたみ画面亀裂・ボルソナロ旅券没収・ネタニヤフ先制圧力・中世タペストリー熱狂・南アブドウ園歴史復権",
     "topLeadSlug": "iphone-duo-foldable-handset-display-cracks-hardware",
     "subLeadSlugs": [
