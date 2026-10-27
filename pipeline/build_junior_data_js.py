@@ -78,9 +78,32 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-27": {
+        "dateStr": "Tuesday October 27 2026",
+        "editionLabel": "2026年10月27日 (火) 号 【本日付・最新・全12記事】",
+        "tagline": "特集：iPhone折りたたみ画面ヒビ割れ・ボルソナロ旅券没収・ネタニヤフ先制圧力・中世タペストリー人気・南アブドウ園の歴史",
+        "topLeadSlug": "iphone-duo-foldable-handset-display-cracks-hardware",
+        "subLeadSlugs": [
+            "brazil-supreme-court-flavio-bolsonaro-passport-seizure",
+            "israel-netanyahu-military-pressure-iran-election-strategy",
+            "bayeux-tapestry-british-museum-youth-culture-pop-hit"
+        ],
+        "leftDispatches": [
+            "stage-michael-gambon-biography-pranks-theatrical-craft",
+            "south-africa-vineyards-slavery-legacy-land-reclamation",
+            "uk-apprenticeship-funding-overhaul-youth-jobs-crisis-neet",
+            "uk-foreign-aid-budget-shortfall-gni-target-missed"
+        ],
+        "rightDigestSlugs": [
+            "astronomy-starwatch-pegasus-great-square-celestial-navigation",
+            "england-ethnic-minorities-breast-cancer-screening-disparities",
+            "manchester-burnham-homelessness-funding-rough-sleeping-budget",
+            "france-macron-vandals-pay-law-protest-rights-democracy"
+        ]
+    },
     "2026-10-26": {
         "dateStr": "Monday October 26 2026",
-        "editionLabel": "2026年10月26日 (月) 号 【本日付・最新・全12記事】",
+        "editionLabel": "2026年10月26日 (月) 号 【全12記事・アーカイブ】",
         "tagline": "特集：セルビアの歴史的選挙と学生の力・ブラジル大統領選・古代ローマの変色ガラス・中世ごっこの大流行",
         "topLeadSlug": "serbian-election-vucic-concedes-defeat-student-movement",
         "subLeadSlugs": ["brazil-presidential-runoff-lula-flavio-bolsonaro-polarization", "ancient-roman-colour-changing-glass-nanotechnology-rediscovered", "ai-copyright-training-data-smart-fund-creators-compensation"],

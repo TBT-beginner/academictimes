@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 309 articles, daily editions, and high-school media literacy references.
+// Contains all 321 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -4749,15 +4749,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/uk-news/2026/oct/24/can-john-healey-make-a-dent-in-the-cost-of-living-crisis-in-his-first-budget",
     "path": "society/uk-budget-cost-of-living-crisis-fiscal-headroom/index.html",
     "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "iphone-duo-foldable-handset-display-cracks-hardware",
+    "category": "tech",
+    "category_label": "TECH • HARDWARE & INNOVATION",
+    "date": "2026-10-27",
+    "title": "iPhone Duo Users Report Display Cracks in Apple's Inaugural Foldable Handset",
+    "headline_ja": "アップル初の折りたたみ端末「iPhone Duo」でディスプレイ亀裂の報告が相次ぐ",
+    "subhead": "Early adopters of Apple's flagship foldable device document spontaneous screen fractures along the structural crease, prompting engineering scrutiny.",
+    "lead_snippet": "Users of Apple's inaugural foldable smartphone have begun documenting spontaneous screen cracks along the central hinge mechanism, igniting widespread technical debates over flexible glass durability.",
+    "source_name": "The Guardian (2026年10月26日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
+    "path": "tech/iphone-duo-foldable-handset-display-cracks-hardware/index.html",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "brazil-supreme-court-flavio-bolsonaro-passport-seizure",
+    "category": "world",
+    "category_label": "WORLD • JUDICIAL OVERSIGHT & RULE OF LAW",
+    "date": "2026-10-27",
+    "title": "Brazil's Supreme Court Orders Defeated Senator Flávio Bolsonaro to Surrender Passports",
+    "headline_ja": "ブラジル最高裁、大統領選敗北のフラヴィオ・ボルソナロ上院議員に旅券返納を命令",
+    "subhead": "Supreme Federal Court imposes international travel prohibition amid expanding judicial inquiry into systemic money laundering and electoral subversion.",
+    "lead_snippet": "In the volatile aftermath of Brazil's presidential runoff, the Supreme Court has barred far-right senator Flávio Bolsonaro from departing the country, intensifying judicial scrutiny over the former president's inner circle.",
+    "source_name": "The Guardian (2026年10月26日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/26/flavio-bolsonaro-brazil-lula-election",
+    "path": "world/brazil-supreme-court-flavio-bolsonaro-passport-seizure/index.html",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "israel-netanyahu-military-pressure-iran-election-strategy",
+    "category": "world",
+    "category_label": "WORLD • MIDDLE EAST SECURITY & DIPLOMACY",
+    "date": "2026-10-27",
+    "title": "Netanyahu Pressured Military Command on Pre-Election Strikes Against Iranian Targets",
+    "headline_ja": "ネタニヤフ首相、総選挙前にイラン空爆前倒しを軍司令部に圧力か",
+    "subhead": "Investigative leaks reveal escalating rift between Israel's political leadership and defense establishment over domestic electoral calculation.",
+    "lead_snippet": "Leaked defense briefings reveal Israeli Prime Minister Benjamin Netanyahu exerted intense pressure on senior commanders to accelerate military operations against Iran in the crucial weeks leading to national elections.",
+    "source_name": "The Guardian (2026年10月26日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/26/netanyahu-reportedly-pressured-israel-military-attack-iran-runup-to-election",
+    "path": "world/israel-netanyahu-military-pressure-iran-election-strategy/index.html",
+    "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "stage-michael-gambon-biography-pranks-theatrical-craft",
+    "category": "culture",
+    "category_label": "CULTURE & THOUGHT • THEATRICAL ARTS",
+    "date": "2026-10-27",
+    "title": "The Art of Play: New Biography Details Michael Gambon's Mischief and Theatrical Craft",
+    "headline_ja": "遊び心の真髄：マイケル・ガンボン伝記が明かす名優の茶目っ気と舞台芸術",
+    "subhead": "Reflections from Judi Dench and Daniel Radcliffe illuminate how the legendary actor used irreverent comedy to dismantle dramatic pretension.",
+    "lead_snippet": "A revelatory new biography of Sir Michael Gambon explores the legendary actor's legendary practical jokes on stage and set, demonstrating how mischievous playfulness anchored his transcendent dramatic authority.",
+    "source_name": "The Guardian (2026年10月26日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/stage/2026/oct/26/michael-gambon-pranks-revealed-biography",
+    "path": "culture/stage-michael-gambon-biography-pranks-theatrical-craft/index.html",
+    "image": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "bayeux-tapestry-british-museum-youth-culture-pop-hit",
+    "category": "culture",
+    "category_label": "CULTURE • HISTORICAL HERITAGE & YOUTH TRENDS",
+    "date": "2026-10-27",
+    "title": "Bayeux Tapestry Exhibition Outpaces Blockbuster Cinema as Young Britons Flock to Museum",
+    "headline_ja": "バイユーのタペストリー展、大作映画を凌ぐ人気で英若年層が博物館に殺到",
+    "subhead": "Digital banking telemetry reveals over half of opening ticket purchases were driven by patrons under 35, highlighting medieval cultural resonance.",
+    "lead_snippet": "In an unprecedented demographic shift, medieval history has captured contemporary youth culture as the British Museum's forthcoming Bayeux Tapestry exhibition surpasses Hollywood blockbusters in ticket sales among people under 35.",
+    "source_name": "The Guardian (2026年10月26日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/26/young-britons-bayeux-tapestry-tickets-british-museum-hollywood-blockbusters",
+    "path": "culture/bayeux-tapestry-british-museum-youth-culture-pop-hit/index.html",
+    "image": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "south-africa-vineyards-slavery-legacy-land-reclamation",
+    "category": "society",
+    "category_label": "SOCIETY • HISTORICAL JUSTICE & LABOUR RIGHTS",
+    "date": "2026-10-27",
+    "title": "'We Built This Land': Descendants of Enslaved Workers Reclaim Heritage Across South African Vineyards",
+    "headline_ja": "「私たちが築いた大地」：奴隷労働者の子孫、南アフリカのブドウ園で歴史の復権を推進",
+    "subhead": "Grassroots viticulture cooperatives confront the unacknowledged colonial foundations of the Cape wine trade through restorative land equity.",
+    "lead_snippet": "Generations after enslaved laborers established the celebrated Cape Winelands, their descendants are establishing autonomous cooperatives and demanding formal historical recognition, challenging centuries of agrarian inequity.",
+    "source_name": "The Guardian (2026年10月26日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/26/we-built-this-land-descendants-of-enslaved-people-are-reclaiming-their-history-across-south-africas-vineyards",
+    "path": "society/south-africa-vineyards-slavery-legacy-land-reclamation/index.html",
+    "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "uk-apprenticeship-funding-overhaul-youth-jobs-crisis-neet",
+    "category": "society",
+    "category_label": "SOCIETY • LABOUR POLICY & YOUTH EMPLOYMENT",
+    "date": "2026-10-27",
+    "title": "UK Apprenticeship Overhaul: Employers Warn Higher Training Costs for Older Staff Threaten Youth Job Initiatives",
+    "headline_ja": "英見習い制度改革：年長労働者の訓練費負担増が若年雇用対策を脅かすと企業が警告",
+    "subhead": "Proposed ministerial shifts toward co-funding over-25 apprenticeships risk destabilizing entry-level vocational pipelines amid rising NEET statistics.",
+    "lead_snippet": "Government plans to shift vocational training costs onto employers for apprentices over 25 have triggered severe industry warnings, with business confederations arguing the reform could unintentionally undermine efforts to curb rising youth unemployment.",
+    "source_name": "The Guardian (2026年10月26日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/education/2026/oct/26/training-costs-apprenticeships-older-workers-youth-jobs-crisis-neet",
+    "path": "society/uk-apprenticeship-funding-overhaul-youth-jobs-crisis-neet/index.html",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "uk-foreign-aid-budget-shortfall-gni-target-missed",
+    "category": "world",
+    "category_label": "WORLD • FOREIGN POLICY & GLOBAL DEVELOPMENT",
+    "date": "2026-10-27",
+    "title": "UK Projected to Fall £410m Short of Reduced 0.3% Foreign Aid Spending Target",
+    "headline_ja": "英政府、0.3％に引き下げられた海外支援目標すら4億1000万ポンド未達の公算",
+    "subhead": "Fiscal analysis warns domestic asylum accommodation deductions and Treasury austerity severely erode Britain's international diplomatic leverage.",
+    "lead_snippet": "Britain is on course to breach its legally mandated foreign assistance commitments by over £400 million, as non-governmental thinktanks reveal domestic hotel housing costs for asylum applicants are cannibalizing global humanitarian budgets.",
+    "source_name": "The Guardian (2026年10月26日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/politics/2026/oct/26/uk-international-aid-target-spending-shortfall-budget-research",
+    "path": "world/uk-foreign-aid-budget-shortfall-gni-target-missed/index.html",
+    "image": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "astronomy-starwatch-pegasus-great-square-celestial-navigation",
+    "category": "science",
+    "category_label": "SCIENCE • ASTRONOMY & ASTROPHYSICS",
+    "date": "2026-10-27",
+    "title": "Starwatch: The Great Square of Pegasus Guides Autumn Night Skies and Celestial Physics",
+    "headline_ja": "天体観望：ペガスス座の「大四辺形」が秋の夜空と恒星物理学を照らし出す",
+    "subhead": "Autumn stargazers observe distinctive geometrical stellar alignments offering profound insights into thermonuclear evolution and binary star orbits.",
+    "lead_snippet": "As the autumn equinox settles across the northern hemisphere, the iconic asterism of Pegasus dominates the zenith, serving as both an ancient celestial compass and a living laboratory for observational stellar astrophysics.",
+    "source_name": "The Guardian (2026年10月26日)",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/26/starwatch-bright-stars-pegasus-distinctive-constellation",
+    "path": "science/astronomy-starwatch-pegasus-great-square-celestial-navigation/index.html",
+    "image": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "england-ethnic-minorities-breast-cancer-screening-disparities",
+    "category": "society",
+    "category_label": "SOCIETY • PUBLIC HEALTH & HEALTHCARE EQUITY",
+    "date": "2026-10-27",
+    "title": "Severe Diagnosis Disparities Revealed in Routine Breast Cancer Screening Across English Minority Communities",
+    "headline_ja": "英少数民族コミュニティで乳がん定期検診の受診格差が深刻化、救急診断の割合高く",
+    "subhead": "Epidemiological study finds marginalized women disproportionately diagnosed in emergency settings rather than early preventative programs.",
+    "lead_snippet": "Alarming public health research in England demonstrates that women from ethnic minority backgrounds are significantly less likely to receive breast cancer diagnoses through scheduled mammography, leading to late-stage emergency presentations.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/oct/25/ethnic-minorities-england-breast-cancer-screening-disparity",
+    "path": "society/england-ethnic-minorities-breast-cancer-screening-disparities/index.html",
+    "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "manchester-burnham-homelessness-funding-rough-sleeping-budget",
+    "category": "society",
+    "category_label": "SOCIETY • URBAN GOVERNANCE & SOCIAL WELFARE",
+    "date": "2026-10-27",
+    "title": "Manchester Mayor Pledges £900m Homelessness Strategy as Treasury Boosts Rough Sleeping Grants",
+    "headline_ja": "マンチェスター市長、路上生活撲滅へ9億ポンド支援表明、英財務省も予算倍増へ",
+    "subhead": "Devolved municipal authority pairs emergency winter accommodation with wrap-around mental healthcare to dismantle cyclical destitution.",
+    "lead_snippet": "Greater Manchester Mayor Andy Burnham has committed nearly £1 billion to eradicate street homelessness, partnering with enhanced national budget allocations to transform emergency shelters into permanent supportive housing networks.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/oct/25/homelessness-rough-sleeping-double-spending-burnham",
+    "path": "society/manchester-burnham-homelessness-funding-rough-sleeping-budget/index.html",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "france-macron-vandals-pay-law-protest-rights-democracy",
+    "category": "law",
+    "category_label": "LAW & JUSTICE • CONSTITUTIONAL RIGHTS & POLICING",
+    "date": "2026-10-27",
+    "title": "Macron Faces Backlash as Critics Allege 'Vandals Pay' Legislation Imperils French Right to Protest",
+    "headline_ja": "マクロン大統領に批判、「破壊者弁償法」案がフランスの抗議権と法治主義を危機に晒すと反発",
+    "subhead": "Civil liberties advocates warn collective financial liability provisions weaponize restitution against peaceful democratic demonstration.",
+    "lead_snippet": "Sweeping legislation pushed by President Emmanuel Macron to compel demonstrators to financially reimburse riot damages has ignited vehement constitutional opposition, with civil rights lawyers arguing the policy institutes dangerous collective punishment.",
+    "source_name": "The Guardian (2026年10月25日)",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/25/macrons-vandals-pay-bill-puts-right-to-protest-at-risk",
+    "path": "law/france-macron-vandals-pay-law-protest-rights-democracy/index.html",
+    "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-27": {
+    "dateStr": "Tuesday October 27 2026",
+    "editionLabel": "2026年10月27日 (火) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：iPhone Duo折りたたみ画面亀裂・ボルソナロ旅券没収・ネタニヤフ先制圧力・中世タペストリー熱狂・南アブドウ園歴史復権",
+    "topLeadSlug": "iphone-duo-foldable-handset-display-cracks-hardware",
+    "subLeadSlugs": [
+      "brazil-supreme-court-flavio-bolsonaro-passport-seizure",
+      "israel-netanyahu-military-pressure-iran-election-strategy",
+      "bayeux-tapestry-british-museum-youth-culture-pop-hit"
+    ],
+    "leftDispatches": [
+      "stage-michael-gambon-biography-pranks-theatrical-craft",
+      "south-africa-vineyards-slavery-legacy-land-reclamation",
+      "uk-apprenticeship-funding-overhaul-youth-jobs-crisis-neet",
+      "uk-foreign-aid-budget-shortfall-gni-target-missed"
+    ],
+    "rightDigestSlugs": [
+      "astronomy-starwatch-pegasus-great-square-celestial-navigation",
+      "england-ethnic-minorities-breast-cancer-screening-disparities",
+      "manchester-burnham-homelessness-funding-rough-sleeping-budget",
+      "france-macron-vandals-pay-law-protest-rights-democracy"
+    ]
+  },
   "2026-10-26": {
     "dateStr": "Monday October 26 2026",
-    "editionLabel": "2026年10月26日 (月) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月26日 (月) 号 【全12記事・アーカイブ】",
     "tagline": "特集：セルビア総選挙で学生主導派大勝・ブラジル大統領選決選投票・古代ローマ変色ガラスナノ技術・AI学習と創作者補償制度",
     "topLeadSlug": "serbian-election-vucic-concedes-defeat-student-movement",
     "subLeadSlugs": [

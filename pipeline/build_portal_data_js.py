@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-10-27": {
+            "dateStr": "Tuesday October 27 2026",
+            "editionLabel": "2026年10月27日 (火) 号 【本日付・最新・全12記事】",
+            "tagline": "特集：iPhone Duo折りたたみ画面亀裂・ボルソナロ旅券没収・ネタニヤフ先制圧力・中世タペストリー熱狂・南アブドウ園歴史復権",
+            "topLeadSlug": "iphone-duo-foldable-handset-display-cracks-hardware",
+            "subLeadSlugs": [
+                "brazil-supreme-court-flavio-bolsonaro-passport-seizure",
+                "israel-netanyahu-military-pressure-iran-election-strategy",
+                "bayeux-tapestry-british-museum-youth-culture-pop-hit"
+            ],
+            "leftDispatches": [
+                "stage-michael-gambon-biography-pranks-theatrical-craft",
+                "south-africa-vineyards-slavery-legacy-land-reclamation",
+                "uk-apprenticeship-funding-overhaul-youth-jobs-crisis-neet",
+                "uk-foreign-aid-budget-shortfall-gni-target-missed"
+            ],
+            "rightDigestSlugs": [
+                "astronomy-starwatch-pegasus-great-square-celestial-navigation",
+                "england-ethnic-minorities-breast-cancer-screening-disparities",
+                "manchester-burnham-homelessness-funding-rough-sleeping-budget",
+                "france-macron-vandals-pay-law-protest-rights-democracy"
+            ]
+        },
         "2026-10-26": {
             "dateStr": "Monday October 26 2026",
-            "editionLabel": "2026年10月26日 (月) 号 【本日付・最新・全12記事】",
+            "editionLabel": "2026年10月26日 (月) 号 【全12記事・アーカイブ】",
             "tagline": "特集：セルビア総選挙で学生主導派大勝・ブラジル大統領選決選投票・古代ローマ変色ガラスナノ技術・AI学習と創作者補償制度",
             "topLeadSlug": "serbian-election-vucic-concedes-defeat-student-movement",
             "subLeadSlugs": [
