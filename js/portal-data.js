@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 333 articles, daily editions, and high-school media literacy references.
+// Contains all 345 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -5109,15 +5109,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/music/2026/oct/24/sam-fender-fans-high-ticket-prices-proper-massive-tour-getting-changed",
     "path": "culture/music-sam-fender-stadium-tour-ticket-prices-reformed/index.html",
     "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "slug": "uk-sizewell-nuclear-plant-deal-taxpayer-mps-warning",
+    "category": "science",
+    "category_label": "SCIENCE & ENERGY • 原子力発電・国家財政リスク",
+    "date": "2026-10-29",
+    "title": "MPs Warn Multi-Billion Pound Sizewell C Nuclear Project Risks Becoming Terrible Deal for Taxpayers",
+    "headline_ja": "英サイズウェルC原発計画、巨額の国民負担に議員団が強い懸念表明",
+    "subhead": "英議会超党派委員会は、サフォーク州で進められる巨大原子力発電所「サイズウェルC」計画について、民間投資の不足と建設費高騰により国民に過大な金銭的負担が転嫁される危険性を厳しく警告した。",
+    "lead_snippet": "英議会超党派委員会は、サフォーク州で進められる巨大原子力発電所「サイズウェルC」計画について、民間投資の不足と建設費高騰により国民に過大な金銭的負担が転嫁される危険性を厳しく警告した。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/28/plan-for-multibillion-pound-sizewell-nuclear-plant-a-terrible-deal-for-uk-taxpayers-mps-say",
+    "path": "science/uk-sizewell-nuclear-plant-deal-taxpayer-mps-warning/index.html",
+    "image": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "venice-lagoon-rising-seas-dry-land-submergence",
+    "category": "science",
+    "category_label": "SCIENCE & GEOLOGY • 海洋変動と古代地形の変遷",
+    "date": "2026-10-29",
+    "title": "Sediment Analysis Reveals How Rapid Sea Level Rise Transformed Dry Coastal Land into Venice Lagoon",
+    "headline_ja": "堆積物コア分析で解明：古代の陸地が海面上昇でヴェネツィア潟に変貌",
+    "subhead": "地質学者らによる最新の堆積物コア分析により、現在のヴェネツィア潟がかつて完全な乾燥大地であり、完新世の急激な海水準上昇によって水没・変貌を遂げた劇的な過程が解明された。",
+    "lead_snippet": "地質学者らによる最新の堆積物コア分析により、現在のヴェネツィア潟がかつて完全な乾燥大地であり、完新世の急激な海水準上昇によって水没・変貌を遂げた劇的な過程が解明された。",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon",
+    "path": "science/venice-lagoon-rising-seas-dry-land-submergence/index.html",
+    "image": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-homes-low-interest-loans-solar-heat-pumps",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • 住宅グリーン移行・再エネ融資",
+    "date": "2026-10-29",
+    "title": "UK Unveils Low and Zero-Interest Loan Schemes to Accelerate Household Solar Panel and Heat Pump Installations",
+    "headline_ja": "英政府、太陽光パネル・ヒートポンプ導入支援で無利子ローン制度を発表",
+    "subhead": "英政府は家庭部門の脱炭素化を促進するため、太陽光パネルやヒートポンプの導入費用を賄う低利および無利子の公的融資制度を全国展開すると発表した。",
+    "lead_snippet": "英政府は家庭部門の脱炭素化を促進するため、太陽光パネルやヒートポンプの導入費用を賄う低利および無利子の公的融資制度を全国展開すると発表した。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/27/homes-across-uk-to-get-low--or-no-interest-loans-to-fund-solar-panels-and-heat-pumps",
+    "path": "environment/uk-homes-low-interest-loans-solar-heat-pumps/index.html",
+    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ferritin-face-social-media-claims-iron-deficiency-risks",
+    "category": "science",
+    "category_label": "SCIENCE & HEALTH • 医療情報リテラシーとSNS",
+    "date": "2026-10-29",
+    "title": "Medical Experts Debunk Viral 'Ferritin Face' Trend and Warn Against Unsupervised Iron Supplementation",
+    "headline_ja": "「フェリチン・フェイス」の俗説に医師警告：検査なしの鉄分過剰摂取にリスク",
+    "subhead": "TikTok等のSNSで顔のむくみや肌荒れを鉄分不足の兆候とする「フェリチン・フェイス」という俗説が拡散していることに対し、皮膚科医や血液学者らは自己判断による過剰な鉄分摂取の危険性を強く警告した。",
+    "lead_snippet": "TikTok等のSNSで顔のむくみや肌荒れを鉄分不足の兆候とする「フェリチン・フェイス」という俗説が拡散していることに対し、皮膚科医や血液学者らは自己判断による過剰な鉄分摂取の危険性を強く警告した。",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/28/ferritin-face-social-media-claims-iron-deficiency",
+    "path": "science/ferritin-face-social-media-claims-iron-deficiency-risks/index.html",
+    "image": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-emergency-stockpile-advice-bottled-water-food-surge",
+    "category": "society",
+    "category_label": "SOCIETY & RESILIENCE • 防災備蓄と国民心理",
+    "date": "2026-10-29",
+    "title": "Supermarket Sales of Bottled Water and Tinned Goods Surge Following Official Emergency Preparedness Advice",
+    "headline_ja": "英政府の緊急備蓄アドバイスを受け、ミネラルウォーターと缶詰の売上が急増",
+    "subhead": "英政府が電力インフラ障害や異常気象に備え家庭での最低3日分の食料・水備蓄を呼びかけるガイドラインを発表した直後、全国のスーパーマーケットで保存食品やミネラルウォーターの売上が急増した。",
+    "lead_snippet": "英政府が電力インフラ障害や異常気象に備え家庭での最低3日分の食料・水備蓄を呼びかけるガイドラインを発表した直後、全国のスーパーマーケットで保存食品やミネラルウォーターの売上が急増した。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/oct/27/bottled-water-and-tinned-food-sales-surge-after-uk-government-issues-emergency-stockpile-advice",
+    "path": "society/uk-emergency-stockpile-advice-bottled-water-food-surge/index.html",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "gen-z-digital-detox-apps-dumbphones-screen-time",
+    "category": "society",
+    "category_label": "SOCIETY & TECH • デジタルデトックスと若者文化",
+    "date": "2026-10-29",
+    "title": "Gen Z Embraces Dumbphones and Minimalist Screen Blockers to Reclaim Focus from Addictive Algorithms",
+    "headline_ja": "Z世代に広がる「ガラケー回帰」：中毒的アルゴリズムに対抗するデジタルデトックス",
+    "subhead": "スマートフォンの常時接続と過度なSNS利用によるメンタルヘルスの悪化に直面したZ世代の若者たちの間で、通話とSMSのみの「ガラケー（Dumbphone）」への回帰や、画面を強制的に白黒・制限化するアプリの流行が広がっている。",
+    "lead_snippet": "スマートフォンの常時接続と過度なSNS利用によるメンタルヘルスの悪化に直面したZ世代の若者たちの間で、通話とSMSのみの「ガラケー（Dumbphone）」への回帰や、画面を強制的に白黒・制限化するアプリの流行が広がっている。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/27/gen-z-digital-detox-apps",
+    "path": "society/gen-z-digital-detox-apps-dumbphones-screen-time/index.html",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "spain-high-speed-train-crash-investigation-toledo",
+    "category": "world",
+    "category_label": "WORLD & TRANSIT • 高速鉄道事故とインフラ安全",
+    "date": "2026-10-29",
+    "title": "Spanish Rail Authorities Launch Urgent Investigation After High-Speed Train Collision Near Toledo",
+    "headline_ja": "スペイン・トレド近郊で高速列車衝突：数十人負傷、信号システムの検証へ",
+    "subhead": "スペイン中部トレド近郊で高速列車（アベ）同士の衝突・脱線事故が発生し多数の負傷者が出たことを受け、鉄道インフラ当局は自動列車制御システムと信号保安設備の徹底検証に着手した。",
+    "lead_snippet": "スペイン中部トレド近郊で高速列車（アベ）同士の衝突・脱線事故が発生し多数の負傷者が出たことを受け、鉄道インフラ当局は自動列車制御システムと信号保安設備の徹底検証に着手した。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/28/spain-train-crash-high-speed-toledo",
+    "path": "world/spain-high-speed-train-crash-investigation-toledo/index.html",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "israel-election-results-netanyahu-eisenkot-deadlock",
+    "category": "world",
+    "category_label": "WORLD & DIPLOMACY • 中東情勢とイスラエル総選挙",
+    "date": "2026-10-29",
+    "title": "Israeli Election Exit Polls Point to Protracted Deadlock as Netanyahu and Eisenkot Blocs Run Neck and Neck",
+    "headline_ja": "イスラエル総選挙の出口調査：ネタニヤフ陣営と野党が互角、政局膠着へ",
+    "subhead": "イスラエル総選挙の開票速報および出口調査によると、ネタニヤフ首相率いる右派・宗教与党連合とアイゼンコット元参謀総長率いる野党中道ブロックが議席を二分する大接戦となり、政局の長期混迷が不可避の情勢となった。",
+    "lead_snippet": "イスラエル総選挙の開票速報および出口調査によると、ネタニヤフ首相率いる右派・宗教与党連合とアイゼンコット元参謀総長率いる野党中道ブロックが議席を二分する大接戦となり、政局の長期混迷が不可避の情勢となった。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/28/israel-election-exit-polls-suggest-netanyahu-eisenkot-blocs-tied-ntwnfb",
+    "path": "world/israel-election-results-netanyahu-eisenkot-deadlock/index.html",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "king-charles-commonwealth-summit-slavery-legacy-reparations",
+    "category": "world",
+    "category_label": "WORLD & HISTORY • 英連邦首脳会議と歴史的清算",
+    "date": "2026-10-29",
+    "title": "King Charles Addresses Enduring Legacy of Transatlantic Slavery at Historic Samoa Commonwealth Summit",
+    "headline_ja": "チャールズ国王、サモアの英連邦首脳会議で大西洋奴隷貿易の歴史的遺産に言及",
+    "subhead": "サモアで開催された英連邦首脳会議（CHOGM）において、チャールズ国王は演説で大西洋奴隷貿易の深い傷跡と歴史的遺産に言及し、加盟国首脳らとの率直な対話と和解の推進を呼びかけた。",
+    "lead_snippet": "サモアで開催された英連邦首脳会議（CHOGM）において、チャールズ国王は演説で大西洋奴隷貿易の深い傷跡と歴史的遺産に言及し、加盟国首脳らとの率直な対話と和解の推進を呼びかけた。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/28/king-charles-confirms-he-will-discuss-legacy-of-slavery-at-commonwealth-summit",
+    "path": "world/king-charles-commonwealth-summit-slavery-legacy-reparations/index.html",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "bafta-trustees-charity-law-free-guest-tickets-scrutiny",
+    "category": "law",
+    "category_label": "LAW & ETHICS • 慈善法人法とガバナンス",
+    "date": "2026-10-29",
+    "title": "Bafta Trustees Face Charity Commission Scrutiny Over Free VIP Guest Tickets and Personal Perks",
+    "headline_ja": "英国映画賞Baftaの理事ら、VIPチケット受領で慈善事業委員会が調査へ",
+    "subhead": "英国映画テレビ芸術アカデミー（Bafta）の理事らが、数千ポンド相当の映画賞授賞式VIPチケットや豪華な特典を無償で私的に享受していた疑いについて、英慈善事業委員会が慈善法人法違反の観点から調査を開始した。",
+    "lead_snippet": "英国映画テレビ芸術アカデミー（Bafta）の理事らが、数千ポンド相当の映画賞授賞式VIPチケットや豪華な特典を無償で私的に享受していた疑いについて、英慈善事業委員会が慈善法人法違反の観点から調査を開始した。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/culture/2026/oct/28/bafta-trustees-charity-law-accepting-free-guest-tickets",
+    "path": "law/bafta-trustees-charity-law-free-guest-tickets-scrutiny/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "rolling-stones-charlie-watts-letter-brian-jones-auction",
+    "category": "culture",
+    "category_label": "CULTURE & MUSIC • ロック史と未公開書簡の発見",
+    "date": "2026-10-29",
+    "title": "Unseen Charlie Watts Letter Reflecting on Brian Jones's Fatal Departure From Rolling Stones to be Auctioned",
+    "headline_ja": "チャーリー・ワッツの未公開直筆書簡が出品へ：ブライアン・ジョーンズの死への苦悩",
+    "subhead": "ローリング・ストーンズの伝説的ドラマー、故チャーリー・ワッツが、1969年の創設メンバーであるブライアン・ジョーンズの悲劇的な脱退と急逝について心情を綴った極めて貴重な直筆手紙がオークションに出品される。",
+    "lead_snippet": "ローリング・ストーンズの伝説的ドラマー、故チャーリー・ワッツが、1969年の創設メンバーであるブライアン・ジョーンズの悲劇的な脱退と急逝について心情を綴った極めて貴重な直筆手紙がオークションに出品される。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/music/2026/oct/28/charlie-watts-brian-jones-letter-rolling-stones-auction",
+    "path": "culture/rolling-stones-charlie-watts-letter-brian-jones-auction/index.html",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "bluey-copyright-dispute-abc-australia-one-nation-cartoon",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT & IP • 著作権侵害と政治的流用",
+    "date": "2026-10-29",
+    "title": "Australian Broadcaster Launches Urgent Copyright Action After Right-Wing Party Appropriates 'Bluey' in Political Ad",
+    "headline_ja": "豪公共放送ABC、政党が人気アニメ『ブルーイ』を政治宣伝に無断流用したとして提訴",
+    "subhead": "オーストラリア公共放送（ABC）は、世界的アニメ『ブルーイ』のキャラクターが無断で使用され、右派政党「ワン・ネイション」の政治的宣伝アニメに流用されたとして、著作権侵害に基づく緊急の法的措置を開始した。",
+    "lead_snippet": "オーストラリア公共放送（ABC）は、世界的アニメ『ブルーイ』のキャラクターが無断で使用され、右派政党「ワン・ネイション」の政治的宣伝アニメに流用されたとして、著作権侵害に基づく緊急の法的措置を開始した。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/tv-and-radio/2026/oct/27/abc-to-take-legal-action-after-right-wing-one-nation-party-used-bluey-in-shocking-and-disrespectful-cartoon-ntwnfb",
+    "path": "entertainment/bluey-copyright-dispute-abc-australia-one-nation-cartoon/index.html",
+    "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-29": {
+    "dateStr": "Thursday October 29 2026",
+    "editionLabel": "2026年10月29日 (木) 号 【本日付・最新・全12記事】",
+    "tagline": "特集：英原発サイズウェルC巨額国民負担警告・ヴェネツィア潟水没地質解明・英政府備蓄推奨で買い占め・イスラエル総選挙大接戦",
+    "topLeadSlug": "uk-sizewell-nuclear-plant-deal-taxpayer-mps-warning",
+    "subLeadSlugs": [
+      "venice-lagoon-rising-seas-dry-land-submergence",
+      "israel-election-results-netanyahu-eisenkot-deadlock",
+      "king-charles-commonwealth-summit-slavery-legacy-reparations"
+    ],
+    "leftDispatches": [
+      "uk-emergency-stockpile-advice-bottled-water-food-surge",
+      "spain-high-speed-train-crash-investigation-toledo",
+      "bafta-trustees-charity-law-free-guest-tickets-scrutiny",
+      "bluey-copyright-dispute-abc-australia-one-nation-cartoon"
+    ],
+    "rightDigestSlugs": [
+      "uk-homes-low-interest-loans-solar-heat-pumps",
+      "ferritin-face-social-media-claims-iron-deficiency-risks",
+      "gen-z-digital-detox-apps-dumbphones-screen-time",
+      "rolling-stones-charlie-watts-letter-brian-jones-auction"
+    ]
+  },
   "2026-10-28": {
     "dateStr": "Wednesday October 28 2026",
-    "editionLabel": "2026年10月28日 (水) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月28日 (水) 号 【全12記事・アーカイブ】",
     "tagline": "特集：スロベニア最高峰トリグラウ氷河完全消滅・マスク氏AI映画Grok酷評・イスラエル総選挙出口調査拮抗・ボルソナロ長男国外脱出情報",
     "topLeadSlug": "slovenia-triglav-glacier-extinction-alpine-climate-crisis",
     "subLeadSlugs": [

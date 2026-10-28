@@ -78,9 +78,32 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-29": {
+        "dateStr": "Thursday October 29 2026",
+        "editionLabel": "2026年10月29日 (木) 号 【本日付・最新・全12記事】",
+        "tagline": "特集：巨大原発の建設費と国民負担・海に沈んだ古代ヴェネツィア・備蓄騒動と買い占め・イスラエル選挙の大接戦",
+        "topLeadSlug": "uk-sizewell-nuclear-plant-deal-taxpayer-mps-warning",
+        "subLeadSlugs": [
+            "venice-lagoon-rising-seas-dry-land-submergence",
+            "israel-election-results-netanyahu-eisenkot-deadlock",
+            "king-charles-commonwealth-summit-slavery-legacy-reparations"
+        ],
+        "leftDispatches": [
+            "uk-emergency-stockpile-advice-bottled-water-food-surge",
+            "spain-high-speed-train-crash-investigation-toledo",
+            "bafta-trustees-charity-law-free-guest-tickets-scrutiny",
+            "bluey-copyright-dispute-abc-australia-one-nation-cartoon"
+        ],
+        "rightDigestSlugs": [
+            "uk-homes-low-interest-loans-solar-heat-pumps",
+            "ferritin-face-social-media-claims-iron-deficiency-risks",
+            "gen-z-digital-detox-apps-dumbphones-screen-time",
+            "rolling-stones-charlie-watts-letter-brian-jones-auction"
+        ]
+    },
     "2026-10-28": {
         "dateStr": "Wednesday October 28 2026",
-        "editionLabel": "2026年10月28日 (水) 号 【本日付・最新・全12記事】",
+        "editionLabel": "2026年10月28日 (水) 号 【全12記事・アーカイブ】",
         "tagline": "特集：アルプス最高峰トリグラウ氷河の消滅・AI映画Grokへの酷評・イスラエル選挙の大接戦・エルヴィス楽曲AI訴訟",
         "topLeadSlug": "slovenia-triglav-glacier-extinction-alpine-climate-crisis",
         "subLeadSlugs": [
