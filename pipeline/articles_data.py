@@ -2157,6 +2157,15 @@ try:
 except ImportError:
     pass
 
+try:
+    from batch26_articles_data import BATCH26_SENIOR
+    for _art in BATCH26_SENIOR:
+        if _art.get("slug") not in _existing_slugs:
+            ARTICLES.append(_art)
+            _existing_slugs.add(_art.get("slug"))
+except ImportError:
+    pass
+
 _DATE_MAP = {
     "soai-reaction-nobel-chemistry": "2026-10-10",
     "regulatory-t-cells-nobel-breakthrough": "2026-10-10",

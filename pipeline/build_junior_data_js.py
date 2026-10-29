@@ -78,9 +78,32 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-10-30": {
+        "dateStr": "Friday October 30 2026",
+        "editionLabel": "2026年10月30日 (金) 号 【本日・最新・全12記事】",
+        "tagline": "特集：海鳥の時差ボケ航法・職場の給与開示権・チョコの形をめぐる裁判・レコードやCDの復活",
+        "topLeadSlug": "seabird-jet-lag-navigation-nature-study",
+        "subLeadSlugs": [
+            "uk-workers-right-to-know-pay-gender-disparities-ehrc",
+            "gulf-states-multipart-peace-deal-us-iran-tensions",
+            "toblerone-trademark-shape-lawsuit-vegan-chocolate"
+        ],
+        "leftDispatches": [
+            "queen-of-spain-butterfly-climate-migration-britain",
+            "africa-ebola-outbreak-global-surveillance-uk-health",
+            "music-streaming-fatigue-cd-sales-revival-gen-z",
+            "datacenter-acoustic-pollution-lawsuit-mississippi"
+        ],
+        "rightDigestSlugs": [
+            "us-electric-ferries-maritime-decarbonization-transit",
+            "thames-water-emergency-debt-financing-insolvency-crisis",
+            "gullivers-travels-tercentenary-satire-modern-relevance",
+            "doordash-instacart-grocery-delivery-merger-antitrust"
+        ]
+    },
     "2026-10-29": {
         "dateStr": "Thursday October 29 2026",
-        "editionLabel": "2026年10月29日 (木) 号 【本日付・最新・全12記事】",
+        "editionLabel": "2026年10月29日 (木) 号 【全12記事・アーカイブ】",
         "tagline": "特集：巨大原発の建設費と国民負担・海に沈んだ古代ヴェネツィア・備蓄騒動と買い占め・イスラエル選挙の大接戦",
         "topLeadSlug": "uk-sizewell-nuclear-plant-deal-taxpayer-mps-warning",
         "subLeadSlugs": [

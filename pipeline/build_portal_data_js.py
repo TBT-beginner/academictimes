@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-10-30": {
+            "dateStr": "Friday October 30 2026",
+            "editionLabel": "2026年10月30日 (金) 号 【本日・最新・全12記事】",
+            "tagline": "特集：海鳥の時差ボケ航法・英賃金開示権・トブラローネ商標訴訟・湾岸和平協定・CD復権",
+            "topLeadSlug": "seabird-jet-lag-navigation-nature-study",
+            "subLeadSlugs": [
+                "uk-workers-right-to-know-pay-gender-disparities-ehrc",
+                "gulf-states-multipart-peace-deal-us-iran-tensions",
+                "toblerone-trademark-shape-lawsuit-vegan-chocolate"
+            ],
+            "leftDispatches": [
+                "queen-of-spain-butterfly-climate-migration-britain",
+                "africa-ebola-outbreak-global-surveillance-uk-health",
+                "music-streaming-fatigue-cd-sales-revival-gen-z",
+                "datacenter-acoustic-pollution-lawsuit-mississippi"
+            ],
+            "rightDigestSlugs": [
+                "us-electric-ferries-maritime-decarbonization-transit",
+                "thames-water-emergency-debt-financing-insolvency-crisis",
+                "gullivers-travels-tercentenary-satire-modern-relevance",
+                "doordash-instacart-grocery-delivery-merger-antitrust"
+            ]
+        },
         "2026-10-29": {
             "dateStr": "Thursday October 29 2026",
-            "editionLabel": "2026年10月29日 (木) 号 【本日付・最新・全12記事】",
+            "editionLabel": "2026年10月29日 (木) 号 【全12記事・アーカイブ】",
             "tagline": "特集：英原発サイズウェルC巨額国民負担警告・ヴェネツィア潟水没地質解明・英政府備蓄推奨で買い占め・イスラエル総選挙大接戦",
             "topLeadSlug": "uk-sizewell-nuclear-plant-deal-taxpayer-mps-warning",
             "subLeadSlugs": [

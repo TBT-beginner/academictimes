@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 345 articles, daily editions, and high-school media literacy references.
+// Contains all 357 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -5289,15 +5289,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/tv-and-radio/2026/oct/27/abc-to-take-legal-action-after-right-wing-one-nation-party-used-bluey-in-shocking-and-disrespectful-cartoon-ntwnfb",
     "path": "entertainment/bluey-copyright-dispute-abc-australia-one-nation-cartoon/index.html",
     "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "seabird-jet-lag-navigation-nature-study",
+    "category": "science",
+    "category_label": "SCIENCE & BIOLOGY • 鳥類学と概日リズム航法",
+    "date": "2026-10-30",
+    "title": "Jet Lag Throws Migrating Seabirds Significantly Off Course, Groundbreaking Nature Study Finds",
+    "headline_ja": "渡り鳥の「時差ボケ」：体内時計の乱れが海鳥の長距離ナビゲーションを狂わせる",
+    "subhead": "人工的な体内時計撹乱実験で解明／太陽コンパスと地球磁場感知の統合メカニズム",
+    "lead_snippet": "最新の実験生物学により、海鳥が太陽の位置から方角を割り出す際、内因性の体内時計に決定的に依存していることが裏付けられました。",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/oct/29/jet-lag-throws-seabirds-off-course-nature",
+    "path": "science/seabird-jet-lag-navigation-nature-study/index.html",
+    "image": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "africa-ebola-outbreak-global-surveillance-uk-health",
+    "category": "science",
+    "category_label": "SCIENCE & EPIDEMIOLOGY • 国際感染症対策とゲノム監視",
+    "date": "2026-10-30",
+    "title": "Top Health Officials Urge Worldwide Genomic Surveillance as Central African Ebola Outbreak Escalates",
+    "headline_ja": "エボラ出血熱の感染拡大：英保健当局、国境を越えるリスクと国際監視を警告",
+    "subhead": "アフリカ中部の感染拡大にWHO警戒／迅速ゲノム解析と水際ワクチン配備の課題",
+    "lead_snippet": "国際公衆衛生の専門家らは、遠隔地でのアウトブレイクが現代のグローバル移動により先進国へ瞬時に波及し得る現実を指摘しています。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/global-development/2026/oct/28/africa-ebola-outbreak-could-reach-uk-says-top-health-official",
+    "path": "science/africa-ebola-outbreak-global-surveillance-uk-health/index.html",
+    "image": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "queen-of-spain-butterfly-climate-migration-britain",
+    "category": "environment",
+    "category_label": "ENVIRONMENT & ECOLOGY • 気候変動と生物地理学的分布拡大",
+    "date": "2026-10-30",
+    "title": "Rare Continental 'Queen of Spain' Butterfly Establishes Breeding Strongholds in Warming Southern Britain",
+    "headline_ja": "温暖化が招く蝶の北上：大陸産チョウが英南部で定着、生態系変容の象徴に",
+    "subhead": "気候適応による生物分布の劇的シフト／外来種か気候難民かの保全論争",
+    "lead_snippet": "地中海や南欧を拠点としていた美しいチョウがイギリスで冬を越し繁殖を始めたことは、気候変動が生態系境界を不可逆的に塗り替えている証拠です。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/29/queen-of-spain-butterfly-invades-britain-but-will-it-become-native",
+    "path": "environment/queen-of-spain-butterfly-climate-migration-britain/index.html",
+    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "us-electric-ferries-maritime-decarbonization-transit",
+    "category": "environment",
+    "category_label": "ENVIRONMENT & TECH • 海上交通の電化と港湾脱炭素",
+    "date": "2026-10-30",
+    "title": "US Coastal Cities Pioneer Fleet-Wide Transition to Zero-Emission Electric Passenger Ferries",
+    "headline_ja": "海のゼロエミッション革命：米沿岸都市で完全電動フェリーの導入が加速",
+    "subhead": "ディーゼル排ガスと騒音をゼロへ／港湾コミュニティの環境正義と急速充電網",
+    "lead_snippet": "大気汚染に苦しんできた港湾都市で、騒音とディーゼル煙を排除した次世代型バッテリーフェリーが通勤の足を変革しています。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/oct/29/us-electric-ferries",
+    "path": "environment/us-electric-ferries-maritime-decarbonization-transit/index.html",
+    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-workers-right-to-know-pay-gender-disparities-ehrc",
+    "category": "society",
+    "category_label": "SOCIETY & LABOUR • 賃金透明性と男女格差是正",
+    "date": "2026-10-30",
+    "title": "Equality Watchdog Demands Legal 'Right to Know' Colleagues' Pay to Eradicate Stubborn Gender and Ethnic Wage Gaps",
+    "headline_ja": "「同僚の給料を知る権利」を法制化へ：英人権機関が賃金格差解消を提言",
+    "subhead": "給与の秘密主義を打破／EU賃金透明性指令に追随し女性・マイノリティ支援",
+    "lead_snippet": "給与を秘密にする企業慣行が格差温存の温床になっているとして、同一労働同一賃金を実効化する画期的な法案が議論されています。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/money/2026/oct/28/uk-workers-right-know-colleagues-pay-disparities-gender-pay-gap-discrimination-watchdog-ehrc",
+    "path": "society/uk-workers-right-to-know-pay-gender-disparities-ehrc/index.html",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "music-streaming-fatigue-cd-sales-revival-gen-z",
+    "category": "society",
+    "category_label": "SOCIETY & CULTURE • 音楽消費とフィジカル回帰",
+    "date": "2026-10-30",
+    "title": "Music Fans Opt for Physical Compact Discs to Escape Predictable Streaming Algorithms and Ephemeral Ownership",
+    "headline_ja": "脱サブスクとCDの復権：アルゴリズムの予測可能性に抗う若者たち",
+    "subhead": "ストリーミング疲れが生んだ実物回帰／手頃な価格と完全な所有権の魅力",
+    "lead_snippet": "AIレコメンドによる似通った音楽体験に飽きたZ世代が、ディスクをプレイヤーに装填する手触りと確かな所有感を求めて中古CDショップへ向かっています。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/music/2026/oct/29/algorithms-make-everything-predictable-music-fans-opting-buy-cds",
+    "path": "society/music-streaming-fatigue-cd-sales-revival-gen-z/index.html",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "gulf-states-multipart-peace-deal-us-iran-tensions",
+    "category": "world",
+    "category_label": "WORLD & GEOPOLITICS • 中東外交と地域安全保障協定",
+    "date": "2026-10-30",
+    "title": "Gulf States Spearhead Ambitious Multipart Peace Initiative to Prevent Destructive US-Iran Military Escalation",
+    "headline_ja": "湾岸諸国が仲介する多国間和平構想：米・イラン全面衝突の回避へ奔走",
+    "subhead": "ホルムズ海峡の通航安全と制裁緩和を連動／地域主導のデタント外交",
+    "lead_snippet": "エネルギー輸送の要衝である中東の緊張緩和に向け、湾岸アラブ諸国が独自の外交パイプを駆使して緊張緩和の協定案を主導しています。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/oct/28/gulf-states-multipart-peace-deal-avert-renewal-us-iran-war",
+    "path": "world/gulf-states-multipart-peace-deal-us-iran-tensions/index.html",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "thames-water-emergency-debt-financing-insolvency-crisis",
+    "category": "world",
+    "category_label": "WORLD & INFRASTRUCTURE • 公共インフラ民営化の破綻危機",
+    "date": "2026-10-30",
+    "title": "Thames Water Creditors Weigh High-Risk Emergency Loan to Avert Immediate Nationalization and Cash Collapse",
+    "headline_ja": "英テムズ・ウォーター破綻危機：債権者が緊急融資を協議、国有化回避へ",
+    "subhead": "1600万人の命の水を担うインフラ危機／過剰債務と漏水放置が生んだ民営化の限界",
+    "lead_snippet": "莫大な負債と下水流出問題で批判を浴びるイギリス最大の水道企業が、資金ショート寸前となり高利緊急ローンの決断を迫られています。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/29/thames-water-creditors-vote-emergency-loan-cash-runs-low",
+    "path": "world/thames-water-emergency-debt-financing-insolvency-crisis/index.html",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "toblerone-trademark-shape-lawsuit-vegan-chocolate",
+    "category": "law",
+    "category_label": "LAW & INTELLECTUAL PROPERTY • 立体商標とブランド保護",
+    "date": "2026-10-30",
+    "title": "Toblerone Owner Sues British Artisan Vegan Chocolate Maker Over Iconic Triangular Bar Shape",
+    "headline_ja": "トブラローネが英ヴィーガンチョコを提訴：伝統の「三角錐」商標をめぐる法廷闘争",
+    "subhead": "お菓子の「形」は誰のものか？／マッターホルンを模した立体商標の独占権とパロディの限界",
+    "lead_snippet": "スイスアルプスの名峰を模した三角形のチョコレート形状を巡り、多国籍菓子大手と新興エシカルブランドが法廷で激突しています。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/29/toblerone-owner-sues-british-vegan-chocolate-brand-over-chunky-shape",
+    "path": "law/toblerone-trademark-shape-lawsuit-vegan-chocolate/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "datacenter-acoustic-pollution-lawsuit-mississippi",
+    "category": "law",
+    "category_label": "LAW & ENVIRONMENT • AIデータセンターと騒音公害訴訟",
+    "date": "2026-10-30",
+    "title": "Mississippi Residents Sue Supercomputing Datacenter Over Unbearable Low-Frequency Acoustic Pollution",
+    "headline_ja": "AIデータセンターの騒音公害：ミシシッピ州住民が耐え難い低周波音で提訴",
+    "subhead": "数万基の冷却ファンが唸る24時間／生成AIブームの影で直面する住環境破壊",
+    "lead_snippet": "AIインフラが急拡大するアメリカ南部で、データセンターの巨大冷却ファンによる騒音が地域住民の日常生活を破壊しているとして法廷闘争に発展しています。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/oct/28/datacenter-noise-lawsuit-elon-musk-mississippi",
+    "path": "law/datacenter-acoustic-pollution-lawsuit-mississippi/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "gullivers-travels-tercentenary-satire-modern-relevance",
+    "category": "culture",
+    "category_label": "CULTURE & LITERATURE • 英文学古典の300年と現代政治風刺",
+    "date": "2026-10-30",
+    "title": "Dublin Celebrates Tercentenary of Jonathan Swift's 'Gulliver's Travels' as Scholars Reappraise Savage Satire",
+    "headline_ja": "『ガリヴァー旅行記』刊行300年：ダブリンで再評価される痛烈な政治風刺",
+    "subhead": "小人国と巨人国のファンタジーの深層／腐敗した権力と科学至上主義を撃つスウィフトの毒刃",
+    "lead_snippet": "単なる童話と誤解されがちな18世紀の英文学古典が、分断とAIテクノクラシーに揺れる現代社会の病理を鋭く予言していたことが再検証されています。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/books/2026/oct/28/gullivers-travels-fans-celebrate-books-jonathan-swift-ireland-dublin",
+    "path": "culture/gullivers-travels-tercentenary-satire-modern-relevance/index.html",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "doordash-instacart-grocery-delivery-merger-antitrust",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT & COMMERCE • プラットフォーム統合と独占禁止法",
+    "date": "2026-10-30",
+    "title": "DoorDash Acquires Instacart in Landmark Grocery Delivery Mega-Deal to Create Gig Economy Behemoth",
+    "headline_ja": "ドアダッシュがインスタカートを買収：ギグエコノミー巨頭誕生と独禁法審査",
+    "subhead": "食事からスーパー買い出しまで一手に独占／配達手数料高騰とギグ労働者の待遇懸念",
+    "lead_snippet": "料理宅配とスーパー配送の二大王者が手を組む歴史的メガディールが成立し、小売業界の勢力図と消費者の利便性が大きく揺れ動いています。",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/oct/29/doordash-buys-instacart-grocery-delivery",
+    "path": "entertainment/doordash-instacart-grocery-delivery-merger-antitrust/index.html",
+    "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-10-30": {
+    "dateStr": "Friday October 30 2026",
+    "editionLabel": "2026年10月30日 (金) 号 【本日・最新・全12記事】",
+    "tagline": "特集：海鳥の時差ボケ航法・英賃金開示権・トブラローネ商標訴訟・湾岸和平協定・CD復権",
+    "topLeadSlug": "seabird-jet-lag-navigation-nature-study",
+    "subLeadSlugs": [
+      "uk-workers-right-to-know-pay-gender-disparities-ehrc",
+      "gulf-states-multipart-peace-deal-us-iran-tensions",
+      "toblerone-trademark-shape-lawsuit-vegan-chocolate"
+    ],
+    "leftDispatches": [
+      "queen-of-spain-butterfly-climate-migration-britain",
+      "africa-ebola-outbreak-global-surveillance-uk-health",
+      "music-streaming-fatigue-cd-sales-revival-gen-z",
+      "datacenter-acoustic-pollution-lawsuit-mississippi"
+    ],
+    "rightDigestSlugs": [
+      "us-electric-ferries-maritime-decarbonization-transit",
+      "thames-water-emergency-debt-financing-insolvency-crisis",
+      "gullivers-travels-tercentenary-satire-modern-relevance",
+      "doordash-instacart-grocery-delivery-merger-antitrust"
+    ]
+  },
   "2026-10-29": {
     "dateStr": "Thursday October 29 2026",
-    "editionLabel": "2026年10月29日 (木) 号 【本日付・最新・全12記事】",
+    "editionLabel": "2026年10月29日 (木) 号 【全12記事・アーカイブ】",
     "tagline": "特集：英原発サイズウェルC巨額国民負担警告・ヴェネツィア潟水没地質解明・英政府備蓄推奨で買い占め・イスラエル総選挙大接戦",
     "topLeadSlug": "uk-sizewell-nuclear-plant-deal-taxpayer-mps-warning",
     "subLeadSlugs": [
