@@ -83,7 +83,8 @@ def build_junior_article_html(art):
 
     # Dialogue HTML
     dlg_blocks = []
-    for i, d in enumerate(art["dialogue"]):
+    dialogue_list = art.get("dialogue") or art.get("dialog", [])
+    for i, d in enumerate(dialogue_list):
         is_teacher = ("Keita" in d["name"] or d.get("role", "") == "英語講師" or d.get("speaker", "") == "慶")
         turn_cls = "turn-teacher" if is_teacher else "turn-assistant"
         avatar_cls = "avatar-teacher" if is_teacher else "avatar-assistant"
