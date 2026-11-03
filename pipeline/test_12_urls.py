@@ -1,33 +1,25 @@
 import urllib.request
 
-urls = [
-    "https://www.theguardian.com/science/2026/oct/21/orangutans-prefer-food-laughter-sounds-study",
-    "https://www.theguardian.com/science/2026/oct/21/do-people-become-less-creative-as-they-get-older-research",
-    "https://www.theguardian.com/science/2026/oct/21/bad-apples-rule-breaking-study",
-    "https://www.theguardian.com/technology/2026/oct/21/flaw-in-php-computer-language-leads-to-shutdown-of-websites-around-world",
-    "https://www.theguardian.com/books/2026/oct/21/new-prize-launches-books-co-written-with-ai-france",
-    "https://www.theguardian.com/music/2026/oct/21/artificial-intelligence-music-grimes-asap-rocky",
-    "https://www.theguardian.com/environment/2026/oct/21/world-cut-emissions-un-climate-crisis",
-    "https://www.theguardian.com/environment/2026/oct/21/norway-svalbard-environment-longyearbyen-climate-heating-glacier-permafrost",
-    "https://www.theguardian.com/world/2026/oct/21/taiwan-five-men-plot-run-over-comedian-huang-yi-hao-xi-jinping-jokes",
-    "https://www.theguardian.com/world/2026/oct/21/youtube-watch-over-shark-stuck-south-korea-canal-busan-bukang-i",
-    "https://www.theguardian.com/australia-news/2026/oct/22/penicillin-allergy-australia-doctors-antibiotic-guidelines",
-    "https://www.theguardian.com/australia-news/2026/oct/22/nsw-passes-human-compost-laws-with-several-mps-saying-they-will-utilise-practice-after-they-die"
+candidate_urls = [
+    ("science", "nasa-telescope-neil-gehrels-swift-observatory", "https://www.theguardian.com/science/2026/nov/03/nasa-telescope-neil-gehrels-swift-observatory"),
+    ("science", "ai-godfather-geoffrey-hinton-better-off-without-ai", "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai"),
+    ("environment", "uk-drax-power-station-ai-datacentre", "https://www.theguardian.com/business/2026/nov/03/uk-drax-power-station-ai-datacentre"),
+    ("environment", "denmark-pushes-for-eu-ban-on-turbo-chickens-as-secret-footage-causes-outrage", "https://www.theguardian.com/world/2026/nov/03/denmark-pushes-for-eu-ban-on-turbo-chickens-as-secret-footage-causes-outrage"),
+    ("society", "pension-income-retirement-for-17m-private-sector-workers", "https://www.theguardian.com/business/2026/nov/03/pension-income-retirement-for-17m-private-sector-workers"),
+    ("society", "kelloggs-rice-krispies-coco-pops-reformulated-rice-shortage", "https://www.theguardian.com/food/2026/nov/03/kelloggs-rice-krispies-coco-pops-reformulated-rice-shortage"),
+    ("world", "midterm-voters-republican-democrats-trump-second-term", "https://www.theguardian.com/us-news/2026/nov/03/midterm-voters-republican-democrats-trump-second-term"),
+    ("world", "four-planes-flying-across-europe-targeted-by-bomb-threats", "https://www.theguardian.com/world/2026/nov/03/four-planes-flying-across-europe-targeted-by-bomb-threats"),
+    ("law", "uk-meat-processing-firms-fridges-heat-up-cyber-attacks", "https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks"),
+    ("law", "well-known-individual-fails-injunction-bid-guardian-itn", "https://www.theguardian.com/uk-news/2026/nov/03/well-known-individual-fails-injunction-bid-guardian-itn"),
+    ("culture", "mogging-crowned-collins-word-of-the-year", "https://www.theguardian.com/uk-news/2026/nov/03/mogging-crowned-collins-word-of-the-year"),
+    ("entertainment", "china-first-ai-generated-film-flops-cinema-future", "https://www.theguardian.com/film/2026/nov/03/china-first-ai-generated-film-flops-cinema-future")
 ]
 
 headers = {'User-Agent': 'Mozilla/5.0'}
-
-all_ok = True
-for u in urls:
+for cat, slug, u in candidate_urls:
     try:
-        req = urllib.request.Request(u, headers=headers)
-        res = urllib.request.urlopen(req, timeout=8)
-        print(f"[STATUS {res.status}] {u}")
+        r = urllib.request.Request(u, headers=headers)
+        with urllib.request.urlopen(r, timeout=5) as res:
+            print(f'[{res.status}] {cat}/{slug} -> {u}')
     except Exception as e:
-        print(f"[FAIL] {u} -> {e}")
-        all_ok = False
-
-if all_ok:
-    print("\nALL 12 URLS ARE 100% LIVE (HTTP 200 OK)!")
-else:
-    print("\nSOME URLS FAILED!")
+        print(f'[FAIL: {e}] {cat}/{slug} -> {u}')

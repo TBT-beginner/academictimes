@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 405 articles, daily editions, and high-school media literacy references.
+// Contains all 417 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -6189,15 +6189,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/media/2026/nov/03/john-lewis-christmas-advert-kristin-scott-thomas-glamorous-granny-gift-hunt",
     "path": "entertainment/john-lewis-christmas-advert-kristin-scott-thomas-glamorous-granny-gift-hunt/index.html",
     "image": "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "nasa-telescope-neil-gehrels-swift-observatory",
+    "category": "science",
+    "category_label": "SCIENCE • ASTROPHYSICS",
+    "date": "2026-11-04",
+    "title": "NASA Recovers Neil Gehrels Swift Observatory to Resume Gamma-Ray Burst Tracking",
+    "headline_ja": "NASAのニール・ゲーレルス・スウィフト宇宙望遠鏡が復旧：ガンマ線バースト観測を再開",
+    "subhead": "Engineers successfully reconfigure the pioneering spacecraft's attitude control system to preserve high-energy cosmological research.",
+    "lead_snippet": "NASA's Neil Gehrels Swift Observatory has officially resumed its cosmological science operations following critical in-flight engineering interventions.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/03/nasa-telescope-neil-gehrels-swift-observatory",
+    "path": "science/nasa-telescope-neil-gehrels-swift-observatory/index.html",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ai-godfather-geoffrey-hinton-better-off-without-ai",
+    "category": "science",
+    "category_label": "SCIENCE • ARTIFICIAL INTELLIGENCE",
+    "date": "2026-11-04",
+    "title": "Nobel Laureate Geoffrey Hinton Warns Humanity Might Be Better Off Without AI",
+    "headline_ja": "ノーベル物理学賞受賞者ジェフリー・ヒントン氏が警告：「人類はAIなどない方が良かったかもしれない」",
+    "subhead": "The deep learning pioneer cautions that uncontrolled existential risks and cognitive displacement outweigh immediate technological benefits.",
+    "lead_snippet": "Geoffrey Hinton, whose foundational neural network research earned him the Nobel Prize, has delivered an impassioned critique of relentless AI commercialization.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
+    "path": "science/ai-godfather-geoffrey-hinton-better-off-without-ai/index.html",
+    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-drax-power-station-ai-datacentre",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • ENERGY TRANSITION",
+    "date": "2026-11-04",
+    "title": "UK Energy Giant Drax in Talks to Power Massive AI Data Centres Amid Carbon Scrutiny",
+    "headline_ja": "英国エネルギ大手ドラックスが巨大AIデータセンターへの電力供給を交渉：脱炭素目標との摩擦",
+    "subhead": "The potential direct energy contracts highlight the unprecedented clash between booming artificial intelligence power hunger and clean grid deadlines.",
+    "lead_snippet": "Drax, the operator of Britain's largest power station, is exploring direct power supply arrangements with global tech firms for upcoming AI computing campuses.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/03/uk-drax-power-station-ai-datacentre",
+    "path": "environment/uk-drax-power-station-ai-datacentre/index.html",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "denmark-pushes-for-eu-ban-on-turbo-chickens-as-secret-footage-causes-outrage",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • ANIMAL WELFARE",
+    "date": "2026-11-04",
+    "title": "Denmark Demands EU Ban on Fast-Growing 'Turbo Chickens' Following Undercover Exposé",
+    "headline_ja": "デンマークがEU全域での「ターボチキン」禁止を要求：潜入調査映像が引き起こした動物福祉の激震",
+    "subhead": "Graphic investigations reveal severe skeletal deformities and cardiovascular failure in ultra-rapid breed broilers, prompting legislative backlash.",
+    "lead_snippet": "The Danish government has spearheaded a campaign to outlaw fast-growing broiler breeds across the European Union following public outcry over animal welfare breaches.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/03/denmark-pushes-for-eu-ban-on-turbo-chickens-as-secret-footage-causes-outrage",
+    "path": "environment/denmark-pushes-for-eu-ban-on-turbo-chickens-as-secret-footage-causes-outrage/index.html",
+    "image": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "pension-income-retirement-for-17m-private-sector-workers",
+    "category": "society",
+    "category_label": "SOCIETY • SOCIAL SECURITY",
+    "date": "2026-11-04",
+    "title": "UK Pension Crisis: 17 Million Private Sector Workers Face Severe Retirement Shortfall",
+    "headline_ja": "英国年金危機：民間労働者1700万人が深刻な老後資金不足に直面との衝撃レポート",
+    "subhead": "A comprehensive national assessment warns that current statutory contribution rates leave vast demographics hurtling toward old-age poverty.",
+    "lead_snippet": "Seventeen million British private sector employees are heading for inadequate retirement incomes under existing workplace pension rules.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/03/pension-income-retirement-for-17m-private-sector-workers",
+    "path": "society/pension-income-retirement-for-17m-private-sector-workers/index.html",
+    "image": "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "kelloggs-rice-krispies-coco-pops-reformulated-rice-shortage",
+    "category": "society",
+    "category_label": "SOCIETY • FOOD SUPPLY CHAIN",
+    "date": "2026-11-04",
+    "title": "Kellogg's Reformulates Iconic Cereals Amid Global Rice Shortages and Climate Shocks",
+    "headline_ja": "ケロッグが代表的シリアルレシピを刷新：世界的なコメ不足と気候ショックへの適応",
+    "subhead": "The breakfast giant blends alternative grains into long-standing breakfast favorites as extreme weather constricts traditional Asian harvests.",
+    "lead_snippet": "Kellogg's is adapting the century-old recipes for several famous breakfast cereals to counter severe global rice supply bottlenecks.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/food/2026/nov/03/kelloggs-rice-krispies-coco-pops-reformulated-rice-shortage",
+    "path": "society/kelloggs-rice-krispies-coco-pops-reformulated-rice-shortage/index.html",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "midterm-voters-republican-democrats-trump-second-term",
+    "category": "world",
+    "category_label": "WORLD • US POLITICS",
+    "date": "2026-11-04",
+    "title": "US Midterm Voters Cast Ballots in Pivotal Referendum on Trump's Second Term",
+    "headline_ja": "米中間選挙で有権者が投票：トランプ政権2期目の信任を問う歴史的決戦",
+    "subhead": "Crucial swing states witness high voter turnout as economic anxieties and ideological polarization define congressional contests.",
+    "lead_snippet": "Americans cast their ballots across fifty states in a high-stakes midterm election widely interpreted as a definitive verdict on President Donald Trump's legislative agenda.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/nov/03/midterm-voters-republican-democrats-trump-second-term",
+    "path": "world/midterm-voters-republican-democrats-trump-second-term/index.html",
+    "image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "four-planes-flying-across-europe-targeted-by-bomb-threats",
+    "category": "world",
+    "category_label": "WORLD • AVIATION SECURITY",
+    "date": "2026-11-04",
+    "title": "Coordinated Bomb Hoaxes Target Commercial European Flights, Triggering Fighter Scrambles",
+    "headline_ja": "欧州上空を飛ぶ旅客機4機に連鎖的な爆破予告：戦闘機緊急発進と広域緊急着陸の緊迫",
+    "subhead": "Aviation authorities and anti-terror police investigate sophisticated digital threat messages intended to disrupt continental airspace.",
+    "lead_snippet": "Four international passenger aircraft navigating European airspace were subjected to simultaneous hoax bomb threats, initiating high-alert military responses.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/03/four-planes-flying-across-europe-targeted-by-bomb-threats",
+    "path": "world/four-planes-flying-across-europe-targeted-by-bomb-threats/index.html",
+    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-meat-processing-firms-fridges-heat-up-cyber-attacks",
+    "category": "law",
+    "category_label": "LAW • CYBERSECURITY",
+    "date": "2026-11-04",
+    "title": "Hackers Hijack Industrial Refrigerators at UK Meat Firms in Chilling Cyber Extortion Wave",
+    "headline_ja": "ハッカー集団が英食肉加工工場の冷蔵施設を遠隔乗っ取り：温度上昇で脅迫する新たなサイバー攻撃",
+    "subhead": "Cybercriminals weaponize connected operational technology (OT) sensors, raising urgent alarms for critical national food supply security.",
+    "lead_snippet": "British meat processors have fallen victim to sophisticated cyber intrusions where attackers manipulated industrial refrigeration thermostats to extort ransoms.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks",
+    "path": "law/uk-meat-processing-firms-fridges-heat-up-cyber-attacks/index.html",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "well-known-individual-fails-injunction-bid-guardian-itn",
+    "category": "law",
+    "category_label": "LAW • FREEDOM OF THE PRESS",
+    "date": "2026-11-04",
+    "title": "High Court Dismisses Privacy Injunction Bid Against Guardian and ITN News",
+    "headline_ja": "英高等法院がガーディアン紙とITNへの報道差し止め請求を棄却：報道の自由を断固支持",
+    "subhead": "The landmark ruling upholds journalistic scrutiny, affirming that public figures cannot conceal alleged misconduct behind civil secrecy orders.",
+    "lead_snippet": "A prominent public figure has suffered a decisive legal defeat after London's High Court rejected an application to silence investigative reporting by major news outlets.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/uk-news/2026/nov/03/well-known-individual-fails-injunction-bid-guardian-itn",
+    "path": "law/well-known-individual-fails-injunction-bid-guardian-itn/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "mogging-crowned-collins-word-of-the-year",
+    "category": "culture",
+    "category_label": "CULTURE • LINGUISTICS & INTERNET CULTURE",
+    "date": "2026-11-04",
+    "title": "'Mogging' Named Collins Dictionary Word of the Year Amid Youth Slang Boom",
+    "headline_ja": "コリンズ英語辞典が選ぶ「今年の言葉」に「Mogging」：若者ネットスラングと容姿比較カルチャーの台頭",
+    "subhead": "The viral term originating in aesthetic subcultures reflects the relentless pressures of digital appearance and algorithmic self-branding.",
+    "lead_snippet": "Collins Dictionary has declared 'mogging'—a viral slang term describing outshining someone in physical attractiveness—as its definitive Word of the Year.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/uk-news/2026/nov/03/mogging-crowned-collins-word-of-the-year",
+    "path": "culture/mogging-crowned-collins-word-of-the-year/index.html",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "china-first-ai-generated-film-flops-cinema-future",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT • CINEMA & AI",
+    "date": "2026-11-04",
+    "title": "China's First Theatrical AI-Generated Feature Film Flops at Box Office",
+    "headline_ja": "中国初の劇場公開「完全AI生成長編映画」が興行的大惨敗：映画の未来と人間の創造性",
+    "subhead": "Audiences reject eerie uncanny-valley aesthetics and disjointed algorithmic storytelling, proving human artistry remains irreplaceable.",
+    "lead_snippet": "The theatrical release of China's pioneer fully artificial intelligence-generated movie has ended in an acute commercial disaster.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/film/2026/nov/03/china-first-ai-generated-film-flops-cinema-future",
+    "path": "entertainment/china-first-ai-generated-film-flops-cinema-future/index.html",
+    "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-11-04": {
+    "dateStr": "Wednesday November 4 2026",
+    "editionLabel": "2026年11月4日 (水) 号 【本日・最新・全12記事】",
+    "tagline": "特集：NASAスウィフト望遠鏡復旧・ヒントン教授AI警告・米中間選挙決戦・英食肉工場サイバー攻撃・コリンズ今年の言葉Mogging",
+    "topLeadSlug": "nasa-telescope-neil-gehrels-swift-observatory",
+    "subLeadSlugs": [
+      "ai-godfather-geoffrey-hinton-better-off-without-ai",
+      "midterm-voters-republican-democrats-trump-second-term",
+      "uk-meat-processing-firms-fridges-heat-up-cyber-attacks"
+    ],
+    "leftDispatches": [
+      "uk-drax-power-station-ai-datacentre",
+      "denmark-pushes-for-eu-ban-on-turbo-chickens-as-secret-footage-causes-outrage",
+      "pension-income-retirement-for-17m-private-sector-workers",
+      "kelloggs-rice-krispies-coco-pops-reformulated-rice-shortage"
+    ],
+    "rightDigestSlugs": [
+      "four-planes-flying-across-europe-targeted-by-bomb-threats",
+      "well-known-individual-fails-injunction-bid-guardian-itn",
+      "mogging-crowned-collins-word-of-the-year",
+      "china-first-ai-generated-film-flops-cinema-future"
+    ]
+  },
   "2026-11-03": {
     "dateStr": "Tuesday November 3 2026",
-    "editionLabel": "2026年11月3日 (火) 号 【本日・最新・全12記事】",
+    "editionLabel": "2026年11月3日 (火) 号 【全12記事】",
     "tagline": "特集：金星・月・スピカ三重整列・ロバと雄牛の異種間愛着・北極極渦分裂寒波・豪州16歳未満SNS禁止違憲訴訟",
     "topLeadSlug": "starwatch-catch-the-striking-trifecta-of-venus-the-moon-and-spica-at-break-of-dawn",
     "subLeadSlugs": [

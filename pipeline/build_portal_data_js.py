@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-11-04": {
+            "dateStr": "Wednesday November 4 2026",
+            "editionLabel": "2026年11月4日 (水) 号 【本日・最新・全12記事】",
+            "tagline": "特集：NASAスウィフト望遠鏡復旧・ヒントン教授AI警告・米中間選挙決戦・英食肉工場サイバー攻撃・コリンズ今年の言葉Mogging",
+            "topLeadSlug": "nasa-telescope-neil-gehrels-swift-observatory",
+            "subLeadSlugs": [
+                "ai-godfather-geoffrey-hinton-better-off-without-ai",
+                "midterm-voters-republican-democrats-trump-second-term",
+                "uk-meat-processing-firms-fridges-heat-up-cyber-attacks"
+            ],
+            "leftDispatches": [
+                "uk-drax-power-station-ai-datacentre",
+                "denmark-pushes-for-eu-ban-on-turbo-chickens-as-secret-footage-causes-outrage",
+                "pension-income-retirement-for-17m-private-sector-workers",
+                "kelloggs-rice-krispies-coco-pops-reformulated-rice-shortage"
+            ],
+            "rightDigestSlugs": [
+                "four-planes-flying-across-europe-targeted-by-bomb-threats",
+                "well-known-individual-fails-injunction-bid-guardian-itn",
+                "mogging-crowned-collins-word-of-the-year",
+                "china-first-ai-generated-film-flops-cinema-future"
+            ]
+        },
         "2026-11-03": {
             "dateStr": "Tuesday November 3 2026",
-            "editionLabel": "2026年11月3日 (火) 号 【本日・最新・全12記事】",
+            "editionLabel": "2026年11月3日 (火) 号 【全12記事】",
             "tagline": "特集：金星・月・スピカ三重整列・ロバと雄牛の異種間愛着・北極極渦分裂寒波・豪州16歳未満SNS禁止違憲訴訟",
             "topLeadSlug": "starwatch-catch-the-striking-trifecta-of-venus-the-moon-and-spica-at-break-of-dawn",
             "subLeadSlugs": [

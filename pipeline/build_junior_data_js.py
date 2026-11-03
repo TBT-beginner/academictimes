@@ -78,9 +78,32 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-11-04": {
+        "dateStr": "Wednesday November 4 2026",
+        "editionLabel": "2026年11月4日 (水) 号 【本日・最新・全12記事】",
+        "tagline": "特集：NASAスウィフト望遠鏡復活・ヒントン教授のAI警告・米中間選挙・工場の冷蔵庫サイバー攻撃・今年のことばMogging",
+        "topLeadSlug": "nasa-telescope-neil-gehrels-swift-observatory",
+        "subLeadSlugs": [
+            "ai-godfather-geoffrey-hinton-better-off-without-ai",
+            "midterm-voters-republican-democrats-trump-second-term",
+            "uk-meat-processing-firms-fridges-heat-up-cyber-attacks"
+        ],
+        "leftDispatches": [
+            "uk-drax-power-station-ai-datacentre",
+            "denmark-pushes-for-eu-ban-on-turbo-chickens-as-secret-footage-causes-outrage",
+            "pension-income-retirement-for-17m-private-sector-workers",
+            "kelloggs-rice-krispies-coco-pops-reformulated-rice-shortage"
+        ],
+        "rightDigestSlugs": [
+            "four-planes-flying-across-europe-targeted-by-bomb-threats",
+            "well-known-individual-fails-injunction-bid-guardian-itn",
+            "mogging-crowned-collins-word-of-the-year",
+            "china-first-ai-generated-film-flops-cinema-future"
+        ]
+    },
     "2026-11-03": {
         "dateStr": "Tuesday November 3 2026",
-        "editionLabel": "2026年11月3日 (火) 号 【本日・最新・全12記事】",
+        "editionLabel": "2026年11月3日 (火) 号 【全12記事】",
         "tagline": "特集：明け方の金星と三日月・ロバと雄牛の友情・北極の寒波・豪州SNS禁止令の裁判",
         "topLeadSlug": "starwatch-catch-the-striking-trifecta-of-venus-the-moon-and-spica-at-break-of-dawn",
         "subLeadSlugs": [
