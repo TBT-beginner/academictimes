@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 393 articles, daily editions, and high-school media literacy references.
+// Contains all 405 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -6009,15 +6009,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/world/2026/oct/29/hello-kitty-japanese-spy-show-vivant-china-outcry",
     "path": "entertainment/hello-kitty-japanese-spy-show-vivant-china-outcry/index.html",
     "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "starwatch-catch-the-striking-trifecta-of-venus-the-moon-and-spica-at-break-of-dawn",
+    "category": "science",
+    "category_label": "SCIENCE • ASTRONOMY",
+    "date": "2026-11-03",
+    "title": "Astronomers Highlight Spectacular Conjunction of Venus, Crescent Moon and Spica",
+    "headline_ja": "天文学者が注目：夜明けの空を彩る金星・細い月・スピカの華麗な三連惑星直列",
+    "subhead": "A rare dawn celestial alignment offers amateur stargazers and planetary scientists valuable orbital observation opportunities.",
+    "lead_snippet": "Before daybreak this week, skywatchers across the northern hemisphere can witness an elegant celestial triad in the eastern sky.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/02/starwatch-catch-the-striking-trifecta-of-venus-the-moon-and-spica-at-break-of-dawn",
+    "path": "science/starwatch-catch-the-striking-trifecta-of-venus-the-moon-and-spica-at-break-of-dawn/index.html",
+    "image": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "tender-bond-male-donkey-bull-baffles-scientists",
+    "category": "science",
+    "category_label": "SCIENCE • ANIMAL BEHAVIOUR",
+    "date": "2026-11-03",
+    "title": "Remarkable Interspecies Companionship Between Donkey and Bull Intrigues Biologists",
+    "headline_ja": "ロバと雄牛の異種間における深い絆：動物行動学者たちを驚かせる共生愛着行動",
+    "subhead": "Ethologists investigate cross-species emotional attachments that challenge conventional evolutionary models of territorial herd instincts.",
+    "lead_snippet": "An inseparable friendship between a rescue bull and an elderly donkey provides rare behavioral insights into mammalian empathy.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/02/tender-bond-male-donkey-bull-baffles-scientists",
+    "path": "science/tender-bond-male-donkey-bull-baffles-scientists/index.html",
+    "image": "https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "polar-vortex-disruption-colder-weather-europe",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • CLIMATE DYNAMICS",
+    "date": "2026-11-03",
+    "title": "Disruption to Arctic Polar Vortex Sparks Early Winter Freeze Warnings Across Europe",
+    "headline_ja": "北極寒冷渦（極渦）の分裂が欧州全域に早期冬の寒波警報をもたらす気象学的メカニズム",
+    "subhead": "Meteorologists model stratospheric warming events that weaken atmospheric jet streams and unleash severe sub-zero cold.",
+    "lead_snippet": "A sudden disturbance in the upper atmosphere could plunge parts of Europe into an unseasonably frigid November freeze.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/nov/02/polar-vortex-disruption-colder-weather-europe",
+    "path": "environment/polar-vortex-disruption-colder-weather-europe/index.html",
+    "image": "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "british-gas-resume-force-fitting-prepayment-meters-months-after-112m-settlement",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • ENERGY POVERTY",
+    "date": "2026-11-03",
+    "title": "Energy Suppliers Face Renewed Scrutiny Over Compulsory Prepayment Meters for Vulnerable Homes",
+    "headline_ja": "エネルギー供給大手の先払いメーター強制設置再開、生活困窮家庭保護を巡り激しい論争",
+    "subhead": "Campaigners and welfare charities condemn court-warrant installations that risk leaving low-income households without heat.",
+    "lead_snippet": "Britain's largest domestic supplier moves to reinstate involuntary smart-meter switching despite ongoing winter hardship.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/money/2026/nov/02/british-gas-resume-force-fitting-prepayment-meters-months-after-112m-settlement",
+    "path": "environment/british-gas-resume-force-fitting-prepayment-meters-months-after-112m-settlement/index.html",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "nhs-early-warning-system-child-illness-england",
+    "category": "society",
+    "category_label": "SOCIETY • HEALTHCARE REFORM",
+    "date": "2026-11-03",
+    "title": "National Health Service Rolls Out Standardised Child Illness Early Warning Network",
+    "headline_ja": "英国民保健サービス（NHS）、小児の急変を早期察知する全国統一警報システムを導入",
+    "subhead": "Standardised pediatric scoring incorporates parental intuition alongside vital clinical metrics to prevent avoidable hospital fatalities.",
+    "lead_snippet": "A landmark clinical safety reform empowers parents and medical teams to detect acute deterioration in hospitalized children.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/nov/02/nhs-early-warning-system-child-illness-england",
+    "path": "society/nhs-early-warning-system-child-illness-england/index.html",
+    "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "counsellors-psychotherapists-statutory-regulation-uk-professional-bodies",
+    "category": "society",
+    "category_label": "SOCIETY • MENTAL HEALTH LAW",
+    "date": "2026-11-03",
+    "title": "Therapists and Patient Groups Demand Statutory Regulation of Psychological Counselling",
+    "headline_ja": "心理カウンセラー・セラピストの国家資格化を要求：無資格開業から患者を守る法規制論争",
+    "subhead": "Professional bodies warn that the lack of legal title protection allows unqualified practitioners to exploit vulnerable clients.",
+    "lead_snippet": "Campaigners urge ministers to close loopholes that permit anyone to set up practice as a psychotherapist without verified credentials.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/nov/02/counsellors-psychotherapists-statutory-regulation-uk-professional-bodies",
+    "path": "society/counsellors-psychotherapists-statutory-regulation-uk-professional-bodies/index.html",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "nine-of-world-biggest-oil-firms-95bn-profit-third-quarter-iran-war",
+    "category": "world",
+    "category_label": "WORLD • ENERGY GEOPOLITICS",
+    "date": "2026-11-03",
+    "title": "Global Oil Majors Post Record $95 Billion Quarterly Profits Amid Middle East Conflict",
+    "headline_ja": "国際石油メジャー9社、中東紛争による原油高騰で四半期純利益950億ドルの空前記録",
+    "subhead": "Surging energy prices deliver massive corporate bonanzas while households face mounting cost-of-living strain.",
+    "lead_snippet": "Supermajors announce mammoth dividend payouts as geopolitical tensions around maritime oil transit drive crude prices higher.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/02/nine-of-world-biggest-oil-firms-95bn-profit-third-quarter-iran-war",
+    "path": "world/nine-of-world-biggest-oil-firms-95bn-profit-third-quarter-iran-war/index.html",
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "hackers-fake-nuclear-chemical-threat-alert-kyiv-ukraine-emergency-app",
+    "category": "world",
+    "category_label": "WORLD • HYBRID CYBERWARFARE",
+    "date": "2026-11-03",
+    "title": "State-Sponsored Hackers Breach Kyiv Emergency Warning App to Broadcast False Chemical Threat",
+    "headline_ja": "サイバー攻撃でキーウ市民防衛アプリが侵入被害：偽の核・化学兵器警報で心理的混乱狙う",
+    "subhead": "Digital saboteurs target municipal civil defence infrastructure to induce public panic and undermine wartime communication resilience.",
+    "lead_snippet": "A malicious intrusion into an official civil alert application triggered false evacuation sirens across the Ukrainian capital.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/02/hackers-fake-nuclear-chemical-threat-alert-kyiv-ukraine-emergency-app",
+    "path": "world/hackers-fake-nuclear-chemical-threat-alert-kyiv-ukraine-emergency-app/index.html",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "australia-social-media-ban-high-court-challenge-reddit-digital-freedom-project",
+    "category": "law",
+    "category_label": "LAW • DIGITAL CONSTITUTIONAL RIGHTS",
+    "date": "2026-11-03",
+    "title": "Australia's Youth Social Media Ban Faces Landmark Constitutional Challenge in High Court",
+    "headline_ja": "オーストラリアの未成年SNS禁止法、憲法違反を巡り最高裁で歴史的法廷闘争へ",
+    "subhead": "Civil liberties advocates contest strict age-verification mandates, citing implicit constitutional protections for political discourse.",
+    "lead_snippet": "A historic constitutional showdown begins as youth advocacy groups take Australia's age-limit internet legislation to the High Court.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/australia-news/2026/nov/03/australia-social-media-ban-high-court-challenge-reddit-digital-freedom-project",
+    "path": "law/australia-social-media-ban-high-court-challenge-reddit-digital-freedom-project/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-making-up-china-policy-as-it-goes-along-mps",
+    "category": "law",
+    "category_label": "LAW • FOREIGN POLICY & STATUTORY SCRUTINY",
+    "date": "2026-11-03",
+    "title": "Parliamentary Committee Condemns Ad-Hoc Foreign Policy and Lack of Statutory Framework on Strategic Trade",
+    "headline_ja": "英議会委員会、対中外交政策の場当たり主義を厳しく批判：明確な法定枠組みの策定を勧告",
+    "subhead": "Cross-party lawmakers warn that inconsistent diplomatic directives compromise national security while confusing vital industrial investors.",
+    "lead_snippet": "A scathing parliamentary report urges ministers to establish a coherent, legally grounded strategy balancing trade and security.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/politics/2026/nov/02/uk-making-up-china-policy-as-it-goes-along-mps",
+    "path": "law/uk-making-up-china-policy-as-it-goes-along-mps/index.html",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "bbc-young-musician-teenage-violinist-sofia-demetriades",
+    "category": "culture",
+    "category_label": "CULTURE • CLASSICAL MUSIC EXCELLENCE",
+    "date": "2026-11-03",
+    "title": "Teenage Prodigy Sofia Demetriades Wins BBC Young Musician Title with Captivating Violin Concertos",
+    "headline_ja": "10代の新星ソフィア・デメトリアデスさん、圧巻のヴァイオリン演奏でBBCヤング・ミュージシャン賞を獲得",
+    "subhead": "Adjudicators praise exceptional interpretive maturity and tonal precision as the biennial showcase celebrates emerging virtuosity.",
+    "lead_snippet": "A seventeen-year-old violinist has captured one of classical music's most prestigious youth honours at Symphony Hall.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/music/2026/nov/01/bbc-young-musician-teenage-violinist-sofia-demetriades",
+    "path": "culture/bbc-young-musician-teenage-violinist-sofia-demetriades/index.html",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "john-lewis-christmas-advert-kristin-scott-thomas-glamorous-granny-gift-hunt",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT • CONSUMER CULTURE & ADVERTISING",
+    "date": "2026-11-03",
+    "title": "Annual Festive Television Commercials Pivot Toward Multi-Generational Warmth and Humor",
+    "headline_ja": "英国名物クリスマス商戦CMが解禁：多世代の家族の絆とユーモアを描く心温まる広告戦略",
+    "subhead": "Department store giant unveils nostalgic winter campaign celebrating authentic familial connection over sheer commercial materialism.",
+    "lead_snippet": "The much-anticipated British festive commercial season begins with cinematic storytelling focused on grandmotherly affection.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/media/2026/nov/03/john-lewis-christmas-advert-kristin-scott-thomas-glamorous-granny-gift-hunt",
+    "path": "entertainment/john-lewis-christmas-advert-kristin-scott-thomas-glamorous-granny-gift-hunt/index.html",
+    "image": "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-11-03": {
+    "dateStr": "Tuesday November 3 2026",
+    "editionLabel": "2026年11月3日 (火) 号 【本日・最新・全12記事】",
+    "tagline": "特集：金星・月・スピカ三重整列・ロバと雄牛の異種間愛着・北極極渦分裂寒波・豪州16歳未満SNS禁止違憲訴訟",
+    "topLeadSlug": "starwatch-catch-the-striking-trifecta-of-venus-the-moon-and-spica-at-break-of-dawn",
+    "subLeadSlugs": [
+      "tender-bond-male-donkey-bull-baffles-scientists",
+      "polar-vortex-disruption-colder-weather-europe",
+      "australia-social-media-ban-high-court-challenge-reddit-digital-freedom-project"
+    ],
+    "leftDispatches": [
+      "british-gas-resume-force-fitting-prepayment-meters-months-after-112m-settlement",
+      "nhs-early-warning-system-child-illness-england",
+      "counsellors-psychotherapists-statutory-regulation-uk-professional-bodies",
+      "nine-of-world-biggest-oil-firms-95bn-profit-third-quarter-iran-war"
+    ],
+    "rightDigestSlugs": [
+      "hackers-fake-nuclear-chemical-threat-alert-kyiv-ukraine-emergency-app",
+      "uk-making-up-china-policy-as-it-goes-along-mps",
+      "bbc-young-musician-teenage-violinist-sofia-demetriades",
+      "john-lewis-christmas-advert-kristin-scott-thomas-glamorous-granny-gift-hunt"
+    ]
+  },
   "2026-11-02": {
     "dateStr": "Monday November 2 2026",
-    "editionLabel": "2026年11月2日 (月) 号 【本日・最新・全12記事】",
+    "editionLabel": "2026年11月2日 (月) 号 【全12記事・アーカイブ】",
     "tagline": "特集：半世紀ぶりツチハンミョウ再発見・巨額AI投資への市場懸念・北欧データセンター森林伐採捜査・ロンドン自動運転規制",
     "topLeadSlug": "rare-short-necked-oil-beetle-rediscovered-wales",
     "subLeadSlugs": [

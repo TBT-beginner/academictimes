@@ -78,9 +78,32 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-11-03": {
+        "dateStr": "Tuesday November 3 2026",
+        "editionLabel": "2026年11月3日 (火) 号 【本日・最新・全12記事】",
+        "tagline": "特集：明け方の金星と三日月・ロバと雄牛の友情・北極の寒波・豪州SNS禁止令の裁判",
+        "topLeadSlug": "starwatch-catch-the-striking-trifecta-of-venus-the-moon-and-spica-at-break-of-dawn",
+        "subLeadSlugs": [
+            "tender-bond-male-donkey-bull-baffles-scientists",
+            "polar-vortex-disruption-colder-weather-europe",
+            "australia-social-media-ban-high-court-challenge-reddit-digital-freedom-project"
+        ],
+        "leftDispatches": [
+            "british-gas-resume-force-fitting-prepayment-meters-months-after-112m-settlement",
+            "nhs-early-warning-system-child-illness-england",
+            "counsellors-psychotherapists-statutory-regulation-uk-professional-bodies",
+            "nine-of-world-biggest-oil-firms-95bn-profit-third-quarter-iran-war"
+        ],
+        "rightDigestSlugs": [
+            "hackers-fake-nuclear-chemical-threat-alert-kyiv-ukraine-emergency-app",
+            "uk-making-up-china-policy-as-it-goes-along-mps",
+            "bbc-young-musician-teenage-violinist-sofia-demetriades",
+            "john-lewis-christmas-advert-kristin-scott-thomas-glamorous-granny-gift-hunt"
+        ]
+    },
     "2026-11-02": {
         "dateStr": "Monday November 2 2026",
-        "editionLabel": "2026年11月2日 (月) 号 【本日・最新・全12記事】",
+        "editionLabel": "2026年11月2日 (月) 号 【全12記事・アーカイブ】",
         "tagline": "特集：半世紀ぶりツチハンミョウ再発見・巨額AI投資への懸念・北欧データセンター森林伐採・ロンドン自動運転タクシー規制",
         "topLeadSlug": "rare-short-necked-oil-beetle-rediscovered-wales",
         "subLeadSlugs": [

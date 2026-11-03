@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-11-03": {
+            "dateStr": "Tuesday November 3 2026",
+            "editionLabel": "2026年11月3日 (火) 号 【本日・最新・全12記事】",
+            "tagline": "特集：金星・月・スピカ三重整列・ロバと雄牛の異種間愛着・北極極渦分裂寒波・豪州16歳未満SNS禁止違憲訴訟",
+            "topLeadSlug": "starwatch-catch-the-striking-trifecta-of-venus-the-moon-and-spica-at-break-of-dawn",
+            "subLeadSlugs": [
+                "tender-bond-male-donkey-bull-baffles-scientists",
+                "polar-vortex-disruption-colder-weather-europe",
+                "australia-social-media-ban-high-court-challenge-reddit-digital-freedom-project"
+            ],
+            "leftDispatches": [
+                "british-gas-resume-force-fitting-prepayment-meters-months-after-112m-settlement",
+                "nhs-early-warning-system-child-illness-england",
+                "counsellors-psychotherapists-statutory-regulation-uk-professional-bodies",
+                "nine-of-world-biggest-oil-firms-95bn-profit-third-quarter-iran-war"
+            ],
+            "rightDigestSlugs": [
+                "hackers-fake-nuclear-chemical-threat-alert-kyiv-ukraine-emergency-app",
+                "uk-making-up-china-policy-as-it-goes-along-mps",
+                "bbc-young-musician-teenage-violinist-sofia-demetriades",
+                "john-lewis-christmas-advert-kristin-scott-thomas-glamorous-granny-gift-hunt"
+            ]
+        },
         "2026-11-02": {
             "dateStr": "Monday November 2 2026",
-            "editionLabel": "2026年11月2日 (月) 号 【本日・最新・全12記事】",
+            "editionLabel": "2026年11月2日 (月) 号 【全12記事・アーカイブ】",
             "tagline": "特集：半世紀ぶりツチハンミョウ再発見・巨額AI投資への市場懸念・北欧データセンター森林伐採捜査・ロンドン自動運転規制",
             "topLeadSlug": "rare-short-necked-oil-beetle-rediscovered-wales",
             "subLeadSlugs": [
