@@ -23,11 +23,13 @@
   <!-- Top Switcher Bar with Interactive Edition Switcher -->
   <div class="top-date-bar">
     <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem; flex-wrap: wrap; gap: 0.5rem;">
-      <span id="top-date-bar-text">Wednesday November 4 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
+      <span id="top-date-bar-text">Friday November 6 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
       <div class="edition-selector-wrap">
         <span style="font-weight: 700; color: #111;">📅 紙面切替:</span>
         <select id="select-edition-date" class="edition-select" aria-label="Select edition date">
-          <option value="2026-11-04" selected>2026年11月4日 (水) 号 【本日・最新・全12記事】</option>
+          <option value="2026-11-06" selected>2026年11月6日 (金) 号 【本日・最新・全12記事】</option>
+          <option value="2026-11-05">2026年11月5日 (木) 号 【全12記事】</option>
+          <option value="2026-11-04">2026年11月4日 (水) 号 【全12記事】</option>
           <option value="2026-11-03">2026年11月3日 (火) 号 【全12記事】</option>
           <option value="2026-11-02">2026年11月2日 (月) 号 【全12記事・アーカイブ】</option>
           <option value="2026-11-01">2026年11月1日 (日) 号 【全12記事・アーカイブ】</option>
@@ -511,20 +513,22 @@
             <span>📰 日別トップページ一覧（バックナンバー紙面）:</span>
           </div>
           <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
-            <a href="index.html#date-2026-11-04" style="padding: 0.35rem 0.75rem; border: 1px solid #235937; background: #235937; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-11-04'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/04 (水) 本日最新号</a>
+            <a href="index.html#date-2026-11-06" style="padding: 0.35rem 0.75rem; border: 1px solid #235937; background: #235937; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-11-06'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/06 (金) 本日最新号</a>
+            <a href="index.html#date-2026-11-05" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-05'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/05 (木) 号</a>
+            <a href="index.html#date-2026-11-04" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-04'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/04 (水) 号</a>
             <a href="index.html#date-2026-11-03" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-03'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/03 (火) 号</a>
             <a href="index.html#date-2026-11-02" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-02'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/02 (月) 号</a>
-            <a href="index.html#date-2026-11-01" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-01'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/01 (日) 号</a>
-            <a href="index.html#date-2026-10-31" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-31'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/31 (土) 号</a>
           </div>
         </div>
         
         <details style="margin-top: 0.5rem; width: 100%;">
           <summary style="font-size: 0.8rem; font-weight: 700; color: #235937; cursor: pointer; padding: 0.3rem 0;">
-            📂 過去の全号を展開（29日分アーカイブ） ▾
+            📂 過去の全号を展開（31日分アーカイブ） ▾
           </summary>
           <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; padding: 0.5rem; background: #fff; border: 1px dashed var(--times-light-border);">
-            <a href="index.html#date-2026-10-30" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-30'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/30 (金) 号</a>
+            <a href="index.html#date-2026-11-01" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-01'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/01 (日) 号</a>
+              <a href="index.html#date-2026-10-31" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-31'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/31 (土) 号</a>
+              <a href="index.html#date-2026-10-30" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-30'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/30 (金) 号</a>
               <a href="index.html#date-2026-10-29" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-29'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/29 (木) 号</a>
               <a href="index.html#date-2026-10-28" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-28'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/28 (水) 号</a>
               <a href="index.html#date-2026-10-27" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-10-27'); window.scrollTo({top:0, behavior:'smooth'}); return false;">10/27 (火) 号</a>
@@ -589,7 +593,7 @@
               <option value="yahoo">Yahoo! News Japan (Yahoo!ニュース)</option>
               <option value="getnews">GetNews Japan (ガジェット通信)</option>
             </select>
-            <span id="archive-count-badge" class="archive-count-badge" style="color: #235937;">該当件数: 417 件</span>
+            <span id="archive-count-badge" class="archive-count-badge" style="color: #235937;">該当件数: 441 件</span>
           </div>
         </div>
       </div>
@@ -12684,6 +12688,702 @@
               🌱 Junior版を読む（音声付） →
             </a>
             <a href="../entertainment/china-first-ai-generated-film-flops-cinema-future/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SCIENCE</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="science/how-penguin-poo-is-making-antarctic-snow-melt-faster/index.html" style="color: var(--times-black); text-decoration: none;">
+                Penguin Droppings Darken Snow and Make Antarctic Ice Melt Faster
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              ペンギンのフンが雪を黒くして南極の氷を早く溶かす：科学者がメカニズムを解明
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Dark patches of penguin waste absorb sunshine, speeding up the summer melting of polar snowfields.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="science/how-penguin-poo-is-making-antarctic-snow-melt-faster/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../science/how-penguin-poo-is-making-antarctic-snow-melt-faster/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SCIENCE</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="science/worlds-wettest-rainstorms-getting-worse-flood-drought-risk/index.html" style="color: var(--times-black); text-decoration: none;">
+                Severe Rainstorms Get Heavier as Warmer Air Holds More Moisture
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              地球の豪雨がさらに激しく：暖かい空気がたくさんの水蒸気を抱え込む
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Scientists explain why global warming causes both extreme downpours and longer dry periods.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="science/worlds-wettest-rainstorms-getting-worse-flood-drought-risk/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../science/worlds-wettest-rainstorms-getting-worse-flood-drought-risk/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">ENVIRONMENT</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="environment/democrats-midterms-triumph-renewable-energy-industry-donald-trump/index.html" style="color: var(--times-black); text-decoration: none;">
+                US Election Results Help Protect Clean Energy Investments
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              米選挙結果がクリーンエネルギーを支援：太陽光や風力への優遇措置が守られる見通し
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              A divided Congress means big climate laws cannot be easily canceled by one party.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="environment/democrats-midterms-triumph-renewable-energy-industry-donald-trump/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../environment/democrats-midterms-triumph-renewable-energy-industry-donald-trump/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">ENVIRONMENT</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="environment/hex-the-peacock-found-in-brisbane-bathroom/index.html" style="color: var(--times-black); text-decoration: none;">
+                Lost Peacock Discovered Resting Inside an Australian Bathroom
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              迷子のクジャクがお風呂場でくつろいでいるのを発見：豪ブリスベン
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              The colorful pet bird strolled through an open door and fell in love with his bathroom reflection.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="environment/hex-the-peacock-found-in-brisbane-bathroom/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../environment/hex-the-peacock-found-in-brisbane-bathroom/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SOCIETY</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="society/bank-of-england-raises-interest-rates-first-increase-for-more-than-three-years/index.html" style="color: var(--times-black); text-decoration: none;">
+                Bank of England Increases Interest Rates for First Time in Three Years
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              英国中央銀行が3年ぶりに利上げを発表：物価高を抑えるための決断
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              The central bank wants to stop persistent inflation, but higher borrowing costs worry families.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="society/bank-of-england-raises-interest-rates-first-increase-for-more-than-three-years/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../society/bank-of-england-raises-interest-rates-first-increase-for-more-than-three-years/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SOCIETY</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="society/britains-housing-market-unlikely-to-recover-until-2028-says-savills/index.html" style="color: var(--times-black); text-decoration: none;">
+                UK Home Buyers Face Tough Years as Housing Market Recovery Delays Until 2028
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              イギリスの住宅市場の回復は2028年まで先送り：若い世代の住宅購入の難しさ
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Expensive mortgages and high rent prices make it hard for young people to buy their first home.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="society/britains-housing-market-unlikely-to-recover-until-2028-says-savills/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../society/britains-housing-market-unlikely-to-recover-until-2028-says-savills/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">WORLD</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="world/developing-country-debt-record-94tn-high-world-bank-data/index.html" style="color: var(--times-black); text-decoration: none;">
+                Developing Nations Face Record Debt Crisis as Interest Costs Rise
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              途上国の借金が過去最高に：利息の支払いで学校や病院の予算がピンチに
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              The World Bank warns that debt payments take away critical funding from education and public health.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="world/developing-country-debt-record-94tn-high-world-bank-data/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../world/developing-country-debt-record-94tn-high-world-bank-data/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">WORLD</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="world/us-dollar-slides-democrats-midterm-election-win-growth-fears/index.html" style="color: var(--times-black); text-decoration: none;">
+                US Dollar Drops as Midterm Election Creates a Divided Congress
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              米中間選挙でねじれ議会が誕生：ドルが値下がりし為替市場が動く
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Currency traders react to political gridlock in Washington, affecting global money markets.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="world/us-dollar-slides-democrats-midterm-election-win-growth-fears/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../world/us-dollar-slides-democrats-midterm-election-win-growth-fears/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">LAW</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="law/teen-social-media-ban-burden-freedom-of-political-communication-reddit/index.html" style="color: var(--times-black); text-decoration: none;">
+                Australia's Under-16 Social Media Ban Challenged in High Court
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              オーストラリアの16歳未満SNS禁止令が最高裁判所の裁判に：表現の自由を巡る争い
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Digital platforms and young citizens argue the total ban cuts youth off from democratic discussions.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="law/teen-social-media-ban-burden-freedom-of-political-communication-reddit/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../law/teen-social-media-ban-burden-freedom-of-political-communication-reddit/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">LAW</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="law/henry-nowak-killer-vickrum-digwa-should-have-had-longer-sentence-court-of-appeal-hears/index.html" style="color: var(--times-black); text-decoration: none;">
+                UK Appeal Court Considers Longer Prison Term in Fatal Street Attack
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              英控訴裁判所が路上殺傷事件の刑期延長を審理：刑が軽すぎるかどうかが焦点に
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Senior judges review whether original trial punishment was tough enough for violent crime.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="law/henry-nowak-killer-vickrum-digwa-should-have-had-longer-sentence-court-of-appeal-hears/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../law/henry-nowak-killer-vickrum-digwa-should-have-had-longer-sentence-court-of-appeal-hears/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">CULTURE</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="culture/true-crime-novel-murdered-model-wins-france-literary-prize-prix-goncourt-philippe-jaenada/index.html" style="color: var(--times-black); text-decoration: none;">
+                True-Crime Book Wins France's Famous Prix Goncourt Literary Prize
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              フランス最高峰の文学賞「ゴンクール賞」に実話犯罪小説：古い事件の真実を暴く
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              The acclaimed novel digs through old police files to give voice to a forgotten female victim.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="culture/true-crime-novel-murdered-model-wins-france-literary-prize-prix-goncourt-philippe-jaenada/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../culture/true-crime-novel-murdered-model-wins-france-literary-prize-prix-goncourt-philippe-jaenada/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">ENTERTAINMENT</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="entertainment/dustin-hoffman-memoir-look-at-me-the-graduate-mike-nichols/index.html" style="color: var(--times-black); text-decoration: none;">
+                Actor Dustin Hoffman Publishes Honest Autobiography About Movie Career
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              名優ダスティン・ホフマンが自伝を出版：映画『卒業』の思い出と演技への情熱
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              The famous Oscar winner reflects on how his unconventional looks changed the face of American cinema.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="entertainment/dustin-hoffman-memoir-look-at-me-the-graduate-mike-nichols/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../entertainment/dustin-hoffman-memoir-look-at-me-the-graduate-mike-nichols/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SCIENCE</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="science/france-national-blood-service-hack-cyber-attack-europe/index.html" style="color: var(--times-black); text-decoration: none;">
+                French Blood Service Hit by Cyber-Attack
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              フランスの血液事業所がサイバー攻撃を受ける：患者のデータ保護と病院の安全対策
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Hospitals keep working as experts protect sensitive medical computer networks.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="science/france-national-blood-service-hack-cyber-attack-europe/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../science/france-national-blood-service-hack-cyber-attack-europe/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SCIENCE</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="science/m-and-s-recover-from-cyber-attack-profits-bounce-back/index.html" style="color: var(--times-black); text-decoration: none;">
+                Marks & Spencer Profits Bounce Back After Cyber Incident
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              マークス＆スペンサーの利益が力強く回復：サイバー被害を乗り越えた英小売大手
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Popular high-street brand overcomes digital hurdles thanks to careful planning.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="science/m-and-s-recover-from-cyber-attack-profits-bounce-back/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../science/m-and-s-recover-from-cyber-attack-profits-bounce-back/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">ENVIRONMENT</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="environment/bmw-warns-on-profits-counts-cost-plan-for-8000-job-cuts/index.html" style="color: var(--times-black); text-decoration: none;">
+                BMW Faces Tough Transition in Global Car Market
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              BMWが世界の自動車市場で厳しい移行期に直面：EV開発と会社再編の課題
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Car maker balances electric future with challenging sales conditions.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="environment/bmw-warns-on-profits-counts-cost-plan-for-8000-job-cuts/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../environment/bmw-warns-on-profits-counts-cost-plan-for-8000-job-cuts/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">ENVIRONMENT</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="environment/protect-poundland-mps-tell-government-retail/index.html" style="color: var(--times-black); text-decoration: none;">
+                MPs Urge Support for Budget Retailers on High Streets
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              英議員が格安店の支援を政府に要請：商店街の活気と家計を守る取り組み
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Lawmakers highlight importance of budget stores for local shoppers.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="environment/protect-poundland-mps-tell-government-retail/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../environment/protect-poundland-mps-tell-government-retail/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SOCIETY</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="society/bt-cuts-jobs-cost-saving-programme-profit-share-price/index.html" style="color: var(--times-black); text-decoration: none;">
+                BT Accelerates Changes as Technology Transforms Jobs
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              英通信BTが職場変革を推進：光ファイバー完了とAI自動化による変化
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Telecoms company adapts as internet networks become more automated.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="society/bt-cuts-jobs-cost-saving-programme-profit-share-price/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../society/bt-cuts-jobs-cost-saving-programme-profit-share-price/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SOCIETY</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="society/virgin-media-o2-cut-jobs-cost-savings-telecoms-ai/index.html" style="color: var(--times-black); text-decoration: none;">
+                Virgin Media O2 Restructures for Faster Networks
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              ヴァージン・メディアO2が組織再編：高速インターネット網の拡充を目指す
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Telecom company saves money to invest in modern mobile services.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="society/virgin-media-o2-cut-jobs-cost-savings-telecoms-ai/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../society/virgin-media-o2-cut-jobs-cost-savings-telecoms-ai/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">WORLD</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="world/andy-burnham-to-unveil-eu-trade-deals-brexit/index.html" style="color: var(--times-black); text-decoration: none;">
+                Manchester Mayor Plans New Trade Deals with European Cities
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              マンチェスター市長が欧州各都市と連携：地域同士でつなぐ新しい貿易と交流
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              English city builds direct connections with European neighbors.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="world/andy-burnham-to-unveil-eu-trade-deals-brexit/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../world/andy-burnham-to-unveil-eu-trade-deals-brexit/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">WORLD</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="world/nasdaq-heading-for-worst-day-in-18-months-as-wall-street-sustains-widespread-losses/index.html" style="color: var(--times-black); text-decoration: none;">
+                Tech Stocks Fall Sharply on Wall Street
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              米ハイテク株が急落：AIブームへの一服感と市場の慎重姿勢
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Investors sell technology shares following rapid autumn price gains.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="world/nasdaq-heading-for-worst-day-in-18-months-as-wall-street-sustains-widespread-losses/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../world/nasdaq-heading-for-worst-day-in-18-months-as-wall-street-sustains-widespread-losses/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">LAW</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="law/rogue-energy-bosses-and-brokers-face-crackdown-on-mis-selling/index.html" style="color: var(--times-black); text-decoration: none;">
+                Regulators Crack Down on Dishonest Energy Sales
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              エネルギー仲介の不当販売を取り締まり：隠れ手数料を防ぎ公正な取引へ
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Officials act to protect small businesses from secret fees in power bills.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="law/rogue-energy-bosses-and-brokers-face-crackdown-on-mis-selling/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../law/rogue-energy-bosses-and-brokers-face-crackdown-on-mis-selling/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">CULTURE</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="culture/misogyny-and-sexism-of-russell-brand-case-have-not-gone-away-say-tv-insiders/index.html" style="color: var(--times-black); text-decoration: none;">
+                TV Workers Call for Better Workplace Culture
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              英テレビ制作現場で働く人々が職場改善を要求：安心できる環境づくりへ
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Media workers say promises on paper are not enough to fix old habits.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="culture/misogyny-and-sexism-of-russell-brand-case-have-not-gone-away-say-tv-insiders/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../culture/misogyny-and-sexism-of-russell-brand-case-have-not-gone-away-say-tv-insiders/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">ENTERTAINMENT</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="entertainment/italian-chef-sacked-refusing-pineapple-on-pizza-australia-fair-work/index.html" style="color: var(--times-black); text-decoration: none;">
+                Italian Chef Sacked Over Pineapple Pizza Debate
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              ピザにパイナップルを拒否して解雇：オーストラリアで話題のピザ職人裁判
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Traditional cooking pride clashes with customer wishes in Sydney dispute.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="entertainment/italian-chef-sacked-refusing-pineapple-on-pizza-australia-fair-work/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../entertainment/italian-chef-sacked-refusing-pineapple-on-pizza-australia-fair-work/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">ENTERTAINMENT</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="entertainment/tenerife-footballer-jesus-de-miguel-hospital-collision/index.html" style="color: var(--times-black); text-decoration: none;">
+                Footballer Hospitalized After Collision in Spanish Match
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              スペインのサッカー選手が試合中の激突で救急搬送：頭部の安全ルールに注目
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Quick medical help aids injured striker as sports focus on safety.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="entertainment/tenerife-footballer-jesus-de-miguel-hospital-collision/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../entertainment/tenerife-footballer-jesus-de-miguel-hospital-collision/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
               🏛️ 発展版（難関大） ↗
             </a>
           </div>
