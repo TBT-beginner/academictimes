@@ -196,9 +196,55 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-11-06": {
+            "dateStr": "Friday November 6 2026",
+            "editionLabel": "2026年11月6日 (金) 号 【本日・最新・全12記事】",
+            "tagline": "特集：仏血液事業所サイバー攻撃・ナスダック急落・BMW再編・マンチェスター都市外交・パイナップルピザ解雇",
+            "topLeadSlug": "france-national-blood-service-hack-cyber-attack-europe",
+            "subLeadSlugs": [
+                "nasdaq-heading-for-worst-day-in-18-months-as-wall-street-sustains-widespread-losses",
+                "bmw-warns-on-profits-counts-cost-plan-for-8000-job-cuts",
+                "andy-burnham-to-unveil-eu-trade-deals-brexit"
+            ],
+            "leftDispatches": [
+                "m-and-s-recover-from-cyber-attack-profits-bounce-back",
+                "protect-poundland-mps-tell-government-retail",
+                "bt-cuts-jobs-cost-saving-programme-profit-share-price",
+                "virgin-media-o2-cut-jobs-cost-savings-telecoms-ai"
+            ],
+            "rightDigestSlugs": [
+                "rogue-energy-bosses-and-brokers-face-crackdown-on-mis-selling",
+                "misogyny-and-sexism-of-russell-brand-case-have-not-gone-away-say-tv-insiders",
+                "italian-chef-sacked-refusing-pineapple-on-pizza-australia-fair-work",
+                "tenerife-footballer-jesus-de-miguel-hospital-collision"
+            ]
+        },
+        "2026-11-05": {
+            "dateStr": "Thursday November 5 2026",
+            "editionLabel": "2026年11月5日 (木) 号 【全12記事】",
+            "tagline": "特集：ペンギン糞と南極雪解け・途上国債務94兆ドル危機・英中銀利下げ・豪SNS禁止法・豪バスルームクジャク騒動",
+            "topLeadSlug": "how-penguin-poo-is-making-antarctic-snow-melt-faster",
+            "subLeadSlugs": [
+                "developing-country-debt-record-94tn-high-world-bank-data",
+                "bank-of-england-raises-interest-rates-first-increase-for-more-than-three-years",
+                "democrats-midterms-triumph-renewable-energy-industry-donald-trump"
+            ],
+            "leftDispatches": [
+                "worlds-wettest-rainstorms-getting-worse-flood-drought-risk",
+                "hex-the-peacock-found-in-brisbane-bathroom",
+                "britains-housing-market-unlikely-to-recover-until-2028-says-savills",
+                "us-dollar-slides-democrats-midterm-election-win-growth-fears"
+            ],
+            "rightDigestSlugs": [
+                "teen-social-media-ban-burden-freedom-of-political-communication-reddit",
+                "henry-nowak-killer-vickrum-digwa-should-have-had-longer-sentence-court-of-appeal-hears",
+                "camden-market-london-sale-labtech-billionaire-teddy-sagi",
+                "broadcaster-nick-sheridan-died-brain-aneurysm-colleagues-tribute"
+            ]
+        },
         "2026-11-04": {
             "dateStr": "Wednesday November 4 2026",
-            "editionLabel": "2026年11月4日 (水) 号 【本日・最新・全12記事】",
+            "editionLabel": "2026年11月4日 (水) 号 【全12記事】",
             "tagline": "特集：NASAスウィフト望遠鏡復旧・ヒントン教授AI警告・米中間選挙決戦・英食肉工場サイバー攻撃・コリンズ今年の言葉Mogging",
             "topLeadSlug": "nasa-telescope-neil-gehrels-swift-observatory",
             "subLeadSlugs": [
