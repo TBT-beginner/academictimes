@@ -177,6 +177,11 @@ def main():
         print("[FAIL] Senior portal data JS build failed.")
         sys.exit(1)
 
+    # Step 3b: Build Senior Top Portal (Static HTML Index)
+    if not run_step("Build Senior Top Portal", ["build_senior_top.py"]):
+        print("[FAIL] Senior top page build failed.")
+        sys.exit(1)
+
     # Step 4: Build THE JUNIOR Articles & Audio
     junior_args = ["build_junior_site.py"]
     if args.skip_audio:

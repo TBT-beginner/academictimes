@@ -1,7 +1,7 @@
 // THE ACADEMIC TIMES - Home Portal Interactive Controller
 // Features: Date/Edition Switcher, Instant Archive & Back Number Search, Media Literacy Resources
 
-const ALL_ARTICLES = typeof ARTICLES !== 'undefined' ? ARTICLES : [];
+const allArticlesList = (typeof ARTICLES !== 'undefined') ? ARTICLES : (typeof ALL_ARTICLES !== 'undefined' ? ALL_ARTICLES : []);
 
 document.addEventListener('DOMContentLoaded', () => {
   const dateSelect = document.getElementById('select-edition-date');
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderHeroSection(ed) {
     const artMap = {};
-    ALL_ARTICLES.forEach(a => { artMap[a.slug] = a; });
+    allArticlesList.forEach(a => { artMap[a.slug] = a; });
 
     // 1. Lead Story
     const lead = artMap[ed.topLeadSlug];
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function filterAndRenderArchive() {
     const q = activeQuery.trim().toLowerCase();
     
-    let results = ALL_ARTICLES.filter(art => {
+    let results = allArticlesList.filter(art => {
       // Category filter
       if (activeCategory !== 'all' && art.category !== activeCategory) {
         return false;
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const totalCount = results.length;
     if (archiveCount) {
-      archiveCount.textContent = `該当件数: ${totalCount} 件 (全${ALL_ARTICLES.length}件中)`;
+      archiveCount.textContent = `該当件数: ${totalCount} 件 (全${allArticlesList.length}件中)`;
     }
 
     if (!archiveGrid) return;
