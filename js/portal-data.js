@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 441 articles, daily editions, and high-school media literacy references.
+// Contains all 453 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -6729,15 +6729,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/football/2026/nov/06/tenerife-footballer-jesus-de-miguel-hospital-collision",
     "path": "entertainment/tenerife-footballer-jesus-de-miguel-hospital-collision/index.html",
     "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "nvidia-jensen-huang-investigation-foreign-intelligence-targeting",
+    "category": "science",
+    "category_label": "SCIENCE & TECH • SEMICONDUCTORS & CYBERSECURITY",
+    "date": "2026-11-09",
+    "title": "Nvidia Launches Internal Security Review After CEO Jensen Huang Targeted in Foreign Intelligence Probe",
+    "headline_ja": "エヌビディアが内部安全調査を開始：フアンCEOが外国情報機関の標的となった疑惑をめぐり",
+    "subhead": "Semiconductor powerhouse intensifies corporate espionage safeguards as AI computational supremacy becomes prime geopolitical battleground.",
+    "lead_snippet": "Nvidia has initiated a high-level counter-intelligence review following credible reports that chief executive Jensen Huang was subject to targeted surveillance by external state operatives.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/nov/08/nvidia-jensen-huang-investigation",
+    "path": "science/nvidia-jensen-huang-investigation-foreign-intelligence-targeting/index.html",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ukraine-drone-casualty-evacuation-frontline-medical-rescue",
+    "category": "world",
+    "category_label": "WORLD & SECURITY • AUTONOMOUS RESCUE & DRONE WARFARE",
+    "date": "2026-11-09",
+    "title": "Autonomous Drones Pioneer Battlefield Evacuation as Wounded Combatants Rescued from Frontline Kill Zones",
+    "headline_ja": "自律型ドローンによる負傷兵前線救出作戦：戦場医療と無人機運用の新展開",
+    "subhead": "Unmanned aerial extraction systems bridge critical triage gaps where hostile artillery and surveillance render manned medical evacuation impossible.",
+    "lead_snippet": "Specialist robotic units have successfully extracted severely wounded soldiers using heavy-lift autonomous aerial platforms, redefining trauma evacuation across contested battlefields.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/ng-interactive/2026/nov/07/how-injured-ukrainian-soldier-rescued-by-drone",
+    "path": "world/ukraine-drone-casualty-evacuation-frontline-medical-rescue/index.html",
+    "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "chinese-carmaker-byd-offices-raided-netherlands-copycat-claim",
+    "category": "law",
+    "category_label": "LAW & JUSTICE • INTELLECTUAL PROPERTY & GLOBAL TRADE",
+    "date": "2026-11-09",
+    "title": "Dutch Authorities Raid BYD Headquarters Over Jaguar Land Rover Industrial Design Infringement Claims",
+    "headline_ja": "オランダ当局が中国BYD拠点を捜索：JLRの意匠権侵害申立てをめぐる国際知財紛争",
+    "subhead": "Judicial seizure of technical documentation escalates cross-border intellectual property enforcement against imported electric vehicle models.",
+    "lead_snippet": "Judicial investigators in the Netherlands have raided regional corporate premises of Chinese automaker BYD following allegations of industrial design piracy brought by Jaguar Land Rover.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/08/chinese-carmaker-byd-offices-raided-netherlands-land-rover-copycat-claim",
+    "path": "law/chinese-carmaker-byd-offices-raided-netherlands-copycat-claim/index.html",
+    "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "the-efficiency-trap-why-optimising-everything-can-backfire",
+    "category": "culture",
+    "category_label": "CULTURE & THOUGHT • PHILOSOPHY OF EFFICIENCY & MATHEMATICS",
+    "date": "2026-11-09",
+    "title": "The Efficiency Trap: Why Algorithmic Optimisation Across Human Institutions Triggers Systemic Fragility",
+    "headline_ja": "効率性の罠：あらゆる社会制度のアルゴリズム的最適化が脆さを生む理由",
+    "subhead": "Excessive streamlining eliminates redundant protective buffers, leaving interconnected economies acutely vulnerable to catastrophic systemic collapse.",
+    "lead_snippet": "A compelling new philosophical treatise argues that our cultural obsession with micro-optimisation systematically dismantles the resilience necessary to withstand global shocks.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/books/2026/nov/08/the-efficiency-trap-why-optimising-everything-can-backfire-badly",
+    "path": "culture/the-efficiency-trap-why-optimising-everything-can-backfire/index.html",
+    "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ai-home-energy-optimisation-heating-bills-smart-thermostats",
+    "category": "science",
+    "category_label": "SCIENCE & TECH • DOMESTIC ENERGY & MACHINE LEARNING",
+    "date": "2026-11-09",
+    "title": "Machine Learning Household Algorithms Claim Substantial Reductions in Domestic Energy Consumption",
+    "headline_ja": "機械学習による家庭用省エネ制御：スマート暖房が家計と電力網に与える影響",
+    "subhead": "Dynamic thermal modeling balances comfort against real-time wholesale tariff fluctuations to optimise residential power efficiency.",
+    "lead_snippet": "Independent energy audits reveal that next-generation predictive algorithms integrated into domestic heating systems offer significant financial relief while stabilising national grids.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/money/2026/nov/07/can-ai-save-you-money-heating-bill",
+    "path": "science/ai-home-energy-optimisation-heating-bills-smart-thermostats/index.html",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "trump-signals-hardline-pivot-following-midterm-election-setbacks",
+    "category": "world",
+    "category_label": "WORLD & SECURITY • US MIDTERM POLITICS & EXECUTIVE POWER",
+    "date": "2026-11-09",
+    "title": "Trump Signals Hardline Shift in Political Strategy Following Conservative Setbacks in Midterm Polls",
+    "headline_ja": "中間選挙の退潮を受けてトランプ陣営が強硬路線へのシフトを示唆",
+    "subhead": "Administration doubles down on ideological core policies rather than consensus-building as divided Congress reshapes Washington governance.",
+    "lead_snippet": "President Donald Trump has indicated plans to govern through combative executive orders, asserting the electorate was misled after midterm outcomes altered Capitol Hill power balances.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/nov/08/trump-midterm-elections-loss-democrats-immigration",
+    "path": "world/trump-signals-hardline-pivot-following-midterm-election-setbacks/index.html",
+    "image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "israel-coalition-negotiations-eisenkot-netanyahu-allies",
+    "category": "world",
+    "category_label": "WORLD & SECURITY • MIDDLE EAST DIPLOMACY & COALITIONS",
+    "date": "2026-11-09",
+    "title": "Gadi Eisenkot Pursues Cross-Party Negotiations with Coalition Partners to Resolve Parliamentary Impasse",
+    "headline_ja": "アイゼンコット元参謀総長が連立政権樹立へ超党派協議を加速：イスラエル議会の膠着打開",
+    "subhead": "Centrist general-turned-statesman attempts delicate bridge-building between secular reformists and religious nationalist factions.",
+    "lead_snippet": "Former military chief Gadi Eisenkot has opened back-channel discussions with key traditional allies of Benjamin Netanyahu, seeking a stable coalition following indecisive Knesset voting.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/08/gadi-eisenkot-netanyahu-allies-form-israel-government",
+    "path": "world/israel-coalition-negotiations-eisenkot-netanyahu-allies/index.html",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "abdul-el-sayed-public-health-epidemiology-politics",
+    "category": "society",
+    "category_label": "SOCIETY & MIND • EPIDEMIOLOGY & PUBLIC POLICY",
+    "date": "2026-11-09",
+    "title": "Epidemiologist Abdul El-Sayed Merges Public Health Rigour with Political Reform Movements",
+    "headline_ja": "疫学者アブドゥル・エル＝サイードが探求する公衆衛生の厳密性と政治改革の統合",
+    "subhead": "Scholarly trajectory from doctoral epidemiology to federal lawmaking highlights transformative power of data-driven civic policy.",
+    "lead_snippet": "A retrospective on Abdul El-Sayed’s formative academic years at Oxford illustrates how rigorous biostatistical disciplines can inform progressive municipal and federal public welfare governance.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/nov/08/abdul-el-sayed-michigan-senator-oxford-university-years-phd",
+    "path": "society/abdul-el-sayed-public-health-epidemiology-politics/index.html",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "cruise-ship-pianist-maritime-survival-nine-hours-open-ocean",
+    "category": "society",
+    "category_label": "SOCIETY & MIND • HUMAN RESILIENCE & MARITIME SURVIVAL",
+    "date": "2026-11-09",
+    "title": "Shipboard Pianist Survives Nine-Hour Ordeal in Open Waters Off California Coast",
+    "headline_ja": "豪華客船ピアニストがカリフォルニア沖で9時間の漂流を耐え奇跡の救助",
+    "subhead": "Cognitive discipline and rhythmic breath control sustain professional musician through hypothermic conditions miles from shoreline.",
+    "lead_snippet": "A cruise liner pianist has survived nine harrowing hours adrift in freezing Pacific waters, utilizing vocalisation techniques and mental endurance to stay afloat until spotted by search aircraft.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/nov/08/royal-caribbean-cruise-ship-pianist-rescue",
+    "path": "society/cruise-ship-pianist-maritime-survival-nine-hours-open-ocean/index.html",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "willie-nelson-reflections-on-longevity-country-music-memoir",
+    "category": "culture",
+    "category_label": "CULTURE & THOUGHT • MUSICAL LEGACY & BIOETHICAL REFLECTIONS",
+    "date": "2026-11-09",
+    "title": "Willie Nelson Reflects on Artistic Longevity, Addictive Patterns and Musical Heritage in Frank Memoir",
+    "headline_ja": "カントリー界の巨匠ウィリー・ネルソンが回顧録で語る表現の長寿と波乱の生涯",
+    "subhead": "Nonagenarian cultural icon examines generational trauma, sustainable musicianship, and the transformative power of songwriting.",
+    "lead_snippet": "In a candid retrospective, American country music pioneer Willie Nelson offers unflinching reflections on substance battles, artistic authenticity, and his improbable tenth decade of touring.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/music/2026/nov/08/willie-nelson-interview-country-music-legend-memoir",
+    "path": "culture/willie-nelson-reflections-on-longevity-country-music-memoir/index.html",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "influencer-combat-sports-civil-disorder-dublin-ireland",
+    "category": "culture",
+    "category_label": "CULTURE & THOUGHT • SOCIAL MEDIA CELEBRITY & PUBLIC DISORDER",
+    "date": "2026-11-09",
+    "title": "Influencer Combat Spectacle in Dublin Erupts into Public Clashes Amid Far-Right Agitation",
+    "headline_ja": "ダブリンのインフルエンサー格闘イベントで暴動発生：過激派アジテーションと興行の責任",
+    "subhead": "Monetised online antagonism spills into physical violence as political provocateurs hijack sensationalist youth entertainment formats.",
+    "lead_snippet": "Irish police deployed anti-riot units to disperse widespread street disturbances after an influencer combat tournament was targeted by inflammatory political agitators seeking viral publicity.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/uk-news/2026/nov/08/riot-influencer-boxing-event-attended-tommy-robinson-ireland",
+    "path": "culture/influencer-combat-sports-civil-disorder-dublin-ireland/index.html",
+    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "premier-league-thriller-manchester-united-aston-villa-dorgu",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT & GADGETS • PREMIER LEAGUE & ATHLETIC TACTICS",
+    "date": "2026-11-09",
+    "title": "Eight-Goal Spectacle at Villa Park as Tactical High-Pressing Reshapes Premier League Encounters",
+    "headline_ja": "プレミアリーグで激突するハイプレス戦術：8得点の乱打戦が示す現代サッカーの進化",
+    "subhead": "End-to-end tactical volatility exposes physical limits of hyper-intense defensive structures amid congested fixture schedules.",
+    "lead_snippet": "A breathtaking 4-4 draw between Aston Villa and Manchester United provided compelling evidence of how relentless pressing systems produce exhilarating yet fragile modern football.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/football/2026/nov/08/manchester-united-aston-villa-premier-league-match-report",
+    "path": "entertainment/premier-league-thriller-manchester-united-aston-villa-dorgu/index.html",
+    "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-11-09": {
+    "dateStr": "Monday November 9 2026",
+    "editionLabel": "2026年11月9日 (月) 号 【本日・最新・全12記事】",
+    "tagline": "特集：エヌビディアCEO監視疑惑・負傷兵ドローン救出・中国BYD家宅捜索・効率性の罠・プレミア4-4死闘",
+    "topLeadSlug": "nvidia-jensen-huang-investigation-foreign-intelligence-targeting",
+    "subLeadSlugs": [
+      "ukraine-drone-casualty-evacuation-frontline-medical-rescue",
+      "chinese-carmaker-byd-offices-raided-netherlands-copycat-claim",
+      "the-efficiency-trap-why-optimising-everything-can-backfire"
+    ],
+    "leftDispatches": [
+      "ai-home-energy-optimisation-heating-bills-smart-thermostats",
+      "trump-signals-hardline-pivot-following-midterm-election-setbacks",
+      "israel-coalition-negotiations-eisenkot-netanyahu-allies",
+      "abdul-el-sayed-public-health-epidemiology-politics"
+    ],
+    "rightDigestSlugs": [
+      "cruise-ship-pianist-maritime-survival-nine-hours-open-ocean",
+      "willie-nelson-reflections-on-longevity-country-music-memoir",
+      "influencer-combat-sports-civil-disorder-dublin-ireland",
+      "premier-league-thriller-manchester-united-aston-villa-dorgu"
+    ]
+  },
   "2026-11-06": {
     "dateStr": "Friday November 6 2026",
-    "editionLabel": "2026年11月6日 (金) 号 【本日・最新・全12記事】",
+    "editionLabel": "2026年11月6日 (金) 号 【全12記事・アーカイブ】",
     "tagline": "特集：仏血液事業所サイバー攻撃・ナスダック急落・BMW再編・マンチェスター都市外交・パイナップルピザ解雇",
     "topLeadSlug": "france-national-blood-service-hack-cyber-attack-europe",
     "subLeadSlugs": [
