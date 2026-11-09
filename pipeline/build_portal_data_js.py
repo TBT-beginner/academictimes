@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-11-10": {
+            "dateStr": "Tuesday November 10 2026",
+            "editionLabel": "2026年11月10日 (火) 号 【本日・最新・全12記事】",
+            "tagline": "特集：スティッフパーソン症候群新薬・英再エネ増税駆け込み・国防長官弾劾決議・露軍戦死データ・光害市民科学",
+            "topLeadSlug": "medical-breakthrough-offers-hope-to-people-with-same-stiff-person-syndrome-as-celine-dion",
+            "subLeadSlugs": [
+                "uk-households-green-energy-installer-rush-april-vat-hike",
+                "pete-hegseth-impeachment-thomas-massie",
+                "russians-killed-ukraine-war-leaked-data"
+            ],
+            "leftDispatches": [
+                "starwatch-count-stars-find-out-how-dark-sky-is",
+                "burnham-homelessness-pledge-rough-sleeping-england",
+                "uk-young-people-job-work-employment-crisis-paul-nowak-milburn-review",
+                "donald-trump-humiliated-angry-europe"
+            ],
+            "rightDigestSlugs": [
+                "russell-brand-sentenced-rape-sexual-assault",
+                "judo-star-teddy-riner-plan-france-presidential-election",
+                "u2-carnaval-de-luz-review",
+                "nvidia-jensen-huang-affair-trump-musk"
+            ]
+        },
         "2026-11-09": {
             "dateStr": "Monday November 9 2026",
-            "editionLabel": "2026年11月9日 (月) 号 【本日・最新・全12記事】",
+            "editionLabel": "2026年11月9日 (月) 号 【全12記事・アーカイブ】",
             "tagline": "特集：エヌビディアCEO監視疑惑・負傷兵ドローン救出・中国BYD家宅捜索・効率性の罠・プレミア4-4死闘",
             "topLeadSlug": "nvidia-jensen-huang-investigation-foreign-intelligence-targeting",
             "subLeadSlugs": [

@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 453 articles, daily editions, and high-school media literacy references.
+// Contains all 465 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -6909,15 +6909,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/football/2026/nov/08/manchester-united-aston-villa-premier-league-match-report",
     "path": "entertainment/premier-league-thriller-manchester-united-aston-villa-dorgu/index.html",
     "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "medical-breakthrough-offers-hope-to-people-with-same-stiff-person-syndrome-as-celine-dion",
+    "category": "science",
+    "category_label": "SCIENCE & TECH • CLINICAL IMMUNOLOGY & NEUROLOGY",
+    "date": "2026-11-10",
+    "title": "Clinical Trial Breakthrough Offers New Hope for Stiff Person Syndrome Patients",
+    "headline_ja": "スティッフパーソン症候群に新薬治験の光明：難治性自己免疫疾患の寛解へ前進",
+    "subhead": "Targeted immunotherapy demonstrates remarkable functional recovery in debilitating autoimmune neurological disorder, paving path for regulatory approval.",
+    "lead_snippet": "A pioneering therapeutic intervention has demonstrated striking efficacy in halting muscle rigidity and debilitating spasms among individuals battling stiff person syndrome.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/09/medical-breakthrough-offers-hope-to-people-with-same-stiff-person-syndrome-as-celine-dion",
+    "path": "science/medical-breakthrough-offers-hope-to-people-with-same-stiff-person-syndrome-as-celine-dion/index.html",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-households-green-energy-installer-rush-april-vat-hike",
+    "category": "environment",
+    "category_label": "ENVIRONMENT & CLIMATE • GREEN TAXATION & ENERGY TRANSITION",
+    "date": "2026-11-10",
+    "title": "UK Households Face Scramble for Green Energy Installers Ahead of VAT Exemption Repeal",
+    "headline_ja": "英家庭が環境設備導入で駆け込み需要：付加価値税ゼロ免除廃止を前に設置業者逼迫",
+    "subhead": "Impending termination of zero-rate VAT on domestic heat pumps and solar arrays triggers installer bottlenecks across decarbonisation sector.",
+    "lead_snippet": "British homeowners are rushing to secure installation dates for low-carbon heating apparatus prior to the scheduled expiration of crucial tax exemptions.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/nov/09/uk-households-green-energy-installer-rush-april-vat-hike",
+    "path": "environment/uk-households-green-energy-installer-rush-april-vat-hike/index.html",
+    "image": "https://images.unsplash.com/photo-1508873696983-2df5293cb32f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "pete-hegseth-impeachment-thomas-massie",
+    "category": "law",
+    "category_label": "LAW & JUSTICE • CONSTITUTIONAL LAW & WAR POWERS",
+    "date": "2026-11-10",
+    "title": "Congressional Motion Seeks Impeachment Over Unauthorized Military Force Deployments",
+    "headline_ja": "米議会で国防長官弾劾決議案が提出：議会承認なき軍事力行使と憲法違反を巡り",
+    "subhead": "Bipartisan friction erupts as constitutional conservatives challenge executive branch overreach and statutory War Powers Act compliance.",
+    "lead_snippet": "A high-profile conservative representative has introduced articles of impeachment against the secretary of defense for executing unapproved offensive strikes.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/nov/09/pete-hegseth-impeachment-thomas-massie",
+    "path": "law/pete-hegseth-impeachment-thomas-massie/index.html",
+    "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "russians-killed-ukraine-war-leaked-data",
+    "category": "world",
+    "category_label": "WORLD & SECURITY • DEMOGRAPHIC IMPACT OF ATTRITIONAL WARFARE",
+    "date": "2026-11-10",
+    "title": "Leaked Casualty Records Expose Severe Demographic Toll of Attritional War in Ukraine",
+    "headline_ja": "ロシア戦死者流出データが示す人口動態の激震：40万人超の損失と過疎化の加速",
+    "subhead": "Unprecedented analysis of official registry archives uncovers wartime fatality figures far surpassing official Kremlin admissions.",
+    "lead_snippet": "Comprehensive analysis of leaked governmental registry files indicates Russian military fatalities have eclipsed four hundred thousand since the 2022 invasion.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/09/russians-killed-ukraine-war-leaked-data",
+    "path": "world/russians-killed-ukraine-war-leaked-data/index.html",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "starwatch-count-stars-find-out-how-dark-sky-is",
+    "category": "science",
+    "category_label": "SCIENCE & TECH • CITIZEN ASTRONOMY & LIGHT POLLUTION",
+    "date": "2026-11-10",
+    "title": "Astronomers Mobilize Citizen Science to Quantify Night-Sky Light Pollution via Pegasus Constellation",
+    "headline_ja": "ペガスス座の星を数えて光害を測る：市民科学が解き明かす夜空の闇の喪失",
+    "subhead": "The Great Square of Pegasus serves as global celestial benchmark for mapping encroaching artificial luminescent interference.",
+    "lead_snippet": "Stargazers worldwide are participating in an accessible observational project measuring atmospheric darkness by enumerating stars within an iconic autumn constellation.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/09/starwatch-count-stars-find-out-how-dark-sky-is",
+    "path": "science/starwatch-count-stars-find-out-how-dark-sky-is/index.html",
+    "image": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "burnham-homelessness-pledge-rough-sleeping-england",
+    "category": "society",
+    "category_label": "SOCIETY & POLICY • SOCIAL HOUSING & HOMELESSNESS ERADICATION",
+    "date": "2026-11-10",
+    "title": "Acute Social Housing Deficit Threatens Regional Ambitions to Eliminate Rough Sleeping",
+    "headline_ja": "深刻な公営住宅不足が野心に影：路上生活撲滅公約と住宅供給の壁",
+    "subhead": "Stark shortage of affordable long-term dwellings places emergency winter accommodation pledges under acute structural pressure.",
+    "lead_snippet": "Ambitious political commitments to provide beds for every homeless individual face severe headwinds due to critical deficits in permanent social housing.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/nov/09/burnham-homelessness-pledge-rough-sleeping-england",
+    "path": "society/burnham-homelessness-pledge-rough-sleeping-england/index.html",
+    "image": "https://images.unsplash.com/photo-1518398046578-8cca57782e17?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-young-people-job-work-employment-crisis-paul-nowak-milburn-review",
+    "category": "society",
+    "category_label": "SOCIETY & ECONOMY • YOUTH UNEMPLOYMENT & APPRENTICESHIPS",
+    "date": "2026-11-10",
+    "title": "Trade Union Congress Urges Structural Investment to Halt Compounding Youth Unemployment Crisis",
+    "headline_ja": "英労働組合会議が若者雇用危機に警鐘：給付削減ではなく構造的投資を訴え",
+    "subhead": "Labour union leadership calls for robust vocational funding and fair wages ahead of pivotal government social mobility review.",
+    "lead_snippet": "Union leaders have warned that punitive welfare restrictions will fail to solve the systemic crisis keeping hundreds of thousands of young Britons out of employment.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/nov/09/uk-young-people-job-work-employment-crisis-paul-nowak-milburn-review",
+    "path": "society/uk-young-people-job-work-employment-crisis-paul-nowak-milburn-review/index.html",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "donald-trump-humiliated-angry-europe",
+    "category": "world",
+    "category_label": "WORLD & GEOPOLITICS • TRANSATLANTIC DIPLOMACY & TRADE FRICTION",
+    "date": "2026-11-10",
+    "title": "Transatlantic Alliances Strain as US Political Shocks Recast Trade and Defense Guarantees",
+    "headline_ja": "大西洋同盟に走る亀裂：米国内政激変と欧州に対する防衛・通商圧力の激化",
+    "subhead": "European capitals prepare for tariff escalations and conditional security guarantees as domestic political friction roils Washington.",
+    "lead_snippet": "Geopolitical analysts warn that European leaders must swiftly construct autonomous defense and industrial architectures in response to mounting transatlantic instability.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/commentisfree/2026/nov/09/donald-trump-humiliated-angry-europe",
+    "path": "world/donald-trump-humiliated-angry-europe/index.html",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "russell-brand-sentenced-rape-sexual-assault",
+    "category": "law",
+    "category_label": "LAW & SOCIETY • CRIMINAL SENTENCING & INSTITUTIONAL ACCOUNTABILITY",
+    "date": "2026-11-10",
+    "title": "High-Profile Conviction Sets Precedent for Historical Sexual Abuse Accountability in Media",
+    "headline_ja": "英著名俳優に懲役10年超の実刑判決：過去の性的虐待に対する司法的断罪とメディア界の責任",
+    "subhead": "Judicial ruling delivers severe custodial sentence, condemning systemic complicity and entitlement across entertainment industry.",
+    "lead_snippet": "A British judge has sentenced high-profile media personality Russell Brand to over a decade of imprisonment following conclusive convictions for predatory offences.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/news/2026/nov/09/russell-brand-sentenced-rape-sexual-assault",
+    "path": "law/russell-brand-sentenced-rape-sexual-assault/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "judo-star-teddy-riner-plan-france-presidential-election",
+    "category": "culture",
+    "category_label": "CULTURE & POLITICS • ATHLETIC CITIZENSHIP & DEMOCRATIC RENEWAL",
+    "date": "2026-11-10",
+    "title": "Five-Time Olympic Champion Launches Independent Presidential Bid to Bridge French Political Divide",
+    "headline_ja": "五輪柔道5冠テディ・リネール氏が仏大統領選出馬へ：分断を越える超党派の団結を提唱",
+    "subhead": "Celebrated sporting icon challenges conventional party establishments by mobilising grassroots civic cohesion and educational equity.",
+    "lead_snippet": "France’s revered Olympic champion Teddy Riner has announced an independent presidential bid seeking to heal severe partisan fractures.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/09/judo-star-teddy-riner-plan-france-presidential-election",
+    "path": "culture/judo-star-teddy-riner-plan-france-presidential-election/index.html",
+    "image": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "u2-carnaval-de-luz-review",
+    "category": "culture",
+    "category_label": "CULTURE & MUSIC • CONTEMPORARY ROCK & ARTISTIC LONGEVITY",
+    "date": "2026-11-10",
+    "title": "Veteran Rock Vanguard U2 Rekindles Sonic Idealism on First Album in a Decade",
+    "headline_ja": "世界的ロックバンドU2が10年ぶりの新作を発表：音響的理想主義と芸術的再生の軌跡",
+    "subhead": "Irish stadium pioneers channel impassioned melodies and rejuvenating sonic architecture across landmark new LP release.",
+    "lead_snippet": "After nearly a decade without original studio material, U2 return with a revitalised album marked by melodic grandeur and lyrical conviction.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/music/2026/nov/09/u2-carnaval-de-luz-review",
+    "path": "culture/u2-carnaval-de-luz-review/index.html",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "nvidia-jensen-huang-affair-trump-musk",
+    "category": "entertainment",
+    "category_label": "TECH & CORPORATE CULTURE • EXECUTIVE SCANDAL & GEOPOLITICAL FALLOUT",
+    "date": "2026-11-10",
+    "title": "Silicon Valley Tech Titan Solidarity Tested Amid Executive Scandal and Security Fallout",
+    "headline_ja": "シリコンバレーのテック界重鎮に激震：フアンCEOの不倫・諜報疑惑と業界の団結",
+    "subhead": "Prominent industry magnates rally around semiconductor leader as espionage allegations trigger unprecedented corporate governance crisis.",
+    "lead_snippet": "Silicon Valley luminaries have offered defensive solidarity to Nvidia’s chief executive following admissions regarding a relationship entangled in counter-intelligence probes.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/09/nvidia-jensen-huang-affair-trump-musk",
+    "path": "entertainment/nvidia-jensen-huang-affair-trump-musk/index.html",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-11-10": {
+    "dateStr": "Tuesday November 10 2026",
+    "editionLabel": "2026年11月10日 (火) 号 【本日・最新・全12記事】",
+    "tagline": "特集：スティッフパーソン症候群新薬・英再エネ増税駆け込み・国防長官弾劾決議・露軍戦死データ・光害市民科学",
+    "topLeadSlug": "medical-breakthrough-offers-hope-to-people-with-same-stiff-person-syndrome-as-celine-dion",
+    "subLeadSlugs": [
+      "uk-households-green-energy-installer-rush-april-vat-hike",
+      "pete-hegseth-impeachment-thomas-massie",
+      "russians-killed-ukraine-war-leaked-data"
+    ],
+    "leftDispatches": [
+      "starwatch-count-stars-find-out-how-dark-sky-is",
+      "burnham-homelessness-pledge-rough-sleeping-england",
+      "uk-young-people-job-work-employment-crisis-paul-nowak-milburn-review",
+      "donald-trump-humiliated-angry-europe"
+    ],
+    "rightDigestSlugs": [
+      "russell-brand-sentenced-rape-sexual-assault",
+      "judo-star-teddy-riner-plan-france-presidential-election",
+      "u2-carnaval-de-luz-review",
+      "nvidia-jensen-huang-affair-trump-musk"
+    ]
+  },
   "2026-11-09": {
     "dateStr": "Monday November 9 2026",
-    "editionLabel": "2026年11月9日 (月) 号 【本日・最新・全12記事】",
+    "editionLabel": "2026年11月9日 (月) 号 【全12記事・アーカイブ】",
     "tagline": "特集：エヌビディアCEO監視疑惑・負傷兵ドローン救出・中国BYD家宅捜索・効率性の罠・プレミア4-4死闘",
     "topLeadSlug": "nvidia-jensen-huang-investigation-foreign-intelligence-targeting",
     "subLeadSlugs": [
