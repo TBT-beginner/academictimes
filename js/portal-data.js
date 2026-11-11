@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 465 articles, daily editions, and high-school media literacy references.
+// Contains all 477 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -7089,15 +7089,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/technology/2026/nov/09/nvidia-jensen-huang-affair-trump-musk",
     "path": "entertainment/nvidia-jensen-huang-affair-trump-musk/index.html",
     "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ai-close-to-impossible-assess-university-coursework-regulator",
+    "category": "science",
+    "category_label": "SCIENCE & TECH • GENERATIVE AI & HIGHER PEDAGOGY",
+    "date": "2026-11-12",
+    "title": "AI Has Rendered Traditional University Coursework Assessment Nearly Impossible, Regulator Warns",
+    "headline_ja": "生成AIが大学のレポート評価を「ほぼ不可能」に：英高等教育規制機関が警告",
+    "subhead": "Higher education watchdogs urge structural shift toward supervised examinations as generative tools undermine academic integrity.",
+    "lead_snippet": "Educational regulators have warned that advanced generative algorithms have made authentic assessment of unsupervised university essays close to impossible.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/education/2026/nov/11/ai-close-to-impossible-assess-university-coursework-regulator",
+    "path": "science/ai-close-to-impossible-assess-university-coursework-regulator/index.html",
+    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "the-world-we-know-is-over-marshall-islands-president-cop31",
+    "category": "environment",
+    "category_label": "ENVIRONMENT & CLIMATE • PACIFIC SOVEREIGNTY & SEA LEVEL RISE",
+    "date": "2026-11-12",
+    "title": "The World We Know Is Over Without Urgent Action, Warns Marshall Islands President Ahead of COP31",
+    "headline_ja": "「我々の知る世界は終わる」：COP31を前にマーシャル諸島大統領が海面上昇と国家存亡を警告",
+    "subhead": "Low-lying atoll nations demand legally enforceable loss-and-damage mechanisms as global heating accelerates existential perils.",
+    "lead_snippet": "The leader of the Marshall Islands has warned international negotiators that the existing global order will collapse unless binding climate targets are enforced.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/nov/11/the-world-we-know-is-over-marshall-islands-president-cop31",
+    "path": "environment/the-world-we-know-is-over-marshall-islands-president-cop31/index.html",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "spain-general-strike-housing-costs",
+    "category": "world",
+    "category_label": "WORLD & SOCIETY • URBAN ECONOMICS & TENANT MOVEMENTS",
+    "date": "2026-11-12",
+    "title": "Millions Join Spain’s First General Strike in 14 Years to Protest Paralyzing Housing Costs",
+    "headline_ja": "スペインで14年ぶりのゼネスト：家賃高騰と観光公害に数百万人が抗議",
+    "subhead": "Mass civic mobilisation shuts down transport networks and commercial districts, demanding immediate statutory rent controls.",
+    "lead_snippet": "Millions of Spanish citizens have participated in a nationwide general strike protesting exorbitant urban rental prices driven by speculative investment.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/11/spain-general-strike-housing-costs",
+    "path": "world/spain-general-strike-housing-costs/index.html",
+    "image": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "woman-in-saudi-arabia-sentenced-to-100-lashes-for-giving-birth-outside-marriage",
+    "category": "law",
+    "category_label": "LAW & HUMAN RIGHTS • INTERNATIONAL JURISDICTION & CORPORAL PUNISHMENT",
+    "date": "2026-11-12",
+    "title": "Saudi Court Sentences Foreign Worker to 100 Lashes for Extramarital Childbirth",
+    "headline_ja": "サウジ裁判所が婚外出産で外国人女性に鞭打ち100回の刑：国際人権団体から非難集中",
+    "subhead": "Severe corporal sentence against vulnerable domestic worker exposes stark limits of Gulf state’s social modernisation reforms.",
+    "lead_snippet": "Human rights organisations have condemned a judicial ruling in Saudi Arabia sentencing a migrant domestic worker to one hundred lashes for giving birth outside wedlock.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/global-development/2026/nov/11/woman-in-saudi-arabia-sentenced-to-100-lashes-for-giving-birth-outside-marriage",
+    "path": "law/woman-in-saudi-arabia-sentenced-to-100-lashes-for-giving-birth-outside-marriage/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "one-flowered-wintergreen-rescue-eroding-coast-scotland",
+    "category": "environment",
+    "category_label": "ENVIRONMENT & BIODIVERSITY • BOTANICAL RESCUE & COASTAL EROSION",
+    "date": "2026-11-12",
+    "title": "Botanists Execute Urgent Rescue of Britain’s Rarest Wildflowers from Collapsing Coastal Cliffs",
+    "headline_ja": "英最希少の高山性野草を断崖から緊急救出：海岸浸食の危機に挑む植物学者チーム",
+    "subhead": "Fragile colonies of one-flowered wintergreen translocated as North Sea wave surges crumble designated nature reserves.",
+    "lead_snippet": "Specialist botanists in Scotland have carried out a delicate emergency translocation operation to save endangered wildflowers from crumbling coastal bluffs.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/nov/11/one-flowered-wintergreen-rescue-eroding-coast-scotland",
+    "path": "environment/one-flowered-wintergreen-rescue-eroding-coast-scotland/index.html",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "tories-raise-state-pension-age-70-triple-lock-torsten-bell",
+    "category": "society",
+    "category_label": "SOCIETY & ECONOMY • DEMOGRAPHIC AGING & PENSION SUSTAINABILITY",
+    "date": "2026-11-12",
+    "title": "State Pension Age May Need to Rise Above 70 to Preserve Triple Lock, Thinktank Warns",
+    "headline_ja": "年金支給開始年齢を70歳超への引き上げ必至か：トリプルロック維持と世代間格差の限界",
+    "subhead": "Mounting fiscal pressures and demographic aging trigger fierce debate over intergenerational equity and public finances.",
+    "lead_snippet": "Economic researchers have warned that maintaining generous pension guarantees will force future generations to work until their seventies.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/money/2026/nov/11/tories-raise-state-pension-age-70-triple-lock-torsten-bell",
+    "path": "society/tories-raise-state-pension-age-70-triple-lock-torsten-bell/index.html",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "disabled-people-in-england-have-to-wait-up-to-two-years-for-wheelchairs",
+    "category": "society",
+    "category_label": "SOCIETY & HEALTHCARE • ASSISTIVE MOBILITY & PUBLIC HEALTH BOTTLENECKS",
+    "date": "2026-11-12",
+    "title": "Disabled People in England Endure Two-Year Delays for Essential Wheelchairs, Audit Reveals",
+    "headline_ja": "英障害者が車椅子給付で最大2年待ち：国民保健サービス（NHS）供給網の危機",
+    "subhead": "Paralysing bureaucratic backlogs and chronic funding deficits trap vulnerable individuals in physical isolation.",
+    "lead_snippet": "An exhaustive healthcare investigation has revealed that thousands of mobility-impaired individuals across England are languishing on multi-year waiting lists for custom wheelchairs.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/nov/11/disabled-people-in-england-have-to-wait-up-to-two-years-for-wheelchairs",
+    "path": "society/disabled-people-in-england-have-to-wait-up-to-two-years-for-wheelchairs/index.html",
+    "image": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "bank-of-england-inflation-response-risks-higher-interest-rates-for-longer",
+    "category": "world",
+    "category_label": "WORLD ECONOMY • MONETARY POLICY & STAGFLATION RISKS",
+    "date": "2026-11-12",
+    "title": "Bank of England’s Cautious Rate-Cutting Strategy Risks Prolonged Economic Stagnation",
+    "headline_ja": "イングランド銀行の慎重姿勢にリスク：高金利長期化が招く景気停滞への懸念",
+    "subhead": "Central bank’s hawkish inertia threatens domestic growth as mortgage refinancing cliffs loom over households.",
+    "lead_snippet": "Leading financial analysts have warned that the Bank of England’s hesitation to aggressively trim benchmark borrowing rates will prolong economic stagnation.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/11/bank-of-england-inflation-response-risks-higher-interest-rates-for-longer",
+    "path": "world/bank-of-england-inflation-response-risks-higher-interest-rates-for-longer/index.html",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "democrats-hegseth-impeachment-vote",
+    "category": "law",
+    "category_label": "LAW & POLITICS • CONGRESSIONAL PROCEDURE & MILITARY OVERSIGHT",
+    "date": "2026-11-12",
+    "title": "House Republicans Table Hegseth Impeachment Resolution as Procedural Warfare Dominates Congress",
+    "headline_ja": "米下院で国防長官弾劾決議案が棚上げ：議会定足数と採決戦術をめぐる攻防",
+    "subhead": "Legislative maneuvers temporarily shield Pentagon chief while exposing profound procedural divisions across Capitol Hill.",
+    "lead_snippet": "House Republican leaders have succeeded in tabling a contentious resolution seeking the impeachment of the secretary of defense.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/nov/11/democrats-hegseth-impeachment-vote",
+    "path": "law/democrats-hegseth-impeachment-vote/index.html",
+    "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "russell-brand-david-walliams-noughties-culture-girls-women",
+    "category": "culture",
+    "category_label": "CULTURE & SOCIOLOGY • MEDIA NOSTALGIA & GENDER ACCOUNTABILITY",
+    "date": "2026-11-12",
+    "title": "Retrospective Reckoning with 2000s Media Culture Exposes Normalised Misogyny and Institutional Complicity",
+    "headline_ja": "2000年代メディア文化への遡及的審判：野放しにされたミソジニーとテレビ界の共犯関係",
+    "subhead": "Sociological examination interrogates how mainstream broadcasters monetised predatory behavior under the guise of edgy satire.",
+    "lead_snippet": "Cultural critics have initiated a comprehensive post-mortem into how noughties television programming trivialised sexual boundaries and protected abusive celebrities.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/commentisfree/2026/nov/11/russell-brand-david-walliams-noughties-culture-girls-women",
+    "path": "culture/russell-brand-david-walliams-noughties-culture-girls-women/index.html",
+    "image": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "aldi-cuts-hundreds-of-uk-head-office-and-logistics-roles-global-cost-trimming",
+    "category": "culture",
+    "category_label": "BUSINESS & CORPORATE CULTURE • RETAIL AUTOMATION & SUPPLY CHAINS",
+    "date": "2026-11-12",
+    "title": "Aldi Trims Hundreds of Corporate and Logistics Positions in Global Cost-Cutting Realignment",
+    "headline_ja": "独ディスカウント大手アルディが英本社・物流部門で数百人削減：効率化と自動化の波",
+    "subhead": "Discount supermarket pioneer consolidates operational headquarters as algorithmic logistics replace traditional management tiers.",
+    "lead_snippet": "Supermarket giant Aldi has initiated widespread redundancies across its UK administrative and distribution divisions to preserve low-price margins.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/11/aldi-cuts-hundreds-of-uk-head-office-and-logistics-roles-global-cost-trimming",
+    "path": "culture/aldi-cuts-hundreds-of-uk-head-office-and-logistics-roles-global-cost-trimming/index.html",
+    "image": "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "mini-record-player-on-track-for-no-1-in-christmas-toy-parade",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT & RETRO CULTURE • TANGIBLE MEDIA REVIVAL & YOUTH TRENDS",
+    "date": "2026-11-12",
+    "title": "Miniature Vinyl Turntables Surge to Forefront of Holiday Trends Amid Tactile Media Revival",
+    "headline_ja": "手のひらサイズのアナログレコードがクリスマス商戦を席巻：Z世代・α世代の手触り回帰",
+    "subhead": "Tangible sonic playback captivates younger demographics seeking sensory engagement beyond digital screens.",
+    "lead_snippet": "A diminutive functional turntable playing collectible miniature vinyl records has emerged as the runaway frontrunner in Britain’s annual festive toy rankings.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/lifeandstyle/2026/nov/11/mini-record-player-on-track-for-no-1-in-christmas-toy-parade",
+    "path": "entertainment/mini-record-player-on-track-for-no-1-in-christmas-toy-parade/index.html",
+    "image": "https://images.unsplash.com/photo-1539375665275-f9de415ef9ac?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-11-12": {
+    "dateStr": "Thursday November 12 2026",
+    "editionLabel": "2026年11月12日 (木) 号 【本日・最新・全12記事】",
+    "tagline": "特集：大学課題AI採点の限界・沈みゆく環礁国COP直訴・スペイン家賃ゼネスト・サウジ鞭打ち判決・車椅子2年待ち危機",
+    "topLeadSlug": "ai-close-to-impossible-assess-university-coursework-regulator",
+    "subLeadSlugs": [
+      "the-world-we-know-is-over-marshall-islands-president-cop31",
+      "spain-general-strike-housing-costs",
+      "woman-in-saudi-arabia-sentenced-to-100-lashes-for-giving-birth-outside-marriage"
+    ],
+    "leftDispatches": [
+      "one-flowered-wintergreen-rescue-eroding-coast-scotland",
+      "tories-raise-state-pension-age-70-triple-lock-torsten-bell",
+      "disabled-people-in-england-have-to-wait-up-to-two-years-for-wheelchairs",
+      "bank-of-england-inflation-response-risks-higher-interest-rates-for-longer"
+    ],
+    "rightDigestSlugs": [
+      "democrats-hegseth-impeachment-vote",
+      "russell-brand-david-walliams-noughties-culture-girls-women",
+      "aldi-cuts-hundreds-of-uk-head-office-and-logistics-roles-global-cost-trimming",
+      "mini-record-player-on-track-for-no-1-in-christmas-toy-parade"
+    ]
+  },
   "2026-11-10": {
     "dateStr": "Tuesday November 10 2026",
-    "editionLabel": "2026年11月10日 (火) 号 【本日・最新・全12記事】",
+    "editionLabel": "2026年11月10日 (火) 号 【全12記事・アーカイブ】",
     "tagline": "特集：スティッフパーソン症候群新薬・英再エネ増税駆け込み・国防長官弾劾決議・露軍戦死データ・光害市民科学",
     "topLeadSlug": "medical-breakthrough-offers-hope-to-people-with-same-stiff-person-syndrome-as-celine-dion",
     "subLeadSlugs": [

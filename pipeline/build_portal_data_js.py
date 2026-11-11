@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-11-12": {
+            "dateStr": "Thursday November 12 2026",
+            "editionLabel": "2026年11月12日 (木) 号 【本日・最新・全12記事】",
+            "tagline": "特集：大学課題AI採点の限界・沈みゆく環礁国COP直訴・スペイン家賃ゼネスト・サウジ鞭打ち判決・車椅子2年待ち危機",
+            "topLeadSlug": "ai-close-to-impossible-assess-university-coursework-regulator",
+            "subLeadSlugs": [
+                "the-world-we-know-is-over-marshall-islands-president-cop31",
+                "spain-general-strike-housing-costs",
+                "woman-in-saudi-arabia-sentenced-to-100-lashes-for-giving-birth-outside-marriage"
+            ],
+            "leftDispatches": [
+                "one-flowered-wintergreen-rescue-eroding-coast-scotland",
+                "tories-raise-state-pension-age-70-triple-lock-torsten-bell",
+                "disabled-people-in-england-have-to-wait-up-to-two-years-for-wheelchairs",
+                "bank-of-england-inflation-response-risks-higher-interest-rates-for-longer"
+            ],
+            "rightDigestSlugs": [
+                "democrats-hegseth-impeachment-vote",
+                "russell-brand-david-walliams-noughties-culture-girls-women",
+                "aldi-cuts-hundreds-of-uk-head-office-and-logistics-roles-global-cost-trimming",
+                "mini-record-player-on-track-for-no-1-in-christmas-toy-parade"
+            ]
+        },
         "2026-11-10": {
             "dateStr": "Tuesday November 10 2026",
-            "editionLabel": "2026年11月10日 (火) 号 【本日・最新・全12記事】",
+            "editionLabel": "2026年11月10日 (火) 号 【全12記事・アーカイブ】",
             "tagline": "特集：スティッフパーソン症候群新薬・英再エネ増税駆け込み・国防長官弾劾決議・露軍戦死データ・光害市民科学",
             "topLeadSlug": "medical-breakthrough-offers-hope-to-people-with-same-stiff-person-syndrome-as-celine-dion",
             "subLeadSlugs": [
