@@ -2256,6 +2256,21 @@ try:
 except ImportError:
     pass
 
+for _batch_mod, _batch_var in [
+    ("batch37_articles_data", "BATCH37_SENIOR"),
+    ("batch38_articles_data", "BATCH38_SENIOR"),
+    ("batch39_articles_data", "BATCH39_SENIOR"),
+    ("batch40_articles_data", "BATCH40_SENIOR"),
+]:
+    try:
+        _mod = __import__(_batch_mod)
+        for _art in getattr(_mod, _batch_var, []):
+            if _art.get("slug") not in _existing_slugs:
+                ARTICLES.append(_art)
+                _existing_slugs.add(_art.get("slug"))
+    except ImportError:
+        pass
+
 _DATE_MAP = {
     "soai-reaction-nobel-chemistry": "2026-10-10",
     "regulatory-t-cells-nobel-breakthrough": "2026-10-10",
