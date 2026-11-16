@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 525 articles, daily editions, and high-school media literacy references.
+// Contains all 537 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -7989,15 +7989,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/tv-and-radio/2026/nov/14/philippines-carmelle-wins-first-eurovision-contest-in-asia",
     "path": "entertainment/philippines-carmelle-wins-first-eurovision-contest-in-asia/index.html",
     "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
+    "category": "world",
+    "category_label": "WORLD • INDO-PACIFIC & ALLIANCE DIPLOMACY",
+    "date": "2026-11-17",
+    "title": "Albanese Signs US AI Supply Chain Pact Ahead of High-Stakes Trump and Quad Talks",
+    "headline_ja": "豪アルバニージー首相、トランプ政権のAI供給網協定に署名——Quad首脳会談を控えた外交の綱渡り",
+    "subhead": "Australian prime minister seeks deeper Indo-Pacific engagement while balancing strategic alignment and regional trade interests.",
+    "lead_snippet": "Anthony Albanese has endorsed Washington’s artificial intelligence supply chain pact before pivotal Quad and bilateral talks with Donald Trump.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/16/albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
+    "path": "world/albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars/index.html",
+    "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ai-models-fallible-denial-climate-science-unesco-cop31",
+    "category": "science",
+    "category_label": "SCIENCE & TECH • AI & CLIMATE LITERACY",
+    "date": "2026-11-17",
+    "title": "AI Models Found ‘Weak and Fallible’ on Climate Science in UN-Backed COP31 Study",
+    "headline_ja": "国連支援調査が警鐘：主要AIモデルは気候科学に「弱く誤りやすい」、COP31で偽情報リスクを指摘",
+    "subhead": "Researchers warn chatbots risk amplifying climate skepticism when trained on unvetted web debates.",
+    "lead_snippet": "A UN-backed audit presented at COP31 reveals major artificial intelligence systems frequently misstate climate science and downplay emissions urgency.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/16/ai-models-fallible-denial-climate-science-unesco-cop31",
+    "path": "science/ai-models-fallible-denial-climate-science-unesco-cop31/index.html",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "datacenter-emissions-study",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • AI INFRASTRUCTURE & CARBON",
+    "date": "2026-11-17",
+    "title": "Surge of US Datacenters Adds Equivalent of Denmark’s Annual Emissions, Study Finds",
+    "headline_ja": "米AIデータセンター急増の衝撃：増加分のCO2排出量がデンマーク一国の年間排出量に匹敵と研究判明",
+    "subhead": "Rapid expansion of AI computing clusters strains regional power grids and revives coal and gas generation.",
+    "lead_snippet": "New research calculates that expanding US AI datacenters have added carbon emissions matching the entire annual footprint of Denmark.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/16/datacenter-emissions-study",
+    "path": "environment/datacenter-emissions-study/index.html",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "new-james-bond-announced-and-the-names-pattinson-robert-pattinson",
+    "category": "culture",
+    "category_label": "CULTURE • CINEMA & POP HERITAGE",
+    "date": "2026-11-17",
+    "title": "Robert Pattinson Named the New James Bond, Opening Fresh Era for Iconic British Franchise",
+    "headline_ja": "新ジェームズ・ボンド役にロバート・パティンソン氏が正式決定：英象徴的スパイ映画が新時代へ",
+    "subhead": "British actor takes over the 007 mantle, promising psychological depth alongside classic espionage spectacle.",
+    "lead_snippet": "Producers have unveiled Robert Pattinson as the next James Bond, blending prestige cinema pedigree with global blockbuster appeal.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/culture/2026/nov/16/new-james-bond-announced-and-the-names-pattinson-robert-pattinson",
+    "path": "culture/new-james-bond-announced-and-the-names-pattinson-robert-pattinson/index.html",
+    "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "eu-states-immigration-return-hubs-rwanda",
+    "category": "world",
+    "category_label": "WORLD • MIGRATION & HUMAN RIGHTS",
+    "date": "2026-11-17",
+    "title": "Five EU States Announce Plans for Controversial Immigration ‘Return Hubs’ in Rwanda",
+    "headline_ja": "EU 5カ国、ルワンダでの移民「送還ハブ」設置計画を発表——欧州の難民・国境政策に大きな波紋",
+    "subhead": "Coalition of European governments pursues offshore processing centres despite sharp criticism from human rights monitors.",
+    "lead_snippet": "Five European Union countries unveiled plans to transfer rejected asylum seekers to third-country return hubs in Rwanda.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
+    "path": "world/eu-states-immigration-return-hubs-rwanda/index.html",
+    "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "microsoft-global-outage-cause",
+    "category": "science",
+    "category_label": "SCIENCE & TECH • CLOUD INFRASTRUCTURE",
+    "date": "2026-11-17",
+    "title": "Microsoft Traces Global System Outage to Months-Old Latent Software Bug",
+    "headline_ja": "マイクロソフト、世界的システム障害の原因を特定：数カ月前から潜んでいたソフトウェアのバグが連鎖",
+    "subhead": "Post-mortem report highlights systemic fragility when global public infrastructure depends on a single cloud provider.",
+    "lead_snippet": "Microsoft confirmed that a dormant code defect introduced months earlier triggered cascading failures across global cloud services.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/16/microsoft-global-outage-cause",
+    "path": "science/microsoft-global-outage-cause/index.html",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "home-insurance-premiums-inflation-unaffordable-australia-natural-disasters",
+    "category": "society",
+    "category_label": "SOCIETY • CLIMATE ECONOMICS & HOUSING",
+    "date": "2026-11-17",
+    "title": "Pay $8,000 or Go Uninsured: Surging Home Insurance Premiums Hit Australian Households",
+    "headline_ja": "年8,000ドルか無保険か：自然災害激甚化で豪州の住宅保険料がインフレ超えの高騰、生活直撃",
+    "subhead": "Extreme floods and bushfires push disaster coverage beyond household budgets, raising fears of growing uninsurable zones.",
+    "lead_snippet": "Australian families face an impossible choice between $8,000 annual insurance bills or leaving their homes unprotected against disasters.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/australia-news/2026/nov/17/home-insurance-premiums-inflation-unaffordable-australia-natural-disasters",
+    "path": "society/home-insurance-premiums-inflation-unaffordable-australia-natural-disasters/index.html",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "europes-wadden-sea-is-a-natural-wonder-so-why-might-it-join-the-world-heritage-in-danger-list",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • BIODIVERSITY & HERITAGE",
+    "date": "2026-11-17",
+    "title": "Europe’s Wadden Sea Faces World Heritage ‘In Danger’ Listing Amid Drilling and Climate Threats",
+    "headline_ja": "欧州最大の干潟「ワッデン海」が危機遺産リスト入りの瀬戸際：ガス掘削と海面上昇の二重の脅威",
+    "subhead": "UNESCO experts warn gas extraction, coastal dredging, and rising seas endanger Europe’s largest tidal flat sanctuary.",
+    "lead_snippet": "Europe’s celebrated Wadden Sea tidal flats could be placed on UNESCO’s In Danger list due to fossil-fuel drilling and climate pressures.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/nov/16/europes-wadden-sea-is-a-natural-wonder-so-why-might-it-join-the-world-heritage-in-danger-list",
+    "path": "environment/europes-wadden-sea-is-a-natural-wonder-so-why-might-it-join-the-world-heritage-in-danger-list/index.html",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ministers-to-end-palantir-contract-nhs-england-2029",
+    "category": "law",
+    "category_label": "LAW • HEALTH DATA SOVEREIGNTY",
+    "date": "2026-11-17",
+    "title": "UK Ministers Confirm Plan to End Palantir’s NHS England Data Contract in 2029",
+    "headline_ja": "英政府、2029年に米パランティア社とのNHS医療データ契約終了を決定——公共データ主権の回復へ",
+    "subhead": "Government moves toward in-house public health data infrastructure amid long-running privacy and sovereignty debates.",
+    "lead_snippet": "British ministers plan to phase out Palantir’s NHS England federated data contract by 2029 in favor of publicly owned systems.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/16/ministers-to-end-palantir-contract-nhs-england-2029",
+    "path": "law/ministers-to-end-palantir-contract-nhs-england-2029/index.html",
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-blood-services-urgent-appeal-donations-winter",
+    "category": "society",
+    "category_label": "SOCIETY • PUBLIC HEALTH & CIVIC DUTY",
+    "date": "2026-11-17",
+    "title": "UK Blood Services Issue Urgent Winter Appeal as Hospital Reserves Dip",
+    "headline_ja": "英血液事業機関、冬を前に緊急献血アピール：悪天候と季節性感染症で輸血用血液の備蓄が逼迫",
+    "subhead": "Seasonal respiratory illnesses and stormy weather disrupt appointments while hospital trauma and cancer demand stays high.",
+    "lead_snippet": "Health authorities urge eligible donors across the UK to book appointments urgently as winter pressures squeeze blood supplies.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/nov/16/uk-blood-services-urgent-appeal-donations-winter",
+    "path": "society/uk-blood-services-urgent-appeal-donations-winter/index.html",
+    "image": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "near-philistine-fury-shakespeare-institute-plan-leave-stratford-upon-avon-edgbaston",
+    "category": "culture",
+    "category_label": "CULTURE • HERITAGE & HIGHER EDUCATION",
+    "date": "2026-11-17",
+    "title": "‘Near-Philistine’: Fury Greets Plan to Move Shakespeare Institute Out of Stratford-upon-Avon",
+    "headline_ja": "「文化的無理解」と猛反発：英バーミンガム大、シェイクスピア研究所を文豪の生誕地から移転する計画に批判殺到",
+    "subhead": "Actors and literary scholars condemn University of Birmingham proposal to relocate historic research hub to main campus.",
+    "lead_snippet": "Plans by the University of Birmingham to move its famed Shakespeare Institute away from the playwright’s birthplace spark fierce backlash.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/education/2026/nov/16/near-philistine-fury-shakespeare-institute-plan-leave-stratford-upon-avon-edgbaston",
+    "path": "culture/near-philistine-fury-shakespeare-institute-plan-leave-stratford-upon-avon-edgbaston/index.html",
+    "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "grammy-nominations-2027-female-artists",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT • MUSIC INDUSTRY & DIVERSITY",
+    "date": "2026-11-17",
+    "title": "Raye, Rosalía and Olivia Rodrigo Lead Female-Dominated 2027 Grammy Nominations",
+    "headline_ja": "2027年グラミー賞ノミネート発表：レイ、ロザリア、オリヴィア・ロドリゴら女性アーティストが主要部門を席巻",
+    "subhead": "Cross-genre innovation and multilingual pop reshape music’s biggest night after years of representation reforms.",
+    "lead_snippet": "Female performers dominate the 2027 Grammy shortlists as Raye, Rosalía and Olivia Rodrigo earn top nods across major categories.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/culture/2026/nov/16/grammy-nominations-2027-female-artists",
+    "path": "entertainment/grammy-nominations-2027-female-artists/index.html",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-11-17": {
+    "dateStr": "Tuesday November 17 2026",
+    "editionLabel": "2026年11月17日 (火) 号 【本日・最新・全12記事】",
+    "tagline": "特集：豪米AI供給網協定とQuad・国連AI気候誤情報警告・米DC排出量デンマーク並・新ボンドにロバート・パティンソン・EUルワンダ送還ハブ",
+    "topLeadSlug": "albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
+    "subLeadSlugs": [
+      "ai-models-fallible-denial-climate-science-unesco-cop31",
+      "datacenter-emissions-study",
+      "new-james-bond-announced-and-the-names-pattinson-robert-pattinson"
+    ],
+    "leftDispatches": [
+      "eu-states-immigration-return-hubs-rwanda",
+      "microsoft-global-outage-cause",
+      "home-insurance-premiums-inflation-unaffordable-australia-natural-disasters",
+      "europes-wadden-sea-is-a-natural-wonder-so-why-might-it-join-the-world-heritage-in-danger-list"
+    ],
+    "rightDigestSlugs": [
+      "ministers-to-end-palantir-contract-nhs-england-2029",
+      "uk-blood-services-urgent-appeal-donations-winter",
+      "near-philistine-fury-shakespeare-institute-plan-leave-stratford-upon-avon-edgbaston",
+      "grammy-nominations-2027-female-artists"
+    ]
+  },
   "2026-11-16": {
     "dateStr": "Monday November 16 2026",
-    "editionLabel": "2026年11月16日 (月) 号 【本日・最新・全12記事】",
+    "editionLabel": "2026年11月16日 (月) 号 【全12記事・アーカイブ】",
     "tagline": "特集：ガザ冬期支援4カ国要請・GTA VI 13年ぶり発売・伊メタ社8.87億ユーロ制裁金・APEC/ASEAN首脳外交・偽CAPTCHA詐欺",
     "topLeadSlug": "australia-uk-canada-italy-urge-israel-critical-aid-gaza-winter-ntwnfb",
     "subLeadSlugs": [

@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-11-17": {
+            "dateStr": "Tuesday November 17 2026",
+            "editionLabel": "2026年11月17日 (火) 号 【本日・最新・全12記事】",
+            "tagline": "特集：豪米AI供給網協定とQuad・国連AI気候誤情報警告・米DC排出量デンマーク並・新ボンドにロバート・パティンソン・EUルワンダ送還ハブ",
+            "topLeadSlug": "albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
+            "subLeadSlugs": [
+                "ai-models-fallible-denial-climate-science-unesco-cop31",
+                "datacenter-emissions-study",
+                "new-james-bond-announced-and-the-names-pattinson-robert-pattinson"
+            ],
+            "leftDispatches": [
+                "eu-states-immigration-return-hubs-rwanda",
+                "microsoft-global-outage-cause",
+                "home-insurance-premiums-inflation-unaffordable-australia-natural-disasters",
+                "europes-wadden-sea-is-a-natural-wonder-so-why-might-it-join-the-world-heritage-in-danger-list"
+            ],
+            "rightDigestSlugs": [
+                "ministers-to-end-palantir-contract-nhs-england-2029",
+                "uk-blood-services-urgent-appeal-donations-winter",
+                "near-philistine-fury-shakespeare-institute-plan-leave-stratford-upon-avon-edgbaston",
+                "grammy-nominations-2027-female-artists"
+            ]
+        },
         "2026-11-16": {
             "dateStr": "Monday November 16 2026",
-            "editionLabel": "2026年11月16日 (月) 号 【本日・最新・全12記事】",
+            "editionLabel": "2026年11月16日 (月) 号 【全12記事・アーカイブ】",
             "tagline": "特集：ガザ冬期支援4カ国要請・GTA VI 13年ぶり発売・伊メタ社8.87億ユーロ制裁金・APEC/ASEAN首脳外交・偽CAPTCHA詐欺",
             "topLeadSlug": "australia-uk-canada-italy-urge-israel-critical-aid-gaza-winter-ntwnfb",
             "subLeadSlugs": [
