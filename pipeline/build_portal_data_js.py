@@ -196,9 +196,32 @@ def build_portal_data():
     # Group by date
     oct10_slugs = [a["slug"] for a in ARTICLES if a.get("date") == "2026-10-10"]
     editions_dict = {
+        "2026-11-18": {
+            "dateStr": "Wednesday November 18 2026",
+            "editionLabel": "2026年11月18日 (水) 号 【本日・最新・全12記事】",
+            "tagline": "特集：米「麻疹排除国」認定喪失・露サウジ豪CO2輸出トップ3・英俳優AIデジタル複製権利合意・フアン氏米議会証言・極渦反転と寒波",
+            "topLeadSlug": "us-measles-outbreak-elimination-status",
+            "subLeadSlugs": [
+                "russia-saudi-arabia-and-australia-named-as-biggest-co2-exporters-in-history",
+                "actors-uk-rights-digital-replicas-ai-protections",
+                "jensen-huang-testify-congress-nvidia-affair-spy"
+            ],
+            "leftDispatches": [
+                "polar-vortex-flipped-uk-snow-explainer",
+                "the-guardian-view-on-climate-debt-a-vicious-cycle-the-world-must-break-at-cop31",
+                "australia-gender-pay-gap-falls-below-20-percent-for-first-time",
+                "uk-unemployment-wage-growth-milburn-report"
+            ],
+            "rightDigestSlugs": [
+                "paul-kelly-albanese-ai-copyright-protections-creatives-campaign",
+                "birmingham-university-shakespeare-institute-stratford-upon-avon",
+                "would-more-hands-on-dads-create-a-more-peaceful-world-this-pioneering-scientist-thinks-so",
+                "tiger-woods-return-hero-world-challenge-golf"
+            ]
+        },
         "2026-11-17": {
             "dateStr": "Tuesday November 17 2026",
-            "editionLabel": "2026年11月17日 (火) 号 【本日・最新・全12記事】",
+            "editionLabel": "2026年11月17日 (火) 号 【全12記事・アーカイブ】",
             "tagline": "特集：豪米AI供給網協定とQuad・国連AI気候誤情報警告・米DC排出量デンマーク並・新ボンドにロバート・パティンソン・EUルワンダ送還ハブ",
             "topLeadSlug": "albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
             "subLeadSlugs": [

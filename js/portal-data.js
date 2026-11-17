@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 537 articles, daily editions, and high-school media literacy references.
+// Contains all 549 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -8169,15 +8169,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/culture/2026/nov/16/grammy-nominations-2027-female-artists",
     "path": "entertainment/grammy-nominations-2027-female-artists/index.html",
     "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "us-measles-outbreak-elimination-status",
+    "category": "society",
+    "category_label": "SOCIETY • PUBLIC HEALTH & EPIDEMIOLOGY",
+    "date": "2026-11-18",
+    "title": "United States Loses Measles Elimination Status Amid Worst Outbreak Since 1991",
+    "headline_ja": "米国が「麻疹（はしか）排除国」の認定を喪失——1991年以来最悪の流行とワクチン接種率低下",
+    "subhead": "Sustained transmission over twelve months strips America of milestone public health status achieved in 2000.",
+    "lead_snippet": "Health authorities confirmed the US has lost its measles elimination designation following persistent nationwide outbreaks.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/17/us-measles-outbreak-elimination-status",
+    "path": "society/us-measles-outbreak-elimination-status/index.html",
+    "image": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "russia-saudi-arabia-and-australia-named-as-biggest-co2-exporters-in-history",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • FOSSIL FUEL TRADE & COP31",
+    "date": "2026-11-18",
+    "title": "Russia, Saudi Arabia and Australia Named as Biggest CO2 Exporters in History",
+    "headline_ja": "ロシア・サウジ・オーストラリアが「史上最大のCO2輸出国」に：化石燃料の輸出責任を問う新分析",
+    "subhead": "Analysis tracks exported coal, oil and gas emissions, spotlighting major fossil-fuel suppliers’ global climate footprint.",
+    "lead_snippet": "New climate accounting ranks Russia, Saudi Arabia and Australia as the top historical exporters of fossil-fuel carbon emissions.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/nov/17/russia-saudi-arabia-and-australia-named-as-biggest-co2-exporters-in-history",
+    "path": "environment/russia-saudi-arabia-and-australia-named-as-biggest-co2-exporters-in-history/index.html",
+    "image": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "actors-uk-rights-digital-replicas-ai-protections",
+    "category": "law",
+    "category_label": "LAW • AI ETHICS & CREATIVE RIGHTS",
+    "date": "2026-11-18",
+    "title": "UK Actors Win Landmark Rights Over AI ‘Digital Replicas’ in Industry Agreement",
+    "headline_ja": "英俳優組合、AIによる「デジタル・レプリカ」からの権利保護で歴史的合意：同意と報酬のルール確立",
+    "subhead": "New contract framework guarantees informed consent and fair residual pay whenever studios scan performers for AI avatars.",
+    "lead_snippet": "British performers have secured binding protections against unauthorized AI cloning of their faces and voices in film and TV.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/17/actors-uk-rights-digital-replicas-ai-protections",
+    "path": "law/actors-uk-rights-digital-replicas-ai-protections/index.html",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "jensen-huang-testify-congress-nvidia-affair-spy",
+    "category": "world",
+    "category_label": "WORLD • TECH GEOPOLITICS & SECURITY",
+    "date": "2026-11-18",
+    "title": "Former Nvidia Chief Jensen Huang to Testify Before US Congress Over Security Breach Concerns",
+    "headline_ja": "エヌビディア前CEOジェンスン・フアン氏、国家安保上の懸念めぐり米議会で証言へ——AI半導体の地政学",
+    "subhead": "Lawmakers demand answers on corporate governance and export-control safeguards for advanced AI chips.",
+    "lead_snippet": "Ex-Nvidia CEO Jensen Huang is set to appear before congressional investigators probing potential national security risks.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/17/jensen-huang-testify-congress-nvidia-affair-spy",
+    "path": "world/jensen-huang-testify-congress-nvidia-affair-spy/index.html",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "polar-vortex-flipped-uk-snow-explainer",
+    "category": "science",
+    "category_label": "SCIENCE • METEOROLOGY & CLIMATE",
+    "date": "2026-11-18",
+    "title": "What Is the Polar Vortex, Why Has It Flipped and Will It Bring Severe Snow?",
+    "headline_ja": "「極渦（ポーラー・ボーテックス）」の反転とは？——英国・欧州を襲う寒波と成層圏の異変を科学解説",
+    "subhead": "Meteorologists explain how sudden stratospheric warming reverses Arctic winds and sends freezing air south.",
+    "lead_snippet": "A rare reversal of high-altitude Arctic winds known as the polar vortex could trigger early winter snowstorms across Britain.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/uk-news/2026/nov/17/polar-vortex-flipped-uk-snow-explainer",
+    "path": "science/polar-vortex-flipped-uk-snow-explainer/index.html",
+    "image": "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "the-guardian-view-on-climate-debt-a-vicious-cycle-the-world-must-break-at-cop31",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • CLIMATE FINANCE & COP31",
+    "date": "2026-11-18",
+    "title": "The Guardian View on Climate Debt: A Vicious Cycle the World Must Break at COP31",
+    "headline_ja": "英ガーディアン紙社説：「気候債務」の悪循環をCOP31で断ち切れ——融資ではなく無償資金と債務救済を",
+    "subhead": "Editorial urges wealthy nations to shift from high-interest loans to grants and debt relief for climate-hit nations.",
+    "lead_snippet": "A Guardian editorial calls on COP31 leaders to end the trap forcing vulnerable countries to borrow heavily after climate disasters.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/17/the-guardian-view-on-climate-debt-a-vicious-cycle-the-world-must-break-at-cop31",
+    "path": "environment/the-guardian-view-on-climate-debt-a-vicious-cycle-the-world-must-break-at-cop31/index.html",
+    "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "australia-gender-pay-gap-falls-below-20-percent-for-first-time",
+    "category": "society",
+    "category_label": "SOCIETY • WORKPLACE EQUALITY",
+    "date": "2026-11-18",
+    "title": "Australia’s Gender Pay Gap Falls Below 20% for the First Time",
+    "headline_ja": "オーストラリアの男女賃金格差、初の20%未満へ改善——企業別データ公表義務化が後押し",
+    "subhead": "Mandatory corporate pay transparency pushes employers to narrow earnings disparities, though structural gaps remain.",
+    "lead_snippet": "New workplace data shows Australia’s national gender pay gap has dipped under 20 percent for the first time on record.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/18/australia-gender-pay-gap-falls-below-20-percent-for-first-time",
+    "path": "society/australia-gender-pay-gap-falls-below-20-percent-for-first-time/index.html",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "uk-unemployment-wage-growth-milburn-report",
+    "category": "world",
+    "category_label": "WORLD • LABOUR MARKET & YOUTH POLICY",
+    "date": "2026-11-18",
+    "title": "UK Unemployment Eases to 4.6% as Milburn Report Highlights Urgent Youth Jobs Crisis",
+    "headline_ja": "英国の失業率は4.6%に改善も、若年層「NEET」急増にミルバーン報告書が警鐘",
+    "subhead": "Headline jobless rate dips, yet rising numbers of young people outside work or training prompt major welfare overhaul.",
+    "lead_snippet": "While Britain’s overall unemployment edged down to 4.6%, a landmark government-backed report warns of a growing youth inactivity crisis.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/17/uk-unemployment-wage-growth-milburn-report",
+    "path": "world/uk-unemployment-wage-growth-milburn-report/index.html",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "paul-kelly-albanese-ai-copyright-protections-creatives-campaign",
+    "category": "law",
+    "category_label": "LAW • AI COPYRIGHT & CREATIVE ECONOMY",
+    "date": "2026-11-18",
+    "title": "Paul Kelly Urges PM to ‘Show Some Backbone’ Over AI Copyright Protections",
+    "headline_ja": "豪国民的歌手ポール・ケリー氏、AI学習からの著作権保護を求め首相に「毅然たる態度」を直訴",
+    "subhead": "Australian musicians and authors demand strict licensing rules against unauthorized AI training on creative works.",
+    "lead_snippet": "Iconic songwriter Paul Kelly joined Australian creatives urging Anthony Albanese to defend copyright against AI data scraping.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/18/paul-kelly-albanese-ai-copyright-protections-creatives-campaign",
+    "path": "law/paul-kelly-albanese-ai-copyright-protections-creatives-campaign/index.html",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "birmingham-university-shakespeare-institute-stratford-upon-avon",
+    "category": "culture",
+    "category_label": "CULTURE • HERITAGE & CIVIC VOICE",
+    "date": "2026-11-18",
+    "title": "University of Birmingham Pauses Plan to Move Shakespeare Institute After Outcry",
+    "headline_ja": "英バーミンガム大、内外の猛反発を受け「シェイクスピア研究所」移転計画を一時凍結",
+    "subhead": "Academic leaders step back from relocating historic library following international petitions and theatre protests.",
+    "lead_snippet": "Following intense backlash from actors and scholars worldwide, the University of Birmingham has paused plans to relocate its Shakespeare Institute.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/17/birmingham-university-shakespeare-institute-stratford-upon-avon",
+    "path": "culture/birmingham-university-shakespeare-institute-stratford-upon-avon/index.html",
+    "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "would-more-hands-on-dads-create-a-more-peaceful-world-this-pioneering-scientist-thinks-so",
+    "category": "science",
+    "category_label": "SCIENCE • EVOLUTIONARY ANTHROPOLOGY",
+    "date": "2026-11-18",
+    "title": "Would More Hands-On Fathers Create a More Peaceful World? A Pioneering Scientist Thinks So",
+    "headline_ja": "「育児に積極的な父親」が増えると世界はより平和になるか？——進化人類学の先駆者が語る協調の生物学",
+    "subhead": "Anthropological research links male caregiving to lower aggression, higher empathy, and cooperative human societies.",
+    "lead_snippet": "A pioneering evolutionary scientist argues that nurturing fatherhood reshapes male neurobiology and fosters less violent communities.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/17/would-more-hands-on-dads-create-a-more-peaceful-world-this-pioneering-scientist-thinks-so",
+    "path": "science/would-more-hands-on-dads-create-a-more-peaceful-world-this-pioneering-scientist-thinks-so/index.html",
+    "image": "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "tiger-woods-return-hero-world-challenge-golf",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT • SPORTS & RESILIENCE",
+    "date": "2026-11-18",
+    "title": "Tiger Woods Announces Competitive Golf Return After Two-Year Injury Layoff",
+    "headline_ja": "タイガー・ウッズ選手、2年ぶりの実戦復帰を発表——度重なる手術を乗り越えた不屈の挑戦",
+    "subhead": "Fifteen-time major champion confirms tee-off at Hero World Challenge following lengthy rehabilitation.",
+    "lead_snippet": "Golf icon Tiger Woods will return to tournament play at his Hero World Challenge after nearly two years away recovering from surgery.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/nov/17/tiger-woods-return-hero-world-challenge-golf",
+    "path": "entertainment/tiger-woods-return-hero-world-challenge-golf/index.html",
+    "image": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-11-18": {
+    "dateStr": "Wednesday November 18 2026",
+    "editionLabel": "2026年11月18日 (水) 号 【本日・最新・全12記事】",
+    "tagline": "特集：米「麻疹排除国」認定喪失・露サウジ豪CO2輸出トップ3・英俳優AIデジタル複製権利合意・フアン氏米議会証言・極渦反転と寒波",
+    "topLeadSlug": "us-measles-outbreak-elimination-status",
+    "subLeadSlugs": [
+      "russia-saudi-arabia-and-australia-named-as-biggest-co2-exporters-in-history",
+      "actors-uk-rights-digital-replicas-ai-protections",
+      "jensen-huang-testify-congress-nvidia-affair-spy"
+    ],
+    "leftDispatches": [
+      "polar-vortex-flipped-uk-snow-explainer",
+      "the-guardian-view-on-climate-debt-a-vicious-cycle-the-world-must-break-at-cop31",
+      "australia-gender-pay-gap-falls-below-20-percent-for-first-time",
+      "uk-unemployment-wage-growth-milburn-report"
+    ],
+    "rightDigestSlugs": [
+      "paul-kelly-albanese-ai-copyright-protections-creatives-campaign",
+      "birmingham-university-shakespeare-institute-stratford-upon-avon",
+      "would-more-hands-on-dads-create-a-more-peaceful-world-this-pioneering-scientist-thinks-so",
+      "tiger-woods-return-hero-world-challenge-golf"
+    ]
+  },
   "2026-11-17": {
     "dateStr": "Tuesday November 17 2026",
-    "editionLabel": "2026年11月17日 (火) 号 【本日・最新・全12記事】",
+    "editionLabel": "2026年11月17日 (火) 号 【全12記事・アーカイブ】",
     "tagline": "特集：豪米AI供給網協定とQuad・国連AI気候誤情報警告・米DC排出量デンマーク並・新ボンドにロバート・パティンソン・EUルワンダ送還ハブ",
     "topLeadSlug": "albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
     "subLeadSlugs": [

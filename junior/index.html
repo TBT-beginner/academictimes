@@ -23,11 +23,12 @@
   <!-- Top Switcher Bar with Interactive Edition Switcher -->
   <div class="top-date-bar">
     <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem; flex-wrap: wrap; gap: 0.5rem;">
-      <span id="top-date-bar-text">Tuesday November 17 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
+      <span id="top-date-bar-text">Wednesday November 18 2026 &nbsp;|&nbsp; Tokyo & London Editions &nbsp;•&nbsp; High School Eiken Pre-2 ~ 2 Broadsheet</span>
       <div class="edition-selector-wrap">
         <span style="font-weight: 700; color: #111;">📅 紙面切替:</span>
         <select id="select-edition-date" class="edition-select" aria-label="Select edition date">
-          <option value="2026-11-17" selected>2026年11月17日 (火) 号 【本日・最新・全12記事】</option>
+          <option value="2026-11-18" selected>2026年11月18日 (水) 号 【本日・最新・全12記事】</option>
+          <option value="2026-11-17">2026年11月17日 (火) 号 【全12記事・アーカイブ】</option>
           <option value="2026-11-16">2026年11月16日 (月) 号 【全12記事・アーカイブ】</option>
           <option value="2026-11-15">2026年11月15日 (日) 号 【全12記事・アーカイブ】</option>
           <option value="2026-11-14">2026年11月14日 (土) 号 【全12記事・アーカイブ】</option>
@@ -521,20 +522,21 @@
             <span>📰 日別トップページ一覧（バックナンバー紙面）:</span>
           </div>
           <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
-            <a href="index.html#date-2026-11-17" style="padding: 0.35rem 0.75rem; border: 1px solid #235937; background: #235937; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-11-17'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/17 (火) 本日最新号</a>
+            <a href="index.html#date-2026-11-18" style="padding: 0.35rem 0.75rem; border: 1px solid #235937; background: #235937; color: #fff; text-decoration: none; font-size: 0.78rem; font-weight: 700;" onclick="window.switchEdition('2026-11-18'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/18 (水) 本日最新号</a>
+            <a href="index.html#date-2026-11-17" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-17'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/17 (火) 号</a>
             <a href="index.html#date-2026-11-16" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-16'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/16 (月) 号</a>
             <a href="index.html#date-2026-11-15" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-15'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/15 (日) 号</a>
             <a href="index.html#date-2026-11-14" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-14'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/14 (土) 号</a>
-            <a href="index.html#date-2026-11-13" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-13'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/13 (金) 号</a>
           </div>
         </div>
         
         <details style="margin-top: 0.5rem; width: 100%;">
           <summary style="font-size: 0.8rem; font-weight: 700; color: #235937; cursor: pointer; padding: 0.3rem 0;">
-            📂 過去の全号を展開（39日分アーカイブ） ▾
+            📂 過去の全号を展開（40日分アーカイブ） ▾
           </summary>
           <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; padding: 0.5rem; background: #fff; border: 1px dashed var(--times-light-border);">
-            <a href="index.html#date-2026-11-12" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-12'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/12 (木) 号</a>
+            <a href="index.html#date-2026-11-13" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-13'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/13 (金) 号</a>
+              <a href="index.html#date-2026-11-12" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-12'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/12 (木) 号</a>
               <a href="index.html#date-2026-11-10" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-10'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/10 (火) 号</a>
               <a href="index.html#date-2026-11-09" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-09'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/09 (月) 号</a>
               <a href="index.html#date-2026-11-06" style="padding: 0.35rem 0.75rem; border: 1px solid var(--times-light-border); background: #fff; color: var(--times-black); text-decoration: none; font-size: 0.78rem; font-weight: 600;" onclick="window.switchEdition('2026-11-06'); window.scrollTo({top:0, behavior:'smooth'}); return false;">11/06 (金) 号</a>
@@ -609,7 +611,7 @@
               <option value="yahoo">Yahoo! News Japan (Yahoo!ニュース)</option>
               <option value="getnews">GetNews Japan (ガジェット通信)</option>
             </select>
-            <span id="archive-count-badge" class="archive-count-badge" style="color: #235937;">該当件数: 537 件</span>
+            <span id="archive-count-badge" class="archive-count-badge" style="color: #235937;">該当件数: 549 件</span>
           </div>
         </div>
       </div>
@@ -16184,6 +16186,354 @@
               🌱 Junior版を読む（音声付） →
             </a>
             <a href="../entertainment/grammy-nominations-2027-female-artists/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SOCIETY</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="society/us-measles-outbreak-elimination-status/index.html" style="color: var(--times-black); text-decoration: none;">
+                US Loses Measles-Free Status After Worst Outbreak Since 1991
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              アメリカが「はしか排除国」の認定を失う：1991年以来最悪の流行とワクチン接種率の低下
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Health officials warn falling childhood vaccination rates leave babies and sick patients unprotected.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="society/us-measles-outbreak-elimination-status/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../society/us-measles-outbreak-elimination-status/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">ENVIRONMENT</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="environment/russia-saudi-arabia-and-australia-named-as-biggest-co2-exporters-in-history/index.html" style="color: var(--times-black); text-decoration: none;">
+                Russia, Saudi Arabia and Australia Top List of World’s Biggest CO2 Exporters
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              ロシア・サウジ・オーストラリアが「史上最大のCO2輸出国」に：海外で燃やされる化石燃料の責任
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              New COP31 report counts emissions from exported coal, oil, and gas burned overseas.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="environment/russia-saudi-arabia-and-australia-named-as-biggest-co2-exporters-in-history/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../environment/russia-saudi-arabia-and-australia-named-as-biggest-co2-exporters-in-history/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">LAW</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="law/actors-uk-rights-digital-replicas-ai-protections/index.html" style="color: var(--times-black); text-decoration: none;">
+                UK Actors Win New Rights Against AI ‘Digital Copies’
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              イギリスの俳優たちがAIによる「デジタル複製」から身を守る新しい権利を獲得
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Agreement requires written permission and fair pay before studios use AI versions of performers’ faces and voices.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="law/actors-uk-rights-digital-replicas-ai-protections/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../law/actors-uk-rights-digital-replicas-ai-protections/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">WORLD</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="world/jensen-huang-testify-congress-nvidia-affair-spy/index.html" style="color: var(--times-black); text-decoration: none;">
+                Former Nvidia Boss Jensen Huang to Testify Before US Congress
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              エヌビディア前CEOジェンスン・フアン氏、国家安全保障の懸念をめぐり米議会で証言へ
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              US lawmakers question whether advanced AI computer chips were safely kept out of unauthorized foreign hands.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="world/jensen-huang-testify-congress-nvidia-affair-spy/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../world/jensen-huang-testify-congress-nvidia-affair-spy/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SCIENCE</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="science/polar-vortex-flipped-uk-snow-explainer/index.html" style="color: var(--times-black); text-decoration: none;">
+                What Is the ‘Polar Vortex’ and Why Could It Bring Snow to the UK?
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              「極渦（ポーラー・ボーテックス）」が反転すると大雪になる？——北極の冷気が南下する科学の仕組み
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Weather experts explain how a rare wind reversal high above the Arctic sends freezing air south.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="science/polar-vortex-flipped-uk-snow-explainer/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../science/polar-vortex-flipped-uk-snow-explainer/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">ENVIRONMENT</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="environment/the-guardian-view-on-climate-debt-a-vicious-cycle-the-world-must-break-at-cop31/index.html" style="color: var(--times-black); text-decoration: none;">
+                COP31 Must Break the Cycle of Climate Debt for Poorer Nations
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              英ガーディアン紙社説：途上国を苦しめる「気候債務の悪循環」をCOP31で断ち切るべき
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Editorial calls on rich countries to offer grants and debt pauses instead of expensive disaster loans.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="environment/the-guardian-view-on-climate-debt-a-vicious-cycle-the-world-must-break-at-cop31/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../environment/the-guardian-view-on-climate-debt-a-vicious-cycle-the-world-must-break-at-cop31/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SOCIETY</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="society/australia-gender-pay-gap-falls-below-20-percent-for-first-time/index.html" style="color: var(--times-black); text-decoration: none;">
+                Australia’s Gender Pay Gap Drops Under 20% for First Time
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              オーストラリアの男女の賃金格差が初めて20%を下回る：企業別のデータ公開が効果を発揮
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Rules forcing big companies to share pay data helped narrow the earnings gap, though more work remains.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="society/australia-gender-pay-gap-falls-below-20-percent-for-first-time/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../society/australia-gender-pay-gap-falls-below-20-percent-for-first-time/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">WORLD</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="world/uk-unemployment-wage-growth-milburn-report/index.html" style="color: var(--times-black); text-decoration: none;">
+                UK Jobless Rate Dips to 4.6% as Report Warns on Youth Unemployment
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              英国の失業率が4.6%に下がる一方、若者の「NEET（無業）」増加に政府報告書が警鐘
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              New Milburn review urges job guarantees and mental health help for nearly one million young Britons.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="world/uk-unemployment-wage-growth-milburn-report/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../world/uk-unemployment-wage-growth-milburn-report/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">LAW</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="law/paul-kelly-albanese-ai-copyright-protections-creatives-campaign/index.html" style="color: var(--times-black); text-decoration: none;">
+                Singer Paul Kelly Urges Australia to Protect Artists’ Copyright From AI
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              豪有名歌手ポール・ケリーさん、AI企業からの著作権保護を首相に訴え：無断学習に反対
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Australian musicians and writers oppose legal rules that would let AI firms copy their work without permission.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="law/paul-kelly-albanese-ai-copyright-protections-creatives-campaign/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../law/paul-kelly-albanese-ai-copyright-protections-creatives-campaign/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">CULTURE</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="culture/birmingham-university-shakespeare-institute-stratford-upon-avon/index.html" style="color: var(--times-black); text-decoration: none;">
+                University Pauses Plan to Move Shakespeare Institute After Protests
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              英バーミンガム大学、激しい抗議を受けて「シェイクスピア研究所」の移転計画を一時停止
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              University of Birmingham steps back to hold open talks with theatre partners and heritage groups.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="culture/birmingham-university-shakespeare-institute-stratford-upon-avon/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../culture/birmingham-university-shakespeare-institute-stratford-upon-avon/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">SCIENCE</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="science/would-more-hands-on-dads-create-a-more-peaceful-world-this-pioneering-scientist-thinks-so/index.html" style="color: var(--times-black); text-decoration: none;">
+                Could More Involved Dads Help Build a More Peaceful World?
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              「育児に積極的なお父さん」が増えると世界はもっと平和になる？——科学者が語る脳とホルモンの変化
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Scientists find caring for babies changes male hormones, boosting empathy and patience.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="science/would-more-hands-on-dads-create-a-more-peaceful-world-this-pioneering-scientist-thinks-so/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../science/would-more-hands-on-dads-create-a-more-peaceful-world-this-pioneering-scientist-thinks-so/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
+              🏛️ 発展版（難関大） ↗
+            </a>
+          </div>
+        </div>
+        
+
+        <div class="junior-catalog-card" style="border: 1px solid var(--times-light-border); padding: 1.25rem; background: #fff; margin-bottom: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="category-tag green-fill" style="padding: 0.15rem 0.45rem;">ENTERTAINMENT</span>
+              <span style="font-size: 0.75rem; color: #235937; font-weight: 700;">英検準2級〜2級 • 🎧 音声＆クイズ</span>
+            </div>
+            <h3 style="font-family: var(--font-headline); font-size: 1.15rem; margin-bottom: 0.35rem; line-height: 1.35;">
+              <a href="entertainment/tiger-woods-return-hero-world-challenge-golf/index.html" style="color: var(--times-black); text-decoration: none;">
+                Tiger Woods Set to Return to Golf After Two Years Away
+              </a>
+            </h3>
+            <p style="font-size: 0.85rem; font-weight: 700; color: #222; margin-bottom: 0.4rem;">
+              タイガー・ウッズ選手が2年ぶりの公式戦復帰へ：度重なる手術を乗り越えた不屈の挑戦
+            </p>
+            <p style="font-size: 0.8rem; color: var(--times-muted); line-height: 1.6;">
+              Fifteen-time major winner prepares for Hero World Challenge after long recovery from surgeries.
+            </p>
+          </div>
+          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="entertainment/tiger-woods-return-hero-world-challenge-golf/index.html" style="color: #235937; font-weight: 700; font-size: 0.82rem; text-decoration: underline;">
+              🌱 Junior版を読む（音声付） →
+            </a>
+            <a href="../entertainment/tiger-woods-return-hero-world-challenge-golf/index.html" style="color: #111; font-size: 0.78rem; text-decoration: none;">
               🏛️ 発展版（難関大） ↗
             </a>
           </div>
