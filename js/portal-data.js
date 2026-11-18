@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 549 articles, daily editions, and high-school media literacy references.
+// Contains all 561 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -8349,15 +8349,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/us-news/2026/nov/17/tiger-woods-return-hero-world-challenge-golf",
     "path": "entertainment/tiger-woods-return-hero-world-challenge-golf/index.html",
     "image": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "the-guardian-view-on-the-trump-xi-and-putin-meeting-it-may-be-a-first-but-its-not-progress",
+    "category": "world",
+    "category_label": "WORLD • GREAT POWER POLITICS",
+    "date": "2026-11-19",
+    "title": "The Guardian View on the Trump, Xi and Putin Meeting: A Historic First, Not Progress",
+    "headline_ja": "英ガーディアン紙社説：トランプ・習近平・プーチン3首脳会談——「史上初」だが国際秩序の「前進」ではない",
+    "subhead": "Editorial warns that three-way superpower bargaining risks sidelining international law and smaller democracies.",
+    "lead_snippet": "A Guardian editorial argues that the unprecedented Trump-Xi-Putin summit signals a dangerous return to spheres-of-influence politics.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/us-news/2026/nov/18/the-guardian-view-on-the-trump-xi-and-putin-meeting-it-may-be-a-first-but-its-not-progress",
+    "path": "world/the-guardian-view-on-the-trump-xi-and-putin-meeting-it-may-be-a-first-but-its-not-progress/index.html",
+    "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "nasa-voyager-1-pale-blue-dot",
+    "category": "science",
+    "category_label": "SCIENCE • SPACE EXPLORATION",
+    "date": "2026-11-19",
+    "title": "After 49 Years, NASA’s Voyager 1 Reaches One Light-Day From Earth",
+    "headline_ja": "打ち上げから49年、NASA探査機ボイジャー1号が「1光日」の彼方へ——『ペイル・ブルー・ドット』の遺産",
+    "subhead": "Humanity’s farthest spacecraft crosses monumental interstellar distance milestone while engineers fight to extend its waning power.",
+    "lead_snippet": "Voyager 1 is now one full light-day away from Earth, prompting reflection on Carl Sagan’s famous Pale Blue Dot portrait.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/18/nasa-voyager-1-pale-blue-dot",
+    "path": "science/nasa-voyager-1-pale-blue-dot/index.html",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "bacterial-toxin-e-coli-bowel-cancer-under-50s",
+    "category": "science",
+    "category_label": "SCIENCE • ONCOLOGY & MICROBIOME",
+    "date": "2026-11-19",
+    "title": "Bacterial Toxin Produced by E. Coli Emerges as Leading Suspect in Early-Onset Bowel Cancer",
+    "headline_ja": "50歳未満の大腸がん急増、原因は腸内細菌の毒素か——大腸菌が作る「コリバクチン」のDNA損傷痕跡を特定",
+    "subhead": "Genomic study identifies distinct DNA mutation signatures linked to colibactin exposure in younger cancer patients.",
+    "lead_snippet": "Scientists found strong genomic evidence linking a toxin made by gut E. coli bacteria to rising bowel cancer cases in adults under 50.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/18/bacterial-toxin-e-coli-bowel-cancer-under-50s",
+    "path": "science/bacterial-toxin-e-coli-bowel-cancer-under-50s/index.html",
+    "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
+    "category": "law",
+    "category_label": "LAW • INTERNATIONAL JUSTICE",
+    "date": "2026-11-19",
+    "title": "Fears Grow That US May Sanction Nobel-Winning ICJ Judge After Myanmar Genocide Ruling",
+    "headline_ja": "米政府、国際司法裁判所（ICJ）判事への制裁検討か——ミャンマー・ガザ審理をめぐり「司法の独立」に危機感",
+    "subhead": "International jurists warn that targeting World Court judges threatens judicial independence and the genocide convention.",
+    "lead_snippet": "Legal experts raise alarm over potential US sanctions against International Court of Justice judges handling Myanmar and Gaza cases.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
+    "path": "law/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "phantom-forests-in-australian-arid-outback-used-to-create-carbon-credits-meant-to-offset-emissions-report-claims",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • CARBON OFFSETS & INTEGRITY",
+    "date": "2026-11-19",
+    "title": "‘Phantom Forests’ in Australia’s Arid Outback Used to Generate Carbon Credits, Report Claims",
+    "headline_ja": "豪州乾燥地帯の「幽霊森林」でカーボンクレジット発行か——実効性なき排出オフセットに批判殺到",
+    "subhead": "Satellite analysis questions millions of carbon offsets issued on dry grazing land showing minimal tree growth.",
+    "lead_snippet": "A new investigation alleges Australia’s carbon credit system awarded offsets for “phantom forests” across arid outback properties.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/18/phantom-forests-in-australian-arid-outback-used-to-create-carbon-credits-meant-to-offset-emissions-report-claims",
+    "path": "environment/phantom-forests-in-australian-arid-outback-used-to-create-carbon-credits-meant-to-offset-emissions-report-claims/index.html",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "offshore-wind-farms-artificial-reef-experiment-fishing-industry",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • MARINE ECOLOGY & RENEWABLES",
+    "date": "2026-11-19",
+    "title": "US Offshore Windfarms Act as ‘Artificial Reefs’ in Major Ecological Experiment",
+    "headline_ja": "米洋上風力発電所が「人工魚礁」に：再エネ開発と海洋生態系・漁業の共存を探る大規模実験",
+    "subhead": "Marine biologists study how turbine foundations reshape Atlantic food webs and create new habitats for fish.",
+    "lead_snippet": "Scientists monitoring US offshore wind turbines report thriving shellfish and fish communities colonizing underwater steel foundations.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/environment/2026/nov/18/offshore-wind-farms-artificial-reef-experiment-fishing-industry",
+    "path": "environment/offshore-wind-farms-artificial-reef-experiment-fishing-industry/index.html",
+    "image": "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "social-media-ban-once-in-a-generation-study",
+    "category": "society",
+    "category_label": "SOCIETY • DIGITAL YOUTH & PSYCHOLOGY",
+    "date": "2026-11-19",
+    "title": "£10m ‘Once-in-a-Generation’ Study Launched to Measure Impact of Youth Social Media Bans",
+    "headline_ja": "子どものSNS禁止法、効果は本当にあるのか？——1,000万ポンド投じる「一世代に一度」の大規模追跡研究が始動",
+    "subhead": "Longitudinal research tracks thousands of teenagers to test whether age restrictions improve sleep, grades, and mental wellbeing.",
+    "lead_snippet": "Scientists launched a £10m longitudinal study examining how statutory social media age bans reshape adolescent mental health.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/18/social-media-ban-once-in-a-generation-study",
+    "path": "society/social-media-ban-once-in-a-generation-study/index.html",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "potato-war-japan-76-year-ban-american-imported-potatoes",
+    "category": "world",
+    "category_label": "WORLD • TRADE POLICY & AGRICULTURE",
+    "date": "2026-11-19",
+    "title": "Decades-Long US–Japan ‘Potato War’ Over 76-Year Fresh Import Ban Nears Boiling Point",
+    "headline_ja": "日米「ポテト戦争」が緊迫化：日本による米国産生鮮ジャガイモ76年間の輸入禁止をめぐる貿易摩擦",
+    "subhead": "American growers demand Tokyo lift phytosanitary restrictions on fresh table potatoes while Hokkaido farmers defend biosecurity.",
+    "lead_snippet": "Long-simmering trade tensions between Washington and Tokyo over Japan’s 76-year ban on fresh US table potatoes are escalating.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/business/2026/nov/18/potato-war-japan-76-year-ban-american-imported-potatoes",
+    "path": "world/potato-war-japan-76-year-ban-american-imported-potatoes/index.html",
+    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "nhs-england-staff-snooping-patients-records",
+    "category": "law",
+    "category_label": "LAW • MEDICAL PRIVACY & DATA ETHICS",
+    "date": "2026-11-19",
+    "title": "NHS England Reports Over 3,000 Incidents of Staff ‘Snooping’ on Patient Records",
+    "headline_ja": "英NHS職員による患者カルテの「のぞき見」が3,000件超発覚——電子医療記録のアクセス管理に警鐘",
+    "subhead": "Freedom of information data reveals thousands of unauthorized electronic health-record lookups across hospital trusts.",
+    "lead_snippet": "Investigations show more than 3,000 cases of NHS England staff improperly accessing confidential patient files without clinical need.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/uk-news/2026/nov/18/nhs-england-staff-snooping-patients-records",
+    "path": "law/nhs-england-staff-snooping-patients-records/index.html",
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "cambridge-word-of-the-year-human",
+    "category": "culture",
+    "category_label": "CULTURE • LANGUAGE & AI ERA",
+    "date": "2026-11-19",
+    "title": "‘Human’ Named Cambridge Dictionary’s Word of the Year Amid AI Saturation",
+    "headline_ja": "ケンブリッジ辞典「今年の言葉」に『Human（人間）』が選出——AI全盛時代に問い直される人間の価値",
+    "subhead": "Lexicographers cite surge in phrases like “human-made” and “human touch” as people seek authenticity in an automated world.",
+    "lead_snippet": "Cambridge Dictionary chose “human” as its Word of the Year, reflecting society’s heightened focus on what distinguishes people from AI.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/18/cambridge-word-of-the-year-human",
+    "path": "culture/cambridge-word-of-the-year-human/index.html",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "waymo-pulls-driverless-taxis-us-freeways",
+    "category": "society",
+    "category_label": "SOCIETY • AUTONOMOUS MOBILITY & SAFETY",
+    "date": "2026-11-19",
+    "title": "Waymo Pulls Driverless Taxis From US Freeways Following California Ban",
+    "headline_ja": "米ウェイモ、高速道路での無人タクシー運行を停止：カリフォルニア州の禁止措置受け安全基準の壁に直面",
+    "subhead": "Robotaxi operator suspends highway services nationwide after state regulators cite high-speed safety concerns.",
+    "lead_snippet": "Waymo has halted driverless robotaxi trips on US freeways after California regulators barred autonomous highway operations.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/18/waymo-pulls-driverless-taxis-us-freeways",
+    "path": "society/waymo-pulls-driverless-taxis-us-freeways/index.html",
+    "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT • MUSIC FESTIVALS & CULTURE",
+    "date": "2026-11-19",
+    "title": "Sam Fender, Harry Styles and Billie Eilish Set to Make History as Glastonbury’s Youngest 21st-Century Headliners",
+    "headline_ja": "英グラストンベリー音楽祭、サム・フェンダー＆ハリー・スタイルズ＆ビリー・アイリッシュが21世紀最年少ヘッドライナーに",
+    "subhead": "Youthful trio signals a generational handover on Britain’s famed Pyramid Stage after decades of legacy rock acts.",
+    "lead_snippet": "Glastonbury’s latest Pyramid Stage lineup features Sam Fender, Harry Styles and Billie Eilish as its youngest 21st-century headline trio.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/culture/2026/nov/18/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century",
+    "path": "entertainment/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century/index.html",
+    "image": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-11-19": {
+    "dateStr": "Thursday November 19 2026",
+    "editionLabel": "2026年11月19日 (木) 号 【本日・最新・全12記事】",
+    "tagline": "特集：米中露3首脳会談社説・ボイジャー1号1光日到達・若年大腸がんと腸内毒素・ICJ判事制裁懸念・日米ポテト戦争",
+    "topLeadSlug": "the-guardian-view-on-the-trump-xi-and-putin-meeting-it-may-be-a-first-but-its-not-progress",
+    "subLeadSlugs": [
+      "nasa-voyager-1-pale-blue-dot",
+      "bacterial-toxin-e-coli-bowel-cancer-under-50s",
+      "us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court"
+    ],
+    "leftDispatches": [
+      "phantom-forests-in-australian-arid-outback-used-to-create-carbon-credits-meant-to-offset-emissions-report-claims",
+      "offshore-wind-farms-artificial-reef-experiment-fishing-industry",
+      "social-media-ban-once-in-a-generation-study",
+      "potato-war-japan-76-year-ban-american-imported-potatoes"
+    ],
+    "rightDigestSlugs": [
+      "nhs-england-staff-snooping-patients-records",
+      "cambridge-word-of-the-year-human",
+      "waymo-pulls-driverless-taxis-us-freeways",
+      "sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century"
+    ]
+  },
   "2026-11-18": {
     "dateStr": "Wednesday November 18 2026",
-    "editionLabel": "2026年11月18日 (水) 号 【本日・最新・全12記事】",
+    "editionLabel": "2026年11月18日 (水) 号 【全12記事・アーカイブ】",
     "tagline": "特集：米「麻疹排除国」認定喪失・露サウジ豪CO2輸出トップ3・英俳優AIデジタル複製権利合意・フアン氏米議会証言・極渦反転と寒波",
     "topLeadSlug": "us-measles-outbreak-elimination-status",
     "subLeadSlugs": [

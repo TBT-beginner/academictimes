@@ -78,9 +78,32 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-11-19": {
+        "dateStr": "Thursday November 19 2026",
+        "editionLabel": "2026年11月19日 (木) 号 【本日・最新・全12記事】",
+        "tagline": "特集：米中露3首脳会談社説・ボイジャー1号1光日到達・若年大腸がんと腸内毒素・ICJ判事制裁懸念・日米ポテト戦争",
+        "topLeadSlug": "the-guardian-view-on-the-trump-xi-and-putin-meeting-it-may-be-a-first-but-its-not-progress",
+        "subLeadSlugs": [
+            "nasa-voyager-1-pale-blue-dot",
+            "bacterial-toxin-e-coli-bowel-cancer-under-50s",
+            "us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court"
+        ],
+        "leftDispatches": [
+            "phantom-forests-in-australian-arid-outback-used-to-create-carbon-credits-meant-to-offset-emissions-report-claims",
+            "offshore-wind-farms-artificial-reef-experiment-fishing-industry",
+            "social-media-ban-once-in-a-generation-study",
+            "potato-war-japan-76-year-ban-american-imported-potatoes"
+        ],
+        "rightDigestSlugs": [
+            "nhs-england-staff-snooping-patients-records",
+            "cambridge-word-of-the-year-human",
+            "waymo-pulls-driverless-taxis-us-freeways",
+            "sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century"
+        ]
+    },
     "2026-11-18": {
         "dateStr": "Wednesday November 18 2026",
-        "editionLabel": "2026年11月18日 (水) 号 【本日・最新・全12記事】",
+        "editionLabel": "2026年11月18日 (水) 号 【全12記事・アーカイブ】",
         "tagline": "特集：米「麻疹排除国」認定喪失・露サウジ豪CO2輸出トップ3・英俳優AIデジタル複製権利合意・フアン氏米議会証言・極渦反転と寒波",
         "topLeadSlug": "us-measles-outbreak-elimination-status",
         "subLeadSlugs": [
