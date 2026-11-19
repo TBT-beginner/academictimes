@@ -548,15 +548,23 @@ async def generate_all(skip_audio=False):
 
     print(f"Building THE JUNIOR website... (skip_audio={skip_audio})")
     
+    archived_slugs = set()
+    manifest_path = os.path.join(os.path.dirname(__file__), "archived_audio_slugs.json")
+    if os.path.exists(manifest_path):
+        import json as _json
+        with open(manifest_path, "r", encoding="utf-8") as _f:
+            archived_slugs = set(_json.load(_f).get("slugs", []))
+
     for art in JUNIOR_ARTICLES:
         cat = art["category"]
         slug = art["slug"]
         art_dir = os.path.join(JUNIOR_DIR, cat, slug)
-        audio_dir = os.path.join(art_dir, "audio")
-        os.makedirs(audio_dir, exist_ok=True)
+        os.makedirs(art_dir, exist_ok=True)
         
         # 1. Synthesize audio
-        if not skip_audio:
+        if not skip_audio and slug not in archived_slugs:
+            audio_dir = os.path.join(art_dir, "audio")
+            os.makedirs(audio_dir, exist_ok=True)
             # Headline audio
             audio_tasks.append(synth_audio(art["title"], VOICE_BRITISH, os.path.join(audio_dir, "headline.mp3"), sem, rate="-10%"))
             # Full body (rate: -10% for comfortable listening pace)

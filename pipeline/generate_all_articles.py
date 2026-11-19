@@ -732,6 +732,12 @@ async def main():
     skip_audio = "--skip-audio" in sys.argv
     sem = asyncio.Semaphore(8)
     portal_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    archived_slugs = set()
+    manifest_path = os.path.join(os.path.dirname(__file__), "archived_audio_slugs.json")
+    if os.path.exists(manifest_path):
+        import json as _json
+        with open(manifest_path, "r", encoding="utf-8") as _f:
+            archived_slugs = set(_json.load(_f).get("slugs", []))
     audio_tasks = []
     for art in ARTICLES:
         slug = art["slug"]
@@ -747,7 +753,7 @@ async def main():
         print(f"Generated HTML for {cat}/{slug}/index.html")
         
         # 2. Collect Audio Task
-        if not skip_audio:
+        if not skip_audio and slug not in archived_slugs:
             audio_tasks.append(generate_article_audio_files(art, art_dir, sem))
 
     if not skip_audio and audio_tasks:

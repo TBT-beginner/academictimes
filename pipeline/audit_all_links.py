@@ -1,9 +1,19 @@
+import json
 import os
 import re
 
+def load_archived_slugs():
+    manifest = os.path.join(os.path.dirname(__file__), "archived_audio_slugs.json")
+    if not os.path.exists(manifest):
+        return set()
+    with open(manifest, "r", encoding="utf-8") as f:
+        return set(json.load(f).get("slugs", []))
+
 def audit_links():
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    archived_slugs = load_archived_slugs()
     broken_links = []
+    skipped_archived_audio = 0
     total_links = 0
     checked_files = 0
 
@@ -34,9 +44,13 @@ def audit_links():
                         target_path = os.path.normpath(os.path.join(root, clean_target))
                     
                     if not os.path.exists(target_path):
+                        slug_dir = os.path.basename(root)
+                        if clean_target.startswith("audio/") and clean_target.endswith(".mp3") and slug_dir in archived_slugs:
+                            skipped_archived_audio += 1
+                            continue
                         broken_links.append((os.path.relpath(fpath, base_dir), target, os.path.relpath(target_path, base_dir) if os.path.exists(os.path.dirname(target_path)) else target_path))
 
-    print(f"Checked {checked_files} HTML files, {total_links} links.")
+    print(f"Checked {checked_files} HTML files, {total_links} links (archived remote MP3s skipped: {skipped_archived_audio}).")
     print(f"Broken local links count: {len(broken_links)}")
     for src, t, resolved in broken_links:
         print(f"  IN {src}: href/src='{t}' -> NOT FOUND ({resolved})")
