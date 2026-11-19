@@ -2264,6 +2264,7 @@ for _batch_mod, _batch_var in [
     ("batch41_articles_data", "BATCH41_SENIOR"),
     ("batch42_articles_data", "BATCH42_SENIOR"),
     ("batch43_articles_data", "BATCH43_SENIOR"),
+    ("batch44_articles_data", "BATCH44_SENIOR"),
 ]:
     try:
         _mod = __import__(_batch_mod)

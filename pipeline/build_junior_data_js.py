@@ -78,9 +78,32 @@ MEDIA_KEY_MAP = {
 }
 
 EDITIONS_DATA = {
+    "2026-11-20": {
+        "dateStr": "Friday November 20 2026",
+        "editionLabel": "2026年11月20日 (金) 号 【本日・最新・全12記事】",
+        "tagline": "特集：ICJロヒンギャ・ジェノサイド認定・米中露平和宣言の盲点・IEAデータセンター排出70%増警告・重力通信実験・アンソロピック1.3兆ドルIPO",
+        "topLeadSlug": "genocide-rohingya-international-court-of-justice-ruling-myanmar",
+        "subLeadSlugs": [
+            "china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars",
+            "datacentres-to-create-70-more-carbon-emissions-by-2030-iea-report-warns",
+            "scientists-communicate-using-gravity-elevator-brick-wall-bathroom-experiment"
+        ],
+        "leftDispatches": [
+            "anthropic-public-trading-ipo",
+            "potatoes-moon-base-nasa",
+            "ipcc-report-delay-climate-crisis-scientist",
+            "london-swiss-cottage-school-worlds-best-school-awards"
+        ],
+        "rightDigestSlugs": [
+            "covid-inquiry-uk-report-lack-of-early-border-controls-virus-spread",
+            "un-warns-misuse-security-laws-uk-palestine-action-ban",
+            "abandoning-a-cat-by-haruki-murakami-review-an-intimate-meditation-on-family-and-memory",
+            "welsh-cymraeg-dub-star-wars-cardiff"
+        ]
+    },
     "2026-11-19": {
         "dateStr": "Thursday November 19 2026",
-        "editionLabel": "2026年11月19日 (木) 号 【本日・最新・全12記事】",
+        "editionLabel": "2026年11月19日 (木) 号 【全12記事・アーカイブ】",
         "tagline": "特集：米中露3首脳会談社説・ボイジャー1号1光日到達・若年大腸がんと腸内毒素・ICJ判事制裁懸念・日米ポテト戦争",
         "topLeadSlug": "the-guardian-view-on-the-trump-xi-and-putin-meeting-it-may-be-a-first-but-its-not-progress",
         "subLeadSlugs": [

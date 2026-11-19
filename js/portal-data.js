@@ -1,5 +1,5 @@
 // THE ACADEMIC TIMES - Master Portal Data & Media Literacy Knowledge Base
-// Contains all 561 articles, daily editions, and high-school media literacy references.
+// Contains all 573 articles, daily editions, and high-school media literacy references.
 
 const MEDIA_RESOURCES = [
   {
@@ -8529,15 +8529,218 @@ const ARTICLES = [
     "source_url": "https://www.theguardian.com/culture/2026/nov/18/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century",
     "path": "entertainment/sam-fender-harry-styles-and-billie-eilish-to-be-youngest-glastonbury-headliners-of-21st-century/index.html",
     "image": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "genocide-rohingya-international-court-of-justice-ruling-myanmar",
+    "category": "law",
+    "category_label": "LAW • INTERNATIONAL HUMAN RIGHTS",
+    "date": "2026-11-20",
+    "title": "Myanmar Committed Genocide Against Rohingya Minority, World’s Top Court Rules",
+    "headline_ja": "国際司法裁判所（ICJ）、ミャンマー軍によるロヒンギャへの「ジェノサイド（集団殺害）」を正式認定",
+    "subhead": "Landmark International Court of Justice verdict delivers historic legal vindication for Rohingya survivors.",
+    "lead_snippet": "The International Court of Justice has ruled that Myanmar committed genocide against its Rohingya population in a watershed judgment.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/19/genocide-rohingya-international-court-of-justice-ruling-myanmar",
+    "path": "law/genocide-rohingya-international-court-of-justice-ruling-myanmar/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars",
+    "category": "world",
+    "category_label": "WORLD • DIPLOMACY & GEOPOLITICS",
+    "date": "2026-11-20",
+    "title": "China, Russia and US Issue Joint ‘Peace Statement’ Without Mentioning Ukraine or Iran Wars",
+    "headline_ja": "米・中・露が異例の「平和共同宣言」で合意も、ウクライナ・イラン戦争への言及ゼロに欧州等から批判",
+    "subhead": "Three-power declaration touts dialogue and stability while omitting active conflicts, sparking concern among allies.",
+    "lead_snippet": "Washington, Beijing and Moscow released a surprise peace declaration notable for omitting any reference to ongoing wars in Ukraine and Iran.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/19/china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars",
+    "path": "world/china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars/index.html",
+    "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "datacentres-to-create-70-more-carbon-emissions-by-2030-iea-report-warns",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • ENERGY OUTLOOK & AI",
+    "date": "2026-11-20",
+    "title": "Datacentres to Generate 70% More Carbon Emissions by 2030, IEA Report Warns",
+    "headline_ja": "IEAが警告：世界のデータセンターCO2排出量は2030年までに70%急増へ——AI電力需要の急拡大",
+    "subhead": "International Energy Agency says booming artificial intelligence demand risks locking in fossil-fuel power.",
+    "lead_snippet": "A new IEA report projects global datacentre carbon emissions will surge by 70 percent by 2030 unless clean power grids catch up.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/19/datacentres-to-create-70-more-carbon-emissions-by-2030-iea-report-warns",
+    "path": "environment/datacentres-to-create-70-more-carbon-emissions-by-2030-iea-report-warns/index.html",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "scientists-communicate-using-gravity-elevator-brick-wall-bathroom-experiment",
+    "category": "science",
+    "category_label": "SCIENCE • PHYSICS & COMMUNICATIONS",
+    "date": "2026-11-20",
+    "title": "Scientists Send ‘Practically Unblockable’ Message Using Gravity, an Elevator and a Brick Wall",
+    "headline_ja": "重力でメッセージ送信に成功！エレベーターとレンガ壁を使った「事実上遮断不能」な物理通信実験",
+    "subhead": "Quantum gravimeter detects tiny mass shifts across floors, demonstrating communication through solid barriers.",
+    "lead_snippet": "Physicists encoded and transmitted a message across building floors using minute gravitational shifts created by moving weights.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/20/scientists-communicate-using-gravity-elevator-brick-wall-bathroom-experiment",
+    "path": "science/scientists-communicate-using-gravity-elevator-brick-wall-bathroom-experiment/index.html",
+    "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "anthropic-public-trading-ipo",
+    "category": "world",
+    "category_label": "WORLD • AI ECONOMY & GOVERNANCE",
+    "date": "2026-11-20",
+    "title": "Anthropic Hits $1.3 Trillion Valuation in Largest-Ever IPO Amid Market Frenzy and Protests",
+    "headline_ja": "AI大手アンソロピックが史上最大規模のIPOで時価総額1.3兆ドルに到達——熱狂する投資マネーと抗議の声",
+    "subhead": "Historic Wall Street debut crowns AI boom while critics question whether shareholder pressure will erode safety pledges.",
+    "lead_snippet": "AI developer Anthropic closed its first day of public trading at a $1.3tn valuation following the largest initial public offering in history.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/19/anthropic-public-trading-ipo",
+    "path": "world/anthropic-public-trading-ipo/index.html",
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "potatoes-moon-base-nasa",
+    "category": "science",
+    "category_label": "SCIENCE • SPACE AGRICULTURE",
+    "date": "2026-11-20",
+    "title": "Spuds in Space: Scientists Identify Potatoes as Key Food Crop for Future NASA Moon Base",
+    "headline_ja": "宇宙のジャガイモ：NASA将来の月面基地を支える最重要作物として「ジャガイモ栽培」が有望視",
+    "subhead": "Biologists test hardy tuber varieties in simulated lunar soil to support self-sustaining off-world habitats.",
+    "lead_snippet": "Researchers working with NASA report that potatoes offer high caloric yield and resilience for future lunar-base greenhouses.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/19/potatoes-moon-base-nasa",
+    "path": "science/potatoes-moon-base-nasa/index.html",
+    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "ipcc-report-delay-climate-crisis-scientist",
+    "category": "environment",
+    "category_label": "ENVIRONMENT • CLIMATE SCIENCE & POLICY",
+    "date": "2026-11-20",
+    "title": "IPCC Report Delay Threatens Global Effort to Tackle Climate Crisis, Top Scientist Warns",
+    "headline_ja": "次期IPCC報告書の遅延に著名科学者が警鐘：2028年「グローバル・ストックテイク」に科学の根拠が間に合わない恐れ",
+    "subhead": "Delays in UN climate assessment timeline risk leaving 2028 treaty reviews without updated scientific benchmarks.",
+    "lead_snippet": "Leading climate scientists warn that political wrangling delaying the next IPCC assessment could weaken global emissions targets.",
+    "source_name": "The Guardian",
+    "source_media_key": "nature",
+    "source_url": "https://www.theguardian.com/science/2026/nov/19/ipcc-report-delay-climate-crisis-scientist",
+    "path": "environment/ipcc-report-delay-climate-crisis-scientist/index.html",
+    "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "london-swiss-cottage-school-worlds-best-school-awards",
+    "category": "society",
+    "category_label": "SOCIETY • INCLUSIVE EDUCATION",
+    "date": "2026-11-20",
+    "title": "‘We Don’t Produce NEETs’: London Special School Honoured at World’s Best School Awards",
+    "headline_ja": "「NEETを出さない」ロンドンの特別支援学校が世界最優秀学校賞を受賞——一人ひとりに合わせた移行支援の奇跡",
+    "subhead": "Swiss Cottage School wins global praise for bespoke career coaching that keeps disabled graduates in work or training.",
+    "lead_snippet": "A London special educational needs school earned international acclaim after proving tailored support prevents youth unemployment.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/education/2026/nov/19/london-swiss-cottage-school-worlds-best-school-awards",
+    "path": "society/london-swiss-cottage-school-worlds-best-school-awards/index.html",
+    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "covid-inquiry-uk-report-lack-of-early-border-controls-virus-spread",
+    "category": "society",
+    "category_label": "SOCIETY • PANDEMIC LESSONS & POLICY",
+    "date": "2026-11-20",
+    "title": "Lack of Early Border Controls Left UK ‘Extremely Vulnerable’ to Covid, Inquiry Finds",
+    "headline_ja": "英コロナ公的調査報告書：初期の水際対策の欠如が感染爆発に対し「極めて脆弱」な状況を招いたと結論",
+    "subhead": "Public inquiry criticizes delayed quarantine measures in early 2020 and urges standing pandemic border protocols.",
+    "lead_snippet": "The UK Covid-19 inquiry concluded that failing to restrict international arrivals in early 2020 accelerated nationwide transmission.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/society/2026/nov/19/covid-inquiry-uk-report-lack-of-early-border-controls-virus-spread",
+    "path": "society/covid-inquiry-uk-report-lack-of-early-border-controls-virus-spread/index.html",
+    "image": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "un-warns-misuse-security-laws-uk-palestine-action-ban",
+    "category": "law",
+    "category_label": "LAW • CIVIL LIBERTIES & SECURITY",
+    "date": "2026-11-20",
+    "title": "UN Warns Against Misuse of Security Laws as UK Weighs Ban on Protest Group",
+    "headline_ja": "国連専門家が英政府に警告：抗議団体「パレスチナ・アクション」への対テロ法適用は治安法の濫用にあたる恐れ",
+    "subhead": "United Nations human rights experts caution Britain against stretching counter-terrorism statutes to cover protest movements.",
+    "lead_snippet": "UN experts warned the UK that designating direct-action protest group Palestine Action as a banned terrorist body risks misusing security laws.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/law/2026/nov/19/un-warns-misuse-security-laws-uk-palestine-action-ban",
+    "path": "law/un-warns-misuse-security-laws-uk-palestine-action-ban/index.html",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "abandoning-a-cat-by-haruki-murakami-review-an-intimate-meditation-on-family-and-memory",
+    "category": "culture",
+    "category_label": "CULTURE • LITERATURE & MEMORY",
+    "date": "2026-11-20",
+    "title": "Abandoning a Cat by Haruki Murakami Review: An Intimate Meditation on Family and War Memory",
+    "headline_ja": "村上春樹『猫を棄てる』英ガーディアン紙書評：父親の戦争体験と家族の記憶をめぐる静かで親密な思索",
+    "subhead": "Essay reflecting on his father’s wartime trauma offers rare autobiographical insight into Japan’s postwar silence.",
+    "lead_snippet": "A Guardian review praises Haruki Murakami’s Abandoning a Cat as a poignant reflection on filial estrangement and inherited war trauma.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/culture/2026/nov/19/abandoning-a-cat-by-haruki-murakami-review-an-intimate-meditation-on-family-and-memory",
+    "path": "culture/abandoning-a-cat-by-haruki-murakami-review-an-intimate-meditation-on-family-and-memory/index.html",
+    "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1000&auto=format&fit=crop&q=80"
+  },
+  {
+    "slug": "welsh-cymraeg-dub-star-wars-cardiff",
+    "category": "entertainment",
+    "category_label": "ENTERTAINMENT • LANGUAGE & CINEMA",
+    "date": "2026-11-20",
+    "title": "‘Welsh Can Tell Any Story’: Cymraeg Dub of Star Wars Premieres in Cardiff",
+    "headline_ja": "「ウェールズ語はどんな物語も語れる」：『スター・ウォーズ』ウェールズ語吹き替え版がカーディフで初公開",
+    "subhead": "Historic premiere celebrates linguistic revitalization as Luke Skywalker and Darth Vader speak Cymraeg on screen.",
+    "lead_snippet": "A Welsh-language dub of Star Wars debuted in Cardiff, proving minority languages thrive through blockbuster pop culture.",
+    "source_name": "The Guardian",
+    "source_media_key": "the-guardian",
+    "source_url": "https://www.theguardian.com/world/2026/nov/19/welsh-cymraeg-dub-star-wars-cardiff",
+    "path": "entertainment/welsh-cymraeg-dub-star-wars-cardiff/index.html",
+    "image": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=1000&auto=format&fit=crop&q=80"
   }
 ];
 
 const ALL_ARTICLES = ARTICLES;
 
 const EDITIONS = {
+  "2026-11-20": {
+    "dateStr": "Friday November 20 2026",
+    "editionLabel": "2026年11月20日 (金) 号 【本日・最新・全12記事】",
+    "tagline": "特集：ICJロヒンギャ・ジェノサイド認定・米中露平和宣言の盲点・IEAデータセンター排出70%増警告・重力通信実験・アンソロピック1.3兆ドルIPO",
+    "topLeadSlug": "genocide-rohingya-international-court-of-justice-ruling-myanmar",
+    "subLeadSlugs": [
+      "china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars",
+      "datacentres-to-create-70-more-carbon-emissions-by-2030-iea-report-warns",
+      "scientists-communicate-using-gravity-elevator-brick-wall-bathroom-experiment"
+    ],
+    "leftDispatches": [
+      "anthropic-public-trading-ipo",
+      "potatoes-moon-base-nasa",
+      "ipcc-report-delay-climate-crisis-scientist",
+      "london-swiss-cottage-school-worlds-best-school-awards"
+    ],
+    "rightDigestSlugs": [
+      "covid-inquiry-uk-report-lack-of-early-border-controls-virus-spread",
+      "un-warns-misuse-security-laws-uk-palestine-action-ban",
+      "abandoning-a-cat-by-haruki-murakami-review-an-intimate-meditation-on-family-and-memory",
+      "welsh-cymraeg-dub-star-wars-cardiff"
+    ]
+  },
   "2026-11-19": {
     "dateStr": "Thursday November 19 2026",
-    "editionLabel": "2026年11月19日 (木) 号 【本日・最新・全12記事】",
+    "editionLabel": "2026年11月19日 (木) 号 【全12記事・アーカイブ】",
     "tagline": "特集：米中露3首脳会談社説・ボイジャー1号1光日到達・若年大腸がんと腸内毒素・ICJ判事制裁懸念・日米ポテト戦争",
     "topLeadSlug": "the-guardian-view-on-the-trump-xi-and-putin-meeting-it-may-be-a-first-but-its-not-progress",
     "subLeadSlugs": [
