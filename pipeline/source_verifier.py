@@ -191,16 +191,25 @@ def post_update_source_crosscheck(articles_list, junior_articles_list):
             errors.append(f"[{slug}] Senior HTML missing reciprocal link to Junior: {expected_junior_href}")
             continue
 
-        # Check Senior Audio files
+        # Check Senior Audio files (skip if archived remotely on GitHub)
+        archived_manifest = os.path.join(os.path.dirname(__file__), "archived_audio_slugs.json")
+        if "archived_slugs" not in locals():
+            archived_slugs = set()
+            if os.path.exists(archived_manifest):
+                import json as _json
+                with open(archived_manifest, "r", encoding="utf-8") as _af:
+                    archived_slugs = set(_json.load(_af).get("slugs", []))
+
         senior_audio_dir = os.path.join(PORTAL_DIR, cat, slug, "audio")
         required_audios = ["headline.mp3", "full_body.mp3", "s1.mp3", "s2.mp3", "s3.mp3", "s4.mp3", "s5.mp3"]
         missing_audio = False
-        for aud in required_audios:
-            aud_path = os.path.join(senior_audio_dir, aud)
-            if not os.path.exists(aud_path) or os.path.getsize(aud_path) < 500:
-                errors.append(f"[{slug}] Senior missing or empty audio: {aud}")
-                missing_audio = True
-                break
+        if slug not in archived_slugs:
+            for aud in required_audios:
+                aud_path = os.path.join(senior_audio_dir, aud)
+                if not os.path.exists(aud_path) or os.path.getsize(aud_path) < 500:
+                    errors.append(f"[{slug}] Senior missing or empty audio: {aud}")
+                    missing_audio = True
+                    break
         if missing_audio:
             continue
 
@@ -224,14 +233,15 @@ def post_update_source_crosscheck(articles_list, junior_articles_list):
             errors.append(f"[{slug}] Junior HTML missing reciprocal link to Senior: {expected_senior_href}")
             continue
 
-        # Check Junior audio
+        # Check Junior audio (skip if archived remotely on GitHub)
         junior_audio_dir = os.path.join(PORTAL_DIR, "junior", cat, slug, "audio")
-        for aud in required_audios:
-            aud_path = os.path.join(junior_audio_dir, aud)
-            if not os.path.exists(aud_path) or os.path.getsize(aud_path) < 500:
-                errors.append(f"[{slug}] Junior missing or empty audio: {aud}")
-                missing_audio = True
-                break
+        if slug not in archived_slugs:
+            for aud in required_audios:
+                aud_path = os.path.join(junior_audio_dir, aud)
+                if not os.path.exists(aud_path) or os.path.getsize(aud_path) < 500:
+                    errors.append(f"[{slug}] Junior missing or empty audio: {aud}")
+                    missing_audio = True
+                    break
         if missing_audio:
             continue
 
